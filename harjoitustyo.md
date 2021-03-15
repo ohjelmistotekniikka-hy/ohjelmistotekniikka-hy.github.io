@@ -22,10 +22,10 @@ Harjoitustyön aikataulu koostuu kuudesta viikottaisesta palautuksesta, joista s
   - Palautuksen deadline {{site.wk4dl}}
   - Arvosteluperusteet: [Python](/python/ht-viikko4), [Java](/java/ht-viikko4)
 - Viikko 5
-  - Palautuksen deadline {{site.wk4dl}}
+  - Palautuksen deadline {{site.wk5dl}}
   - Arvosteluperusteet: [Python](/python/ht-viikko5), [Java](/java/ht-viikko5)
 - Viikko 6
-  - Palautuksen deadline {{site.wk4dl}}
+  - Palautuksen deadline {{site.wk6dl}}
   - Arvosteluperusteet: [Python](/python/ht-viikko6), [Java](/java/ht-viikko6)
 - Lopullinen palautus
   - Palautuksen deadline {{site.finaldl}}
