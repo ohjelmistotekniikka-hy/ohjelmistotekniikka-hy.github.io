@@ -52,9 +52,16 @@ Harjoitustyölle on toteutuksessa käytettyyn ohjelmointikieleen pohjautuvat arv
 - [Pylint ja koodin laaduun staattinen analyysi](/python/pylint)
 - [Docstring ja koodin dokumentointi](/python/docstring)
 - [Tehtävien suorittaminen ja Invoke](/python/invoke)
-- [TkInter ja graafisen käyttöliittymän toteutus](python/tkinter)
+- [TkInter ja graafisen käyttöliittymän toteutus](/python/tkinter)
 - [Pelien toteutus Pygame-kirjastolla](/python/pygame)
 
 ### Java
 
-TODO
+- [Aiheideoita ja ohjeita työn harjoitustyön aloittamiseen](/java/harjoitustyon-aloittaminen)
+- [Yleisiä ohjeita harjoitustyön toteutukseen](/java/toteutus)
+- [JUnit-ohje](/java/junit)
+- [Käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä](/java/java)
+- [Maven](/java/maven)
+- [Checkstyle](/java/checkstyle)
+- [JavaDoc](/java/javadoc)
+- [Koodin laatu](/java/koodin-laatuvaatimukset)
