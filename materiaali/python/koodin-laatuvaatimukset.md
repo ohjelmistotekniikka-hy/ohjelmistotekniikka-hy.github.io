@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /python/laatuvaatimukset
+permalink: /python/koodin-laatuvaatimukset
 title: Koodin laatuvaatimukset
 ---
 
