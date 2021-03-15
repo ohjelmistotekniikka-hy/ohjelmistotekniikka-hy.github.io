@@ -21,7 +21,7 @@ Aihetta miettiessäsi kannattaa ehdottomasti lukea [ohjeet työn aloittamiseen](
 
 Mikään ei tietenkään estä sitä, että aloitat jo ohjelmoinnin tai vaikkapa koodaat koko työn valmiiksi. Viikon 2 deadlinen pisteytyksessä ollaan kiinnostuneita ainoastaan määrittelydokumentista.
 
-**HUOM** jos aloitat jo ohjelmoinnin, muista että ohjelmakoodi tulee kirjoittaa englanniksi! Ohjelman käyttöliittymä ja dokumentaatio voivat olla suomeksi tai englanniksi. Ainoa sallittu ohjelmointikieli on Java
+**HUOM** jos aloitat jo ohjelmoinnin, muista että ohjelmakoodi tulee kirjoittaa englanniksi! Ohjelman käyttöliittymä ja dokumentaatio voivat olla suomeksi tai englanniksi. 
 
 Palautus tapahtuu lisäämällä oman aiheen _alustava määrittelydokumentti_ ensimmäisen viikon [laskareiden](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/tehtavat/viikko1.md#labtool) päätteeksi [labtooliin](https://study.cs.helsinki.fi/labtool/courses/TKT20002.2021.K.K.1) rekisteröimääsi palautusrepositorioon.
 
@@ -46,7 +46,5 @@ Pidä säännöllisesti kirjaa käyttämistäsi työtunneista. Käytettyjen työ
 - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
 
 Lisää repositorion README.md-tiedostoon linkki [työaikakirjanpitoon](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/tuntikirjanpito.md).
-
-{% include harjoitustyon_toimivuus.md %}
 
 {% include ala_plagioi.md %}

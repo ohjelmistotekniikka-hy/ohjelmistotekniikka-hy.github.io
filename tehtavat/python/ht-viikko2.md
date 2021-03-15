@@ -46,6 +46,4 @@ Pidä säännöllisesti kirjaa käyttämistäsi työtunneista. Käytettyjen työ
 
 Lisää repositorion README.md-tiedostoon linkki [työaikakirjanpitoon](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/tuntikirjanpito.md).
 
-{% include harjoitustyon_toimivuus.md %}
-
 {% include ala_plagioi.md %}
