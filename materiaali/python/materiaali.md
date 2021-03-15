@@ -16,7 +16,7 @@ Tarvitsemme ohjelmisokehityksessä suuren joukon käytännön työkaluja.
 
 ### Komentorivi ja versionhallinta
 
-Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionhallintaa, molemmat ovat tärkeässä roolissa ohjelmistokehityksessä ja niiden harjoittelu on aiheena viikon 1 [tehtävissä](../tehtavat/viikko1.md).
+Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionhallintaa, molemmat ovat tärkeässä roolissa ohjelmistokehityksessä ja niiden harjoittelu on aiheena viikon 1 [tehtävissä](/viikko1).
 
 ### Poetry
 
@@ -28,7 +28,7 @@ Python-projektien riippuvuuksien hallintaan on olemassa muutamiakin vaihtoehtoja
 
 Ohjelmistojen testaus tapahtuu nykyään ainakin yksikkö- ja integraatiotestien osalta automatisoitujen testityökalujen toimesta. Python-maailmassa testien toteuttamisessa on muodostonut jo standardiksi [unittest](https://docs.python.org/3/library/unittest.html)-moduulin käyttö. Tulet kurssin ja myöhempienkin opintojesi aikana kirjoittamaan paljon unittest-testejä.
 
-Unittestiin tutustumme viikon 2 [tehtävissä](../tehtavat/viikko2.md).
+Unittestiin tutustumme viikon 2 [tehtävissä](/python/viikko2).
 
 ### Docstring
 

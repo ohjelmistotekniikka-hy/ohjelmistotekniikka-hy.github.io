@@ -76,7 +76,7 @@ def start(self):
 
 Nyt käyttöliittymämme näyttää seuraavalta:
 
-![TkInter](./kuvat/tkinter-1.png)
+![TkInter](/assets/images/python/tkinter-1.png)
 
 ## Komponenttien asettelu
 
@@ -133,7 +133,7 @@ def start(self):
 
 Käyttöliittymällämme on käytössä kolmen rivin ja kahden sarakkeen gridi. Lopputulos on näyttää seuraavalta:
 
-![TkInter](./kuvat/tkinter-2.png)
+![TkInter](/assets/images/python/tkinter-2.png)
 
 `heading_label` on ensimmäisellä rivillä ja ensimmäisellä sarakkeella. Tämä tulee ilmi `grid`-metodin `row`- ja `column`-parametreista. Lisäksi `heading_label` levittäytyy kahdelle sarakkeelle, eli vie leveyssuunnassa kaiken tilan. Tämä käy ilmi `columspan`-parametrista.
 
@@ -204,7 +204,7 @@ def start(self):
 
 Nyt käyttöliittymä näyttää seuraavalta:
 
-![TkInter](./kuvat/tkinter-3.png)
+![TkInter](/assets/images/python/tkinter-3.png)
 
 Kaikki kolme komponenttia sijoittuvat siis, sekä itä- (E), että länsi-suunnassa (W). `sticky`-parametrin `constants.EW` arvo saa siis komponentien sijoittumaan sekä vasemmalle, että oikealle. `header_label`-komponentin `sticky`-parametrin arvo `constants.W` saa sen sijoittumaan vasemmalle.
 
@@ -236,7 +236,7 @@ button.grid(columnspan=2, sticky=(constants.E, constants.W), padx=5, pady=5)
 
 Lopputulos näyttää seuraavalta:
 
-![TkInter](./kuvat/tkinter-4.png)
+![TkInter](/assets/images/python/tkinter-4.png)
 
 Tällä hetkellä käyttöliittymän tekstikentät ovat hieman kapeita. Voimme leventää niitä konfiguroimalla niiden sarakkeen `minsize`-parametria. Tekstikentät ovat toisessa sarakkeessa, joten konfiguraatio onnistuu seuraavasti:
 
@@ -246,7 +246,7 @@ self._root.grid_columnconfigure(1, weight=1, minsize=300)
 
 Nyt tekstikenttät ovat automaattisesti leveämpiä, mutta myös levenevät, kun ikkunan leveyttä muutetaan:
 
-![TkInter](./kuvat/tkinter-5.png)
+![TkInter](/assets/images/python/tkinter-5.png)
 
 ## Tapahtumankäsittelijät
 
