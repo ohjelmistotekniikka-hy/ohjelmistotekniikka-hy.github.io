@@ -44,7 +44,7 @@ Palautuksen deadline ti {{ site.wk1dl }}. klo 23:59
 Palautuksen deadline ti {{ site.wk2dl }}. klo 23:59
 
 - Harjoitustyön aiheen alustava määrittelydokumentti (1p)
-  - katso tarkemmin [Java](/java/ht-viikko2) [Python](/python/ht-viikko2)
+  - katso tarkemmin [täältä](/ht-viikko2)
 - JUnit/Unittest-harjoittelu (2p)
   - Pajassa tehtävät tai omatoimiset tehtävät [Java](/java/viikko2) [Python](/python/viikko2)
 - Oman projektin koodaus alkaa
