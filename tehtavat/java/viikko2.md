@@ -20,7 +20,7 @@ Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteit
 
 ## 1
 
-- tutustu [JUnit-ohjeeseen](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/junit.md)
+- tutustu [JUnit-ohjeeseen](/java/junit)
 - lukiessasi tee testit myös itse
 - lisää lopuksi maksukortille seuraavat testit:
   - maukkaan lounaan syöminen ei vie saldoa negatiiviseksi, ota tähän mallia testistä syoEdullisestiEiVieSaldoaNegatiiviseksi

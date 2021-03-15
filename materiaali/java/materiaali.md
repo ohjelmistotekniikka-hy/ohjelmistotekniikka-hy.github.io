@@ -16,7 +16,7 @@ Tarvitsemme ohjelmistokehityksessä suuren joukon käytännön työkaluja.
 
 ## Komentorivi ja Versionhallinta
 
-Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionhallintaa, molemmat ovat tärkeässä roolissa ohjelmistokehityksessä ja niiden harjoittelu on aiheena viikon 1 [tehtävissä](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/tehtavat/viikko1.md).
+Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionhallintaa, molemmat ovat tärkeässä roolissa ohjelmistokehityksessä ja niiden harjoittelu on aiheena viikon 1 [tehtävissä](/viikko1).
 
 ## Maven
 

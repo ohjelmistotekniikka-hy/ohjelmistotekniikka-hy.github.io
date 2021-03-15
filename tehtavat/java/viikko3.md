@@ -20,7 +20,7 @@ Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteit
 
 ## Luokkakaaviot
 
-Kertaa luokkakaavioihin liittyvät asiat [kurssimateriaalista](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/materiaali.md#luokkakaaviot).
+Kertaa luokkakaavioihin liittyvät asiat [kurssimateriaalista](/java/materiaali#luokkakaaviot).
 
 Luokkakaavioiden piirtoon helpoin työkalu on <http://yuml.me/>, jos haluat ammattimaisempaa jälkeä on <https://app.diagrams.net/> hyvä (tätä tehtävää varten se ei kuitenkaan liene vaivan arvoista). Myös valokuva käsin piirretyistä kaavioista riittää.
 
@@ -58,7 +58,7 @@ Normaaleille kaduille voi rakentaa korkeintaan 4 taloa tai yhden hotellin. Kadun
 
 ## Sekvenssikaaviot
 
-Kertaa sekvenssikaavioihin liittyvät asiat [kurssimateriaalista](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/materiaali.md#sekvenssikaaviot).
+Kertaa sekvenssikaavioihin liittyvät asiat [kurssimateriaalista](/java/materiaali#sekvenssikaaviot).
 
 Sekvenssikaavioiden piirtoon paras työkalu lienee <https://www.websequencediagrams.com/>. Myös valokuva käsin piirretyistä kaavioista riittää.
 

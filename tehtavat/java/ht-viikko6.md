@@ -8,10 +8,10 @@ title: Harjoitustyö viikko 6
 
 **Muutama huomio**
 
-- **Viikon 6 aikana tapahtuu koodikatselmointi**, tarkemmat ohjeet katselmointiin [täällä](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/koodikatselmointi.md)
+- **Viikon 6 aikana tapahtuu koodikatselmointi**, tarkemmat ohjeet katselmointiin [täällä](/koodikatselmointi)
 - Kannattaa pitää mielessä, että kurssin loppu alkaa lähestyä ja myös loppupalautuksen deadline.
 
-  - Nyt kannattaa kerrata loppupalautuksen [arvosteluperusteet](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/arvosteluperusteet.md)
+  - Nyt kannattaa kerrata loppupalautuksen [arvosteluperusteet](/java/arvosteluperusteet)
   - Viimeiselläkin viikolla ohjelmaa ehtii vielä kasvattaa, mutta myös dokumentoinnille kannattaa jättää aikaa
 
   **HUOM! Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen koneella ja ohjaajien pitää pystyä se niiltä aukaisemaan!!** Esim. [Virtuaalisessatyöasemassa](https://vdi.helsinki.fi) voit testata tätä.
@@ -19,10 +19,10 @@ title: Harjoitustyö viikko 6
 Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 
 - Ohjelma on kasvanut edellisestä viikosta (0.75p)
-  - Ohjelmasta pystyy tekemään suorituskelpoisen [jar](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/maven.md#jarin-generointi)-tiedoston komennolla _mvn package_
+  - Ohjelmasta pystyy tekemään suorituskelpoisen [jar](/java/maven#jarin-generointi)-tiedoston komennolla _mvn package_
   - Ohjelman suoritettavissa oleva versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuudesta eli jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta.
     Merkitse lisäksi tarkastusta varten määrittelydokumenttiin tällä viikolla tekemäsi toiminnallisuudet "tehty" merkinnällä.
-  - Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/release.md), joka sisältää suoritettavan version jar-tiedoston ja muut mahdolliset ohjelman suorituksessa tarvittavat tiedostot
+  - Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](/release), joka sisältää suoritettavan version jar-tiedoston ja muut mahdolliset ohjelman suorituksessa tarvittavat tiedostot
 - Koodin laatu (0.5p)
   - Ohjelma ei sisällä suurta määrää toisteista koodia eli copy pastea
   - Ohjelman luokkarakenne on järkevä
@@ -32,7 +32,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
     - myös liian suuret metodit tulee jakaa useiksi metodeiksi
 - Testaus on edennyt (0.5p)
   - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla <code>mvn test jacoco:report</code>
-    - käyttöliittymän rakentava koodi [jätetään pois](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/maven.md#koodin-huomiotta-jättäminen-kattavuusraportissa) testikattavuusraportista
+    - käyttöliittymän rakentava koodi [jätetään pois](/java/maven#koodin-huomiotta-jättäminen-kattavuusraportissa) testikattavuusraportista
   - Sovelluksen testien rivikattavuuden tulee olla vähintään 60%
   - Testien tulee testata järkevällä tavalla ohjelman toiminnallisuutta
     - jos testit on tehty pelkästään rivikattavuuden saavuttamiseksi, ei testeistä saa pisteitä
@@ -41,7 +41,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - Ainakin osalle ohjelman luokista ja niiden metodeista on tehty JavaDoc-kuvaukset
     - edellytyksenä pisteille on vähintään 5 luokan ja niiden julkisten metodien dokumentointi
       - gettereitä ja settereitä (jotka eivät tee mitään muuta kuin asettavat/palauttavat oliomuuttujan arvon) ei tarvitse dokumentoida
-  - [Ohje](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/javadoc.md) JavaDocin käyttöön
+  - [Ohje](/java/javadoc) JavaDocin käyttöön
 - Alustava arkkitehtuurikuvaus (0.5p)
   - Dokumentti sisältää sovelluksen korkean tason (esim. pakkausten tasolla) rakenteen kuvauksen, sekä alustavan kuvauksen sovelluslogiikasta
   - Dokumentissa voi hyödyntää edellisten viikkojen luokka- ja sekvenssikaavioita

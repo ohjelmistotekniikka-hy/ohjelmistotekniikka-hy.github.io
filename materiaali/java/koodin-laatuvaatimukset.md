@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /java/laatuvaatimukset
+permalink: /java/koodin-laatuvaatimukset
 title: Koodin laatuvaatimukset
 ---
 

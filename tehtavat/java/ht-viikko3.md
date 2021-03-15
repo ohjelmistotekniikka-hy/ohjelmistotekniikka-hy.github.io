@@ -19,7 +19,7 @@ Palautuksesta on tarjolla 2 kurssipistettä.
 Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 
 - Repositorion juuresta löytyy Maven-projekti
-  - [ohje](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/tyon_aloitus.md#harjoitusty%C3%B6n-aloitus) projektin luomiseen ja sen sijoittamiseen palautusrepositorioon
+  - [ohje](/java/harjoitustyon-aloittaminen#harjoitusty%C3%B6n-aloitus) projektin luomiseen ja sen sijoittamiseen palautusrepositorioon
 - Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla _tai/ja_ komennolla ```mvn compile exec:java -Dexec.mainClass=pakkaus.Paaohjelma```
   - komennon parametrina on metodin _main_ sisältävän luokan täydellinen, eli myös pakkauksen sisältävä, nimi
   - [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) tapauksessa parametri olisi ```-Dexec.mainClass=todoapp.ui.TodoUi```
