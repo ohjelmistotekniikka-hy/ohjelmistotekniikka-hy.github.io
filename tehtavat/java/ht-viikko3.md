@@ -5,7 +5,7 @@ title: Harjoitustyö viikko 3
 ---
 # Harjoitustyö, viikko 3
 
-**Palautuksen deadline ti {{ site.wk3dl }}. klo 23:59**
+**Palautuksen deadline {{site.wk3dl}}.**
 
 Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
 

@@ -4,7 +4,7 @@ permalink: /python/ht-viikko6
 ---
 # Harjoitustyö, viikko 6
 
-Palautuksen deadline **ti {{ site.wk6dl }}. klo 23:59**.
+**Palautuksen deadline {{site.wk6dl}}.**
 
 **Muutama huomio**
 

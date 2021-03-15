@@ -4,7 +4,7 @@ permalink: /python/ht-viikko5
 ---
 # Harjoitustyö, viikko 5
 
-Palautuksen deadline tiistai {{ site.wk5dl }}. klo 23:59
+**Palautuksen deadline {{site.wk5dl}}.**
 
 **HUOM** jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä)
 

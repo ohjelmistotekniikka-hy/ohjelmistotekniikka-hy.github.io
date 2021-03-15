@@ -32,7 +32,7 @@ Voit suorittaa kurssin Javalla tai Pythonilla. Tämä on molempien kielten kurss
 
 #### viikko 1
 
-Palautuksen deadline ti {{ site.wk1dl }}. klo 23:59
+Palautuksen deadline {{ site.wk1dl }}
 
 - Tiistaina 16.03. klo 12-14 aloitustilaisuus [tallenne](https://youtu.be/JaM4hbns2P8)
 - Komentorivi- ja Git-harjoittelu (2p)
@@ -41,7 +41,7 @@ Palautuksen deadline ti {{ site.wk1dl }}. klo 23:59
 
 #### viikko 2
 
-Palautuksen deadline ti {{ site.wk2dl }}. klo 23:59
+Palautuksen deadline {{ site.wk2dl }}
 
 - Harjoitustyön aiheen alustava määrittelydokumentti (1p)
   - katso tarkemmin [täältä](/ht-viikko2)
@@ -51,7 +51,7 @@ Palautuksen deadline ti {{ site.wk2dl }}. klo 23:59
 
 #### viikko 3
 
-Palautuksen deadline ti {{ site.wk3dl }}. klo 23:59
+Palautuksen deadline {{ site.wk3dl }}
 
 - Harjoitustyön koodin runko valmiina (2p)
   - katso tarkemmin [Java](/java/ht-viikko3) [Python](/python/ht-viikko3)
@@ -59,7 +59,7 @@ Palautuksen deadline ti {{ site.wk3dl }}. klo 23:59
 
 #### viikko 4
 
-Palautuksen deadline ti {{ site.wk4dl }}. klo 23:59
+Palautuksen deadline {{ site.wk4dl }}
 
 - Harjoitustyö (3p)
   - Ohjelman perustoiminnallisuus
@@ -70,7 +70,7 @@ Palautuksen deadline ti {{ site.wk4dl }}. klo 23:59
 
 #### viikko 5
 
-Palautuksen deadline ti {{ site.wk5dl }}. klo 23:59
+Palautuksen deadline {{ site.wk5dl }}
 
 - Harjoitustyö (3p)
   - Release 1
@@ -82,7 +82,7 @@ Palautuksen deadline ti {{ site.wk5dl }}. klo 23:59
 
 #### viikko 6
 
-Palautuksen deadline ti {{ site.wk6dl }}. klo 23:59
+Palautuksen deadline {{ site.wk6dl }}
 
 - Harjoitustyö (3p)
   - Release 2
@@ -93,7 +93,7 @@ Palautuksen deadline ti {{ site.wk6dl }}. klo 23:59
 
 #### viikko 7
 
-Lopullisen palautuksen deadline su {{ site.finaldl }}. klo 23:59
+Lopullisen palautuksen deadline {{ site.finaldl }}
 
 - [loppupalautuksen ohjeet](/loppupalautus)
 

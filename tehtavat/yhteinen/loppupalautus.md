@@ -4,7 +4,7 @@ permalink: /loppupalautus
 ---
 # Harjoitustyö, loppupalautus
 
-**Loppupalautuksen deadline sunnuntaina {{ site.finaldl }}. klo 23:59. Älä palauta myöhässä, deadline on ehdoton!**
+**Loppupalautuksen deadline {{ site.finaldl }}. Älä palauta myöhässä, deadline on ehdoton!**
 
 - Jos sinulla on joku erittäin hyvä syy palautuksen myöhästymiseen, ota yhteyttä viimeistään tiistaina niin voit saada lisäaikaa.
 
