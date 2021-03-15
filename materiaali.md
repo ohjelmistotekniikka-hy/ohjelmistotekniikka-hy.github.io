@@ -10,7 +10,7 @@ Kurssin materiaalista on tarjolla sekä Python-, että Java-kielen versiot.
 
 ## Linkkejä
 
-- [Kirjoitusvirheiden korjaaminen materiaalissa](/kirjoitusvirheiden-korjaaminen)
+- [Kirjoitusvirheiden korjaaminen materiaalissa](/korjausehdotus)
 - [Kurssin hyväksiluku](/hyvaksiluku)
 
 ### Python

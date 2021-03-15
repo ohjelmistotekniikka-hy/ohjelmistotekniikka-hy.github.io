@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /kirjoitusvirheiden-korjaaminen
+permalink: /korjausehdotus
 title: Kirjoiturvirheiden korjaaminen
 ---
 
