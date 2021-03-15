@@ -91,7 +91,7 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 - Haettu tiedosto on _zip-paketti_, pura se _unzip_-ohjelmalla
   - Myös unzip toimii siten, että sille annetaan purettava tiedosto parametriksi
 - Komennon suorittamisen jälkeen hakemistoon on ilmestynyt hakemisto _unicafe_
-- Siirrä hakemisto hakemiston _kurssit/ot2020/viikko1_ alihakemistoksi
+- Siirrä hakemisto hakemiston _kurssit/ot2021/viikko1_ alihakemistoksi
 - Poista zip-paketti
 - Poista hakemisto _temp_
 
