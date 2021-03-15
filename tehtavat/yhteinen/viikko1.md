@@ -683,7 +683,7 @@ Nyrkkisääntönä kannattaa pitää aina sitä, että kun rupeat työskentelem�
 
 ## Labtool
 
-Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin](https://study.cs.helsinki.fi/labtool/courses/TKT20002.2021.K.K.1). 
+Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin]({{ site.labtool_link }}). 
 
 **HUOM** Labtool kysyy myös harjoitustyön aihetta (project name), kirjoita kenttään myös käyttämäsi ohjelmointikieli (eli Java tai Python). 
 
