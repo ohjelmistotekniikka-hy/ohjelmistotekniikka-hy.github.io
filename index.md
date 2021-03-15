@@ -34,7 +34,7 @@ Voit suorittaa kurssin Javalla tai Pythonilla. Tämä on molempien kielten kurss
 
 Palautuksen deadline {{ site.wk1dl }}
 
-- Tiistaina 16.03. klo 12-14 aloitustilaisuus [tallenne](https://youtu.be/JaM4hbns2P8)
+- {{ site.lecture }} aloitustilaisuus {{ site.lecture_link }}
 - Komentorivi- ja Git-harjoittelu (2p)
   - Pajassa tehtävät tai omatoimiset [tehtävät](/viikko1)
 - Tehtävien palautus tapahtuu tekemällä repositorio githubiin ja rekisteröitymällä labtooliin
@@ -78,7 +78,7 @@ Palautuksen deadline {{ site.wk5dl }}
   - Jotain päätoiminnallisuutta kuvaava sekvenssikaavio
 - Tarkemmat ohjeet [Java](/java/ht-viikko5) [Python](/python/ht-viikko5)
 - Koodikatselmointi (2p)
-  - [Koodikatselmointi](/web/koodikatselmointi.md)
+  - [Koodikatselmointi](/koodikatselmointi)
 
 #### viikko 6
 

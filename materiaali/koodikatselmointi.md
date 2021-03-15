@@ -1,3 +1,8 @@
+---
+layout: page
+permalink: /koodikatselmointi
+title_long: Koodikatselmointi
+---
 # Koodikatselmointi
 
 Katselmoinnista voi saada maksimissaan 2 pistettä.

@@ -1,6 +1,6 @@
 ### Ajankohtaista
 
-- Kurssin ainoa luento ti 16.3. klo 12-14 etänä [zoomissa](https://helsinki.zoom.us/j/67356041626)
+- Kurssin ainoa luento ti 16.3. klo 12-14 etänä {{ site.lecture_link }}
   - luento tallennetaan, linkki tulee tänne myöhemmn
 - Kurssin Telegram-kanava: [https://t.me/tktlotm](https://t.me/tktlotm)
   - **Huom:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta

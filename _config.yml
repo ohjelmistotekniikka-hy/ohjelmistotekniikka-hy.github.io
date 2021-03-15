@@ -18,6 +18,14 @@ wk5dl: "tiistai 20.04. klo 23:59"
 wk6dl: "tiistai 27.04. klo 23:59"
 finaldl: "sunnuntai 09.05. klo 23:59"
 
+# aloitusluento muodossa viikonpäivä dd.mm kellonaika
+# HUOM Kirjoita viikonpäivä isolla, sillä se tulee lauseen alkuun
+
+lecture: "Tiistai 16.03. klo 12-14"
+
+# Linkki zoomiin tai youtubeen
+lecture_link: "[zoom](https://helsinki.zoom.us/j/67356041626)"
+
 # seuraava kurssikerta muodossa syksyllä/keväällä [vuosi]. 
 # esimerkki syksyllä 2021
 # käytetään muun muassa "ei voi jatkaa seuraavalla kurssilla (syksyllä 2021)"
