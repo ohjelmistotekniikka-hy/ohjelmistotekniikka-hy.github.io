@@ -17,6 +17,7 @@ wk4dl: "tiistai 13.04. klo 23:59"
 wk5dl: "tiistai 20.04. klo 23:59"
 wk6dl: "tiistai 27.04. klo 23:59"
 finaldl: "sunnuntai 09.05. klo 23:59"
+code_review_start_date: "keskiviikko 02.12. klo 23:59"
 
 # aloitusluento muodossa viikonpäivä dd.mm kellonaika
 # HUOM Kirjoita viikonpäivä isolla, sillä se tulee lauseen alkuun

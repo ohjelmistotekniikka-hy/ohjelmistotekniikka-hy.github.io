@@ -14,7 +14,7 @@ _Katselmointiin käytettyä aikaa ei merkata työaikakirjanpitoon._
 
 ## Ohjeet
 
-Katselmointi alkaa ke 02.12. klo 23:59, jonka jälkeen _viimeistään_ näet sinulle osoitetun katselmointikohteen repositoriolinkin labtoolista
+Katselmoinnin alkamispäivämäärä on {{site.code_review_start_date}}, jonka jälkeen _viimeistään_ näet sinulle osoitetun katselmointikohteen repositoriolinkin Labtoolista.
 
 Tehtävänäsi on lukea läpi toisen opiskelijan harjoitustyö ja antaa siitä rakentavaa palautetta. Ohjelmaa kannattaa kokeilla myös suorittaa.
 
@@ -27,7 +27,7 @@ Tehtävänäsi on lukea läpi toisen opiskelijan harjoitustyö ja antaa siitä r
 
 - Aloita lukemalla projektin vaatimusmäärittely
 - Tutustu mahdollisimman kattavasti ohjelmakoodiin sekä testeihin
-  - Kokeile myös avata projekti Netbeansissa ja suorita testit
+  - Kokeile myös suorittaa projektin testit
 - Yritä ymmärtää, mitä mikäkin luokka ja metodi tekee
   - Ole sinnikäs: kaikkea ei aina osaa, eikä tarvitsekaan ymmärtää!
   - Haastavin osuus lienee luokkien suhde toisiinsa. Käytä hyväksesi koodista tehtyjä luokkakaavioita
@@ -38,7 +38,7 @@ Kun olet tutustunut riittävän tarkasti katselmoitavaan projektiin, on aika ant
 
 Kerro palautteessasi katselmoitavan ohjelman tekijälle, missä on parannettavaa. Mitä tarkempi palaute, sen arvokkaampi se on palautteen saajalle. Voit antaa vihjeitä siitä, miten asioita voisi tehdä toisin. Jos havaitsit selkeitä bugeja tai virheellistä koodia, raportoi niistä. Kannattaa tutkia koodia tarkasti ja antaa täsmällisiä parannusehdotuksia. **Muista myös positiivinen palaute!**
 
-Palaute annetaan Githubin Issuena:
+Palaute annetaan GitHubin Issuena:
 
 - Mene selaimellasi toisen opiskelijan repositorioon
 - Valitse välilehti _Issues_
@@ -58,4 +58,4 @@ Katselmoinnista jaetaan 0-2 pistettä. Vähintään 6 laadukasta ja rakentavaa p
 
 Palaute kirjoitetaan vapaamuotoisena, mutta yritä kirjoittaa selkeästi. Jaa palaute eri luokista/metodeista eri kappaleisiin. Jos kirjoitat ranskalaisia viivoja, kirjoita kokonaisia lauseita tai mieluiten useita lauseita. Älä hyökkää palautteessa toista kohtaan! Toisaalta älä ota saamaasi palautetta itseesi - projektisihan on yhä kesken ja muokattavissa. Palautteen antajakin toisinaan ymmärtää väärin tai antaa virheellisiä ohjeita.
 
-**Huom.** Katselmoinnin kohteen projekti saattaa elää tai päivittyä sillä aikaa, kun kirjoitat palautetta. Tämän vuoksi palautteeseen liitetään aika, jolloin projektin kävi lataamassa itsellensä. Muulla tavalla asiaan ei kiinnitetä tällä kurssilla huomiota, eikä katselmoijan tarvitse aktiivisesti yrittää tarkistaa, jos jokin asia onkin ehtinyt jo muuttumaan. Palaute voi siis olla osin jo vanhentunutta.
+**HUOM:** Katselmoinnin kohteen projekti saattaa elää tai päivittyä sillä aikaa, kun kirjoitat palautetta. Tämän vuoksi palautteeseen liitetään aika, jolloin projektin kävi lataamassa itsellensä. Muulla tavalla asiaan ei kiinnitetä tällä kurssilla huomiota, eikä katselmoijan tarvitse aktiivisesti yrittää tarkistaa, jos jokin asia onkin ehtinyt jo muuttumaan. Palaute voi siis olla osin jo vanhentunutta.
