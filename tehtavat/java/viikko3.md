@@ -17,7 +17,7 @@ Tee palautuksia varten repositorion sisällä olevaan hakemistoon _laskarit_ uus
 
 Viikon palautuksista on tarjolla yksi kurssipiste. Pisteytys arvioidaan palautuksen laadun perusteella.
 
-Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteita](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/tehtavat/harjoitustyo_viikko3.md)
+Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteita](/java/ht-viikko3)
 
 ## Luokkakaaviot
 
