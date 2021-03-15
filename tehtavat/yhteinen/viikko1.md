@@ -82,7 +82,7 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 - Luo kotihakemistoosi hakemisto _kurssit_
   - **HUOM** joidenkin kohdalla melkillä on ollut ongelmia kotihakemiston asetuksissa ja esim. hakemiston luomisen seurauksena on virhe 'permission denied'. Jos törmäät ongelmaan, lähetä viesti osoitteeseen _it-support@cs.helsinki.fi_ ja raportoi ongelmaksi "ei oikeuksia kotihakemistoon melkillä"
   - Kokeile myös jos kirjaantuminen toiselle koneelle, esim. _melkinpaasi.cs.helsinki.fi_ tuottaisi paremman tuloksen
-- Luo hakemistolle _kurssit_ alihakemisto _ot2020_
+- Luo hakemistolle _kurssit_ alihakemisto _ot2021_
 - Ja luomallesi hakemistolle alihakemisto _viikko1_
 - Mene kotihakemistoosi ja luo sen alle hakemisto _temp_
 - Mene hakemistoon _temp_
@@ -562,7 +562,7 @@ and the repository exists.
 
 ## Julkinen avain
 
-Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](/viikko1#Lisää-tiedostoja).
+Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](/viikko1#lisää-tiedostoja).
 
 Pushaus ei toimi. Nyt kyse on siitä, että git haluaisi suorittaa [julkisen avaimen](https://the.earth.li/~sgtatham/putty/0.55/htmldoc/Chapter8.html) autentikoinnin. Se ei kuitenkaan onnistu koska emme ole kertoneet gitille julkista salausavaintamme.
 

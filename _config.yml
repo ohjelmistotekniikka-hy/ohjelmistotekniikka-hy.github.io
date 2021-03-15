@@ -5,7 +5,6 @@ url: "https://ohjelmistotekniikka-hy.github.io" # the base hostname & protocol f
 github_username:  mluukkai
 repo_url: "https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io"
 repo_branch: "master"
-stats_url: "https://study.cs.helsinki.fi/stats/courses/ohtu2020"
 
 # Kurssikertaan liittyvät muuttujat:
 title: Ohjelmistotekniikka, kevät 2021
