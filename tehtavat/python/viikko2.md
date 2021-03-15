@@ -231,7 +231,7 @@ omit = src/tests/**,src/index.py
 
 Testikattavuuden kerääminen testeistä onnistuu virtuaaliympäristössä komennolla `coverage run --branch -m pytest`. Komennon suorittamisen jälkeen kattavuusraportin voi muodostaa komennolla `coverage html`. Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Avamaalla hakemiston tiedoston _index.html_ selaimessa aukeaa seuraavan näköinen raportti:
 
-![Testikattavuusraportti](../materiaali/kuvat/unicafe-coverage.png)
+![Testikattavuusraportti]({{ "/assets/images/python/unicafe-coverage.png" | absolute_url }})
 
 Huomaa, että oma raporttisi tuskin näyttää täysin tältä (etenkin kattavuusprosenttien osalta) edellisen tehtävien testien toteutuksen jälkeen. Yksittäistä moduulia klikkaamalla näet punaisella korostuksella haarat, joita testit eivät kata vielä lainkaan ja keltaisella korostuksella haarat, joita testit kattavat vain osittain.
 
@@ -250,7 +250,7 @@ Visual Studio Codesta löytyy sisään rakennettu terminaali. Terminaalin saa av
 
 Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa projektin nimi ja jokin satunnain merkkijono suluissa, esimerkiksi `(unicafe-sF0cl2di-py3.9)`. Jos et ole virtuaaliympäristössä pääset siihen tutulla `poetry shell` komennolla. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
 
-![Visual Studio Code terminaali](../materiaali/kuvat/vscode-terminaali.png)
+![Visual Studio Code terminaali]({{ "/assets/images/python/vscode-terminaali.png" | absolute_url }})
 
 ## 4 Kassapäätteen testit
 
