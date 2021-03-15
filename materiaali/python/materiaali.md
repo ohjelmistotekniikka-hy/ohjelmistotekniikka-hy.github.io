@@ -36,7 +36,7 @@ Osa ohjelmiston dokumentointia on lähdekoodin API:n eli käytännössä luokkie
 
 Visual Studio Code näyttää ohjelmoidessa koodiin määritellyn docstringin seuraavasti:
 
-![Docstring](./kuvat/docstring.png)
+![Docstring](/assets/images/python/docstring.png)
 
 Ohje docstring-kommenttien käyttöön löytyy [täältä](./docstring.md)
 
@@ -85,7 +85,7 @@ class Todo:
 
 Jokaiseen todoon liittyy yksi käyttäjä, ja yksittäiseen käyttäjään liittyviä todoja voi olla useita. Tilannetta kuvaa seuraava luokkakaavio
 
-![Luokkakaavio](./kuvat/materiaali-luokkakaavio-1.png)
+![Luokkakaavio](/assets/images/python/materiaali-luokkakaavio-1.png)
 
 Luokkakaavioon on nyt merkitty molempien luokkien oliomuuttujat sekä metodit.
 
@@ -190,7 +190,7 @@ Sovelluslogiikkaa hoitava olio tuntee kirjautuneen käyttäjän, mutta pääsee 
 
 Merkitään luokkakaavioon seuraavasti:
 
-![Luokkakaavio](./kuvat/materiaali-luokkakaavio-2.png)
+![Luokkakaavio](/assets/images/python/materiaali-luokkakaavio-2.png)
 
 Riippuvuuksien merkitseminen luokkakaavioihin ei ole välttämättä kovin oleellinen asia, niitä kannattaa merkitä jos ne tuovat esille tilanteen kannalta jotain oleellista.
 
@@ -204,11 +204,11 @@ Luokkien [perintähierarkian](https://docs.python.org/3/tutorial/classes.html#in
 
 Todo-sovelluksen koodi on sijoitettu hakemistoihin seuraavasti:
 
-![](./kuvat/materiaali-hakemistorakenne.png)
+![](/assets/images/python/materiaali-hakemistorakenne.png)
 
 Hakemistorakennetta voidaan kuvata UML:ssä _pakkauskaaviolla_:
 
-![](./kuvat/materiaali-pakkaukset.png)
+![](/assets/images/python/materiaali-pakkaukset.png)
 
 Pakkausten välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _ui_ riippuu pakkauksesta _services_ sillä _ui_-pakkauksen luokat käyttävät _services_-pakkauksen luokkaa `TodoService`, joka vastaa sovelluksen sovelluslogiikasta. 
 
@@ -216,7 +216,7 @@ Vastaavasti pakkaus _services_ riippuu pakkauksesta _repositories_ sillä sen lu
 
 Pakkauskaavioihin on myös mahdollista merkitä pakkausten sisältönä olevia luokkia normaalin luokkakaaviosyntaksin mukaan:
 
-![](./kuvat/materiaali-pakkaukset-luokat.png)
+![](/assets/images/python/materiaali-pakkaukset-luokat.png)
 
 Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. Asiasta lisää hieman myöhemmin tässä dokumentissa.
 
@@ -226,7 +226,7 @@ Luokka- ja pakkauskaaviot kuvaavat ohjelman rakennetta. Ohjelman toiminta ei kui
 
 Esimerkiksi Unicafe-ruokalan maksukortin ja kassapäätteen välistä suhdetta kuvaava luokkakaavio voisi näyttää seuraavalta:
 
-![Luokkakaavio](./kuvat/materiaali-kassapaate-luokkakaavio.png)
+![Luokkakaavio](/assets/images/python/materiaali-kassapaate-luokkakaavio.png)
 
 Vaikka kaavioon on merkitty metodien nimet, ei ohjelman toimintalogiikka, esimerkiksi mitä tapahtuu kun kortilla ostetaan edullinen lounas, selviä kaaviosta millään tavalla.
 
@@ -314,7 +314,7 @@ def main():
 
 Sekvenssikaavio on seuraavassa:
 
-![](./kuvat/materiaali-sekvenssikaavio-rekisteri.png)
+![](/assets/images/python/materiaali-sekvenssikaavio-rekisteri.png)
 
 Kaavio alkaa tilanteesta, jossa `Henkilostorekisteri`-luokan olio on jo luotu, mutta henkilöolioita ei vielä ole olemassa.
 
@@ -338,11 +338,11 @@ Katsotaan seuraavassa muutamia sovelluksen suunnittelussa noudatettuja periaatte
 
 Kuten jo mainittiin, todo-sovellus noudattaa kerrosarkkitehtuuria. Koodin tasolla kerrosrakenne näkyy siinä, miten sovelluksen koodi jakautuu hakemistoihin:
 
-![](./kuvat/materiaali-hakemistorakenne.png)
+![](/assets/images/python/materiaali-hakemistorakenne.png)
 
 Ja minkälaisia riippuvuuksia hakemistojen välisillä luokilla on. Riippuvuudet kuvaava pakkauskaavio havainnollistaa koodin rakenteen kerroksellisuuden:
 
-![](./kuvat/materiaali-pakkaukset-luokat.png)
+![](/assets/images/python/materiaali-pakkaukset-luokat.png)
 
 Kerrosarkkitehtuurissa ylimpänä on _käyttöliittymästä_ vastaava kerros. Käyttöliittymäkerroksen vastuulla on muodostaa sovelluksen käyttöliittymä ja reagoida käyttäjän syötteisiin.
 
