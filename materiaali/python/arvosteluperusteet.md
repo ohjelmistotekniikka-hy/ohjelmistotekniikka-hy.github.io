@@ -44,7 +44,7 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
 - Ulkoisten kirjastojen hyödyntäminen 1p
   - Näihin eivät lukeudu mateeriaalissa esitellyt testaukseen, testikattavuuteen, koodin formatointiin, koodin laadun staattisen analyysiin, tai koodin dokumentointiin käytettävät kirjastot
 - Koodin laatu 4+1p
-  - Kooste [laatuvaatimuksista](https://github.com/mluukkai/ohjelmistotekniikka-syksy-2020/blob/main/web/koodin_laatuvaatimukset.md)
+  - Kooste [laatuvaatimuksista](/python/koodin-laatuvaatimukset)
   - 4p hyvät abstraktiot (esim. suunnitellumallien, kuten Repository-suunnittelumallin hyödynnys), selkeä tiedosto- ja hakemistorakenne, helposti testattava ja laajennettava, ei ilmeistä copypastea
   - +1p pylint-sääntöjen noudattaminen kunnossa (muutama sääntörikkomus saatetaan katsoa läpi sormien, kunhan pylintin antama arvosana koodille on vähintään 9.00/10)
 - Virheiden käsittely 2p
@@ -61,7 +61,7 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
   - Sovelluksen käyttämän tietokantatiedoston nimi ei ole kirjoitettu koodiin vaan on käyttäjän määriteltävissä
   - Pelissä eri vaikueustasojen pelimaailmat eivät ole määritelty koodissa vaan luodaan erillisten tiedostojen perusteella
   - Pacmanissa hirviöiden määrä ei ole ohjelmakoodiin kovakoodattu vakio vaan valittavissa käyttöliittymästä
-  - Konfiguroitavuus voidaan toteuttaa joko käyttöliittymän tai [konfiguraatiotiedostojen](./toteutus.md#sovelluksen-konfiguraatiot) avulla
+  - Konfiguroitavuus voidaan toteuttaa joko käyttöliittymän tai [konfiguraatiotiedostojen](/python/toteutus#sovelluksen-konfiguraatiot) avulla
 
 ## Testauksesta annettavat pisteet
 
@@ -75,8 +75,8 @@ Täysien pisteiden (5p) edellytys:
 - Testit testaavat mielekkäitä asioita
   - Jos testit on tehty ainoastaan testikattavuuden kasvattamiseksi, ei pisteitä ole montaa odotettavissa
 - Riippuvuudet käsitelty järkevästi
-  - Tietokantaa käyttävissä sovelluksissa testeissä käytössä "testitietokanta". Aiheesta löytyy ohjeita mm. [sovelluksen konfiguraatiot](./toteutus.md#sovelluksen-konfiguraatiot)-osiossa
-  - Myös valekomponentit ovat hyviä joissain tilanteissa. Niiden käytöstä on esimerkki [riippuvuuksien injektointi](./toteutus.md#riippuvuuksien-injektointi)-osiossa
+  - Tietokantaa käyttävissä sovelluksissa testeissä käytössä "testitietokanta". Aiheesta löytyy ohjeita mm. [sovelluksen konfiguraatiot](/python/toteutus#sovelluksen-konfiguraatiot)-osiossa
+  - Myös valekomponentit ovat hyviä joissain tilanteissa. Niiden käytöstä on esimerkki [riippuvuuksien injektointi](/python/toteutus#riippuvuuksien-injektointi)-osiossa
 
 ## Dokumentaation pisteet
 

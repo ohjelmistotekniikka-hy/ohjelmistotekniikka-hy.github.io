@@ -67,7 +67,7 @@ Kuvan tilanteessa if-ehto ei koskaan saanut arvoa `True`, joten kyseistä haaraa
 
 ## Testikattavuusraportin generoimiselle oma tehtävä
 
-[Invoke-ohjeessa](./invoke.md) ohjeistetaan, miten projektille voi määritellä uudelleenkäytettäviä tehtäviä ja miten niitä voi suorittaa komentoriviltä. Määritellään testikattavuuden keräämiselle ja raportin generoimiselle omat tehtävät, `coverage` ja `coverage-report`. Tämä onnistuu määrittelemällä tehtävät projektin juurihakemiston _tasks.py_-tiedostossa:
+[Invoke-ohjeessa](/python/invoke) ohjeistetaan, miten projektille voi määritellä uudelleenkäytettäviä tehtäviä ja miten niitä voi suorittaa komentoriviltä. Määritellään testikattavuuden keräämiselle ja raportin generoimiselle omat tehtävät, `coverage` ja `coverage-report`. Tämä onnistuu määrittelemällä tehtävät projektin juurihakemiston _tasks.py_-tiedostossa:
 
 ```python
 from invoke import task
