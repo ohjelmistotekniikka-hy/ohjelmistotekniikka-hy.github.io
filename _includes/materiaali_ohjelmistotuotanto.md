@@ -12,7 +12,7 @@ Ohjelmiston systemaattinen tekeminen, eli ohjelmistotuotanto (engl. Software eng
 
 Katsotaan vielä kutakin vaihetta hieman tarkemmin.
 
-Käytetään seuraavassa esimerkkinä kurssia varten tehtyä yksinkertaista [todo](#)-sovellusta.
+Käytetään seuraavassa esimerkkinä kurssia varten tehtyä yksinkertaista [todo]({{include.reference_app_url}})-sovellusta.
 
 ### Vaatimusmäärittely
 
