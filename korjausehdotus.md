@@ -20,4 +20,4 @@ Ja varmista vielä:
 
 ![](https://github.com/mluukkai/ohtu2017/raw/master/images/lh3-6.png)
 
-Korjausehdotuksesta tulee nyt pullrequest ja se päivittyy siinä vaiheessa sivulle kun joku kurssihenkilökunnasta hyväksyy sen.
+Korjausehdotuksesta tulee nyt pull request ja se päivittyy siinä vaiheessa sivulle kun joku kurssihenkilökunnasta hyväksyy sen.
