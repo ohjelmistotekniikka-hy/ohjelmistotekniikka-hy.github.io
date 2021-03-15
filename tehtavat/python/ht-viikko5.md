@@ -25,29 +25,29 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 - Ohjelman pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start` (0.5p)
 - Projektista on tehty _GitHub release_ (0.25p)
   - Release sisältää ohjelman uusimman version lähdekoodin (GitHub-lisää tämän automaattisesti releasin tehdessä)
-  - [Ohje](../materiaali/release.md) releasen tekemiseen
+  - [Ohje](/release) releasen tekemiseen
   - Releaseen on linkki projektin README:stä
 - Ohjelma on kasvanut edellisestä viikosta (0.75p)
   - Ohjelman suoritettavissa oleva versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuudesta eli jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta.
     Merkitse lisäksi tarkastusta varten määrittelydokumenttiin tällä viikolla tekemäsi toiminnallisuudet "tehty" merkinnällä.
 - Testaus on edennyt (0.5p)
   - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
-  - Käyttöliittymään ja testeihin liittyvä koodi [jätetään pois](../materiaali/coverage.md#tiedostojen-jättäminen-raportin-ulkopuolelle) testikattavuusraportista
+  - Käyttöliittymään ja testeihin liittyvä koodi [jätetään pois](/python/coverage.md#tiedostojen-jättäminen-raportin-ulkopuolelle) testikattavuusraportista
   - Sovelluksen testien haarautumakattavuuden tulee olla vähintään 40%
   - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 - Koodin laatu (0.5p)
   - Sovelluslogiikka on riittävissä määrin eriytetty käyttöliittymästä
-    - Vihjeitä [täällä](../materiaali/python.md) ja [referenssisovelluksessa](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/arkkitehtuuri.md)
-  - Ohjelman [rakenne](../materiaali/koodin-laatuvaatimukset.md#5-rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
+    - Vihjeitä [täällä](/python/toteutus) ja [referenssisovelluksessa](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/arkkitehtuuri.md)
+  - Ohjelman [rakenne](/python/koodin-laatuvaatimukset#5-rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
   - Pylint on otettu käyttöön
-    - Ohje pylintin käyttöönottoon [täällä](../materiaali/pylint.md)
+    - Ohje pylintin käyttöönottoon [täällä](/python/pylint)
     - Täydet pisteet pylintistä ainoastaan jos pylintin antama arvosana koodille on vähintään 8.00/10
     - Käyttöliittymään tai testeihin liittyvän koodin ei tarvitse olla pylint-tarkastelun alla
     - `pylint: disable`-kommenttien käyttö on kiellettyä ilman erittäin perusteltua syytä
   - Ohjelma ei sisällä suurta määrää toisteista koodia
 - Ohjelman dokumentaatiossa on ainakin yksi sen jotain oleellista toiminnallisuutta kuvaava sekvenssikaavio (0.5p)
   - Mallia voi ottaa [referenssisovelluksesta](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
-  - Lisää kaavio [edellisellä viikolla](./harjoitustyo-viikko4.md) tehtyyn dokumenttiin _arkkitehtuuri.md_
+  - Lisää kaavio [edellisellä viikolla](/python/ht-viikko4) tehtyyn dokumenttiin _arkkitehtuuri.md_
   - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app) tavoin
 
 **Seuraavien kohtien puutteet vähentävät pisteitä:**

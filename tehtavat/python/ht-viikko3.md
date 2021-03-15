@@ -17,14 +17,14 @@ Palautuksesta on tarjolla 2 kurssipistettä.
 Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 - Repositorion juuresta löytyy _src_-hakemisto projektin koodille
-- Projekti on alustettu [Poetry-ohjeiden](../materiaali/poetry.md) mukaisesti
-- Projektin koodin pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`. Kertaa [Invoke-ohjeet](../materiaali/invoke.md), jos tämä tuottaa hankaluuksia
+- Projekti on alustettu [Poetry-ohjeiden](/python/poetry) mukaisesti
+- Projektin koodin pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`. Kertaa [Invoke-ohjeet](/python/invoke), jos tämä tuottaa hankaluuksia
 - Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta
   - Pelkät tyhjät luokat tai funktiot ilman toiminallisuutta eivät tuo pisteitä
-- Sovelluksella on oltava _vähintään yksi testi_ jonka voi suorittaa komennolla `poetry run invoke test`. Kertaa [testauksen ohjeet](../materiaali/unittest.md), jos tämä tuottaa hankaluuksia
+- Sovelluksella on oltava _vähintään yksi testi_ jonka voi suorittaa komennolla `poetry run invoke test`. Kertaa [testauksen ohjeet](/python/unittest), jos tämä tuottaa hankaluuksia
   - Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa
   - Testin tulee mennä läpi
-- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`. Kertaa [testikattavuuden ohjeet](../materiaali/coverage.md), jos tämä tuottaa hankaluuksia
+- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`. Kertaa [testikattavuuden ohjeet](/python/coverage), jos tämä tuottaa hankaluuksia
 - Tuntikirjanpito on ajantasalla
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
 - Repositorion _README.md_-tiedosto kunnossa

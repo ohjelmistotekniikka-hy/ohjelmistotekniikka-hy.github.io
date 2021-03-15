@@ -6,7 +6,7 @@ title: Materiaali
 inheader: true
 ---
 
-Kurssin materiaalista on tarjolla sekä Python-, että Java-kielen versiot.
+Kurssin materiaalista on tarjolla sekä Python-, että Java-kielen versiot. Täältä löydät linkit materiaalin eri osiin.
 
 ## Linkkejä
 
@@ -16,6 +16,7 @@ Kurssin materiaalista on tarjolla sekä Python-, että Java-kielen versiot.
 ### Python
 
 - [Johdanto kurssin aihealueisiin](/python/materiaali)
+- [Poetry ja riippuvuuksien hallinta](/python/poetry)
 - [Unittest ja testaaminen](/python/unittest)
 - [Coverage ja testikattavuus](/python/coverage)
 - [Pylint ja koodin laaduun staattinen analyysi](/python/pylint)
@@ -26,4 +27,8 @@ Kurssin materiaalista on tarjolla sekä Python-, että Java-kielen versiot.
 
 ### Java
 
-TODO
+- [Johdanto kurssin aihealueisiin](/java/materiaali)
+- [Maven ja riippuvuuksien hallinta](/java/maven)
+- [JUnit ja testaaminen](/java/junit)
+- [Checkstyle ja koodin laaduun staattinen analyysi](/java/checkstyle)
+- [JavaDoc ja koodin dokumentointi](/java/docstring)

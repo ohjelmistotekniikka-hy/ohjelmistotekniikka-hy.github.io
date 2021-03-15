@@ -21,7 +21,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
   - Ohjelman pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
   - Ohjelman suoritettavissa oleva versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuudesta eli jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta.
   - Merkitse lisäksi tarkastusta varten määrittelydokumenttiin tällä viikolla tekemäsi toiminnallisuudet "tehty" merkinnällä.
-  - Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](../materiaali/release.md), joka sisältää ohjelman uusimman version lähdekoodin (GitHub lisää tämän automaattisesti releasin tehdessä)
+  - Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](/release), joka sisältää ohjelman uusimman version lähdekoodin (GitHub lisää tämän automaattisesti releasin tehdessä)
 - Koodin laatu (0.5p)
   - Ohjelma ei sisällä suurta määrää toisteista koodia eli copy-pastea
   - Ohjelman rakenne on järkevä
@@ -29,14 +29,14 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
     - Liian suuret luokat, metodit ja funktiot tulee siis pilkkoa osiin
 - Testaus on edennyt (0.5p)
   - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
-    - Käyttöliittymään ja testeihin liittyvä koodi [jätetään pois](../materiaali/coverage.md#tiedostojen-jättäminen-raportin-ulkopuolelle) testikattavuusraportista
+    - Käyttöliittymään ja testeihin liittyvä koodi [jätetään pois](/python/coverage#tiedostojen-jättäminen-raportin-ulkopuolelle) testikattavuusraportista
   - Sovelluksen testien haarautumakattavuuden tulee olla vähintään 60%
   - Testien tulee testata järkevällä tavalla ohjelman toiminnallisuutta
     - Jos testit on tehty pelkästään haarautumakattavuuden saavuttamiseksi, ei testeistä saa pisteitä
 - Docstring-dokumentointi aloitettu (0.5p)
   - Ainakin osalle ohjelman luokista, metodeista ja funktioista on tehty docstring-dokumentaatio
     - Edellytyksenä pisteille on, että suurin piirtein puolella luokista, metodeista ja funktioista on docstring-dokumentaatio
-  - [Ohje](../materiaali/docstring.md) docstring-dokumentointiin
+  - [Ohje](/python/docstring) docstring-dokumentointiin
 - Alustava arkkitehtuurikuvaus (0.5p)
   - Dokumentti sisältää sovelluksen korkean tason (esim. hakemistojen tasolla) rakenteen kuvauksen, sekä alustavan kuvauksen sovelluslogiikasta
   - Dokumentissa voi hyödyntää edellisten viikkojen luokka- ja sekvenssikaavioita
