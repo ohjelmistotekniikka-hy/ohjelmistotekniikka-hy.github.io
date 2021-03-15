@@ -17,15 +17,15 @@ Tee palautuksia varten repositorion sisällä olevaan hakemistoon _laskarit_ uus
 
 Viikon palautuksista on tarjolla 2 pistettä. Pisteytys arvioidaan palautuksen laadun perusteella.
 
-Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteita](./harjoitustyo-viikko2.md)
+Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteita](/python/ht-viikko2)
 
 ## Alkutoimet
 
-Ennen tehtävien aloitusta, tutustu [Poetry-ohjeisiin](../materiaali/poetry.md). Varmista, että Poetry on asennettuna ja osaat suorittaa `poetry`-komentoja komentoriviltä.
+Ennen tehtävien aloitusta, tutustu [Poetry-ohjeisiin](/python/poetry). Varmista, että Poetry on asennettuna ja osaat suorittaa `poetry`-komentoja komentoriviltä.
 
 ## 1
 
-- Tutustu [unittest-ohjeeseen](../materiaali/unittest.md)
+- Tutustu [unittest-ohjeeseen](/python/unittest)
 - Lukiessasi tee testit myös itse
 - Lisää lopuksi maksukortille seuraavat testit:
   - Maukkaan lounaan syöminen ei vie saldoa negatiiviseksi, ota tähän mallia testistä `test_syo_edullisesti_ei_vie_saldoa_negatiiviseksi`
@@ -48,7 +48,7 @@ self.assertEqual(str(kortti), "Kortilla on rahaa 2 euroa")
 
 Tämän tehtävän projekti _ladataan internetistä_ hieman alempana olevan ohjeen mukaan.
 
-Tehtävä pohjautuu sovellukseen, jonka tarkoituksena on toteuttaa [Uniface](https://unicafe.fi/)-ruokalan kassapääte. Kassapäätteen avulla voidaan ostaa eri hintaisia aterioita joko maksukortilla tai käteisellä.
+Tehtävä pohjautuu sovellukseen, jonka tarkoituksena on toteuttaa [Unicafe](https://unicafe.fi/)-ruokalan kassapääte. Kassapäätteen avulla voidaan ostaa eri hintaisia aterioita joko maksukortilla tai käteisellä.
 
 Maksukortilla on mahdollisuus ladata sille rahaa ja ottaa siltä rahaa maksuja varten. Ohjelmointiuransa aloittelevan tuttavasi vastaus seuraavassa:
 
@@ -220,7 +220,7 @@ Suorita testit komentoriviltä virtuaaliympäristössä `pytest`-komennolla.
 
 ## 3 Testikattavuus
 
-Tutustu testikattavuuden mittaamiseen lukemalla materiaalin [testikattavuutta](../materiaali/coverage.md) käsittelevä osio.
+Tutustu testikattavuuden mittaamiseen lukemalla materiaalin [testikattavuutta](/python/coverage) käsittelevä osio.
 
 Projektiin on valmiiksi konfiguroitu käytettäväksi [coverage](https://coverage.readthedocs.io/en/coverage-5.3/)-työkalu, joka mittaa testien haarautumakattavuuden. Testikattavuuden konfiguraatiossa käytettävä, _.coveragerc_-tiedoston sisältö on projektissa seuraava:
 
