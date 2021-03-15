@@ -8,7 +8,7 @@ title_long: Materiaali
 
 {% include materiaali_kirjoitusvirheita.md %}
 
-{% include materiaali_ohjelmistotuotanto.md %}
+{% include materiaali_ohjelmistotuotanto.md reference_app_url=site.python_reference_app_url %}
 
 ## Työkaluja
 
@@ -493,4 +493,4 @@ Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/ohj
 
 ### Ohjelmiston toteutus
 
-Muutamia käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä on koottu [tänne](./python.md)
+Muutamia käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä on koottu [tänne](./toteutus.md)
