@@ -9,8 +9,7 @@ repo_branch: "master"
 # Kurssikertaan liittyvät muuttujat:
 title: Ohjelmistotekniikka, kevät 2021
 
-# aikataulut (annetaan muodossa dd.mm)
-# HUOM aikataulut täytyy antaa merkkijonoina, sillä muuten 06.04 muuttuisi 6.04
+# aikataulut (annetaan muodossa viikonpäivä dd.mm kellonaika)
 wk1dl: "tiistai 23.03. klo 23:59"
 wk2dl: "tiistai 30.03. klo 23:59"
 wk3dl: "tiistai 06.04. klo 23:59"

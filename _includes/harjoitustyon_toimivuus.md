@@ -1,6 +1,6 @@
 ### Harjoitustyön toimivuus
 
-- Kurssilla käytetään Javan versiota 11 ja Pythonin versiota 3.7
+- Kurssilla käytetään Javan versiota 11 ja Pythonilla version tulee olla vähintään 3.6
 
 - Koneiden konfiguraatioissa on eroja, ja tällä kurssilla ei riitä että hajoitustyössä tekemäsi sovellus toimii vain omalla koneellasi
 
