@@ -4,7 +4,7 @@ permalink: /python/ht-viikko4
 ---
 # Harjoitustyö, viikko 4
 
-Palautuksen deadline ti {{ site.wk4dl }}. klo 23:59
+**Palautuksen deadline {{site.wk4dl}}.**
 
 Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
 

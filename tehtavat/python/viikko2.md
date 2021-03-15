@@ -5,7 +5,7 @@ permalink: /python/viikko2
 ---
 # Viikon 2 laskarit
 
-Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on ti {{ site.wk2dl }}. klo 23:59
+Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. **Tehtävien palautuksen deadline on {{site.wk2dl}}.**
 
 Tehtävät palautetaan GitHubin avulla Labtoolin rekisteröimääsi repositorioon.
 

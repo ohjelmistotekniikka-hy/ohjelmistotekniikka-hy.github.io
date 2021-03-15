@@ -5,7 +5,7 @@ permalink: /python/viikko3
 ---
 # Viikon 3 laskarit
 
-Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on _tiistaina {{ site.wk3dl }}. klo 23:59_
+Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. **Tehtävien palautuksen deadline on {{site.wk3dl}}.**
 
 Tehtävät palautetaan Githubin avulla Labtooliin rekisteröimääsi repositorioon.
 

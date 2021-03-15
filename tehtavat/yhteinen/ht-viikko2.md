@@ -5,7 +5,7 @@ permalink: /ht-viikko2
 ---
 # Harjoitustyö, viikko 2
 
-Palautuksen deadline tiistaina {{ site.wk2dl }} klo 23:59
+**Palautuksen deadline {{site.wk2dl}}.**
 
 Muista pushata tehtävät GitHubiin ennen viikkodeadlinea. Myöhässä tehty palautus ei tuo pisteitä.
 

@@ -11,13 +11,13 @@ title: Ohjelmistotekniikka, kevät 2021
 
 # aikataulut (annetaan muodossa dd.mm)
 # HUOM aikataulut täytyy antaa merkkijonoina, sillä muuten 06.04 muuttuisi 6.04
-wk1dl: "23.03"
-wk2dl: "30.03"
-wk3dl: "06.04"
-wk4dl: "13.04"
-wk5dl: "20.04"
-wk6dl: "27.04"
-finaldl: "09.05"
+wk1dl: "tiistai 23.03. klo 23:59"
+wk2dl: "tiistai 30.03. klo 23:59"
+wk3dl: "tiistai 06.04. klo 23:59"
+wk4dl: "tiistai 13.04. klo 23:59"
+wk5dl: "tiistai 20.04. klo 23:59"
+wk6dl: "tiiistai 27.04. klo 23:59"
+finaldl: "sunnuntai 09.05. klo 23:59"
 
 labtool_link: "https://study.cs.helsinki.fi/labtool/courses/TKT20002.2021.K.K.1"
 
