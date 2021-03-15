@@ -10,7 +10,7 @@ Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö. Harjoitusty�
 
 ## Aikataulu
 
-Harjoitustyön aikataulu koostuu kuudesta viikottaisesta palautuksesta, joista saatavat pisteet vaikuttavat kurssin arvosteluun. Jokaisella viikolla
+Harjoitustyön aikataulu koostuu kuudesta viikottaisesta palautuksesta, joista saatavat pisteet vaikuttavat kurssin arvosteluun. Viikottaisten palautusten aikataulu ja arvosteluperusteet ovat seuraavat:
 
 - Viikko 2
   - Palautuksen deadline {{site.wk2dl}}

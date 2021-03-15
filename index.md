@@ -1,8 +1,9 @@
 ---
 layout: page
+title_long: "Ohjelmistotekniikka, kevät 2021"
 permalink: /
 ---
-### Yleistä
+
 
 _Kurssin nimi on muuttunut syksyllä 2018, tätä aiemmin kurssi tunnettiin nimellä Ohjelmistotekniikan menetelmät_
 
@@ -14,13 +15,13 @@ Kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteisiin. 
 
 Kurssilla ei ole koetta. Harjoitustyö tulee tehdä kurssin aikataulujen puitteissa. Kesken jäänyttä harjoitustyötä ei voi jatkaa seuraavalla kurssilla ({{ site.next_course }}), joten **muista varata riittävästi aikaa (10-15h viikossa) koko periodin ajaksi!**
 
-Tarkemmat arvosteluperusteet [täällä](./web/arvosteluperusteet.md).
+Tarkemmat ohjeet harjoitustyöhön löytyvät [täällä](/harjoitustyo).
 
-### Kirjoitusvirheitä
+## Kirjoitusvirheitä
 
 Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu GitHubiin ja toimi [täällä](./web/typokorjaukset.md) olevan ohjeen mukaan.
 
-### Kieli
+## Kieli
 
 Voit suorittaa kurssin Javalla tai Pythonilla. Tämä on molempien kielten kurssisivu.
 
@@ -28,9 +29,9 @@ Voit suorittaa kurssin Javalla tai Pythonilla. Tämä on molempien kielten kurss
 
 {% include harjoitustyon_toimivuus.md %}
 
-### Aikataulu
+## Aikataulu
 
-#### viikko 1
+### Viikko 1
 
 Palautuksen deadline {{ site.wk1dl }}
 
@@ -39,7 +40,7 @@ Palautuksen deadline {{ site.wk1dl }}
   - Pajassa tehtävät tai omatoimiset [tehtävät](/viikko1)
 - Tehtävien palautus tapahtuu tekemällä repositorio githubiin ja rekisteröitymällä labtooliin
 
-#### viikko 2
+### Viikko 2
 
 Palautuksen deadline {{ site.wk2dl }}
 
@@ -49,7 +50,7 @@ Palautuksen deadline {{ site.wk2dl }}
   - Pajassa tehtävät tai omatoimiset tehtävät [Java](/java/viikko2) [Python](/python/viikko2)
 - Oman projektin koodaus alkaa
 
-#### viikko 3
+### Viikko 3
 
 Palautuksen deadline {{ site.wk3dl }}
 
@@ -57,7 +58,7 @@ Palautuksen deadline {{ site.wk3dl }}
   - katso tarkemmin [Java](/java/ht-viikko3) [Python](/python/ht-viikko3)
 - Pajassa tehtävät tai omatoimiset tehtävät luokka- ja sekvenssikaaviosta [Java](/java/viikko3) [Python](/python/viikko3) (1p)
 
-#### viikko 4
+### Viikko 4
 
 Palautuksen deadline {{ site.wk4dl }}
 
@@ -68,7 +69,7 @@ Palautuksen deadline {{ site.wk4dl }}
   - Checkstyle/Pylint otettu käyttöön
 - Tarkemmat ohjeet [Java](/java/ht-viikko4) [Python](/python/ht-viikko4)
 
-#### viikko 5
+### Viikko 5
 
 Palautuksen deadline {{ site.wk5dl }}
 
@@ -80,7 +81,7 @@ Palautuksen deadline {{ site.wk5dl }}
 - Koodikatselmointi (2p)
   - [Koodikatselmointi](/koodikatselmointi)
 
-#### viikko 6
+### Viikko 6
 
 Palautuksen deadline {{ site.wk6dl }}
 
@@ -91,38 +92,13 @@ Palautuksen deadline {{ site.wk6dl }}
   - Alustava versio arkkitehtuuridokumentista
 - Tarkemmat ohjeet [Java](/java/ht-viikko6) [Python](/python/ht-viikko6)
 
-#### viikko 7
+### Viikko 7
 
 Lopullisen palautuksen deadline {{ site.finaldl }}
 
 - [loppupalautuksen ohjeet](/loppupalautus)
 
-### Linkkejä
+## Linkkejä
 
-- [Kurssimateriaali](./web/materiaali.md)
-- Viikoittaiset palautukset
-
-  - viikko 1 [laskarit](./tehtavat/viikko1.md)
-  - viikko 2 [laskarit](./tehtavat/viikko2.md) ja [harjoitustyö](./tehtavat/harjoitustyo_viikko2.md)
-  - viikko 3 [laskarit](./tehtavat/viikko3.md) ja [harjoitustyö](./tehtavat/harjoitustyo_viikko3.md)
-  - viikko 4 [harjoitustyö](./tehtavat/harjoitustyo_viikko4.md)
-  - viikko 5 [harjoitustyö](./tehtavat/harjoitustyo_viikko5.md)
-  - viikko 6 [harjoitustyö](./tehtavat/harjoitustyo_viikko6.md)
-  - viikko 7 [harjoitustyö](./tehtavat/harjoitustyo_viikko7.md)
-
-- Kurssin referenssisovellus [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
-  - Sovelluksen tarkoituksena on demonstroida erästä tapaa tehdä suurin piirtein täysiin pisteisiin riittävä dokumentaatio ja testaus projektillesi. Itse ohjelma on sen verran suppea, että saadaksesi kurssilta arvosanan 5 joudut tekemään hieman laajemman sovelluksen.
-- [Labtool](https://study.cs.helsinki.fi/labtool/courses/TKT20002.2021.K.K.1)
-- Ohjeita
-  - Kaikki ohjeista eivät ole kurssin alussa vielä ajankohtaisia. Kaikkeen tärkeään tulee aikanaan linkki laskareihin tai harjoitustöiden viikkotavoitteisiin
-  - [Aiheideoita ja ohjeita työn harjoitustyön aloittamiseen](./web/tyon_aloitus.md)
-  - [JUnit-ohje](./web/junit.md)
-  - [Käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä](./web/java.md)
-  - [Maven](./web/maven.md)
-  - [Checkstyle](./web/checkstyle.md)
-  - [JavaDoc](./web/javadoc.md)
-  - [koodin laatu](./web/koodin_laatuvaatimukset.md)
-- Työkaluja kaavioiden piirtoon
-  - <http://yuml.me/> luokkakaaviot
-  - <https://www.websequencediagrams.com/> sekvenssikaavioihin
-  - <https://app.diagrams.net/> kaikki kaaviot
+- [Materiaali](/materiaali)
+- [Harjoitustyön ohjeet](/harjoitustyo)
