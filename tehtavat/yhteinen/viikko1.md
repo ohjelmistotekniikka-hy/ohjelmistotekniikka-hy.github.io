@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Viikko 1
-permalink: /java/viikko1
+permalink: /viikko1
 ---
 # Viikon 1 tehtävät
 
