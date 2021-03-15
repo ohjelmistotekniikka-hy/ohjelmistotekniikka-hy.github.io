@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /java/ht-viikko4
+title: Harjoitustyö viikko 4
 ---
-# Harjoitustyö, viikko 4
 
 **Palautuksen deadline {{site.wk4dl}}.**
 

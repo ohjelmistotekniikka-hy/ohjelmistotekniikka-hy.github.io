@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /python/arvosteluperusteet
-title_long: Kurssin suorittaminen ja arvostelu
+title: Kurssin suorittaminen ja arvostelu
 ---
 
 Kurssilla jaossa 60 pistettä. Pisteet jakautuvat seuraavasti

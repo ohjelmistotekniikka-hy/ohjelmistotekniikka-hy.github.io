@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /hyvaksiluku
-title_long: Kurssin hyväksiluku
+title: Kurssin hyväksiluku
 ---
 
 Kurssi on mahdollista _hyväksilukea_, eli ansaita opintopisteet arvosanalla _hyväksytty_. Hyväksiluvun vaatimuksena on ohjelmointiprojektin toteutus ja dokumentointi. Projektin toteutuksessa käytetty ohjelmointikieli on vapaasti valittavissa, kunhan ohjelman suorittamiseen vaadittavat toimenpiteet on dokumentoitu.

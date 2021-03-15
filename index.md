@@ -1,6 +1,6 @@
 ---
 layout: page
-title_long: "Ohjelmistotekniikka, kevät 2021"
+title: "Ohjelmistotekniikka, kevät 2021"
 permalink: /
 ---
 

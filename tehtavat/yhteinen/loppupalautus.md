@@ -1,8 +1,8 @@
 ---
 layout: page
+title: Harjoitustyön loppupalautus
 permalink: /loppupalautus
 ---
-# Harjoitustyö, loppupalautus
 
 **Loppupalautuksen deadline {{ site.finaldl }}. Älä palauta myöhässä, deadline on ehdoton!**
 

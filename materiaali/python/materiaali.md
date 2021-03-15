@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /python/materiaali
-title_long: Materiaali
+title: Materiaali
 ---
 
 {% include materiaali_johdanto.md %}

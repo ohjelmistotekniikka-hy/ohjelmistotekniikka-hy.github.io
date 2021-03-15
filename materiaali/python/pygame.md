@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /python/pygame
-title_long: Pelien toteutus Pygame-kirjastolla
+title: Pelien toteutus Pygame-kirjastolla
 ---
 
 Kuten materiaalissa on jo todettu, sovelluslogiikan ja käyttöliittymän erottaminen toisistaan muodostuu erittäin tärkeäksi ohjelmiston testattavuuden ja laajennettavuuden kannalta. Etenkin pelien kohdalla, on toteutuksessa helppo sortua ajatukseen, että kehitystä kannattaa tehdä käyttöliittymä edellä. Tämä johtaa helposti "spagettikoodiin", jossa käyttöliittymän ja sovelluslogiikan koodi nivoutuvat tiiviisti yhteen siten, että koodin luettavuus ja testattavuus kärsivät.

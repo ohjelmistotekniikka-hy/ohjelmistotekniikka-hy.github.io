@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Viikko 3
+title: Viikon 3 tehtävät
 permalink: /java/viikko3
 ---
-# Viikon 3 laskarit
 
 Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on _tiistaina 06.04. klo 23:59_
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /python/docstring
-title_long: Docstring ja koodin dokumentointi
+title: Docstring ja koodin dokumentointi
 ---
 
 > “Code is more often read than written.”

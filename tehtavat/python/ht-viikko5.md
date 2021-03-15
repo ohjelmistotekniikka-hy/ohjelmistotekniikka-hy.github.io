@@ -1,8 +1,8 @@
 ---
 layout: page
+title: Harjoitustyö viikko 5
 permalink: /python/ht-viikko5
 ---
-# Harjoitustyö, viikko 5
 
 **Palautuksen deadline {{site.wk5dl}}.**
 
@@ -70,7 +70,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
   - Laskarit jätetään hakemiston _laskarit_ alle
   - Järkevä _.gitignore_-tiedosto olemassa
 
-# Issueiden salliminen
+## Issueiden salliminen
 
 Varmista, että palautusrepositorioosi on mahdollista tehdä issueita, eli repositorion _Settings_ näyttää seuraavalta
 

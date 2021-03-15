@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Viikko 2
+title: Viikon 2 tehtävät
 permalink: /java/viikko2
 ---
-
-# Viikon 2 laskarit
 
 Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. **Tehtävien palautuksen deadline on {{site.wk2dl}}.**
 

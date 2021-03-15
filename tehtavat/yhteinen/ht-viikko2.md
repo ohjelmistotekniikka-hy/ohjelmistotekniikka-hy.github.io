@@ -3,7 +3,6 @@ layout: page
 title: Harjoitustyö viikko 2
 permalink: /ht-viikko2
 ---
-# Harjoitustyö, viikko 2
 
 **Palautuksen deadline {{site.wk2dl}}.**
 

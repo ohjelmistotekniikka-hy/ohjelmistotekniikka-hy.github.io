@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Viikko 3
+title: Viikon 3 tehtävät
 permalink: /python/viikko3
 ---
-# Viikon 3 laskarit
 
 Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. **Tehtävien palautuksen deadline on {{site.wk3dl}}.**
 

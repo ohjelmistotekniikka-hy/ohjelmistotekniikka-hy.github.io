@@ -3,7 +3,6 @@ layout: page
 permalink: /java/ht-viikko3
 title: Harjoitustyö viikko 3
 ---
-# Harjoitustyö, viikko 3
 
 **Palautuksen deadline {{site.wk3dl}}.**
 

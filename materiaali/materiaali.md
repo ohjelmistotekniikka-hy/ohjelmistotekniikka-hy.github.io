@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /materiaali
-title_long: Materiaali
+title: Materiaali
 title: Materiaali
 inheader: true
 ---

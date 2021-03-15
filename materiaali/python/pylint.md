@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /python/pylint
-title_long: Pylint ja koodin laaduun staattinen analyysi
+title: Pylint ja koodin laaduun staattinen analyysi
 ---
 
 Koodin testauksen lisäksi koodin luettavuuden ylläpitäminen on tärkeää. Tässä hyvänä apuvälineenä on staattisen analyysin työkalu [pylint](https://www.pylint.org/). Pylintin avulla pystytään määrittelemään joukko sääntöjä, joita koodin tulisi noudattaa, ja automaisoidusti tarkastaa noudatetaanko näitä sääntöjä.

@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /python/toteutus
-title_long: Ohjeita toteutukseen
+title: Ohjeita toteutukseen
 ---
 
 Tähän osioon on koottu vinkkejä, joista on luultavasti hyötyä harjoitustyön toteutuksessa.

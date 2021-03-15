@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /python/harjoitustyon-aloittaminen
-title_long: Aiheen valinta ja harjoitustyön aloittaminen
+title: Aiheen valinta ja harjoitustyön aloittaminen
 ---
 
 Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö. Harjoitustyössä toteutetaan itsenäisesti ohjelmisto omavalintaisesta aiheesta. Tavoitteena on soveltaa ja syventää ohjelmoinnin perus- ja jatkokursseilla opittuja taitoja ja harjoitella tiedon omatoimista etsimistä. Harjoitustyötä tehdään itsenäisesti, mutta tarjolla on runsaasti [pajaohjausta](https://github.com/mluukkai/ohjelmistotekniikka-syksy-2020#ajankohtaista).

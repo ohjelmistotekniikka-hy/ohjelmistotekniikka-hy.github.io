@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /python/unittest
-title_long: Unittest ja testaaminen
+title: Unittest ja testaaminen
 ---
 
 Tutustutaan yksikkötestien tekemiseen [unittest](https://docs.python.org/3/library/unittest.html)-sovelluskehyksen avulla. Yksikkötesteissä testauksen kohteena ovat ohjelman pienimmät rakenneosaset eli yksittäiset funktiot sekä luokkien oliot ja niiden metodit.

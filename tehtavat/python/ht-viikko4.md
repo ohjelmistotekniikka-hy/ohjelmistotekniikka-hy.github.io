@@ -1,8 +1,8 @@
 ---
 layout: page
+title: Harjoitustyö viikko 4
 permalink: /python/ht-viikko4
 ---
-# Harjoitustyö, viikko 4
 
 **Palautuksen deadline {{site.wk4dl}}.**
 

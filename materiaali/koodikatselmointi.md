@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /koodikatselmointi
-title_long: Koodikatselmointi
+title: Koodikatselmointi
 ---
 
 # Koodikatselmointi

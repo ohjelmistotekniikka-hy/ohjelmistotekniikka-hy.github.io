@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /python/tkinter
-title_long: TkInter ja graafisen käyttöliittymän toteutus
+title: TkInter ja graafisen käyttöliittymän toteutus
 ---
 
 Python-sovellusten graafisten käyttöliittymien toteutuksessa on jo standardiksi muodostonut [TkInter](https://wiki.python.org/moin/TkInter)-kirjaston käyttö. Tutustutaan tässä osiossa, miten sen avulla voi toteuttaa graafisia käyttöliittymiä.

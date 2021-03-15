@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /release
-title_long: GitHub-release
+title: GitHub-release
 ---
 
 Eräs tapa julkaista ohjelmasta stabiili versio on tehdä GitHubiin release, eli julkaistu versio:

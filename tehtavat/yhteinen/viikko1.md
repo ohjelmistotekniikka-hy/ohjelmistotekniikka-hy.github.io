@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Viikko 1
+title: Viikon 1 tehtävät
 permalink: /viikko1
 ---
-# Viikon 1 tehtävät
 
 Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. **Tehtävien palautuksen deadline on {{site.wk1dl}}.**
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /harjoitustyo
-title_long: Harjoitustyö
+title: Harjoitustyö
 title: Harjoitustyö
 inheader: true
 ---

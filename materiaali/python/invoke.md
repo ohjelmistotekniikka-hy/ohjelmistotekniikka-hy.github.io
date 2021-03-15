@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /python/invoke
-title_long: Tehtävien suorittaminen ja Invoke
+title: Tehtävien suorittaminen ja Invoke
 ---
 
 Laajemmissa ohjelmistoprojekteissa on useimmiten monia erilaisia _tehtäviä_, joita suoritetaan komentoriviltä annettavien komentojen muodossa. Luultavasti tärkein näistä tehtävistä on sovelluksen käynnistäminen, joka saattaa tapahtua esimerkiksi komennolla `python3 src/index.py`.

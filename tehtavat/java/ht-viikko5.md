@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /java/ht-viikko5
+title: Harjoitustyö viikko 5
 ---
-# Harjoitustyö, viikko 5
 
 **Palautuksen deadline {{site.wk5dl}}.**
 
@@ -68,7 +68,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - laskarit jätetään hakemiston _laskarit_ alle
   - järkevä .gitignore-tiedosto olemassa
 
-# Issueiden salliminen
+## Issueiden salliminen
 
 Varmista, että palautusrepositorioosi on mahdollista tehdä issueita, eli repositorion _Settings_ näyttää seuraavalta
 
