@@ -18,13 +18,13 @@ Jos haluat hyväksilukea kurssin, ota sähköpostilla yhteyttä kurssin vastuuop
 
 ### Koodin laatu
 
-- Sovelluksen koodin tulee noudattaa kurssilla määriteltyjä [laatuvaatimuksia](./koodin-laatuvaatimukset.md). Laatuvaatimuksia saattaa joutua soveltamaan ohjelmointikielestä riippuen
-- Sovelluksen koodin tulee olla suurimmilta osin kommenttien avulla dokumentoituta ohjelmointikielen standardien mukaisesti (esim. Pythonin [Docstring](./docstring.md)). Tämä tarkoittaa mm. luokkien, metodien ja funktioiden dokumentointia
+- Sovelluksen koodin tulee noudattaa kurssilla määriteltyjä [laatuvaatimuksia](/python/koodin-laatuvaatimukset). Laatuvaatimuksia saattaa joutua soveltamaan ohjelmointikielestä riippuen
+- Sovelluksen koodin tulee olla suurimmilta osin kommenttien avulla dokumentoituta ohjelmointikielen standardien mukaisesti (esim. Pythonin [Docstring](/python/docstring)). Tämä tarkoittaa mm. luokkien, metodien ja funktioiden dokumentointia
 
 ### Versionhallinta ja repositorio
 
 - Projektin lähdekoodin tulee olla GitHub-repositoriossa. Repositorio voi olla julkinen ja yksityinen. Jos repositorio on yksityinen, lisää sen kollaboraattoreiksi käyttäjät [Kaltsoon](https://github.com/Kaltsoon) ja [mluukkai](https://github.com/mluukkai)
-- Luo sovelluksesta [GitHub release](./release.md). Kerro repositorion `README.md`-tiedossa, mikä release pitää ladata ja miten se suoritetaan
+- Luo sovelluksesta [GitHub release](/release). Kerro repositorion `README.md`-tiedossa, mikä release pitää ladata ja miten se suoritetaan
 - Lisää repositorioon `README.md`-tiedosto, joka on suurin piirtein kurssin [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app) mukainen. Mukana tulee olla vähintään seuraavat asiat:
   - Lyhyt kuvaus projektista
   - Linkit dokumentaatioon

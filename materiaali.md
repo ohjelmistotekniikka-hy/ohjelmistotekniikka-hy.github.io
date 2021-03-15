@@ -31,4 +31,4 @@ Kurssin materiaalista on tarjolla sekä Python-, että Java-kielen versiot. Tä�
 - [Maven ja riippuvuuksien hallinta](/java/maven)
 - [JUnit ja testaaminen](/java/junit)
 - [Checkstyle ja koodin laaduun staattinen analyysi](/java/checkstyle)
-- [JavaDoc ja koodin dokumentointi](/java/docstring)
+- [JavaDoc ja koodin dokumentointi](/java/javadoc)
