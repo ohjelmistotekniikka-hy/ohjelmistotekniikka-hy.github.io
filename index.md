@@ -22,7 +22,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 ### Kieli
 
-Voit tehdä kurssin Javalla tai Pythonilla. Tämä on molempien kielten kurssisivu.
+Voit suorittaa kurssin Javalla tai Pythonilla. Tämä on molempien kielten kurssisivu.
 
 {% include ajankohtaista.md %}
 
@@ -36,7 +36,7 @@ Palautuksen deadline ti {{ site.wk1dl }}. klo 23:59
 
 - Tiistaina 16.03. klo 12-14 aloitustilaisuus [tallenne](https://youtu.be/JaM4hbns2P8)
 - Komentorivi- ja Git-harjoittelu (2p)
-  - Pajassa tehtävät tai omatoimiset tehtävät [Java](/java/viikko1) [Python](/python/viikko1)
+  - Pajassa tehtävät tai omatoimiset [tehtävät](/viikko1)
 - Tehtävien palautus tapahtuu tekemällä repositorio githubiin ja rekisteröitymällä labtooliin
 
 #### viikko 2

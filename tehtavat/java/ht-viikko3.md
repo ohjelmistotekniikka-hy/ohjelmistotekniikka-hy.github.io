@@ -13,7 +13,7 @@ Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadline
 
 **HUOM! Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen koneella ja ohjaajien pitää pystyä se niiltä aukaisemaan!!** Voit testata tätä esim. [virtuaalityöasemassa](https://vdi.helsinki.fi).
 
-**HUOM! Ainoa sallittu kieli on Java 11.** Ohjeet sen asentamiseen ovat [täällä](https://www.mooc.fi/fi/installation/netbeans).
+Kurssilla käytetään Javan versiota 11. Ohjeet sen asentamiseen ovat [täällä](https://www.mooc.fi/fi/installation/netbeans).
 
 Palautuksesta on tarjolla 2 kurssipistettä.
 
