@@ -54,7 +54,7 @@ Palautuksen deadline ti {{ site.wk2dl }}. klo 23:59
 Palautuksen deadline ti {{ site.wk3dl }}. klo 23:59
 
 - Harjoitustyön koodin runko valmiina (2p)
-  - katso tarkemmin [täältä](/tehtavat/harjoitustyo_viikko3.md)
+  - katso tarkemmin [Java](/java/ht-viikko3) [Python](/python/ht-viikko3)
 - Pajassa tehtävät tai omatoimiset tehtävät luokka- ja sekvenssikaaviosta [Java](/java/viikko3) [Python](/python/viikko3) (1p)
 
 #### viikko 4
