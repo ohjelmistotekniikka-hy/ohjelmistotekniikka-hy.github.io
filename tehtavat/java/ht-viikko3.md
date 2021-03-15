@@ -21,15 +21,15 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 
 - Repositorion juuresta löytyy Maven-projekti
   - [ohje](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/tyon_aloitus.md#harjoitusty%C3%B6n-aloitus) projektin luomiseen ja sen sijoittamiseen palautusrepositorioon
-- Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla _tai/ja_ komennolla <code>mvn compile exec:java -Dexec.mainClass=pakkaus.Paaohjelma</code>
+- Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla _tai/ja_ komennolla ```mvn compile exec:java -Dexec.mainClass=pakkaus.Paaohjelma```
   - komennon parametrina on metodin _main_ sisältävän luokan täydellinen, eli myös pakkauksen sisältävä, nimi
-  - [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) tapauksessa parametri olisi <code>-Dexec.mainClass=todoapp.ui.TodoUi</code>
+  - [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) tapauksessa parametri olisi ```-Dexec.mainClass=todoapp.ui.TodoUi```
 - Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta
   - pelkät getterietä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
-- Sovelluksella on oltava _vähintään yksi testi_ jonka voi suorittaa komennolla <code>mvn test</code>
+- Sovelluksella on oltava _vähintään yksi testi_ jonka voi suorittaa komennolla ```mvn test```
   - Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa
   - Testin tulee mennä läpi
-- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla <code>mvn test jacoco:report</code>
+- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla ```mvn test jacoco:report```
 - Tuntikirjanpito on ajantasalla
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
 - Repositorion README.md kunnossa

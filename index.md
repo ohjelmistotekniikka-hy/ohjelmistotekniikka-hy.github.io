@@ -66,7 +66,7 @@ Palautuksen deadline ti {{ site.wk4dl }}. klo 23:59
   - Testien aloitus
   - Alustava rakenne luokkakaaviona
   - Checkstyle/Pylint otettu käyttöön
-- Tarkemmat ohjeet [täältä](/tehtavat/harjoitustyo_viikko4.md)
+- Tarkemmat ohjeet [Java](/java/ht-viikko4) [Python](/python/ht-viikko4)
 
 #### viikko 5
 
@@ -76,7 +76,7 @@ Palautuksen deadline ti {{ site.wk5dl }}. klo 23:59
   - Release 1
   - Testikattavuus nousee
   - Jotain päätoiminnallisuutta kuvaava sekvenssikaavio
-- Tarkemmat ohjeet [täältä](/tehtavat/harjoitustyo_viikko5.md)
+- Tarkemmat ohjeet [Java](/java/ht-viikko5) [Python](/python/ht-viikko5)
 - Koodikatselmointi (2p)
   - [Koodikatselmointi](/web/koodikatselmointi.md)
 
@@ -87,9 +87,9 @@ Palautuksen deadline ti {{ site.wk6dl }}. klo 23:59
 - Harjoitustyö (3p)
   - Release 2
   - Testikattavuus nousee
-  - JavaDoc aloitettu
+  - JavaDoc/Docstring aloitettu
   - Alustava versio arkkitehtuuridokumentista
-- Tarkemmat ohjeet [täältä](/tehtavat/harjoitustyo_viikko6.md)
+- Tarkemmat ohjeet [Java](/java/ht-viikko6) [Python](/python/ht-viikko6)
 
 #### viikko 7
 
