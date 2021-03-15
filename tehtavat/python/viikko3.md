@@ -17,11 +17,11 @@ Tee palautuksia varten repositorion sisällä olevaan hakemistoon _laskarit_ uus
 
 Viikon palautuksista on tarjolla yksi kurssipiste. Pisteytys arvioidaan palautuksen laadun perusteella.
 
-Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteita](./harjoitustyo_viikko3.md)
+Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteita](/python/ht-viikko3)
 
 ## Luokkakaaviot
 
-Kertaa luokkakaavioihin liittyvät asiat [kurssimateriaalista](../materiaali/materiaali.md#luokkakaaviot).
+Kertaa luokkakaavioihin liittyvät asiat [kurssimateriaalista](/python/materiaali#luokkakaaviot).
 
 Luokkakaavioiden piirtoon helpoin työkalu on <http://yuml.me/>, jos haluat ammattimaisempaa jälkeä on <https://draw.io/> hyvä (tätä tehtävää varten se ei kuitenkaan liene vaivan arvoista). Myös valokuva käsin piirretyistä kaavioista riittää.
 
@@ -59,7 +59,7 @@ Normaaleille kaduille voi rakentaa korkeintaan 4 taloa tai yhden hotellin. Kadun
 
 ## Sekvenssikaaviot
 
-Kertaa sekvenssikaavioihin liittyvät asiat [kurssimateriaalista](../materiaali/materiaali.md#sekvenssikaaviot).
+Kertaa sekvenssikaavioihin liittyvät asiat [kurssimateriaalista](/python/materiaali#sekvenssikaaviot).
 
 Sekvenssikaavioiden piirtoon paras työkalu lienee <https://www.websequencediagrams.com/>. Myös valokuva käsin piirretyistä kaavioista riittää.
 
