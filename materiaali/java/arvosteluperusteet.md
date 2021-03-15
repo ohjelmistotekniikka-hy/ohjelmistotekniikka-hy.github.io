@@ -42,11 +42,11 @@ Pisteet (yht 24) jakautuvat seuraavasti
 - Sovelluslogiikan kompleksisuus 3p
 - Ohjelman laajuus 4p
 - Ulkoisten kirjastojen hyödyntäminen 1p
-  - ks [Ulkoiset kirjastot Mavenin avulla](./maven.md#ulkoisten-kirjastojen-k%C3%A4ytt%C3%A4minen-mavenin-avulla)
+  - ks [Ulkoiset kirjastot Mavenin avulla](/java/maven.md#ulkoisten-kirjastojen-k%C3%A4ytt%C3%A4minen-mavenin-avulla)
 - Suorituskelpoinen jar-tiedosto 1p
   - Tiedosto generoitavissa tai löytyy repositoriosta _loppupalautus_-nimisestä releasesta
 - Koodin laatu 4+1p
-  - Kooste [laatuvaatimuksista](./koodin_laatuvaatimukset.md)
+  - Kooste [laatuvaatimuksista](/java/koodin_laatuvaatimukset.md)
   - 4p hyvät abstraktiot (esim. Design patternien kuten DAO hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava, ei ilmeistä copypastea
   - +1p checkstylesäännöt kunnossa (muutama checkstyletyylin rikkomus saatetaan katsoa läpi sormien, jos tyylirikon poisto esim. huonontaisi muuten koodin laatua)
 - virheiden käsittely 2p
@@ -64,7 +64,7 @@ Pisteet (yht 24) jakautuvat seuraavasti
   - Sovelluksen käyttämän tietokantatiedoston nimi ei ole kirjoitettu koodiin vaan on käyttäjän määriteltävissä
   - Pelissä eri vaikueustasojen pelimaailmat eivät ole määritelty koodissa vaan luodaan erillisten tiedostojen perusteella
   - Pacmanissa hirviöiden määrä ei ole ohjelmakoodiin kovakoodattu vakio vaan valittavissa käyttöliittymästä
-  - Konfiguroitavuus voidaan toteuttaa joko käyttöliittymän tai [konfiguraatiotiedostojen](./java.md#sovelluksen-konfiguraatiot) avulla
+  - Konfiguroitavuus voidaan toteuttaa joko käyttöliittymän tai [konfiguraatiotiedostojen](/java/java#sovelluksen-konfiguraatiot) avulla
 
 ## Testauksesta annettavat pisteet
 

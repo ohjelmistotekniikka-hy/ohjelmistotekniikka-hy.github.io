@@ -4,7 +4,7 @@ permalink: /java/checkstyle
 title: Checkstyle
 ---
 
-Koodin testauksen lisäksi koodin luettavuuden ylläpitäminen on tärkeää. Tässä hyvänä apuvälineenä on staattisen analyysin työkalu Checkstyle. ks. [http://checkstyle.sourceforge.net/](http://checkstyle.sourceforge.net/). Kurssilla käytetään _Ohjelmoinnin Perusteista_ ja _Ohjelmoinnin Jatkokurssista_ tuttua checkstyleä, [koodin laatuvaatimuksien](koodin_laatuvaatimukset.md) seurannassa.
+Koodin testauksen lisäksi koodin luettavuuden ylläpitäminen on tärkeää. Tässä hyvänä apuvälineenä on staattisen analyysin työkalu Checkstyle. ks. [http://checkstyle.sourceforge.net/](http://checkstyle.sourceforge.net/). Kurssilla käytetään _Ohjelmoinnin Perusteista_ ja _Ohjelmoinnin Jatkokurssista_ tuttua checkstyleä, [koodin laatuvaatimuksien](/java/koodin-laatuvaatimukset) seurannassa.
 
 > Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. It automates the process of checking Java code to spare humans of this boring (but important) task. This makes it ideal for projects that want to enforce a coding standard.
 
@@ -133,7 +133,7 @@ Avaa tiedosto ja korvaa tiedoston sisältö seuraavalla:
 
 Voit suorittaa Checkstylen komentoriviltä komennolla <code>mvn jxr:jxr checkstyle:checkstyle</code>
 
-Muista, että maven-komentoja on mahdollista suorittaa myös suoraan [NetBeansista](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/tehtavat/viikko2.md#maven-komentojen-suorittaminen-netbeansista).
+Muista, että maven-komentoja on mahdollista suorittaa myös suoraan [NetBeansista](/java/viikko2#maven-komentojen-suorittaminen-netbeansista).
 
 Generoituasi Checkstyle-raportin löydät sen polusta **/target/site/checkstyle.html**.
 

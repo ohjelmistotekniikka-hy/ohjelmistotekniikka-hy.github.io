@@ -8,7 +8,7 @@ Tähän osioon on koottu vinkkejä, joista on luultavasti hyötyä harjoitustyö
 
 ## Sovelluksen käyttöliittymä
 
-Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän tekemättömyys saattaa [vaikuttaa arvosanaan](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/arvosteluperusteet.md).
+Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän tekemättömyys saattaa [vaikuttaa arvosanaan](/java/arvosteluperusteet).
 
 Pääasia on joka tapauksessa, että pyrit _eriyttämään mahdollisimman hyvin sovelluslogiikan käyttöliittymästä_. Käyttöliittymän roolin tulee siis olla ainoastaan käyttäjän kanssa tapahtuva interaktio, varsinaisen logiikan tulee tapahtua muissa oliossa.
 
@@ -181,7 +181,7 @@ public class Paaohjelma {
 
 Ero on hyvin pieni, nyt sovelluslogiikasta huolehtiva _NumeroJaOsoitepalvelu_-olio luodaan pääohjelmassa ja annetaan käyttöliittymänä toimivalle _Numerotiedustelu_-oliolle konstruktorin parametrina.
 
-Tästä tekniikasta käytetään nimitystä [riippuvuuden injektointi](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/materiaali.md#riippuvuuksien-injektointi), sillä _NumeroJaOsoitepalvelu_-olio on _Numerotiedustelu_-olion riippuvuus, joka tässä myöhemmässä versiossa injetoidaan konstruktoriparametrin avulla riippuvuutta tarvitsevalle oliolle. Aiemmassa versiossahan numerotiedustelu loi riippuvuuden itse.
+Tästä tekniikasta käytetään nimitystä [riippuvuuden injektointi](/java/materiaali#riippuvuuksien-injektointi), sillä _NumeroJaOsoitepalvelu_-olio on _Numerotiedustelu_-olion riippuvuus, joka tässä myöhemmässä versiossa injetoidaan konstruktoriparametrin avulla riippuvuutta tarvitsevalle oliolle. Aiemmassa versiossahan numerotiedustelu loi riippuvuuden itse.
 
 Riippuvuuksien injektoinnista on monia etuja, eräs näistä on laajennettavuus.
 
@@ -243,7 +243,7 @@ Myös graafista käyttöliittymää käytettäessä tulee periaatteen olla se, e
 
 Mallia voi ottaa esimerkiksi kurssin referenssisovelluksen [TodoApp:in](https://github.com/mluukkai/OtmTodoApp/) koodista ja [arkkitehtuurikuvauksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md).
 
-Java FX aiheuttaa nykyään päänvaivaa konfiguraatioiden suhteen. Enemmän asiasta [täällä](maven.md#javafx)
+Java FX aiheuttaa nykyään päänvaivaa konfiguraatioiden suhteen. Enemmän asiasta [täällä](/maven#javafx)
 
 ### Sovelluksen alustaminen ja sulkeminen
 
@@ -450,7 +450,7 @@ Kurssin referenssisovelluksen [FXML](https://github.com/mluukkai/FxmlTodoApp)-ve
 
 Ohjelmoinnin jatkokurssilla tehdään JavaFX:n ainoastaan matala pintaraapaisu, jatkokurssin materiaali kannattaa kuitenkin ehdottomasti kerrata jos olet aikeissa käyttää JavaFX:ää.
 
-Jos käyttöliittymäsi on vähänkin epätriviaali, joudut suurella todennäköisyydellä etsimään itse lisää tietoa. Omatoimisen tiedonhaun harjoittelu onkin tämän kurssin eräs tärkeimmistä oppimistavoitteista. Seuraavassa muutamia linkkejä auttamaan alkuunpääsemistä. Jos löydät internetistä hyvää materiaalia, tee sivulle [pull request](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/materiaali.md#kirjoitusvirheitä-materiaalissa)
+Jos käyttöliittymäsi on vähänkin epätriviaali, joudut suurella todennäköisyydellä etsimään itse lisää tietoa. Omatoimisen tiedonhaun harjoittelu onkin tämän kurssin eräs tärkeimmistä oppimistavoitteista. Seuraavassa muutamia linkkejä auttamaan alkuunpääsemistä. Jos löydät internetistä hyvää materiaalia, tee sivulle [pull request](/korjausehdotus)
 
 - [Getting started](https://docs.oracle.com/javase/8/javafx/get-started-tutorial/index.html)
 - [API](https://docs.oracle.com/javase/8/javafx/api/toc.htm)
@@ -470,7 +470,7 @@ Youtubesta löytyy runsaasti vaihtelevanlaatuisia videoita aihepiiristä. Hyväk
 
 ## Tietojen talletus
 
-Arvosteluperusteet [kannustavat](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/arvosteluperusteet.md) siihen, että ohjelmasi käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille [Tietokantasovellus](https://courses.helsinki.fi/fi/tkt20011).
+Arvosteluperusteet [kannustavat](/java/arvosteluperusteet) siihen, että ohjelmasi käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille [Tietokantasovellus](https://courses.helsinki.fi/fi/tkt20011).
 
 ### DAO-suunnittelumalli
 

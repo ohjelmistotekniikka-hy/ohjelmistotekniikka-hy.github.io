@@ -6,7 +6,7 @@ title: Ohjeita Maveniin
 
 ## Projektin luominen
 
-Ohje maven-muotoisen projektin luomiseen NetBeansilla [täällä](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/tyon_aloitus.md#maven-projektin-luominen)
+Ohje maven-muotoisen projektin luomiseen NetBeansilla [täällä](/java/harjoitustyon-aloittaminen#maven-projektin-luominen)
 
 Vaikka käyttäisit JavaFX:ää, kannattaa projektia varten silti luoda ohjeen mukaan "normaali" maven-projekti.
 
@@ -52,7 +52,7 @@ Voit nyt suorittaa testauskattavuuden mittaamisen komennolla
 mvn test jacoco:report
 ```
 
-Katso lisää [viikon 2 laskareista](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/tehtavat/viikko2.md#3-testauskattavuus).
+Katso lisää [viikon 2 laskareista](/java/viikko2#3-testauskattavuus).
 
 ### Koodin huomiotta jättäminen kattavuusraportissa
 
@@ -93,7 +93,7 @@ Excludesin alle voi lisätä tarvittaessa myös useampia excludeja. Lisää tiet
 
 ## Maven-komentojen suorittaminen NetBeansista
 
-Ohje [täällä](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/tehtavat/viikko2.md#maven-komentojen-suorittaminen-netbeansista).
+Ohje [täällä](/java/viikko2#maven-komentojen-suorittaminen-netbeansista).
 
 ## Ulkoisten kirjastojen käyttäminen Mavenin avulla
 
@@ -155,11 +155,11 @@ Apache Commonsissa olevat kirjastot ovat varsin hyvin dokumentoituja. Jos ja kun
 
 ## Checkstyle
 
-Katso lisää [täältä](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/main/web/checkstyle.md)
+Katso lisää [täältä](/java/checkstyle)
 
 ## JavaDoc
 
-Katso lisää [täältä](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/javadoc.md)
+Katso lisää [täältä](/java/javadoc)
 
 ## JavaFX
 
@@ -190,7 +190,7 @@ Näet konfiguraation kokonaisuudessaan kurssin [esimerkkisovelluksesta](https://
 
 Käyttäessäsi Javan versiota 8, mavenin lisäkonfiguraatiota ei tarvita. Tosin ainakin laitoksen cubbli-Linuxeilla sovellus näyttää toimivan samoilla konfiguraatioilla myös käyttäessäsi Javan versiota 8.
 
-JavaFX aiheuttaa hankaluuksia myös seuraavassa luvussa esitettyyn jar-tiedostojen generointiin, eräs tapa ongelmien kiertämiseen on kerrottu sitä seuraavassa luvussa [täällä](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/maven.md#javafx-ja-jar).
+JavaFX aiheuttaa hankaluuksia myös seuraavassa luvussa esitettyyn jar-tiedostojen generointiin, eräs tapa ongelmien kiertämiseen on kerrottu sitä seuraavassa luvussa [täällä](/java/maven.md#javafx-ja-jar).
 
 ### Ongelmia javaFX kanssa
 

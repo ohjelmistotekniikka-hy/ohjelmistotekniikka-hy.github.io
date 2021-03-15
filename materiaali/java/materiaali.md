@@ -26,14 +26,14 @@ Alamme tämän kurssin myötä hieman tutkimaan, miten Javalla tehdyn ohjelmisto
 
 Java-projektien hallinnointiin on olemassa muutamakin vaihtoehto. Käytämme tällä kurssilla _mavenia_, joka lienee jo useimmille osittain tuttu esim. Tietokantojen perusteista.
 
-[Ohje](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/maven.md)
+[Ohje](/java/maven)
 Mavenin käytön aloittamiseen.
 
 ## JUnit
 
 Ohjelmistojen testaus tapahtuu nykyään ainakin yksikkö- ja integraatiotestien osalta automatisoitujen testityökalujen toimesta. Java-maailmassa testausta dominoi lähes yksinvaltiaan tavoin JUnit. Tulet kurssin ja myöhempienkin opintojesi aikana kirjoittamaan paljon JUnit-testejä.
 
-JUnitiin tutustumme viikon 2 [tehtävissä](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/tehtavat/viikko2.md).
+JUnitiin tutustumme viikon 2 [tehtävissä](/java/viikko2).
 
 ## JavaDoc
 
@@ -55,7 +55,7 @@ Käytämme kurssilla tarkoitukseen [Checkstyle](http://checkstyle.sourceforge.ne
 
 > Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. It automates the process of checking Java code to spare humans of this boring (but important) task. This makes it ideal for projects that want to enforce a coding standard.
 
-[Ohje](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/checkstyle.md) checkstylen konfiguroimiseen.
+[Ohje](/java/checkstyle) checkstylen konfiguroimiseen.
 
 ## UML
 
@@ -632,4 +632,4 @@ Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/mlu
 
 # Ohjelmiston toteutus
 
-Muutamia käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä on koottu [tänne](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/java.md)
+Muutamia käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä on koottu [tänne](/java/java)
