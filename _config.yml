@@ -1,9 +1,9 @@
 email: matti.luukkainen@helsinki.fi
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://leovaris.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ohjelmistotekniikka-hy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mluukkai
-repo_url: "https://github.com/LeoVaris/LeoVaris.github.io"
+repo_url: "https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io"
 repo_branch: "master"
 stats_url: "https://study.cs.helsinki.fi/stats/courses/ohtu2020"
 
