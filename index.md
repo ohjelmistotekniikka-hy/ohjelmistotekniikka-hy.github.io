@@ -1,9 +1,7 @@
 ---
 layout: page
-title: "Ohjelmistotekniikka, kevät 2021"
 permalink: /
 ---
-
 
 _Kurssin nimi on muuttunut syksyllä 2018, tätä aiemmin kurssi tunnettiin nimellä Ohjelmistotekniikan menetelmät_
 
