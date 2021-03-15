@@ -4,7 +4,7 @@ permalink: /korjausehdotus
 title: Kirjoiturvirheiden korjaaminen
 ---
 
-Jos huomaat kurssimateriaalissa kirjoitusvirheitä, kirjaudu GitHubiin, paina sivulla olevaa kynä-symbolia:
+Jos huomaat kurssimateriaalissa kirjoitusvirheitä, löydät linkin korjausehdotuksen tekemiseen sivun alalaidasta. Klikkaa linkkiä, kirjaudu GitHubiin ja paina sivulla olevaa kynä-symbolia:
 
 ![](https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/l-0.png)
 
@@ -12,7 +12,7 @@ Korjaa virhe ja ehdota muutosta (nappi sivun alalaidassa):
 
 ![](https://github.com/mluukkai/ohtu2017/raw/master/images/lh3-4.png)
 
-Luo pullrequest:
+Luo pull request:
 
 ![](https://github.com/mluukkai/ohtu2017/raw/master/images/lh3-5.png)
 
