@@ -95,7 +95,7 @@ Palautuksen deadline ti {{ site.wk6dl }}. klo 23:59
 
 Lopullisen palautuksen deadline su {{ site.finaldl }}. klo 23:59
 
-- [loppupalautuksen ohjeet](/tehtavat/harjoitustyo_viikko7.md)
+- [loppupalautuksen ohjeet](/loppupalautus)
 
 ### Linkkejä
 
