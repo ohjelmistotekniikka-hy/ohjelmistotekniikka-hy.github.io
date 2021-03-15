@@ -1,4 +1,8 @@
-# Kirjoitusvirheitä
+---
+layout: page
+permalink: /kirjoitusvirheiden-korjaaminen
+title_long: Kirjoiturvirheiden korjaaminen
+---
 
 Jos huomaat kurssimateriaalissa kirjoitusvirheitä, kirjaudu GitHubiin, paina sivulla olevaa kynä-symbolia:
 
