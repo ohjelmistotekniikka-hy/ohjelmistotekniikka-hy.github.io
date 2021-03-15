@@ -1,5 +1,6 @@
 ## Ajankohtaista
 
+- Kurssimateriaali on yhdistetty vanhoista repoista yhteiseen uuteen sivuun. Erityisesti linkit ovat saattaneet mennä rikki, joten voit ilmoittaa asiasta Telegramissa kurssikanavalla tai laittamalla viestin käyttäjälle _leovaris_ tai _kalleilv_.
 - Kurssin ainoa luento ti 16.3. klo 12-14 etänä {{ site.lecture_link }}
   - luento tallennetaan, linkki tulee tänne myöhemmn
 - Kurssin Telegram-kanava: [https://t.me/tktlotm](https://t.me/tktlotm)
