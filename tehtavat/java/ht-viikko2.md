@@ -47,4 +47,6 @@ Pidä säännöllisesti kirjaa käyttämistäsi työtunneista. Käytettyjen työ
 
 Lisää repositorion README.md-tiedostoon linkki [työaikakirjanpitoon](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/tuntikirjanpito.md).
 
+{% include harjoitustyon_toimivuus.md %}
+
 {% include ala_plagioi.md %}
