@@ -20,6 +20,10 @@ wk5dl: "20.04"
 wk6dl: "27.04"
 finaldl: "09.05"
 
+# referenssi-sovellusten linkit
+python_reference_app_url: "https://github.com/ohjelmistotekniikka-hy/python-todo-app"
+java_reference_app_url: "https://github.com/mluukkai/OtmTodoApp"
+
 # Build settings
 markdown: kramdown
 theme: minima
