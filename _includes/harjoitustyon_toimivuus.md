@@ -1,4 +1,4 @@
-### Harjoitustyön toimivuus
+## Harjoitustyön toimivuus
 
 - Kurssilla käytetään Javan versiota 11 ja Pythonilla version tulee olla vähintään 3.6
 
