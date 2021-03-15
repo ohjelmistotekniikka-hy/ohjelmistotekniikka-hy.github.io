@@ -19,6 +19,11 @@ wk5dl: "20.04"
 wk6dl: "27.04"
 finaldl: "09.05"
 
+# seuraava kurssikerta muodossa syksyllä/keväällä [vuosi]. 
+# esimerkki syksyllä 2021
+# käytetään muun muassa "ei voi jatkaa seuraavalla kurssilla (syksyllä 2021)"
+next_course: "syksyllä 2021"
+
 labtool_link: "https://study.cs.helsinki.fi/labtool/courses/TKT20002.2021.K.K.1"
 
 # referenssi-sovellusten linkit
