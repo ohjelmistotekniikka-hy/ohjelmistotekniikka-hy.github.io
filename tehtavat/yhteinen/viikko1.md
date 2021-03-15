@@ -85,7 +85,7 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 - Ja luomallesi hakemistolle alihakemisto _viikko1_
 - Mene kotihakemistoosi ja luo sen alle hakemisto _temp_
 - Mene hakemistoon _temp_
-- Hae osoitteessa _https://raw.githubusercontent.com/ohjelmistotekniikka-hy/python-materiaali/master/misc/unicafe.zip_ oleva tiedosto [wget](https://en.wikipedia.org/wiki/Wget)-ohjelmalla
+- Hae osoitteessa _https://raw.githubusercontent.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/master/tehtavat/python/unicafe.zip_ oleva tiedosto [wget](https://en.wikipedia.org/wiki/Wget)-ohjelmalla
   - Wget toimii siten, että sille annetaan ladattava tiedosto parametriksi
 - Haettu tiedosto on _zip-paketti_, pura se _unzip_-ohjelmalla
   - Myös unzip toimii siten, että sille annetaan purettava tiedosto parametriksi
