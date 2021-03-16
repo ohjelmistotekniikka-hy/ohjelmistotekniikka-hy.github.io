@@ -20,7 +20,7 @@ Mikään ei tietenkään estä sitä, että aloitat jo ohjelmoinnin tai vaikkapa
 
 **HUOM** jos aloitat jo ohjelmoinnin, muista että ohjelmakoodi tulee kirjoittaa englanniksi! Ohjelman käyttöliittymä ja dokumentaatio voivat olla suomeksi tai englanniksi. 
 
-Palautus tapahtuu lisäämällä oman aiheen _alustava määrittelydokumentti_ ensimmäisen viikon [laskareiden](/viikko1.md#labtool) päätteeksi [labtooliin]({{ site.labtool_link }}) rekisteröimääsi palautusrepositorioon.
+Palautus tapahtuu lisäämällä oman aiheen _alustava määrittelydokumentti_ ensimmäisen viikon [laskareiden](/viikko1#labtool) päätteeksi [labtooliin]({{ site.labtool_link }}) rekisteröimääsi palautusrepositorioon.
 
 Määrittelydokumentti tehdään samaan tapaan kuin [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/vaatimusmaarittely.md) eli [markdown](https://guides.github.com/features/mastering-markdown/)-muodossa, sijoitetaan repositorion hakemistoon _dokumentaatio_ ja siihen tulee olla linkki repositorion README.md:stä.
 
