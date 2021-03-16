@@ -485,7 +485,7 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 - poista tiedosto _file1_ ja uudelleennimeä tiedosto _file2_ tiedostoksi _file22_
 - committoi
 
-Suorita repositoriossa komento _git log --stat | cat_ ja **ota komennon tulos talteen**, tulet tarvitsemaan sitä myöhemmin!
+Suorita repositoriossa komento ```git log --stat | cat``` ja **ota komennon tulos talteen**, tulet tarvitsemaan sitä myöhemmin!
 
 ## GitHub
 
@@ -600,7 +600,7 @@ Branch master set up to track remote branch master from origin.
   - ja sen sisälle hakemisto _viikko1_
   - Komentorivitehtävien lopussa oli kehotus: Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. _Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
   - Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _komentorivi.txt_ ja kopioi sinne komennon _tree_ tulos
-  - Edellisen tehtäväsarjan lopussa kehoitettiin tallentamaan harjoitusrepositoriossa annetun komennon _git log --stat | cat_ tulos
+  - Edellisen tehtäväsarjan lopussa kehoitettiin tallentamaan harjoitusrepositoriossa annetun komennon ```git log --stat | cat``` tulos
   - Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _gitlog.txt_ ja kopioi sinne githarjoittelun tulos
 - Kirjoita jotain tekstiä hakemiston juuressa olevaan tiedostoon README.md
   - muotoile tekstisi [markdown-notaatiota](https://guides.github.com/features/mastering-markdown/) käyttäen
