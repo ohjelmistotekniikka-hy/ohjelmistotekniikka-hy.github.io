@@ -1,3 +1,2 @@
-- ma 14-16  [zoom](https://helsinki.zoom.us/j/68570587158?pwd=TFhwUXBucExZeVNJZnRydE8yWkNFdz09)
-- ti 14-16  [zoom]() (alkaen 23.3.)
-- to 13-15  [zoom]()
+{% for time in site.times %}
+- {{ time.time }}{% endfor %}
