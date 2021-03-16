@@ -1,3 +1,3 @@
-- ma 14-16  [zoom]()
+- ma 14-16  [zoom](https://helsinki.zoom.us/j/68570587158?pwd=TFhwUXBucExZeVNJZnRydE8yWkNFdz09)
 - ti 14-16  [zoom]()
 - to 13-15  [zoom]()
