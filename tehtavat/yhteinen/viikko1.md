@@ -356,13 +356,13 @@ Muista käyttää komentoa _git status_ mahdollisimman usein. Älä myöskään 
 
 Gitin committeja voi tarkastella myös graafisella _gitk_-komennolla (OSX:lle ja Windowsille vastaava työkalu on [Sourcetree](https://www.sourcetreeapp.com)). Suorita komento repositoriossa:
 
-![]({{ "/images/lh3-1.png" | absolute_url }})
+![]({{ "/assets/images/lh3-1.png" | absolute_url }})
 
 Vasemmalla yläkulmassa näet kaikki commitit. Uusin tilanne ylimpänä. Uusimman commitin nimi on _master_. Klikkaamalla commitia, näet muissa ikkunoissa commitiin liittyviä tietoja. Oikealla alakulmassa näet ne tiedostot, jotka ovat muuttuneet commitissa (jos valinta on _patch_) tai ne tiedostot, joita repositoriossa oli olemassa commitin aikana (jos valinta on _tree_). Vasemmassa alakulmassa pystyt tarkastelemaan commitin tiedostoihin tekemiä muutoksia tai tiedostojen tilaa commitin aikana. Valinnat ovat hieman hämäävät, sillä ne toimivat eri tavoin riippuen oikean puolen moodista.
 
 Vastaava näkymä OSX:n [Sourcetree](https://www.sourcetreeapp.com)-ohjelmalla tarkasteltaessa:
 
-![]({{ "/images/lh1-1a.png" | absolute_url }})
+![]({{ "/assets/images/lh1-1a.png" | absolute_url }})
 
 Seuraavaa tehtävää tekiessäsi kannattaa terminaaliin avata uusi välilehti, jotta voit pitää gitk:ta käynnissä.
 
@@ -471,7 +471,7 @@ Tiedosto ei siis enää ole _staged_-tilassa, muutokset ovat kuitenkin _working 
 
 Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on lisätty committoitavaksi, eli se on _staged_, voidaan muutos perua komennolla _git restore --staged_. Tällöin muutokset kuitenkin vielä jäävät tiedostoon, eli ovat _working directoryssä_. Tiedosto saadaan palautettua repositoriossa olevaan edellisen commitin tilaan komennolla _git restore_.
 
-![]({{ "/images/v1-RestoreGit.png" | absolute_url }})
+![]({{ "/assets/images/v1-RestoreGit.png" | absolute_url }})
 
 ## Harjoittelua
 
@@ -516,7 +516,7 @@ Siirrytään sitten GitHubin käyttöön
   - uuden repositorion luomistoiminto löytyy vasemman ylänurkan plus-symboolin alta
 - **Älä laita rastia** kohtaan _Initialize this repository with a README_
 
-![]({{ "/images/lh1-2a.png" | absolute_url }})
+![]({{ "/assets/images/lh1-2a.png" | absolute_url }})
 
 - luo repositorio painamalla vihreää _Create repository_ -nappia
 
@@ -525,7 +525,7 @@ Seuraavaksi haluamme liittää GitHubiin luodun repositorion juuri luodun paikal
 - etärepositorion lisääminen onnistuu GitHubiin avautuvan näkymän ohjeiden mukaan
 - varmista, että kohdasta "Quick setup..." on valittu **SSH**
 
-![]({{ "/images/lh1-3a.png" | absolute_url }})
+![]({{ "/assets/images/lh1-3a.png" | absolute_url }})
 
 - kopioi ylempi rivi kohdasta _...or push an existing repository from the command line_
 - omassa esimerkissäni rivi on
@@ -621,7 +621,7 @@ Branch master set up to track remote branch master from origin.
   - tiedostojen urlin saat navigoimalla GitHubissa tiedostoon ja kopioimalla osoitteen selaimen osoiteriviltä
 - Repositoriosi tulee näyttää suunnilleen seuraavalta
 
-![]({{ "/images/lh1-4a.png" | absolute_url }})
+![]({{ "/assets/images/lh1-4a.png" | absolute_url }})
 
 - jos teit kaiken oikein, pääset README.md:ssä olevia linkkejä klikkaamalla näkemään linkitettyjen tiedostojen sisällön
 
