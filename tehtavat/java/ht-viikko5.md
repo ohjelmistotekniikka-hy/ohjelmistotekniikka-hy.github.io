@@ -22,7 +22,7 @@ Palautuksesta on tarjolla 3 kurssipistettä.
 
 Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 
-- Ohjelmasta pystyy tekemään suorituskelpoisen [jar](/java/maven.md#jarin-generointi)-tiedoston komennolla _mvn package_ (0.5p)
+- Ohjelmasta pystyy tekemään suorituskelpoisen [jar](/java/maven#jarin-generointi)-tiedoston komennolla _mvn package_ (0.5p)
 - Projektista on tehty _github release_ (0.25p)
   - Release sisältää ohjelman uusimman version suorituskelpoisen jar-tiedoston
   - [Ohje](/release) releasen tekemiseen

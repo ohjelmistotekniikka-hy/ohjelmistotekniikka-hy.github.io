@@ -32,7 +32,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
     Merkitse lisäksi tarkastusta varten määrittelydokumenttiin tällä viikolla tekemäsi toiminnallisuudet "tehty" merkinnällä.
 - Testaus on edennyt (0.5p)
   - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
-  - Käyttöliittymään ja testeihin liittyvä koodi [jätetään pois](/python/coverage.md#tiedostojen-jättäminen-raportin-ulkopuolelle) testikattavuusraportista
+  - Käyttöliittymään ja testeihin liittyvä koodi [jätetään pois](/python/coverage#tiedostojen-jättäminen-raportin-ulkopuolelle) testikattavuusraportista
   - Sovelluksen testien haarautumakattavuuden tulee olla vähintään 40%
   - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 - Koodin laatu (0.5p)
