@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /korjausehdotus
-title: Kirjoiturvirheiden korjaaminen
+title: Kirjoitusvirheiden korjaaminen
 ---
 
 Jos huomaat kurssimateriaalissa kirjoitusvirheitä, löydät linkin korjausehdotuksen tekemiseen sivun alalaidasta. Klikkaa linkkiä, kirjaudu GitHubiin ja paina sivulla olevaa kynä-symbolia:
