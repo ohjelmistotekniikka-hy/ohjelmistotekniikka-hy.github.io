@@ -126,7 +126,7 @@ Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erila
 
 ## Harjoitustyön aloitus
 
-Harjoitustyö siis aloitetaan kurssin [toisella viikolla](/python/ht-viikko2).
+Harjoitustyö siis aloitetaan kurssin [toisella viikolla](/ht-viikko2).
 
 Työ tehdään samaan repositorioon, jonka olet rekisteröinyt Labtooliin ja johon olet jo tehnyt [viikon 1 laskareiden](/viikko1) palautuksen.
 
