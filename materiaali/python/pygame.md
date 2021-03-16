@@ -13,7 +13,7 @@ Tässä osiossa tutustutaan, miten pelejä voi toteuttaa [Pygame](https://www.py
 Pygamen asennus Poetry-projektissa onnistuu seuraavasti:
 
 ```shell
-poetry install pygame
+poetry add pygame
 ```
 
 ## Sovelluslogiikan suunnitteleminen
