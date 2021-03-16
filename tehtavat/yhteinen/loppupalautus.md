@@ -19,7 +19,7 @@ Loppupalautuksen oletetaan sisältävän toimivan ohjelman, testien, konfiguraat
 
 **Päivitä myös viimeistään tässä vaiheessa Labtooliin projektisi nimi vastaamaan projektin aihetta.**
 
-Lue huolellisesti [arvosteluperusteista](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/arvosteluperusteet.md) mitä loppupalautuksen oletetaan sisältävän dokumentaation ja ohjelmiston osalta!
+Lue huolellisesti [arvosteluperusteista](/python/arvosteluperusteet) mitä loppupalautuksen oletetaan sisältävän dokumentaation ja ohjelmiston osalta!
 
 Dokumentteihin kannattaa ottaa mallia referenssisovelluksen dokumenteista.
 

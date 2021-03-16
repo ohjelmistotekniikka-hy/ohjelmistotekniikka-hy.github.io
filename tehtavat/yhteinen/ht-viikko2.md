@@ -12,9 +12,9 @@ Muista pushata tehtävät GitHubiin ennen viikkodeadlinea. Myöhässä tehty pal
 
 ## Alustava määrittelydokumentti
 
-Harjoitustyön tekeminen aloitetaan päättämällä aihe ja kuvaamalla se _alustavassa määrittelydokumentissa_, eli työlle tehdään [vaatimusmäärittely](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/materiaali.md#vaatimusmäärittely).
+Harjoitustyön tekeminen aloitetaan päättämällä aihe ja kuvaamalla se _alustavassa määrittelydokumentissa_, eli työlle tehdään [vaatimusmäärittely](/python/materiaali#vaatimusmäärittely).
 
-Aihetta miettiessäsi kannattaa ehdottomasti lukea [ohjeet työn aloittamiseen](https://github.com/ohjelmistotekniikka-hy/kevat-2021/blob/master/web/tyon_aloitus.md).
+Aihetta miettiessäsi kannattaa ehdottomasti lukea [ohjeet työn aloittamiseen](/python/harjoitustyon-aloittaminen).
 
 Mikään ei tietenkään estä sitä, että aloitat jo ohjelmoinnin tai vaikkapa koodaat koko työn valmiiksi. Viikon 2 deadlinen pisteytyksessä ollaan kiinnostuneita ainoastaan määrittelydokumentista.
 

@@ -51,8 +51,8 @@ src/
     __init__.py
     ...
   ...
-Pipfile
-Pipfile.lock
+pyproject.toml
+poetry.lock
 README.md
 ...
 ```

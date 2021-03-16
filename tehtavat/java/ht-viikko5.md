@@ -32,7 +32,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
     Merkitse lisäksi tarkastusta varten määrittelydokumenttiin tällä viikolla tekemäsi toiminnallisuudet "tehty" merkinnällä.
 - Testaus on edennyt (0.5p)
   - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla <code>mvn test jacoco:report</code>
-  - Käyttöliittymän rakentava koodi [jätetään pois](/java/maven.md#koodin-huomiotta-jättäminen-kattavuusraportissa) testikattavuusraportista
+  - Käyttöliittymän rakentava koodi [jätetään pois](/java/maven#koodin-huomiotta-jättäminen-kattavuusraportissa) testikattavuusraportista
   - Sovelluksen testien rivikattavuuden tulee olla vähintään 40%
   - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 - Koodin laatu (0.5p)
