@@ -8,7 +8,7 @@ title: Materiaali
 
 {% include materiaali_kirjoitusvirheita.md %}
 
-{% include materiaali_ohjelmistotuotanto.md reference_app_url=site.python_reference_app_url %}
+{% include materiaali_ohjelmistotuotanto.md reference_app_url=site.java_reference_app_url %}
 
 # Työkaluja
 
@@ -632,4 +632,4 @@ Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/mlu
 
 # Ohjelmiston toteutus
 
-Muutamia käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä on koottu [tänne](/java/java)
+Muutamia käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä on koottu [tänne](/java/toteutus)

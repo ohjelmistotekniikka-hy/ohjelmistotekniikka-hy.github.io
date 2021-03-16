@@ -35,13 +35,13 @@ Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, ett�
 
 Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus. Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen. Kaiken testaaminen käsin uudelleen ja uudelleen ei ole ajankäytöllisesti järkevää, ja siksi ohjelmakoodille onkin syytä laatia jatkuvasti testejä ohjelmoinnin edetessä. Testit on syytä pitää kattavina ja ajan tasalla.
 
-Jotta ohjelmaa pystyisi testaamaan, on tärkeää että sovelluslogiikkaa [ei kirjoiteta käyttöliittymän sekaan](/java/java)!
+Jotta ohjelmaa pystyisi testaamaan, on tärkeää että sovelluslogiikkaa [ei kirjoiteta käyttöliittymän sekaan](/java/toteutus)!
 
 Eräs mahdollisuus on tehdä aluksi tekstikäyttöliittymän ja vasta saatuasi ohjelman perustoiminnallisuuden toteutettua voit siirtyä graafisen käyttöliittymän toteutukseen. Graafinen käyttöliittymä on mahdollista myös jättää pois, mutta tämä [vaikuttaa arvosanaan](/java/arvosteluperusteet).
 
-Graafisen käyttöliittymän toteuttamiseen kannattaa oletusarvoisesti käyttää JavaFX:ää, jonka käytön perusteet esitellään [Ohjelmoinnin jatkokurssilla](https://materiaalit.github.io/ohjelmointi-s17/part11/). Muutamia vihjeitä liittyen JavaFX:ään [täällä](/java/java).
+Graafisen käyttöliittymän toteuttamiseen kannattaa oletusarvoisesti käyttää JavaFX:ää, jonka käytön perusteet esitellään [Ohjelmoinnin jatkokurssilla](https://materiaalit.github.io/ohjelmointi-s17/part11/). Muutamia vihjeitä liittyen JavaFX:ään [täällä](/java/toteutus).
 
-[Arvosanan kannalta suositeltavaa](/java/arvosteluperusteet.md) on, että ohjelmasi tallettaa dataa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](/java/java).
+[Arvosanan kannalta suositeltavaa](/java/arvosteluperusteet) on, että ohjelmasi tallettaa dataa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](/java/toteutus).
 
 Harjoitustyön tavoitteena on tuottaa ohjelma, joka voitaisiin antaa toiselle opiskelijalle ylläpidettäväksi ja täydennettäväksi. Lopullisessa palautuksessa on oltava lähdekoodin lisäksi dokumentaatio ja automaattiset testit sekä jar-tiedosto, joka mahdollistaa ohjelman suorittamisen NetBeansin ulkopuolella.
 
@@ -150,7 +150,7 @@ Kloonaus tapahtuu seuraavasti
 - klikkaa kohtaa _clone or download_ ja kopioi kloonausurl
   - varmista että valittuna on "clone with SSH"
 
-<img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/a-1.png" width="700">
+![](/assets/images/a-1.png)
 
 - mene sopivaan hakemistoon paikallisella koneella
   - **ÄLÄ** kuitenkaan mene minkään git-repositorion sisälle
@@ -189,7 +189,7 @@ and the repository exists.
 
 niin voit siirtyä käyttämään _HTTPS_-muotoista kloonausurlia:
 
-<img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/a-2.png" width="500">
+![](/assets/images/a-2.png)
 
 joudut poistamaan ensin vanhan kloonausurlin ja lisäämään uuden antamalla seuraavat komennot:
 
@@ -233,7 +233,7 @@ Harjoitustyössä tehtävä ohjelmisto tehdään maven-projektina. Projektin luo
 - valitse _new project_ ja tee seuraavat valinnat:
   <img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/a-3.png">
 
-- Vaikka käyttäisit JavaFX:ää, kannattaa projektia varten silti luoda "normaali" maven-projekti ellet päätä käyttää [FXML:ää](/java/java#fxml)
+- Vaikka käyttäisit JavaFX:ää, kannattaa projektia varten silti luoda "normaali" maven-projekti ellet päätä käyttää [FXML:ää](/java/toteutus#fxml)
 
 - määrittele kentän _Project location_ arvoksi repositoriosi juuri
   <img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/a-4.png" width="600">

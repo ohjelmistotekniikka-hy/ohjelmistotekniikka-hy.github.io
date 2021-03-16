@@ -37,7 +37,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 - Koodin laatu (0.5p)
   - Sovelluslogiikka on eriytetty käyttöliittymästä
-    - Vihjeitä [täällä](/java/java) ja [referenssisovelluksessa](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md)
+    - Vihjeitä [täällä](/java/toteutus) ja [referenssisovelluksessa](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md)
   - Ohjelman [pakkausrakenne](/java/koodin-laatuvaatimukset#5-pakkaukset) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
   - Checkstyle on käytössä
     - Täydet pisteet Checkstylestä ainoastaan jos ohjelmassa on alle 5 Checkstyle-virhettä
@@ -72,7 +72,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 
 Varmista, että palautusrepositorioosi on mahdollista tehdä issueita, eli repositorion _Settings_ näyttää seuraavalta
 
-<img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/issuet.png" width="750">
+![](/assets/images/issuet.png)
 
 {% include harjoitustyon_toimivuus.md %}
 

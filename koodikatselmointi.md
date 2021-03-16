@@ -23,7 +23,7 @@ Tehtävänäsi on lukea läpi toisen opiskelijan harjoitustyö ja antaa siitä r
   - Pura projekti
   - Voit halutessasi kloonata repositorion koneellesi
 
-<img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/review1.png" width="700">
+![](/assets/images/review1.png)
 
 - Aloita lukemalla projektin vaatimusmäärittely
 - Tutustu mahdollisimman kattavasti ohjelmakoodiin sekä testeihin

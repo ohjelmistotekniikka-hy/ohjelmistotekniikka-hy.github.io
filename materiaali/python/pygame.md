@@ -249,7 +249,7 @@ level.move_robot(dx=50)
 
 ## Sovelluslogiikan testaaminen
 
-Koodia on syntynyt jo sen verran, että alkaa olla aika toteuttaa sovelluslogiikalle ensimmäinen testi. Pelien yksikkötestauksessa ei ole erityisiä eroja minkä tahansa muun tyyppisen ohjelmiston yksikkötestaamiseen nähden. Materiaalin [unittest-ohjeen](./unittest.md) pitäisi siis tarjota tarvittavat esitiedot pelin testaamisen aloittamiseen.
+Koodia on syntynyt jo sen verran, että alkaa olla aika toteuttaa sovelluslogiikalle ensimmäinen testi. Pelien yksikkötestauksessa ei ole erityisiä eroja minkä tahansa muun tyyppisen ohjelmiston yksikkötestaamiseen nähden. Materiaalin [unittest-ohjeen](/python/unittest) pitäisi siis tarjota tarvittavat esitiedot pelin testaamisen aloittamiseen.
 
 Toteutetaan testi, joka varmistaa, että robotti voi liikkua lattialla:
 

@@ -8,9 +8,9 @@ permalink: /python/ht-viikko6
 
 **Muutama huomio**
 
-- **Viikon 6 aikana tapahtuu koodikatselmointi**, tarkemmat ohjeet katselmointiin [täällä](../materiaali/koodikatselmointi.md)
+- **Viikon 6 aikana tapahtuu koodikatselmointi**, tarkemmat ohjeet katselmointiin [täällä](/koodikatselmointi)
 - Kannattaa pitää mielessä, että kurssin loppu alkaa lähestyä ja myös loppupalautuksen deadline.
-  - Nyt kannattaa kerrata loppupalautuksen [arvosteluperusteet](../materiaali/arvosteluperusteet.md)
+  - Nyt kannattaa kerrata loppupalautuksen [arvosteluperusteet](/python/arvosteluperusteet)
   - Viimeiselläkin viikolla ohjelmaa ehtii vielä kasvattaa, mutta myös dokumentoinnille kannattaa jättää aikaa
 
 **HUOM! Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen koneella ja ohjaajien pitää pystyä se niiltä aukaisemaan!!** Esim. [Virtuaalisessatyöasemassa](https://vdi.helsinki.fi) voit testata tätä.

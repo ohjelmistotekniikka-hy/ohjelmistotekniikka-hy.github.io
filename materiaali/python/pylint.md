@@ -62,7 +62,7 @@ Korjaa ohjelmastasi kaikki pylintin ilmoittavat virheet. Vain harvoissa poikkeus
 
 ## Laatutarkistuksille oma tehtävä
 
-[Invoke-ohjeessa](./invoke.md) ohjeistetaan, miten projektille voi määritellä uudelleenkäytettäviä tehtäviä ja miten niitä voi suorittaa komentoriviltä. Määritellään laatuvaatimusten tarkistamista varten oma tehtävä, `lint`. Tämä onnistuu määrittelemällä tehtävä projektin juurihakemiston _tasks.py_-tiedostossa:
+[Invoke-ohjeessa](/python/invoke) ohjeistetaan, miten projektille voi määritellä uudelleenkäytettäviä tehtäviä ja miten niitä voi suorittaa komentoriviltä. Määritellään laatuvaatimusten tarkistamista varten oma tehtävä, `lint`. Tämä onnistuu määrittelemällä tehtävä projektin juurihakemiston _tasks.py_-tiedostossa:
 
 ```python
 from invoke import task

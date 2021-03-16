@@ -190,7 +190,7 @@ Näet konfiguraation kokonaisuudessaan kurssin [esimerkkisovelluksesta](https://
 
 Käyttäessäsi Javan versiota 8, mavenin lisäkonfiguraatiota ei tarvita. Tosin ainakin laitoksen cubbli-Linuxeilla sovellus näyttää toimivan samoilla konfiguraatioilla myös käyttäessäsi Javan versiota 8.
 
-JavaFX aiheuttaa hankaluuksia myös seuraavassa luvussa esitettyyn jar-tiedostojen generointiin, eräs tapa ongelmien kiertämiseen on kerrottu sitä seuraavassa luvussa [täällä](/java/maven.md#javafx-ja-jar).
+JavaFX aiheuttaa hankaluuksia myös seuraavassa luvussa esitettyyn jar-tiedostojen generointiin, eräs tapa ongelmien kiertämiseen on kerrottu sitä seuraavassa luvussa [täällä](/java/maven#javafx-ja-jar).
 
 ### Ongelmia javaFX kanssa
 

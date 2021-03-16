@@ -59,9 +59,7 @@ Harjoitustyölle on toteutuksessa käytettyyn ohjelmointikieleen pohjautuvat arv
 
 - [Aiheideoita ja ohjeita työn harjoitustyön aloittamiseen](/java/harjoitustyon-aloittaminen)
 - [Yleisiä ohjeita harjoitustyön toteutukseen](/java/toteutus)
-- [JUnit-ohje](/java/junit)
-- [Käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä](/java/java)
 - [Maven](/java/maven)
+- [JUnit](/java/junit)
 - [Checkstyle](/java/checkstyle)
 - [JavaDoc](/java/javadoc)
-- [Koodin laatu](/java/koodin-laatuvaatimukset)

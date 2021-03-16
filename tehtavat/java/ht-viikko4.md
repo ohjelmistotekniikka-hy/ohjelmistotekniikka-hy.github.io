@@ -26,7 +26,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 - Koodin laatu (1p)
   - Sovelluslogiikka on riittävissä määrin eriytetty käyttöliittymästä
-    - Vihjeitä [täällä](/java/java) ja [referenssisovelluksessa](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md)
+    - Vihjeitä [täällä](/java/toteutus) ja [referenssisovelluksessa](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md)
   - Ohjelman [pakkausrakenne](/java/koodin-laatuvaatimukset#5-pakkaukset) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
   - Checkstyle on otettu käyttöön
     - Ohje Checkstylen käyttöönottoon [täällä](/java/checkstyle)

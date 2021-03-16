@@ -22,15 +22,15 @@ Web-sovelluksia kurssilla ei sallita. Sovelluksissa sallitaan toki webissä olev
 
 ## Ohjelman toteutus
 
-Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä ja materiaalista. Muutamia vihjeitä on myös kurssin [referenssiprojektissa](https://github.com/ohjelmistotekniikka-hy/python-todo-app) sekä [täällä](./python.md).
+Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä ja materiaalista. Muutamia vihjeitä on myös kurssin [referenssiprojektissa](https://github.com/ohjelmistotekniikka-hy/python-todo-app) sekä [täällä](/python/toteutus).
 
 Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus. Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen. Kaiken testaaminen käsin uudelleen ja uudelleen ei ole ajankäytöllisesti järkevää, ja siksi ohjelmakoodille onkin syytä laatia jatkuvasti testejä ohjelmoinnin edetessä. Testit on syytä pitää kattavina ja ajan tasalla.
 
-Jotta ohjelmaa pystyisi testaamaan, on tärkeää että sovelluslogiikkaa [ei kirjoiteta käyttöliittymän sekaan](./python.md)!
+Jotta ohjelmaa pystyisi testaamaan, on tärkeää että sovelluslogiikkaa [ei kirjoiteta käyttöliittymän sekaan](/python/toteutus)!
 
-Eräs mahdollisuus on tehdä aluksi tekstikäyttöliittymän ja vasta saatuasi ohjelman perustoiminnallisuuden toteutettua voit siirtyä graafisen käyttöliittymän toteutukseen. Graafinen käyttöliittymä on mahdollista myös jättää pois, mutta tämä [vaikuttaa arvosanaan](./arvosteluperusteet.md). Graafisen käyttöliittymän toteutukseen löytyy ohjeita [täällä](./tkinter.md). Pelin toteutukseen Pygame-kirjastolla löytyy ohjeita [täältä](./pygame.md).
+Eräs mahdollisuus on tehdä aluksi tekstikäyttöliittymän ja vasta saatuasi ohjelman perustoiminnallisuuden toteutettua voit siirtyä graafisen käyttöliittymän toteutukseen. Graafinen käyttöliittymä on mahdollista myös jättää pois, mutta tämä [vaikuttaa arvosanaan](/python/arvosteluperusteet). Graafisen käyttöliittymän toteutukseen löytyy ohjeita [täällä](/python/tkinter). Pelin toteutukseen Pygame-kirjastolla löytyy ohjeita [täältä](/python/pygame).
 
-[Arvosanan kannalta suositeltavaa](./arvosteluperusteet.md) on, että ohjelmasi tallettaa dataa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](./python.md).
+[Arvosanan kannalta suositeltavaa](/python/arvosteluperusteet) on, että ohjelmasi tallettaa dataa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](/python/toteutus).
 
 Harjoitustyön tavoitteena on tuottaa ohjelma, joka voitaisiin antaa toiselle opiskelijalle ylläpidettäväksi ja täydennettäväksi. Lopullisessa palautuksessa on oltava lähdekoodin lisäksi dokumentaatio ja automaattiset testit.
 
@@ -144,7 +144,7 @@ Kloonaus tapahtuu seuraavasti:
 - klikkaa kohtaa _clone or download_ ja kopioi kloonausurl
   - varmista että valittuna on "clone with SSH"
 
-<img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/a-1.png" width="700">
+![](/assets/images/a-1.png)
 
 - mene sopivaan hakemistoon paikallisella koneella
   - **ÄLÄ** kuitenkaan mene minkään git-repositorion sisälle
@@ -183,7 +183,7 @@ and the repository exists.
 
 niin voit siirtyä käyttämään _HTTPS_-muotoista kloonausurlia:
 
-<img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/a-2.png" width="500">
+![](/assets/images/a-2.png)
 
 joudut poistamaan ensin vanhan kloonausurlin ja lisäämään uuden antamalla seuraavat komennot:
 
@@ -222,7 +222,7 @@ mluukkai@melkki:~/otm-harjoitustyo$
 
 ### Poetry-projektin alustus
 
-Harjoitustyössä tehtävä ohjelmistossa hyödynnetään [Poetry](https://python-poetry.org/)-työkalua. Poetryn asennukseen ja projektin alustamiseen löydät ohjeet [täältä](./poetry.md).
+Harjoitustyössä tehtävä ohjelmistossa hyödynnetään [Poetry](https://python-poetry.org/)-työkalua. Poetryn asennukseen ja projektin alustamiseen löydät ohjeet [täältä](/python/poetry).
 
 ## Työaikakirjanpito
 

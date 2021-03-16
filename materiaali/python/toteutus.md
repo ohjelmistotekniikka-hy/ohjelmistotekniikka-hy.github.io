@@ -8,7 +8,7 @@ Tähän osioon on koottu vinkkejä, joista on luultavasti hyötyä harjoitustyö
 
 ## Sovelluksen käyttöliittymä
 
-Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän tekemättömyys saattaa [vaikuttaa arvosanaan](./arvosteluperusteet.md).
+Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän tekemättömyys saattaa [vaikuttaa arvosanaan](/python/arvosteluperusteet).
 
 Pääasia on joka tapauksessa, että pyrit _eriyttämään mahdollisimman hyvin sovelluslogiikan käyttöliittymästä_. Käyttöliittymän roolin tulee siis olla ainoastaan käyttäjän kanssa tapahtuva interaktio, varsinaisen logiikan tulee tapahtua muissa oliossa.
 
@@ -151,11 +151,11 @@ def kaynnista(self):
 
 Graafinen käyttöliittymä eroaa tekstikäyttöliittymästä siinä, että komentoriviltä annettavien tekstimuotoisten komentojen sijaan käyttäjä voi antaa sovellukselle syötteitä erilaisten graafisten komponenttien kautta. Tämä voi tarkoittaa esimerkiksi tekstikenttiin kirjoittamista, tai painikkeiden painelua.
 
-[TkInter](https://wiki.python.org/moin/TkInter)-kirjasto on Pythonissa jo standardiksi muodostonut tapa toteuttaa graaffisia käyttöliittymä. Koska aihe on jonkin verran tekstikäyttöliittymä laajempi, on sille kirjoitettu erillinen [ohje](./tkinter.md).
+[TkInter](https://wiki.python.org/moin/TkInter)-kirjasto on Pythonissa jo standardiksi muodostonut tapa toteuttaa graaffisia käyttöliittymä. Koska aihe on jonkin verran tekstikäyttöliittymä laajempi, on sille kirjoitettu erillinen [ohje](/python/tkinter).
 
 ## Pelien toteutus
 
-Pelien toteutukseen soveltuvat kirjastot vaihtelevat tapauskohtaisesti. Erityisesti graafisten pelien toteutuksessa eräs hyväksi todettu kirjasto on [Pygame](https://www.pygame.org). Kirjaston käyttöön on kirjoittu erillinen ohje, joka on luettavissa [täällä](./pygame.md).
+Pelien toteutukseen soveltuvat kirjastot vaihtelevat tapauskohtaisesti. Erityisesti graafisten pelien toteutuksessa eräs hyväksi todettu kirjasto on [Pygame](https://www.pygame.org). Kirjaston käyttöön on kirjoittu erillinen ohje, joka on luettavissa [täällä](/python/pygame).
 
 ## Riippuvuuksien injektointi
 
@@ -248,7 +248,7 @@ class TestNumerotiedustelu(unittest.TestCase):
 
 ## Tietojen tallennus
 
-Arvosteluperusteet [kannustavat](./arvosteluperusteet.md) siihen, että ohjelmasi käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille Tietokantasovellus.
+Arvosteluperusteet [kannustavat](/python/arvosteluperusteet) siihen, että ohjelmasi käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille Tietokantasovellus.
 
 ### Repository-suunnittelumalli
 
@@ -432,7 +432,7 @@ def pytest_configure():
 
 ### Huomioita testaamisesta
 
-[Testausohjeissa](./unittest.md) ohjeistettiin, että _kaikki testit tulee olla toisistaan riippumattomia_. Tämä tarkoittaa sitä, että tallennusta testaavan metodin tulee olettaa, ettei edellisiä tallennustietoja ole. Tämä onnistuu testiluokan `setUp`-metodissa kutsumalla repositorion metodia, joka tyhjentää tallennustiedot. Esimerkiksi referenssisovelluksessa toteutus on seuraava:
+[Testausohjeissa](/python/unittest) ohjeistettiin, että _kaikki testit tulee olla toisistaan riippumattomia_. Tämä tarkoittaa sitä, että tallennusta testaavan metodin tulee olettaa, ettei edellisiä tallennustietoja ole. Tämä onnistuu testiluokan `setUp`-metodissa kutsumalla repositorion metodia, joka tyhjentää tallennustiedot. Esimerkiksi referenssisovelluksessa toteutus on seuraava:
 
 ```python
 class TestTodoRepository(unittest.TestCase):

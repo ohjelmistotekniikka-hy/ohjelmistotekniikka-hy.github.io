@@ -69,7 +69,7 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
   - Testaa rajatapauksia
   - Testaa virheellisiä syötteitä
 - Käyttöliittymää ei tarvitse testata automaattisesti
-- Noudata testeissä yleisiä [nimeämiskäytänteitä](./unittest.md)
+- Noudata testeissä yleisiä [nimeämiskäytänteitä](/python/unittest)
   - Esimerkiksi luokkaa `User` testaa testiluokka `TestUser`
   - Yhtä luokkaa kohti saa luoda useita testiluokkia
 

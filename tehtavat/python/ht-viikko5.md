@@ -74,7 +74,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 Varmista, että palautusrepositorioosi on mahdollista tehdä issueita, eli repositorion _Settings_ näyttää seuraavalta
 
-<img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/issuet.png" width="750">
+![](/assets/images/issuet.png)
 
 {% include harjoitustyon_toimivuus.md %}
 

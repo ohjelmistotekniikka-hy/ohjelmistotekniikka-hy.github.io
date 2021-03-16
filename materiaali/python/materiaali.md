@@ -22,7 +22,7 @@ Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionhallintaa, m
 
 Olet todennäköisesti ohjelmoinut Pythonia tähän asti ilman ulkoisia ulkoisten riippuvuuksien asennusta ja käyttöä. Alamme tämän kurssin myötä hieman tutkimaan, miten Pythonilla tehdyn ohjelmiston riippuvuuksien hallinta tapahtuu ja minkälaisia ovat siihen työskentelytavat.
 
-Python-projektien riippuvuuksien hallintaan on olemassa muutamiakin vaihtoehtoja, joista _pip_ saattaa olla jo ennestään tuttu. Kurssilla tutustumme [Poetry](https://python-poetry.org/)-työkaluun, jolla on paljon samankaltaisuuksia pipin kanssa ja helpottaa työskentelyämme huomattavasti. Ohje Poetry käytön aloittamiseen löytyy [täältä](./poetry.md).
+Python-projektien riippuvuuksien hallintaan on olemassa muutamiakin vaihtoehtoja, joista _pip_ saattaa olla jo ennestään tuttu. Kurssilla tutustumme [Poetry](https://python-poetry.org/)-työkaluun, jolla on paljon samankaltaisuuksia pipin kanssa ja helpottaa työskentelyämme huomattavasti. Ohje Poetry käytön aloittamiseen löytyy [täältä](/python/poetry).
 
 ### Unittest
 
@@ -38,7 +38,7 @@ Visual Studio Code näyttää ohjelmoidessa koodiin määritellyn docstringin se
 
 ![Docstring](/assets/images/python/docstring.png)
 
-Ohje docstring-kommenttien käyttöön löytyy [täältä](./docstring.md)
+Ohje docstring-kommenttien käyttöön löytyy [täältä](/python/docstring)
 
 ### Pylint
 
@@ -48,7 +48,7 @@ Käytämme kurssilla tarkoitukseen [pylint](https://www.pylint.org/)-nimistä ty
 
 > Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells. It can also look for certain type errors, it can recommend suggestions about how particular blocks can be refactored and can offer you details about the code's complexity.
 
-Ohje pylintin käyttöön löytyy [täältä](./pylint.md).
+Ohje pylintin käyttöön löytyy [täältä](/python/pylint).
 
 ### UML
 
@@ -493,4 +493,4 @@ Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/ohj
 
 ### Ohjelmiston toteutus
 
-Muutamia käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä on koottu [tänne](./toteutus.md)
+Muutamia käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä on koottu [tänne](/python/toteutus)
