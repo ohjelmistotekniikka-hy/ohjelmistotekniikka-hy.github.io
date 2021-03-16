@@ -7,7 +7,7 @@
   - **Huom:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 - Jos tarvitset kurssiin liittyvää ohjausta, tule zoom-pajaan:
     - ma 14-16  [zoom]()
-    - ti 14-16  [zoom]()
+    - ti 14-16  [zoom]() 23.03 alkaen
     - to 13-15  [zoom]()
   - Myös Telegramissa voi kysellä erityisesti arkisin klo 9-16
   - **Jos kysymys koskee koodia tai siinä esiintyviä virhetilanteita, kannattaa laittaa kysymyksen yhteyteen linkki omaan repositorioosi.** Ilman koodin näkemistä ongelman selvittäminen on hankalaa tai jopa mahdotonta.
