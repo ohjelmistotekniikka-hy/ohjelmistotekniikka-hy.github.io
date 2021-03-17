@@ -35,7 +35,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 - Ohjelman alustava rakenne luokka/pakkauskaaviona (0.75p)
   vastaavalla mekanismilla
   - Kaavion ei tarvitse merkitä kuin sovelluslogiikan kannalta oleelliset luokat
-  - Voit tarvittaessa tehdä kaavion, josta ilmenee myös sovelluksen [pakkausrakenne](java/materiaali#pakkauskaavio)
+  - Voit tarvittaessa tehdä kaavion, josta ilmenee myös sovelluksen [pakkausrakenne](/java/materiaali#pakkauskaavio)
   - Mallia voi ottaa [referenssisovelluksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
   - Tee repositorioosi hakemisto _dokumentaatio_ ja sen sisälle tiedosto _arkkitehtuuri.md_ ja upota kuva tiedostoon, tiedoston sisältö voi olla muilta osin tyhjä
   - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) tavoin
