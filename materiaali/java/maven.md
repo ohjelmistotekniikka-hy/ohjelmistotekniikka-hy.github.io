@@ -196,7 +196,7 @@ JavaFX aiheuttaa hankaluuksia myös seuraavassa luvussa esitettyyn jar-tiedostoj
 
 Jos JavaFX käyttöliittymäsi näyttää samalta kuin alla olevassa kuvassa, niin siihen on yhtenä ratkaisuna vaihtaa `pom.xml` tiedostossa olevan javafx-controls:in versioksi 15.0.1.
 
-<img src="../web/images/java_fx_artefact.jpg" width=400>
+![](/assets/images/java/java_fx_artefact.jpg)
 
 ## Jarin generointi
 
