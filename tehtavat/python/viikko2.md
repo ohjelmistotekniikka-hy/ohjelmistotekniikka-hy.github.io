@@ -265,9 +265,9 @@ Tee testihakemistoon testitiedosto <i>kassapaate_test.py</i> ja sinne testiluokk
   - Jos maksu ei ole riittävä: kassassa oleva rahamäärä ei muutu, kaikki rahat palautetaan vaihtorahana ja myytyjen lounaiden määrässä ei muutosta
 - _seuraavissa testeissä tarvitaan myös Maksukorttia jonka oletetaan toimivan oikein_
 - Korttiosto toimii sekä edullisten että maukkaiden lounaiden osalta
-  - Jos kortilla on tarpeeksi rahaa, veloitetaan summa kortilta ja palautetaan true
+  - Jos kortilla on tarpeeksi rahaa, veloitetaan summa kortilta ja palautetaan _True_
   - Jos kortilla on tarpeeksi rahaa, myytyjen lounaiden määrä kasvaa
-  - Jos kortilla ei ole tarpeeksi rahaa, kortin rahamäärä ei muutu, myytyjen lounaiden määrä muuttumaton ja palautetaan false
+  - Jos kortilla ei ole tarpeeksi rahaa, kortin rahamäärä ei muutu, myytyjen lounaiden määrä muuttumaton ja palautetaan _False_
   - Kassassa oleva rahamäärä ei muutu kortilla ostettaessa
 - Kortille rahaa ladattaessa kortin saldo muuttuu ja kassassa oleva rahamäärä kasvaa ladatulla summalla
 
