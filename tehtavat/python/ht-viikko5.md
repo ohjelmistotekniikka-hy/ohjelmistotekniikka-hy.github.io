@@ -10,13 +10,13 @@ permalink: /python/ht-viikko5
 
 - viikon 5 deadlinen jälkeen tulee palautusrepositoriosta löytyä osan määrittelydokumentin käyttäjälle näkyvää toiminnallisuutta toteuttava toimiva versio harjoitustyöstä
 - viikon 5 palautuksesta tulee saada enemmän kuin 0 pistettä
-- palautusrepositorioistasi on GitHub-issuet saalittuna, katso [ohje](#issueiden-salliminen)
+- palautusrepositorioistasi on GitHub-issuet sallittuna, katso [ohje](#issueiden-salliminen)
 
 Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
 
 - Klo 00 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
 
-**HUOM! Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen koneella ja ohjaajien pitää pystyä se niiltä aukaisemaan!!** Esim. [Virtuaalisessatyöasemassa](https://vdi.helsinki.fi) voit testata tätä.
+**HUOM! Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen koneella ja ohjaajien pitää pystyä se niiltä aukaisemaan!!** Esim. [Virtuaalisessa työasemassa](https://vdi.helsinki.fi) voit testata tätä.
 
 Palautuksesta on tarjolla 3 kurssipistettä.
 
@@ -58,7 +58,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 - Tuntikirjanpito on ajantasalla
   - **Tuntien summan tulee olla merkittynä**
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
-- Palautusrepositorioosi voi tehdä GitHub-issuieta, katso [ohje](#issueiden-salliminen)
+- Palautusrepositorioosi voi tehdä GitHub-issueita, katso [ohje](#issueiden-salliminen)
 - Repositorion _README.md_-tiedosto on kunnossa
   - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app) README.md, eli siellä on ainakin seuraavat
     - Harjoitustyön aiheen lyhyt kuvaus
