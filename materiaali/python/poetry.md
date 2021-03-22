@@ -85,7 +85,7 @@ Komennon suorittaminen tekee projektille vaadittavat alustustoimenpiteet, kuten 
 
 Komennon suorittamisen seurauksena hakemistoon pitäisi ilmestyä tiedosto _poetry.lock_. Tiedosto sisältää kaikkien asennettujen riippuvuuksien versiotiedot. Sen tietojen avulla Poetry osaa aina asentaa riippuvuuksista täsmälleen oikeat versiot. Tästä syystä _tiedosto tulee lisätä versionhallintaan_. Huomaa, että tiedoston sisältöä ei tule _missään tapauksessa_ muuttaa, vaan se on täysin Poetryn ylläpitämä.
 
-## Riippuvuuksen asentaminen
+## Riippuvuuksien asentaminen
 
 Asennetaan seuraavaksi esimerkkiprojektimme ensimmäisen riippuvuus. Riippuvuuksien löytäminen onnistuu helpoiten Googlettamalla ja etsimällä hakutuloksista sopivia GitHub-repositorioita, tai PyPI-sivuja. Asennetaan esimerkkinä projektiimme erittäin hyödyllinen [cowsay](https://pypi.org/project/cowsay/)-kirjasto. Tämä onnistuu komennolla:
 
