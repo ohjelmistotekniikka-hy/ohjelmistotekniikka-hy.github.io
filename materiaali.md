@@ -43,7 +43,7 @@ Kurssin materiaalista on tarjolla sekä Python-, että Java-kielen versiot. Tä�
 - [Coverage ja testikattavuus](/python/coverage)
     - [Testikattavuusraportti](/python/coverage#testikattavuusraportti)
     - [Tiedostojen jättäminen raportin ulkopuolelle](/python/coverage#tiedostojen-jättäminen-raportin-ulkopuolelle)
-- [Pylint ja koodin laaduun staattinen analyysi](/python/pylint)
+- [Pylint ja koodin laadun staattinen analyysi](/python/pylint)
 - [Docstring ja koodin dokumentointi](/python/docstring)
 - [Tehtävien suorittaminen ja Invoke](/python/invoke)
 - [TkInter ja graafisen käyttöliittymän toteutus](python/tkinter)
