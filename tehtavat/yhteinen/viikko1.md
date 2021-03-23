@@ -513,7 +513,7 @@ Siirrytään sitten GitHubin käyttöön
 
 - Luo itsellesi tunnus GitHubiin (ellei sinulla jo ole tunnusta)
 - Luo uusi repositorio
-  - uuden repositorion luomistoiminto löytyy vasemman ylänurkan plus-symboolin alta
+  - uuden repositorion luomistoiminto löytyy oikean ylänurkan plus-symboolin alta
 - **Älä laita rastia** kohtaan _Initialize this repository with a README_
 
 ![]({{ "/assets/images/lh1-2a.png" | absolute_url }})
