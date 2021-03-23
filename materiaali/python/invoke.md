@@ -24,7 +24,7 @@ Invoken avulla määritellyt tehtävät toteutetaan projektin juurihakemiston _t
 from invoke import task
 
 @task
-def foo():
+def foo(ctx):
     print("bar")
 ```
 
@@ -42,7 +42,7 @@ Toteutetaan seuraavaksi _foo_-tehtävän lisäksi tehtävä, josta on oikeasti h
 from invoke import task
 
 @task
-def foo():
+def foo(ctx):
     print("bar")
 
 @task
@@ -66,7 +66,7 @@ Jos tehtävän määrittelevän funktion nimi on [snake case](https://en.wikiped
 from invoke import task
 
 @task
-def lorem_ipsum():
+def lorem_ipsum(ctx):
     print("Lorem ipsum")
 ```
 
