@@ -48,7 +48,7 @@ poetry init
 
 Projektin tiedoilla ei ole merkitystä, voit halutessa käyttää alustuksessa Poetryn ehdottamia tietoja.
 
-Asennetaan projektiin kehityksen aikaiseksi riippuvuukdeksi [pytest](https://docs.pytest.org/en/stable/)-sovelluskehys, joka helpottaa testien suorittamista komentoriviltä. Riippuvuuden asentaminen onnistuu samassa hakemistossa komennolla:
+Asennetaan projektiin kehityksen aikaiseksi riippuvuudeksi [pytest](https://docs.pytest.org/en/stable/)-sovelluskehys, joka helpottaa testien suorittamista komentoriviltä. Riippuvuuden asentaminen onnistuu samassa hakemistossa komennolla:
 
 ```bash
 poetry add pytest --dev
@@ -92,7 +92,7 @@ Komento `pytest` etsii suoritettavia testejä hakemistosta, jossa komento suorit
 
 - Testien tiedostojen nimen tulee päättyä <i>\_test</i>-päätteeseen, esim. <i>maksukortti_test.py</i>
 - Testattavan luokan nimen tulee alkaa _Test_-etuliitteellä, esim. `TestMaksukortti`
-- Testtavan luokan metodin nimen tulee alkaa <i>test\_</i>-etuliitteellä, esim. `test_hello_world`
+- Testattavan luokan metodin nimen tulee alkaa <i>test\_</i>-etuliitteellä, esim. `test_hello_world`
 
 Huomaa, että testien hakemistossa tulee olla tyhjä <i>\_\_init\_\_.py</i>-tiedosto, jotta Python löytää moduulit oikein. Ilman kyseistä tiedostoa testi kaatuisi virheeseen:
 
