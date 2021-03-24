@@ -179,7 +179,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Hakemisto <i>.pytest_cache</i>, joka sisältää `pytest`-komentojen aikaansaannoksia on tyypillisesti sellainen, jota emme halua versionhallinnan pariin.
 
-git-repositorion juureen on mahdollista lisätä tiedosto [.gitignore](https://www.atlassian.com/git/tutorials/gitignore) jossa voidaan määritellä, mitä tiedostoja ja hakemistoja git jättää huomioimatta eli _ignoroi_.
+git-repositorion juureen on mahdollista lisätä tiedosto [.gitignore](https://www.atlassian.com/git/tutorials/gitignore), jossa voidaan määritellä, mitä tiedostoja ja hakemistoja git jättää huomioimatta eli _ignoroi_. Jokainen määritelmä lisätään tiedostoon omalle rivilleen.
 
 Mene **repositoriosi juureen**, luo tiedosto _.gitignore_, avaa se editorilla ja lisää tiedostoon seuraava rivi:
 
@@ -205,7 +205,6 @@ Eli vaikka hakemistossa _/laskarit/viikko2/unicafe_ on alihakemisto  <i>.pytest_
 **HUOM:** Jos `git status`-komento näyttää muutoksia myös <i>\_\_pycache\_\_</i>-hakemistossa, lisää myös se omana rivininään _.gitignore_-tiedostoon:
 
 ```
-/laskarit/viikko2/unicafe/.pytest_cache
 /laskarit/viikko2/unicafe/__pycache__
 ```
 
