@@ -202,7 +202,7 @@ Untracked files:
 
 Eli vaikka hakemistossa _/laskarit/viikko2/unicafe_ on alihakemisto  <i>.pytest_cache</i>, ei git niitä huomioi
 
-**HUOM:** Jos `git status`-komento näyttää muutoksia myös <i>\_\_pycache\_\_</i>-hakemistossa, lisää myös se omana rivininään _.gitignore_-tiedostoon:
+**HUOM:** Jos `git status`-komento näyttää muutoksia myös <i>\_\_pycache\_\_</i>-hakemistossa, lisää myös se omalle rivilleen _.gitignore_-tiedostoon:
 
 ```
 /laskarit/viikko2/unicafe/__pycache__
