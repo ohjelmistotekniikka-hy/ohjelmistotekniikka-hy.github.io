@@ -187,7 +187,7 @@ Mene **repositoriosi juureen**, luo tiedosto _.gitignore_, avaa se editorilla ja
 /laskarit/viikko2/unicafe/.pytest_cache
 ```
 
-Kun nyt teet komennon _git status_ pitäisi tuloksen olla seuraava:
+Kun nyt teet komennon `git status` pitäisi tuloksen olla seuraava:
 
 ```bash
 On branch master
@@ -201,6 +201,13 @@ Untracked files:
 ```
 
 Eli vaikka hakemistossa _/laskarit/viikko2/unicafe_ on alihakemisto  <i>.pytest_cache</i>, ei git niitä huomioi
+
+**HUOM:** Jos `git status`-komento näyttää muutoksia myös <i>\_\_pycache\_\_</i>-hakemistossa, lisää myös se omana rivininään _.gitignore_-tiedostoon:
+
+```
+/laskarit/viikko2/unicafe/.pytest_cache
+/laskarit/viikko2/unicafe/__pycache__
+```
 
 ### Takaisin testeihin
 
