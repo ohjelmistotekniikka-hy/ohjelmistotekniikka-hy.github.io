@@ -16,13 +16,13 @@ Testikattavuuden kerääminen testien suorituksesta onnistuu [coverage](https://
 poetry add coverage --dev
 ```
 
-Testikattavuuden kerääminen `pytest`-komennolla suoritetuista testeistä onnistuu virtuaaliympäristössä komennolla:
+Testikattavuuden kerääminen `pytest src`-komennolla suoritetuista testeistä onnistuu virtuaaliympäristössä komennolla:
 
 ```bash
-coverage run --branch -m pytest
+coverage run --branch -m pytest src
 ```
 
-Komennon `--branch` flagillä pystymme keräämään testien [haarautumakattavuuden](https://coverage.readthedocs.io/en/coverage-4.3.2/branch.html). Komennon suorittamisen jälkeen voimme tulostaa komentoriville raportin kerätystä testikattavuudesta komennolla:
+Komennon `--branch` flagillä pystymme keräämään testien [haarautumakattavuuden](https://coverage.readthedocs.io/en/coverage-4.3.2/branch.html). Huomaa, että `pytest src`-komento rajaa testien etsinnän projektin juurihakemistossa sijaitsevaan _src_-hakemistoon. Komennon suorittamisen jälkeen voimme tulostaa komentoriville raportin kerätystä testikattavuudesta komennolla:
 
 ```bash
 coverage report -m
@@ -45,7 +45,7 @@ source = src
 omit = src/tests/**,src/ui/**,src/index.py
 ```
 
-Nyt komentojen `coverage run --branch -m pytest` ja `coverage report -m` suorittaminen sisällyttää vain haluamamme _src_-hakemiston tiedostot.
+Nyt komentojen `coverage run --branch -m pytest src` ja `coverage report -m` suorittaminen sisällyttää vain haluamamme _src_-hakemiston tiedostot.
 
 ## Visuaalisempi testikattavuusraportti
 
@@ -74,7 +74,7 @@ from invoke import task
 
 @task
 def coverage(ctx):
-    ctx.run("coverage run --branch -m pytest")
+    ctx.run("coverage run --branch -m pytest src")
 
 @task(coverage)
 def coverage_report(ctx):
