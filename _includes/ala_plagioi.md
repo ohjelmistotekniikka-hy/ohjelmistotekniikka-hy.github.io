@@ -4,4 +4,4 @@ Kurssilla seurataan Helsingin yliopiston opintokäytäntöjä. Plagiarismi ja op
 
 Mitä plagiointi tarkoittaa harjoitustyön yhteydessä? Idean saa luonnollisesti lainata, mutta koodin suora kopioiminen on kiellettyä poikkeuksena muutaman rivin mittaiset algoritmit. Myös koodin rakenteen suora kopioiminen esim. siten että muuttujien ja funktioiden nimet muutetaan lasketaan plagioinniksi. Esim. kuvia saa toki lainata muualta, mutta näin tehtävessä tulee työn dokumentaatioon tehdä "lähdeviite", eli mainita mistä lainaus on tehty.
 
-Samat plagiaattisäännöt koskevat työn dokumentaatiota, esityisen kiellettyä on copy pasteta referenssisovelluksen dokumentaatiota.
+Samat plagiaattisäännöt koskevat työn dokumentaatiota, erityisen kiellettyä on copy pasteta referenssisovelluksen dokumentaatiota.
