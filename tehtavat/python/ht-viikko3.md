@@ -24,6 +24,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 - Sovelluksella on oltava _vähintään yksi testi_ jonka voi suorittaa komennolla `poetry run invoke test`. Kertaa [testauksen ohjeet](/python/unittest), jos tämä tuottaa hankaluuksia
   - Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa
   - Testin tulee mennä läpi
+  - Testien suorituksen voi rajata pelkästään _src_-hakemistoon käyttämällä komentoa `pytest src`. Tällä varmistetaan se, ettei pytest lähde suorittamaan harjoitustyön ulkopuolisia testejä, kuten esimerkiksi laskuharjoituksissa toteutettuja testejä
 - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`. Kertaa [testikattavuuden ohjeet](/python/coverage), jos tämä tuottaa hankaluuksia
 - Tuntikirjanpito on ajantasalla
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
