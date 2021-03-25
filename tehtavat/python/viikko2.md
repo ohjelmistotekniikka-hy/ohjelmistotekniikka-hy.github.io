@@ -151,7 +151,7 @@ Siirry komentorivillä _unicafe_-hakemistoon ja asenna vaadittavat riippuvuudet 
 poetry install
 ```
 
-Testien suorittaminen komentoriviltä onnistuu siirtymällä virtuaaliympäristöön komennolla `poetry shell` ja sen jälkeen suorittamalla komennon `pytest`. Jos kaikki on kunnossa, saat raportin läpimenneistä testeistä:
+Testien suorittaminen komentoriviltä onnistuu siirtymällä virtuaaliympäristöön komennolla `poetry shell` ja sen jälkeen suorittamalla komennon `pytest src`. Jos kaikki on kunnossa, saat raportin läpimenneistä testeistä:
 
 ```
 collected 1 item
@@ -221,7 +221,7 @@ Tee valmiiseen testiluokkaan `TestMaksukortti` testit, jotka testaavat ainakin s
   - Saldo ei muutu, jos rahaa ei ole tarpeeksi
   - Metodi palauttaa _True_, jos rahat riittivät ja muuten _False_
 
-Suorita testit komentoriviltä virtuaaliympäristössä `pytest`-komennolla.
+Suorita testit komentoriviltä virtuaaliympäristössä `pytest src`-komennolla.
 
 ## 3 Testikattavuus
 
@@ -235,7 +235,7 @@ source = src
 omit = src/tests/**,src/index.py
 ```
 
-Testikattavuuden kerääminen testeistä onnistuu virtuaaliympäristössä komennolla `coverage run --branch -m pytest`. Komennon suorittamisen jälkeen kattavuusraportin voi muodostaa komennolla `coverage html`. Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Avamaalla hakemiston tiedoston _index.html_ selaimessa aukeaa seuraavan näköinen raportti:
+Testikattavuuden kerääminen testeistä onnistuu virtuaaliympäristössä komennolla `coverage run --branch -m pytest src`. Komennon suorittamisen jälkeen kattavuusraportin voi muodostaa komennolla `coverage html`. Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Avamaalla hakemiston tiedoston _index.html_ selaimessa aukeaa seuraavan näköinen raportti:
 
 ![Testikattavuusraportti]({{ "/assets/images/python/unicafe-coverage.png" | absolute_url }})
 
@@ -281,7 +281,7 @@ Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun
 
 ## 5
 
-Varmista testikattavuuskomentojen avulla, että kassapäätteen testeillä on 100% haarautumakattavuus. Suorita siis virtuaaliympäristössä komennot `coverage run --branch -m pytest` ja `coverage html`, jonka jälkeen avaa selaimessa _htmlcov/index.html_-tiedosto.
+Varmista testikattavuuskomentojen avulla, että kassapäätteen testeillä on 100% haarautumakattavuus. Suorita siis virtuaaliympäristössä komennot `coverage run --branch -m pytest src` ja `coverage html`, jonka jälkeen avaa selaimessa _htmlcov/index.html_-tiedosto.
 
 ## 6
 
