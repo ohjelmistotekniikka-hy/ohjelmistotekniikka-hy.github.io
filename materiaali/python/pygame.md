@@ -609,7 +609,7 @@ class Level:
 
     update(self, current_time):
         for enemy in self.enemies:
-            if self.enemy.should_move(current_time):
+            if enemy.should_move(current_time):
                 self._move_enemy(enemy)
                 enemy.previous_move_time = current_time
 
@@ -703,7 +703,7 @@ Spriten omaa `update`-metodia voi kutsua sovelluslogiikan `update`-luokassa:
 ```python
 update(self, current_time):
     for enemy in self.enemies:
-        if self.enemy.should_move(current_time):
+        if enemy.should_move(current_time):
             self._move_enemy(enemy)
             enemy.previous_move_time = current_time
 
