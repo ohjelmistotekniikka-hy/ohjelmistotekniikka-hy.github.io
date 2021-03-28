@@ -10,23 +10,28 @@ Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö. Harjoitusty�
 
 ## Aikataulu
 
-Harjoitustyön aikataulu koostuu kuudesta viikottaisesta palautuksesta, joista saatavat pisteet vaikuttavat kurssin arvosteluun. Viikottaisten palautusten aikataulu ja arvosteluperusteet ovat seuraavat:
+Kurssin kolmella ensimmäisellä viikolla on muutama ohjauksessa tai omatoimisesti tehtävä harjoitustehtävä. Harjoitustyön aikataulu koostuu kuudesta viikottaisesta palautuksesta, joista saatavat pisteet vaikuttavat kurssin arvosteluun. Viikottaisten palautusten aikataulu ja arvosteluperusteet ovat seuraavat:
 
+- Viikko 1
+  - Palautuksen deadline {{site.wk1dl}}
+  - Pajassa tehtävät tai omatoimiset [tehtävät](/viikko1)
 - Viikko 2
   - Palautuksen deadline {{site.wk2dl}}
-  - [Arvosteluperusteet](/ht-viikko2)
+  - [Harjoitustyö](/ht-viikko2)
+  - Pajassa tehtävät tai omatoimiset tehtävät [Java](/java/viikko2) [Python](/python/viikko2)
 - Viikko 3
   - Palautuksen deadline {{site.wk3dl}}
-  - Arvosteluperusteet: [Python](/python/ht-viikko3), [Java](/java/ht-viikko3)
+  - Harjoitustyö: [Python](/python/ht-viikko3), [Java](/java/ht-viikko3)
+  - Pajassa tehtävät tai omatoimiset tehtävät [Java](/java/ht-viikko3) [Python](/python/ht-viikko3)
 - Viikko 4
   - Palautuksen deadline {{site.wk4dl}}
-  - Arvosteluperusteet: [Python](/python/ht-viikko4), [Java](/java/ht-viikko4)
+  - Harjoitustyö: [Python](/python/ht-viikko4), [Java](/java/ht-viikko4)
 - Viikko 5
   - Palautuksen deadline {{site.wk5dl}}
-  - Arvosteluperusteet: [Python](/python/ht-viikko5), [Java](/java/ht-viikko5)
+  - Harjoitustyö: [Python](/python/ht-viikko5), [Java](/java/ht-viikko5)
 - Viikko 6
   - Palautuksen deadline {{site.wk6dl}}
-  - Arvosteluperusteet: [Python](/python/ht-viikko6), [Java](/java/ht-viikko6)
+  - Harjoitustyö: [Python](/python/ht-viikko6), [Java](/java/ht-viikko6)
 - Lopullinen palautus
   - Palautuksen deadline {{site.finaldl}}
   - [Arvosteluperusteet](/loppupalautus)
