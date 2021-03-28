@@ -1,8 +1,7 @@
 ---
 layout: page
 permalink: /harjoitustyo
-title: Harjoitustyö
-title: Harjoitustyö
+title: Laskarit/Harjoitustyö
 inheader: true
 ---
 
