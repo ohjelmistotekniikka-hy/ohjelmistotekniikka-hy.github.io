@@ -17,16 +17,7 @@ Palautuksesta on tarjolla 2 kurssipistettä.
 Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 - Repositorion juuresta löytyy _src_-hakemisto projektin koodille
-- Projekti on alustettu [Poetry-ohjeiden](/python/poetry) mukaisesti. Huomaa, että projektin juurihakemiston _pyproject.toml_-tiedostossa Python-version vaatimukseksi tulee asettaa `^3.6.0` seuraavasti:
-
-```
-[tool.poetry.dependencies]
-python = "^3.6"
-...
-```
-
-Huomaa, kun muokkaat _pyproject.toml_-tiedosta (esim. päivittämällä vaaditun Python-version), muista suorittaa projektin juurihakemistossa `poetry install`, jotta _poetry.lock_-tiedosto päivittyy.
-
+- Projekti on alustettu [Poetry-ohjeiden](/python/poetry) mukaisesti
 - Projektin koodin pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`. Kertaa [Invoke-ohjeet](/python/invoke), jos tämä tuottaa hankaluuksia
 - Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta
   - Pelkät tyhjät luokat tai funktiot ilman toiminallisuutta eivät tuo pisteitä
