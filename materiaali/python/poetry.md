@@ -39,10 +39,18 @@ poetry --version
 Jos mikään esitetyistä asennusvaihtoehdoista ei onnistu, on asentaminen pipin avulla myös käyttökelpoinen vaihtoehto:
 
 ```bash
+pip3 install poetry
+```
+
+Huomaa, että komennon suorittaminen vaatii pääkäyttäjän oikeudet. Jos näitä ei ole saatavilla, voi asennuksen tehdä käyttäjäkohtaisesti:
+
+```bash
 pip3 install --user poetry
 ```
 
 Huomaa, että tämän asennustavan kanssa `poetry`-komento ei välttämättä ole suoritettavissa. Jos näin on, voit sen sijaan käyttää komentoa `python3 -m poetry`. Tämä tarkoittaa sitä, että kaikki materiaalin `poetry`-komennot tulee suorittaa muodossa `python3 -m poetry <komento>` (esimerkiksi `python3 -m poetry init`).
+
+**HUOM:** kaikki asennustavat saattavat vaatia terminaali-ikkunan sulkemisen ja uudelleen avaamisen, jotta Poetryn komennot alkavat toimia. Joissain tapauksissa on vaadittu jopa tietokoneen uudelleenkäynnistys.
 
 ## Projektin alustaminen
 
