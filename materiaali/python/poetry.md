@@ -52,6 +52,16 @@ Huomaa, että tämän asennustavan kanssa `poetry`-komento ei välttämättä ol
 
 **HUOM:** kaikki asennustavat saattavat vaatia terminaali-ikkunan sulkemisen ja uudelleen avaamisen, jotta Poetryn komennot alkavat toimia. Joissain tapauksissa on vaadittu jopa tietokoneen uudelleenkäynnistys.
 
+### Huomioita laitoksen melkki-palvelimen asennuksesta 
+
+Laitoksen melkki.cs.helsinki.fi-palvelimelle Poetryn asennus tulisi onnistua seuraamalla Poetryn [asennusohjeiden](https://python-poetry.org/docs/#installation) Linux-ohjeita. Huomaa, että asennuksen jälkeen polku Poetryn binääriin tulee asettaa `PATH`-muuttujaan. Tämä onnistuu komennolla:
+
+```bash
+source $HOME/.poetry/env
+```
+
+Huomaa, että tämä komento tulee suorittaa jokaisen kirjautumiskerran yhdeytessä, ellei _$HOME/.poetry/bin_-polkua aseteta `PATH`-muuttujaan muulla tavoin.
+
 ## Projektin alustaminen
 
 Harjoitellaan Poetryn käyttöä tekemällä pieni esimerkkiprojekti. Luo hakemisto _poetry-testi_ haluamaasi hakemistoon. Hakemiston ei tarvitse löytyä Labtooliin rekisteröimästäsi repositoriosta. Avaa hakemisto komentoriviltä ja suorita siellä komento:
