@@ -212,7 +212,7 @@ Eli vaikka hakemistossa _/laskarit/viikko2/unicafe_ on alihakemisto  <i>.pytest_
 
 Avaa nyt projekti valitsemallasi editorilla, kuten Visual Studio Codella.
 
-Tee valmiiseen testiluokkaan `maksukortti_test` testit, jotka testaavat ainakin seuraavia asioita:
+Tee valmiiseen, tiedostosssa _src/tests/maksukortti_test.py_ sijaitsevaan, `TestMaksukortti`-testiluokkaan testit, jotka testaavat ainakin seuraavia asioita:
 
 - Kortin saldo alussa oikein
 - Rahan lataaminen kasvattaa saldoa oikein
