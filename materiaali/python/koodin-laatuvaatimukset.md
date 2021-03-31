@@ -47,7 +47,7 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
 
 - Kaikki koodi _ei saa olla_ samassa hakemistossa, eikä missään nimessä samassa tiedostossa
 - Älä laita mitään koodia projektin juurihakemistoon, vaan esimerkiksi siellä sijaitsevaan _src_-hakemistoon
-- Tiedostojen ja hekemistojen nimet pienillä kirjaimilla <i>snake_case</i>-formaatissa
+- Tiedostojen ja hakemistojen nimet pienillä kirjaimilla <i>snake_case</i>-formaatissa
 - Jaa koodi järkevästi tiedostoihin, esimerkiksi seuraavalla logiikalla:
   - Yksi luokka yhdessä tiedostossa
   - Joukko toisiinsa selkeästi liittyviä funktiota samassa tiedostossa (esimerkiksi tiedosto-operaatioissa käytettäviä funktioita)
