@@ -92,7 +92,7 @@ class FuelTank:
         self.fuel_contents = amount
 
     def consume(self, amount):
-        self.fuel_contents = self.fuel_contents + amount
+        self.fuel_contents = self.fuel_contents - amount
 
 class Engine:
     def __init__(self, tank):
