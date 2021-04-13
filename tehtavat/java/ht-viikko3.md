@@ -24,7 +24,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - komennon parametrina on metodin _main_ sisältävän luokan täydellinen, eli myös pakkauksen sisältävä, nimi
   - [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) tapauksessa parametri olisi ```-Dexec.mainClass=todoapp.ui.TodoUi```
 - Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta
-  - pelkät getterietä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
+  - pelkät gettereitä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
 - Sovelluksella on oltava _vähintään yksi testi_ jonka voi suorittaa komennolla ```mvn test```
   - Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa
   - Testin tulee mennä läpi
