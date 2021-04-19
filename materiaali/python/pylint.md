@@ -4,7 +4,7 @@ permalink: /python/pylint
 title: Pylint ja koodin laaduun staattinen analyysi
 ---
 
-Koodin testauksen lisäksi koodin luettavuuden ylläpitäminen on tärkeää. Tässä hyvänä apuvälineenä on staattisen analyysin työkalu [pylint](https://www.pylint.org/). Pylintin avulla pystytään määrittelemään joukko sääntöjä, joita koodin tulisi noudattaa, ja automaisoidusti tarkastaa noudatetaanko näitä sääntöjä.
+Koodin testauksen lisäksi koodin luettavuuden ylläpitäminen on tärkeää. Tässä hyvänä apuvälineenä on staattisen analyysin työkalu [pylint](https://www.pylint.org/). Pylintin avulla pystytään määrittelemään joukko sääntöjä, joita koodin tulisi noudattaa, ja automatisoidusti tarkastaa noudatetaanko näitä sääntöjä.
 
 > Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells. It can also look for certain type errors, it can recommend suggestions about how particular blocks can be refactored and can offer you details about the code's complexity.
 
@@ -56,9 +56,9 @@ Voimme myös jättää tarkistuksien ulkopuolelle kokonaisia hakemistoja ja tied
 ignore=CVS,ui,tests
 ```
 
-Älä jätä tarkistamatta mitään muuta kuin käyttöliittymän tai testeihin liittyvää koodia! 
+Älä jätä tarkistamatta mitään muuta kuin käyttöliittymään tai testeihin liittyvää koodia! 
 
-Korjaa ohjelmastasi kaikki pylintin ilmoittavat virheet. Vain harvoissa poikkeustilanteissa säännön kytkeminen pois päältä kommentin avulla on hyvä ratkaisu.
+Korjaa ohjelmastasi kaikki pylintin ilmoittamat virheet. Vain harvoissa poikkeustilanteissa säännön kytkeminen pois päältä kommentin avulla on hyvä ratkaisu.
 
 ## Laatutarkistuksille oma tehtävä
 
@@ -74,7 +74,7 @@ def lint(ctx):
 # ...
 ```
 
-Nyt laatuvaatimusten tarkistaminen pitäisi onnistua komennolla:
+Nyt laatuvaatimusten tarkistamisen pitäisi onnistua komennolla:
 
 ```bash
 poetry run invoke lint
