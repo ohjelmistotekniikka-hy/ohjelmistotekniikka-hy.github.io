@@ -14,7 +14,7 @@ Pääasia on joka tapauksessa, että pyrit _eriyttämään mahdollisimman hyvin 
 
 ### Tekstikäyttöliittymä
 
-Tarkastellaan erästä mallia tekstikäyttöliittymän toteuttamiselle. Otetaan esimerkkisovellukseksi numerotiedostelusovellus, jonka avulla käyttäjä voi mm. lisätä, poistaa ja hakea henkilöiden puhelinnumeroita. Näitä toimintoja varten on toteutettu joukko komentoriviltä annettavia komentoja. Tässä on käyttöliittymälle yksi potentiaalinen toteutustapa:
+Tarkastellaan erästä mallia tekstikäyttöliittymän toteuttamiselle. Otetaan esimerkkisovellukseksi numerotiedustelusovellus, jonka avulla käyttäjä voi mm. lisätä, poistaa ja hakea henkilöiden puhelinnumeroita. Näitä toimintoja varten on toteutettu joukko komentoriviltä annettavia komentoja. Tässä on käyttöliittymälle yksi potentiaalinen toteutustapa:
 
 ```python
 from numero_ja_osoite_palvelu import NumeroJaOsoitePalvelu
