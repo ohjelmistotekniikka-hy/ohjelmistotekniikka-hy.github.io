@@ -14,7 +14,7 @@ Pääasia on joka tapauksessa, että pyrit _eriyttämään mahdollisimman hyvin 
 
 ### Tekstikäyttöliittymä
 
-Tarkastellaan erästä mallia tekstikäyttöliittymän toteuttamiselle. Otetaan esimerkkisovellukseksi numerotiedostelu sovellus, jonka avulla käyttäjä voi mm. lisätä, poistaa ja hakea henkilöiden puhelinnumeroita. Näitä toimintoja varten on toteutettu joukko komentoriviltä annettavia komentoja. Tässä on käyttöliittymälle yksi potentiaalinen toteutustapa:
+Tarkastellaan erästä mallia tekstikäyttöliittymän toteuttamiselle. Otetaan esimerkkisovellukseksi numerotiedustelusovellus, jonka avulla käyttäjä voi mm. lisätä, poistaa ja hakea henkilöiden puhelinnumeroita. Näitä toimintoja varten on toteutettu joukko komentoriviltä annettavia komentoja. Tässä on käyttöliittymälle yksi potentiaalinen toteutustapa:
 
 ```python
 from numero_ja_osoite_palvelu import NumeroJaOsoitePalvelu
@@ -151,7 +151,7 @@ def kaynnista(self):
 
 Graafinen käyttöliittymä eroaa tekstikäyttöliittymästä siinä, että komentoriviltä annettavien tekstimuotoisten komentojen sijaan käyttäjä voi antaa sovellukselle syötteitä erilaisten graafisten komponenttien kautta. Tämä voi tarkoittaa esimerkiksi tekstikenttiin kirjoittamista, tai painikkeiden painelua.
 
-[TkInter](https://wiki.python.org/moin/TkInter)-kirjasto on Pythonissa jo standardiksi muodostonut tapa toteuttaa graaffisia käyttöliittymä. Koska aihe on jonkin verran tekstikäyttöliittymä laajempi, on sille kirjoitettu erillinen [ohje](/python/tkinter).
+[TkInter](https://wiki.python.org/moin/TkInter)-kirjasto on Pythonissa jo standardiksi muodostonut tapa toteuttaa graafisia käyttöliittymiä. Koska aihe on jonkin verran tekstikäyttöliittymää laajempi, on sille kirjoitettu erillinen [ohje](/python/tkinter).
 
 ## Pelien toteutus
 
@@ -244,7 +244,7 @@ class TestNumerotiedustelu(unittest.TestCase):
         # varmista assert-lauseella että io.tulosteet on halutun kaltainen
 ```
 
-`StubIO`-luokka toteuttaa metodit `lue` ja `tulosta`, kuten `KonsoliIO`-luokka. Erona on, että `StubIO`-luokan syötteet määräytyvät konstruktorin kautta annetun listan perusteella, eikä komentoriviltä annettujen söytteiden perusteella. Lisäksi tulostetut arvot tallenetaan listaan, eika niitä kirjoita komentoriville. Tämä mahdollistaa sen, että voimme helposti tarkastella sovelluksen tuottamia tulosteita annettujen syötteiden perusteella. 
+`StubIO`-luokka toteuttaa metodit `lue` ja `tulosta`, kuten `KonsoliIO`-luokka. Erona on, että `StubIO`-luokan syötteet määräytyvät konstruktorin kautta annetun listan perusteella, eikä komentoriviltä annettujen syötteiden perusteella. Lisäksi tulostetut arvot tallennetaan listaan, eikä niitä kirjoiteta komentoriville. Tämä mahdollistaa sen, että voimme helposti tarkastella sovelluksen tuottamia tulosteita annettujen syötteiden perusteella. 
 
 ## Tietojen tallennus
 
@@ -254,7 +254,7 @@ Arvosteluperusteet [kannustavat](/python/arvosteluperusteet) siihen, että ohjel
 
 Riippumatta mihin tiedon tallennat, kannattaa tiedon haku ja tallentaminen eristää sovelluksen muista osista. Kun piilotamme näihin operaatioihin liittyvän koodin yksityiskohdat sovelluksen muulta koodilta, on esimerkiksi tiedon tallennustapaan helppo tehdä muutoksia ilman, että sillä on vaikutuksia muualla. Tämä onnistuu noudattamalla [repository](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design)-suunnittelumallia.
 
-Repository-suunnittelumallin perusidea on se, että jokaisella tietokohteella (kuten todo-sovelluksen tehävä) on oma repositorionsa (ei tule sekoittaa gitin repositorioihin). Repositorio tarjoaa tietokohteeseen erilaisia luku- ja kirjoitusoperaatioita. Käytetään esimerkkinä referenssisovelluksen `TodoRepository`-luokkaa:
+Repository-suunnittelumallin perusidea on se, että jokaisella tietokohteella (kuten todo-sovelluksen tehtävä) on oma repositorionsa (ei tule sekoittaa gitin repositorioihin). Repositorio tarjoaa tietokohteeseen erilaisia luku- ja kirjoitusoperaatioita. Käytetään esimerkkinä referenssisovelluksen `TodoRepository`-luokkaa:
 
 ```python
 class TodoRepository:
@@ -322,7 +322,7 @@ class TodoRepository:
                 file.write(row+"\n")
 ```
 
-`TodoRepository`-luokka tarjoaa metodit tiedon lukemista varten metodit `find_all` ja `find_by_username`. Nämä metodit hakevat tietoa CSV-tiedostosta ja muodostovat sen riveistä `Todo`-luokan olioita. Tiedon kirjoittamista varten luokka tarjoaa metodin `create`.
+`TodoRepository`-luokka tarjoaa tiedon lukemista varten metodit `find_all` ja `find_by_username`. Nämä metodit hakevat tietoa CSV-tiedostosta ja muodostovat sen riveistä `Todo`-luokan olioita. Tiedon kirjoittamista varten luokka tarjoaa metodin `create`.
 
 `TodoRepository`-luokasta voi tehdä olion seuraavasti:
 
@@ -366,7 +366,7 @@ def get_database_connection():
     return connection
 ```
 
-Ennen tietokantaulujen alustusta kannattaa entiset tietokantaulut poistaa. Näin esimerkiksi uuden sarakkeen lisääminen tauluun onnistuu helposti. Tietokannan alustustoimenpiteitä varten kannattaa toteuttaa oma moduulinsa esimerkiksi <i>src/initialize_database.py</i> tiedostoon:
+Ennen tietokantaulujen alustusta kannattaa entiset tietokantataulut poistaa. Näin esimerkiksi uuden sarakkeen lisääminen tauluun onnistuu helposti. Tietokannan alustustoimenpiteitä varten kannattaa toteuttaa oma moduulinsa esimerkiksi <i>src/initialize_database.py</i> tiedostoon:
 
 ```python
 from database_connection import get_database_connection
@@ -447,7 +447,7 @@ class TestTodoRepository(unittest.TestCase):
 
 Sovelluksen koodiin ei ole syytä kovakoodata mitään konfiguraatioita, kuten sen käyttämien tiedostojen tai tietokantojen nimiä. Eräs syy tähän on se, että jos konfiguraatiot ovat koodissa, ei ohjelman normaalin käyttäjän (jolla ei ole pääsyä koodiin) ole mahdollista tehdä muutoksia konfiguraatioihin.
 
-Konfiguraatiot on syytä määritellä ohjelman ulkopuolella, esim. erillisissä konfiguraatiotiedostoissa. Ei siis välttämättä kannatta ottaa mallia edellisten esimerkkien tavasta kovakoodata tiedostojen polkuja esimerkiksi SQLite-tietokanna yhteyden muodostamisessa.
+Konfiguraatiot on syytä määritellä ohjelman ulkopuolella, esim. erillisissä konfiguraatiotiedostoissa. Ei siis välttämättä kannatta ottaa mallia edellisten esimerkkien tavasta kovakoodata tiedostojen polkuja esimerkiksi SQLite-tietokannan yhteyden muodostamisessa.
 
 Eräs tapa sovelluksen konfigurointiin on käyttää niin kutsuttuja _ympäristömuuttujia_. Ympäristömuuttujiin pääsee koodissa käsiksi mm. [os](https://docs.python.org/3/library/os.html)-moduulin [getenv](https://docs.python.org/3/library/os.html#os.getenv)-funktion avulla. Yksinkertaisin tapa määritellä sovellukselle ympäristömuuttujia on määritellä ne sovelluksen suorituksen yhteydessä komentoriviltä:
 
@@ -545,9 +545,9 @@ env_files =
     .env.test
 ```
 
-Nyt testit, jotka suoritetaan `pytest`-komennolla, käyttävät _.env.test_-tiedossa määriteltyjä ympäristömuuttujia.
+Nyt testit, jotka suoritetaan `pytest`-komennolla, käyttävät _.env.test_-tiedostossa määriteltyjä ympäristömuuttujia.
 
-Huomaa, että edellisen esimerkin `load_dotenv`-funktio lataa ympäristömuuttujat myös testeissä _.env_-tiedostosta, mutta se ei oletusarvoisesti ylikirjoita jo määriteltyjä muuttujia. Koska pytest-dotenv-lisäosa lataa ympäristömuuttujat ennen `load_dotenv`-funtiota, on testeissä ensisijaisesti käytössä _.env.test_-tiedossa määritellyt ympäristömuuttujat.
+Huomaa, että edellisen esimerkin `load_dotenv`-funktio lataa ympäristömuuttujat myös testeissä _.env_-tiedostosta, mutta se ei oletusarvoisesti ylikirjoita jo määriteltyjä muuttujia. Koska pytest-dotenv-lisäosa lataa ympäristömuuttujat ennen `load_dotenv`-funtiota, on testeissä ensisijaisesti käytössä _.env.test_-tiedostossa määritellyt ympäristömuuttujat.
 
 Mallia oman projektin konfiguroimiseksi ympäristömuuttujilla voi ottaa edellä esitettyjen esimerkkien lisäksi myös [referenssisovelluksesta](https://github.com/ohjelmistotekniikka-hy/python-todo-app).
 
