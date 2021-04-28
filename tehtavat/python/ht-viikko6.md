@@ -29,10 +29,10 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
     - Liian suuret luokat, metodit ja funktiot tulee siis pilkkoa osiin
 - Testaus on edennyt (0.5p)
   - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
-    - Käyttöliittymään ja testeihin liittyvä koodi [jätetään pois](/python/coverage#tiedostojen-jättäminen-raportin-ulkopuolelle) testikattavuusraportista
+  - Käyttöliittymään ja testeihin liittyvä koodi [jätetään pois](/python/coverage#tiedostojen-jättäminen-raportin-ulkopuolelle) testikattavuusraportista
+  - Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/python/coverage#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
   - Sovelluksen testien haarautumakattavuuden tulee olla vähintään 60%
-  - Testien tulee testata järkevällä tavalla ohjelman toiminnallisuutta
-    - Jos testit on tehty pelkästään haarautumakattavuuden saavuttamiseksi, ei testeistä saa pisteitä
+  - Testien tulee testata järkevällä tavalla ohjelman toiminnallisuutta. Jos testit on tehty pelkästään haarautumakattavuuden saavuttamiseksi, ei testeistä saa pisteitä
 - Docstring-dokumentointi aloitettu (0.5p)
   - Ainakin osalle ohjelman luokista, metodeista ja funktioista on tehty docstring-dokumentaatio
     - Edellytyksenä pisteille on, että suurin piirtein puolella luokista, metodeista ja funktioista on docstring-dokumentaatio
