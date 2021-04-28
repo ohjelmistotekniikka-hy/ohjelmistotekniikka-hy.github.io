@@ -35,6 +35,24 @@ Tulostuksesta huomaamme, että raportissa on suuri määrä projektin kannalta t
 source = src
 ```
 
+**HUOM:** _src_-hakemiston alahakemistoissa (ei siis itse _src_-hakemistossa) tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot, jotta testikattavuudeen sisällytetään kaikki halutut tiedostot. [Referenssisovelluksessa](https://github.com/ohjelmistotekniikka-hy/python-todo-app) tapauksessa <i>\_\_init\_\_.py</i>-tiedostot on lisätty seuraavasti:
+
+```
+src/
+  entities/
+    __init__.py
+    todo.py
+    ...
+  repositories/
+    __init__.py
+    todo_repository.py
+    ...
+  services/
+    __init__.py
+    todo_service.py
+  ...
+```
+
 ## Tiedostojen jättäminen raportin ulkopuolelle
 
 Voimme jättää testikattavuuden ulkopuolelle tiedostoja ja hakemistoja. Järkevää voisi olla esimerkiksi jättää testihakemisto, käyttöliittymän koodin hakemisto ja _src/index.py_-tiedosto testikattavuuden ulkopuolle. Tämä onnistuu seuraavalla muutoksella _.coveragerc_-tiedostoon:
@@ -42,7 +60,7 @@ Voimme jättää testikattavuuden ulkopuolelle tiedostoja ja hakemistoja. Järke
 ```
 [run]
 source = src
-omit = src/tests/**,src/ui/**,src/index.py
+omit = src/**/__init__.py,src/tests/**,src/ui/**,src/index.py
 ```
 
 Nyt komentojen `coverage run --branch -m pytest src` ja `coverage report -m` suorittaminen sisällyttää vain haluamamme _src_-hakemiston tiedostot.
