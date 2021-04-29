@@ -47,7 +47,7 @@ class Robot(pygame.sprite.Sprite):
 
         # muodostetaan polku tiedoston hakemistosta hakemistoon, jossa kuva sijaitsee
         self.image = pygame.image.load(
-            os.path.join(dirname, "assets", "robot.png")
+            os.path.join(dirname, "..", "assets", "robot.png")
         )
 
         # määritellään objektin ulottuvuudet. Tässä tapauksessa muodostetaan suorakulmia kuvan koon perusteella (50x50)
@@ -65,7 +65,9 @@ src/
   assets/
     robot.png
     ...
-  robot.py
+  sprites/
+    __init__.py
+    robot.py
   ...
 poetry.lock
 pyproject.toml
@@ -86,11 +88,11 @@ Pelin objektien tilan hallinta, kuten tieto, missä koordinaateissa objektit sij
 
 ```python
 import pygame
-from robot import Robot
-from box import Box
-from floor import Floor
-from target import Target
-from wall import Wall
+from sprites.robot import Robot
+from sprites.box import Box
+from sprites.floor import Floor
+from sprites.target import Target
+from sprites.wall import Wall
 
 
 class Level:
@@ -600,7 +602,7 @@ Metodi `should_move` tarkistaa onko viimeisestä liikkumisesta kulunut aikaa yli
 
 ```python
 import pygame
-from enemy import Enemy
+from sprites.enemy import Enemy
 
 
 class Level:
