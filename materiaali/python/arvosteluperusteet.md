@@ -89,11 +89,9 @@ Dokumentaatio tuo yhteensä maksimissaan 12 pistettä, jotka jakautuvat seuraava
 - Käyttö/asennusohje 1p
   - Arvostelijan tulee pystyä asentamaan ohjelma ja käyttämään sitä ohjeen avulla
 - Testausdokumentti 2p
-{% if include.is_python %}
 - Docstring-dokumentaatio 2p
   - Suurin osa luokista, attribuuteista, metodeista ja funktioista on dokumentoitu docstring-kommenttien avulla
   - Luokan sisäisiä (ilmaistu nimessä `_`- tai `__`-etuliitteellä) attribuutteja, tai metodeja ei tarvitse dokumentoida
-{% endif %}
 - Repositorio ja README 1p
   - Repositorion ja README:n oletetaan olevan aiempien viikkojen vaatimusten mukainen
 
