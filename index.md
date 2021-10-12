@@ -56,7 +56,7 @@ Palautuksen deadline {{ site.wk4dl }}
   - Ohjelman perustoiminnallisuus
   - Testien aloitus
   - Alustava rakenne luokkakaaviona
-  - Checkstyle/Pylint otettu käyttöön
+  - Pylint otettu käyttöön
 
 ### Viikko 5
 
@@ -75,7 +75,7 @@ Palautuksen deadline {{ site.wk6dl }}
 - [Harjoitustyö](/python/ht-viikko6) (3p)
   - Release 2
   - Testikattavuus nousee
-  - JavaDoc/Docstring aloitettu
+  - Docstring-dokumentaatio aloitettu
   - Alustava versio arkkitehtuuridokumentista
 
 ### Viikko 7
