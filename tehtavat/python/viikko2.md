@@ -4,7 +4,9 @@ title: Viikon 2 tehtävät
 permalink: /python/viikko2
 ---
 
-Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. **Tehtävien palautuksen deadline on {{site.wk2dl}}.**
+{% include java_materiaali_info.md %}
+
+**⚠️ Tehtävien palautuksen deadline on {{site.wk2dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
 
 Tehtävät palautetaan GitHubin avulla Labtoolin rekisteröimääsi repositorioon.
 

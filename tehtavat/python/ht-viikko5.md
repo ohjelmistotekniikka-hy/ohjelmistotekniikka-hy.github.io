@@ -4,7 +4,9 @@ title: Harjoitustyö viikko 5
 permalink: /python/ht-viikko5
 ---
 
-**Palautuksen deadline {{site.wk5dl}}.**
+{% include java_materiaali_info.md %}
+
+**⚠️ Palautuksen deadline on {{site.wk5dl}}.**
 
 **HUOM** jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä)
 
@@ -16,7 +18,7 @@ Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadline
 
 - Klo 00 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
 
-**HUOM! Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen koneella ja ohjaajien pitää pystyä se niiltä aukaisemaan!!** Esim. [Virtuaalisessa työasemassa](https://vdi.helsinki.fi) voit testata tätä.
+{% include harjoitustyon_toimivuus_info.md %}
 
 Palautuksesta on tarjolla 3 kurssipistettä.
 

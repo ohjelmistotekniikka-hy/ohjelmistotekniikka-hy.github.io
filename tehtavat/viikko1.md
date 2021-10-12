@@ -4,7 +4,7 @@ title: Viikon 1 tehtävät
 permalink: /viikko1
 ---
 
-Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. **Tehtävien palautuksen deadline on {{site.wk1dl}}.**
+**⚠️ Tehtävien palautuksen deadline on {{site.wk1dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
 
 Tehtävät palautetaan Githubin ja Labtoolin avulla. Lisää palautuksesta myöhemmin. Osa tehtävistä ei näy palautuksesta mitenkään. Niiden tekemättä jättäminen näkyy puuttuvana osaamisena ja saattaa aiheuttaa myöhemmin hankaluuksia.
 

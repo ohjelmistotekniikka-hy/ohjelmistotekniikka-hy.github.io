@@ -4,7 +4,9 @@ title: Harjoitustyö viikko 6
 permalink: /python/ht-viikko6
 ---
 
-**Palautuksen deadline {{site.wk6dl}}.**
+{% include java_materiaali_info.md %}
+
+**⚠️ Palautuksen deadline on {{site.wk6dl}}.**
 
 **Muutama huomio**
 
@@ -13,7 +15,7 @@ permalink: /python/ht-viikko6
   - Nyt kannattaa kerrata loppupalautuksen [arvosteluperusteet](/python/arvosteluperusteet)
   - Viimeiselläkin viikolla ohjelmaa ehtii vielä kasvattaa, mutta myös dokumentoinnille kannattaa jättää aikaa
 
-**HUOM! Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen koneella ja ohjaajien pitää pystyä se niiltä aukaisemaan!!** Esim. [Virtuaalisessatyöasemassa](https://vdi.helsinki.fi) voit testata tätä.
+{% include harjoitustyon_toimivuus_info.md %}
 
 Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 

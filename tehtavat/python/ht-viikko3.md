@@ -4,13 +4,15 @@ title: Harjoitustyö viikko 3
 permalink: /python/ht-viikko3
 ---
 
-**Palautuksen deadline {{site.wk3dl}}.**
+{% include java_materiaali_info.md %}
+
+**⚠️ Palautuksen deadline on {{site.wk3dl}}.**
 
 Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
 
 - Klo 00 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
 
-**HUOM! Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen koneella ja ohjaajien pitää pystyä se niiltä aukaisemaan!!** Voit testata tätä esim. [virtuaalityöasemassa](https://vdi.helsinki.fi).
+{% include harjoitustyon_toimivuus_info.md %}
 
 Palautuksesta on tarjolla 2 kurssipistettä.
 

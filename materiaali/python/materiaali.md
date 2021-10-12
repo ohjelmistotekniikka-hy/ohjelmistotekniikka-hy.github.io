@@ -4,6 +4,8 @@ permalink: /python/materiaali
 title: Materiaali
 ---
 
+{% include java_materiaali_info.md %}
+
 {% include materiaali_johdanto.md %}
 
 {% include materiaali_kirjoitusvirheita.md %}

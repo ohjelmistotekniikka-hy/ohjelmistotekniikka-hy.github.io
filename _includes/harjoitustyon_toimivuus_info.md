@@ -1,0 +1,1 @@
+**HUOM! Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen koneella ja ohjaajien pitää pystyä se niiltä aukaisemaa!** Voit testata tätä esim. [virtuaalityöasemassa](https://vdi.helsinki.fi).

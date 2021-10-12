@@ -4,7 +4,9 @@ title: Viikon 3 tehtävät
 permalink: /python/viikko3
 ---
 
-Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. **Tehtävien palautuksen deadline on {{site.wk3dl}}.**
+{% include java_materiaali_info.md %}
+
+**⚠️ Tehtävien palautuksen deadline on {{site.wk3dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
 
 Tehtävät palautetaan Githubin avulla Labtooliin rekisteröimääsi repositorioon.
 

@@ -4,6 +4,8 @@ permalink: /python/koodin-laatuvaatimukset
 title: Koodin laatuvaatimukset
 ---
 
+{% include java_materiaali_info.md %}
+
 Kurssin tavoitteena on, että tuotoksesi voisi ottaa kuka tahansa kaverisi tai muu opiskelija ylläpidettäväksi ja laajennettavaksi. Tavoitteena on Clean code - selkeää, ylläpidettävää ja toimivaksi testattua koodia. Tämä sivu esittelee erityisesti _lopullisen_ palautuksen laatuvaatimukset, mutta lueteltuja vaatimuksia on hyvä noudattaa mahdollisimman pian.
 
 ## Clean Code

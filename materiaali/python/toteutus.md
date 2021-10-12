@@ -4,6 +4,8 @@ permalink: /python/toteutus
 title: Ohjeita toteutukseen
 ---
 
+{% include java_materiaali_info.md %}
+
 Tähän osioon on koottu vinkkejä, joista on luultavasti hyötyä harjoitustyön toteutuksessa.
 
 ## Sovelluksen käyttöliittymä

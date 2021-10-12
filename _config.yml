@@ -7,7 +7,7 @@ repo_url: "https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.gith
 repo_branch: "master"
 
 # Kurssikertaan liittyvät muuttujat:
-title: Ohjelmistotekniikka, kevät 2021
+title: Ohjelmistotekniikka, syksy 2021
 
 # aikataulut (annetaan muodossa viikonpäivä dd.mm kellonaika)
 wk1dl: "tiistai 23.03. klo 23:59"
@@ -26,7 +26,6 @@ code_review_start_date: "keskiviikko 28.4. klo 23:59"
 # - ma 14-16  [zoom](https://helsinki.zoom.us/j/68570587158?pwd=TFhwUXBucExZeVNJZnRydE8yWkNFdz09)
 # - ti 14-16  [zoom](https://helsinki.zoom.us/j/65324719978) (alkaen 23.3.)
 # - to 13-15  [zoom]()
-
 times: 
   - time: "ma 14-16  [zoom](https://helsinki.zoom.us/j/68570587158?pwd=TFhwUXBucExZeVNJZnRydE8yWkNFdz09)"
   - time: "ti 14-16  [zoom](https://helsinki.zoom.us/j/65324719978)"
@@ -40,7 +39,7 @@ lecture_link: "[tallenne](https://youtu.be/4RCyYKp1LAk)"
 # seuraava kurssikerta muodossa syksyllä/keväällä [vuosi]. 
 # esimerkki syksyllä 2021
 # käytetään muun muassa "ei voi jatkaa seuraavalla kurssilla (syksyllä 2021)"
-next_course: "syksyllä 2021"
+next_course: "keväällä 2022"
 
 labtool_link: "https://study.cs.helsinki.fi/labtool/courses/TKT20002.2021.K.K.1"
 
