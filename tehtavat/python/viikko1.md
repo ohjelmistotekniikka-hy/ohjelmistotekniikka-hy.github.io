@@ -79,9 +79,9 @@ Komentoriviä käyttäessä kannattaa ehdottomasti totutella _tab-completen_ kä
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/tab.jpg)
 
-Tab:ia painamalla voit komentorivillä täydentää kirjoittamasi komennon nimen tai parametrin. Esim. jos olet siirtymässä hakemistoon nimeltään _ohjelmistotekniikka-syksy-2020_, riittää, että kirjoitat ```cd oh``` ja painat tabia. Jos hakemistossasi ei ole muita tiedostoja tai hakemistoja, jotka alkavat merkeillä _oh_, nimi täydentyy. Jos on, niin voit joutua kirjoittamaan merkin tai kaksi lisää. Jos tiedostoja on useampia etkä ole varma oikeasta nimestä, painamalla tabia useamman kerran näet mahdolliset vaihtoehdot.
+Tab:ia painamalla voit komentorivillä täydentää kirjoittamasi komennon nimen tai parametrin. Esim. jos olet siirtymässä hakemistoon nimeltään _ohjelmistotekniikka-syksy-2020_, riittää, että kirjoitat `cd oh` ja painat tabia. Jos hakemistossasi ei ole muita tiedostoja tai hakemistoja, jotka alkavat merkeillä _oh_, nimi täydentyy. Jos on, niin voit joutua kirjoittamaan merkin tai kaksi lisää. Jos tiedostoja on useampia etkä ole varma oikeasta nimestä, painamalla tabia useamman kerran näet mahdolliset vaihtoehdot.
 
-Myös komentojen nimet voi täydentää tab-completella. Esim. haluat avata _chromium-browser_ web-selaimen komentoriviltä, riittää että kirjoitat ```chro``` ja painat tabia. Komennon nimi täydentyy.
+Myös komentojen nimet voi täydentää tab-completella. Esim. haluat avata _chromium-browser_ web-selaimen komentoriviltä, riittää että kirjoitat `chro` ja painat tabia. Komennon nimi täydentyy.
 
 Ei pidä myöskään unohtaa _nuolta ylöspäin_. Sen avulla voit selata aiemmin kirjoittamiasi komentoja.
 
@@ -124,9 +124,9 @@ Määrittele gitille **oma nimesi** sekä **käyttämäsi email-osoite** antamal
  git config --global user.email you@example.com
 ```
 
-Varmista komennolla ```git config -l```, että määrittelyt menivät oikein.
+Varmista komennolla `git config -l`, että määrittelyt menivät oikein.
 
-Määritellään vielä git käyttämään sopivia värejä komennolla ```git config --global color.ui``` ja **vaihdetaan gitin käyttämäksi oletuseditoriksi** _nano_ komennolla ```git config --global core.editor nano```
+Määritellään vielä git käyttämään sopivia värejä komennolla `git config --global color.ui` ja **vaihdetaan gitin käyttämäksi oletuseditoriksi** _nano_ komennolla `git config --global core.editor nano`
 
 - jos käytät vimiä, voit jättää oletuseditorin muuttamatta
 
@@ -147,7 +147,7 @@ Tee nyt sopiva hakemisto gitin harjoittelua varten ja mene hakemistoon, eli anna
 
 **HUOM:** varmista nyt että olet luomassasi hakemistossa, eli jos suoritat komennon _ls_, ei hakemistossa pitäisi olla mitään.
 
-Luodaan hakemistosta paikallinen _git-repositorio_ antamalla komento ```git init```
+Luodaan hakemistosta paikallinen _git-repositorio_ antamalla komento `git init`
 
 Git ilmoittaa alustaneensa repositorion:
 
@@ -156,13 +156,13 @@ mluukkai@melkinpaasi:~/ot_viikko1$ git init
 Initialised empty Git repository in /home/ad/fshome4/u4/m/mluukkai/Linux/ot_viikko1/.git/
 ```
 
-Jos katsot hakemiston sisältöä komennolla ```ls -la``` huomaat, että hakemiston sisälle on ilmestynyt hakemisto ```.git```. Git käyttää luotua hakemistoa pitääkseen kirjaa repositorioon talletetuista tiedostoista.
+Jos katsot hakemiston sisältöä komennolla `ls -la` huomaat, että hakemiston sisälle on ilmestynyt hakemisto `.git`. Git käyttää luotua hakemistoa pitääkseen kirjaa repositorioon talletetuista tiedostoista.
 
 **HUOM** koska hakemiston nimi (_.git_) alkaa pisteellä, ei komento _ls_ näytä sitä oletusarvoisesti. Parametri _a_ näyttää myös pisteellä alkavat tiedostot ja hakemistot. Kokeile, miten _ls -a_ ja _ls -la_ eroavat toisistaan!
 
 Pysy edelleen repositorion sisältävässä hakemistossasi _ot_viikko1_.
 
-Luo hakemistoon tiedosto nimeltään _tiedosto.txt_, esim. komennolla ```touch```. Luotuasi tiedoston, suorita komento ```git status```:
+Luo hakemistoon tiedosto nimeltään _tiedosto.txt_, esim. komennolla `touch`. Luotuasi tiedoston, suorita komento `git status`:
 
 ```
 mluukkai@melkinpaasi:~/ot_viikko1$ touch tiedosto.txt
@@ -182,9 +182,9 @@ mluukkai@melkinpaasi:~/ot_viikko1$
 
 Git ilmoittaa, että on olemassa tiedosto, joka on tilassa _untracked_, eli tiedostoa ei ole lisätty versionhallinnan pariin.
 
-Kuten komennon tuloste kertoo, tiedoston lisääminen gitin alaisuuteen (...to include in what will be committed) tapahtuu komennolla ```git add tiedosto.txt```
+Kuten komennon tuloste kertoo, tiedoston lisääminen gitin alaisuuteen (...to include in what will be committed) tapahtuu komennolla `git add tiedosto.txt`
 
-Suorita lisäys ja sen jälkeen komento ```git status```:
+Suorita lisäys ja sen jälkeen komento `git status`:
 
 ```
 mluukkai@melkinpaasi:~/ot_viikko1$ git add tiedosto.txt
@@ -205,7 +205,7 @@ Git kertoo nyt, että _tiedosto.txt_ on niiden muutosten joukossa, jotka voidaan
 
 Commitoimisella tarkoitetaan tiedostojen ja hakemistojen sekä niihin liittyvien muutosten tallentamista _git-repositorioon_.
 
-Suoritetaan commitointi antamalla komento ```git commit -m "tiedosto.txt luotu"```
+Suoritetaan commitointi antamalla komento `git commit -m "tiedosto.txt luotu"`
 
 ```
 mluukkai@melkinpaasi:~/ot_viikko1$ git commit -m "tiedosto.txt luotu"
@@ -214,7 +214,7 @@ mluukkai@melkinpaasi:~/ot_viikko1$ git commit -m "tiedosto.txt luotu"
  create mode 100644 tiedosto.txt
 ```
 
-Suorita jälleen komento ```git status```
+Suorita jälleen komento `git status`
 
 ```
 mluukkai@melkinpaasi:~/ot_viikko1$ git status
@@ -236,7 +236,7 @@ Kun teet muutoksia hakemistosi alla oleviin tiedostoihin (tai hakemistoihin), ko
   - editori sulkeutuu painamalla _ctrl_ ja _x_
 - Luo hakemistoon uusi tiedosto, nimeltään _toinen.txt_
 
-Suorita jälleen ```git status```
+Suorita jälleen `git status`
 
 ```
 mluukkai@melkinpaasi:~/ot_viikko1$ git status
@@ -256,9 +256,9 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 Git ilmoittaa nyt, että uusi tiedosto on _untracked_ ja että aiemmassa tiedostossa on muutoksia, jotka eivät ole _staged for commit_.
 
-Toimitaan ohjeen mukaan eli lisätään muutokset ja uusi tiedosto commitoitavien joukkoon. Molempien tiedostojen yhtäaikainen "addaaminen" onnistuu komennolla ```git add .```
+Toimitaan ohjeen mukaan eli lisätään muutokset ja uusi tiedosto commitoitavien joukkoon. Molempien tiedostojen yhtäaikainen "addaaminen" onnistuu komennolla `git add .`
 
-Tarkistetaan taas tilanne komennolla ```git status```
+Tarkistetaan taas tilanne komennolla `git status`
 
 ```
 mluukkai@melkinpaasi:~/ot_viikko1$ git status
@@ -273,7 +273,7 @@ Sekä muutos että uusi tiedosto ovat nyt valmiina committoitavaksi.
 
 Committointi onnistuu komennolla _git commit_. Kuten edelliselläkin kerralla, annetaan komennolle parametrina _commit-viesti_, eli merkkijono, joka kuvaa mitä muutoksia uusi commit tuo edelliseen nähden:
 
-```git commit -m "muutos ja lisäys"```
+`git commit -m "muutos ja lisäys"`
 
 Tarkasta committoinnin jälkeen jälleen tilanne komennolla _git status_.
 
@@ -281,9 +281,9 @@ Tarkasta committoinnin jälkeen jälleen tilanne komennolla _git status_.
 
 Tiedostot ja niihin tehdyt muutokset voivat siis olla gitin suhteen _kolmessa eri tilassa_.
 
-- Aluksi tiedostot (tai niihin tehdyt muutokset) ovat vain _working directoryssä_ ja git ei noteeraa niitä ennen kuin ne lisätään komennolla ```git add```
+- Aluksi tiedostot (tai niihin tehdyt muutokset) ovat vain _working directoryssä_ ja git ei noteeraa niitä ennen kuin ne lisätään komennolla `git add`
 - Tämän jälkeen tiedostot ovat valmiina commitoitavaksi. Gitin terminologian mukaan valmiina committoitavaksi olevat tiedostot ovat _staging_-alueella
-- Komento ```git commit``` siirtää stagingissa olevat muutokset repositorioon eli luo uuden _commitin_
+- Komento `git commit` siirtää stagingissa olevat muutokset repositorioon eli luo uuden _commitin_
 
 Seuraava kuva havainnollistaa sitä, miten tiedoston _tila_ vaihtuu git-komentoja tekemällä.
 
@@ -293,7 +293,7 @@ Kun tiedosto luodaan, menee se gitin _working directoryyn_. Komennolla _git add_
 
 ## git commit
 
-Jokainen komennon _git commit_ suorittaminen siis synnyttää repositorioon uuden commitin, eli uuden "tilan". Komennolla ```git log``` on mahdollista nähdä, mitä committeja repositorio sisältää:
+Jokainen komennon _git commit_ suorittaminen siis synnyttää repositorioon uuden commitin, eli uuden "tilan". Komennolla `git log` on mahdollista nähdä, mitä committeja repositorio sisältää:
 
 ```
 mluukkai@melkinpaasi:~/ot_viikko1$ git log
@@ -394,7 +394,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 Kuten oletettua, git kertoo että olemme tehneet muutoksia, jotka eivät ole "staged for commit", eli lisättyjä commitoitavaksi.
 
-- Päätetäänkin perua muutokset. Se onnistuu komennolla ```git restore eka.txt```
+- Päätetäänkin perua muutokset. Se onnistuu komennolla `git restore eka.txt`
 - Kun suoritat uudelleen komennon _git status_ huomaat, että working directory ei enää sisällä muutoksia:
 
 ```
@@ -424,7 +424,7 @@ mluukkai@melkinpaasi:~/ot_viikko1$
 
 Ohje muutoksen perumiseen löytyy git statuksen tulosteesta.
 
-- suorita muutokset peruva komento ```git restore --staged kolmas.txt```
+- suorita muutokset peruva komento `git restore --staged kolmas.txt`
 - katsotaan jälleen _git status_
 
 ```pre
@@ -441,7 +441,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 Tiedosto ei siis enää ole _staged_-tilassa, muutokset ovat kuitenkin _working directoryssä_, eli jos katsot tiedoston sisällön, muutokset ovat vielä olemassa
 
-- pääset perumaan muutokset kokonaan antamalla komennon ```git restore kolmas.txt```
+- pääset perumaan muutokset kokonaan antamalla komennon `git restore kolmas.txt`
 - varmista, että tiedosto on palannut muutoksia edeltävään tilaan
 
 Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on lisätty committoitavaksi, eli se on _staged_, voidaan muutos perua komennolla _git restore --staged_. Tällöin muutokset kuitenkin vielä jäävät tiedostoon, eli ovat _working directoryssä_. Tiedosto saadaan palautettua repositoriossa olevaan edellisen commitin tilaan komennolla _git restore_.
@@ -460,7 +460,7 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 - poista tiedosto _file1_ ja uudelleennimeä tiedosto _file2_ tiedostoksi _file22_
 - committoi
 
-Suorita repositoriossa komento ```git log --stat | cat``` ja **ota komennon tulos talteen**, tulet tarvitsemaan sitä myöhemmin!
+Suorita repositoriossa komento `git log --stat | cat` ja **ota komennon tulos talteen**, tulet tarvitsemaan sitä myöhemmin!
 
 ## GitHub
 
@@ -475,7 +475,7 @@ Ennen GitHubin käytöönottoa, tee uusi git-repositorio paikalliselle koneelle,
 Esim. seuraavat komennot siirtyvät kotihakemistoon, luovat sen alle hakemiston _ot-harjoitustyo_, siirtyvät hakemistoon, alustavat sen git-repositorioksi sekä lisäävät ja commitoivat yhden tiedoston repositorioon:
 
 ```
-cd 
+cd
 mkdir ot-harjoitustyo
 cd ot-harjoitustyo
 git init
@@ -575,7 +575,7 @@ Branch master set up to track remote branch master from origin.
   - ja sen sisälle hakemisto _viikko1_
   - Komentorivitehtävien lopussa oli kehotus: Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. _Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
   - Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _komentorivi.txt_ ja kopioi sinne komennon _tree_ tulos
-  - Edellisen tehtäväsarjan lopussa kehoitettiin tallentamaan harjoitusrepositoriossa annetun komennon ```git log --stat | cat``` tulos
+  - Edellisen tehtäväsarjan lopussa kehoitettiin tallentamaan harjoitusrepositoriossa annetun komennon `git log --stat | cat` tulos
   - Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _gitlog.txt_ ja kopioi sinne githarjoittelun tulos
 - Kirjoita jotain tekstiä hakemiston juuressa olevaan tiedostoon README.md
   - muotoile tekstisi [markdown-notaatiota](https://guides.github.com/features/mastering-markdown/) käyttäen
@@ -657,9 +657,9 @@ Nyrkkisääntönä kannattaa pitää aina sitä, että kun rupeat työskentelem�
 
 ## Labtool
 
-Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin]({{ site.labtool_link }}). 
+Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin]({{ site.labtool_link }}).
 
-**HUOM** Labtool kysyy myös harjoitustyön aihetta (project name), kirjoita kenttään myös käyttämäsi ohjelmointikieli (eli Java tai Python). 
+**HUOM** Labtool kysyy myös harjoitustyön aihetta (project name), kirjoita kenttään myös käyttämäsi ohjelmointikieli (eli Java tai Python).
 
 ## Lisää gitiä
 
