@@ -13,7 +13,7 @@ Kurssin kolmella ensimmäisellä viikolla on muutama ohjauksessa tai omatoimises
 
 - Viikko 1
   - Palautuksen deadline {{site.wk1dl}}
-  - Pajassa tehtävät tai omatoimiset [tehtävät](/viikko1)
+  - Pajassa tehtävät tai omatoimiset [tehtävät](/python/viikko1)
 - Viikko 2
   - Palautuksen deadline {{site.wk2dl}}
   - [Harjoitustyö](/ht-viikko2)

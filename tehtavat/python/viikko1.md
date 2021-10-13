@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Viikon 1 tehtävät
-permalink: /viikko1
+permalink: /python/viikko1
 ---
+
+{% include java_materiaali_info.md %}
 
 **⚠️ Tehtävien palautuksen deadline on {{site.wk1dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
 
@@ -47,39 +49,14 @@ Tulet tarvitsemaan komentorivin käyttötaitoja tällä kurssilla ja muutenkin o
 
 ## osa 2
 
-**HUOM** Tämä tehtävä suoritetaan hieman eri tavalla riippuen siitä, kumpaa ohjelmointikieltä haluat käyttää.
-
 Saman Tietokone työvälineenä-kurssin materiaalin [toisesta osasta](https://tkt-lapio.github.io/git/) voi olla paljonkin hyötyä tässä ja seuraavissa tehtävissä.
 
 Ota ssh-yhteys linuxpalvelimeen _melkki.cs.helsinki.fi_, _melkinpaasi.cs.helsinki.fi_ tai _melkinkari.cs.helsinki.fi_. Linuxilla, macilla ja Windows 10:llä yhteys otetaan komentoriviltä komennolla _ssh kayttajatunnus@palvelimenosoite_. Vanhemmilla Windows versioilla ssh-yhteyden ottaminen onnistuu esimerkiksi [putty:llä](http://www.putty.org).
 
 Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 
-#### Java
-
-- luo kotihakemistoosi hakemisto _kurssit_
-  - **HUOM** joidenkin kohdalla melkillä on ollut ongelmia kotihakemiston asetuksissa ja esim. hakemiston luomisen seurauksena on virhe 'permission denied'. Jos törmäät ongelmaan, lähetä viesti osoitteeseen _it-support@cs.helsinki.fi_ ja raportoi ongelmaksi "ei oikeuksia kotihakemistoon melkillä"
-  - kokeile myös jos kirjaantuminen toiselle koneelle, esim. _melkinpaasi.cs.helsinki.fi_ tuottaisi paremman tuloksen
-- luo hakemistolle _kurssit_ alihakemisto _ot2021_
-- ja luomallesi hakemistolle alihakemisto _viikko1_
-- mene kotihakemistoosi ja luo sen alle hakemisto _temp_
-- mene hakemistoon _temp_
-- hae osoitteessa _https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/misc/Unicafe.zip_ oleva tiedosto [wget](https://en.wikipedia.org/wiki/Wget)-ohjelmalla
-  - wget toimii siten, että sille annetaan ladattava tiedosto parametriksi
-- haettu tiedosto on _zip-paketti_, pura se _unzip_-ohjelmalla
-  - myös unzip toimii siten, että sille annetaan purettava tiedosto parametriksi
-- komennon suorittamisen jälkeen hakemistoon on ilmestynyt hakemisto _Unicafe_
-- siirrä hakemisto hakemiston _kurssit/ot2021/viikko1_ alihakemistoksi
-- poista zip-paketti
-- poista hakemisto _temp_
-- mene nyt uudessa paikassa olevaan hakemistoon _Unicafe_
-- suorita komento _mvn clean_
-  - jos näet rivien joukossa ilmoituksen _BUILD SUCCESS_ on tehtävä tehty
-
-#### Python
-
 - Luo kotihakemistoosi hakemisto _kurssit_
-  - **HUOM** joidenkin kohdalla melkillä on ollut ongelmia kotihakemiston asetuksissa ja esim. hakemiston luomisen seurauksena on virhe 'permission denied'. Jos törmäät ongelmaan, lähetä viesti osoitteeseen _it-support@cs.helsinki.fi_ ja raportoi ongelmaksi "ei oikeuksia kotihakemistoon melkillä"
+  - **HUOM:** joidenkin kohdalla melkillä on ollut ongelmia kotihakemiston asetuksissa ja esim. hakemiston luomisen seurauksena on virhe 'permission denied'. Jos törmäät ongelmaan, lähetä viesti osoitteeseen _it-support@cs.helsinki.fi_ ja raportoi ongelmaksi "ei oikeuksia kotihakemistoon melkillä"
   - Kokeile myös jos kirjaantuminen toiselle koneelle, esim. _melkinpaasi.cs.helsinki.fi_ tuottaisi paremman tuloksen
 - Luo hakemistolle _kurssit_ alihakemisto _ot2021_
 - Ja luomallesi hakemistolle alihakemisto _viikko1_
@@ -93,8 +70,6 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 - Siirrä hakemisto hakemiston _kurssit/ot2021/viikko1_ alihakemistoksi
 - Poista zip-paketti
 - Poista hakemisto _temp_
-
-**Tästä jatkuu taas yhteinen osio.** 
 
 **Mene tämän jälkeen _kotihakemistoon_ ja anna komento _tree kurssit_. Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin.**
 

@@ -4,7 +4,7 @@ title: Viikon 3 tehtävät
 permalink: /java/viikko3
 ---
 
-Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on {{site.wk3dl}}
+**⚠️ Tehtävien palautuksen deadline on {{site.wk3dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
 
 Tehtävät palautetaan Githubin avulla Labtooliin rekisteröimääsi repositorioon.
 

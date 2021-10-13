@@ -4,7 +4,7 @@ permalink: /java/ht-viikko4
 title: Harjoitustyö viikko 4
 ---
 
-**Palautuksen deadline {{site.wk4dl}}.**
+**⚠️ Palautuksen deadline {{site.wk4dl}}.**
 
 Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
 

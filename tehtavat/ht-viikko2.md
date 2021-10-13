@@ -18,7 +18,7 @@ Aihetta miettiessäsi kannattaa ehdottomasti lukea [ohjeet työn aloittamiseen](
 
 Mikään ei tietenkään estä sitä, että aloitat jo ohjelmoinnin tai vaikkapa koodaat koko työn valmiiksi. Viikon 2 deadlinen pisteytyksessä ollaan kiinnostuneita ainoastaan määrittelydokumentista.
 
-**HUOM** jos aloitat jo ohjelmoinnin, muista että ohjelmakoodi tulee kirjoittaa englanniksi! Ohjelman käyttöliittymä ja dokumentaatio voivat olla suomeksi tai englanniksi. 
+**HUOM:** jos aloitat jo ohjelmoinnin, muista että ohjelmakoodi tulee kirjoittaa englanniksi! Ohjelman käyttöliittymä ja dokumentaatio voivat olla suomeksi tai englanniksi.
 
 Palautus tapahtuu lisäämällä oman aiheen _alustava määrittelydokumentti_ ensimmäisen viikon [laskareiden](/viikko1#labtool) päätteeksi [Labtooliin]({{ site.labtool_link }}) rekisteröimääsi palautusrepositorioon.
 

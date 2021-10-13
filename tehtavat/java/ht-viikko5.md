@@ -4,7 +4,7 @@ permalink: /java/ht-viikko5
 title: Harjoitustyö viikko 5
 ---
 
-**Palautuksen deadline {{site.wk5dl}}.**
+**⚠️ Palautuksen deadline {{site.wk5dl}}.**
 
 **HUOM** jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä)
 

@@ -4,7 +4,7 @@ permalink: /java/ht-viikko6
 title: Harjoitustyö viikko 6
 ---
 
-**Palautuksen deadline {{site.wk6dl}}.**
+**⚠️ Palautuksen deadline {{site.wk6dl}}.**
 
 **Muutama huomio**
 

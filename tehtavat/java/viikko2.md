@@ -4,7 +4,7 @@ title: Viikon 2 tehtävät
 permalink: /java/viikko2
 ---
 
-Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. **Tehtävien palautuksen deadline on {{site.wk2dl}}.**
+**⚠️ Tehtävien palautuksen deadline on {{site.wk2dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
 
 Tehtävät palautetaan GitHubin avulla Labtoolin rekisteröimääsi repositorioon.
 
