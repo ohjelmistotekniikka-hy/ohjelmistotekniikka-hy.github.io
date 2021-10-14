@@ -18,7 +18,7 @@ poetry add pygame
 
 ## Sovelluslogiikan suunnitteleminen
 
-Järkevästi suunniteltu sovelluslogiikka on pelin koko toteutuksen kulmakivi. Suunnittelussa kannattaa lähteä liikkeelle miettimällä, miten pelin logiikka toimii ja minkälaisia objekteja siiheen liitty. Kaksiulotteisissa peleissä pelin objekteja mallinnetaan usein suorakulmioilla, joilla on x- ja y-koordinaatti, sekä leveys- ja korkeus-arvo. Moni pelien sovellusloogiikkaan liittyvä toiminallisuus liittyy siihen, mitkä pelin objektit leikkaavat toisiaan, eli selkokielellä "törmäävät" toisiinsa. Tästä hyvänä esimerkkinä on se, ettei pelihahmo yleensä pysty liikkumaan seinien läpi.
+Järkevästi suunniteltu sovelluslogiikka on pelin koko toteutuksen kulmakivi. Suunnittelussa kannattaa lähteä liikkeelle miettimällä, miten pelin logiikka toimii ja minkälaisia objekteja siiheen liitty. Kaksiulotteisissa peleissä pelin objekteja mallinnetaan usein suorakulmioilla, joilla on x- ja y-koordinaatti, sekä leveys- ja korkeus-arvo. Moni pelien sovellusloogiikan toiminallisuus liittyy siihen, mitkä pelin objektit leikkaavat toisiaan, eli selkokielellä "törmäävät" toisiinsa. Tästä hyvänä esimerkkinä on se, ettei pelihahmo yleensä pysty liikkumaan seinien läpi.
 
 Sokoban-pelissä erilaisia objekteja ovat:
 
