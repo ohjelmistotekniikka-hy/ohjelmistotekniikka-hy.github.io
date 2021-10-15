@@ -130,15 +130,15 @@ Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erila
 
 Harjoitustyö siis aloitetaan kurssin [toisella viikolla](/ht-viikko2).
 
-Työ tehdään samaan repositorioon, jonka olet rekisteröinyt Labtooliin ja johon olet jo tehnyt [viikon 1 laskareiden](/viikko1) palautuksen.
+Työ tehdään samaan repositorioon, jonka olet rekisteröinyt Labtooliin ja johon olet jo tehnyt [viikon 1 laskareiden](/python/viikko1) palautuksen.
 
 ### GitHubissa olevan repositorion kloonaaminen
 
 Jos haluat tehdä harjoitustyötä eri koneella, kuin mille teit repositoriosi alunperin, saat koodin siirrettyä toiselle koneelle kloonaamalla repositorion.
 
-Koneeseesi täytyy luonnollisesti [ensin asentaa](https://git-scm.com/downloads) git jos se ei ole jo koneellasi. Muista myös [oleellisten konfiguraatioiden](/viikko1#konfiguraatioita) tekeminen
+Koneeseesi täytyy luonnollisesti [ensin asentaa](https://git-scm.com/downloads) git jos se ei ole jo koneellasi. Muista myös [oleellisten konfiguraatioiden](/python/viikko1#konfiguraatioita) tekeminen
 
-Koneesi julkinen avain on talletettava GitHubiin. Ohje avaimen generointiin ja tallettamiseen [täällä](/viikko1#julkinen-avain).
+Koneesi julkinen avain on talletettava GitHubiin. Ohje avaimen generointiin ja tallettamiseen [täällä](/python/viikko1#julkinen-avain).
 
 Kloonaus tapahtuu seuraavasti:
 
@@ -202,7 +202,7 @@ Jos työskentelet monella koneella niin huomioi seuraavat
 
 - GitHubissa oleva repositorion tulee olla kloonattuna kaikille koneille
 - Oletusarvoisesti kaikkien koneiden julkiset avaimet kannattaa olla määritelty GitHubiin
-- [Oleelliset konfiguraatiot](/viikko1#konfiguraatioita) kannattaa olla tehtynä kaikilla koneilla
+- [Oleelliset konfiguraatiot](/python/viikko1#konfiguraatioita) kannattaa olla tehtynä kaikilla koneilla
 - **TÄRKEÄÄ** aina kun lopetat työskentelyn koneella, pushaa muutokset GitHubiin
 - Kun aloitat työskentelyn koneelta, pullaa muutokset githubista
 - Jos (ja kun) törmäät seuraavaan virheeseen:

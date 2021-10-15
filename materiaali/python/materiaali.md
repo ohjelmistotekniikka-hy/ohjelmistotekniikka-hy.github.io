@@ -18,7 +18,7 @@ Tarvitsemme ohjelmisokehityksessä suuren joukon käytännön työkaluja.
 
 ### Komentorivi ja versionhallinta
 
-Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionhallintaa, molemmat ovat tärkeässä roolissa ohjelmistokehityksessä ja niiden harjoittelu on aiheena viikon 1 [tehtävissä](/viikko1).
+Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionhallintaa, molemmat ovat tärkeässä roolissa ohjelmistokehityksessä ja niiden harjoittelu on aiheena viikon 1 [tehtävissä](/python/viikko1).
 
 ### Poetry
 
