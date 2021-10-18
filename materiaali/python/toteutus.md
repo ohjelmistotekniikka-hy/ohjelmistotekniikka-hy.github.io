@@ -246,7 +246,7 @@ class TestNumerotiedustelu(unittest.TestCase):
         # varmista assert-lauseella että io.tulosteet on halutun kaltainen
 ```
 
-`StubIO`-luokka toteuttaa metodit `lue` ja `tulosta`, kuten `KonsoliIO`-luokka. Erona on, että `StubIO`-luokan syötteet määräytyvät konstruktorin kautta annetun listan perusteella, eikä komentoriviltä annettujen syötteiden perusteella. Lisäksi tulostetut arvot tallennetaan listaan, eikä niitä kirjoiteta komentoriville. Tämä mahdollistaa sen, että voimme helposti tarkastella sovelluksen tuottamia tulosteita annettujen syötteiden perusteella. 
+`StubIO`-luokka toteuttaa metodit `lue` ja `tulosta`, kuten `KonsoliIO`-luokka. Erona on, että `StubIO`-luokan syötteet määräytyvät konstruktorin kautta annetun listan perusteella, eikä komentoriviltä annettujen syötteiden perusteella. Lisäksi tulostetut arvot tallennetaan listaan, eikä niitä kirjoiteta komentoriville. Tämä mahdollistaa sen, että voimme helposti tarkastella sovelluksen tuottamia tulosteita annettujen syötteiden perusteella.
 
 ## Tietojen tallennus
 
@@ -283,7 +283,7 @@ class TodoRepository:
         self._write(todos)
 
         return todo
-    
+
     def _ensure_file_exists(self):
         Path(self._file_path).touch()
 
@@ -350,7 +350,7 @@ Huomaa, että luokan käyttäjä ei ole tietoinen, miten tieto haetaan. Tämä m
 
 ### SQLite-tietokannan käyttö
 
-SQLite-tietokantaa kannattaa käyttää sovelluksessa [sqlite3](https://docs.python.org/3/library/sqlite3.html)-moduulin kautta. Mikä tekee SQLite-tietokannan käytöstä hieman hankalampaa perinteiseen tiedostoon verrattuna on se, että sen käyttö vaatii tietokantaulujen alustuksen.
+[SQLite-tietokanta](https://www.sqlite.org/index.html) on helppokäyttöinen SQL-tietokanta, joka tallentaa tietokannan tiedostoon käyttäjän tietokoneelle, jolloin erillistä tietokantapalvelinta ei tarvita. Sitä kannattaa käyttää sovelluksessa [sqlite3](https://docs.python.org/3/library/sqlite3.html)-moduulin kautta. Mikä tekee SQLite-tietokannan käytöstä hieman hankalampaa perinteiseen tiedostoon verrattuna on se, että sen käyttö vaatii tietokantaulujen alustuksen.
 
 Tietokantayhteys kannattaa muodostaa omassa moduulissaan esimerkiksi <i>src/database_connection.py</i>-tiedostossa:
 
@@ -366,6 +366,27 @@ connection.row_factory = sqlite3.Row
 
 def get_database_connection():
     return connection
+```
+
+Tietokantayhteyttä voi nyt hyödyntää esimerkiksi `UserRepository`-luokassa seuraavasti:
+
+```python
+class UserRepository:
+    def __init__(self, connection):
+        self._connection = connection
+
+    def find_all(self):
+        cursor = self._connection.cursor()
+
+        cursor.execute('select * from users')
+
+        rows = cursor.fetchall()
+
+        return [User(row['username'], row['password']) for row in rows]
+
+
+user_repository = UserRepository(get_database_connection())
+users = user_repository.find_all()
 ```
 
 Ennen tietokantaulujen alustusta kannattaa entiset tietokantataulut poistaa. Näin esimerkiksi uuden sarakkeen lisääminen tauluun onnistuu helposti. Tietokannan alustustoimenpiteitä varten kannattaa toteuttaa oma moduulinsa esimerkiksi <i>src/initialize_database.py</i> tiedostoon:
@@ -431,6 +452,8 @@ from initialize_database import initialize_database
 def pytest_configure():
     initialize_database()
 ```
+
+Vaikka edellä esitelty tapa alustaa tietokanta `initialize_database`-funktion avulla on melko kätevä, on SQL-tietokannan skeemaa tapana ylläpitää niin kutsuttujen [tietokantamigraatioiden](https://en.wikipedia.org/wiki/Schema_migration) avulla. Eräs tähän käyttötarkoitukseen soveltuva työkalu on [Alembic](https://alembic.sqlalchemy.org/en/latest/).
 
 ### Huomioita testaamisesta
 
