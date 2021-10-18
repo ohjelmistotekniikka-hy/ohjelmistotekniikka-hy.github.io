@@ -480,7 +480,7 @@ Käyttäjän pitäisi nyt pystyä siirtymään näkymien välillä painamalla "S
 
 ## Muuttujat
 
-Joskus haluamme liittää komponentissa jonkin ominaisuuden muuttuvaan arvoon. Esimerkiksi haluamme vaihtaa `Label`-komponentin tekstiä, kun nappia painetaan. TkInter tarjoaa erilaisia [muuttujaluokkia](https://effbot.org/tkinterbook/variable.htm), joilla on `get`- ja `set`-metodit niiden arvon lukemista ja asettamista varten. Muuttajaluokkia löytyy eri tyyppisten arvojen tallentamiseen: `StringVar`, `BooleanVar`, `DoubleVar` ja `IntVar`.
+Joskus haluamme liittää komponentissa jonkin ominaisuuden muuttuvaan arvoon. Esimerkiksi haluamme vaihtaa `Label`-komponentin tekstiä, kun nappia painetaan. TkInter tarjoaa erilaisia [muuttujaluokkia](https://docs.python.org/3/library/tkinter.html#coupling-widget-variables), joilla on `get`- ja `set`-metodit niiden arvon lukemista ja asettamista varten. Muuttajaluokkia löytyy eri tyyppisten arvojen tallentamiseen: `StringVar`, `BooleanVar`, `DoubleVar` ja `IntVar`.
 
 `StringVar`-luokkaa voimme hyödyntää esimerkiksi toiminnallisuudessa, jossa painikkeen painaminen vaihtaa tekstin sisältöä:
 
@@ -537,7 +537,7 @@ window.mainloop()
 
 `UI`-luokan `start`-metodissa talletamme `StringVar`-luokan olion `label_var`-attribuuttiin ja asetamme sille alkuarvoksi `"0"` kutsumalla `set`-metodia. Luokan metodit `increase` ja `decrease` lukevat muuttujan arvon `get`-metodin avulla ja asettavat sille uuden arvon `set`-metodilla. Muuttuja liitetään `label`-komponentin tekstiksi `textvariable`-parametrin kautta.
 
-Toinen yleinen käyttökohde muuttujaluokille on [CheckButton](http://effbot.org/tkinterbook/checkbutton.html)- ja [RadioButton](http://effbot.org/tkinterbook/radiobutton.htm)-komponentit. Näiden arvoina voi käyttää `IntVar`-luokan olioita `variable`-parametrin kautta.
+Toinen yleinen käyttökohde muuttujaluokille on [CheckButton](https://www.tutorialspoint.com/python/tk_checkbutton.htm)- ja [RadioButton](https://www.tutorialspoint.com/python/tk_radiobutton.htm)-komponentit. Näiden arvoina voi käyttää `IntVar`-luokan olioita `variable`-parametrin kautta.
 
 ## Lisäluettavaa
 
