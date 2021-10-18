@@ -46,6 +46,11 @@ Tältä sivulta löydät kurssin Python-materiaalin. Kurssin Java-materiaali on 
 
 - [Aiheideoita ja ohjeita työn harjoitustyön aloittamiseen](/python/harjoitustyon-aloittaminen)
 - [Yleisiä ohjeita harjoitustyön toteutukseen](/python/toteutus)
+  - [Sovelluksen käyttöliittymä](/python/toteutus#sovelluksen-käyttöliittymä)
+  - [Pelien toteutus](/python/toteutus#pelien-toteutus)
+  - [Riippuvuuksien injektointi](/python/toteutus#riippuvuuksien-injektointi)
+  - [Tietojen tallennus](/python/toteutus#tietojen-tallennus)
+  - [Sovelluksen konfiguraatiot](/python/toteutus#sovelluksen-konfiguraatiot)
 - [Arvosteluperusteet](/python/arvosteluperusteet)
 - [Koodin laatuvaatimukset](/python/koodin-laatuvaatimukset)
 - [GitHub-releasen tekeminen](/release)
