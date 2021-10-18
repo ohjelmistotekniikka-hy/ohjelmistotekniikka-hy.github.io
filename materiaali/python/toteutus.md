@@ -399,7 +399,7 @@ def drop_tables(connection):
     cursor = connection.cursor()
 
     cursor.execute('''
-        drop table if exists mytable;
+        drop table if exists users;
     ''')
 
     connection.commit()
@@ -409,9 +409,9 @@ def create_tables(connection):
     cursor = connection.cursor()
 
     cursor.execute('''
-        create table mytable (
-            id text primary key,
-            mycolumn text
+        create table users (
+            username text primary key,
+            password text
         );
     ''')
 
