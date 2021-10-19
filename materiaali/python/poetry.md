@@ -26,7 +26,7 @@ Monilla tietokoneilla Python-version kolme komennot suoritetaan `python3`- ja `p
 python --version
 ```
 
-Jos version on alle `3.6.0`, asenna tietokoneellesi [uusin Python-versio](https://www.python.org/downloads/). Muissa tapauksissa, voit käyttää `python`-komentoa `python3`-komennon sijaan.
+Jos version on alle `3.8.0`, asenna tietokoneellesi [uusin Python-versio](https://www.python.org/downloads/). Muissa tapauksissa, voit käyttää `python`-komentoa `python3`-komennon sijaan.
 
 ## Asennus
 
@@ -82,7 +82,7 @@ description = ""
 authors = ["Kalle Ilves <kalle.ilves@helsinki.fi>"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.8"
 
 [tool.poetry.dev-dependencies]
 
@@ -91,7 +91,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 ```
 
-Tiedoston `[tool.poetry]`-osio sisältää projektiin liittyviä yleistietoja, kuten sen nimi, kuvaus ja ylläpitäjät. Voit halutessasi muokata näitä tietoja. Osion alapuolella on osioita, jotka listaavat projektin riippuvuuksia. Muokkaa `[tool.poetry.dependencies]`-osiota niin, että Python-version vaatimus on muotoa `python = "^3.6"`. `^3.6`-merkintä tarkoittaa, että projektin käyttö vaatii vähintään Python-version `3.6.0`. Voit lukea lisää versiomerkinnöistä Poetryn [dokumentaatiosta](https://python-poetry.org/docs/dependency-specification/#version-constraints).
+Tiedoston `[tool.poetry]`-osio sisältää projektiin liittyviä yleistietoja, kuten sen nimi, kuvaus ja ylläpitäjät. Voit halutessasi muokata näitä tietoja. Osion alapuolella on osioita, jotka listaavat projektin riippuvuuksia. Muokkaa `[tool.poetry.dependencies]`-osiota niin, että Python-version vaatimus on muotoa `python = "^3.8"`. `^3.8`-merkintä tarkoittaa, että projektin käyttö vaatii vähintään Python-version `3.8.0`. Voit lukea lisää versiomerkinnöistä Poetryn [dokumentaatiosta](https://python-poetry.org/docs/dependency-specification/#version-constraints).
 
 Kun _pyproject.toml_-tiedosto on tullut tutuksi, viimeistellään projektin alustaminen suorittamalla komento:
 
@@ -115,7 +115,7 @@ Asennuksen komento on siis muotoa `poetry add <kirjasto>`. Komennon suorittamise
 
 ```
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.8"
 cowsay = "^2.0.3"
 ```
 

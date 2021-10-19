@@ -3,3 +3,11 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .DS_Store
+
+# python stuff
+.coverage
+.pytest_cache
+htmlcov
+__pycache__
+*.py[cod]
+*$py.class
