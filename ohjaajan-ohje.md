@@ -6,7 +6,17 @@ title: Ohjaajan ohje
 
 ## Ohjaajan tehtävät
 
+Ohjaajan tehtävät kurssilla ovat:
+
+- Palautteen antaminen opiskelijoiden välipalautuksista [Labtoolin]({{site.labtool_link}}) kautta
+- Lopullisten palautusten arviointi
+- Opiskelijoiden ohjaaminen (pajassa tai etänä), jos ohjaaja haluaa osallistua pajaohjaukseen
+
 ## Palautteen antaminen
+
+Opiskelijoille annetaan pääsääntöisesti palautetta viikkopalautuksien yhteydessä [Labtoolin]({{site.labtool_link}}) kautta. Kurssin opiskelijat jaetaan Labtoolissa ohjaajien kesken ensimmäisen viikon deadlinen jälkeen. **Ohjaajajan tulee antaa viikkopalaute jokaiselle opiskelijalleen deadlinea vastaavan viikon sunnuntaihin klo 23:59 mennessä**.
+
+Viikkopalautuksien tarkistuksessa kannattaa hyödyntää Labtoolin viikottaista "tarkistuslistaa" ja alta löytyviä arvosteluperusteita. Palautuksia ei tarvitse syynätä turhan tarkasti, oleellisten tiedostojen silmäily ja vaadittavien toiminallisuuksien pikainen testaaminen riittää. Palautteen itsessään tulee olla _ytimekästä_ ja _rakentavaa_.
 
 ### Viikko 1
 
