@@ -43,6 +43,8 @@ Pisteet (yht 24) jakautuvat seuraavasti
 - Ohjelman laajuus 4p
 - Ulkoisten kirjastojen hyödyntäminen 1p
   - ks [Ulkoiset kirjastot Mavenin avulla](/java/maven#ulkoisten-kirjastojen-k%C3%A4ytt%C3%A4minen-mavenin-avulla)
+  - Näihin eivät lukeudu mateeriaalissa esitellyt testaukseen, testikattavuuteen, koodin formatointiin, koodin laadun staattisen analyysiin, tai koodin dokumentointiin käytettävät kirjastot
+  - Myöskään JavaFX:n käyttö ei vielä tätä pistettä tuo
 - Suorituskelpoinen jar-tiedosto 1p
   - Tiedosto generoitavissa tai löytyy repositoriosta _loppupalautus_-nimisestä releasesta
 - Koodin laatu 4+1p

@@ -43,6 +43,7 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
 - Ohjelman laajuus 4p
 - Ulkoisten kirjastojen hyödyntäminen 1p
   - Näihin eivät lukeudu mateeriaalissa esitellyt testaukseen, testikattavuuteen, koodin formatointiin, koodin laadun staattisen analyysiin, tai koodin dokumentointiin käytettävät kirjastot
+  - Myöskään Pygamen tai TkInterin käyttö ei tätä pistettä tuo 
 - Release 1p
   - Loppupalautuksesta on tehty loppupalautus-niminen GitHub-release, joka sisältää ohjelman lähdekoodin
 - Koodin laatu 4+1p
