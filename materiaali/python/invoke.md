@@ -60,7 +60,7 @@ poetry run invoke --list
 
 ## Huomioita tehtävien nimeämisestä
 
-Jos tehtävän määrittelevän funktion nimi on [snake case](https://en.wikipedia.org/wiki/Snake_case)-formaatissa (esimerkiksi <i>snake_case</i>), on komentoriviltä suoritettavan tehtävän nimi [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles)-formaatissa (esimerkiksi _kebab-case_). Esimerkiksi seuraavasti nimetty tehtävä:
+Jos tehtävän määrittelevän funktion nimi on [snake case](https://en.wikipedia.org/wiki/Snake_case) -formaatissa (esimerkiksi <i>snake_case</i>), on komentoriviltä suoritettavan tehtävän nimi [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles) -formaatissa (esimerkiksi _kebab-case_). Esimerkiksi seuraavasti nimetty tehtävä:
 
 ```python
 from invoke import task

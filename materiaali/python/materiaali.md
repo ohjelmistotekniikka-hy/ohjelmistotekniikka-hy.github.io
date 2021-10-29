@@ -32,6 +32,9 @@ Ohjelmistojen testaus tapahtuu nykyään ainakin yksikkö- ja integraatiotestien
 
 Unittestiin tutustumme viikon 2 [tehtävissä](/python/viikko2).
 
+Ohje unittestin käyttöön löytyy [täältä](/python/unittest).
+
+
 ### Docstring
 
 Osa ohjelmiston dokumentointia on lähdekoodin API:n eli käytännössä luokkien, metodien ja fuktioiden kuvaamista. Pythonissa lähdekoodi dokumentoidaan käyttäen [docstring](https://google.github.io/styleguide/pyguide.html#381-docstrings)-kommentteja. Dokumentointi tapahtuu kirjoittamalla koodin yhteyteen sopivasti muotoiltuja kommentteja.

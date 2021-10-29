@@ -195,7 +195,7 @@ Ensimmäinen testeistä tarkastaa, että maukkaasti syöminen vähentää saldoa
 
 ## Testin alustustoimet
 
-Huomaamme, että testikoodissamme on toistoa: kolme ensimmäistä testiä luovat kaikki samanlaisen 10 euron saldon omaavan kortin.
+Huomaamme, että testikoodissamme on toistoa: neljä ensimmäistä testiä luovat kaikki samanlaisen 10 euron saldon omaavan kortin.
 
 Siirrämmekin metodin luonnin testiluokassa määriteltyyn alustusmetodiin, `setUp`:
 

@@ -24,7 +24,7 @@ Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteit
 
 Ennen tehtävien aloitusta, tutustu [Poetry-ohjeisiin](/python/poetry). Varmista, että Poetry on asennettuna ja osaat suorittaa `poetry`-komentoja komentoriviltä.
 
-## 1
+## 1 Warm up
 
 - Tutustu [unittest-ohjeeseen](/python/unittest)
 - Lukiessasi tee testit myös itse
@@ -214,7 +214,7 @@ Eli vaikka hakemistossa _/laskarit/viikko2/unicafe_ on alihakemisto  <i>.pytest_
 
 Avaa nyt projekti valitsemallasi editorilla, kuten Visual Studio Codella.
 
-Tee valmiiseen, tiedostosssa _src/tests/maksukortti_test.py_ sijaitsevaan, `TestMaksukortti`-testiluokkaan testit, jotka testaavat ainakin seuraavia asioita:
+Tee valmiiseen, tiedostossa _src/tests/maksukortti_test.py_ sijaitsevaan, `TestMaksukortti`-testiluokkaan testit, jotka testaavat ainakin seuraavia asioita:
 
 - Kortin saldo alussa oikein
 - Rahan lataaminen kasvattaa saldoa oikein
@@ -266,7 +266,8 @@ Laajennetaan unicafe-projektin testaus kattamaan myös kassapääte.
 
 Tee testihakemistoon testitiedosto <i>kassapaate_test.py</i> ja sinne testiluokka `TestKassapaate`. Tee testit jotka testaavat ainakin seuraavia asioita:
 
-- Luodun kassapäätteen rahamäärä ja myytyjen lounaiden määrä on oikea (rahaa 1000, lounaita myyty 0)
+- Luodun kassapäätteen rahamäärä ja myytyjen lounaiden määrä on oikea (rahaa 1000 euroa, lounaita myyty 0)
+  - huomaa, että luokka tallentaa rahamäärän sentteinä
 - Käteisosto toimii sekä edullisten että maukkaiden lounaiden osalta
   - Jos maksu riittävä: kassassa oleva rahamäärä kasvaa lounaan hinnalla ja vaihtorahan suuruus on oikea
   - Jos maksu on riittävä: myytyjen lounaiden määrä kasvaa
@@ -279,7 +280,7 @@ Tee testihakemistoon testitiedosto <i>kassapaate_test.py</i> ja sinne testiluokk
   - Kassassa oleva rahamäärä ei muutu kortilla ostettaessa
 - Kortille rahaa ladattaessa kortin saldo muuttuu ja kassassa oleva rahamäärä kasvaa ladatulla summalla
 
-Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun kassapäätteellä on automaattiset testit, on sen rakennetta helppo muokata eli refaktoroida siistimmäksi koko ajan kuitenkin varmistaen, että testit menevät läpi. Tulemme tekemään refaktoroinnin myöhemmin kurssilla.
+Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun kassapäätteellä on automaattiset testit, on sen rakennetta helppo muokata eli refaktoroida siistimmäksi koko ajan kuitenkin varmistaen, että testit menevät läpi. Refaktoroi koodisi siistimmäksi jos haluat. 
 
 ## 5
 
