@@ -280,14 +280,16 @@ Tee testihakemistoon testitiedosto <i>kassapaate_test.py</i> ja sinne testiluokk
   - Kassassa oleva rahamäärä ei muutu kortilla ostettaessa
 - Kortille rahaa ladattaessa kortin saldo muuttuu ja kassassa oleva rahamäärä kasvaa ladatulla summalla
 
-Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun kassapäätteellä on automaattiset testit, on sen rakennetta helppo muokata eli refaktoroida siistimmäksi koko ajan kuitenkin varmistaen, että testit menevät läpi. Refaktoroi koodisi siistimmäksi jos haluat. 
+Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun kassapäätteellä on automaattiset testit, on sen rakennetta helppo muokata eli refaktoroida siistimmäksi koko ajan kuitenkin varmistaen, että testit menevät läpi. Refaktoroi koodisi siistimmäksi jos haluat.
 
-## 5
+## 5 Testauskattavuus
 
 Varmista testikattavuuskomentojen avulla, että kassapäätteen testeillä on 100% haarautumakattavuus. Suorita siis virtuaaliympäristössä komennot `coverage run --branch -m pytest src` ja `coverage html`, jonka jälkeen avaa selaimessa _htmlcov/index.html_-tiedosto.
 
-## 6
+Jos testauskattavuus ei ole vielä 100%, tee lisää testejä kunnes tilanne korjautuu.
+
+## 6 Screenshot
 
 Talleta kohdassa [testikattavuus](#3-testikattavuus) olevan kuvan tyylinen [screenshot](https://www.take-a-screenshot.org/) projektisi kattavuusraportista palautusrepositoriosi hakemistoon _laskarit/viikko2_.
 
-**Muista tallentaa tekemäsi muutokset gitiin ja työntää ne GitHubiin (`git push`).**
+**Muista tallentaa tekemäsi muutokset gitiin ja pushaa ne GitHubiin (`git push`).**
