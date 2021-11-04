@@ -237,7 +237,7 @@ source = src
 omit = src/tests/**,src/index.py
 ```
 
-Testikattavuuden kerääminen testeistä onnistuu virtuaaliympäristössä komennolla `coverage run --branch -m pytest src`. Komennon suorittamisen jälkeen kattavuusraportin voi muodostaa komennolla `coverage html`. Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Avamaalla hakemiston tiedoston _index.html_ selaimessa aukeaa seuraavan näköinen raportti:
+Testikattavuuden kerääminen testeistä onnistuu virtuaaliympäristössä komennolla `coverage run --branch -m pytest src`. Komennon suorittamisen jälkeen kattavuusraportin voi muodostaa komennolla `coverage html`. Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Avaamalla hakemiston tiedoston _index.html_ selaimessa aukeaa seuraavan näköinen raportti:
 
 ![Testikattavuusraportti]({{ "/assets/images/python/unicafe-coverage.png" | absolute_url }})
 
