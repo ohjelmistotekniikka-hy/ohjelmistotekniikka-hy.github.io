@@ -329,7 +329,12 @@ Muista käyttää komentoa _git status_ mahdollisimman usein. Älä myöskään 
 
 ## gitk
 
-Gitin committeja voi tarkastella myös graafisella _gitk_-komennolla (OSX:lle ja Windowsille vastaava työkalu on [Sourcetree](https://www.sourcetreeapp.com)). Suorita komento repositoriossa:
+Gitin committeja voi tarkastella myös graafisella _gitk_-komennolla.
+- _gitk_-komento toimii Windowsilla ainakin GitHub for Windowsin Git Shellissä.
+- Saat asennettua Maciin  _gitk_:n [tämän ohjeen](https://www.geekbitzone.com/posts/git/gitk-for-macos/) avulla
+- Jos _gitk_ ei jostain syystä toimi, voit asnetaa [Sourcetree](https://www.sourcetreeapp.com)-työkalun 
+
+Suorita komento repositoriossa:
 
 ![]({{ "/assets/images/lh3-1.png" | absolute_url }})
 
