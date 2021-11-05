@@ -486,7 +486,7 @@ cd ot-harjoitustyo
 git init
 touch README.md
 git add .
-git commit -m"initial commit"
+git commit -m "initial commit"
 ```
 
 Siirrytään sitten GitHubin käyttöön
