@@ -55,7 +55,7 @@ ui.start()
 window.mainloop()
 ```
 
-Koodi sai hieman paremman rakenteen. `UI`-luokka saa konstruktorin kautta juurikomponentin, johon se liittää lisäämänsä komponentit. Metodissa `start` alustaa `Label`-olion ja kerromme sille parametrin `master` kautta, että se liitetään juurikomponenttiin, `root`. `text`-parametri sen sijaan määrittelee itse näytettävän tekstin.
+Koodi sai hieman paremman rakenteen. `UI`-luokka saa konstruktorin kautta juurikomponentin, johon se liittää lisäämänsä komponentit. Metodi `start` alustaa `Label`-olion ja kerromme sille parametrin `master` kautta, että se liitetään juurikomponenttiin, `root`. `text`-parametri sen sijaan määrittelee itse näytettävän tekstin.
 
 Huomaa, ettei komponettia näytetä ennen `pack`-metodin kutsua. Tutustumme metodin merkitykseen pian. Lisätään sitä ennen vielä lisää komponentteja käyttöliittymäämme.
 
