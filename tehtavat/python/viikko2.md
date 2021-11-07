@@ -8,7 +8,7 @@ permalink: /python/viikko2
 
 **⚠️ Tehtävien palautuksen deadline on {{site.wk2dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
 
-Tehtävät palautetaan GitHubin avulla Labtoolin rekisteröimääsi repositorioon.
+Tehtävät palautetaan GitHubin avulla Labtooliin rekisteröimääsi repositorioon.
 
 Muista pushata tehtävät GitHubiin ennen viikkodeadlinea.
 
@@ -45,7 +45,7 @@ self.assertEqual(str(kortti), "Kortilla on rahaa 2 euroa")
 
 ## 2 Maksukortti ja kassapääte: testit kortille
 
-**HUOM** tämä tehtävä tehdään **eri projektiin** kuin edellinen, ja vaikka molemmissa tehtävissä on saman niminen luokka, eli `Maksukortti`-luokat vat erilaiset, eli **älä** copypastaa edellisen tehtävän koodia tai tehtäviä tähän tehtävään.
+**HUOM** tämä tehtävä tehdään **eri projektiin** kuin edellinen, ja vaikka molemmissa tehtävissä on samanniminen luokka, eli `Maksukortti`-luokat ovat erilaiset, eli **älä** copypastaa edellisen tehtävän koodia tai tehtäviä tähän tehtävään.
 
 Tämän tehtävän projekti _ladataan internetistä_ hieman alempana olevan ohjeen mukaan.
 
@@ -237,7 +237,7 @@ source = src
 omit = src/tests/**,src/index.py
 ```
 
-Testikattavuuden kerääminen testeistä onnistuu virtuaaliympäristössä komennolla `coverage run --branch -m pytest src`. Komennon suorittamisen jälkeen kattavuusraportin voi muodostaa komennolla `coverage html`. Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Avamaalla hakemiston tiedoston _index.html_ selaimessa aukeaa seuraavan näköinen raportti:
+Testikattavuuden kerääminen testeistä onnistuu virtuaaliympäristössä komennolla `coverage run --branch -m pytest src`. Komennon suorittamisen jälkeen kattavuusraportin voi muodostaa komennolla `coverage html`. Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Avaamalla hakemiston tiedoston _index.html_ selaimessa aukeaa seuraavan näköinen raportti:
 
 ![Testikattavuusraportti]({{ "/assets/images/python/unicafe-coverage.png" | absolute_url }})
 
@@ -254,9 +254,9 @@ Jotta `coverage`-komennon generoimat tiedostot eivät päättyisi versionhallint
 
 ## Komentojen suorittaminen Visual Studio Codessa
 
-Visual Studio Codesta löytyy sisään rakennettu terminaali. Terminaalin saa avattua valitsemalla päävalikosta _Terminal_ ja aukeavasta alavalikosta _New Terminal_. editorin alalaitaan pitäisi ilmesty terminaali, jossa voit suorittaa komentorivikomentoja.
+Visual Studio Codesta löytyy sisään rakennettu terminaali. Terminaalin saa avattua valitsemalla päävalikosta _Terminal_ ja aukeavasta alavalikosta _New Terminal_. editorin alalaitaan pitäisi ilmestyä terminaali, jossa voit suorittaa komentorivikomentoja.
 
-Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa projektin nimi ja jokin satunnain merkkijono suluissa, esimerkiksi `(unicafe-sF0cl2di-py3.9)`. Jos et ole virtuaaliympäristössä pääset siihen tutulla `poetry shell` komennolla. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
+Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa projektin nimi ja jokin satunnainen merkkijono suluissa, esimerkiksi `(unicafe-sF0cl2di-py3.9)`. Jos et ole virtuaaliympäristössä pääset siihen tutulla `poetry shell` komennolla. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
 
 ![Visual Studio Code terminaali]({{ "/assets/images/python/vscode-terminaali.png" | absolute_url }})
 
