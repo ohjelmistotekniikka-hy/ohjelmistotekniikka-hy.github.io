@@ -46,7 +46,7 @@ Luo Labtooliin rekisteröimäsi repositorion hakemistoon _laskarit/viikko2_ hake
 poetry init
 ```
 
-Kun Poetry kysyy projektin tietoja varmista, että **yhteensopiva Python-versio asetaan oikein**. Jos Poetry ehdottaa kohdassaa _Compatible Python versions_ jotain Python 2 -versiota, aseta versioksi `^3.8`. Muilla projektin tiedoilla ei ole tämän tehtävän kannalta väliä.
+Kun Poetry kysyy projektin tietoja varmista, että **yhteensopiva Python-versio asetaan oikein**. Jos Poetry ehdottaa kohdassaa _Compatible Python versions_ jotain Python 2 versiota, aseta versioksi `^3.8`. Muilla projektin tiedoilla ei ole tämän tehtävän kannalta väliä. Voit myös muokata _pyproject.toml_-tiedoston tietoja jälkikäteen, mutta muista suorittaa komento `poetry install`, jotta muutokset tulevat voimaan.
 
 Asennetaan projektiin kehityksen aikaiseksi riippuvuudeksi [pytest](https://docs.pytest.org/en/stable/)-sovelluskehys, joka helpottaa testien suorittamista komentoriviltä. Riippuvuuden asentaminen onnistuu samassa hakemistossa komennolla:
 

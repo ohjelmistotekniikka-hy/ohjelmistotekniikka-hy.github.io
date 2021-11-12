@@ -52,7 +52,7 @@ Huomaa, että tämän asennustavan kanssa `poetry`-komento ei välttämättä ol
 
 **HUOM:** kaikki asennustavat saattavat vaatia terminaali-ikkunan sulkemisen ja uudelleen avaamisen, jotta Poetryn komennot alkavat toimia. Joissain tapauksissa on vaadittu jopa tietokoneen uudelleenkäynnistys.
 
-### Huomioita laitoksen melkki-palvelimen asennuksesta 
+### Huomioita laitoksen melkki-palvelimen asennuksesta
 
 Laitoksen melkki.cs.helsinki.fi-palvelimelle Poetryn asennus tulisi onnistua seuraamalla Poetryn [asennusohjeiden](https://python-poetry.org/docs/#installation) Linux-ohjeita. Huomaa, että asennuksen jälkeen polku Poetryn binääriin tulee asettaa `PATH`-muuttujaan. Tämä onnistuu komennolla:
 
@@ -70,7 +70,7 @@ Harjoitellaan Poetryn käyttöä tekemällä pieni esimerkkiprojekti. Luo hakemi
 poetry init
 ```
 
-Komennon suorittaminen alkaa kysymään kysymyksiä. Voit vastata kysymyksiin haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painikketta painamalla on ihan hyvä vaihtoehto.
+Komennon suorittaminen alkaa kysymään kysymyksiä. Kun Poetry kysyy projektin tietoja varmista, että **yhteensopiva Python-versio asetaan oikein**. Jos Poetry ehdottaa kohdassaa _Compatible Python versions_ jotain Python 2 versiota, aseta versioksi `^3.8`. Muihin kysymyksiin voit vastata haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painikketta painamalla on ihan hyvä vaihtoehto.
 
 Kun viimeiseen kysymykseen on vastattu, katso hakemiston sisältöä. Hakemistoon pitäisi ilmestyä _pyproject.toml_-tiedosto, jonka sisältö on kutakuinkin seuraava:
 
@@ -99,7 +99,7 @@ Kun _pyproject.toml_-tiedosto on tullut tutuksi, viimeistellään projektin alus
 poetry install
 ```
 
-Komennon suorittaminen tekee projektille vaadittavat alustustoimenpiteet, kuten virtuaaliympäristön alustamisen. Jos projektille olisi määritelty riippuvuuksia, komennon suorittaminen asentaisi myös ne. Tämän vuoksi _komento tulee suorittaa aina ennen kuin uutta projekti aletaan käyttämään_.
+Komennon suorittaminen tekee projektille vaadittavat alustustoimenpiteet, kuten virtuaaliympäristön alustamisen. Jos projektille olisi määritelty riippuvuuksia, komennon suorittaminen asentaisi myös ne. Tämän vuoksi _komento tulee suorittaa aina ennen kuin uutta projekti aletaan käyttämään_. Komento tulee myös suorittaa, jotta _pyproject.toml_-tiedostoon tehdyt muutokset tulevat voimaan.
 
 Komennon suorittamisen seurauksena hakemistoon pitäisi ilmestyä tiedosto _poetry.lock_. Tiedosto sisältää kaikkien asennettujen riippuvuuksien versiotiedot. Sen tietojen avulla Poetry osaa aina asentaa riippuvuuksista täsmälleen oikeat versiot. Tästä syystä _tiedosto tulee lisätä versionhallintaan_. Huomaa, että tiedoston sisältöä ei tule _missään tapauksessa_ muuttaa, vaan se on täysin Poetryn ylläpitämä.
 
