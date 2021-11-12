@@ -103,6 +103,33 @@ Komennon suorittaminen tekee projektille vaadittavat alustustoimenpiteet, kuten 
 
 Komennon suorittamisen seurauksena hakemistoon pitäisi ilmestyä tiedosto _poetry.lock_. Tiedosto sisältää kaikkien asennettujen riippuvuuksien versiotiedot. Sen tietojen avulla Poetry osaa aina asentaa riippuvuuksista täsmälleen oikeat versiot. Tästä syystä _tiedosto tulee lisätä versionhallintaan_. Huomaa, että tiedoston sisältöä ei tule _missään tapauksessa_ muuttaa, vaan se on täysin Poetryn ylläpitämä.
 
+**HUOM:** jos törmäät seuraavaan virheilmoitukseen:
+
+```
+Python 2.7 will no longer be supported in the next feature release of Poetry (1.2).
+You should consider updating your Python version to a supported one.
+
+Note that you will still be able to manage Python 2.7 projects by using the env command.
+See https://python-poetry.org/docs/managing-environments/ for more information.
+
+The currently activated Python version 2.7.16 is not supported by the project (^3.8).
+Trying to find and use a compatible version.
+```
+
+Eräs tapa korjata tilanne Macilla ja ehkä myös Linuxilla on editoida tiedoston `~/.poetry.bin/poetry` ensimmäisellä rivillä mainittu Pythonin polku. Oletusarvoinen polku on todennäköisesti seuraava:
+
+```
+#!/usr/bin/python
+```
+
+Polku tulee Macilla muuttaa (todennäköisesti) muotoon:
+
+```
+#!/usr/local/bin/python3
+```
+
+Oikea polku kannattaa varmistaa komennolla `which python3`.
+
 ## Riippuvuuksien asentaminen
 
 Asennetaan seuraavaksi esimerkkiprojektimme ensimmäisen riippuvuus. Riippuvuuksien löytäminen onnistuu helpoiten Googlettamalla ja etsimällä hakutuloksista sopivia GitHub-repositorioita, tai PyPI-sivuja. Asennetaan esimerkkinä projektiimme erittäin hyödyllinen [cowsay](https://pypi.org/project/cowsay/)-kirjasto. Tämä onnistuu komennolla:
