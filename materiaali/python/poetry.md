@@ -67,10 +67,10 @@ Huomaa, että tämä komento tulee suorittaa jokaisen kirjautumiskerran yhdeytes
 Harjoitellaan Poetryn käyttöä tekemällä pieni esimerkkiprojekti. Luo hakemisto _poetry-testi_ haluamaasi hakemistoon. Hakemiston ei tarvitse löytyä Labtooliin rekisteröimästäsi repositoriosta. Avaa hakemisto komentoriviltä ja suorita siellä komento:
 
 ```bash
-poetry init
+poetry init --python ^3.8
 ```
 
-Komennon suorittaminen alkaa kysymään kysymyksiä. Kun Poetry kysyy projektin tietoja varmista, että **yhteensopiva Python-versio asetetaan oikein**. Jos Poetry ehdottaa kohdassa _Compatible Python versions_ jotain Python 2 versiota, aseta versioksi `^3.8`. Muihin kysymyksiin voit vastata haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painiketta painamalla on ihan hyvä vaihtoehto.
+Komennon yhteydessä annettu `--python ^3.8`-asetus asettaa projektin Python-version vaatimukseksi vähintään version 3.8. Komennon suorittaminen alkaa kysymään kysymyksiä. Voit vastata kysymyksiin haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painiketta painamalla on täysin hyvä vaihtoehto.
 
 Kun viimeiseen kysymykseen on vastattu, katso hakemiston sisältöä. Hakemistoon pitäisi ilmestyä _pyproject.toml_-tiedosto, jonka sisältö on kutakuinkin seuraava:
 
@@ -91,7 +91,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 ```
 
-Tiedoston `[tool.poetry]`-osio sisältää projektiin liittyviä yleistietoja, kuten sen nimi, kuvaus ja ylläpitäjät. Voit halutessasi muokata näitä tietoja. Osion alapuolella on osioita, jotka listaavat projektin riippuvuuksia. Muokkaa `[tool.poetry.dependencies]`-osiota niin, että Python-version vaatimus on muotoa `python = "^3.8"`. `^3.8`-merkintä tarkoittaa, että projektin käyttö vaatii vähintään Python-version `3.8.0`. Voit lukea lisää versiomerkinnöistä Poetryn [dokumentaatiosta](https://python-poetry.org/docs/dependency-specification/#version-constraints).
+Tiedoston `[tool.poetry]`-osio sisältää projektiin liittyviä yleistietoja, kuten sen nimen, kuvauksen ja ylläpitäjät. Osion alapuolella on osioita, jotka listaavat projektin riippuvuuksia. Osiossa `[tool.poetry.dependencies]` näemme `poetry init`-komennon suorituksen yhteydessä asettamamme Python-version vaatimuksen, joka on muotoa `python = "^3.8"`. `^3.8`-merkintä tarkoittaa, että projektin käyttö vaatii vähintään Python-version 3.8. Voit lukea lisää versiomerkinnöistä Poetryn [dokumentaatiosta](https://python-poetry.org/docs/dependency-specification/#version-constraints).
 
 Kun _pyproject.toml_-tiedosto on tullut tutuksi, viimeistellään projektin alustaminen suorittamalla komento:
 
