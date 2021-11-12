@@ -70,7 +70,7 @@ Harjoitellaan Poetryn käyttöä tekemällä pieni esimerkkiprojekti. Luo hakemi
 poetry init
 ```
 
-Komennon suorittaminen alkaa kysymään kysymyksiä. Kun Poetry kysyy projektin tietoja varmista, että **yhteensopiva Python-versio asetetaan oikein**. Jos Poetry ehdottaa kohdassaa _Compatible Python versions_ jotain Python 2 versiota, aseta versioksi `^3.8`. Muihin kysymyksiin voit vastata haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painikketta painamalla on ihan hyvä vaihtoehto.
+Komennon suorittaminen alkaa kysymään kysymyksiä. Kun Poetry kysyy projektin tietoja varmista, että **yhteensopiva Python-versio asetetaan oikein**. Jos Poetry ehdottaa kohdassa _Compatible Python versions_ jotain Python 2 versiota, aseta versioksi `^3.8`. Muihin kysymyksiin voit vastata haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painikketta painamalla on ihan hyvä vaihtoehto.
 
 Kun viimeiseen kysymykseen on vastattu, katso hakemiston sisältöä. Hakemistoon pitäisi ilmestyä _pyproject.toml_-tiedosto, jonka sisältö on kutakuinkin seuraava:
 
