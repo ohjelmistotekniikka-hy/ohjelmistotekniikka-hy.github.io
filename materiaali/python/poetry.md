@@ -222,3 +222,34 @@ pytest = "^6.1.2"
 ```
 
 Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se vähentää asennettavien riippuvuuksien määrää tapauksessa, jossa haluamme vain käynnistää sovelluksen. Tässä tilanteessa riippuvuuksien asentamisen voi tehdä komennolla `poetry install --no-dev`.
+
+## Ratkaisuja yleisiin ongelmiin
+
+Aloita varmistamalla, että Poetrysta on asennettu uusin versio suorittamalla komento `poetry self update`.
+
+### Komento `poetry install` epäonnistuu
+
+Kokeile suorittaa komento `poetry config experimental.new-installer false` ja suorita komento `poetry install` uudelleen.
+
+### Virtuaaliympäristössä suoritetaan Python versiota 2
+
+Varmista ensin, että _pyproject.toml_-tiedostossa on oikea Python version vaatimus:
+
+```
+[tool.poetry.dependencies]
+python = "^3.8"
+```
+
+Listaa tämän jälkeen käytössä olevat virtuaaliympäristöt komennolla `poetry env list` ja poista ne kaikki yksitellen komennolla `poetry env remove <nimi>`. Esimerkiksi seuraavasti:
+
+```bash
+$ poetry env list
+unicafe-jLeQYxxf-py3.9 (Activated)
+$ poetry env remove unicafe-jLeQYxxf-py3.9
+Deleted virtualenv: /Users/kalleilv/Library/Caches/pypoetry/virtualenvs/unicafe-jLeQYxxf-py3.9
+```
+
+Kun virtuaaliympäristöt on poistettu suorita komento `poetry install`.
+
+
+
