@@ -250,6 +250,3 @@ Deleted virtualenv: /Users/kalleilv/Library/Caches/pypoetry/virtualenvs/unicafe-
 ```
 
 Kun virtuaaliympäristöt on poistettu suorita komento `poetry install`.
-
-
-
