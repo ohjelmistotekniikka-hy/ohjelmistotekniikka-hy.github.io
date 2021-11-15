@@ -227,7 +227,7 @@ Kehityksen aikaisten riippuvuuksien m채채ritteleminen on k채tev채채, koska se v�
 
 Aloita varmistamalla, ett채 Poetrysta on asennettu uusin versio suorittamalla komento `poetry self update`.
 
-### Komento `poetry install` ep채onnistuu
+### Komento poetry install ep채onnistuu
 
 Kokeile suorittaa komento `poetry config experimental.new-installer false` ja suorita komento `poetry install` uudelleen.
 
