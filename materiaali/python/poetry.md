@@ -70,7 +70,7 @@ Harjoitellaan Poetryn käyttöä tekemällä pieni esimerkkiprojekti. Luo hakemi
 poetry init --python "^3.8"
 ```
 
-Komennon yhteydessä annettu `--python ^3.8`-asetus asettaa projektin Python-version vaatimukseksi vähintään version 3.8. Komennon suorittaminen alkaa kysymään kysymyksiä. Voit vastata kysymyksiin haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painiketta painamalla on täysin hyvä vaihtoehto.
+Komennon yhteydessä annettu `--python "^3.8"`-asetus asettaa projektin Python-version vaatimukseksi vähintään version 3.8. Komennon suorittaminen alkaa kysymään kysymyksiä. Voit vastata kysymyksiin haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painiketta painamalla on täysin hyvä vaihtoehto.
 
 Kun viimeiseen kysymykseen on vastattu, katso hakemiston sisältöä. Hakemistoon pitäisi ilmestyä _pyproject.toml_-tiedosto, jonka sisältö on kutakuinkin seuraava:
 
