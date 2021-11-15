@@ -30,13 +30,14 @@ print("Hello world!")
 
 Tulostusta ei tulosteta, koska koodin suoritus on siirtynyt ikuiseen silmukkaan.
 
-**HUOM:** TkInter-ikkunan avaaminen Windows-tietokoneella WSL:n kautta aiheuttaa luultavasti seuraavan virheen:
+
+**HUOM:** TkInter-ikkunan avaaminen Windows-tietokoneella WSL:n kautta, tai SSH-yhteyden kautta melkillä aiheuttaa luultavasti seuraavan virheen:
 
 ```
 no display name and no $DISPLAY environment variable
 ```
 
-Käynnistä tässä tapauksessa sovellus joko suoraan Windows-komentoriviltä, tai seuraa [tässä](https://stackoverflow.com/questions/48254530/tkinter-in-ubuntu-inside-windows-10-error-no-display-name-and-no-display-env) keskustelussa esitettyjä ohjeita.
+Käynnistä Windowsin tapauksessa sovellus joko suoraan Windows-komentoriviltä, tai seuraa [tässä](https://stackoverflow.com/questions/48254530/tkinter-in-ubuntu-inside-windows-10-error-no-display-name-and-no-display-env) keskustelussa esitettyjä ohjeita. Melkin tapauksessa käytä sovellusta SSH-yhteyden sijaan [virtuaalityöaseman](https://vdi.helsinki.fi/) kautta.
 
 
 ## Graafiset komponentit
