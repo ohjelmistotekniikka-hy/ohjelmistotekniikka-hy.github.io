@@ -6,6 +6,8 @@ permalink: /ht-viikko2
 
 **⚠️ Palautuksen deadline on {{site.wk2dl}}.**
 
+{% include poetry_fix.md %}
+
 Muista pushata tehtävät GitHubiin ennen viikkodeadlinea. Myöhässä tehty palautus ei tuo pisteitä.
 
 {% include harjoitustyon_toimivuus_info.md %}

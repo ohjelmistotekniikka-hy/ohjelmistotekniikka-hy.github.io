@@ -8,6 +8,8 @@ permalink: /python/ht-viikko3
 
 **⚠️ Palautuksen deadline on {{site.wk3dl}}.**
 
+{% include poetry_fix.md %}
+
 Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
 
 - Klo 00 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.

@@ -8,6 +8,8 @@ permalink: /python/viikko2
 
 **⚠️ Tehtävien palautuksen deadline on {{site.wk2dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
 
+{% include poetry_fix.md %}
+
 Tehtävät palautetaan GitHubin avulla Labtooliin rekisteröimääsi repositorioon.
 
 Muista pushata tehtävät GitHubiin ennen viikkodeadlinea.

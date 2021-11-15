@@ -1,0 +1,1 @@
+**⚠️ Etenkin Windows-tietokoneilla on ollut Poetryn käyttöön liittyviä ongelmia.** Yksi mahdollinen ratkaisu ongelmiin on suorittaa komento `poetry config experimental.new-installer false` ja yrittää sen jälkeen suorittaa epäonnistunutta Poetry-komentoa uudestaan.

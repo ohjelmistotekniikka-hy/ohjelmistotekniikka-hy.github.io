@@ -8,6 +8,8 @@ permalink: /python/ht-viikko5
 
 **⚠️ Palautuksen deadline on {{site.wk5dl}}.**
 
+{% include poetry_fix.md %}
+
 **HUOM** jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä)
 
 - viikon 5 deadlinen jälkeen tulee palautusrepositoriosta löytyä osan määrittelydokumentin käyttäjälle näkyvää toiminnallisuutta toteuttava toimiva versio harjoitustyöstä

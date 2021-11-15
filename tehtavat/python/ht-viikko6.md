@@ -8,6 +8,8 @@ permalink: /python/ht-viikko6
 
 **⚠️ Palautuksen deadline on {{site.wk6dl}}.**
 
+{% include poetry_fix.md %}
+
 **Muutama huomio**
 
 - **Viikon 6 aikana tapahtuu koodikatselmointi**, tarkemmat ohjeet katselmointiin [täällä](/koodikatselmointi)
