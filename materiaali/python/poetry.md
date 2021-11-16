@@ -196,6 +196,12 @@ Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan komentoriviltä
 poetry shell
 ```
 
+Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa virtuaaliympäristön nimi:
+
+```bash
+$ (poetry-testi-IhtScY6W-py3.9)
+```
+
 Virtuaaliympäristön sisällä voimme suorittaa komennon "normaalisti", eli ilman `run`-komentoa:
 
 ```bash
@@ -229,7 +235,7 @@ Aloita varmistamalla, että Poetrysta on asennettu uusin versio suorittamalla ko
 
 ### Komento poetry install epäonnistuu
 
-Kokeile suorittaa komento `poetry config experimental.new-installer false` ja suorita komento `poetry install` uudelleen.
+Suorittaa komento `poetry config experimental.new-installer false` ja sen jälkeen komento `poetry install` uudelleen.
 
 ### Virtuaaliympäristössä suoritetaan Python versiota 2
 
