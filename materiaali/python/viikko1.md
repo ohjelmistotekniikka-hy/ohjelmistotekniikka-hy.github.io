@@ -624,12 +624,12 @@ Jos teit kaiken oikein, pääset README.md:ssä olevia linkkejä klikkaamalla n�
 - Varmista GitHubista että muutokset näkyvät
 - Paikallinen repositoriosi ja GitHubin etärepositorio ovat jälleen samassa tilassa.
 
-### Paikallisen ja etärepositorion epäsynkrooni
+### 📝 Tehtävä 16: Paikallisen ja etärepositorion epäsynkrooni
 
 - Joskus käy niin, että paikallinen ja etärepositorio menevät epäsynkroniin, siten että molempiin tehdään yhtäaikaa uusi commit
 - Luodaan tälläinen tilanne
 - Tee paikalliseen repositorioon muutos tiedostoon _README.md_, lisää ja committoi muutos
-  - **älä** pushaa muutosta GitHubiin
+  - **Älä** pushaa muutosta GitHubiin
 - Tee GitHubiin muutos **johonkin muualle** kuin README.md-tiedostoon
   - editoi siis esim. tiedostoa _gitlog.txt_ hieman suoraan GitHubissa
 - Yritä nyt pushata paikallisen repositorion muutokset githubiin

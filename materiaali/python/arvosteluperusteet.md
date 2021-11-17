@@ -101,7 +101,7 @@ Dokumentaatio tuo yhteensä maksimissaan 12 pistettä, jotka jakautuvat seuraava
 
 [Referenssisovellus]({{site.python_reference_app_url}}) toimii hyvänä esikuvana dokumentaation suhteen.
 
-**HUOM** älä copy-pastea referenssisovelluksen dokumentaation tekstiä omaan dokumentaatioosi, kirjoita teksti omin sanoin. Tekstin suora kopiointi johtaa hylkäämiseen.
+**HUOM:** älä copy-pastea referenssisovelluksen dokumentaation tekstiä omaan dokumentaatioosi, kirjoita teksti omin sanoin. Tekstin suora kopiointi johtaa hylkäämiseen.
 
 ## Harjoitustyön toimivuus
 

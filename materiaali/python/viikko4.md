@@ -102,7 +102,7 @@ Koodin formatointi onnistuu myös monissa editoreissa kätevästi yhdellä näpp
 
 Tämän viikon aikana harjoitustyöhön toteutetaan uutta toiminallisuutta, parannetaan sen dokumentaatiota ja kiinnitetään tarkempi huomio koodin laatuun.
 
-**Tämän viikon palautuksesta on tarjolla 3 pistettä**. Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
+**Tämän viikon palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
 ### 🧪 Harjoitustyö 1: Uutta toiminallisuutta
 

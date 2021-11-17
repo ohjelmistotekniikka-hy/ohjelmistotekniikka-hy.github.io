@@ -64,7 +64,11 @@ Laitoksen melkki.cs.helsinki.fi-palvelimelle Poetryn asennus tulisi onnistua seu
 source $HOME/.poetry/env
 ```
 
-Huomaa, että tämä komento tulee suorittaa jokaisen kirjautumiskerran yhdeytessä, ellei _$HOME/.poetry/bin_-polkua aseteta `PATH`-muuttujaan muulla tavoin.
+Komento kannattaa lisätä kotihakemiston _.profile_-tiedostoon, niin sitä ei tarvitse suorittaa käsin jokaisen kirjautumiskerran jälkeen. Tämä onnistuu esimerkiksi seuraavalla komennolla:
+
+```bash
+echo "source $HOME/.poetry/env" >> .profile
+```
 
 ### Projektin alustaminen
 
