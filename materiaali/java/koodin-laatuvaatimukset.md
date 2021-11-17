@@ -6,11 +6,11 @@ title: Koodin laatuvaatimukset
 
 Kurssin tavoitteena on, että tuotoksesi voisi ottaa kuka tahansa kaverisi tai muu opiskelija ylläpidettäväksi ja laajennettavaksi. Tavoitteena on Clean code - selkeää, ylläpidettävää ja toimivaksi testattua koodia. Tämä sivu esittelee erityisesti *lopullisen* palautuksen laatuvaatimukset, mutta lueteltuja vaatimuksia on hyvä noudattaa mahdollisimman pian.
 
-### Clean Code
+## Clean Code
 
 Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Ohjelmoinnin harjoitustyön tulisi noudattaa periaatteita mahdollisimman hyvin.
 
-#### 1. Nimeä luokat, metodit, attribuutit, parametrit ja  muuttujat selkeästi ja johdonmukaisesti
+### Nimeä luokat, metodit, attribuutit, parametrit ja  muuttujat selkeästi ja johdonmukaisesti
 * Käytä mahdollisimman kuvaavia nimiä kaikkialla 
   * Luokkien nimet aina isolla alkukirjaimella
 * Metodit, attribuutit, parametrit ja muuttujat aina _camelCase_
@@ -21,18 +21,18 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
 
 **Huomaa:** tee uudelleennimeäminen NetBeansin Refactor/rename-ominaisuuden avulla, ks kohta [refaktorointi](https://www.cs.helsinki.fi/node/61563)
 
-####  2. Ei pitkiä metodeja
+### Ei pitkiä metodeja
 * Sovelluslogiikan metodin pituuden tulee ilman erittäin hyvää syytä olla korkeintaan 20 riviä.
 * Pitkät metodit tulee jakaa useampiin metodeihin. 
 * Yksi metodi - yksi pieni tehtävä. (Single Responsibility)
   * Helpottaa myös testaamista
 
-#### 3. Ei copy-pastea
+### Ei copy-pastea
 
 * Toistuvan koodin saa lähes aina hävitettyä
 * Tapauksesta riippuen luo metodi tai yliluokka, joka sisältää toistuvan koodin
 
-#### 4. Luokkien Single Responsibility
+### Luokkien Single Responsibility
 
 - Luokkien tulisi hoitaa vain yhtä asiaa
 - Erityisen tärkeää on erottaa käyttöliittymä ja sovelluslogiikka
@@ -42,7 +42,7 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
 - Esimerkiksi tiedoston lukemista tai -kirjoittamista EI tulisi löytyä useasta luokasta
   - Tee oma luokka tiedostojen käsittelylle
 
-#### 5. Pakkaukset
+### Pakkaukset
 
 * << Default package >> EI saa olla käytössä
 * Luokat tulee jakaa pakkauksiin
@@ -56,7 +56,7 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
  * jne.
 * Myös testipakkausten nimentä tulee olla oikea, ks. 6. Testaus
 
-#### 6. Testaus
+### Testaus
 * Generoidut testit ovat *kiellettyjä*
   * Tarkoitus on oppia testaamaan itse oma ohjelmakoodinsa
   * Generoidut testit harvoin testaavat mitään hyödyllistä
@@ -74,7 +74,7 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
   * Esim. luokkaa User testaa testiluokka UserTest
   * Yhtä luokkaa kohti saa luoda useita testiluokkia
 
-### Yleiset laatuvaatimukset
+## Yleiset laatuvaatimukset
 
 Lisäksi lopulliseen arvosteluun palautetun ohjelman tulee toimia oikein. 
 

@@ -32,7 +32,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 - Koodin laatu (1p)
   - Sovelluslogiikka on riittävissä määrin eriytetty käyttöliittymästä
     - Vihjeitä [täällä](/python/toteutus) ja [referenssisovelluksessa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md)
-  - Ohjelman [rakenne](/python/koodin-laatuvaatimukset#5-rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
+  - Ohjelman [rakenne](/python/koodin-laatuvaatimukset#rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
   - Pylint on otettu käyttöön
     - Ohje pylintin käyttöönottoon [täällä](/python/pylint)
     - Täydet pisteet pylintistä ainoastaan jos pylintin antama arvosana koodille on vähintään 7.00/10

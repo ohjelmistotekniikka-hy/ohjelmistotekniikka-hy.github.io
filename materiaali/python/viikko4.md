@@ -130,7 +130,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 
 - Sovelluslogiikka on riittävissä määrin eriytetty käyttöliittymästä
   - Vihjeitä [täällä](/python/toteutus) ja [referenssisovelluksessa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md)
-- Ohjelman [rakenne](/python/koodin-laatuvaatimukset#5-rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
+- Ohjelman [rakenne](/python/koodin-laatuvaatimukset#rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
 - Pylint on otettu käyttöön
   - Täydet pisteet saa, jos pylintin antama arvosana koodille on vähintään 7.00/10
   - Käyttöliittymään tai testeihin liittyvän koodin voi jättää pylint-tarkistuksien ulkopuolelle

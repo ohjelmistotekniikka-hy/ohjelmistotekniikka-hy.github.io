@@ -27,7 +27,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 - Koodin laatu (1p)
   - Sovelluslogiikka on riittävissä määrin eriytetty käyttöliittymästä
     - Vihjeitä [täällä](/java/toteutus) ja [referenssisovelluksessa](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md)
-  - Ohjelman [pakkausrakenne](/java/koodin-laatuvaatimukset#5-pakkaukset) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
+  - Ohjelman [pakkausrakenne](/java/koodin-laatuvaatimukset#pakkaukset) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
   - Checkstyle on otettu käyttöön
     - Ohje Checkstylen käyttöönottoon [täällä](/java/checkstyle)
     - Täydet pisteet Checkstylestä ainoastaan jos ohjelmassa on alle 10 Checkstyle-virhettä
