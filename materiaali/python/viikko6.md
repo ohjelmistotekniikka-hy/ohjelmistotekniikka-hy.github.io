@@ -4,7 +4,7 @@ title: Viikko 6
 permalink: /python/vk6
 ---
 
-**⚠️ Viikon tehtävien palautuksen deadline on {{site.wk6dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
+{% include deadline_info.md deadline=site.wk6dl %}
 
 **⚠️ Viikon aikana järjestetään [koodikatselmointi](#koodikatselmointi), joka alkaa {{site.code_review_start_date}}.**
 

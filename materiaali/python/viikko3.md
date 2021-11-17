@@ -4,9 +4,15 @@ title: Viikko 3
 permalink: /python/vk3
 ---
 
-**⚠️ Viikon tehtävien palautuksen deadline on {{site.wk3dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
+{% include deadline_info.md deadline=site.wk3dl %}
 
-## Luokkakaaviot
+## UML
+
+Ohjelmistojen dokumentoinnissa ja sovelluksen suunnittelun yhteydessä on usein tapana visualisoida ohjelman rakennetta ja toimintaa [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language)-kaavioilla.
+
+UML tarjoaa lukuisia erilaisia kaaviotyyppejä, hyödynnämme kurssilla kuitenkin näistä ainoastaan kolmea.
+
+### Luokkakaaviot
 
 Kurssilla [Tietokantojen perusteet](https://tikape-k20.mooc.fi) olet saattanut jo tutustua luokkakaavioiden käyttöön. Luokkakaavioiden käyttötarkoitus on ohjelman luokkien ja niiden välisten suhteiden kuvailu. Todo-sovelluksen oleellista tietosisältöä edustavat käyttäjää vastaava luokka `User`:
 
@@ -45,7 +51,7 @@ Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli luokkakaav
 
 Luokkien tarkemmat detaljit selviävät koodia katsomalla tai docstring-dokumentoinnista.
 
-### Riippuvuus
+#### Riippuvuus
 
 UML-kaavioissa olevat "viivat" kuvaavat luokkien olioiden välistä _pysyvää yhteyttä_. Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli _riippuvuus_.
 
@@ -144,13 +150,13 @@ Merkitään luokkakaavioon seuraavasti:
 
 Riippuvuuksien merkitseminen luokkakaavioihin ei ole välttämättä kovin oleellinen asia, niitä kannattaa merkitä jos ne tuovat esille tilanteen kannalta jotain oleellista.
 
-### Perintä
+#### Perintä
 
 Luokkien [perintähierarkian](https://docs.python.org/3/tutorial/classes.html#inheritance) ilmaisemisessa käytetään nuolia, joissa on valkoiset päät. Esim. jos Todo-sovelluksessa olisi normaalin käyttäjän eli luokan `User` perivää ylläpitäjää kuvaava luokka `SuperUser`, merkattaisiin se luokkakaavioon seuraavasti:
 
 <img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/l-9.png" width="350">
 
-### Työkaluja luokkakaavioiden piirtämiseen
+#### Työkaluja luokkakaavioiden piirtämiseen
 
 Luokkakaavioiden piirtoon helpoin työkalu on <http://yuml.me/>, jos haluat ammattimaisempaa jälkeä on <https://draw.io/> hyvä (tätä tehtävää varten se ei kuitenkaan liene vaivan arvoista). Myös valokuva käsin piirretyistä kaavioista riittää.
 
@@ -186,7 +192,7 @@ Toimintoja on useanlaisia. Ei ole vielä tarvetta tarkentaa toiminnon laatua.
 
 Normaaleille kaduille voi rakentaa korkeintaan 4 taloa tai yhden hotellin. Kadun voi omistaa joku pelaajista. Pelaajilla on rahaa.
 
-## Pakkauskaavio
+### Pakkauskaavio
 
 Todo-sovelluksen koodi on sijoitettu hakemistoihin seuraavasti:
 
@@ -206,7 +212,7 @@ Pakkauskaavioihin on myös mahdollista merkitä pakkausten sisältönä olevia l
 
 Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. Asiasta lisää hieman myöhemmin tässä dokumentissa.
 
-## Sekvenssikaaviot
+### Sekvenssikaaviot
 
 Luokka- ja pakkauskaaviot kuvaavat ohjelman rakennetta. Ohjelman toiminta ei kuitenkaan tule niistä ilmi millään tavalla.
 
@@ -316,11 +322,11 @@ Tietynlaisten tilanteiden kuvaamiseen ohjelmoinnin perusteissakin käsitellyt [v
 
 Voit halutessasi lukea lisää sekvenssikaavioista kurssin vanhan version [materiaalista](https://github.com/mluukkai/OTM2016/blob/master/luennot/luento5.pdf).
 
-### Työkaluja sekvenssikaavioiden piirtämiseen
+#### Työkaluja sekvenssikaavioiden piirtämiseen
 
 Sekvenssikaavioiden piirtämiseen sopivat melko hyvin samat työkalut kuin luokkakaavioihinkin. Näiden lisäksi [WebSequenceDiagrams](https://www.websequencediagrams.com/) on eräs, juuri sekvenssikaavioiden piirtämiseen tarkoitettu työkalu.
 
-### 📝 Tehtävä 3: sekvenssikaavio
+### 📝 Tehtävä 3: Sekvenssikaavio
 
 Tarkastellaan bensatankista ja moottorista koostuvan koneen Python-koodia.
 
@@ -366,7 +372,7 @@ class Engine:
         self._fuel_tank.consume(10)
 ```
 
-### 📝 Tehtävä 4: laajempi sekvenssikaavio
+### 📝 Tehtävä 4: Laajempi sekvenssikaavio
 
 Tarkastellaan HSL-matkakorttien hallintaan käytettävää koodia.
 

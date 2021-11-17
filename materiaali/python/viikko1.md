@@ -4,7 +4,7 @@ permalink: /python/vk1
 title: Viikko 1
 ---
 
-**⚠️ Viikon tehtävien palautuksen deadline on {{site.wk1dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
+{% include deadline_info.md deadline=site.wk1dl %}
 
 ## Ohjelmistotekniikka
 
@@ -674,7 +674,6 @@ Gitin peruskäyttö tulee varmasti tutuksi kurssin aikana. Gitin edistyneempien 
 
 ## Labtool
 
-Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin]({{ site.labtool_link }}).
+Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin]({{site.labtool_link}}).
 
 **HUOM:** Labtool kysyy myös harjoitustyön aihetta (project name), kirjoita kenttään myös käyttämäsi ohjelmointikieli (eli Java tai Python).
-

@@ -4,7 +4,7 @@ permalink: /python/vk2
 title: Viikko 2
 ---
 
-**⚠️ Viikon tehtävien palautuksen deadline on {{site.wk2dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
+{% include deadline_info.md deadline=site.wk2dl %}
 
 ## Poetry ja riippuvuuksien hallinta
 
@@ -239,7 +239,7 @@ Aloita varmistamalla, että Poetrysta on asennettu uusin versio suorittamalla ko
 
 #### Riippuvuuksien asennus epäonnistuu
 
-Suorittaa komento `poetry config experimental.new-installer false` ja sen jälkeen komento `poetry install` uudelleen.
+Suorittaa komento `poetry config experimental.new-installer false` ja yritä sen jälkeen suorittaa epäonnistunut Poetry-komento uudelleen.
 
 #### Virtuaaliympäristössä suoritetaan Python versiota 2
 
@@ -998,9 +998,9 @@ Mikään ei tietenkään estä sitä, että aloitat jo ohjelmoinnin tai vaikkapa
 
 Palautus tapahtuu lisäämällä oman aiheen _alustava määrittelydokumentti_ ensimmäisen viikon [laskareiden](/python/viikko1#labtool) päätteeksi [Labtooliin]({{site.labtool_link}}) rekisteröimääsi palautusrepositorioon.
 
-Määrittelydokumentti tehdään samaan tapaan kuin [referenssiprojektissa]({{site.python_reference_app_url}})/blob/master/dokumentaatio/vaatimusmaarittely.md) eli [markdown](https://guides.github.com/features/mastering-markdown/)-muodossa, sijoitetaan repositorion hakemistoon _dokumentaatio_ ja siihen tulee olla linkki repositorion README.md:stä.
+Määrittelydokumentti tehdään samaan tapaan kuin [referenssiprojektissa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/vaatimusmaarittely.md) eli [markdown](https://guides.github.com/features/mastering-markdown/)-muodossa, sijoitetaan repositorion hakemistoon _dokumentaatio_ ja siihen tulee olla linkki repositorion README.md:stä.
 
-Määrittelydokumenttiin kannattaa ottaa mallia [referenssiprojektista]({{site.python_reference_app_url}})/blob/master/dokumentaatio/vaatimusmaarittely.md), eli sen tulee sisältää:
+Määrittelydokumenttiin kannattaa ottaa mallia [referenssiprojektista]({{site.python_reference_app_url}}/blob/master/dokumentaatio/vaatimusmaarittely.md), eli sen tulee sisältää:
 
 - _Sovelluksen tarkoitus_ eli pieni tekstuaalinen yleiskuvaus sovelluksesta
 - _Käyttäjät_ eli tieto erilaisista _käyttäjärooleista_, joita järjestelmässä on
@@ -1016,4 +1016,4 @@ Voit myös tehdä referenssiprojektin tapaan _käyttöliittymäluonnoksen_, se e
 
 Pidä säännöllisesti kirjaa käyttämistäsi työtunneista. Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa. **Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa**.
 
-Lisää repositorion README.md-tiedostoon linkki [työaikakirjanpitoon]({{site.python_reference_app_url}})/blob/master/dokumentaatio/tuntikirjanpito.md).
+Lisää repositorion README.md-tiedostoon linkki [työaikakirjanpitoon]({{site.python_reference_app_url}}/blob/master/dokumentaatio/tuntikirjanpito.md).

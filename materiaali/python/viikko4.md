@@ -4,7 +4,7 @@ title: Viikko 4
 permalink: /python/vk4
 ---
 
-**⚠️ Viikon tehtävien palautuksen deadline on {{site.wk4dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
+{% include deadline_info.md deadline=site.wk4dl %}
 
 ## Pylint ja koodin laaduun staattinen analyysi
 

@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Harjoitustyö viikko 5
-permalink: /python/ht-viikko5
+permalink: /python/vk5
 ---
 
-**⚠️ Viikon tehtävien palautuksen deadline on {{site.wk5dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
+{% include deadline_info.md deadline=site.wk5dl %}
 
 ## GitHub release
 
