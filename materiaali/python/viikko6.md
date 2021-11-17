@@ -192,6 +192,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (0.5p):
 - Ohjelman rakenne on järkevä
   - Luokkien, metodien ja funktioiden tulee pyrkiä noudattamaan niin kutsuttua [single responsibility](https://en.wikipedia.org/wiki/Single-responsibility_principle) -periaatetta, eli yhden komponentin ei tulisi tehdä liian montaa asiaa
   - Liian suuret luokat, metodit ja funktiot tulee siis pilkkoa osiin
+- Pidä harjoitustyön lopullista palautusta varten myös mielessä [koodin laatuvaatimukset](/python/koodin-laatuvaatimukset)
 
 ### 🧪 Harjoitustyö 4: Dokumentaatio
 

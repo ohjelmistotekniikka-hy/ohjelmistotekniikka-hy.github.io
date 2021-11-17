@@ -608,7 +608,9 @@ Projektin koodi tulee sijoittaa repositorion _src_-hakemistoon. Koodia kannattaa
 
 <!-- TODO: linkit -->
 
-Toteuta ainakin osa jostain edellisellä viikolla tekemäsi määrittelydokumentin toiminallisuudesta. Pelkät tyhjät luokat tai funktiot ilman toiminallisuutta eivät tuo pisteitä. Toteutukseen liittyviä ohjeita löydät [täältä](/python/toteutus).
+Toteuta ainakin osa jostain edellisellä viikolla tekemäsi määrittelydokumentin toiminallisuudesta. Pelkät tyhjät luokat tai funktiot ilman toiminallisuutta eivät tuo pisteitä.
+
+Toteutukseen liittyviä ohjeita löydät [täältä](/python/toteutus).
 
 ### 🧪 Harjoitustyö 3: Testaamisen aloittaminen
 

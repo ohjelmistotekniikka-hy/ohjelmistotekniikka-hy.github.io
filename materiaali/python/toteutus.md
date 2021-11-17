@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /python/toteutus
-title: Ohjeita toteutukseen
+title: Ohjeita harjoitustyön toteutukseen
 ---
 
 {% include java_materiaali_info.md %}
