@@ -102,14 +102,15 @@ Koodin formatointi onnistuu myös monissa editoreissa kätevästi yhdellä näpp
 
 Tämän viikon aikana harjoitustyöhön toteutetaan uutta toiminallisuutta, parannetaan sen dokumentaatiota ja kiinnitetään tarkempi huomio koodin laatuun.
 
-Palautuksesta on tarjolla 3 kurssipistettä.
+**Tämän viikon palautuksesta on tarjolla 3 pistettä**. Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
 ### 🧪 Harjoitustyö 1: Uutta toiminallisuutta
 
 Kasvaata ohjelmaa edellisestä viikosta (0.75p):
 
 - Ohjelman pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
-- Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta. Merkitse lisäksi tarkastusta varten määrittelydokumenttiin valmiit toiminnallisuudet "tehty" merkinnällä.
+- Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
+- Merkitse lisäksi tarkastusta varten määrittelydokumenttiin valmiit toiminnallisuudet "tehty" merkinnällä
 
 Ohjeita toteutukseen löydät [täältä](/python/toteutus).
 
@@ -128,12 +129,11 @@ Edistä ohjelman testaamista (0.5p):
 Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 
 - Sovelluslogiikka on riittävissä määrin eriytetty käyttöliittymästä
-  - Vihjeitä [täällä](/python/toteutus) ja [referenssisovelluksessa](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/arkkitehtuuri.md)
+  - Vihjeitä [täällä](/python/toteutus) ja [referenssisovelluksessa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md)
 - Ohjelman [rakenne](/python/koodin-laatuvaatimukset#5-rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
 - Pylint on otettu käyttöön
-  - Ohje pylintin käyttöönottoon [täällä](/python/pylint)
-  - Täydet pisteet pylintistä ainoastaan jos pylintin antama arvosana koodille on vähintään 7.00/10
-  - Käyttöliittymään tai testeihin liittyvän koodin ei tarvitse olla pylint-tarkastelun alla
+  - Täydet pisteet saa, jos pylintin antama arvosana koodille on vähintään 7.00/10
+  - Käyttöliittymään tai testeihin liittyvän koodin voi jättää pylint-tarkistuksien ulkopuolelle
   - `pylint: disable`-kommenttien käyttö on kiellettyä ilman erittäin perusteltua syytä
 
 ### 🧪 Harjoitustyö 4: Dokumentaatio
@@ -142,9 +142,9 @@ Laadi ohjelman alustava rakenne luokka, tai pakkauskaaviona (0.75p):
 
 - Kaavion ei tarvitse merkitä kuin sovelluslogiikan kannalta oleelliset luokat
 - Voit tarvittaessa tehdä kaavion, josta ilmenee myös sovelluksen [pakkausrakenne](/python/materiaali#pakkauskaavio)
-- Mallia voi ottaa [referenssisovelluksesta](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
+- Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
 - Tee repositorioosi hakemisto _dokumentaatio_ ja sen sisälle tiedosto _arkkitehtuuri.md_ ja upota kuva tiedostoon, tiedoston sisältö voi olla muilta osin tyhjä
-- Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app) tavoin
+- Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen]({{site.python_reference_app_url}}) tavoin
 
 ### 🧪 Harjoitustyö 5: Pistevähennykset
 
@@ -154,7 +154,7 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
   - Tuntien summan tulee olla merkittynä
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
 - Repositorion _README.md_-tiedosto kunnossa
-  - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app) README.md
+  - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen]({{site.python_reference_app_url}}) README.md
   - Kaikki ylimääräinen, mm. linkit laskareihin on poistettu
 - Repositorio siisti
   - Ei ylimääräistä tavaraa (mm. `pytest`- ja `coverage`-komentojen generoimia tiedostoja)

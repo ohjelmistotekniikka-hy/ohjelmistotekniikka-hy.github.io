@@ -44,17 +44,17 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 - Alustava arkkitehtuurikuvaus (0.5p)
   - Dokumentti sisältää sovelluksen korkean tason (esim. hakemistojen tasolla) rakenteen kuvauksen, sekä alustavan kuvauksen sovelluslogiikasta
   - Dokumentissa voi hyödyntää edellisten viikkojen luokka- ja sekvenssikaavioita
-  - Mallia voi ottaa [referenssisovelluksesta](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
+  - Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
   - Dokumentin alustavan version sopiva pituus on noin 1-2 sivua tekstiä ja kaavioita
 - Alustava käyttöohje (0.25p)
   - Ohje voi olettaa, että sovellusta suoritetaan palautusrepositoriosta käsin, eli asentamiseen ja konfigurointiin ei ole vielä tarvetta ottaa kantaa
   - Alustavan käyttöohjeen sopiva pituus on noin sivu
-  - Mallina voi jälleen toimia [referenssisovellus](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/kayttoohje.md)
+  - Mallina voi jälleen toimia [referenssisovellus]({{site.python_reference_app_url}}/blob/master/dokumentaatio/kayttoohje.md)
 
 **Seuraavien kohtien puutteet vähentävät pisteitä:**
 
 - Koodin laatu
-  - Rakenne on järkevä (esim. kaikki koodi samassa hakemistossa)
+  - Rakenne on järkevä (esim. kaikki koodi on samassa hakemistossa)
   - Sovelluslogiikkaa on eriytetty riittävästi käyttöliittymästä
   - Pylint on käytössä
     - Pylintin koodille antama arvosana vähintään 8.00/10

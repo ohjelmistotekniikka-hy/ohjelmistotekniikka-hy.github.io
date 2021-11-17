@@ -31,7 +31,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
   - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 - Koodin laatu (1p)
   - Sovelluslogiikka on riittävissä määrin eriytetty käyttöliittymästä
-    - Vihjeitä [täällä](/python/toteutus) ja [referenssisovelluksessa](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/arkkitehtuuri.md)
+    - Vihjeitä [täällä](/python/toteutus) ja [referenssisovelluksessa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md)
   - Ohjelman [rakenne](/python/koodin-laatuvaatimukset#5-rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
   - Pylint on otettu käyttöön
     - Ohje pylintin käyttöönottoon [täällä](/python/pylint)
@@ -42,9 +42,9 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
   vastaavalla mekanismilla
   - Kaavion ei tarvitse merkitä kuin sovelluslogiikan kannalta oleelliset luokat
   - Voit tarvittaessa tehdä kaavion, josta ilmenee myös sovelluksen [pakkausrakenne](/python/materiaali#pakkauskaavio)
-  - Mallia voi ottaa [referenssisovelluksesta](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
+  - Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
   - Tee repositorioosi hakemisto _dokumentaatio_ ja sen sisälle tiedosto _arkkitehtuuri.md_ ja upota kuva tiedostoon, tiedoston sisältö voi olla muilta osin tyhjä
-  - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app) tavoin
+  - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen]({{site.python_reference_app_url}}) tavoin
 
 **Seuraavien kohtien puutteet vähentävät pisteitä:**
 
@@ -52,7 +52,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
   - Tuntien summan tulee olla merkittynä
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
 - Repositorion _README.md_-tiedosto kunnossa
-  - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app) README.md
+  - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen]({{site.python_reference_app_url}}) README.md
   - Kaikki ylimääräinen, mm. linkit laskareihin on poistettu
 - Repositorio siisti
   - Ei ylimääräistä tavaraa (mm. `pytest`- ja `coverage`-komentojen generoimia tiedostoja)

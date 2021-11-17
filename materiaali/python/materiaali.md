@@ -494,7 +494,7 @@ class TestTodoService(unittest.TestCase):
 
 Toisin kuin todelliset repositoriot, testeissä käytettävät valekomponentit eivät tallenna dataa levylle. Tämä tekee testaamisesta helpompaa.
 
-Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/arkkitehtuuri.md) ja [testausdokumentista](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/testaus.md).
+Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md) ja [testausdokumentista]({{site.python_reference_app_url}}/blob/master/dokumentaatio/testaus.md).
 
 ### Ohjelmiston toteutus
 

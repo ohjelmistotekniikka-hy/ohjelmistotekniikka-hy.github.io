@@ -574,7 +574,7 @@ Nyt testit, jotka suoritetaan `pytest`-komennolla, käyttävät _.env.test_-tied
 
 Huomaa, että edellisen esimerkin `load_dotenv`-funktio lataa ympäristömuuttujat myös testeissä _.env_-tiedostosta, mutta se ei oletusarvoisesti ylikirjoita jo määriteltyjä muuttujia. Koska pytest-dotenv-lisäosa lataa ympäristömuuttujat ennen `load_dotenv`-funtiota, on testeissä ensisijaisesti käytössä _.env.test_-tiedostossa määritellyt ympäristömuuttujat.
 
-Mallia oman projektin konfiguroimiseksi ympäristömuuttujilla voi ottaa edellä esitettyjen esimerkkien lisäksi myös [referenssisovelluksesta](https://github.com/ohjelmistotekniikka-hy/python-todo-app).
+Mallia oman projektin konfiguroimiseksi ympäristömuuttujilla voi ottaa edellä esitettyjen esimerkkien lisäksi myös [referenssisovelluksesta]({{site.python_reference_app_url}}).
 
 ## Uuden tekniikan harjoittelu ja käyttöönotto
 

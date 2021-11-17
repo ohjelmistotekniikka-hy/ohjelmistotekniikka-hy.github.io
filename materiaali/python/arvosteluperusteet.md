@@ -59,7 +59,7 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
 ### Laajuus ja sovelluslogiikan kompleksisuus
 
 - Miten laaja on laaja?
-- Kurssin [referenssisovellus](https://github.com/ohjelmistotekniikka-hy/python-todo-app) olisi laajuudeltaan 2 pisteen luokkaa, koska sovelluslogiikaltaan se on kohtalaisen suoraviivainen
+- Kurssin [referenssisovellus]({{site.python_reference_app_url}}) olisi laajuudeltaan 2 pisteen luokkaa, koska sovelluslogiikaltaan se on kohtalaisen suoraviivainen
 - Laajuutta ei voida määritellä tarkasti esimerkiksi luokkien, metodien, tai funktioiden määrällä, laajuus on aina suhteellinen sovelluksen tyyppiin ja kompleksisuuteenkin
 - Eräs tapa laajentaa sovellusta ja lisätä sen kompleksisuutta on tehdä siitä _parametrein konfiguroitava ja laajennettava_, esimeerkiksi:
   - Sovelluksen käyttämän tietokantatiedoston nimi ei ole kirjoitettu koodiin vaan on käyttäjän määriteltävissä

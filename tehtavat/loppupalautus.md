@@ -4,16 +4,16 @@ title: Harjoitustyön loppupalautus
 permalink: /loppupalautus
 ---
 
-**⚠️ Loppupalautuksen deadline on {{ site.finaldl }}. Älä palauta myöhässä, deadline on ehdoton!**
+**⚠️ Loppupalautuksen deadline on {{site.finaldl}}. Älä palauta myöhässä, deadline on ehdoton!**
 
 - Jos sinulla on joku erittäin hyvä syy palautuksen myöhästymiseen, ota yhteyttä viimeistään tiistaina niin voit saada lisäaikaa.
 
-Loppupalautuksen oletetaan sisältävän toimivan ohjelman, testien, konfiguraatioiden ja JavaDocin lisäksi myös dokumentaation, eli
+Loppupalautuksen oletetaan sisältävän toimivan ohjelman, testien ja konfiguraatioiden lisäksi myös dokumentaation, eli:
 
-- käyttöohjeen
-- vaatimusmäärittelyn
-- arkkitehtuurikuvauksen
-- testausdokumentin
+- Käyttöohjeen
+- Vaatimusmäärittelyn
+- Arkkitehtuurikuvauksen
+- Testausdokumentin
 
 **Päivitä viikolla 2 tehty alustava vaatimusmäärittely vastaamaan ohjelman lopullisen version toiminnallisuutta.**
 
@@ -21,7 +21,7 @@ Loppupalautuksen oletetaan sisältävän toimivan ohjelman, testien, konfiguraat
 
 Lue huolellisesti [arvosteluperusteista](/python/arvosteluperusteet) mitä loppupalautuksen oletetaan sisältävän dokumentaation ja ohjelmiston osalta!
 
-Dokumentteihin kannattaa ottaa mallia referenssisovelluksen dokumenteista.
+Dokumentteihin kannattaa ottaa mallia [referenssisovelluksen]({{site.python_reference_app_url}}) dokumenteista.
 
 {% include harjoitustyon_toimivuus.md %}
 

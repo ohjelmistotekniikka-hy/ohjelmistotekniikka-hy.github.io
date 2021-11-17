@@ -12,7 +12,7 @@ Kurssin tavoitteena on, että tuotoksesi voisi ottaa kuka tahansa kaverisi tai m
 
 Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Ohjelmoinnin harjoitustyön tulisi noudattaa periaatteita mahdollisimman hyvin.
 
-### 1. Nimeä funktiot, luokat, metodit, attribuutit, parametrit ja muuttujat selkeästi ja johdonmukaisesti
+### Nimeä funktiot, luokat, metodit, attribuutit, parametrit ja muuttujat selkeästi ja johdonmukaisesti
 
 - Käytä mahdollisimman kuvaavia nimiä kaikkialla
   - Luokkien nimet aina isolla alkukirjaimella ja _PascalCase_-formaatissa
@@ -23,19 +23,19 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
 - Jos metodia käytetään vähän, tulee nimen olla mahdollisimman kuvaava
 - Tee nimentä englanniksi
 
-### 2. Ei pitkiä metodeja tai funktioita
+### Ei pitkiä metodeja tai funktioita
 
 - Sovelluslogiikan metodin ja funktioiden pituuden tulee ilman erittäin hyvää syytä olla korkeintaan 20 riviä
 - Pitkät metodit ja funktiot tulee jakaa osiin
 - Yksi metodi, tai funktio - yksi pieni tehtävä (Single Responsibility)
   - Helpottaa myös testaamista
 
-### 3. Ei copy-pastea
+### Ei copy-pastea
 
 - Toistuvan koodin saa lähes aina hävitettyä
 - Tapauksesta riippuen luo metodi tai yliluokka, joka sisältää toistuvan koodin. Perintää kannattaa välttää ja sen sijaan suosia luokkien yhteistoimintaa ([Composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance))
 
-### 4. Single Responsibility
+### Single Responsibility
 
 - Luokkien, metodien ja funktioiden tulisi hoitaa vain yhtä asiaa
 - Erityisen tärkeää on erottaa käyttöliittymä ja sovelluslogiikka
@@ -45,7 +45,7 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
 - Esimerkiksi tiedoston lukemista tai -kirjoittamista ei tulisi löytyä useasta luokasta, tai funktiosta
   - Tee oma luokka tai funktioita tiedostojen käsittelylle
 
-### 5. Rakenne
+### Rakenne
 
 - Kaikki koodi _ei saa olla_ samassa hakemistossa, eikä missään nimessä samassa tiedostossa
 - Älä laita mitään koodia projektin juurihakemistoon, vaan esimerkiksi siellä sijaitsevaan _src_-hakemistoon
@@ -56,9 +56,9 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
 - Jaa toisiinsa selkeästi liittyvät tiedostot omiin hakemistoihinsa, esimerkiksi seuraavalla logiikalla:
   - Testien tiedostot omaan hakemistoonsa
   - Käyttöliittymän koodin tiedostot omaan hakemistoonsa
-  - Mallia voi ottaa [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app/tree/master/src) rakenteesta
+  - Mallia voi ottaa [referenssisovelluksen]({{site.python_reference_app_url}}/tree/master/src) rakenteesta
 
-### 6. Testaus
+### Testaus
 
 - Generoidut testit ovat _kiellettyjä_
   - Tarkoitus on oppia testaamaan itse oma ohjelmakoodinsa

@@ -60,7 +60,7 @@ class Maksukortti:
 
   def lataa_rahaa(self, lisays):
       self.saldo += lisays
-  
+
   def ota_rahaa(self, maara):
       if self.saldo < maara:
           return False
@@ -93,7 +93,7 @@ class Kassapaate:
 
     def syo_maukkaasti(self, kortti):
         # ...
-    
+
     def lataa_rahaa_korttille(self, kortti, summa):
         if summa < 0:
             return
@@ -196,7 +196,7 @@ Hakemistorakennetta voidaan kuvata UML:ssä _pakkauskaaviolla_:
 
 ![](/assets/images/python/materiaali-pakkaukset.png)
 
-Pakkausten välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _ui_ riippuu pakkauksesta _services_ sillä _ui_-pakkauksen luokat käyttävät _services_-pakkauksen luokkaa `TodoService`, joka vastaa sovelluksen sovelluslogiikasta. 
+Pakkausten välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _ui_ riippuu pakkauksesta _services_ sillä _ui_-pakkauksen luokat käyttävät _services_-pakkauksen luokkaa `TodoService`, joka vastaa sovelluksen sovelluslogiikasta.
 
 Vastaavasti pakkaus _services_ riippuu pakkauksesta _repositories_ sillä sen luokka `TodoService` käyttää _repositorios_-pakkauksen luokkia `TodoRepository` ja `UserRepository`.
 
@@ -229,11 +229,11 @@ class Kassapaate:
     def syo_edullisesti(self, kortti):
         if kortti.saldo < EDULLISEN_HINTA:
             return False
-        
+
         kortti.ota_rahaa(EDULLISEN_HINTA)
         self.edulliset += 1
         return True
-    
+
     # ...
 ```
 
@@ -260,15 +260,15 @@ class Henkilostorekisteri:
     def __init__(self):
         self._henkilot = {}
         self._pankki = PankkiRajapinta()
-    
+
     def lisaa(self, henkilo):
         self._henkilot[henkilo.nimi] = henkilo
-    
+
     def suorita_palkanmaksu(self):
         for nimi in self._henkilot:
             henkilo = self._henkilot[nimi]
             self._pankki.maksa_palkka(henkilo.tilinumero, henkilo.palkka)
-    
+
     def aseta_palkka(self, nimi, uusi_palkka):
         henkilo = self._henkilot[nimi]
         henkilo.palkka = uusi_palkka
@@ -315,6 +315,10 @@ Sekvenssikaaviot eivät ole optimaalinen tapa ohjelman suorituslogiikan kuvaamis
 Tietynlaisten tilanteiden kuvaamiseen ohjelmoinnin perusteissakin käsitellyt [vuokaaviot](https://materiaalit.github.io/ohjelmointi-18/part2/) voivat sopia paremmin.
 
 Voit halutessasi lukea lisää sekvenssikaavioista kurssin vanhan version [materiaalista](https://github.com/mluukkai/OTM2016/blob/master/luennot/luento5.pdf).
+
+### Työkaluja sekvenssikaavioiden piirtämiseen
+
+Sekvenssikaavioiden piirtämiseen sopivat melko hyvin samat työkalut kuin luokkakaavioihinkin. Näiden lisäksi [WebSequenceDiagrams](https://www.websequencediagrams.com/) on eräs, juuri sekvenssikaavioiden piirtämiseen tarkoitettu työkalu.
 
 ### 📝 Tehtävä 3: sekvenssikaavio
 
@@ -518,7 +522,7 @@ poetry run invoke --list
 
 ### Huomioita tehtävien nimeämisestä
 
-Jos tehtävän määrittelevän funktion nimi on [snake case](https://en.wikipedia.org/wiki/Snake_case) -formaatissa (esimerkiksi <i>snake_case</i>), on komentoriviltä suoritettavan tehtävän nimi [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles) -formaatissa (esimerkiksi _kebab-case_). Esimerkiksi seuraavasti nimetty tehtävä:
+Jos tehtävän määrittelevän funktion nimi on [snake case](https://en.wikipedia.org/wiki/Snake_case) -formaatissa (esimerkiksi <i>snake*case</i>), on komentoriviltä suoritettavan tehtävän nimi [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles) -formaatissa (esimerkiksi \_kebab-case*). Esimerkiksi seuraavasti nimetty tehtävä:
 
 ```python
 from invoke import task
@@ -534,7 +538,7 @@ Suoritettaisiin komennolla `poetry run invoke lorem-ipsum`. Jos olet epävarma k
 
 [Coverage-ohjeissa](./coverage) tutustumme testikattavuuden keräämiseen ja raportin muodostamiseen sen perusteella. Jos haluamme muodostaa testikattavuusraportin, tulee testikattavuus olla ensin kerätty.
 
-Menemättä tässä osiossa `coverage`-komennon yksityiskohtiin, tehtävillä voisi olla seuraavat määritelmät: 
+Menemättä tässä osiossa `coverage`-komennon yksityiskohtiin, tehtävillä voisi olla seuraavat määritelmät:
 
 ```python
 from invoke import task
@@ -574,7 +578,7 @@ Nyt komento `poetry run invoke coverage-report` suorittaa ensin tehtävän _cove
 
 Tämän viikon aikana aloitetaan harjoitustyön toteutus ja testaaminen. Ohjelman tulee edistyä jokaisella viikolla tasaisesti. Jos ohjelma tulee valmiiksi jo ennen loppupalautusta valmistaudu laajentamaan sitä saadaksesi ohjelman edistymisestä pisteet. Tarkoitus on edistää projektia tasaisesti kurssiviikkojen aikana.
 
-Palautuksesta on tarjolla 2 kurssipistettä.
+**Tämän viikon palautuksesta on tarjolla 2 pistettä**. Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
 ### 🧪 Harjoitustyö 1: Poetry projektin alustaminen
 
@@ -592,16 +596,18 @@ poetry.lock
 README.md
 ```
 
-Projektin koodi tulee sijoittaa repositorion _src_-hakemistoon. Koodia kannattaa tarpeen mukaan jakaa hakemiston sisällä alihakemistoihin. Mallia voi ottaa [referenssisovelluksesta](https://github.com/ohjelmistotekniikka-hy/python-todo-app).
+Projektin koodi tulee sijoittaa repositorion _src_-hakemistoon. Koodia kannattaa tarpeen mukaan jakaa hakemiston sisällä alihakemistoihin. Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}).
 
 ### 🧪 Harjoitustyö 2: Toiminallisuuden toteutus
 
 <!-- TODO: linkit -->
+
 Toteuta ainakin osa jostain edellisellä viikolla tekemäsi määrittelydokumentin toiminallisuudesta. Pelkät tyhjät luokat tai funktiot ilman toiminallisuutta eivät tuo pisteitä. Toteutukseen liittyviä ohjeita löydät [täältä](/python/toteutus).
 
 ### 🧪 Harjoitustyö 3: Testaamisen aloittaminen
 
 <!-- TODO: linkit -->
+
 Sovelluksella on oltava _vähintään yksi testi_. Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa. Testin tulee myös mennä läpi. Lisää testejä varten _src_ hakemistoon hakemisto _tests_ ja lisää testitiedostot sinne:
 
 ```
@@ -617,26 +623,29 @@ Kertaa edellisen viikon unittest-ohjeet, jos tämä tuottaa hankaluuksia.
 ### 🧪 Harjoitustyö 4: Testikattavuusraportti
 
 <!-- TODO: linkit -->
-Sovellukselle tulee pystyä generoimaan testikattavuusraportti. Kertaa edellisen viikon coverage-ohjeet, jos tämä tuottaa hankaluuksia.
+
+Ohjelmalle tulee pystyä generoimaan coveragen avulla testikattavuusraportti. Kertaa edellisen viikon coverage-ohjeet, jos tämä tuottaa hankaluuksia.
 
 ### 🧪 Harjoitustyö 5: Invoke-tehtävät
 
 Toteuta projektille seuraavat Invoke-tehtävät:
 
-- `poetry run invoke start` käynnistää sovelluksen
+- `poetry run invoke start` käynnistää ohjelman
 - `poetry run invoke test` suorittaa testit
-- `poetry run invoke coverage-report` generoi testikattavuusraportin
+- `poetry run invoke coverage-report` kerää testikattavuuden ja muodostaa sen perusteella HTML-muotoisen testikattavuusraportin
 
-### 🧪 Harjoitustyö 6: Muuta 
+Voit halutessasi lisätä myös muita tehtäviä, joita koet projektisi kannalta hyödylliseksi.
+
+### 🧪 Harjoitustyö 6: Muuta
 
 Varmista vielä, että seuraavat asiat ovat kunnossa:
 
 - Tuntikirjanpito on ajantasalla
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
 - Repositorion _README.md_-tiedosto kunnossa
-  - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app) _README.md_-tiedosto
+  - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen]({{site.python_reference_app_url}}) _README.md_-tiedosto
   - Kaikki ylimääräinen, mm. linkit laskareihin on poistettu
 - Repositorio on siisti
   - Ei ylimääräistä tavaraa (esim. `pytest`-, tai `coverage`-komentojen generoimia hakemistoja ja tiedostoja)
   - Laskarit jätetään hakemiston _laskarit_ alle
-  - Järkevä _.gitignore_-tiedosto olemassa. Mallia voi ottaa [referenssisovelluksesta](https://github.com/ohjelmistotekniikka-hy/python-todo-app)
+  - Järkevä _.gitignore_-tiedosto olemassa. Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}})

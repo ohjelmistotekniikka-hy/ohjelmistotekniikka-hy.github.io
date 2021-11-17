@@ -24,7 +24,7 @@ Web-sovelluksia kurssilla ei sallita. Sovelluksissa sallitaan toki webissä olev
 
 ## Ohjelman toteutus
 
-Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä ja materiaalista. Muutamia vihjeitä on myös kurssin [referenssiprojektissa](https://github.com/ohjelmistotekniikka-hy/python-todo-app) sekä [täällä](/python/toteutus).
+Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä ja materiaalista. Muutamia vihjeitä on myös kurssin [referenssiprojektissa]({{site.python_reference_app_url}}) sekä [täällä](/python/toteutus).
 
 Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus. Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen. Kaiken testaaminen käsin uudelleen ja uudelleen ei ole ajankäytöllisesti järkevää, ja siksi ohjelmakoodille onkin syytä laatia jatkuvasti testejä ohjelmoinnin edetessä. Testit on syytä pitää kattavina ja ajan tasalla.
 
@@ -36,11 +36,11 @@ Eräs mahdollisuus on tehdä aluksi tekstikäyttöliittymän ja vasta saatuasi o
 
 Harjoitustyön tavoitteena on tuottaa ohjelma, joka voitaisiin antaa toiselle opiskelijalle ylläpidettäväksi ja täydennettäväksi. Lopullisessa palautuksessa on oltava lähdekoodin lisäksi dokumentaatio ja automaattiset testit.
 
-Toivottava dokumentaation taso käy ilmi [referenssiprojektissa](https://github.com/ohjelmistotekniikka-hy/python-todo-app).
+Toivottava dokumentaation taso käy ilmi [referenssiprojektissa]({{site.python_reference_app_url}}).
 
 ## Projektin hakemistorakenne
 
-Projektin hakemistorakenteesta voi ottaa mallia [referenssiprojektista](https://github.com/ohjelmistotekniikka-hy/python-todo-app), jossa hakemistorakenne on seuraavanlainen:
+Projektin hakemistorakenteesta voi ottaa mallia [referenssiprojektista]({{site.python_reference_app_url}}), jossa hakemistorakenne on seuraavanlainen:
 
 ```
 data/
@@ -230,4 +230,4 @@ Harjoitustyössä tehtävä ohjelmistossa hyödynnetään [Poetry](https://pytho
 
 Pidä säännöllisesti kirjaa käyttämistäsi työtunneista. Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa.
 
-Lisää repositorioon linkki [työaikakirjanpitoon](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/tuntikirjanpito.md).
+Lisää repositorioon linkki [työaikakirjanpitoon]({{site.python_reference_app_url}}/blob/master/dokumentaatio/tuntikirjanpito.md).

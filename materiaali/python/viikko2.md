@@ -66,7 +66,7 @@ source $HOME/.poetry/env
 
 Huomaa, että tämä komento tulee suorittaa jokaisen kirjautumiskerran yhdeytessä, ellei _$HOME/.poetry/bin_-polkua aseteta `PATH`-muuttujaan muulla tavoin.
 
-### 📝 Tehtävä 1: Projektin alustaminen
+### Projektin alustaminen
 
 Harjoitellaan Poetryn käyttöä tekemällä pieni esimerkkiprojekti. Luo hakemisto _poetry-testi_ haluamaasi hakemistoon. Hakemiston ei tarvitse löytyä Labtooliin rekisteröimästäsi repositoriosta. Avaa hakemisto komentoriviltä ja suorita siellä komento:
 
@@ -134,7 +134,7 @@ Polku tulee Macilla muuttaa (todennäköisesti) muotoon:
 
 Oikea polku kannattaa varmistaa komennolla `which python3`.
 
-### 📝 Tehtävä 2: Riippuvuuksien asentaminen
+### Riippuvuuksien asentaminen
 
 Asennetaan seuraavaksi esimerkkiprojektimme ensimmäisen riippuvuus. Riippuvuuksien löytäminen onnistuu helpoiten Googlettamalla ja etsimällä hakutuloksista sopivia GitHub-repositorioita, tai PyPI-sivuja. Asennetaan esimerkkinä projektiimme erittäin hyödyllinen [cowsay](https://pypi.org/project/cowsay/)-kirjasto. Tämä onnistuu komennolla:
 
@@ -164,7 +164,7 @@ poetry remove cowsay
 
 Pidetään kuitenkin cowsay-kirjasto toistaiseksi asennettuna.
 
-### 📝 Tehtävä 3: Komentojen suorittaminen virtuaaliympäristössä
+### Komentojen suorittaminen virtuaaliympäristössä
 
 Luodaan seuraavaksi _poetry-testi_-hakemistoon hakemisto _src_ ja luodaan sinne tiedosto _index.py_. Tiedoston sisältö on seuraava:
 
@@ -237,7 +237,7 @@ Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se v�
 
 Aloita varmistamalla, että Poetrysta on asennettu uusin versio suorittamalla komento `poetry self update`.
 
-#### Komento poetry install epäonnistuu
+#### Riippuvuuksien asennus epäonnistuu
 
 Suorittaa komento `poetry config experimental.new-installer false` ja sen jälkeen komento `poetry install` uudelleen.
 
@@ -297,7 +297,7 @@ class Maksukortti:
         return f"Kortilla on rahaa {self.arvo} euroa"
 ```
 
-### 📝 Tehtävä 4: Alkutoimet
+### 📝 Tehtävä 1: Alkutoimet
 
 Luo Labtooliin rekisteröimäsi repositorion hakemistoon _laskarit/viikko2_ hakemisto _maksukortti_. Suorita komentoriviltä hakemiston sisällä tuttu, projektin alustamiseen vaadittava komento:
 
@@ -327,7 +327,7 @@ maksukortti/
 
 Lisää tiedostoon _src/maksukortti.py_ edellä esitelty `Maksukortti`-luokan koodi.
 
-### 📝 Tehtävä 5: Aloitetaan testien kirjoittaminen
+### 📝 Tehtävä 2: Aloitetaan testien kirjoittaminen
 
 Yritetään seuraavaksi suorittaa testejä. Siirrytään virtuaaliympäristöön komennolla `poetry shell`, jonka jälkeen suoritetaan komento `pytest src`. Komennon suorittaminen antaa ymmärtää, ettei yhtään testiä ole suoritettu. Syy on yksinkertaisesti siinä, ettemme ole vielä toteuttaneet yhtään testiä.
 
@@ -500,7 +500,7 @@ def test_kortin_saldo_ei_ylita_maksimiarvoa(self):
     self.assertEqual(str(self.kortti), "Kortilla on rahaa 150 euroa")
 ```
 
-### 📝 Tehtävä 6: Lisää testejä
+### 📝 Tehtävä 3: Lisää testejä
 
 Lisää lopuksi maksukortille seuraavat testit:
 
@@ -569,7 +569,7 @@ class TestMaksukortti(unittest.TestCase):
         self.assertEqual(str(self.kortti), "Kortilla on rahaa 150 euroa")
 ```
 
-### 📝 Tehtävä 7: Maksukortti ja kassapääte
+### 📝 Tehtävä 4: Maksukortti ja kassapääte
 
 **HUOM:** tämä tehtävä tehdään **eri projektiin** kuin edellinen, ja vaikka molemmissa tehtävissä on samanniminen luokka, eli `Maksukortti`-luokat ovat erilaiset, eli **älä** copypastaa edellisen tehtävän koodia tai tehtäviä tähän tehtävään.
 
@@ -689,7 +689,7 @@ src/tests/maksukortti_test.py .                          [100%]
 ====================== 1 passed in 0.03s ======================
 ```
 
-### 📝 Tehtävä 8: .gitignore
+### 📝 Tehtävä 5: .gitignore
 
 Kun testien jälkeen suoritat komennon `git status`, huomaat että projektin juureen on ilmestynyt uusi hakemisto <i>.pytest_cache</i>, joka ei ole gitin alaisuudessa
 
@@ -736,7 +736,7 @@ Eli vaikka hakemistossa _/laskarit/viikko2/unicafe_ on alihakemisto <i>.pytest_c
 /laskarit/viikko2/unicafe/__pycache__
 ```
 
-### 📝 Tehtävä 9: Takaisin testeihin
+### 📝 Tehtävä 6: Takaisin testeihin
 
 Avaa nyt projekti valitsemallasi editorilla, kuten Visual Studio Codella.
 
@@ -792,7 +792,7 @@ Tulostuksesta huomaamme, että raportissa on suuri määrä projektin kannalta t
 source = src
 ```
 
-**HUOM:** _src_-hakemiston alahakemistoissa (ei siis itse _src_-hakemistossa) tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot, jotta testikattavuudeen sisällytetään kaikki halutut tiedostot. [Referenssisovelluksessa](https://github.com/ohjelmistotekniikka-hy/python-todo-app) tapauksessa <i>\_\_init\_\_.py</i>-tiedostot on lisätty seuraavasti:
+**HUOM:** _src_-hakemiston alahakemistoissa (ei siis itse _src_-hakemistossa) tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot, jotta testikattavuudeen sisällytetään kaikki halutut tiedostot. [Referenssisovelluksessa]({{site.python_reference_app_url}}) tapauksessa <i>\_\_init\_\_.py</i>-tiedostot on lisätty seuraavasti:
 
 ```
 src/
@@ -840,7 +840,7 @@ Raportista näemme, että koko koodin haaraumakattavuus on 95%. Yksittäisen tie
 
 Kuvan tilanteessa if-ehto ei koskaan saanut arvoa `True`, joten kyseistä haaraa ei testeissä käsitelty.
 
-### 📝 Tehtävä 10: Testikattavuus
+### 📝 Tehtävä 7: Testikattavuus
 
 Unicafe-projektiin on valmiiksi konfiguroitu käytettäväksi [coverage](https://coverage.readthedocs.io/en/coverage-5.3/)-työkalu, joka mittaa testien haarautumakattavuuden. Testikattavuuden konfiguraatiossa käytettävä, _.coveragerc_-tiedoston sisältö on projektissa seuraava:
 
@@ -865,7 +865,7 @@ Jotta `coverage`-komennon generoimat tiedostot eivät päättyisi versionhallint
 /laskarit/viikko2/unicafe/htmlcov
 ```
 
-### 📝 Tehtävä 11: Kassapäätteen testit
+### 📝 Tehtävä 8: Kassapäätteen testit
 
 Laajennetaan unicafe-projektin testaus kattamaan myös kassapääte.
 
@@ -887,7 +887,7 @@ Tee testihakemistoon testitiedosto <i>kassapaate_test.py</i> ja sinne testiluokk
 
 Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun kassapäätteellä on automaattiset testit, on sen rakennetta helppo muokata eli refaktoroida siistimmäksi koko ajan kuitenkin varmistaen, että testit menevät läpi. Refaktoroi koodisi siistimmäksi jos haluat.
 
-### 📝 Tehtävä 12: 100% testikattavuus
+### 📝 Tehtävä 9: 100% testikattavuus
 
 Varmista testikattavuuskomentojen avulla, että kassapäätteen testeillä on 100% haarautumakattavuus. Suorita siis virtuaaliympäristössä komennot `coverage run --branch -m pytest src` ja `coverage html`, jonka jälkeen avaa selaimessa _htmlcov/index.html_-tiedosto.
 
@@ -911,7 +911,7 @@ Web-sovelluksia kurssilla ei sallita. Sovelluksissa sallitaan toki webissä olev
 
 ### Ohjelman toteutus
 
-Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä ja materiaalista. Muutamia vihjeitä on myös kurssin [referenssiprojektissa](https://github.com/ohjelmistotekniikka-hy/python-todo-app) sekä [täällä](/python/toteutus).
+Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä ja materiaalista. Muutamia vihjeitä on myös kurssin [referenssiprojektissa]({{site.python_reference_app_url}}) sekä [täällä](/python/toteutus).
 
 Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus. Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen. Kaiken testaaminen käsin uudelleen ja uudelleen ei ole ajankäytöllisesti järkevää, ja siksi ohjelmakoodille onkin syytä laatia jatkuvasti testejä ohjelmoinnin edetessä. Testit on syytä pitää kattavina ja ajan tasalla.
 
@@ -919,11 +919,11 @@ Jotta ohjelmaa pystyisi testaamaan, on tärkeää että sovelluslogiikkaa [ei ki
 
 Eräs mahdollisuus on tehdä aluksi tekstikäyttöliittymän ja vasta saatuasi ohjelman perustoiminnallisuuden toteutettua voit siirtyä graafisen käyttöliittymän toteutukseen. Graafinen käyttöliittymä on mahdollista myös jättää pois, mutta tämä [vaikuttaa arvosanaan](/python/arvosteluperusteet). Graafisen käyttöliittymän toteutukseen löytyy ohjeita [täällä](/python/tkinter). Pelin toteutukseen Pygame-kirjastolla löytyy ohjeita [täältä](/python/pygame).
 
-[Arvosanan kannalta suositeltavaa](/python/arvosteluperusteet) on, että ohjelmasi tallettaa dataa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](/python/toteutus#tietojen-tallennus).
+[Arvosanan kannalta suositeltavaa](/python/arvosteluperusteet) on, että ohjelmasi tallettaa tietoa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](/python/toteutus#tietojen-tallennus).
 
 Harjoitustyön tavoitteena on tuottaa ohjelma, joka voitaisiin antaa toiselle opiskelijalle ylläpidettäväksi ja täydennettäväksi. Lopullisessa palautuksessa on oltava lähdekoodin lisäksi dokumentaatio ja automaattiset testit.
 
-Toivottava dokumentaation taso käy ilmi [referenssiprojektissa](https://github.com/ohjelmistotekniikka-hy/python-todo-app).
+Toivottava dokumentaation taso käy ilmi [referenssiprojektissa]({{site.python_reference_app_url}}).
 
 ### Hyvän aiheen ominaisuudet
 
@@ -996,11 +996,11 @@ Mikään ei tietenkään estä sitä, että aloitat jo ohjelmoinnin tai vaikkapa
 
 **HUOM:** jos aloitat jo ohjelmoinnin, muista että ohjelmakoodi tulee kirjoittaa englanniksi! Ohjelman käyttöliittymä ja dokumentaatio voivat olla suomeksi tai englanniksi. Ohjeet ohjelmoinnin aloittamiseen löytyvät viikon 3 materiaalista.
 
-Palautus tapahtuu lisäämällä oman aiheen _alustava määrittelydokumentti_ ensimmäisen viikon [laskareiden](/python/viikko1#labtool) päätteeksi [Labtooliin]({{ site.labtool_link }}) rekisteröimääsi palautusrepositorioon.
+Palautus tapahtuu lisäämällä oman aiheen _alustava määrittelydokumentti_ ensimmäisen viikon [laskareiden](/python/viikko1#labtool) päätteeksi [Labtooliin]({{site.labtool_link}}) rekisteröimääsi palautusrepositorioon.
 
-Määrittelydokumentti tehdään samaan tapaan kuin [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/vaatimusmaarittely.md) eli [markdown](https://guides.github.com/features/mastering-markdown/)-muodossa, sijoitetaan repositorion hakemistoon _dokumentaatio_ ja siihen tulee olla linkki repositorion README.md:stä.
+Määrittelydokumentti tehdään samaan tapaan kuin [referenssiprojektissa]({{site.python_reference_app_url}})/blob/master/dokumentaatio/vaatimusmaarittely.md) eli [markdown](https://guides.github.com/features/mastering-markdown/)-muodossa, sijoitetaan repositorion hakemistoon _dokumentaatio_ ja siihen tulee olla linkki repositorion README.md:stä.
 
-Määrittelydokumenttiin kannattaa ottaa mallia [referenssiprojektista](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/vaatimusmaarittely.md), eli sen tulee sisältää:
+Määrittelydokumenttiin kannattaa ottaa mallia [referenssiprojektista]({{site.python_reference_app_url}})/blob/master/dokumentaatio/vaatimusmaarittely.md), eli sen tulee sisältää:
 
 - _Sovelluksen tarkoitus_ eli pieni tekstuaalinen yleiskuvaus sovelluksesta
 - _Käyttäjät_ eli tieto erilaisista _käyttäjärooleista_, joita järjestelmässä on
@@ -1014,8 +1014,6 @@ Voit myös tehdä referenssiprojektin tapaan _käyttöliittymäluonnoksen_, se e
 
 ### 🧪 Harjoitustyö 2: Työaikakirjanpito
 
-Pidä säännöllisesti kirjaa käyttämistäsi työtunneista. Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa.
+Pidä säännöllisesti kirjaa käyttämistäsi työtunneista. Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa. **Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa**.
 
-- Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
-
-Lisää repositorion README.md-tiedostoon linkki [työaikakirjanpitoon](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/tuntikirjanpito.md).
+Lisää repositorion README.md-tiedostoon linkki [työaikakirjanpitoon]({{site.python_reference_app_url}})/blob/master/dokumentaatio/tuntikirjanpito.md).

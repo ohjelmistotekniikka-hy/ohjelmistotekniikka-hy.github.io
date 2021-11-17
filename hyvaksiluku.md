@@ -25,7 +25,7 @@ Jos haluat hyväksilukea kurssin, ota sähköpostilla yhteyttä kurssin vastuuop
 
 - Projektin lähdekoodin tulee olla GitHub-repositoriossa. Repositorio voi olla julkinen ja yksityinen. Jos repositorio on yksityinen, lisää sen kollaboraattoreiksi käyttäjät [Kaltsoon](https://github.com/Kaltsoon) ja [mluukkai](https://github.com/mluukkai)
 - Luo sovelluksesta [GitHub release](/release). Kerro repositorion `README.md`-tiedossa, mikä release pitää ladata ja miten se suoritetaan
-- Lisää repositorioon `README.md`-tiedosto, joka on suurin piirtein kurssin [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app) mukainen. Mukana tulee olla vähintään seuraavat asiat:
+- Lisää repositorioon `README.md`-tiedosto, joka on suurin piirtein kurssin [referenssisovelluksen]({{site.python_reference_app_url}}) mukainen. Mukana tulee olla vähintään seuraavat asiat:
   - Lyhyt kuvaus projektista
   - Linkit dokumentaatioon
   - Ohjeet ohjelman suorittamiselle
@@ -35,8 +35,8 @@ Jos haluat hyväksilukea kurssin, ota sähköpostilla yhteyttä kurssin vastuuop
 
 Jokaiseen dokumenttiin tulee olla linkki projektin repositorion `README.md`-tiedostossa. Dokumentaatiossa tulee olla vähintään seuraavat dokumentit: 
 
-- **Arkkitehtuurikuvaus**, joka on suurin piirtein [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/arkkitehtuuri.md) arkkitehtuurikuvauksen mukainen. Mukana tulee olla vähintään [sovelluslogiikan](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka) sanallinen kuvaus ja kaavio. Jos sovellus on erittäin laaja, keskity johonkin olennaiseen kokonaisuuteen
-- **Käyttöohje**, joka on suurin piirtein [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/kayttoohje.md) käyttöohjeen mukainen
-- **Testausdokumentti**, joka on suurin piirtein [referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/testaus.md) testausdokumentin mukainen.
-- **Tuntikirjanpito**, josta käy ilmi projektin toteuttamiseen käytetyt työtunnit. [Referenssisovelluksen](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/tuntikirjanpito.md) mukainen tuntikirjanpito on ihanteellinen, mutta myös karkeampi taso käy. Tärkeintä on, että tutkikirjanpidosta ilmenee, mihin osa-alueeseen työaikaa on käytetty ja kuinka paljon. Muista, että hyväksiluvun vaatimuksena on vähintään **80 työtuntia**
+- **Arkkitehtuurikuvaus**, joka on suurin piirtein [referenssisovelluksen]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md) arkkitehtuurikuvauksen mukainen. Mukana tulee olla vähintään [sovelluslogiikan]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka) sanallinen kuvaus ja kaavio. Jos sovellus on erittäin laaja, keskity johonkin olennaiseen kokonaisuuteen
+- **Käyttöohje**, joka on suurin piirtein [referenssisovelluksen]({{site.python_reference_app_url}}/blob/master/dokumentaatio/kayttoohje.md) käyttöohjeen mukainen
+- **Testausdokumentti**, joka on suurin piirtein [referenssisovelluksen]({{site.python_reference_app_url}}/blob/master/dokumentaatio/testaus.md) testausdokumentin mukainen.
+- **Tuntikirjanpito**, josta käy ilmi projektin toteuttamiseen käytetyt työtunnit. [Referenssisovelluksen]({{site.python_reference_app_url}}/blob/master/dokumentaatio/tuntikirjanpito.md) mukainen tuntikirjanpito on ihanteellinen, mutta myös karkeampi taso käy. Tärkeintä on, että tutkikirjanpidosta ilmenee, mihin osa-alueeseen työaikaa on käytetty ja kuinka paljon. Muista, että hyväksiluvun vaatimuksena on vähintään **80 työtuntia**
 - Tuntikirjanpidon voi myös korvata vakuuttavalla selvityksellä siitä, että työhön on käytetty ainakin 80 tuntia aikaa.
