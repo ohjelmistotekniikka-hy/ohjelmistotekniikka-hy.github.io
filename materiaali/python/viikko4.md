@@ -96,7 +96,7 @@ Koodin formatointi onnistuu myös monissa editoreissa kätevästi yhdellä näpp
 
 ### Ratkaisuja yleisiin ongelmiin
 
-- Jos Pylint ilmoittaa virheestä `pygame has no X member`, ongelman saa korjattua etsimällä _.pylintrc_-tiedostosta rivin `extension-pkg-whitelist` ja muokkaamalla sen muotoon `extension-pkg-whitelist=pygame`
+- Jos pylint ilmoittaa virheestä `pygame has no X member`, ongelman saa korjattua etsimällä _.pylintrc_-tiedostosta rivin `extension-pkg-whitelist` ja muokkaamalla sen muotoon `extension-pkg-whitelist=pygame`
 
 ## Harjoitustyö
 
@@ -144,8 +144,8 @@ Laadi ohjelman alustava rakenne luokka, tai pakkauskaaviona (0.75p):
 - Kaavion ei tarvitse merkitä kuin sovelluslogiikan kannalta oleelliset luokat
 - Voit tarvittaessa tehdä kaavion, josta ilmenee myös sovelluksen [pakkausrakenne](/python/materiaali#pakkauskaavio)
 - Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
-- Tee repositorioosi hakemisto _dokumentaatio_ ja sen sisälle tiedosto _arkkitehtuuri.md_ ja upota kuva tiedostoon, tiedoston sisältö voi olla muilta osin tyhjä
-- Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen]({{site.python_reference_app_url}}) tavoin
+- Lisää repositorion _dokumentaatio_-hakemistoon tiedosto _arkkitehtuuri.md_ ja upota kuva tiedostoon. Tiedoston sisältö voi olla muilta osin tyhjä
+- Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion _README.md_-tiedostosta [referenssisovelluksen]({{site.python_reference_app_url}}) tavoin
 
 ### 🧪 Harjoitustyö 5: Pistevähennykset
 
@@ -161,3 +161,9 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
   - Ei ylimääräistä tavaraa (mm. `pytest`- ja `coverage`-komentojen generoimia tiedostoja)
   - Laskarit jätetään hakemiston _laskarit_ alle
   - Järkevä _.gitignore_-tiedosto olemassa
+
+{% include harjoitustyon_toimivuus_info.md %}
+
+{% include virtuaalityoasema_python_versio.md %}
+
+{% include ala_plagioi.md %}

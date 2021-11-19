@@ -600,9 +600,27 @@ src/
 pyproject.toml
 poetry.lock
 README.md
+...
 ```
 
 Projektin koodi tulee sijoittaa repositorion _src_-hakemistoon. Koodia kannattaa tarpeen mukaan jakaa hakemiston sisällä alihakemistoihin. Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}).
+
+Voit myös halutessasi alustaa projektin haluamaasi alihakemistoon, esimerkiksi seuraavasti:
+
+```
+laskarit/
+  ...
+todo-app/
+  dokumentaatio/
+    ...
+  src/
+    ...
+  pyproject.toml
+  poetry.lock
+  ...
+README.md
+...
+```
 
 ### 🧪 Harjoitustyö 2: Toiminallisuuden toteutus
 
@@ -632,15 +650,15 @@ Kertaa edellisen viikon unittest-ohjeet, jos tämä tuottaa hankaluuksia.
 
 <!-- TODO: linkit -->
 
-Ohjelmalle tulee pystyä generoimaan coveragen avulla testikattavuusraportti. Kertaa edellisen viikon coverage-ohjeet, jos tämä tuottaa hankaluuksia.
+Ohjelmalle tulee pystyä generoimaan coverage-työkalun avulla testikattavuusraportti. Kertaa edellisen viikon coverage-ohjeet, jos tämä tuottaa hankaluuksia.
 
 ### 🧪 Harjoitustyö 5: Invoke-tehtävät
 
 Toteuta projektille seuraavat Invoke-tehtävät:
 
 - `poetry run invoke start` käynnistää ohjelman
-- `poetry run invoke test` suorittaa testit
-- `poetry run invoke coverage-report` kerää testikattavuuden ja muodostaa sen perusteella selaimessa avattavan, HTML-muotoisen testikattavuusraportin
+- `poetry run invoke test` suorittaa testit pytestin avulla
+- `poetry run invoke coverage-report` kerää coveragen avulla testikattavuuden ja muodostaa sen perusteella selaimessa avattavan, HTML-muotoisen testikattavuusraportin
 
 Mallia Invoke-tehtävien toteutukseen voi ottaa tarvittaessa [referenssisovelluksesta]({{site.python_reference_app_url}}). Voit halutessasi lisätä myös muita tehtäviä, joita koet projektisi kannalta hyödylliseksi.
 
@@ -657,3 +675,9 @@ Varmista vielä, että seuraavat asiat ovat kunnossa:
   - Ei ylimääräistä tavaraa (esim. `pytest`-, tai `coverage`-komentojen generoimia hakemistoja ja tiedostoja)
   - Laskarit jätetään hakemiston _laskarit_ alle
   - Järkevä _.gitignore_-tiedosto olemassa. Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}})
+
+{% include harjoitustyon_toimivuus_info.md %}
+
+{% include virtuaalityoasema_python_versio.md %}
+
+{% include ala_plagioi.md %}

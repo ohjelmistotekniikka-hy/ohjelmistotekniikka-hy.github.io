@@ -237,3 +237,9 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
   - Ei ylimääräistä tavaraa (mm. `pytest`- ja `coverage`-komentojen generoimia tiedostoja)
   - Laskarit jätetään hakemiston _laskarit_ alle
   - Järkevä _.gitignore_-tiedosto olemassa
+
+{% include harjoitustyon_toimivuus_info.md %}
+
+{% include virtuaalityoasema_python_versio.md %}
+
+{% include ala_plagioi.md %}
