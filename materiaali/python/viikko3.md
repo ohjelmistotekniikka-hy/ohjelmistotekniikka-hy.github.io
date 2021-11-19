@@ -474,7 +474,7 @@ if __name__ == "__main__":
 
 Laajemmissa ohjelmistoprojekteissa on useimmiten monia erilaisia _tehtäviä_, joita suoritetaan komentoriviltä annettavien komentojen muodossa. Luultavasti tärkein näistä tehtävistä on sovelluksen käynnistäminen, joka saattaa tapahtua esimerkiksi komennolla `python3 src/index.py`.
 
-Tehtäviin liittyvien komentojen kirjoittaminen käsin muodostuu helposti hankalaksi. Tämä tulee ilmi etenkin tilanteissa, joissa komennot ovat monimutkaisempia, tai vaativat muiden komentojen suorittamista. Ongelman ratkaisemiksi on toteutettu työkaluja, joiden avulla tehtäviä voi määritellä ja suorittaa komentoriviltä helposti. Python-maailmassa eräs suosittu työkalu tähän käyttötarkoitukseen on [Invoke](http://docs.pyinvoke.org/en/stable/).
+Tehtäviin liittyvien komentojen kirjoittaminen käsin käy helposti työlääksi. Tämä tulee ilmi etenkin tilanteissa, joissa komennot ovat monimutkaisempia, tai vaativat muiden komentojen suorittamista. Ongelman ratkaisemiksi on toteutettu työkaluja, joiden avulla tehtäviä voi määritellä ja suorittaa komentoriviltä helposti. Python-maailmassa eräs suosittu työkalu tähän käyttötarkoitukseen on [Invoke](http://docs.pyinvoke.org/en/stable/).
 
 ### Asennus
 
