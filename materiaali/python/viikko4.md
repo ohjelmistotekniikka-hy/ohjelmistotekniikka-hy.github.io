@@ -135,6 +135,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
   - Täydet pisteet saa, jos pylintin antama arvosana koodille on vähintään 7.00/10
   - Käyttöliittymään tai testeihin liittyvän koodin voi jättää pylint-tarkistuksien ulkopuolelle
   - `pylint: disable`-kommenttien käyttö on kiellettyä ilman erittäin perusteltua syytä
+- Pylint-tarkistuksien suorittamista varten on toteutettu Invoke-tehtävä, jonka voi suorittaa komennolla `poetry run invoke lint`
 
 ### 🧪 Harjoitustyö 4: Dokumentaatio
 

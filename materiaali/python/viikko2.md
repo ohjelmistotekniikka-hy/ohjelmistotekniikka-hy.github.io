@@ -30,7 +30,7 @@ Monilla tietokoneilla Python-version kolme komennot suoritetaan `python3`- ja `p
 python --version
 ```
 
-Jos version on alle `3.8.0`, asenna tietokoneellesi [uusin Python-versio](https://www.python.org/downloads/). Muissa tapauksissa, voit käyttää `python`-komentoa `python3`-komennon sijaan.
+Jos versio on alle 3.8, asenna tietokoneellesi [uusin Python-versio](https://www.python.org/downloads/). Muissa tapauksissa, voit käyttää `python`-komentoa `python3`-komennon sijaan.
 
 ### Asennus
 

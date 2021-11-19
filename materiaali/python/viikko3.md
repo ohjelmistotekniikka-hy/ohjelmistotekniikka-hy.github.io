@@ -642,7 +642,7 @@ Toteuta projektille seuraavat Invoke-tehtävät:
 - `poetry run invoke test` suorittaa testit
 - `poetry run invoke coverage-report` kerää testikattavuuden ja muodostaa sen perusteella selaimessa avattavan, HTML-muotoisen testikattavuusraportin
 
-Voit halutessasi lisätä myös muita tehtäviä, joita koet projektisi kannalta hyödylliseksi.
+Mallia Invoke-tehtävien toteutukseen voi ottaa tarvittaessa [referenssisovelluksesta]({{site.python_reference_app_url}}). Voit halutessasi lisätä myös muita tehtäviä, joita koet projektisi kannalta hyödylliseksi.
 
 ### 🧪 Harjoitustyö 6: Muuta
 

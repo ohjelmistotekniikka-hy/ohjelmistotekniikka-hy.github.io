@@ -16,6 +16,8 @@ Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadline
 
 {% include harjoitustyon_toimivuus_info.md %}
 
+{% include virtuaalityoasema_python_versio.md %}
+
 Palautuksesta on tarjolla 3 kurssipistettä.
 
 Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:

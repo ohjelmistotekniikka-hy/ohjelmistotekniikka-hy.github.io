@@ -8,6 +8,14 @@ Kuten materiaalissa on jo todettu, sovelluslogiikan ja käyttöliittymän erotta
 
 Tässä osiossa tutustutaan, miten pelejä voi toteuttaa [Pygame](https://www.pygame.org)-kirjaston avulla. Kirjasto saattaa olla jo ennestään tuttu Ohjelmoinnin jatkokurssilta, jossa sen avulla toteutettiin yksinkertaisia pelejä. Esimerkkinä osiossa käytetään yksinkertaista [Sokoban](https://fi.wikipedia.org/wiki/Sokoban)-peliä. Samaa peliä on käytetty esimerkkinä myös Ohjelmoinnin jatkokurssilla, mutta kyseisessä esimerkissä ei keskitytty esimerkiksi pelin testaamiseen. Projektin lähdekoodi löytyy kokonaisuudessaan [tästä](https://github.com/ohjelmistotekniikka-hy/pygame-sokoban) repositoriosta. Projektista voi ottaa vinkkejä oman pelin toteutukseeen, mutta koodin suora kopioiminen on kiellettyä.
 
+**HUOM:** Pygame-ikkunan käynnitys SSH-yhteyden, tai WSL:n kautta aiheuttaa luultavasti seuraavan virheen:
+
+```
+pygame.error: No available video device
+```
+
+Käytä SSH-yhteyden sijaan [virtuaalityöasemaa](https://vdi.helsinki.fi) ja WSL:n sijaan Windowsin komentoriviä.
+
 ## Pygame-kirjaston asennus Poetryn avulla
 
 Pygamen asennus Poetry-projektissa onnistuu seuraavasti:

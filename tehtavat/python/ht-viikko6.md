@@ -19,6 +19,8 @@ permalink: /python/ht-viikko6
 
 {% include harjoitustyon_toimivuus_info.md %}
 
+{% include virtuaalityoasema_python_versio.md %}
+
 Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 - Ohjelma on kasvanut edellisestä viikosta (0.75p)
