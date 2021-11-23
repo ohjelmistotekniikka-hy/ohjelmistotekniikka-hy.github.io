@@ -8,6 +8,19 @@ title: Ohjeita harjoitustyön toteutukseen
 
 Tähän osioon on koottu vinkkejä, joista on luultavasti hyötyä harjoitustyön toteutuksessa.
 
+- [Sovelluksen käyttöliittymä](#sovelluksen-käyttöliittymä)
+  - [Tekstikäyttöliittymä](#tekstikäyttöliittymä)
+  - [Graafinen käyttöliittymä](#graafinen-käyttöliittymä)
+- [Pelien toteutus](#pelien-toteutus)
+- [Riippuvuuksien injektointi](#riippuvuuksien-injektointi)
+- [Tietojen tallennus](#tietojen-tallennus)
+  - [Repository-suunnittelumalli](#repository-suunnittelumalli)
+  - [Tiedostojen polut](#tiedostojen-polut)
+  - [SQLite-tietokannan käyttö](#sqlite-tietokannan-käyttö)
+  - [Huomioita testaamisesta](#huomioita-testaamisesta)
+- [Sovelluksen konfiguraatiot](#sovelluksen-konfiguraatiot)
+- [Uuden tekniikan harjoittelu ja käyttöönotto](#uuden-tekniikan-harjoittelu-ja-käyttöönotto)
+
 ## Sovelluksen käyttöliittymä
 
 Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän tekemättömyys saattaa [vaikuttaa arvosanaan](/python/arvosteluperusteet).
@@ -348,6 +361,56 @@ print(todos)
 
 Huomaa, että luokan käyttäjä ei ole tietoinen, miten tieto haetaan. Tämä mahdollistaa tallennustapaan tehtävät muutokset vaivattomasti ilman muutoksia muuhun koodiin.
 
+### Tiedostojen polut
+
+Tiedostojen poluista kannattaa muodostaa niin kutsuttuja absoluuttisia polkuja, jotta ne toimivat riippumatta, mitä Python-tiedostoa suoritetaan. Kuvitellaan, että projektin rakenne on seuraava:
+
+```
+src/
+  file_reader.py
+  data.csv
+  ...
+```
+
+<i>file_reader.py</i>-tiedostossa voidaan lukea <i>data.csv</i>-tiedosto seuraavasti:
+
+```python
+import os
+
+dirname = os.path.dirname(__file__)
+data_file_path = path.join(dirname, "data.csv")
+
+with open(data_file_path) as file:
+    for row in file:
+        # Tehdään tiedoston riveillä jotain
+```
+
+Koodissa tallennetaan `dirname`-nimiseen muuttujaan absoluuttinen polku <i>file_reader.py</i>-tiedoston hakemistoon (<i>src</i>-hakemistoon). Tämän polun perusteella muodostetaan polku <i>data.csv</i>-tiedostoon.
+
+Tiedosto voi hyvin sijaita myös oma hakemistossaan, esimerkiksi seuraavasti:
+
+```
+data/
+  data.csv
+src/
+  file_reader.py
+```
+
+Tämä vaatii seuraavan muutoksen koodiin:
+
+```python
+import os
+
+dirname = os.path.dirname(__file__)
+data_file_path = path.join(dirname, "..", "data", "data.csv")
+
+with open(data_file_path) as file:
+    for row in file:
+        # Tehdään tiedoston riveillä jotain
+```
+
+Kutsussa `path.join(dirname, "..", "data", "data.csv")` muodostetaan polku lähtemällä liikkeelle <i>file_reader.py</i>-tiedoston hakemistosta (<i>src</i>-hakemistosta), siirtymällä yksi hakemisto ylöspäin ja siirtymällä <i>data</i>-hakemistoon.
+
 ### SQLite-tietokannan käyttö
 
 [SQLite-tietokanta](https://www.sqlite.org/index.html) on helppokäyttöinen SQL-tietokanta, joka tallentaa tietokannan tiedostoon käyttäjän tietokoneelle, jolloin erillistä tietokantapalvelinta ei tarvita. Sitä kannattaa käyttää sovelluksessa [sqlite3](https://docs.python.org/3/library/sqlite3.html)-moduulin kautta. Mikä tekee SQLite-tietokannan käytöstä hieman hankalampaa perinteiseen tiedostoon verrattuna on se, että sen käyttö vaatii tietokantaulujen alustuksen.
@@ -492,9 +555,9 @@ Katsotaan, miten ympäristömuuttujia voi käyttää projektissa, jonka rakenne 
 
 ```
 src/
-    index.py
-    config.py
-    ...
+  index.py
+  config.py
+  ...
 .env
 poetry.lock
 pyproject.toml
