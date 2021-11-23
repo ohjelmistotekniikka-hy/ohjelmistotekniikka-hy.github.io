@@ -1,8 +1,21 @@
-**HUOM:** Tarkista virtuaalityöaseman Python-versio komennolla `python3 --version`. Jos versio on alle 3.8, muuta **virtuaalityöasemalle lataamassasi projektissa** (repositoriossa olevassa projektissa tätä ei tarvitse muuttaa) _pyproject.toml_-tiedoston Python version vaatimukseksi `^3.6`:
+**HUOM:** Tarkista virtuaalityöaseman Python-versio komennolla `python3 --version`. Jos versio on alle 3.8, toimi seuraavasti:
 
-```
-[tool.poetry.dependencies]
-python = "^3.6"
-```
+1. Avaa terminaali ja asenna [pyenv](https://github.com/pyenv/pyenv) komennolla `curl https://pyenv.run | bash`
+2. Siirry kotihakemistoon komennolla `cd` ja lisää kotihakemiston _.bashrc_-tiedoston loppuun seuraavat rivit:
 
-Suorita tämän jälkeen komento `poetry install`.
+   ```bash
+   export PATH="$HOME/.pyenv/bin:$PATH"
+   eval "$(pyenv init --path)"
+   ```
+
+   Tämä onnistuu esimerkiksi nano-editorilla komennolla `nano .bashrc`
+
+3. Suorita komennot:
+
+   ```bash
+   source .bashrc
+   pyenv install 3.8.12
+   pyenv global 3.8.12
+   ```
+
+4. Varmista, että Python-versio on 3.8.12 komennolla `python --version`
