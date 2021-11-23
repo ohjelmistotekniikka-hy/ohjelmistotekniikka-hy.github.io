@@ -17,6 +17,7 @@ Tähän osioon on koottu vinkkejä, joista on luultavasti hyötyä harjoitustyö
   - [Repository-suunnittelumalli](#repository-suunnittelumalli)
   - [Tiedostojen polut](#tiedostojen-polut)
   - [SQLite-tietokannan käyttö](#sqlite-tietokannan-käyttö)
+  - [SQLite-tietokanta lukkiutuminen virtuaalityöasemalla](#sqlite-tietokanta-lukkiutuminen-virtuaalityöasemalla)
   - [Huomioita testaamisesta](#huomioita-testaamisesta)
 - [Sovelluksen konfiguraatiot](#sovelluksen-konfiguraatiot)
 - [Uuden tekniikan harjoittelu ja käyttöönotto](#uuden-tekniikan-harjoittelu-ja-käyttöönotto)
@@ -517,6 +518,16 @@ def pytest_configure():
 ```
 
 Vaikka edellä esitelty tapa alustaa tietokanta `initialize_database`-funktion avulla on melko kätevä, on SQL-tietokannan skeemaa tapana ylläpitää niin kutsuttujen [tietokantamigraatioiden](https://en.wikipedia.org/wiki/Schema_migration) avulla. Eräs tähän käyttötarkoitukseen soveltuva työkalu on [Alembic](https://alembic.sqlalchemy.org/en/latest/).
+
+### SQLite-tietokanta lukkiutuminen virtuaalityöasemalla
+
+Kun suoritat SQLite-tietokantaa käyttävää sovellusta virtuaalityöasemalla, tai melkillä, saatat törmätä seuraavaan virheeseen:
+
+```bash
+database is locked
+```
+
+Ongelma johtuu verkkolevyn hitaudesta ja ratkaisu on suorittaa projektia `/tmp`-hakemistosta käsin. Siirry siis _tmp_-hakemistoon terminaalista komennolla `cd /tmp` ja kloonaa projektin repositorio sinne `git clone`-komennolla.
 
 ### Huomioita testaamisesta
 
