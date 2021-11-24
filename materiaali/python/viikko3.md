@@ -170,6 +170,8 @@ Tässä tehtävän osassa tehdään alustava luokkakaavio, joka ei kuvaa peliä 
 
 Monopolia pelataan käyttäen kahta noppaa. Pelaajia on vähintään 2 ja enintään 8. Peliä pelataan pelilaudalla joita on yksi. Pelilauta sisältää 40 ruutua. Kukin ruutu tietää, mikä on sitä seuraava ruutu pelilaudalla. Kullakin pelaajalla on yksi pelinappula. Pelinappula sijaitsee aina yhdessä ruudussa.
 
+Lisää tämän viikon tehtäviä varten repositorion _laskarit_ hakemistoon hakemisto _viikko3_ ja lisää tehtävissä toteuttamasi kaaviot sinne.
+
 ### 📝 Tehtävä 2: Laajennettu Monopoli
 
 Laajennetaan edellisen tehtävän luokkakaaviota tuomalla esiin seuraavat asiat:
@@ -515,10 +517,10 @@ def foo(ctx):
 
 @task
 def start(ctx):
-    ctx.run("python3 src/index.py")
+    ctx.run("python3 src/index.py", pty=True)
 ```
 
-Voimme suorittaa tehtävässä komentorivikomennon käyttämällä parametrina saadun [Context](http://docs.pyinvoke.org/en/stable/api/context.html#module-invoke.context)-olion metodia [run](http://docs.pyinvoke.org/en/stable/api/context.html#invoke.context.Context.run). Tehtävän suorittaminen onnistuu komennolla `poetry run invoke start`.
+Voimme suorittaa tehtävässä komentorivikomennon käyttämällä parametrina saadun [Context](http://docs.pyinvoke.org/en/stable/api/context.html#module-invoke.context)-olion metodia [run](http://docs.pyinvoke.org/en/stable/api/context.html#invoke.context.Context.run). Tehtävän suorittaminen onnistuu komennolla `poetry run invoke start`. Huomaa, että `pty=True`-argumentti on erityisen tärkeä komentorivikäyttöliittymässä, jotta sovelluksen syötteet ja tulosteet toimivat [odotetulla tavalla](https://www.pyinvoke.org/faq.html#why-is-my-command-behaving-differently-under-invoke-versus-being-run-by-hand).
 
 Voimme listata kaikki projektissa käytössä olevat tehtävät komennolla:
 
