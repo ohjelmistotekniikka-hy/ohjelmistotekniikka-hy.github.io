@@ -6,6 +6,8 @@ permalink: /python/vk5
 
 {% include deadline_info.md deadline=site.wk5dl %}
 
+Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.
+
 ## GitHub release
 
 Eräs tapa julkaista ohjelmasta vakaa versio on tehdä GitHubiin release, eli julkaistu versio:
@@ -33,7 +35,7 @@ Varmista, että palautusrepositorioosi on mahdollista tehdä issueita, eli repos
 
 Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutta toiminallisuutta ja parannetaan sen dokumentaatiota.
 
-**Tämän viikon palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
+**Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
 ### 🧪 Harjoitustyö 1: GitHub release
 

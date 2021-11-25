@@ -48,7 +48,7 @@ Ohjelmiston vaatimuksiin kuuluvat myös _toimintaympäristön rajoitteet_. Todo-
 
 Vaatimusmäärittelyn aikana hahmotellaan yleensä myös sovelluksen käyttöliittymä.
 
-Kurssin aiemmissa versioissa käyttäjien vaatimukset dokumentointiin [käyttötapauksina](https://en.wikipedia.org/wiki/Use_case) (engl. use case). Käytämme tällä kurssilla hieman kevyempää tapaa, ja kirjaamme järjestelmältä toivotun toiminnallisuuden vapaamuotoisena ranskalaisista viivoista koostuvana feature-listana. Katso tarkemmin Todo-sovelluksen alustavasta [vaatimusmäärittelystä](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/vaatimusmaarittely.md).
+Kurssin aiemmissa versioissa käyttäjien vaatimukset dokumentointiin [käyttötapauksina](https://en.wikipedia.org/wiki/Use_case) (engl. use case). Käytämme tällä kurssilla hieman kevyempää tapaa, ja kirjaamme järjestelmältä toivotun toiminnallisuuden vapaamuotoisena ranskalaisista viivoista koostuvana feature-listana. Katso tarkemmin Todo-sovelluksen alustavasta [vaatimusmäärittelystä]({{include.reference_app_url}}/blob/master/dokumentaatio/vaatimusmaarittely.md).
 
 ### Suunnittelu
 

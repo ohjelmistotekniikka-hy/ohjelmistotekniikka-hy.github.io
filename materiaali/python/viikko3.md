@@ -6,6 +6,8 @@ permalink: /python/vk3
 
 {% include deadline_info.md deadline=site.wk3dl %}
 
+Tämän viikon tehtävien palautuksesta on tarjolla 1 piste ja harjoitustyön palautuksesta 2 pistettä.
+
 ## UML
 
 Ohjelmistojen dokumentoinnissa ja sovelluksen suunnittelun yhteydessä on usein tapana visualisoida ohjelman rakennetta ja toimintaa [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language)-kaavioilla.
@@ -170,7 +172,7 @@ Tässä tehtävän osassa tehdään alustava luokkakaavio, joka ei kuvaa peliä 
 
 Monopolia pelataan käyttäen kahta noppaa. Pelaajia on vähintään 2 ja enintään 8. Peliä pelataan pelilaudalla joita on yksi. Pelilauta sisältää 40 ruutua. Kukin ruutu tietää, mikä on sitä seuraava ruutu pelilaudalla. Kullakin pelaajalla on yksi pelinappula. Pelinappula sijaitsee aina yhdessä ruudussa.
 
-Lisää tämän viikon tehtäviä varten repositorion _laskarit_ hakemistoon hakemisto _viikko3_ ja lisää tehtävissä toteuttamasi kaaviot sinne.
+**Lisää tämän viikon tehtäviä varten repositoriosi _laskarit_ hakemistoon hakemisto _viikko3_ ja lisää toteuttamasi kaavio sinne.**
 
 ### 📝 Tehtävä 2: Laajennettu Monopoli
 
@@ -193,6 +195,8 @@ Sattuma- ja yhteismaaruutuihin liittyy kortteja, joihin kuhunkin liittyy joku to
 Toimintoja on useanlaisia. Ei ole vielä tarvetta tarkentaa toiminnon laatua.
 
 Normaaleille kaduille voi rakentaa korkeintaan 4 taloa tai yhden hotellin. Kadun voi omistaa joku pelaajista. Pelaajilla on rahaa.
+
+**Lisää toteuttamasi kaavio repositoriosi _laskarit/viikko3_-hakemistoon.**
 
 ### Pakkauskaavio
 
@@ -374,6 +378,8 @@ class Engine:
         self._fuel_tank.consume(10)
 ```
 
+**Lisää toteuttamasi kaavio repositoriosi _laskarit/viikko3_-hakemistoon.**
+
 ### 📝 Tehtävä 4: Laajempi sekvenssikaavio
 
 Tarkastellaan HSL-matkakorttien hallintaan käytettävää koodia.
@@ -471,6 +477,8 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+**Lisää toteuttamasi kaavio repositoriosi _laskarit/viikko3_-hakemistoon.**
 
 ## Tehtävien suorittaminen ja Invoke
 
@@ -586,7 +594,7 @@ Nyt komento `poetry run invoke coverage-report` suorittaa ensin tehtävän _cove
 
 Tämän viikon aikana aloitetaan harjoitustyön toteutus ja testaaminen. Ohjelman tulee edistyä jokaisella viikolla tasaisesti. Jos ohjelma tulee valmiiksi jo ennen loppupalautusta valmistaudu laajentamaan sitä saadaksesi ohjelman edistymisestä pisteet. Tarkoitus on edistää projektia tasaisesti kurssiviikkojen aikana.
 
-**Tämän viikon palautuksesta on tarjolla 2 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
+**Tämän viikon harjoitustyön palautuksesta on tarjolla 2 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
 ### 🧪 Harjoitustyö 1: Poetry projektin alustaminen
 

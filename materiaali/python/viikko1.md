@@ -6,6 +6,8 @@ title: Viikko 1
 
 {% include deadline_info.md deadline=site.wk1dl %}
 
+Tämän viikon tehtävien palautuksesta on tarjolla 2 pistettä.
+
 ## Ohjelmistotekniikka
 
 Keväästä 2018 alkaen Ohjelmistotekniikka (vanhalta nimeltään Ohjelmistotekniikan menetelmät) on siirtynyt aineopintoihin. Kurssin esitietoina on Ohjelmoinnin jatkokurssi sekä Tietokantojen perusteet. Oletuksena on, että molemmista kursseista on käyty suhteellisen tuore versio ja että molempien aihepiiri on vielä hyvin mielessä.
@@ -457,7 +459,7 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 
 ![]({{ "/assets/images/v1-RestoreGit.png" | absolute_url }})
 
-### 📝 Tehtävä 10: Harjoittelua
+### 📝 Tehtävä 11: Harjoittelua
 
 - luo repositiosi sisälle hakemisto _tiedostoja_ ja hakemiston sisälle tiedostot _file1_, _file2_ ja _file3_
 - commitoi muutokset
@@ -471,7 +473,7 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 
 Suorita repositoriossa komento `git log --stat | cat` ja **ota komennon tulos talteen**, tulet tarvitsemaan sitä myöhemmin!
 
-### 📝 Tehtävä 11: GitHub
+### 📝 Tehtävä 12: GitHub
 
 Gitin käytöstä on toki hyötyä jo harjoittelemallammekin tavalla, eli muodostamalla paikallisen koneen hakemistosta repositorio. Pääsemme kuitenkin nauttimaan kertaluokkaa suuremmista hyödyistä liittämällä repositoriomme internetissä olevaan _etärepositorioon_. Etärepositorion kautta repositorion tiedostot on helppo jakaa useiden koneiden tai/ja useiden käyttäjien kesken.
 
@@ -543,7 +545,7 @@ Please make sure you have the correct access rights
 and the repository exists.
 ```
 
-### 📝 Tehtävä 12: Julkinen avain
+### 📝 Tehtävä 13: Julkinen avain
 
 Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](/python/viikko1#lisää-tiedostoja).
 
@@ -578,7 +580,7 @@ Branch master set up to track remote branch master from origin.
 
 Nyt kaikki näyttää toimivan.
 
-### 📝 Tehtävä 13: Lisää tiedostoja
+### 📝 Tehtävä 14: Lisää tiedostoja
 
 - Tee juuri luodun repositorion sisälle hakemisto _laskarit_
   - Ja sen sisälle hakemisto _viikko1_
@@ -594,7 +596,7 @@ Nyt kaikki näyttää toimivan.
   - Muista aina commitoinnin yhteydessä _lisätä_ tiedosto/muutokset commitoitavaksi
 - Pushaa koodi githubiin komennolla `git push`
 
-### 📝 Tehtävä 14: Tiedostot GitHubissa
+### 📝 Tehtävä 15: Tiedostot GitHubissa
 
 - Mene GitHub-repositoriosi sivulle
   - Käytännössä tämä tapahtuu uudelleenlataamalla repositorion luomisen jälkeen avautunut sivu
@@ -616,7 +618,7 @@ Jos teit kaiken oikein, pääset README.md:ssä olevia linkkejä klikkaamalla n�
 - Saamme tuotua muutokset paikalliselle koneelle komennolla `git pull`
 - Kokeile komentoa ja varmista, että muuttunut sisältö on nyt paikallisessa repositoriossa
 
-### 📝 Tehtävä 15: Lisää GitHubia
+### 📝 Tehtävä 16: Lisää GitHubia
 
 - Tee paikallisella koneella jokin muutos esim. tiedostoon README.md
 - Lisää ja committaa muutos
@@ -624,7 +626,7 @@ Jos teit kaiken oikein, pääset README.md:ssä olevia linkkejä klikkaamalla n�
 - Varmista GitHubista että muutokset näkyvät
 - Paikallinen repositoriosi ja GitHubin etärepositorio ovat jälleen samassa tilassa.
 
-### 📝 Tehtävä 16: Paikallisen ja etärepositorion epäsynkrooni
+### 📝 Tehtävä 17: Paikallisen ja etärepositorion epäsynkrooni
 
 - Joskus käy niin, että paikallinen ja etärepositorio menevät epäsynkroniin, siten että molempiin tehdään yhtäaikaa uusi commit
 - Luodaan tälläinen tilanne

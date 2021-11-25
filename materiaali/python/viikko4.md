@@ -6,6 +6,8 @@ permalink: /python/vk4
 
 {% include deadline_info.md deadline=site.wk4dl %}
 
+Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.
+
 ## Pylint ja koodin laaduun staattinen analyysi
 
 Koodin testauksen lisäksi koodin luettavuuden ylläpitäminen on tärkeää. Tässä hyvänä apuvälineenä on staattisen analyysin työkalu [pylint](https://www.pylint.org/). Pylintin avulla pystytään määrittelemään joukko sääntöjä, joita koodin tulisi noudattaa, ja automatisoidusti tarkastaa noudatetaanko näitä sääntöjä.
@@ -102,7 +104,7 @@ Koodin formatointi onnistuu myös monissa editoreissa kätevästi yhdellä näpp
 
 Tämän viikon aikana harjoitustyöhön toteutetaan uutta toiminallisuutta, parannetaan sen dokumentaatiota ja kiinnitetään tarkempi huomio koodin laatuun.
 
-**Tämän viikon palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
+**Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
 ### 🧪 Harjoitustyö 1: Uutta toiminallisuutta
 

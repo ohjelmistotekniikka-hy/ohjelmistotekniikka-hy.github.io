@@ -6,7 +6,9 @@ title: Viikko 2
 
 {% include deadline_info.md deadline=site.wk2dl %}
 
-## Poetry ja riippuvuuksien hallinta
+Tämän viikon tehtävien palautuksesta on tarjolla 2 pistettä ja harjoitustyön palautuksesta 1 piste.
+
+## Poetry ja riippuvuuksien allinta
 
 Laajoissa ja monimutkaisissa ohjelmistoprojekteissa kaiken koodin tuottaminen itse ei ole enää käytännöllistä. Ei ole esimerkiksi järkevää, että jokaisessa ohjelmistoprojektissa toteutetaan oma ohjelmointirajapinta tietokantaoperaatioille, tai sovelluskehys koodin testaamiseen. Jotta pyörää ei tarvitsisi aina keksiä uudelleen, ovat ohjelmistokehittäjät kehittäneet valtavan määrän avoimen lähdekoodin _kirjastoja_, joita jokainen voi hyödyntää projekteissaan.
 
