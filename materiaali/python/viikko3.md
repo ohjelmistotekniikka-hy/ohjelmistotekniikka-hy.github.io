@@ -162,7 +162,7 @@ Luokkien [perintähierarkian](https://docs.python.org/3/tutorial/classes.html#in
 
 Luokkakaavioiden piirtoon helpoin työkalu on <http://yuml.me/>, jos haluat ammattimaisempaa jälkeä on <https://draw.io/> hyvä (tätä tehtävää varten se ei kuitenkaan liene vaivan arvoista). Myös valokuva käsin piirretyistä kaavioista riittää.
 
-### 📝 Tehtävä 1: Monopoli
+### Tehtävä 1: Monopoli
 
 Monopoli ks. esim. http://fi.wikipedia.org/wiki/Monopoli_(peli) on varmasti kaikkien tuntema lautapeli.
 
@@ -174,7 +174,7 @@ Monopolia pelataan käyttäen kahta noppaa. Pelaajia on vähintään 2 ja enint�
 
 **Lisää tämän viikon tehtäviä varten repositoriosi _laskarit_ hakemistoon hakemisto _viikko3_ ja lisää toteuttamasi kaavio sinne.**
 
-### 📝 Tehtävä 2: Laajennettu Monopoli
+### Tehtävä 2: Laajennettu Monopoli
 
 Laajennetaan edellisen tehtävän luokkakaaviota tuomalla esiin seuraavat asiat:
 
@@ -332,7 +332,7 @@ Voit halutessasi lukea lisää sekvenssikaavioista kurssin vanhan version [mater
 
 Sekvenssikaavioiden piirtämiseen sopivat melko hyvin samat työkalut kuin luokkakaavioihinkin. Näiden lisäksi [WebSequenceDiagrams](https://www.websequencediagrams.com/) on eräs, juuri sekvenssikaavioiden piirtämiseen tarkoitettu työkalu.
 
-### 📝 Tehtävä 3: Sekvenssikaavio
+### Tehtävä 3: Sekvenssikaavio
 
 Tarkastellaan bensatankista ja moottorista koostuvan koneen Python-koodia.
 
@@ -380,7 +380,7 @@ class Engine:
 
 **Lisää toteuttamasi kaavio repositoriosi _laskarit/viikko3_-hakemistoon.**
 
-### 📝 Tehtävä 4: Laajempi sekvenssikaavio
+### Tehtävä 4: Laajempi sekvenssikaavio
 
 Tarkastellaan HSL-matkakorttien hallintaan käytettävää koodia.
 
@@ -596,7 +596,7 @@ Tämän viikon aikana aloitetaan harjoitustyön toteutus ja testaaminen. Ohjelma
 
 **Tämän viikon harjoitustyön palautuksesta on tarjolla 2 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
-### 🧪 Harjoitustyö 1: Poetry projektin alustaminen
+### Harjoitustyö 1: Poetry projektin alustaminen
 
 Alusta repositoriosi juureen Poetry-projekti edellisen viikon ohjeiden mukaisesti. Repositorion rakenne tulee olla seuraava:
 
@@ -632,7 +632,7 @@ README.md
 ...
 ```
 
-### 🧪 Harjoitustyö 2: Toiminallisuuden toteutus
+### Harjoitustyö 2: Toiminallisuuden toteutus
 
 <!-- TODO: linkit -->
 
@@ -640,7 +640,7 @@ Toteuta ainakin osa jostain edellisellä viikolla tekemäsi määrittelydokument
 
 Toteutukseen liittyviä ohjeita löydät [täältä](/python/toteutus).
 
-### 🧪 Harjoitustyö 3: Testaamisen aloittaminen
+### Harjoitustyö 3: Testaamisen aloittaminen
 
 <!-- TODO: linkit -->
 
@@ -656,13 +656,13 @@ src/
 
 Kertaa edellisen viikon unittest-ohjeet, jos tämä tuottaa hankaluuksia.
 
-### 🧪 Harjoitustyö 4: Testikattavuusraportti
+### Harjoitustyö 4: Testikattavuusraportti
 
 <!-- TODO: linkit -->
 
 Ohjelmalle tulee pystyä generoimaan coverage-työkalun avulla testikattavuusraportti. Kertaa edellisen viikon coverage-ohjeet, jos tämä tuottaa hankaluuksia.
 
-### 🧪 Harjoitustyö 5: Invoke-tehtävät
+### Harjoitustyö 5: Invoke-tehtävät
 
 Toteuta projektille seuraavat Invoke-tehtävät:
 
@@ -672,7 +672,7 @@ Toteuta projektille seuraavat Invoke-tehtävät:
 
 Mallia Invoke-tehtävien toteutukseen voi ottaa tarvittaessa [referenssisovelluksesta]({{site.python_reference_app_url}}). Voit halutessasi lisätä myös muita tehtäviä, joita koet projektisi kannalta hyödylliseksi.
 
-### 🧪 Harjoitustyö 6: Muuta
+### Harjoitustyö 6: Muuta
 
 Varmista vielä, että seuraavat asiat ovat kunnossa:
 

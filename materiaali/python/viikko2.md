@@ -126,13 +126,13 @@ The currently activated Python version 2.7.16 is not supported by the project (^
 Trying to find and use a compatible version.
 ```
 
-Eräs tapa korjata tilanne Macilla ja ehkä myös Linuxilla on editoida tiedoston `~/.poetry.bin/poetry` ensimmäisellä rivillä mainittu Pythonin polku. Oletusarvoinen polku on todennäköisesti seuraava:
+Eräs tapa korjata tilanne Linuxilla ja macOS:lla on editoida tiedoston `~/.poetry.bin/poetry` ensimmäisellä rivillä mainittu Pythonin polku. Oletusarvoinen polku on todennäköisesti seuraava:
 
 ```
 #!/usr/bin/python
 ```
 
-Polku tulee Macilla muuttaa (todennäköisesti) muotoon:
+Polku tulee muuttaa muotoon:
 
 ```
 #!/usr/local/bin/python3
@@ -241,31 +241,30 @@ Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se v�
 
 ### Ratkaisuja yleisiin ongelmiin
 
-Aloita varmistamalla, että Poetrysta on asennettu uusin versio suorittamalla komento `poetry self update`.
+Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
 
-#### Riippuvuuksien asennus epäonnistuu
+1. Varmista, että Poetrysta on asennettu uusin versio suorittamalla komento `poetry self update`
+2. Varmista, että _pyproject.toml_-tiedostossa on oikea Python version vaatimus:
 
-Suorittaa komento `poetry config experimental.new-installer false` ja yritä sen jälkeen suorittaa epäonnistunut Poetry-komento uudelleen.
+   ```
+   [tool.poetry.dependencies]
+   python = "^3.8"
+   ```
 
-#### Virtuaaliympäristössä suoritetaan Python versiota 2
+   **Jos versio on väärä**, muuta se, tallenna _pyproject.toml_-tiedosto, poista _poetry.lock_-tiedosto (jos se on olemassa) ja suorita komento `poetry install`
 
-Varmista ensin, että _pyproject.toml_-tiedostossa on oikea Python version vaatimus:
+3. Listaa projektissa käytössä olevat virtuaaliympäristöt komennolla `poetry env list` ja poista ne kaikki yksitellen komennolla `poetry env remove <nimi>`. Esimerkiksi seuraavasti:
 
-```
-[tool.poetry.dependencies]
-python = "^3.8"
-```
+   ```bash
+   $ poetry env list
+   unicafe-jLeQYxxf-py3.9 (Activated)
+   $ poetry env remove unicafe-jLeQYxxf-py3.9
+   Deleted virtualenv: /Users/kalleilv/Library/Caches/pypoetry/virtualenvs/unicafe-jLeQYxxf-py3.9
+   ```
 
-Listaa tämän jälkeen käytössä olevat virtuaaliympäristöt komennolla `poetry env list` ja poista ne kaikki yksitellen komennolla `poetry env remove <nimi>`. Esimerkiksi seuraavasti:
+   Kun virtuaaliympäristöt on poistettu, suorita komento `poetry install`
 
-```bash
-$ poetry env list
-unicafe-jLeQYxxf-py3.9 (Activated)
-$ poetry env remove unicafe-jLeQYxxf-py3.9
-Deleted virtualenv: /Users/kalleilv/Library/Caches/pypoetry/virtualenvs/unicafe-jLeQYxxf-py3.9
-```
-
-Kun virtuaaliympäristöt on poistettu suorita komento `poetry install`.
+Kun kaikki toimenpiteet on suoritettu, yritä suorittaa epäonnistunut Poetry-komento uudestaan.
 
 ## Unittest ja testaaminen
 
@@ -303,7 +302,7 @@ class Maksukortti:
         return f"Kortilla on rahaa {self.arvo} euroa"
 ```
 
-### 📝 Tehtävä 1: Alkutoimet
+### Tehtävä 1: Alkutoimet
 
 Luo Labtooliin rekisteröimäsi repositorion hakemistoon _laskarit/viikko2_ hakemisto _maksukortti_. Suorita komentoriviltä hakemiston sisällä tuttu, projektin alustamiseen vaadittava komento:
 
@@ -333,7 +332,7 @@ maksukortti/
 
 Lisää tiedostoon _src/maksukortti.py_ edellä esitelty `Maksukortti`-luokan koodi.
 
-### 📝 Tehtävä 2: Aloitetaan testien kirjoittaminen
+### Tehtävä 2: Aloitetaan testien kirjoittaminen
 
 Yritetään seuraavaksi suorittaa testejä. Siirrytään virtuaaliympäristöön komennolla `poetry shell`, jonka jälkeen suoritetaan komento `pytest src`. Komennon suorittaminen antaa ymmärtää, ettei yhtään testiä ole suoritettu. Syy on yksinkertaisesti siinä, ettemme ole vielä toteuttaneet yhtään testiä.
 
@@ -506,7 +505,7 @@ def test_kortin_saldo_ei_ylita_maksimiarvoa(self):
     self.assertEqual(str(self.kortti), "Kortilla on rahaa 150 euroa")
 ```
 
-### 📝 Tehtävä 3: Lisää testejä
+### Tehtävä 3: Lisää testejä
 
 Lisää lopuksi maksukortille seuraavat testit:
 
@@ -575,7 +574,7 @@ class TestMaksukortti(unittest.TestCase):
         self.assertEqual(str(self.kortti), "Kortilla on rahaa 150 euroa")
 ```
 
-### 📝 Tehtävä 4: Maksukortti ja kassapääte
+### Tehtävä 4: Maksukortti ja kassapääte
 
 **HUOM:** tämä tehtävä tehdään **eri projektiin** kuin edellinen, ja vaikka molemmissa tehtävissä on samanniminen luokka, eli `Maksukortti`-luokat ovat erilaiset, eli **älä** copypastaa edellisen tehtävän koodia tai tehtäviä tähän tehtävään.
 
@@ -695,7 +694,7 @@ src/tests/maksukortti_test.py .                          [100%]
 ====================== 1 passed in 0.03s ======================
 ```
 
-### 📝 Tehtävä 5: .gitignore
+### Tehtävä 5: .gitignore
 
 Kun testien jälkeen suoritat komennon `git status`, huomaat että projektin juureen on ilmestynyt uusi hakemisto <i>.pytest_cache</i>, joka ei ole gitin alaisuudessa
 
@@ -742,7 +741,7 @@ Eli vaikka hakemistossa _/laskarit/viikko2/unicafe_ on alihakemisto <i>.pytest_c
 /laskarit/viikko2/unicafe/__pycache__
 ```
 
-### 📝 Tehtävä 6: Takaisin testeihin
+### Tehtävä 6: Takaisin testeihin
 
 Avaa nyt projekti valitsemallasi editorilla, kuten Visual Studio Codella.
 
@@ -846,7 +845,7 @@ Raportista näemme, että koko koodin haaraumakattavuus on 95%. Yksittäisen tie
 
 Kuvan tilanteessa if-ehto ei koskaan saanut arvoa `True`, joten kyseistä haaraa ei testeissä käsitelty.
 
-### 📝 Tehtävä 7: Testikattavuus
+### Tehtävä 7: Testikattavuus
 
 Unicafe-projektiin on valmiiksi konfiguroitu käytettäväksi [coverage](https://coverage.readthedocs.io/en/coverage-5.3/)-työkalu, joka mittaa testien haarautumakattavuuden. Testikattavuuden konfiguraatiossa käytettävä, _.coveragerc_-tiedoston sisältö on projektissa seuraava:
 
@@ -871,7 +870,7 @@ Jotta `coverage`-komennon generoimat tiedostot eivät päättyisi versionhallint
 /laskarit/viikko2/unicafe/htmlcov
 ```
 
-### 📝 Tehtävä 8: Kassapäätteen testit
+### Tehtävä 8: Kassapäätteen testit
 
 Laajennetaan unicafe-projektin testaus kattamaan myös kassapääte.
 
@@ -893,7 +892,7 @@ Tee testihakemistoon testitiedosto <i>kassapaate_test.py</i> ja sinne testiluokk
 
 Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun kassapäätteellä on automaattiset testit, on sen rakennetta helppo muokata eli refaktoroida siistimmäksi koko ajan kuitenkin varmistaen, että testit menevät läpi. Refaktoroi koodisi siistimmäksi jos haluat.
 
-### 📝 Tehtävä 9: 100% testikattavuus
+### Tehtävä 9: 100% testikattavuus
 
 Varmista testikattavuuskomentojen avulla, että kassapäätteen testeillä on 100% haarautumakattavuus. Suorita siis virtuaaliympäristössä komennot `coverage run --branch -m pytest src` ja `coverage html`, jonka jälkeen avaa selaimessa _htmlcov/index.html_-tiedosto.
 
@@ -994,7 +993,7 @@ Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erila
   - Pelin hahmogeneraattori, joka tallentaa tiedostoon (esim. D&D hahmolomake)
   - Fraktaaligeneraattori
 
-### 🧪 Harjoitustyö 1: Alustava määrittelydokumentti
+### Harjoitustyö 1: Alustava määrittelydokumentti
 
 Harjoitustyön tekeminen aloitetaan päättämällä aihe ja kuvaamalla se _alustavassa määrittelydokumentissa_, eli työlle tehdään [vaatimusmäärittely](/python/materiaali#vaatimusmäärittely).
 
@@ -1018,7 +1017,7 @@ Määrittelydokumenttiin kannattaa ottaa mallia [referenssiprojektista]({{site.p
 
 Voit myös tehdä referenssiprojektin tapaan _käyttöliittymäluonnoksen_, se ei ole kuitenkaan pakollinen.
 
-### 🧪 Harjoitustyö 2: Työaikakirjanpito
+### Harjoitustyö 2: Työaikakirjanpito
 
 Pidä säännöllisesti kirjaa käyttämistäsi työtunneista. Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa. **Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa**.
 

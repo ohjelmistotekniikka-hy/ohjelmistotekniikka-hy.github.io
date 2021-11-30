@@ -106,7 +106,7 @@ Tämän viikon aikana harjoitustyöhön toteutetaan uutta toiminallisuutta, para
 
 **Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
-### 🧪 Harjoitustyö 1: Uutta toiminallisuutta
+### Harjoitustyö 1: Uutta toiminallisuutta
 
 Kasvaata ohjelmaa edellisestä viikosta (0.75p):
 
@@ -116,7 +116,7 @@ Kasvaata ohjelmaa edellisestä viikosta (0.75p):
 
 Ohjeita toteutukseen löydät [täältä](/python/toteutus).
 
-### 🧪 Harjoitustyö 2: Testaaminen
+### Harjoitustyö 2: Testaaminen
 
 Edistä ohjelman testaamista (0.5p):
 
@@ -126,7 +126,7 @@ Edistä ohjelman testaamista (0.5p):
 - Ohjelman testien haarautumakattavuuden tulee olla vähintään 20%
 - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 
-### 🧪 Harjoitustyö 3: Koodin laatu
+### Harjoitustyö 3: Koodin laatu
 
 Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 
@@ -139,7 +139,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
   - `pylint: disable`-kommenttien käyttö on kiellettyä ilman erittäin perusteltua syytä
 - Pylint-tarkistuksien suorittamista varten on toteutettu Invoke-tehtävä, jonka voi suorittaa komennolla `poetry run invoke lint`
 
-### 🧪 Harjoitustyö 4: Dokumentaatio
+### Harjoitustyö 4: Dokumentaatio
 
 Laadi ohjelman alustava rakenne luokka, tai pakkauskaaviona (0.75p):
 
@@ -149,7 +149,7 @@ Laadi ohjelman alustava rakenne luokka, tai pakkauskaaviona (0.75p):
 - Lisää repositorion _dokumentaatio_-hakemistoon tiedosto _arkkitehtuuri.md_ ja upota kuva tiedostoon. Tiedoston sisältö voi olla muilta osin tyhjä
 - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion _README.md_-tiedostosta [referenssisovelluksen]({{site.python_reference_app_url}}) tavoin
 
-### 🧪 Harjoitustyö 5: Pistevähennykset
+### Harjoitustyö 5: Pistevähennykset
 
 Seuraavien kohtien puutteet **vähentävät** pisteitä:
 

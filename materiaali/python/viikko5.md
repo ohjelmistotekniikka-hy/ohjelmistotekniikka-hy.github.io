@@ -37,14 +37,14 @@ Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutt
 
 **Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
-### 🧪 Harjoitustyö 1: GitHub release
+### Harjoitustyö 1: GitHub release
 
 Tekee projektistasi _GitHub release_ edellä esitetyn [ohjeen](#github-release) mukaisesti (0.25p):
 
 - Release sisältää ohjelman uusimman version lähdekoodin (GitHub-lisää tämän automaattisesti releasin tehdessä)
 - Releaseen on linkki projektin README:stä
 
-### 🧪 Harjoitustyö 2: Koodikaatselmointiin valmistautuminen
+### Harjoitustyö 2: Koodikaatselmointiin valmistautuminen
 
 Jotta voit osallistua viikolla 6 pidettävään koodikatselmointiin (josta on tarjolla 2 kurssipistettä), tulee seuraavien asioiden olla kunnossa:
 
@@ -52,7 +52,7 @@ Jotta voit osallistua viikolla 6 pidettävään koodikatselmointiin (josta on ta
 - Viikon 5 palautuksesta tulee saada enemmän kuin 0 pistettä
 - Palautusrepositorioistasi on [GitHub-issuet sallittuna](#issueiden-salliminen-githubissa)
 
-### 🧪 Harjoitustyö 3: Uutta toiminallisuutta
+### Harjoitustyö 3: Uutta toiminallisuutta
 
 Kasvaata ohjelmaa edellisestä viikosta (0.75p):
 
@@ -62,7 +62,7 @@ Kasvaata ohjelmaa edellisestä viikosta (0.75p):
 
 Ohjeita toteutukseen löydät [täältä](/python/toteutus).
 
-### 🧪 Harjoitustyö 4: Testaaminen
+### Harjoitustyö 4: Testaaminen
 
 Edistä ohjelman testaamista (0.5p):
 
@@ -72,7 +72,7 @@ Edistä ohjelman testaamista (0.5p):
 - Ohjelman testien haarautumakattavuuden tulee olla vähintään 40%
 - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 
-### 🧪 Harjoitustyö 5: Koodin laatu
+### Harjoitustyö 5: Koodin laatu
 
 Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 
@@ -81,7 +81,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 - Ohjelman [rakenne](/python/koodin-laatuvaatimukset#rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
 - Pylintin antama arvosana koodille on vähintään 8.00/10
 
-### 🧪 Harjoitustyö 6: Dokumentaatio
+### Harjoitustyö 6: Dokumentaatio
 
 Lisää dokumentaatioon ainakin yksi jotain oleellista toiminnallisuutta kuvaava sekvenssikaavio (0.5p):
 
@@ -89,7 +89,7 @@ Lisää dokumentaatioon ainakin yksi jotain oleellista toiminnallisuutta kuvaava
 - Lisää kaavio [edellisellä viikolla](/python/ht-viikko4) tehtyyn dokumenttiin _arkkitehtuuri.md_
 - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen]({{site.python_reference_app_url}}) tavoin
 
-### 🧪 Harjoitustyö 7: Pistevähennykset
+### Harjoitustyö 7: Pistevähennykset
 
 Seuraavien kohtien puutteet **vähentävät** pisteitä:
 

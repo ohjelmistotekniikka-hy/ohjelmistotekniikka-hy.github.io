@@ -165,7 +165,7 @@ Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutt
 
 **Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
-### 🧪 Harjoitustyö 1: Uutta toiminallisuutta
+### Harjoitustyö 1: Uutta toiminallisuutta
 
 Kasvaata ohjelmaa edellisestä viikosta (0.75p):
 
@@ -176,7 +176,7 @@ Kasvaata ohjelmaa edellisestä viikosta (0.75p):
 
 Ohjeita toteutukseen löydät [täältä](/python/toteutus).
 
-### 🧪 Harjoitustyö 2: Testaaminen
+### Harjoitustyö 2: Testaaminen
 
 Edistä ohjelman testaamista (0.5p):
 
@@ -186,7 +186,7 @@ Edistä ohjelman testaamista (0.5p):
 - Ohjelman testien haarautumakattavuuden tulee olla vähintään 60%
 - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 
-### 🧪 Harjoitustyö 3: Koodin laatu
+### Harjoitustyö 3: Koodin laatu
 
 Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (0.5p):
 
@@ -196,7 +196,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (0.5p):
   - Liian suuret luokat, metodit ja funktiot tulee siis pilkkoa osiin
 - Pidä harjoitustyön lopullista palautusta varten myös mielessä [koodin laatuvaatimukset](/python/koodin-laatuvaatimukset)
 
-### 🧪 Harjoitustyö 4: Dokumentaatio
+### Harjoitustyö 4: Dokumentaatio
 
 Aloita koodin docstring-dokumentointi (0.5p):
 
@@ -216,7 +216,7 @@ Laadi alustava käyttöohje (0.25p):
 - Alustavan käyttöohjeen sopiva pituus on noin sivu
 - Mallina voi jälleen toimia [referenssisovellus]({{site.python_reference_app_url}}/blob/master/dokumentaatio/kayttoohje.md)
 
-### 🧪 Harjoitustyö 5: Pistevähennykset
+### Harjoitustyö 5: Pistevähennykset
 
 Seuraavien kohtien puutteet **vähentävät** pisteitä:
 

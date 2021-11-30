@@ -54,7 +54,7 @@ Lisäksi sinun tulee osata käyttää seuraavia komentoja:
 
 Tulet tarvitsemaan komentorivin käyttötaitoja tällä kurssilla ja muutenkin opinnoissasi.
 
-### 📝 Tehtävä 1: Komentorivin harjoittelua
+### Tehtävä 1: Komentorivin harjoittelua
 
 Saman Tietokone työvälineenä-kurssin materiaalin [toisesta osasta](https://tkt-lapio.github.io/git/) voi olla paljonkin hyötyä tässä ja seuraavissa tehtävissä.
 
@@ -118,7 +118,7 @@ Jos komento ei tulosta Git-version numeroa, tutustu [Git-asennusohjeisiin](https
 
 Jos komennon tulostama gitin versio taas on pienempi kuin 2.23.0, seuraavissa tehtävissä käytetty `git restore` -komento ei toimi. Voit kuitenkin käyttää `git reset HEAD`- ja `git checkout` -komentoja, joista saat lisätietoa [Tietokone työvälineen -kurssin materiaaleista](https://tkt-lapio.github.io/git/).
 
-### 📝 Tehtävä 2: Git-konfiguraatioita
+### Tehtävä 2: Git-konfiguraatioita
 
 Avaa terminaali omalla koneellasi. **Seuraavat tehtävät tehdään siis paikallisesti, ei melkillä!**
 
@@ -143,7 +143,7 @@ git config --global push.default matching
 
 Tämä liittyy `git push`-komennon oletusarvoiseen toiminnallisuuteen. Komennosta lisää myöhemmin.
 
-### 📝 Tehtävä 3: Repositorio
+### Tehtävä 3: Repositorio
 
 Tee nyt sopiva hakemisto gitin harjoittelua varten ja mene hakemistoon, eli anna esim. komennot:
 
@@ -206,7 +206,7 @@ Changes to be committed:
 
 Git kertoo nyt, että _tiedosto.txt_ on niiden muutosten joukossa, jotka voidaan _commitoida_.
 
-### 📝 Tehtävä 4: Commitit
+### Tehtävä 4: Commitit
 
 Commitoimisella tarkoitetaan tiedostojen ja hakemistojen sekä niihin liittyvien muutosten tallentamista _git-repositorioon_.
 
@@ -229,7 +229,7 @@ nothing to commit, working tree clean
 
 Git ilmoittaa, että _working tree clean_, eli hakemistosi on samassa tilassa kuin git-repositorio.
 
-### 📝 Tehtävä 5: Working directory, index ja staging
+### Tehtävä 5: Working directory, index ja staging
 
 **Muista käyttää tab-completea tehtäviä tehdessäsi!**
 
@@ -320,7 +320,7 @@ Gitin logi kertoo jokaisen commitin ajan, tekijän, viestin ja _tunnisteen_. Tun
 
 Voit selata logia nuolinäppäimillä. Pääset ulos `git log`:ista painamalla _q_.
 
-### 📝 Tehtävä 6: Harjoittelua
+### Tehtävä 6: Harjoittelua
 
 Muista käyttää komentoa `git status` mahdollisimman usein. Älä myöskään unohda tab-completea!
 
@@ -332,7 +332,7 @@ Muista käyttää komentoa `git status` mahdollisimman usein. Älä myöskään 
   - Huomaa, että hakemiston lisääminen riittää, sen sisältämät tiedostot tulevat automaattisesti lisätyksi
 - Katso miltä git-logi näyttää
 
-### 📝 Tehtävä 7: gitk
+### Tehtävä 7: gitk
 
 Gitin committeja voi tarkastella myös graafisella _gitk_-komennolla.
 
@@ -361,7 +361,7 @@ Seuraavaa tehtävää tekiessäsi kannattaa terminaaliin avata uusi välilehti, 
   - Jos oikealta on valittuna _tree_, näkyy vasemmalla puolella (valinnasta riippumatta) tiedostojen commitin aikainen tilanne
 - Jos käytät sourcetreetä, sen pitäisi päivittyä automaattisesti ja näyttää muutos _diff_-muodossa
 
-### 📝 Tehtävä 8: Tiedoston poistaminen ja uudelleennimentä
+### Tehtävä 8: Tiedoston poistaminen ja uudelleennimentä
 
 - Poista tiedosto _toinen.txt_
 - Suorita `git status`
@@ -374,7 +374,7 @@ Seuraavaa tehtävää tekiessäsi kannattaa terminaaliin avata uusi välilehti, 
   - Miten git käsittelee uudelleennimennän?
 - Commitoi muutos
 
-### 📝 Tehtävä 9: git add -p
+### Tehtävä 9: git add -p
 
 - Tee jotain muutoksia tiedostoihin _eka.txt_ ja _kolmas.txt_
   - Tee sekä lisäyksiä että poistoja
@@ -385,7 +385,7 @@ Seuraavaa tehtävää tekiessäsi kannattaa terminaaliin avata uusi välilehti, 
 - Tee tiedostoihin tehtyjen muutosten commitoitavaksi lisääminen _aina_ komennolla `git add -p`, näin pääset tarkastamaan, että muutokset ovat juuri ne mitä oletat olevasi lisäämässä
 - Huomaa, että kokonaan uudet tiedostot eivät siirry committoitavaksi komennolla `git add -p`
 
-### 📝 Tehtävä 10: Muutosten peruminen
+### Tehtävä 10: Muutosten peruminen
 
 Joskus tiedostoihin tulee tehtyä muutoksia, jotka on tarpeen perua
 
@@ -459,7 +459,7 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 
 ![]({{ "/assets/images/v1-RestoreGit.png" | absolute_url }})
 
-### 📝 Tehtävä 11: Harjoittelua
+### Tehtävä 11: Harjoittelua
 
 - luo repositiosi sisälle hakemisto _tiedostoja_ ja hakemiston sisälle tiedostot _file1_, _file2_ ja _file3_
 - commitoi muutokset
@@ -473,7 +473,7 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 
 Suorita repositoriossa komento `git log --stat | cat` ja **ota komennon tulos talteen**, tulet tarvitsemaan sitä myöhemmin!
 
-### 📝 Tehtävä 12: GitHub
+### Tehtävä 12: GitHub
 
 Gitin käytöstä on toki hyötyä jo harjoittelemallammekin tavalla, eli muodostamalla paikallisen koneen hakemistosta repositorio. Pääsemme kuitenkin nauttimaan kertaluokkaa suuremmista hyödyistä liittämällä repositoriomme internetissä olevaan _etärepositorioon_. Etärepositorion kautta repositorion tiedostot on helppo jakaa useiden koneiden tai/ja useiden käyttäjien kesken.
 
@@ -545,7 +545,7 @@ Please make sure you have the correct access rights
 and the repository exists.
 ```
 
-### 📝 Tehtävä 13: Julkinen avain
+### Tehtävä 13: Julkinen avain
 
 Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](/python/viikko1#lisää-tiedostoja).
 
@@ -580,7 +580,7 @@ Branch master set up to track remote branch master from origin.
 
 Nyt kaikki näyttää toimivan.
 
-### 📝 Tehtävä 14: Lisää tiedostoja
+### Tehtävä 14: Lisää tiedostoja
 
 - Tee juuri luodun repositorion sisälle hakemisto _laskarit_
   - Ja sen sisälle hakemisto _viikko1_
@@ -596,7 +596,7 @@ Nyt kaikki näyttää toimivan.
   - Muista aina commitoinnin yhteydessä _lisätä_ tiedosto/muutokset commitoitavaksi
 - Pushaa koodi githubiin komennolla `git push`
 
-### 📝 Tehtävä 15: Tiedostot GitHubissa
+### Tehtävä 15: Tiedostot GitHubissa
 
 - Mene GitHub-repositoriosi sivulle
   - Käytännössä tämä tapahtuu uudelleenlataamalla repositorion luomisen jälkeen avautunut sivu
@@ -618,7 +618,7 @@ Jos teit kaiken oikein, pääset README.md:ssä olevia linkkejä klikkaamalla n�
 - Saamme tuotua muutokset paikalliselle koneelle komennolla `git pull`
 - Kokeile komentoa ja varmista, että muuttunut sisältö on nyt paikallisessa repositoriossa
 
-### 📝 Tehtävä 16: Lisää GitHubia
+### Tehtävä 16: Lisää GitHubia
 
 - Tee paikallisella koneella jokin muutos esim. tiedostoon README.md
 - Lisää ja committaa muutos
@@ -626,7 +626,7 @@ Jos teit kaiken oikein, pääset README.md:ssä olevia linkkejä klikkaamalla n�
 - Varmista GitHubista että muutokset näkyvät
 - Paikallinen repositoriosi ja GitHubin etärepositorio ovat jälleen samassa tilassa.
 
-### 📝 Tehtävä 17: Paikallisen ja etärepositorion epäsynkrooni
+### Tehtävä 17: Paikallisen ja etärepositorion epäsynkrooni
 
 - Joskus käy niin, että paikallinen ja etärepositorio menevät epäsynkroniin, siten että molempiin tehdään yhtäaikaa uusi commit
 - Luodaan tälläinen tilanne
