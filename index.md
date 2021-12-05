@@ -66,7 +66,6 @@ Palautuksen deadline {{ site.wk5dl }}
   - Release 1
   - Testikattavuus nousee
   - Jotain päätoiminnallisuutta kuvaava sekvenssikaavio
-- [Koodikatselmointi](/koodikatselmointi) (2p)
 
 ### Viikko 6
 
@@ -77,6 +76,7 @@ Palautuksen deadline {{ site.wk6dl }}
   - Testikattavuus nousee
   - Docstring-dokumentaatio aloitettu
   - Alustava versio arkkitehtuuridokumentista
+- [Koodikatselmointi](/koodikatselmointi) (2p)
 
 ### Viikko 7
 
