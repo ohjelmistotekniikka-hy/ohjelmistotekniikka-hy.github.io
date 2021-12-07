@@ -2,6 +2,7 @@
 layout: page
 title: Viikko 3
 permalink: /python/vk3
+toc: true
 ---
 
 {% include deadline_info.md deadline=site.wk3dl %}
@@ -538,7 +539,7 @@ poetry run invoke --list
 
 ### Huomioita tehtävien nimeämisestä
 
-Jos tehtävän määrittelevän funktion nimi on [snake case](https://en.wikipedia.org/wiki/Snake_case) -formaatissa (esimerkiksi <i>snake*case</i>), on komentoriviltä suoritettavan tehtävän nimi [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles) -formaatissa (esimerkiksi \_kebab-case*). Esimerkiksi seuraavasti nimetty tehtävä:
+Jos tehtävän määrittelevän funktion nimi on [snake_case](https://en.wikipedia.org/wiki/Snake_case) -formaatissa, on komentoriviltä suoritettavan tehtävän nimi [kebab-case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case)-formaatissa. Esimerkiksi seuraavasti nimetty tehtävä:
 
 ```python
 from invoke import task

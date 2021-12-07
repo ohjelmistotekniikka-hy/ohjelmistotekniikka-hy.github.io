@@ -2,6 +2,7 @@
 layout: page
 title: Harjoitustyö viikko 5
 permalink: /python/vk5
+toc: true
 ---
 
 {% include deadline_info.md deadline=site.wk5dl %}

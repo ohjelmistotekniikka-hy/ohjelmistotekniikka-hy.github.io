@@ -2,25 +2,12 @@
 layout: page
 permalink: /python/toteutus
 title: Ohjeita harjoitustyön toteutukseen
+toc: true
 ---
 
 {% include java_materiaali_info.md %}
 
 Tähän osioon on koottu vinkkejä, joista on luultavasti hyötyä harjoitustyön toteutuksessa.
-
-- [Sovelluksen käyttöliittymä](#sovelluksen-käyttöliittymä)
-  - [Tekstikäyttöliittymä](#tekstikäyttöliittymä)
-  - [Graafinen käyttöliittymä](#graafinen-käyttöliittymä)
-- [Pelien toteutus](#pelien-toteutus)
-- [Riippuvuuksien injektointi](#riippuvuuksien-injektointi)
-- [Tietojen tallennus](#tietojen-tallennus)
-  - [Repository-suunnittelumalli](#repository-suunnittelumalli)
-  - [Tiedostojen polut](#tiedostojen-polut)
-  - [SQLite-tietokannan käyttö](#sqlite-tietokannan-käyttö)
-  - [SQLite-tietokanta lukkiutuminen virtuaalityöasemalla](#sqlite-tietokanta-lukkiutuminen-virtuaalityöasemalla)
-  - [Huomioita testaamisesta](#huomioita-testaamisesta)
-- [Sovelluksen konfiguraatiot](#sovelluksen-konfiguraatiot)
-- [Uuden tekniikan harjoittelu ja käyttöönotto](#uuden-tekniikan-harjoittelu-ja-käyttöönotto)
 
 ## Sovelluksen käyttöliittymä
 
