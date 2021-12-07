@@ -636,15 +636,11 @@ README.md
 
 ### Harjoitustyö 2: Toiminallisuuden toteutus
 
-<!-- TODO: linkit -->
-
 Toteuta ainakin osa jostain edellisellä viikolla tekemäsi määrittelydokumentin toiminallisuudesta. Pelkät tyhjät luokat tai funktiot ilman toiminallisuutta eivät tuo pisteitä.
 
 Toteutukseen liittyviä ohjeita löydät [täältä](/python/toteutus).
 
 ### Harjoitustyö 3: Testaamisen aloittaminen
-
-<!-- TODO: linkit -->
 
 Sovelluksella on oltava _vähintään yksi testi_. Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa. Testin tulee myös mennä läpi. Lisää testejä varten _src_ hakemistoon hakemisto _tests_ ja lisää testitiedostot sinne:
 
@@ -660,9 +656,15 @@ Kertaa edellisen viikon unittest-ohjeet, jos tämä tuottaa hankaluuksia.
 
 ### Harjoitustyö 4: Testikattavuusraportti
 
-<!-- TODO: linkit -->
+Ohjelmalle tulee pystyä generoimaan coverage-työkalun avulla testikattavuusraportti. Projektin juurihakemistossa (samassa hakemistossa, missä _pyproject.toml_-tiedosto sijaitsee) tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Testeihin liittyvä koodi tulee jättää testikattavuusraportin ulkopuolelle:
 
-Ohjelmalle tulee pystyä generoimaan coverage-työkalun avulla testikattavuusraportti. Kertaa edellisen viikon coverage-ohjeet, jos tämä tuottaa hankaluuksia.
+```
+[run]
+source = src
+omit = src/**/__init__.py,src/tests/**
+```
+
+Kertaa edellisen viikon coverage-ohjeet, jos tämä tuottaa hankaluuksia. Mallia coveragen konfigurointiin voi tarvittaessa ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}).
 
 ### Harjoitustyö 5: Invoke-tehtävät
 
