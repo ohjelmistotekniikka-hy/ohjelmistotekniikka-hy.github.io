@@ -2,7 +2,6 @@
 layout: page
 permalink: /python/vk1
 title: Viikko 1
-toc: true
 ---
 
 {% include deadline_info.md deadline=site.wk1dl %}

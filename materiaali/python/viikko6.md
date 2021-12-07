@@ -2,7 +2,6 @@
 layout: page
 title: Viikko 6
 permalink: /python/vk6
-toc: true
 ---
 
 {% include deadline_info.md deadline=site.wk6dl %}
