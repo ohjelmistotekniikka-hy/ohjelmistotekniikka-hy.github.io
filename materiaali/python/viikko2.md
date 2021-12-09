@@ -58,18 +58,26 @@ Huomaa, että tämän asennustavan kanssa `poetry`-komento ei välttämättä ol
 
 **HUOM:** kaikki asennustavat saattavat vaatia terminaali-ikkunan sulkemisen ja uudelleen avaamisen, jotta Poetryn komennot alkavat toimia. Joissain tapauksissa on vaadittu jopa tietokoneen uudelleenkäynnistys.
 
-#### Huomioita laitoksen melkki-palvelimen asennuksesta
+#### Huomioita Linux-asennuksesta
 
-Laitoksen melkki.cs.helsinki.fi-palvelimelle Poetryn asennus tulisi onnistua seuraamalla Poetryn [asennusohjeiden](https://python-poetry.org/docs/#installation) Linux-ohjeita. Huomaa, että asennuksen jälkeen polku Poetryn binääriin tulee asettaa `PATH`-muuttujaan. Tämä onnistuu komennolla:
+Poetryn Linux-asennus tulisi onnistua seuraamalla Poetryn [asennusohjeiden](https://python-poetry.org/docs/#installation) Linux-ohjeita. **Sama ohje koskee siis myös asennusta virtuaalityöasemalla ja melkki-palvelimella.**
+
+Huomaa, että asennuksen jälkeen polku Poetryn binääriin tulee asettaa `PATH`-muuttujaan. Tämä onnistuu komennolla:
 
 ```bash
 source $HOME/.poetry/env
 ```
 
-Komento kannattaa lisätä kotihakemiston _.profile_-tiedostoon, niin sitä ei tarvitse suorittaa käsin jokaisen kirjautumiskerran jälkeen. Tämä onnistuu esimerkiksi seuraavalla komennolla:
+Komento kannattaa lisätä kotihakemiston _.bashrc_-tiedostoon, niin sitä ei tarvitse suorittaa käsin jokaisen terminaali-istunnon jälkeen. Tämä onnistuu esimerkiksi seuraavalla komennolla:
 
 ```bash
-echo "source $HOME/.poetry/env" >> .profile
+echo "source \$HOME/.poetry/env" >> $HOME/.bashrc
+```
+
+**HUOM:** melkki-palvelimella komento tulee lisätä kotihakemiston _.profile_-tiedostoon. Tämä onnistuu esimerkiksi seuraavalla komennolla:
+
+```bash
+echo "source \$HOME/.poetry/env" >> $HOME/.profile
 ```
 
 ### Projektin alustaminen
