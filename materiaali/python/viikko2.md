@@ -8,7 +8,7 @@ title: Viikko 2
 
 Tämän viikon tehtävien palautuksesta on tarjolla 2 pistettä ja harjoitustyön palautuksesta 1 piste.
 
-## Poetry ja riippuvuuksien allinta
+## Poetry ja riippuvuuksien hallinta
 
 Laajoissa ja monimutkaisissa ohjelmistoprojekteissa kaiken koodin tuottaminen itse ei ole enää käytännöllistä. Ei ole esimerkiksi järkevää, että jokaisessa ohjelmistoprojektissa toteutetaan oma ohjelmointirajapinta tietokantaoperaatioille, tai sovelluskehys koodin testaamiseen. Jotta pyörää ei tarvitsisi aina keksiä uudelleen, ovat ohjelmistokehittäjät kehittäneet valtavan määrän avoimen lähdekoodin _kirjastoja_, joita jokainen voi hyödyntää projekteissaan.
 
@@ -58,7 +58,7 @@ Huomaa, että tämän asennustavan kanssa `poetry`-komento ei välttämättä ol
 
 **HUOM:** kaikki asennustavat saattavat vaatia terminaali-ikkunan sulkemisen ja uudelleen avaamisen, jotta Poetryn komennot alkavat toimia. Joissain tapauksissa on vaadittu jopa tietokoneen uudelleenkäynnistys.
 
-#### Huomioita Linux-asennuksesta
+### Huomioita Linux-asennuksesta
 
 Poetryn Linux-asennus tulisi onnistua seuraamalla Poetryn [asennusohjeiden](https://python-poetry.org/docs/#installation) Linux-ohjeita. **Sama ohje koskee siis myös asennusta virtuaalityöasemalla ja melkki-palvelimella.**
 
