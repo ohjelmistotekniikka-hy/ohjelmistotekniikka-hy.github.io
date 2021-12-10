@@ -482,9 +482,9 @@ if __name__ == "__main__":
 
 ## Tehtävien suorittaminen ja Invoke
 
-Laajemmissa ohjelmistoprojekteissa on useimmiten monia erilaisia _tehtäviä_, joita suoritetaan terminaalissa annettavien komentojen muodossa. Luultavasti tärkein näistä tehtävistä on sovelluksen käynnistäminen, joka saattaa tapahtua esimerkiksi komennolla `python3 src/index.py`.
+Projekteissa on useimmiten monia toistuvasti suoritettavia _tehtäviä_, joita suoritetaan terminaalissa annettavien komentojen muodossa. Luultavasti tärkein näistä tehtävistä on sovelluksen käynnistäminen, joka saattaa tapahtua esimerkiksi komennolla `python3 src/index.py`.
 
-Tehtäviin liittyvien komentojen kirjoittaminen käsin käy helposti työlääksi. Tämä tulee ilmi etenkin tilanteissa, joissa komennot ovat monimutkaisempia, tai vaativat useampien komentojen suorittamista. Ongelman ratkaisemiksi on toteutettu työkaluja, joiden avulla tehtäviä voi määritellä ja suorittaa komentoriviltä helposti. Python-maailmassa eräs suosittu työkalu tähän käyttötarkoitukseen on [Invoke](http://docs.pyinvoke.org/en/stable/).
+Tehtäviin liittyvien komentojen kirjoittaminen käsin käy helposti työlääksi. Tämä tulee ilmi etenkin tilanteissa, joissa komennot ovat monimutkaisia, tai vaativat useampien komentojen suorittamista. Ongelman ratkaisemiseksi on kehitetty työkaluja, joiden avulla tehtäviä voi määritellä ja suorittaa terminaalissa helposti. Tutustutaan seuraavaksi erääseen tähän käyttötarkoitukseen soveltuvaan työkaluun nimeltä [Invoke](http://docs.pyinvoke.org/en/stable/).
 
 ### Asennus
 
@@ -512,7 +512,7 @@ Tämän erittäin hyödyllisen tehtävän voi suorittaa terminaalissa komennolla
 poetry run invoke foo
 ```
 
-Komennon suorittamisen pitäisi tulostaa komentoriville teksti "bar". Tehtävät voi siis suorittaa komentoriltä komennolla, joka on muotoa `poetry run invoke <tehtävä>`. Huomaa, että `poetry run`-komennon ansiosta tehtävät suoritetaan virtuaaliympäristössä.
+Komennon suorittamisen pitäisi tulostaa komentoriville teksti "bar". Tehtävät voi siis suorittaa terminaalissa komennolla, joka on muotoa `poetry run invoke <tehtävä>`. Huomaa, että `poetry run`-komennon ansiosta tehtävät suoritetaan virtuaaliympäristössä.
 
 Toteutetaan seuraavaksi _foo_-tehtävän lisäksi tehtävä, josta on oikeasti hyötyä. Tarvitsemme tehtävän, joka suorittaa sovelluksemme komennolla `python3 src/index.py`. Annetaan tälle tehtävälle nimeksi _start_:
 
@@ -538,7 +538,7 @@ poetry run invoke --list
 
 ### Huomioita tehtävien nimeämisestä
 
-Jos tehtävän määrittelevän funktion nimi on [snake_case](https://en.wikipedia.org/wiki/Snake_case) -formaatissa, on komentoriviltä suoritettavan tehtävän nimi [kebab-case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case)-formaatissa. Esimerkiksi seuraavasti nimetty tehtävä:
+Jos tehtävän määrittelevän funktion nimi on [snake_case](https://en.wikipedia.org/wiki/Snake_case)-formaatissa, on komentoriviltä suoritettavan tehtävän nimi [kebab-case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case)-formaatissa. Esimerkiksi seuraavasti nimetty tehtävä:
 
 ```python
 from invoke import task
@@ -552,9 +552,7 @@ Suoritettaisiin komennolla `poetry run invoke lorem-ipsum`. Jos olet epävarma k
 
 ### Toisistaan riippuvaiset tehtävät
 
-[Coverage-ohjeissa](./coverage) tutustumme testikattavuuden keräämiseen ja raportin muodostamiseen sen perusteella. Jos haluamme muodostaa testikattavuusraportin, tulee testikattavuus olla ensin kerätty.
-
-Menemättä tässä osiossa `coverage`-komennon yksityiskohtiin, tehtävillä voisi olla seuraavat määritelmät:
+[Coverage-ohjeissa](/python/vk2#coverage-ja-testikattavuus) tutustuimme testikattavuuden keräämiseen ja raportin muodostamiseen sen perusteella. Jos haluamme muodostaa testikattavuusraportin, tulee testikattavuus olla ensin kerätty. Käyttötarkoitukseen soveltuvilla tehtävillä voisi olla määritelty seuraavasti:
 
 ```python
 from invoke import task
@@ -574,7 +572,7 @@ Jos suoritamme tehtävän _coverage-report_ ennen _coverage_-tehtävän suoritta
 poetry run invoke coverage coverage-report
 ```
 
-Helpompaa on kuitenkin määritellä _coverage-report_-tehtävän riippuvuus _coverage_-tehtävästä sen määrityksessä. Tämä onnistuu antamalla `@task`-dekoraattorille argumentiksi _coverage_-tehtävän funktio:
+Helpompaa on kuitenkin määritellä _coverage-report_-tehtävä riippuvaiseksi _coverage_-tehtävästä. Tämä onnistuu antamalla `@task`-dekoraattorille argumentiksi _coverage_-tehtävän funktio:
 
 ```python
 from invoke import task
