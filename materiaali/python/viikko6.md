@@ -169,7 +169,7 @@ Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutt
 
 Kasvaata ohjelmaa edellisestä viikosta (0.75p):
 
-- Ohjelman pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
+- Ohjelman pystyy suorittamaan terminaalissa komennolla `pdm run start`
 - Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
 - Merkitse lisäksi tarkastusta varten määrittelydokumenttiin valmiit toiminnallisuudet "tehty" merkinnällä
 - Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](/release), joka sisältää ohjelman uusimman version lähdekoodin (GitHub lisää tämän automaattisesti releasin tehdessä)
@@ -180,7 +180,7 @@ Ohjeita toteutukseen löydät [täältä](/python/toteutus).
 
 Edistä ohjelman testaamista (0.5p):
 
-- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
+- Testikattavuus tulee pystyä keräämään komennolla `pdm run coverage` ja sen perusteella generoimaan testikattavuusraportti komennolla `pdm run coverage-report`
 - Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/python/coverage#tiedostojen-jättäminen-raportin-ulkopuolelle)
 - Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/python/coverage#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
 - Ohjelman testien haarautumakattavuuden tulee olla vähintään 60%
@@ -240,8 +240,6 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
   - Laskarit jätetään hakemiston _laskarit_ alle
   - Järkevä _.gitignore_-tiedosto olemassa
 
-{% include harjoitustyon_toimivuus_info.md %}
-
-{% include virtuaalityoasema_python_versio.md %}
+{% include harjoitustyon_toimivuus_info2.md %}
 
 {% include ala_plagioi.md %}

@@ -21,6 +21,7 @@ Tähän osioon on koottu vinkkejä, joista on luultavasti hyötyä harjoitustyö
   - [Huomioita testaamisesta](#huomioita-testaamisesta)
 - [Sovelluksen konfiguraatiot](#sovelluksen-konfiguraatiot)
 - [Uuden tekniikan harjoittelu ja käyttöönotto](#uuden-tekniikan-harjoittelu-ja-käyttöönotto)
+- [Python-versioiden hallinta](#python-versioiden-hallinta)
 
 ## Sovelluksen käyttöliittymä
 
@@ -655,3 +656,36 @@ Mallia oman projektin konfiguroimiseksi ympäristömuuttujilla voi ottaa edellä
 Kun olet toteuttamassa jotain itsellesi uudella tekniikalla, esim. tkinter:illä, SQLite-tietokantaa hyödyntäen, tai teet ohjelmaasi laajennuksen hyödyntämällä kirjastoa, jota et vielä tunne, kannattaa ehdottomasti tehdä uudella tekniikalla erillisiä kokeiluja varsinaisen ohjelmasi ulkopuolella, omassa pienessä koesovelluksessa.
 
 Jos yrität "montaa asiaa yhtä aikaa" eli ottaa esim. SQLite-tietokannan käyttöön omassa jo pitkälle edenneessä ohjelmassasi, on aika varmaa, että saat ainoastaan aikaan suuren määrän ongelmia. Silloin kun koodia ja liikkuvia osia on paljon, ei ole koskaan varmuutta missä ongelma on, ja sen takia on erittäin hyödyllistä, että teet harjoittelun ja kokeilut erillisessä "proof of concept"-sovelluksessa ja kun saat esim. SQLite-tietokannan toimimaan kokeilusovelluksessa, on usein sen jälkeen helppoa "copypasteta" koodi varsinaiseen sovellukseen.
+
+## Python-versioiden hallinta
+
+**HUOM:** tämä ohje toimii vain Linux- ja macOS-tietokoneilla.
+
+Python-versioiden asennus ja käytössä olevan version vaihtaminen onnistuu vaivattomasti [pyenv](https://github.com/pyenv/pyenv)-työkalun avulla. Työkalun asennus Linux- ja macOS-tietokoneille onnistuu seuraavasti:
+
+1. Avaa terminaali ja asenna [pyenv](https://github.com/pyenv/pyenv) komennolla `curl https://pyenv.run | bash`
+
+2. Siirry kotihakemistoon komennolla `cd` ja lisää kotihakemiston _.bashrc_-tiedoston loppuun seuraavat rivit:
+
+   ```bash
+   export PATH="$HOME/.pyenv/bin:$PATH"
+   eval "$(pyenv init --path)"
+   ```
+
+   Tämä onnistuu esimerkiksi nano-editorilla komennolla `nano .bashrc`
+
+Käynnistä asennuksen jälkeen terminaali uudestaan. Halutun Python-version, kuten version 3.8.12, asennus ja käyttöönotto onnistuu seuraavasti:
+
+1. Asenna Python-versio 3.8.12 komenolla:
+
+   ```bash
+   pyenv install 3.8.12
+   ```
+
+2. Ota käyttöön asennettu Python-versio komennolla:
+
+   ```bash
+   pyenv global 3.8.12
+   ```
+
+3. Varmista, että Python-versio on 3.8.12 komennolla `python --version`
