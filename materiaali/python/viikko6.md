@@ -169,7 +169,7 @@ Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutt
 
 Kasvaata ohjelmaa edellisestä viikosta (0.75p):
 
-- Ohjelman pystyy suorittamaan terminaalissa komennolla `pdm run start`
+- Ohjelman pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
 - Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
 - Merkitse lisäksi tarkastusta varten määrittelydokumenttiin valmiit toiminnallisuudet "tehty" merkinnällä
 - Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](/release), joka sisältää ohjelman uusimman version lähdekoodin (GitHub lisää tämän automaattisesti releasin tehdessä)
@@ -180,7 +180,7 @@ Ohjeita toteutukseen löydät [täältä](/python/toteutus).
 
 Edistä ohjelman testaamista (0.5p):
 
-- Testikattavuus tulee pystyä keräämään komennolla `pdm run coverage` ja sen perusteella generoimaan testikattavuusraportti komennolla `pdm run coverage-report`
+- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
 - Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/python/coverage#tiedostojen-jättäminen-raportin-ulkopuolelle)
 - Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/python/coverage#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
 - Ohjelman testien haarautumakattavuuden tulee olla vähintään 60%

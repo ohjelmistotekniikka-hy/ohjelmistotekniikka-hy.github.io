@@ -16,15 +16,15 @@ Koodin testauksen lisäksi koodin luettavuuden ylläpitäminen on tärkeää. T�
 
 ### Pylintin käyttöönotto projektissa
 
-Pylint on helppo ottaa käyttöön PDM-projektissa. Aloitetaan asentamalla pylint projektimme riippuvuudeksi:
+Pylint on helppo ottaa käyttöön Poetry-projektissa. Aloitetaan asentamalla pylint projektimme kehityksen aikaiseksi riippuvuudeksi:
 
 ```
-pdm add pylint
+poetry add pylint --dev
 ```
 
-Pylintille tulee määritellä joukko tarkistettavia [sääntöjä](http://pylint.pycqa.org/en/2.6/technical_reference/features.html). Säännöt määritellään projektin juurihakemiston _.pylintrc_-tiedostossa. Luo kyseinen tiedosto ja kopioi sinne [tämän]({{site.repo_url}}/tree/master/materiaali/python/.pylintrc) tiedoston sisältö. Tiedosto sisältää hieman muunnellun version pylintin suosittelemasta konfiguraatiosta, jota voi katsella komennolla `pdm run pylint --generate-rcfile`.
+Pylintille tulee määritellä joukko tarkistettavia [sääntöjä](http://pylint.pycqa.org/en/2.6/technical_reference/features.html). Säännöt määritellään projektin juurihakemiston _.pylintrc_-tiedostossa. Luo kyseinen tiedosto ja kopioi sinne [tämän]({{site.repo_url}}/tree/master/materiaali/python/.pylintrc) tiedoston sisältö. Tiedosto sisältää hieman muunnellun version pylintin suosittelemasta konfiguraatiosta, jota voi katsella komennolla `pylint --generate-rcfile`.
 
-Pylintin laatutarkitukset voi suorittaa terminaalissa komennolla `pdm run pylint src`. Komento tulee suorittaa projektin juurihakemistossa, eli samassa hakemistossa missä _pyproject.toml_-tiedosto sijaitsee. Kyseinen komento suorittaa laatutarkitukset _src_ hakemistossa. Pylint antaa koodille "arvosanan" sen laadun mukaan, joka löytyy tulosteen lopusta:
+Pylintin laatutarkitukset voi suorittaa komentoriviltä siirtymällä ensin virtuaaliympäristöön komennolla `poetry shell` ja sen jälkeen suorittamalla komennon `pylint src`. Komento tulee suorittaa projektin juurihakemistossa, eli samassa hakemistossa missä _pyproject.toml_-tiedosto sijaitsee. Kyseinen komento suorittaa laatutarkitukset _src_ hakemistossa. Pylint antaa koodille "arvosanan" sen laadun mukaan, joka löytyy tulosteen lopusta:
 
 ```
 Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
@@ -41,7 +41,7 @@ x = 3
 print(x)
 ```
 
-Komennon `pdm run pylint src` suorittaminen paljastaa, että pylint löytää tiedostosta seuraavan virheen:
+Komennon `pylint src` suorittaminen paljastaa, että pylint löytää tiedostosta seuraavan virheen:
 
 ```
 src/index.py:1:0: C0103: Constant name "x" doesn't conform to UPPER_CASE naming style (invalid-name)
@@ -54,7 +54,7 @@ x = 3 # pylint: disable=invalid-name
 print(x)
 ```
 
-Nyt `pdm run pylint src`-komennon suorittaminen pitäisi kertoa, ettei virheitä enää löydy.
+Nyt `pylint src`-komennon suorittaminen pitäisi kertoa, ettei virheitä enää löydy.
 
 Voimme myös jättää tarkistuksien ulkopuolelle kokonaisia hakemistoja ja tiedostoja. Muokkaamalla [tätä]({{site.repo_url}}/tree/master/materiaali/python/.pylintrc#L13) riviä _.pylintrc_ tiedossa. Voimme esimerkiksi jättää käyttöliittymästä vastaavan koodin hakemistossa _src/ui_ ja testit hakemistossa _src/tests_ tarkistuksien ulkopuolle:
 
@@ -83,16 +83,16 @@ Jos integroinnin kanssa ilmenee ongelmia, tutustu Visual Studio Coden [ohjeisiin
 Tiettyjen laatukorjausten, kuten sisennysten ja liian pitkien koodirivien korjaaminen tuottaa välillä turhaa manuaalista työtä. Koodin automaattisessa formatoinnissa auttaa [autopep8](https://pypi.org/project/autopep8/)-kirjasto. Kirjasto formatoi koodin automaattisesti [PEP 8](https://www.python.org/dev/peps/pep-0008/)-tyyliohjeiden mukaisesti. Aloitetaan sen käyttö asentamalle se projektin riippuvuudeksi:
 
 ```bash
-pdm add autopep8
+poetry add autopep8 --dev
 ```
 
-Tämän jälkeen voimme formatoida _src_ hakemiston koodin komennolla:
+Tämän jälkeen voimme virtuaaliympäristössä formatoida _src_ hakemiston koodin komennolla:
 
 ```bash
-pdm run autopep8 --in-place --recursive src
+autopep8 --in-place --recursive src
 ```
 
-Komennolle voi myös tehdä oman tehtävänsä, jolloin suoritus onnistuu esimerkiksi komennolla `pdm run format`.
+Komennolle voi myös tehdä oman tehtävänsä, jolloin suoritus onnistuu esimerkiksi komennolla `poetry run invoke format`.
 
 Koodin formatointi onnistuu myös monissa editoreissa kätevästi yhdellä näppäinkomennolla. Ohje koodin formatointiin Visual Studio Codessa löytyy [täältä](https://code.visualstudio.com/docs/editor/codebasics#_formatting).
 
@@ -110,7 +110,7 @@ Tämän viikon aikana harjoitustyöhön toteutetaan uutta toiminallisuutta, para
 
 Kasvaata ohjelmaa edellisestä viikosta (0.75p):
 
-- Ohjelman pystyy suorittamaan terminaalissa komennolla `pdm run start`
+- Ohjelman pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
 - Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
 - Merkitse lisäksi tarkastusta varten määrittelydokumenttiin valmiit toiminnallisuudet "tehty" merkinnällä
 
@@ -120,7 +120,7 @@ Ohjeita toteutukseen löydät [täältä](/python/toteutus).
 
 Edistä ohjelman testaamista (0.5p):
 
-- Testikattavuus tulee pystyä keräämään komennolla `pdm run coverage` ja sen perusteella generoimaan testikattavuusraportti komennolla `pdm run coverage-report`
+- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
 - Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/python/coverage#tiedostojen-jättäminen-raportin-ulkopuolelle)
 - Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/python/coverage#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
 - Ohjelman testien haarautumakattavuuden tulee olla vähintään 20%
@@ -137,7 +137,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
   - Täydet pisteet saa, jos pylintin antama arvosana koodille on vähintään 7.00/10
   - Käyttöliittymään tai testeihin liittyvän koodin voi jättää pylint-tarkistuksien ulkopuolelle
   - `pylint: disable`-kommenttien käyttö on kiellettyä ilman erittäin perusteltua syytä
-- Pylint-tarkistuksien suorittamista varten on toteutettu PDM-skripti, jonka voi suorittaa komennolla `pdm run lint`
+- Pylint-tarkistuksien suorittamista varten on toteutettu Invoke-tehtävä, jonka voi suorittaa komennolla `poetry run invoke lint`
 
 ### Harjoitustyö 4: Dokumentaatio
 
