@@ -688,4 +688,4 @@ Käynnistä asennuksen jälkeen terminaali uudestaan. Halutun Python-version, ku
    pyenv global 3.8.12
    ```
 
-3. Varmista, että Python-versio on 3.8.12 komennolla `python --version`
+3. Varmista, että Python-versio on 3.8.12 komennolla `python3 --version`

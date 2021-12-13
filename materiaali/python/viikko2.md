@@ -18,45 +18,59 @@ Projektissa käytettävät kirjastojen versiot ovat projektin _riippuvuuksia_. R
 
 ### Huomioita komennoista
 
-Monilla tietokoneilla Python-version kolme komennot suoritetaan `python3`-komennolla komennon `python` sijaan. Jos komentoja `python3` ei jostain syystä löydy, tarkista `python`-komennon käyttämä versio komennolla:
+Monilla tietokoneilla Python-version kolme komennot suoritetaan `python3`-komennolla komennon `python` sijaan. Tarkistaa käytössäoleva versio komennolla:
+
+```bash
+python3 --version
+```
+
+Jos komentoa `python3` ei jostain syystä löydy, tarkista `python`-komennon käyttämä versio komennolla:
 
 ```bash
 python --version
 ```
 
-Jos versio on alle 3.8, asenna tietokoneellesi [uusin Python-versio](https://www.python.org/downloads/). Muissa tapauksissa, voit käyttää `python`-komentoa `python3`-komennon sijaan.
+Jos molemmissa tapauksissa versio on alle 3.8, asenna tietokoneellesi [uusin Python-versio](https://www.python.org/downloads/). Muista varmista asennuksen jälkeen, että oikea versio on käytössä. Muussa tapauksessa käytä komentoa, jonka käyttämä versio on vähintään 3.8.
 
 ### Asennus
 
-Ennen kuin pääsemme tutustumaan Poetryn käyttöön, tulee se ensin asentaa. Poetry tarjoaa dokumentaatiossaan useita [asennusvaihtoehtoja](https://python-poetry.org/docs/#installation). Valitse vaihtoehdoista käyttöjärjestelmällesi sopiva asennustapa ja asenna Poetry. Kun olet suorittanut asennuksen, tarkista vielä asennuksen onnistuminen komennolla:
-
-```
-poetry --version
-```
+Ennen kuin pääsemme tutustumaan Poetryn käyttöön tarkemmin, tulee se ensin asentaa. Seuraa alla olevista ohjeista tietokoneesi käyttöjärjestelmälle sopivaa asennusohjetta.
 
 **HUOM:** kaikki asennustavat saattavat vaatia terminaali-ikkunan sulkemisen ja uudelleen avaamisen, jotta Poetryn komennot alkavat toimia. Joissain tapauksissa on vaadittu jopa tietokoneen uudelleenkäynnistys.
 
-### Huomioita Linux- ja macOS-asennuksesta
+#### Linux- ja macOS-asennus
 
-Poetryn Linux-asennus tulisi onnistua seuraamalla Poetryn [asennusohjeiden](https://python-poetry.org/docs/#installation) Linux-ohjeita. **Sama ohje koskee siis myös asennusta virtuaalityöasemalla ja melkki-palvelimella.**
-
-Huomaa, että asennuksen jälkeen polku Poetryn binääriin tulee asettaa `PATH`-muuttujaan. Tämä onnistuu komennolla:
+Asenna Poetry suorittamalla terminaalissa seuraava komento:
 
 ```bash
-source $HOME/.poetry/env
+curl -sSL https://install.python-poetry.org | python3 -
 ```
 
-Komento kannattaa lisätä kotihakemiston _.bashrc_-tiedostoon, niin sitä ei tarvitse suorittaa käsin jokaisen terminaali-istunnon jälkeen. Tämä onnistuu esimerkiksi seuraavalla komennolla:
+**HUOM:** jos `python3`-komentoa ei löydy, käytä sen sijaan komennon lopussa `python`-komentoa. Varmista kuitenkin, että Python-versio on oikea edellisen ohjeen mukaisesti.
+
+Asennuksen jälkeen Poetry-binäärin polku tulee asettaa `PATH`-muuttujaan. Tämä onnistuu esimerkiksi seuraavan komennon avulla:
 
 ```bash
-echo "source \$HOME/.poetry/env" >> $HOME/.bashrc
+echo "export PATH=\"\$HOME/.local/bin:\$PATH\"" >> $HOME/.bashrc
 ```
 
-**HUOM:** melkki-palvelimella komento tulee lisätä kotihakemiston _.profile_-tiedostoon. Tämä onnistuu esimerkiksi seuraavalla komennolla:
+**HUOM:** jos käytössäsi on zsh-komentorivi, on oikea konfiguraatiotiedosto _.bashrc_-tiedoston sijaan _.zshrc_-tiedosto. Voit tarkistaa käytössä olevan komentirivin komennolla `echo $SHELL`. Käytä tässä tapauksessa edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.zshrc`.
+
+**HUOM:** käytä melkki-palvelimella edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.profile`.
+
+Käynnistä terminaali uudestaan ja varmista, että asennus onnistui suorittamalla komento `poetry --version`. Komennon pitäisi tulostaa asennettu versio.
+
+#### Windows-asennus
+
+Asenna Poetry suorittamalla terminaalissa seuraava komento:
 
 ```bash
-echo "source \$HOME/.poetry/env" >> $HOME/.profile
+(Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py -UseBasicParsing).Content | python -
 ```
+
+Asennuksen jälkeen Poetry-binäärin polku tulee asettaa `PATH`-muuttujaan. Lisää [tämän](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/) ohjeen mukaisesti `PATH`-muuttujaan polku `%APPDATA%\Python\Scripts`.
+
+Käynnistä terminaali uudestaan ja varmista, että asennus onnistui suorittamalla komento `poetry --version`. Komennon pitäisi tulostaa asennettu versio.
 
 ### Projektin alustaminen
 
@@ -87,7 +101,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 ```
 
-Tiedoston `[tool.poetry]`-osio sisältää projektiin liittyviä yleistietoja, kuten sen nimen, kuvauksen ja ylläpitäjät. Osion alapuolella on osioita, jotka listaavat projektin riippuvuuksia. Osiossa `[tool.poetry.dependencies]` näemme `poetry init`-komennon suorituksen yhteydessä asettamamme Python-version vaatimuksen, joka on muotoa `python = "^3.8"`. `^3.8`-merkintä tarkoittaa, että projektin käyttö vaatii vähintään Python-version 3.8. Voit lukea lisää versiomerkinnöistä Poetryn [dokumentaatiosta](https://python-poetry.org/docs/dependency-specification/#version-constraints).
+Tiedoston `[tool.poetry]`-osio sisältää projektiin liittyviä yleistietoja, kuten sen nimen, kuvauksen ja ylläpitäjät. Osion alapuolella on osioita, jotka listaavat projektin riippuvuuksia. Osiossa `[tool.poetry.dependencies]` näemme `poetry init`-komennon suorituksen yhteydessä asettamamme Python-version vaatimuksen, joka on muotoa `python = "^3.8"`. `^3.8`-merkintä tarkoittaa, että projektin käyttö vaatii vähintään Python-version 3.8.
 
 Kun _pyproject.toml_-tiedosto on tullut tutuksi, viimeistellään projektin alustaminen suorittamalla komento:
 
@@ -95,40 +109,13 @@ Kun _pyproject.toml_-tiedosto on tullut tutuksi, viimeistellään projektin alus
 poetry install
 ```
 
-Komennon suorittaminen tekee projektille vaadittavat alustustoimenpiteet, kuten virtuaaliympäristön alustamisen. Jos projektille olisi määritelty riippuvuuksia, komennon suorittaminen asentaisi myös ne. Tämän vuoksi _komento tulee suorittaa aina ennen kuin uutta projekti aletaan käyttämään_.
+Komennon suorittaminen tekee projektille vaadittavat alustustoimenpiteet, kuten virtuaaliympäristön alustamisen. Jos projektille olisi määritelty riippuvuuksia, komennon suorittaminen asentaisi myös ne. Tämän vuoksi komento tulee suorittaa aina ennen kuin uutta projekti aletaan käyttämään.
 
-Komennon suorittamisen seurauksena hakemistoon pitäisi ilmestyä tiedosto _poetry.lock_. Tiedosto sisältää kaikkien asennettujen riippuvuuksien versiotiedot. Sen tietojen avulla Poetry osaa aina asentaa riippuvuuksista täsmälleen oikeat versiot. Tästä syystä _tiedosto tulee lisätä versionhallintaan_.
-
-**HUOM:** jos törmäät seuraavaan virheilmoitukseen:
-
-```
-Python 2.7 will no longer be supported in the next feature release of Poetry (1.2).
-You should consider updating your Python version to a supported one.
-
-Note that you will still be able to manage Python 2.7 projects by using the env command.
-See https://python-poetry.org/docs/managing-environments/ for more information.
-
-The currently activated Python version 2.7.16 is not supported by the project (^3.8).
-Trying to find and use a compatible version.
-```
-
-Eräs tapa korjata tilanne Linuxilla ja macOS:lla on editoida tiedoston _~/.poetry.bin/poetry_ ensimmäisellä rivillä mainittu Pythonin polku. Oletusarvoinen polku on todennäköisesti seuraava:
-
-```
-#!/usr/bin/python
-```
-
-Polku tulee muuttaa muotoon:
-
-```
-#!/usr/local/bin/python3
-```
-
-Oikea polku kannattaa varmistaa komennolla `which python3`.
+Komennon suorittamisen jälkeen hakemistoon pitäisi ilmestyä tiedosto _poetry.lock_. Tiedosto sisältää kaikkien asennettujen riippuvuuksien versiotiedot. Sen tietojen avulla Poetry pystyy aina asentamaan `poetry install`-komennolla riippuvuuksista täsmälleen oikeat versiot. Tästä syystä tiedosto tulee lisätä versionhallintaan.
 
 ### Riippuvuuksien asentaminen
 
-Asennetaan seuraavaksi esimerkkiprojektimme ensimmäisen riippuvuus. Riippuvuuksien löytäminen onnistuu helpoiten Googlettamalla ja etsimällä hakutuloksista sopivia GitHub-repositorioita, tai PyPI-sivuja. Asennetaan esimerkkinä projektiimme [cowsay](https://pypi.org/project/cowsay/)-kirjasto. Tämä onnistu projektin juurihakemistossa (samassa hakemistossa, missä _pyproject.toml_-tiedosto sijaitsee) komennolla:
+Asennetaan seuraavaksi projektiimme ensimmäisen riippuvuus. Riippuvuuksien löytäminen onnistuu helpoiten Googlettamalla ja etsimällä hakutuloksista sopivia GitHub-repositorioita, tai PyPI-sivuja. Asennetaan esimerkkinä projektiimme [cowsay](https://pypi.org/project/cowsay/)-kirjasto. Tämä onnistu projektin juurihakemistossa (samassa hakemistossa, missä _pyproject.toml_-tiedosto sijaitsee) komennolla:
 
 ```bash
 poetry add cowsay
@@ -142,7 +129,7 @@ python = "^3.8"
 cowsay = "^2.0.3"
 ```
 
-`add`-komento asentaa projektiin kirjaston uusimman version, joka oli komennon suoritushetkellä `2.0.3`. Usein tämä on juuri se, mitä haluamme tehdä. Voimme kuitenkin asentaa halutessamme esimerkiksi cowsay-kirjaston version `1.0` komennolla:
+`poetry add`-komento asentaa oletusarvoisesti kirjaston uusimman version, joka oli komennon suoritushetkellä `2.0.3`. Usein tämä on juuri se, mitä haluamme tehdä. Voimme kuitenkin asentaa halutessamme esimerkiksi cowsay-kirjaston version `1.0` komennolla:
 
 ```bash
 poetry add cowsay==1.0
@@ -158,7 +145,7 @@ Pidetään kuitenkin cowsay-kirjasto toistaiseksi asennettuna.
 
 ### Komentojen suorittaminen virtuaaliympäristössä
 
-Luodaan seuraavaksi _poetry-testi_-hakemistoon hakemisto _src_ ja luodaan sinne tiedosto _index.py_. Lisätään tiedostoon seuraavat koodirivit:
+Lisätään seuraavaksi _poetry-testi_-hakemistoon hakemisto _src_ ja sinne tiedosto _index.py_. Lisätään tiedostoon seuraavat koodirivit:
 
 ```python
 import cowsay
@@ -166,7 +153,7 @@ import cowsay
 cowsay.tux("Poetry is awesome!")
 ```
 
-Koodissa käyttämme `import`-lausetta saadaksemme cowsay-kirjaston käyttöön. Jos suoritamme tiedoston terminaalissa komennolla:
+Koodissa käyttämme `import`-lausetta saadaksemme cowsay-kirjaston käyttöömme. Jos suoritamme tiedoston terminaalissa komennolla:
 
 ```bash
 python3 src/index.py
@@ -178,7 +165,7 @@ On lopputuloksena seuravaa virheilmoitus:
 ModuleNotFoundError: No module named 'cowsay'
 ```
 
-Tämä johtuu siitä, että emme ole projektin virtuaaliympäristön sisällä, eli Python ei löydä projektimme riippuvuuksia. Asia korjaantuu käyttämällä [run](https://python-poetry.org/docs/cli/#run) komentoa:
+Tämä johtuu siitä, että emme ole projektin virtuaaliympäristön sisällä, jonka vuoksi Python ei löydä projektimme riippuvuuksia. Asia korjaantuu käyttämällä [run](https://python-poetry.org/docs/cli/#run) komentoa:
 
 ```bash
 poetry run python3 src/index.py
@@ -208,9 +195,9 @@ Voimme lähteä virtuaaliympäristöstä komennolla `exit`.
 
 ### Kehityksen aikaiset riippuvuudet
 
-Jos olit tarkkana, huomasit, että _pyproject.toml_-tiedostosta löytyy `[tool.poetry.dependencies]`-osion lisäksi osio `[tool.poetry.dev-dependencies]`. Komennon `add` suorittaminen asentaa oletusarvoisesti riippuvuudet `[tool.poetry.dependencies]`-osion alle. Näiden riippuvuuksien lisäksi voimme asentaa projektiimme riippuvuuksia, joita tarvitsemme vain kehityksen aikana. Näitä riippuvuuksia ovat kaikki ne, joita itse sovelluksen käyttö (esimerkiksi `python3 src/index.py`-komennon suorittaminen) ei tarvitse.
+Jos olit tarkkana, huomasit, että _pyproject.toml_-tiedostosta löytyy `[tool.poetry.dependencies]`-osion lisäksi osio `[tool.poetry.dev-dependencies]`. Komennon `poetry add` suorittaminen asentaa oletusarvoisesti riippuvuudet `[tool.poetry.dependencies]`-osion alle. Näiden riippuvuuksien lisäksi voimme asentaa projektiimme riippuvuuksia, joita tarvitsemme vain kehityksen aikana. Näitä riippuvuuksia ovat kaikki ne, joita itse sovelluksen käynnistäminen (esimerkiksi `python3 src/index.py`-komennon suorittaminen) ei tarvitse.
 
-Kehityksen aikaisten riippuvuuksien asentaminen onnistuu antamalla `add`-komennolle `--dev`-flagi. Esimerkiksi pian tutuksi tulevan [pytest](https://pytest.org/)-kirjaston voi asentaa kehityksen aikaiseksi riippuvuudeksi seuraavalla komennolla:
+Kehityksen aikaisten riippuvuuksien asentaminen onnistuu antamalla `poetry add`-komennolle `--dev`-flagi. Esimerkiksi pian tutuksi tulevan [pytest](https://pytest.org/)-kirjaston voi asentaa kehityksen aikaiseksi riippuvuudeksi seuraavalla komennolla:
 
 ```bash
 poetry add pytest --dev
@@ -223,7 +210,7 @@ Komennon suorittaminen lisää pytest-kirjaston riippuvuudeksi `[tool.poetry.dev
 pytest = "^6.1.2"
 ```
 
-Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se vähentää asennettavien riippuvuuksien määrää tapauksessa, jossa haluamme vain käynnistää sovelluksen. Tässä tilanteessa riippuvuuksien asentamisen voi tehdä komennolla `poetry install --no-dev`.
+Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se vähentää asennettavien riippuvuuksien määrää tapauksessa, jossa haluamme vain käynnistää sovelluksen. Tässä tilanteessa riippuvuuksien asentamisen voi tehdä komennolla `poetry install --without dev`.
 
 ### Ratkaisuja yleisiin ongelmiin
 
@@ -237,7 +224,7 @@ Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
    python = "^3.8"
    ```
 
-   **Jos versio on väärä**, muuta se, tallenna _pyproject.toml_-tiedosto, poista _poetry.lock_-tiedosto (jos se on olemassa) ja suorita komento `poetry install`
+   **Jos versio on väärä**, muuta se oikeaksi ja suorita komento `poetry update`
 
 3. Listaa projektissa käytössä olevat virtuaaliympäristöt komennolla `poetry env list` ja poista ne kaikki yksitellen komennolla `poetry env remove <nimi>`. Esimerkiksi seuraavasti:
 
@@ -746,7 +733,7 @@ Suorita testit terminaalissa virtuaaliympäristössä `pytest src`-komennolla.
 
 Visual Studio Codesta löytyy sisään rakennettu terminaali. Terminaalin saa avattua valitsemalla päävalikosta _Terminal_ ja aukeavasta alavalikosta _New Terminal_. editorin alalaitaan pitäisi ilmestyä terminaali, jossa voit suorittaa komentorivikomentoja.
 
-Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa projektin nimi ja jokin satunnainen merkkijono suluissa, esimerkiksi `(unicafe-sF0cl2di-py3.9)`. Jos et ole virtuaaliympäristössä pääset siihen tutulla `poetry shell` komennolla. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
+Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa projektin nimi ja jokin satunnainen merkkijono suluissa, esimerkiksi `(unicafe-sF0cl2di-py3.9)`. Jos et ole virtuaaliympäristössä pääset siihen tutulla `poetry shell`-komennolla. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
 
 ![Visual Studio Code terminaali]({{ "/assets/images/python/vscode-terminaali.png" | absolute_url }})
 

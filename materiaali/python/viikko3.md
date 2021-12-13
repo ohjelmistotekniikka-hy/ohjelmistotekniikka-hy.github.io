@@ -559,11 +559,11 @@ from invoke import task
 
 @task
 def coverage(ctx):
-    ctx.run("coverage run --branch -m pytest")
+    ctx.run("coverage run --branch -m pytest", pty=True)
 
 @task()
 def coverage_report(ctx):
-    ctx.run("coverage html")
+    ctx.run("coverage html", pty=True)
 ```
 
 Jos suoritamme tehtävän _coverage-report_ ennen _coverage_-tehtävän suorittamista, raportti sisältää joko vanhat testikattavuustiedot, tai kohtaamme virheen, joka valittaa testikattavuustietojen puutosta. Voisimme suorittaa komennot peräkkäin komennolla:
@@ -579,11 +579,11 @@ from invoke import task
 
 @task
 def coverage(ctx):
-    ctx.run("coverage run --branch -m pytest")
+    ctx.run("coverage run --branch -m pytest", pty=True)
 
 @task(coverage)
 def coverage_report(ctx):
-    ctx.run("coverage html")
+    ctx.run("coverage html", pty=True)
 ```
 
 Nyt komento `poetry run invoke coverage-report` suorittaa ensin tehtävän _coverage_, jonka jälkeen suoritetaan itse tehtävä _coverage-report_.
