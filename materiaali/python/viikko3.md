@@ -482,9 +482,9 @@ if __name__ == "__main__":
 
 ## Tehtävien suorittaminen ja Invoke
 
-Laajemmissa ohjelmistoprojekteissa on useimmiten monia erilaisia _tehtäviä_, joita suoritetaan komentoriviltä annettavien komentojen muodossa. Luultavasti tärkein näistä tehtävistä on sovelluksen käynnistäminen, joka saattaa tapahtua esimerkiksi komennolla `python3 src/index.py`.
+Projekteissa on useimmiten monia toistuvasti suoritettavia _tehtäviä_, joita suoritetaan terminaalissa annettavien komentojen muodossa. Luultavasti tärkein näistä tehtävistä on sovelluksen käynnistäminen, joka saattaa tapahtua esimerkiksi komennolla `python3 src/index.py`.
 
-Tehtäviin liittyvien komentojen kirjoittaminen käsin käy helposti työlääksi. Tämä tulee ilmi etenkin tilanteissa, joissa komennot ovat monimutkaisempia, tai vaativat muiden komentojen suorittamista. Ongelman ratkaisemiksi on toteutettu työkaluja, joiden avulla tehtäviä voi määritellä ja suorittaa komentoriviltä helposti. Python-maailmassa eräs suosittu työkalu tähän käyttötarkoitukseen on [Invoke](http://docs.pyinvoke.org/en/stable/).
+Tehtäviin liittyvien komentojen kirjoittaminen käsin käy helposti työlääksi. Tämä tulee ilmi etenkin tilanteissa, joissa komennot ovat monimutkaisia, tai vaativat useampien komentojen suorittamista. Ongelman ratkaisemiseksi on kehitetty työkaluja, joiden avulla tehtäviä voi määritellä ja suorittaa terminaalissa helposti. Tutustutaan seuraavaksi erääseen tähän käyttötarkoitukseen soveltuvaan työkaluun nimeltä [Invoke](http://docs.pyinvoke.org/en/stable/).
 
 ### Asennus
 
@@ -506,13 +506,13 @@ def foo(ctx):
     print("bar")
 ```
 
-Tämän erittäin hyödyllisen tehtävän voi suorittaa komentoriviltä komennolla:
+Tämän erittäin hyödyllisen tehtävän voi suorittaa terminaalissa komennolla:
 
 ```bash
 poetry run invoke foo
 ```
 
-Komennon suorittamisen pitäisi tulostaa komentoriville teksti "bar". Tehtävät voi siis suorittaa komentoriltä komennolla, joka on muotoa `poetry run invoke <tehtävä>`. Huomaa, että `poetry run`-komennon ansiosta tehtävät suoritetaan virtuaaliympäristössä.
+Komennon suorittamisen pitäisi tulostaa komentoriville teksti "bar". Tehtävät voi siis suorittaa terminaalissa komennolla, joka on muotoa `poetry run invoke <tehtävä>`. Huomaa, että `poetry run`-komennon ansiosta tehtävät suoritetaan virtuaaliympäristössä.
 
 Toteutetaan seuraavaksi _foo_-tehtävän lisäksi tehtävä, josta on oikeasti hyötyä. Tarvitsemme tehtävän, joka suorittaa sovelluksemme komennolla `python3 src/index.py`. Annetaan tälle tehtävälle nimeksi _start_:
 
@@ -538,7 +538,7 @@ poetry run invoke --list
 
 ### Huomioita tehtävien nimeämisestä
 
-Jos tehtävän määrittelevän funktion nimi on [snake case](https://en.wikipedia.org/wiki/Snake_case) -formaatissa (esimerkiksi <i>snake*case</i>), on komentoriviltä suoritettavan tehtävän nimi [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles) -formaatissa (esimerkiksi \_kebab-case*). Esimerkiksi seuraavasti nimetty tehtävä:
+Jos tehtävän määrittelevän funktion nimi on [snake_case](https://en.wikipedia.org/wiki/Snake_case)-formaatissa, on komentoriviltä suoritettavan tehtävän nimi [kebab-case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case)-formaatissa. Esimerkiksi seuraavasti nimetty tehtävä:
 
 ```python
 from invoke import task
@@ -552,20 +552,18 @@ Suoritettaisiin komennolla `poetry run invoke lorem-ipsum`. Jos olet epävarma k
 
 ### Toisistaan riippuvaiset tehtävät
 
-[Coverage-ohjeissa](./coverage) tutustumme testikattavuuden keräämiseen ja raportin muodostamiseen sen perusteella. Jos haluamme muodostaa testikattavuusraportin, tulee testikattavuus olla ensin kerätty.
-
-Menemättä tässä osiossa `coverage`-komennon yksityiskohtiin, tehtävillä voisi olla seuraavat määritelmät:
+[Coverage-ohjeissa](/python/vk2#coverage-ja-testikattavuus) tutustuimme testikattavuuden keräämiseen ja raportin muodostamiseen sen perusteella. Jos haluamme muodostaa testikattavuusraportin, tulee testikattavuus olla ensin kerätty. Käyttötarkoitukseen soveltuvilla tehtävillä voisi olla määritelty seuraavasti:
 
 ```python
 from invoke import task
 
 @task
 def coverage(ctx):
-    ctx.run("coverage run --branch -m pytest")
+    ctx.run("coverage run --branch -m pytest", pty=True)
 
 @task()
 def coverage_report(ctx):
-    ctx.run("coverage html")
+    ctx.run("coverage html", pty=True)
 ```
 
 Jos suoritamme tehtävän _coverage-report_ ennen _coverage_-tehtävän suorittamista, raportti sisältää joko vanhat testikattavuustiedot, tai kohtaamme virheen, joka valittaa testikattavuustietojen puutosta. Voisimme suorittaa komennot peräkkäin komennolla:
@@ -574,18 +572,18 @@ Jos suoritamme tehtävän _coverage-report_ ennen _coverage_-tehtävän suoritta
 poetry run invoke coverage coverage-report
 ```
 
-Helpompaa on kuitenkin määritellä _coverage-report_-tehtävän riippuvuus _coverage_-tehtävästä sen määrityksessä. Tämä onnistuu antamalla `@task`-dekoraattorille argumentiksi _coverage_-tehtävän funktio:
+Helpompaa on kuitenkin määritellä _coverage-report_-tehtävä riippuvaiseksi _coverage_-tehtävästä. Tämä onnistuu antamalla `@task`-dekoraattorille argumentiksi _coverage_-tehtävän funktio:
 
 ```python
 from invoke import task
 
 @task
 def coverage(ctx):
-    ctx.run("coverage run --branch -m pytest")
+    ctx.run("coverage run --branch -m pytest", pty=True)
 
 @task(coverage)
 def coverage_report(ctx):
-    ctx.run("coverage html")
+    ctx.run("coverage html", pty=True)
 ```
 
 Nyt komento `poetry run invoke coverage-report` suorittaa ensin tehtävän _coverage_, jonka jälkeen suoritetaan itse tehtävä _coverage-report_.
@@ -636,15 +634,11 @@ README.md
 
 ### Harjoitustyö 2: Toiminallisuuden toteutus
 
-<!-- TODO: linkit -->
-
 Toteuta ainakin osa jostain edellisellä viikolla tekemäsi määrittelydokumentin toiminallisuudesta. Pelkät tyhjät luokat tai funktiot ilman toiminallisuutta eivät tuo pisteitä.
 
 Toteutukseen liittyviä ohjeita löydät [täältä](/python/toteutus).
 
 ### Harjoitustyö 3: Testaamisen aloittaminen
-
-<!-- TODO: linkit -->
 
 Sovelluksella on oltava _vähintään yksi testi_. Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa. Testin tulee myös mennä läpi. Lisää testejä varten _src_ hakemistoon hakemisto _tests_ ja lisää testitiedostot sinne:
 
@@ -660,9 +654,15 @@ Kertaa edellisen viikon unittest-ohjeet, jos tämä tuottaa hankaluuksia.
 
 ### Harjoitustyö 4: Testikattavuusraportti
 
-<!-- TODO: linkit -->
+Ohjelmalle tulee pystyä generoimaan coverage-työkalun avulla testikattavuusraportti. Projektin juurihakemistossa (samassa hakemistossa, missä _pyproject.toml_-tiedosto sijaitsee) tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Testeihin liittyvä koodi tulee jättää testikattavuusraportin ulkopuolelle:
 
-Ohjelmalle tulee pystyä generoimaan coverage-työkalun avulla testikattavuusraportti. Kertaa edellisen viikon coverage-ohjeet, jos tämä tuottaa hankaluuksia.
+```
+[run]
+source = src
+omit = src/**/__init__.py,src/tests/**
+```
+
+Kertaa edellisen viikon coverage-ohjeet, jos tämä tuottaa hankaluuksia. Mallia coveragen konfigurointiin voi tarvittaessa ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}).
 
 ### Harjoitustyö 5: Invoke-tehtävät
 
@@ -688,8 +688,6 @@ Varmista vielä, että seuraavat asiat ovat kunnossa:
   - Laskarit jätetään hakemiston _laskarit_ alle
   - Järkevä _.gitignore_-tiedosto olemassa. Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}})
 
-{% include harjoitustyon_toimivuus_info.md %}
-
-{% include virtuaalityoasema_python_versio.md %}
+{% include harjoitustyon_toimivuus_info2.md %}
 
 {% include ala_plagioi.md %}
