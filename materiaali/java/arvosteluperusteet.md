@@ -60,7 +60,7 @@ Pisteet (yht 24) jakautuvat seuraavasti
 ### Laajuus ja sovelluslogiikan kompleksisuus
 
 - Miten laaja on laaja?
-- Kurssin [referenssisovellus](https://github.com/mluukkai/OtmTodoApp) olisi laajuudeltaan juuri ja juuri 2 pisteen arvoinen, sovelluslogiikaltaan se on aika suoraviivainen ja ansaitsisi vain yhden pisteen
+- Kurssin [referenssisovellus](https://github.com/mluukkai/OtmTodoApp) olisi laajuudeltaan juuri ja juuri 2 pisteen arvoinen, sovelluslogiikaltaan se on aika suoraviivainen ja ansaitsisi vain yhden pisteen kompleksisuudesta
 - Laajuutta ei voida määritellä tarkasti esim. luokkien tai metodien määrällä, laajuus on aina suhteellinen sovelluksen tyyppiin ja kompleksisuuteenkin
 - Eräs tapa laajentaa sovellusta ja lisätä sen kompleksisuutta on tehdä siitä _parametrein konfiguroitava ja laajennettava_, esim:
 
