@@ -48,7 +48,13 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 **HUOM:** jos `python3`-komentoa ei löydy, käytä sen sijaan komennon lopussa `python`-komentoa. Varmista kuitenkin, että Python-versio on oikea edellisen ohjeen mukaisesti.
 
-Asennuksen jälkeen Poetry-binäärin polku tulee asettaa `PATH`-muuttujaan. Tämä onnistuu esimerkiksi seuraavan komennon avulla:
+Asennuksen jälkeen Poetry-binäärin polku tulee asettaa `PATH`-muuttujaan. Tämä onnistuu lisäämällä kotihakemiston _.bashrc_-tiedoston loppuun seuraava rivi:
+
+```bash
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+Lisääminen onnistuu esimerkiksi muokkaamalla tiedostoa nano-editorin avulla, tai suorittamalla seuraava komento:
 
 ```bash
 echo "export PATH=\"\$HOME/.local/bin:\$PATH\"" >> $HOME/.bashrc
