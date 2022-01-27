@@ -1,20 +1,12 @@
 ---
 layout: page
-title: Viikon 1 tehtävät
 permalink: /java/viikko1
+title: Viikko 1
 ---
 
-**⚠️ Tehtävien palautuksen deadline on {{site.wk1dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
+{% include deadline_info.md deadline=site.wk1dl %}
 
-Tehtävät palautetaan Githubin ja Labtoolin avulla. Lisää palautuksesta myöhemmin. Osa tehtävistä ei näy palautuksesta mitenkään. Niiden tekemättä jättäminen näkyy puuttuvana osaamisena ja saattaa aiheuttaa myöhemmin hankaluuksia.
-
-Viikon palautuksista on tarjolla 2 pistettä. Pisteytys arvioidaan palautuksen laadun perusteella.
-
-Muista pushata tehtävät GitHubiin ennen viikkodeadlinea. Myöhässä tehty palautus ei tuo pisteitä.
-
-Ohjausta tehtäviin zoom-pajassa:
-
-{% include ohjausajat.md %}
+Tämän viikon tehtävien palautuksesta on tarjolla 2 pistettä.
 
 ## Komentorivin harjoittelua
 

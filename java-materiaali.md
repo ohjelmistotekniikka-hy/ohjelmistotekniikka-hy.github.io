@@ -5,6 +5,27 @@ title: Java-materiaali
 title: Java-materiaali
 ---
 
+## Viikoittainen materiaali
+
+- [Viikko 1](/java/viikko1)
+- [Viikko 2](/java/viikko2)
+- [Viikko 3](/java/viikko3)
+- [Viikko 4](/java/viikko4)
+- [Viikko 5](/java/viikko5)
+- [Viikko 6](/java/viikko6)
+- [Loppupalautus](/java/loppupalautus)
+
+## Harjoitustyö
+
+- [Aiheideoita ja ohjeita työn harjoitustyön aloittamiseen](/java/harjoitustyon-aloittaminen)
+- [Yleisiä ohjeita harjoitustyön toteutukseen](/java/toteutus)
+- [Arvosteluperusteet](/java/arvosteluperusteet)
+- [Koodin laatuvaatimukset](/java/koodin-laatuvaatimukset)
+- [GitHub-releasen tekeminen](/release)
+- [Koodikatselmoinnin ohjeet](/koodikatselmointi)
+
+## Aihealueet
+
 - [Johdanto kurssin aihealueisiin](/java/materiaali)
     - [Ohjelmistotuotanto](/java/materiaali#ohjelmistotuotanto)
         - [Vaatimusmäärittely](/java/materiaali#vaatimusmäärittely)
@@ -32,15 +53,6 @@ title: Java-materiaali
 - [JUnit](/java/junit)
 - [Checkstyle](/java/checkstyle)
 - [JavaDoc](/java/javadoc)
-
-## Harjoitustyö
-
-- [Aiheideoita ja ohjeita työn harjoitustyön aloittamiseen](/java/harjoitustyon-aloittaminen)
-- [Yleisiä ohjeita harjoitustyön toteutukseen](/java/toteutus)
-- [Arvosteluperusteet](/java/arvosteluperusteet)
-- [Koodin laatuvaatimukset](/java/koodin-laatuvaatimukset)
-- [GitHub-releasen tekeminen](/release)
-- [Koodikatselmoinnin ohjeet](/koodikatselmointi)
 
 ## Muuta
 

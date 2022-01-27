@@ -532,7 +532,7 @@ Ongelma johtuu verkkolevyn hitaudesta ja ratkaisu on suorittaa projektia `/tmp`-
 
 ### Huomioita testaamisesta
 
-[Testausohjeissa](/python/unittest) ohjeistettiin, että _kaikki testit tulee olla toisistaan riippumattomia_. Tämä tarkoittaa sitä, että tallennusta testaavan metodin tulee olettaa, ettei edellisiä tallennustietoja ole. Tämä onnistuu testiluokan `setUp`-metodissa kutsumalla repositorion metodia, joka tyhjentää tallennustiedot. Esimerkiksi referenssisovelluksessa toteutus on seuraava:
+[Testausohjeissa](/python/viikko2#unittest-ja-testaaminen) ohjeistettiin, että _kaikki testit tulee olla toisistaan riippumattomia_. Tämä tarkoittaa sitä, että tallennusta testaavan metodin tulee olettaa, ettei edellisiä tallennustietoja ole. Tämä onnistuu testiluokan `setUp`-metodissa kutsumalla repositorion metodia, joka tyhjentää tallennustiedot. Esimerkiksi referenssisovelluksessa toteutus on seuraava:
 
 ```python
 class TestTodoRepository(unittest.TestCase):

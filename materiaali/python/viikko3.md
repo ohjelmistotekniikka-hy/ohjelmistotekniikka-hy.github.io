@@ -1,12 +1,16 @@
 ---
 layout: page
 title: Viikko 3
-permalink: /python/vk3
+permalink: /python/viikko3
 ---
+
+{% include java_materiaali_info.md %}
 
 {% include deadline_info.md deadline=site.wk3dl %}
 
 Tämän viikon tehtävien palautuksesta on tarjolla 1 piste ja harjoitustyön palautuksesta 2 pistettä.
+
+Tee palautettavia tehtäviä varten repositorion sisällä olevaan hakemistoon _laskarit_ uusi alihakemisto _viikko3_.
 
 ## UML
 
@@ -552,7 +556,7 @@ Suoritettaisiin komennolla `poetry run invoke lorem-ipsum`. Jos olet epävarma k
 
 ### Toisistaan riippuvaiset tehtävät
 
-[Coverage-ohjeissa](/python/vk2#coverage-ja-testikattavuus) tutustuimme testikattavuuden keräämiseen ja raportin muodostamiseen sen perusteella. Jos haluamme muodostaa testikattavuusraportin, tulee testikattavuus olla ensin kerätty. Käyttötarkoitukseen soveltuvilla tehtävillä voisi olla määritelty seuraavasti:
+[Coverage-ohjeissa](/python/viikko2#coverage-ja-testikattavuus) tutustuimme testikattavuuden keräämiseen ja raportin muodostamiseen sen perusteella. Jos haluamme muodostaa testikattavuusraportin, tulee testikattavuus olla ensin kerätty. Käyttötarkoitukseen soveltuvilla tehtävillä voisi olla määritelty seuraavasti:
 
 ```python
 from invoke import task
@@ -688,6 +692,6 @@ Varmista vielä, että seuraavat asiat ovat kunnossa:
   - Laskarit jätetään hakemiston _laskarit_ alle
   - Järkevä _.gitignore_-tiedosto olemassa. Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}})
 
-{% include harjoitustyon_toimivuus_info2.md %}
+{% include harjoitustyon_toimivuus_info.md %}
 
 {% include ala_plagioi.md %}

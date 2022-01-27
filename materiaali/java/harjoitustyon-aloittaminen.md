@@ -6,7 +6,6 @@ title: Aiheen valinta ja harjoitustyön aloittaminen
 
 Kurssilla seurataan Helsingin yliopiston opintokäytäntöjä. Plagiarismi ja opintovilppi, eli esimerkiksi netissä olevien tai kaverilta saatujen vastausten kopiointi ja niiden palauttaminen omana työnä on kiellettyä. Todettu opintovilppi johtaa kurssisuorituksen hylkäämiseen ja toistuva opintovilppi voi johtaa opinto-oikeuden määräaikaiseen menettämiseen. Lue lisää osoitteessa https://guide.student.helsinki.fi/fi/artikkeli/mita-ovat-vilppi-ja-plagiointi
 
-
 Mitä plagiointi tarkoittaa harjoitustyön yhteydessä? Idean saa luonnollisesti lainata, mutta koodin suora kopioiminen on kiellettyä poikkeuksena muutaman rivin mittaiset algoritmit. Myös koodin rakenteen suora kopioiminen esim. siten että muuttujien ja funktioiden nimet muutetaan lasketaan plagioinniksi. Esim. kuvia saa toki lainata muualta, mutta näin tehtävessä tulee työn dokumentaatioon tehdä "lähdeviite", eli mainita mistä lainaus on tehty.
 
 Samat plagiaattisäännöt koskevat työn dokumentaatiota, esityisen kiellettyä on copy pasteta referenssisovelluksen dokumentaatiota.
@@ -23,7 +22,7 @@ Koko kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteis
 
 ## Harjoitustyön kieli ja ohjelmointikieli
 
-Harjoitustyön ohjelmointikieli on Java tai Python. Pythoniin liittyvät ohjeet ovat [täällä](/python/harjoitustyon-aloittaminen).
+Harjoitustyön ohjelmointikieli on Java tai Python. Pythoniin liittyvät ohjeet ovat [täällä](/python/viikko2#harjoitustyö).
 
 Web-sovelluksia kurssilla ei sallita. Sovelluksissa sallitaan toki webissä olevat komponentit, mutta sovelluksen käyttöliittymän tulee olla ns. desktop-sovellus.
 
@@ -31,7 +30,7 @@ Web-sovelluksia kurssilla ei sallita. Sovelluksissa sallitaan toki webissä olev
 
 ## Ohjelman toteutus
 
-Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä ja materiaalista. Muutamia vihjeitä on myös kurssin [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp) sekä [täällä]((java/java).
+Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä ja materiaalista. Muutamia vihjeitä on myös kurssin [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp) sekä [täällä](/java/toteutus).
 
 Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus. Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen. Kaiken testaaminen käsin uudelleen ja uudelleen ei ole ajankäytöllisesti järkevää, ja siksi ohjelmakoodille onkin syytä laatia jatkuvasti testejä ohjelmoinnin edetessä. Testit on syytä pitää kattavina ja ajan tasalla.
 
@@ -130,7 +129,7 @@ Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erila
 
 ## Harjoitustyön aloitus
 
-Harjoitustyö siis aloitetaan kurssin [toisella viikolla](/ht-viikko2).
+Harjoitustyö siis aloitetaan kurssin [toisella viikolla](/java/viikko2).
 
 Työ tehdään samaan repositorioon, jonka olet rekisteröinyt Labtooliin ja johon olet jo tehnyt [viikon 1 laskareiden](/java/viikko1) palautuksen.
 

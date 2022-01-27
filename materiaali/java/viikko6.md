@@ -1,22 +1,20 @@
 ---
 layout: page
-permalink: /java/ht-viikko6
-title: Harjoitustyö viikko 6
+permalink: /java/viikko6
+title: Viikko 6
 ---
 
-**⚠️ Palautuksen deadline {{site.wk6dl}}.**
+{% include deadline_info.md deadline=site.wk6dl %}
 
-**Muutama huomio**
+Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä. Koodikatselmoinnista on tarjolla 2 pistettä.
 
-- **Viikon 6 aikana tapahtuu koodikatselmointi**, tarkemmat ohjeet katselmointiin [täällä](/koodikatselmointi)
-- Kannattaa pitää mielessä, että kurssin loppu alkaa lähestyä ja myös loppupalautuksen deadline.
+**⚠️ Viikon aikana järjestetään [koodikatselmointi](#koodikatselmointi), joka alkaa {{site.code_review_start_date}}.**
 
-  - Nyt kannattaa kerrata loppupalautuksen [arvosteluperusteet](/java/arvosteluperusteet)
-  - Viimeiselläkin viikolla ohjelmaa ehtii vielä kasvattaa, mutta myös dokumentoinnille kannattaa jättää aikaa
+## Harjoitustyö
 
-  **HUOM! Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen koneella ja ohjaajien pitää pystyä se niiltä aukaisemaan!!** Esim. [Virtuaalisessatyöasemassa](https://vdi.helsinki.fi) voit testata tätä.
+Kannattaa pitää mielessä, että kurssin loppu alkaa lähestyä ja täten myös loppupalautuksen deadline. Nyt kannattaa kerrata loppupalautuksen [arvosteluperusteet](/java/arvosteluperusteet). Viimeiselläkin viikolla ohjelmaa ehtii vielä kasvattaa, mutta myös dokumentoinnille kannattaa jättää aikaa.
 
-Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
+Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 - Ohjelma on kasvanut edellisestä viikosta (0.75p)
   - Ohjelmasta pystyy tekemään suorituskelpoisen [jar](/java/maven#jarin-generointi)-tiedoston komennolla _mvn package_
@@ -52,7 +50,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - Alustavan käyttöohjeen sopiva pituus on noin sivu
   - Mallina voi jälleen toimia [referenssisovellus](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/kayttoohje.md)
 
-**Seuraavien kohtien puutteet vähentävät pisteitä**
+**Seuraavien kohtien puutteet vähentävät pisteitä:**
 
 - Koodin laatu
   - Pakkausrakenne järkevä (esim. kaikki koodi oletuspakkauksessa)
@@ -70,10 +68,11 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
     - linkki releaseihin
     - ohjeet komentoriviltä suoritettaviin toimenpiteisiin (testaus, testiraportin suoritus, suoritettavan jarin generointi, checkstyletarkastuksen suorittaminen, JavaDocin generointi)
 - Repositorio siisti
-
   - ei ylimääräistä tavaraa (mm. hakemistoa target)
   - laskarit jätetään hakemiston _laskarit_ alle
   - järkevä .gitignore-tiedosto olemassa
+
+{% include koodikatselmointi.md %}
 
 {% include harjoitustyon_toimivuus.md %}
 

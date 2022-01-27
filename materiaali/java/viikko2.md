@@ -1,24 +1,18 @@
 ---
 layout: page
-title: Viikon 2 tehtävät
 permalink: /java/viikko2
+title: Viikko 2
 ---
 
-**⚠️ Tehtävien palautuksen deadline on {{site.wk2dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
+{% include deadline_info.md deadline=site.wk2dl %}
 
-Tehtävät palautetaan GitHubin avulla Labtoolin rekisteröimääsi repositorioon.
+Tämän viikon tehtävien palautuksesta on tarjolla 2 pistettä ja harjoitustyön palautuksesta 1 piste.
 
-Muista pushata tehtävät GitHubiin ennen viikkodeadlinea.
+Tee palautettavia tehtäviä varten repositorion sisällä olevaan hakemistoon _laskarit_ uusi alihakemisto _viikko2_.
 
-- Klo 00 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
+## Tehtävät
 
-Tee palautuksia varten repositorion sisällä olevaan hakemistoon _laskarit_ uusi alihakemisto _viikko2_.
-
-Viikon palautuksista on tarjolla 2 pistettä. Pisteytys arvioidaan palautuksen laadun perusteella.
-
-Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteita](/ht-viikko2)
-
-## 1
+### 1
 
 - tutustu [JUnit-ohjeeseen](/java/junit)
 - lukiessasi tee testit myös itse
@@ -32,7 +26,7 @@ Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteit
 
 **HUOM2** Kirjoita assertEquals-komennot aina siten, että ensimmäisenä parametrina on odotettu tulos ja toisena parametrina testatun metodin antama tulos.
 
-## 2 Maksukortti ja kassapääte: testit kortille
+### 2 Maksukortti ja kassapääte: testit kortille
 
 **HUOM** tämä tehtävä tehdään **eri projektiin** kuin edellinen, ja vaikka molemmissa tehtävissä on saman niminen luokka, eli _Maksukortti_ ovat luokat erilaiset, eli **älä** copypastaa edellisen tehtävän koodia tai tehtäviä tähän tehtävään.
 
@@ -298,7 +292,7 @@ Tiedostossa _plugin_-osiossa on määritelty, että koodi käännetään Javan v
 </build>
 ```
 
-## 3 Testauskattavuus
+### 3 Testauskattavuus
 
 Olemme tyytyväisiä, uskomme että testitapauksia on nyt tarpeeksi. Onko tosiaan näin? Onneksi on olemassa työkaluja, joilla voidaan tarkastaa testien rivi- ja haarautumakattavuus. **Rivikattavuus** mittaa mitä koodirivejä testien suorittaminen on tutkinut. Täydellinen rivikattavuuskaan ei tietenkään takaa että ohjelma toimii oikein, mutta on parempi kuin ei mitään. **Haarautumakattavuus** taas mittaa mitä eri suoritushaaroja koodista on käyty läpi. Suoritushaaroilla tarkoitetaan esim. if-komentojen valintatilanteita.
 
@@ -335,7 +329,7 @@ Useilla selaimilla tämä tapahtuu komennolla **open file**. Laitoksen koneella 
 
 **Jos maksukortin koodissa on vielä rivejä tai haarautumia (merkitty punaisella) joille ei ole testiä, kirjoita sopivat testit.**
 
-## Maven-komentojen suorittaminen NetBeansista
+### Maven-komentojen suorittaminen NetBeansista
 
 Maven-komentoja on mahdollista suorittaa myös NetBeansin kautta. Tämä tapahtuu klikkaamalla projektin kohdalla hiiren oikealla napilla:
 
@@ -345,7 +339,7 @@ Maven-komentoja on mahdollista suorittaa myös NetBeansin kautta. Tämä tapahtu
 
 <img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/v2-5.png" width="600">
 
-## 4 Maven-projektin hakemistorakenne
+### 4 Maven-projektin hakemistorakenne
 
 Maven-projektien hakemiston rakenne noudattaa aina samaa logiikkaa. Hakemiston juuressa on projektin konfiguraatiot sisältävä tiedosto _pom.xml_. Ohjelman lähdekoodi on hakemistossa _src/java_ ja testit hakemistossa _src/test_. Hakemistoon _target_ generoituvat kaikki maven-komentojen aikaansannokset.
 
@@ -355,7 +349,7 @@ Suorita projektin koodin käännöksen suorittava komento _mvn compile_. Tutki m
 
 Suorita testit komennolla _mvn test_. Tutki mitä hakemistosta _target_ löytyy komennon suorittamisen jälkeen.
 
-## 5 Kassapäätteen testit
+### 5 Kassapäätteen testit
 
 Laajennetaan Unicafen testaus kattamaan myös kassapääte.
 
@@ -376,12 +370,52 @@ _Tee testiluokka *KassapaateTest* ja tee testit jotka testaavat ainakin seuraavi
 
 Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun kassapäätteellä on automaattiset testit, on sen rakennetta helppo muokata eli refaktoroida siistimmäksi koko ajan kuitenkin varmistaen, että testit menevät läpi. Refaktoroi koodisi siistimmäksi jos haluat.
 
-## 6
+### 6
 
 Varmista jacocon avulla, että kassapäätteen testeillä on 100% lause- ja haarautumakattavuus.
 
-## 7
+### 7
 
 Talleta kohdassa [testikattavuus](/java/viikko2#3-testauskattavuus) olevan kuvan tyylinen [screenshot](https://www.take-a-screenshot.org/) projektisi kattavuusraportista palautusrepositoriosi hakemistoon _laskarit/viikko2_.
 
 **Muista tallentaa tekemäsi muutokset gitiin ja työntää ne Githubiin (_git push_).**
+
+## Harjoitustyö
+
+### Alustava määrittelydokumentti
+
+Harjoitustyön tekeminen aloitetaan päättämällä aihe ja kuvaamalla se _alustavassa määrittelydokumentissa_, eli työlle tehdään [vaatimusmäärittely](/java/materiaali#vaatimusmäärittely).
+
+Aihetta miettiessäsi kannattaa ehdottomasti lukea [ohjeet työn aloittamiseen](/java/harjoitustyon-aloittaminen).
+
+Mikään ei tietenkään estä sitä, että aloitat jo ohjelmoinnin tai vaikkapa koodaat koko työn valmiiksi. Viikon 2 deadlinen pisteytyksessä ollaan kiinnostuneita ainoastaan määrittelydokumentista.
+
+**HUOM:** jos aloitat jo ohjelmoinnin, muista että ohjelmakoodi tulee kirjoittaa englanniksi! Ohjelman käyttöliittymä ja dokumentaatio voivat olla suomeksi tai englanniksi.
+
+Palautus tapahtuu lisäämällä oman aiheen _alustava määrittelydokumentti_ ensimmäisen viikon [laskareiden](/java/viikko1#labtool) päätteeksi [Labtooliin]({{ site.labtool_link }}) rekisteröimääsi palautusrepositorioon.
+
+Määrittelydokumentti tehdään samaan tapaan kuin [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/vaatimusmaarittely.md) eli [markdown](https://guides.github.com/features/mastering-markdown/)-muodossa, sijoitetaan repositorion hakemistoon _dokumentaatio_ ja siihen tulee olla linkki repositorion README.md:stä.
+
+Määrittelydokumenttiin kannattaa ottaa mallia [referenssiprojektista](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/vaatimusmaarittely.md), eli sen tulee sisältää:
+
+- _Sovelluksen tarkoitus_ eli pieni tekstuaalinen yleiskuvaus sovelluksesta
+- _Käyttäjät_ eli tieto erilaisista _käyttäjärooleista_, joita järjestelmässä on
+  - Tosin jos sovelluksessasi on vain yhdenlaisia käyttäjiä, ei kohtaa tarvita. Näin lienee tilanne monissa harjoitustöiden aiheissa kuten peleissä.
+- Suunnitellut toiminnallisuudet
+  - Toiminnallisuudet voi kuvata ranskalaisina viivoina samaan tapaan kuin referenssiprojektissa
+  - Referenssiprojektissa on kuvattu perusversion eli jo "kurssin alkupuolella" toteutettavan ydintoiminnallisuuden toiminnallisuudet tarkemmin
+  - Perusversiota laajentavat jatkokehitysideat ovat omassa listassaan
+
+Voit myös tehdä referenssiprojektin tapaan _käyttöliittymäluonnoksen_, se ei ole kuitenkaan pakollinen.
+
+### Työaikakirjanpito
+
+Pidä säännöllisesti kirjaa käyttämistäsi työtunneista. Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa.
+
+- Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
+
+Lisää repositorion README.md-tiedostoon linkki [työaikakirjanpitoon](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/tuntikirjanpito.md).
+
+{% include harjoitustyon_toimivuus.md %}
+
+{% include ala_plagioi.md %}

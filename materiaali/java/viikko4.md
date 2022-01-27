@@ -1,20 +1,16 @@
 ---
 layout: page
-permalink: /java/ht-viikko4
-title: Harjoitustyö viikko 4
+permalink: /java/viikko4
+title: Viikko 4
 ---
 
-**⚠️ Palautuksen deadline {{site.wk4dl}}.**
+{% include deadline_info.md deadline=site.wk4dl %}
 
-Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
+Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.
 
-- Klo 00 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
+## Harjoitustyö
 
-**HUOM! Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen koneella ja ohjaajien pitää pystyä se niiltä aukaisemaan!!** Esim. [Virtuaalisessatyöasemassa](https://vdi.helsinki.fi) voit testata tätä.
-
-Palautuksesta on tarjolla 3 kurssipistettä.
-
-Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
+Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 - Ohjelma on kasvanut edellisestä viikosta (0.75p)
   - Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla _tai/ja_ komennolla <code>mvn compile exec:java -Dexec.mainClass=pakkaus.Paaohjelma</code>

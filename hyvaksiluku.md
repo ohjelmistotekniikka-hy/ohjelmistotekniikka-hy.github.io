@@ -19,7 +19,7 @@ Jos haluat hyväksilukea kurssin, ota sähköpostilla yhteyttä kurssin vastuuop
 ### Koodin laatu
 
 - Sovelluksen koodin tulee noudattaa kurssilla määriteltyjä [laatuvaatimuksia](/python/koodin-laatuvaatimukset). Laatuvaatimuksia saattaa joutua soveltamaan ohjelmointikielestä riippuen
-- Sovelluksen koodin tulee olla suurimmilta osin kommenttien avulla dokumentoituta ohjelmointikielen standardien mukaisesti (esim. Pythonin [Docstring](/python/docstring)). Tämä tarkoittaa mm. luokkien, metodien ja funktioiden dokumentointia
+- Sovelluksen koodin tulee olla suurimmilta osin kommenttien avulla dokumentoituta ohjelmointikielen standardien mukaisesti (esim. Pythonin [Docstring](/python/viikko6#docstring-ja-koodin-dokumentointi)). Tämä tarkoittaa mm. luokkien, metodien ja funktioiden dokumentointia
 
 ### Versionhallinta ja repositorio
 

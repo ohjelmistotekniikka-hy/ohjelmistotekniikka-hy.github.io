@@ -1,8 +1,10 @@
 ---
 layout: page
-permalink: /python/vk1
+permalink: /python/viikko1
 title: Viikko 1
 ---
+
+{% include java_materiaali_info.md %}
 
 {% include deadline_info.md deadline=site.wk1dl %}
 
@@ -69,7 +71,7 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 - Ja luomallesi hakemistolle alihakemisto _viikko1_
 - Mene kotihakemistoosi ja luo sen alle hakemisto _temp_
 - Mene hakemistoon _temp_
-- Hae osoitteessa _https://raw.githubusercontent.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/master/tehtavat/python/unicafe.zip_ oleva tiedosto [wget](https://en.wikipedia.org/wiki/Wget)-ohjelmalla
+- Hae osoitteessa _https://raw.githubusercontent.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/master/materiaali/python/unicafe.zip_ oleva tiedosto [wget](https://en.wikipedia.org/wiki/Wget)-ohjelmalla
   - Wget toimii siten, että sille annetaan ladattava tiedosto parametriksi
 - Haettu tiedosto on _zip-paketti_, pura se _unzip_-ohjelmalla
   - Myös unzip toimii siten, että sille annetaan purettava tiedosto parametriksi
@@ -547,7 +549,7 @@ and the repository exists.
 
 ### Tehtävä 13: Julkinen avain
 
-Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](/python/viikko1#lisää-tiedostoja).
+Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](#tehtävä-14-lisää-tiedostoja).
 
 Pushaus ei toimi. Nyt kyse on siitä, että git haluaisi suorittaa [julkisen avaimen](https://the.earth.li/~sgtatham/putty/0.55/htmldoc/Chapter8.html) autentikoinnin. Se ei kuitenkaan onnistu koska emme ole kertoneet gitille julkista salausavaintamme.
 

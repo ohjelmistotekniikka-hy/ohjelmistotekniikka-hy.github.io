@@ -1,24 +1,18 @@
 ---
 layout: page
-title: Viikon 3 tehtävät
 permalink: /java/viikko3
+title: Viikko 3
 ---
 
-**⚠️ Tehtävien palautuksen deadline on {{site.wk3dl}}.** Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti.
+{% include deadline_info.md deadline=site.wk3dl %}
 
-Tehtävät palautetaan Githubin avulla Labtooliin rekisteröimääsi repositorioon.
+Tämän viikon tehtävien palautuksesta on tarjolla 1 piste ja harjoitustyön palautuksesta 2 pistettä.
 
-Muista pushata tehtävät GitHubiin ennen viikkodeadlinea.
+Tee palautettavia tehtäviä varten repositorion sisällä olevaan hakemistoon _laskarit_ uusi alihakemisto _viikko3_.
 
-- Klo 00 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
+## Tehtävät
 
-Tee palautuksia varten repositorion sisällä olevaan hakemistoon _laskarit_ uusi alihakemisto _viikko3_. Kukin tehtävä palautetaan lisäämällä hakemiston sisälle sopivasti nimettyjä kuvia.
-
-Viikon palautuksista on tarjolla yksi kurssipiste. Pisteytys arvioidaan palautuksen laadun perusteella.
-
-Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteita](/java/ht-viikko3)
-
-## Luokkakaaviot
+### Luokkakaaviot
 
 Kertaa luokkakaavioihin liittyvät asiat [kurssimateriaalista](/java/materiaali#luokkakaaviot).
 
@@ -56,7 +50,7 @@ Toimintoja on useanlaisia. Ei ole vielä tarvetta tarkentaa toiminnon laatua.
 
 Normaaleille kaduille voi rakentaa korkeintaan 4 taloa tai yhden hotellin. Kadun voi omistaa joku pelaajista. Pelaajilla on rahaa.
 
-## Sekvenssikaaviot
+### Sekvenssikaaviot
 
 Kertaa sekvenssikaavioihin liittyvät asiat [kurssimateriaalista](/java/materiaali#sekvenssikaaviot).
 
@@ -251,3 +245,34 @@ public class Main {
     }
 }
 ```
+
+## Harjoitustyö
+
+Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
+
+- Repositorion juuresta löytyy Maven-projekti
+  - [ohje](/java/harjoitustyon-aloittaminen#harjoitusty%C3%B6n-aloitus) projektin luomiseen ja sen sijoittamiseen palautusrepositorioon
+- Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla _tai/ja_ komennolla ```mvn compile exec:java -Dexec.mainClass=pakkaus.Paaohjelma```
+  - komennon parametrina on metodin _main_ sisältävän luokan täydellinen, eli myös pakkauksen sisältävä, nimi
+  - [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) tapauksessa parametri olisi ```-Dexec.mainClass=todoapp.ui.TodoUi```
+- Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta
+  - pelkät gettereitä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
+- Sovelluksella on oltava _vähintään yksi testi_ jonka voi suorittaa komennolla ```mvn test```
+  - Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa
+  - Testin tulee mennä läpi
+- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla ```mvn test jacoco:report```
+- Tuntikirjanpito on ajantasalla
+  - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
+- Repositorion README.md kunnossa
+  - tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) README.md
+  - kaikki ylimääräinen, mm linkit laskareihin on poistettu
+- Repositorio siisti
+  - ei ylimääräistä tavaraa (mm. hakemistoa target/ tai tietokantatiedostoja)
+  - laskarit jätetään hakemiston _laskarit_ alle
+  - järkevä .gitignore-tiedosto olemassa
+
+Ohjelman tulee edistyä jokaisella viikolla tasaisesti. Jos ohjelma tulee valmiiksi jo ennen loppupalautusta valmistaudu laajentamaan sitä saadaksesi ohjelman edistymisestä pisteet. Tarkoitus on edistää projektia tasaisesti kurssiviikkojen aikana.
+
+{% include harjoitustyon_toimivuus.md %}
+
+{% include ala_plagioi.md %}

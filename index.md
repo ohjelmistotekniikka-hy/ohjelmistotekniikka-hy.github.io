@@ -30,29 +30,27 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 Palautuksen deadline {{ site.wk1dl }}
 
 - Kurssin aloitustilaisuus {{ site.lecture }}, {{ site.lecture_link }}
-- Pajassa tehtävät tai omatoimiset [tehtävät](/python/viikko1): Komentorivi- ja Git-harjoittelu (2p)
+- [Tehtävät](/python/viikko1): Komentorivi- ja Git-harjoittelu (2p)
 - Tehtävien palautus tapahtuu tekemällä repositorio GitHubiin ja rekisteröitymällä Labtooliin
 
 ### Viikko 2
 
 Palautuksen deadline {{ site.wk2dl }}
 
-- [Harjoitustyö](/ht-viikko2): Aiheen alustava määrittelydokumentti (1p)
-- Pajassa tehtävät tai omatoimiset [tehtävät](/python/viikko2): Testaaminen ja Unittest (2p)
-- Oman projektin koodaus alkaa
+- [Harjoitustyö ja tehtävät](/python/viikko2): Aiheen alustava määrittelydokumentti, testaaminen ja unittest (3p)
+- Oman harjoitustyön toteutus alkaa
 
 ### Viikko 3
 
 Palautuksen deadline {{ site.wk3dl }}
 
-- [Harjoitustyö](/python/ht-viikko3): Koodin runko valmiina (2p)
-- Pajassa tehtävät tai omatoimiset [tehtävät](/python/viikko3): Luokka- ja sekvenssikaaviot (1p)
+- [Harjoitustyö ja tehtävät](/python/viikko3): Koodin runko valmiina, luokka- ja sekvenssikaaviot (3p)
 
 ### Viikko 4
 
 Palautuksen deadline {{ site.wk4dl }}
 
-- [Harjoitustyö](/python/ht-viikko4) (3p)
+- [Harjoitustyö](/python/viikko4) (3p)
   - Ohjelman perustoiminnallisuus
   - Testien aloitus
   - Alustava rakenne luokkakaaviona
@@ -62,7 +60,7 @@ Palautuksen deadline {{ site.wk4dl }}
 
 Palautuksen deadline {{ site.wk5dl }}
 
-- [Harjoitustyö](/python/ht-viikko5) (3p)
+- [Harjoitustyö](/python/viikko5) (3p)
   - Release 1
   - Testikattavuus nousee
   - Jotain päätoiminnallisuutta kuvaava sekvenssikaavio
@@ -71,15 +69,15 @@ Palautuksen deadline {{ site.wk5dl }}
 
 Palautuksen deadline {{ site.wk6dl }}
 
-- [Harjoitustyö](/python/ht-viikko6) (3p)
+- [Harjoitustyö](/python/viikko6) (3p)
   - Release 2
   - Testikattavuus nousee
   - Docstring-dokumentaatio aloitettu
   - Alustava versio arkkitehtuuridokumentista
-- [Koodikatselmointi](/koodikatselmointi) (2p)
+- [Koodikatselmointi](/python/viikko6#koodikatselmointi) (2p)
 
 ### Viikko 7
 
 Lopullisen palautuksen deadline {{ site.finaldl }}
 
-- [Loppupalautuksen ohjeet](/loppupalautus)
+- [Loppupalautuksen ohjeet](/python/loppupalautus)

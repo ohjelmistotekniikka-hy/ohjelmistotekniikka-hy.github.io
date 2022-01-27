@@ -1,26 +1,16 @@
 ---
 layout: page
-permalink: /java/ht-viikko5
-title: Harjoitustyö viikko 5
+permalink: /java/viikko5
+title: Viikko 5
 ---
 
-**⚠️ Palautuksen deadline {{site.wk5dl}}.**
+{% include deadline_info.md deadline=site.wk5dl %}
 
-**HUOM** jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä)
+Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.
 
-- viikon 5 deadlinen jälkeen tulee palautusrepositoriosta löytyä osan määrittelydokumentin käyttäjälle näkyvää toiminnallisuutta toteuttava toimiva versio harjoitustyöstä
-- viikon 5 palautuksesta tulee saada enemmän kuin 0 pistettä
-- palautusrepositorioistasi on GitHub-issuet sallittuna, ks. [ohje](/java/ht-viikko5#issueiden-salliminen)
+## Harjoitustyö
 
-Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
-
-- Klo 00 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
-
-**HUOM! Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen koneella ja ohjaajien pitää pystyä se niiltä aukaisemaan!!** Esim. [Virtuaalisessatyöasemassa](https://vdi.helsinki.fi) voit testata tätä.
-
-Palautuksesta on tarjolla 3 kurssipistettä.
-
-Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
+Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 - Ohjelmasta pystyy tekemään suorituskelpoisen [jar](/java/maven#jarin-generointi)-tiedoston komennolla _mvn package_ (0.5p)
 - Projektista on tehty _github release_ (0.25p)
@@ -45,10 +35,10 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - Ohjelma ei sisällä suurta määrää toisteista koodia
 - Ohjelman dokumentaatiossa on ainakin yksi sen jotain oleellista toiminnallisuutta kuvaava sekvenssikaavio (0.5p)
   - Mallia voi ottaa [referenssisovelluksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
-  - Lisää kaavio [edellisellä viikolla](/java/ht-viikko4) tehtyyn dokumenttiin _arkkitehtuuri.md_
+  - Lisää kaavio [edellisellä viikolla](/java/viikko4) tehtyyn dokumenttiin _arkkitehtuuri.md_
   - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) tavoin
 
-**Seuraavien kohtien puutteet vähentävät pisteitä**
+**Seuraavien kohtien puutteet vähentävät pisteitä:**
 
 - Koodin laatu
   - Pakkausrakenne ei ole järkevä (esim. kaikki koodi oletuspakkauksessa)
@@ -56,7 +46,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 - Tuntikirjanpito on ajantasalla
   - **Tuntien summan tulee olla merkittynä**
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
-- Palautusrepositorioosi voi tehdä GitHub-issuieta, ks [ohje](/java/ht-viikko5#issueiden-salliminen)
+- Palautusrepositorioosi voi tehdä GitHub-issuieta, katso [ohje](/java/viikko5#issueiden-salliminen)
 - Repositorion README.md kunnossa
   - tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) README.md, eli siellä on ainakin seuraavat
     - harjoitustyön aiheen lyhyt kuvaus

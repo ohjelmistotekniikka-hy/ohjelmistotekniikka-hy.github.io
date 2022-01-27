@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Viikko 6
-permalink: /python/vk6
+permalink: /python/viikko6
 ---
+
+{% include java_materiaali_info.md %}
 
 {% include deadline_info.md deadline=site.wk6dl %}
 
@@ -133,33 +135,11 @@ Tehtävänäsi on lukea läpi toisen opiskelijan harjoitustyö ja antaa siitä r
 
 Kun olet tutustunut riittävän tarkasti katselmoitavaan projektiin, on aika antaa toiselle koodista palaute. Palautteessa ei tarvitse ottaa kantaa ohjelman dokumentointiin, ulkonäköön tai toimivuuteen. Tärkeintä on kiinnittää huomiota Ohjelmoinnin perusteissa ja Ohjelmoinnin jatkokurssilla opittuihin hyviin käytänteisiin sekä tällä kurssilla noudatettaviin koodin laatuvaatimuksiin ([Java](/java/koodin-laatuvaatimukset), [Python](/python/koodin-laatuvaatimukset)).
 
-### Palautteenanto
-
-Kerro palautteessasi katselmoitavan ohjelman tekijälle, missä on parannettavaa. Mitä tarkempi palaute, sen arvokkaampi se on palautteen saajalle. Voit antaa vihjeitä siitä, miten asioita voisi tehdä toisin. Jos havaitsit selkeitä bugeja tai virheellistä koodia, raportoi niistä. Kannattaa tutkia koodia tarkasti ja antaa täsmällisiä parannusehdotuksia. **Muista myös positiivinen palaute!**
-
-Palaute annetaan GitHubin Issuena:
-
-- Mene selaimellasi toisen opiskelijan repositorioon
-- Valitse välilehti _Issues_
-- Valitse oikeasta reunasta _New Issue_
-- Anna otsikko "Koodikatselmointi"
-- Kirjoita palautteesi kommenttilaatikkoon, Preview -välilehdestä näet palautteesi ulkomuodon
-  - Kommenttilaatikon yläpuolella on linkki tekstin muotoiluohjeisiin
-  - Palautelaatikko tukee myös kuvia
-  - Varmuuden vuoksi kopioi kirjoittamasi palaute koneellesi tekstitiedostoon
-- **Lisää palautteen alkuun päivä ja kellonaika, jolloin latasit annetun projektin**
-- Lähetä palaute valitsemalla _Submit new issue_
-- Lisää lopuksi Labtooliin linkki palautteeseesi
-
-Issue eli tässä tapauksessa palaute on koko repositorion tapaan julkinen, joten sen voi lukea kuka tahansa. Ohjaajat lukevat ja pisteyttävät annetun palautteen mahdollisimman pian deadlinen jälkeen.
-
-Katselmoinnista jaetaan 0-2 pistettä. Vähintään 6 laadukasta ja rakentavaa palautekommenttia riittää 1.5 pisteeseen. Täysiin pisteisiin edellytetään myös vähintään yksi käyttökelpoinen parannusehdotus.
-
-Palaute kirjoitetaan vapaamuotoisena, mutta yritä kirjoittaa selkeästi. Jaa palaute eri luokista/metodeista eri kappaleisiin. Jos kirjoitat ranskalaisia viivoja, kirjoita kokonaisia lauseita tai mieluiten useita lauseita. Älä hyökkää palautteessa toista kohtaan! Toisaalta älä ota saamaasi palautetta itseesi - projektisihan on yhä kesken ja muokattavissa. Palautteen antajakin toisinaan ymmärtää väärin tai antaa virheellisiä ohjeita.
-
-**HUOM:** Katselmoinnin kohteen projekti saattaa elää tai päivittyä sillä aikaa, kun kirjoitat palautetta. Tämän vuoksi palautteeseen liitetään aika, jolloin projektin kävi lataamassa itsellensä. Muulla tavalla asiaan ei kiinnitetä tällä kurssilla huomiota, eikä katselmoijan tarvitse aktiivisesti yrittää tarkistaa, jos jokin asia onkin ehtinyt jo muuttumaan. Palaute voi siis olla osin jo vanhentunutta.
+{% include koodikatselmointi.md %}
 
 ## Harjoitustyö
+
+Kannattaa pitää mielessä, että kurssin loppu alkaa lähestyä ja täten myös loppupalautuksen deadline. Nyt kannattaa kerrata loppupalautuksen [arvosteluperusteet](/python/arvosteluperusteet). Viimeiselläkin viikolla ohjelmaa ehtii vielä kasvattaa, mutta myös dokumentoinnille kannattaa jättää aikaa.
 
 Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutta toiminallisuutta ja parannetaan sen dokumentaatiota.
 
@@ -181,8 +161,8 @@ Ohjeita toteutukseen löydät [täältä](/python/toteutus).
 Edistä ohjelman testaamista (0.5p):
 
 - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
-- Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/python/coverage#tiedostojen-jättäminen-raportin-ulkopuolelle)
-- Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/python/coverage#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
+- Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/python/viikko2#tiedostojen-jättäminen-raportin-ulkopuolelle)
+- Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/python/viikko2#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
 - Ohjelman testien haarautumakattavuuden tulee olla vähintään 60%
 - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 
@@ -240,6 +220,6 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
   - Laskarit jätetään hakemiston _laskarit_ alle
   - Järkevä _.gitignore_-tiedosto olemassa
 
-{% include harjoitustyon_toimivuus_info2.md %}
+{% include harjoitustyon_toimivuus_info.md %}
 
 {% include ala_plagioi.md %}
