@@ -600,7 +600,7 @@ Tämän viikon aikana aloitetaan harjoitustyön toteutus ja testaaminen. Ohjelma
 
 ### Harjoitustyö 1: Poetry projektin alustaminen
 
-Alusta repositoriosi juureen Poetry-projekti edellisen viikon ohjeiden mukaisesti. Repositorion rakenne tulee olla seuraava:
+Alusta repositoriosi juureen Poetry-projekti edellisen viikon [Poetry-ohjeiden](/python/viikko2#poetry-ja-riippuvuuksien-hallinta) mukaisesti. Repositorion rakenne tulee olla seuraava:
 
 ```
 laskarit/
@@ -654,7 +654,7 @@ src/
   ...
 ```
 
-Kertaa edellisen viikon unittest-ohjeet, jos tämä tuottaa hankaluuksia.
+Kertaa edellisen viikon [unittest-ohjeet](/python/viikko2#unittest-ja-testaaminen), jos tämä tuottaa hankaluuksia.
 
 ### Harjoitustyö 4: Testikattavuusraportti
 
@@ -666,7 +666,7 @@ source = src
 omit = src/**/__init__.py,src/tests/**
 ```
 
-Kertaa edellisen viikon coverage-ohjeet, jos tämä tuottaa hankaluuksia. Mallia coveragen konfigurointiin voi tarvittaessa ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}).
+Kertaa edellisen viikon [coverage-ohjeet](/python/viikko2#coverage-ja-testikattavuus), jos tämä tuottaa hankaluuksia. Mallia coveragen konfigurointiin voi tarvittaessa ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}).
 
 ### Harjoitustyö 5: Invoke-tehtävät
 
