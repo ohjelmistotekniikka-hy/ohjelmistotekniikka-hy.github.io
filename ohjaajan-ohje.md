@@ -18,6 +18,15 @@ Opiskelijoille annetaan pääsääntöisesti palautetta viikkopalautuksien yhtey
 
 Viikkopalautuksien tarkistuksessa kannattaa hyödyntää Labtoolin viikottaista "tarkistuslistaa" ja alta löytyviä arvosteluperusteita. Palautuksia ei tarvitse syynätä turhan tarkasti, oleellisten tiedostojen silmäily ja vaadittavien toiminallisuuksien pikainen testaaminen riittää. Palautteen itsessään tulee olla _ytimekästä_ ja _rakentavaa_.
 
+### Puller.sh
+
+Tässä erään kurssin aiemman ohjaajan kirjoittama puller.sh skripti, jolla voi ladata kaikki projektit kerralla: [puller.sh](puller.sh).
+
+Käyttöohjeet:
+
+- Lataa kaikki arvosteltavat reposi ensin manuaalisesti samaan kansioon (jokainen toki omana alikansiona) ja tallenna samaan kansioon yllä oleva scripti nimellä puller.sh
+- Kun haluat pullata repot, mene terminaalin kautta kansioon, jossa scripti ja repot sijatsevat ja aja se käskyllä ./puller.sh
+
 ### Viikko 1
 
 Katsokaa että githubista löytyy tiedostot gitlog.txt ja komentorivi.txt ja että ne näyttävät edes suurinpiirtein oikeilta.
@@ -30,7 +39,7 @@ Katsokaa että jacocon/coveragen raportti on ok ja silmäilkää nopeesti että 
 
 ### Viikko 3
 
-##### Laskaritehtävät
+#### Laskaritehtävät
 
 1. Monopoli
 2. Monopolin laajennus malli: [malli3-12.png](https://github.com/ohjelmistotekniikka-hy/mallivastaukset/blob/main/malli3-12.png)
@@ -39,7 +48,7 @@ Katsokaa että jacocon/coveragen raportti on ok ja silmäilkää nopeesti että 
 
 Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärretty täysin väärin. Mutta jos oikeasti yritetty kunnolla ja sekvenssikaavio on esim. muuten oikein, mutta joku metodi tai palautusviiva uupuu niin antakaa pisteet. (Voitte toki halutessa kommentoida, virheistä)
 
-##### Projekti/Java
+#### Projekti/Java
 
 - Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla tai/ja komennolla `mvn compile exec:java -Dexec.mainClass=pakkaus.Paaohjelma` komennon parametrina on metodin main sisältävän luokan täydellinen, eli myös pakkauksen sisältävä, nimi referenssisovelluksen tapauksessa parametri olisi `-Dexec.mainClass=todoapp.ui.TodoUi`
 - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `mvn test jacoco:report` (käsky luo raportin target kansioon) (Jos ei toimi vielä tsekata löytyykö materiaalin ohjeen mukainen määrittely tiedoston pom.xml osiossa plugins)
@@ -48,7 +57,7 @@ Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärre
 - Opiskelijan tehtävänannossa ei oltu määritelty pitääkö toiminnallisuuden on olla käyttäjälle näkyvää tai olla käyttöliittymä olemassa, joten riittää jos toiminnallisuus on toteutettu nyt kooditasolla ja toimivuus testattu (eli jos on tehnyt “test driven”) niin se riittää tässä vaiheessa
 - Repostitorion juuresta löytyy Maven-projekti
 
-##### Projekti/Python
+#### Projekti/Python
 
 - Projektin koodin pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
 - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report` (html-muotoinen raportti löytyy kansiosta htmlcov) (Jos ei toimi vielä tsekatkata löytyykö materiaalin ohjeen mukainen määrittely tiedostosta pyproject.toml)
@@ -58,11 +67,11 @@ Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärre
 - Opiskelijan tehtävänannossa ei oltu määritelty pitääkö toiminnallisuuden on olla käyttäjälle näkyvää tai olla käyttöliittymä olemassa, joten riittää jos toiminnallisuus on toteutettu nyt kooditasolla ja toimivuus testattu (eli jos on tehnyt “test driven”) niin se riittää tässä vaiheessa
 - Repositorion juuresta löytyy `src`-kansio projektin koodille
 
-##### Tuntikirjanpito
+#### Tuntikirjanpito
 
 - Tuntikirjanpito on ajantasalla, Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
 
-##### Repositorio
+#### Repositorio
 
 - Repositorion README.md kunnossa
 - tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin referenssisovelluksen README.md
@@ -73,21 +82,9 @@ Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärre
 
 Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä ja määrittelydokumenttiin täytyy merkata tehtyjen vaatimusmäärittelyjen kohdalle "tehty" merkintä, niin meidän on helpompi tarkistaa projektin eteneminen.
 
-### Puller.sh
-
-Tässä erään kurssin aiemman ohjaajan kirjoittama puller.sh skripti, jolla voi ladata kaikki projektit kerralla.
-
-[puller.sh](puller.sh)
-
-Käyttöohjeet:
-
-- Lataa kaikki arvosteltavat reposi ensin manuaalisesti samaan kansioon (jokainen toki omana alikansiona)
-- ja tallenna samaan kansioon yllä oleva scripti nimellä puller.sh
-- Kun haluat pullata repot, mene terminaalin kautta kansioon, jossa scripti ja repot sijatsevat ja aja se käskyllä ./puller.sh
-
 ### Viikko 4
 
-##### Projekti
+#### Projekti
 
 - Käli ja logiikka eroteltu (0.25p)
 - Pakkausrakenne kunnossa (0.25p)
@@ -107,14 +104,14 @@ Käyttöohjeet:
   - Rivikattavuus vähintään 10% (0.25p)
    - jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioikaa se pois prosenteista ja huomauttakaa että opiskelija poistaa sen rivikattavuudestamd
 
-##### Projekti/Java
+#### Projekti/Java
 
 - Checkstyle configuroitu (0.25p)
   - toimii komennolla `mvn jxr:jxr checkstyle:checkstyle`
 - Checkstyle virheitä alle 10 (0.25p)
   - käyttöliittymän rakentavan koodin ei tarvitse olla Checkstyle-tarkastelun alla
 
-##### Projekti/Python
+#### Projekti/Python
 
 - Pylint configuroitu (0.25p)
   - toimii komennolla `poetry run invoke lint`
@@ -124,7 +121,7 @@ Käyttöohjeet:
   - Tarkistakaa että `src`-hakemiston alahakemistoihin on lisätty [ohjeen](https://ohjelmistotekniikka-hy.github.io/python/coverage) mukaisesti tyhjät \__init__.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty,  ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä. Jos jo viime viikolla kehotitte viikkopalautteessa lisäämään nämä tiedostot voi rokottaa pisteistä vaikka 0.15 syystä ettei ole lisätty ohjeen mukaisesti näitä.
 - Jos tyhjiä \__init__.py tiedostoja ei ole alihakemistoista, ottakaa huomioon että coverage laskee testien rivikattavuuden väärin. Arvioikaa rivikattavuus silmämääräisesti, tai jos testikattavuus ei ole ilmiselvästi yli 20%, lisätkää itse tyhjät tiedostot ennen testiraportin luomista.
 
-##### Dokumentaatio
+#### Dokumentaatio
 
 - Luokkakaavio varsin hyvä (0.25p)
   - tai pakkauskaavio
@@ -138,7 +135,7 @@ Käyttöohjeet:
   - summa merkitty <- ei tartte rokottaa jos muuten kunnossa. mainitkaa että lisää summan seuraavan kertaan
   -ei laskareihin käytettyä aikaa
 
-##### Repositorio
+#### Repositorio
 
 - Repositorio kunnossa (0.25p)
   - mahdollisesti aikaisemmin huomautetut turhat tiedostot poistettu
@@ -150,25 +147,25 @@ Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistuksia [
 
 ### Viikko 5
 
-##### Sekvenssikaavio
+#### Sekvenssikaavio
 
 - Sekvenssikaavio olemassa (0.25p)
   - Arkkitehtuuridokumentissa on sekvenssikaavio jostain ohjelman toiminnallisuudesta
 - Sekvenssikaavio aika hyvä (0.25p)
   - Sekvenssikaavio kuvaa toiminnallisuutta hyvin
 
-##### Release
+#### Release
 
 - Projektista on tehty github release (0.25p)
   - Java: release sisältää ohjelman uusimman version suorituskelpoisen jar-tiedoston
   - Python: Release sisältää ohjelman uusimman version lähdekoodin
 
-##### Java
+#### Java
 
-- suorituskelpoisen jar:in voi generoida komennolla `mvn package` (0.5p)
+- Suorituskelpoisen jar:in voi generoida komennolla `mvn package` (0.5p)
 - Checkstyle virheitä alle 5 (0.25p)
 
-##### Python
+#### Python
 
 - ohjelma toimii komennolla `poetry run invoke start` (0.5p)
 - Pylint arvosana vähintään 8.00/10 (0.25p)
