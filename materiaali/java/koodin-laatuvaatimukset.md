@@ -19,7 +19,7 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
 * Jos metodia käytetään vähän, tulee nimen olla mahdollisimman kuvaava. 
 * Tee nimentä englanniksi.
 
-**Huomaa:** tee uudelleennimeäminen NetBeansin Refactor/rename-ominaisuuden avulla, ks kohta [refaktorointi](https://www.cs.helsinki.fi/node/61563)
+**HUOM:** tee uudelleennimeäminen NetBeansin Refactor/rename-ominaisuuden avulla.
 
 ### Ei pitkiä metodeja
 * Sovelluslogiikan metodin pituuden tulee ilman erittäin hyvää syytä olla korkeintaan 20 riviä.

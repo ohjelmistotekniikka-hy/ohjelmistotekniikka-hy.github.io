@@ -88,7 +88,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 Lisää dokumentaatioon ainakin yksi jotain oleellista toiminnallisuutta kuvaava sekvenssikaavio (0.5p):
 
 - Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
-- Lisää kaavio [edellisellä viikolla](/python/ht-viikko4) tehtyyn dokumenttiin _arkkitehtuuri.md_
+- Lisää kaavio [edellisellä viikolla](/python/viikko4) tehtyyn dokumenttiin _arkkitehtuuri.md_
 - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen]({{site.python_reference_app_url}}) tavoin
 
 ### Harjoitustyö 7: Pistevähennykset

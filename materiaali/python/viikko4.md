@@ -146,7 +146,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 Laadi ohjelman alustava rakenne luokka, tai pakkauskaaviona (0.75p):
 
 - Kaavion ei tarvitse merkitä kuin sovelluslogiikan kannalta oleelliset luokat
-- Voit tarvittaessa tehdä kaavion, josta ilmenee myös sovelluksen [pakkausrakenne](/python/materiaali#pakkauskaavio)
+- Voit tarvittaessa tehdä kaavion, josta ilmenee myös sovelluksen [pakkausrakenne](/python/viikko3#pakkauskaavio)
 - Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
 - Lisää repositorion _dokumentaatio_-hakemistoon tiedosto _arkkitehtuuri.md_ ja upota kuva tiedostoon. Tiedoston sisältö voi olla muilta osin tyhjä
 - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion _README.md_-tiedostosta [referenssisovelluksen]({{site.python_reference_app_url}}) tavoin

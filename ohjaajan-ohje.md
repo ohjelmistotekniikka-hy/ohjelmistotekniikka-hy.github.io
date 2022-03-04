@@ -143,7 +143,7 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
   - README:ssa tällä hetkellä relevantit linkit ja komennot
   - esim tältä viikolta linkki arkkitehtuuriin ja checkstyle/pylint komennot lisätty
 
-Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistuksia [Java viikko 4](https://ohjelmistotekniikka-hy.github.io/java/ht-viikko4) ja [Python viikko 4](https://ohjelmistotekniikka-hy.github.io/python/ht-viikko4)
+Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistuksia [Java viikko 4](https://ohjelmistotekniikka-hy.github.io/java/viikko4) ja [Python viikko 4](https://ohjelmistotekniikka-hy.github.io/python/viikko4)
 
 ### Viikko 5
 
