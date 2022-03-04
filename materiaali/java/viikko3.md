@@ -16,7 +16,29 @@ Tee palautettavia tehtäviä varten repositorion sisällä olevaan hakemistoon _
 
 Kertaa luokkakaavioihin liittyvät asiat [kurssimateriaalista](/java/materiaali#luokkakaaviot).
 
-Luokkakaavioiden piirtoon helpoin työkalu on <http://yuml.me/>, jos haluat ammattimaisempaa jälkeä on <https://app.diagrams.net/> hyvä (tätä tehtävää varten se ei kuitenkaan liene vaivan arvoista). Myös valokuva käsin piirretyistä kaavioista riittää.
+GitHubin markdown-tiedostoissa erilaisia kaavioita voi toteuttaa kätevästi [Mermaid](https://mermaid-js.github.io/mermaid/)-syntaksin avulla. Kaavioista ei tarvitse erillisiä kuvatiedostoja, vaan ne voi määritellä suoraan markdown-tiedostoon:
+
+````markdown
+## Sovelluslogiikka
+
+Sovelluksen loogisen tietomallin muodostavat luokat User ja Todo, jotka kuvaavat käyttäjiä ja käyttäjien tehtäviä:
+
+```mermaid
+ classDiagram
+      Todo "*" --> "1" User
+      class User{
+          username
+          password
+      }
+      class Todo{
+          id
+          content
+          done
+      }
+```
+````
+
+Dokumentaation [Luokkakaavio](https://mermaid-js.github.io/mermaid/#/classDiagram)-osiosta löytyy tarkemmat ohjeet luokkakaavioiden toteuttamiseen. Mallia kaavioiden käyttämisessä markdown-tiedostossa voi ottaa referenssisovelluksen [arkkitehtuuri](https://raw.githubusercontent.com/ohjelmistotekniikka-hy/python-todo-app/master/dokumentaatio/arkkitehtuuri.md)-dokumentaatiosta. Vaihtoehtoisesti, luokkakaavioiden toteuttamiseen sopii myös esimerkiksi <https://app.diagrams.net/>.
 
 ### 1
 
@@ -54,7 +76,7 @@ Normaaleille kaduille voi rakentaa korkeintaan 4 taloa tai yhden hotellin. Kadun
 
 Kertaa sekvenssikaavioihin liittyvät asiat [kurssimateriaalista](/java/materiaali#sekvenssikaaviot).
 
-Sekvenssikaavioiden piirtoon paras työkalu lienee <https://www.websequencediagrams.com/>. Myös valokuva käsin piirretyistä kaavioista riittää.
+Myös sekvenssikaavioiden toteuttaminen onnistuu kätevästi [Mermaid](https://mermaid-js.github.io/mermaid/)-syntaksin avulla. Dokumentaation [Sekvenssikaavio](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)-osiosta löytyy tarkemmat ohjeet sekvenssikaavioiden toteuttamiseen. Mallia kaavioiden käyttämisessä markdown-tiedostossa voi ottaa referenssisovelluksen [arkkitehtuuri](https://raw.githubusercontent.com/ohjelmistotekniikka-hy/python-todo-app/master/dokumentaatio/arkkitehtuuri.md)-dokumentaatiosta. Vaihtoehtoisesti, sekvenssikaavioiden toteuttamiseen sopii myös esimerkiksi <https://www.websequencediagrams.com/>.
 
 ### 3
 
@@ -252,15 +274,15 @@ Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 - Repositorion juuresta löytyy Maven-projekti
   - [ohje](/java/harjoitustyon-aloittaminen#harjoitusty%C3%B6n-aloitus) projektin luomiseen ja sen sijoittamiseen palautusrepositorioon
-- Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla _tai/ja_ komennolla ```mvn compile exec:java -Dexec.mainClass=pakkaus.Paaohjelma```
+- Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla _tai/ja_ komennolla `mvn compile exec:java -Dexec.mainClass=pakkaus.Paaohjelma`
   - komennon parametrina on metodin _main_ sisältävän luokan täydellinen, eli myös pakkauksen sisältävä, nimi
-  - [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) tapauksessa parametri olisi ```-Dexec.mainClass=todoapp.ui.TodoUi```
+  - [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) tapauksessa parametri olisi `-Dexec.mainClass=todoapp.ui.TodoUi`
 - Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta
   - pelkät gettereitä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
-- Sovelluksella on oltava _vähintään yksi testi_ jonka voi suorittaa komennolla ```mvn test```
+- Sovelluksella on oltava _vähintään yksi testi_ jonka voi suorittaa komennolla `mvn test`
   - Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa
   - Testin tulee mennä läpi
-- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla ```mvn test jacoco:report```
+- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `mvn test jacoco:report`
 - Tuntikirjanpito on ajantasalla
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
 - Repositorion README.md kunnossa

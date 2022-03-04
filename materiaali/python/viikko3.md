@@ -164,7 +164,7 @@ Luokkien [perintähierarkian](https://docs.python.org/3/tutorial/classes.html#in
 
 #### Työkaluja luokkakaavioiden piirtämiseen
 
-GitHubin markdown-tiedostoissa erilaisia kaavioita voi toteuttaa kätevästi [Mermaid](https://mermaid-js.github.io/mermaid/)-syntaksin avulla. Kaavioista ei tarvitse erilisiä kuvatiedostoja, vaan ne voi määritellä suoraan markdown-tiedostoon:
+GitHubin markdown-tiedostoissa erilaisia kaavioita voi toteuttaa kätevästi [Mermaid](https://mermaid-js.github.io/mermaid/)-syntaksin avulla. Kaavioista ei tarvitse erillisiä kuvatiedostoja, vaan ne voi määritellä suoraan markdown-tiedostoon:
 
 ````markdown
 ## Sovelluslogiikka
