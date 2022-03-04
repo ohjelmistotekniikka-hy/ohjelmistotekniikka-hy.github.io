@@ -164,11 +164,33 @@ Luokkien [perintähierarkian](https://docs.python.org/3/tutorial/classes.html#in
 
 #### Työkaluja luokkakaavioiden piirtämiseen
 
-Luokkakaavioiden piirtoon helpoin työkalu on <http://yuml.me/>, jos haluat ammattimaisempaa jälkeä on <https://draw.io/> hyvä (tätä tehtävää varten se ei kuitenkaan liene vaivan arvoista). Myös valokuva käsin piirretyistä kaavioista riittää.
+GitHubin markdown-tiedostoissa erilaisia kaavioita voi toteuttaa kätevästi [Mermaid](https://mermaid-js.github.io/mermaid/)-syntaksin avulla. Kaavioista ei tarvitse erilisiä kuvatiedostoja, vaan ne voi määritellä suoraan markdown-tiedostoon:
+
+````markdown
+## Sovelluslogiikka
+
+Sovelluksen loogisen tietomallin muodostavat luokat User ja Todo, jotka kuvaavat käyttäjiä ja käyttäjien tehtäviä:
+
+```mermaid
+ classDiagram
+      Todo "*" --> "1" User
+      class User{
+          username
+          password
+      }
+      class Todo{
+          id
+          content
+          done
+      }
+```
+````
+
+Dokumentaation [Luokkakaavio](https://mermaid-js.github.io/mermaid/#/classDiagram)-osiosta löytyy tarkemmat ohjeet luokkakaavioiden toteuttamiseen. Mallia kaavioiden käyttämisessä markdown-tiedostossa voi ottaa referenssisovelluksen [arkkitehtuuri](https://raw.githubusercontent.com/ohjelmistotekniikka-hy/python-todo-app/master/dokumentaatio/arkkitehtuuri.md)-dokumentaatiosta. Vaihtoehtoisesti, luokkakaavioiden toteuttamiseen sopii myös esimerkiksi <https://app.diagrams.net/>.
 
 ### Tehtävä 1: Monopoli
 
-Monopoli ks. esim. http://fi.wikipedia.org/wiki/Monopoli_(peli) on varmasti kaikkien tuntema lautapeli.
+[Monopoli](http://fi.wikipedia.org/wiki/Monopoli_(peli)) on varmasti kaikkien tuntema lautapeli.
 
 Tehdään luokkakaavio, joka kuvaa pelissä olevia asioita ja niiden suhteita.
 
@@ -176,7 +198,7 @@ Tässä tehtävän osassa tehdään alustava luokkakaavio, joka ei kuvaa peliä 
 
 Monopolia pelataan käyttäen kahta noppaa. Pelaajia on vähintään 2 ja enintään 8. Peliä pelataan pelilaudalla joita on yksi. Pelilauta sisältää 40 ruutua. Kukin ruutu tietää, mikä on sitä seuraava ruutu pelilaudalla. Kullakin pelaajalla on yksi pelinappula. Pelinappula sijaitsee aina yhdessä ruudussa.
 
-**Lisää tämän viikon tehtäviä varten repositoriosi _laskarit_ hakemistoon hakemisto _viikko3_ ja lisää toteuttamasi kaavio sinne.**
+**Lisää tämän viikon tehtäviä varten repositoriosi _laskarit_ hakemistoon hakemisto _viikko3_ ja lisää toteuttamasi kaavio sinne.** Jos hyödynnät Mermaid-syntaksia kaavion toteuttamisessa, voit sijoittaa kaavion markdown-tiedostoon.
 
 ### Tehtävä 2: Laajennettu Monopoli
 
@@ -334,7 +356,7 @@ Voit halutessasi lukea lisää sekvenssikaavioista kurssin vanhan version [mater
 
 #### Työkaluja sekvenssikaavioiden piirtämiseen
 
-Sekvenssikaavioiden piirtämiseen sopivat melko hyvin samat työkalut kuin luokkakaavioihinkin. Näiden lisäksi [WebSequenceDiagrams](https://www.websequencediagrams.com/) on eräs, juuri sekvenssikaavioiden piirtämiseen tarkoitettu työkalu.
+Myös sekvenssikaavioiden toteuttaminen onnistuu kätevästi [Mermaid](https://mermaid-js.github.io/mermaid/)-syntaksin avulla. Dokumentaation [Sekvenssikaavio](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)-osiosta löytyy tarkemmat ohjeet sekvenssikaavioiden toteuttamiseen. Mallia kaavioiden käyttämisessä markdown-tiedostossa voi ottaa referenssisovelluksen [arkkitehtuuri](https://raw.githubusercontent.com/ohjelmistotekniikka-hy/python-todo-app/master/dokumentaatio/arkkitehtuuri.md)-dokumentaatiosta. Vaihtoehtoisesti, sekvenssikaavioiden toteuttamiseen sopii myös esimerkiksi <https://www.websequencediagrams.com/>.
 
 ### Tehtävä 3: Sekvenssikaavio
 
@@ -382,7 +404,7 @@ class Engine:
         self._fuel_tank.consume(10)
 ```
 
-**Lisää toteuttamasi kaavio repositoriosi _laskarit/viikko3_-hakemistoon.**
+**Lisää toteuttamasi kaavio repositoriosi _laskarit/viikko3_-hakemistoon.** Jos hyödynnät Mermaid-syntaksia kaavion toteuttamisessa, voit sijoittaa kaavion markdown-tiedostoon.
 
 ### Tehtävä 4: Laajempi sekvenssikaavio
 
@@ -482,7 +504,7 @@ if __name__ == "__main__":
     main()
 ```
 
-**Lisää toteuttamasi kaavio repositoriosi _laskarit/viikko3_-hakemistoon.**
+**Lisää toteuttamasi kaavio repositoriosi _laskarit/viikko3_-hakemistoon.** Jos hyödynnät Mermaid-syntaksia kaavion toteuttamisessa, voit sijoittaa kaavion markdown-tiedostoon.
 
 ## Tehtävien suorittaminen ja Invoke
 
