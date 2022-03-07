@@ -136,6 +136,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
   - Vihjeitä [täällä](/python/toteutus) ja [referenssisovelluksessa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md)
 - Ohjelman [rakenne](/python/koodin-laatuvaatimukset#rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
 - Pylint on otettu käyttöön
+  - Käytössä on [tämä]({{site.repo_url}}/tree/master/materiaali/python/.pylintrc) _.pylintrc_-tiedosto
   - Täydet pisteet saa, jos pylint-virheitä on alle 10
   - Käyttöliittymään tai testeihin liittyvän koodin voi jättää pylint-tarkistuksien ulkopuolelle
   - `pylint: disable`-kommenttien käyttö on kiellettyä ilman erittäin perusteltua syytä
