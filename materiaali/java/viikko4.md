@@ -41,6 +41,7 @@ Seuraavien kohtien puutteet vähentävät pisteitä
 - Tuntikirjanpito on ajantasalla
   - Tuntien summan tulee olla merkittynä
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
+- Viikolle on tehty changelog-merkintä _changelog.md_-tiedostoon
 - Repositorion README.md kunnossa
   - tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) README.md
   - kaikki ylimääräinen, mm. linkit laskareihin on poistettu

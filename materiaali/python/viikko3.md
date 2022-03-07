@@ -700,12 +700,28 @@ Toteuta projektille seuraavat Invoke-tehtävät:
 
 Mallia Invoke-tehtävien toteutukseen voi ottaa tarvittaessa [referenssisovelluksesta]({{site.python_reference_app_url}}). Voit halutessasi lisätä myös muita tehtäviä, joita koet projektisi kannalta hyödylliseksi.
 
-### Harjoitustyö 6: Muuta
+### Harjoitustyö 6: Changelog
+
+[Changelogin](https://en.wikipedia.org/wiki/Changelog) ylläpitäminen on yleinen tapa dokumentoida merkkittävät muutokset, joita ohjelmistoprojektissa tapahtuu sen kehityksen edetessä. Lisää projektin _dokumentaatio_-hakemistoon tiedosto _changelog.md_ ja dokumentoi siihen **jokaisen viikon aikana** tapahtuneet merkittävät muutokset. Merkittäviä muutoksia ovat esimerkiksi uudet käyttäjälle näkyvät toiminallisuudet, suuremmat arkkitehtuuriiset muutokset (esimerkiksi uudet luokat ja niiden vastuualueet) ja uudet testauksen kohteet. Esimerkiksi [referenssisovelluksessa]({{site.python_reference_app_url}}) tämän viikon changelog-merkintä on seuraava:
+
+````markdown
+## Viikko 3
+
+- Käyttäjä näkee listan kaikista tehtävistä
+- Lisätty TodoRepository-luokka, joka vastaa tehtävien tallennuksesta CSV-tiedostoon
+- Lisätty TodoService-luokka, joka vastaa sovelluslogiikan koodista
+- Testattu, että TodoRepository-luokka palauttaa kaikki tehtävät
+````
+
+Lisää linkki _README.md_-tiedostosta linkki lisäämääsi _changelog.md_-tiedostoon.
+
+### Harjoitustyö 7: Muuta
 
 Varmista vielä, että seuraavat asiat ovat kunnossa:
 
 - Tuntikirjanpito on ajantasalla
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
+- Viikolle on tehty changelog-merkintä _changelog.md_-tiedostoon
 - Repositorion _README.md_-tiedosto kunnossa
   - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen]({{site.python_reference_app_url}}) _README.md_-tiedosto
   - Kaikki ylimääräinen, mm. linkit laskareihin on poistettu

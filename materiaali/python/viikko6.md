@@ -204,11 +204,12 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
   - Rakenne on järkevä (esim. kaikki koodi on samassa hakemistossa)
   - Sovelluslogiikkaa on eriytetty riittävästi käyttöliittymästä
   - Pylint on käytössä
-    - Pylintin koodille antama arvosana on vähintään 8.00/10
+    - Pylint-virheitä on alle 5
     - Käyttöliittymään tai testeihin liittyvän koodin voi jättää pylint-tarkistuksien ulkopuolelle
 - Tuntikirjanpito on ajantasalla
   - **Tuntien summan tulee olla merkittynä**
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
+- Viikolle on tehty changelog-merkintä _changelog.md_-tiedostoon
 - Repositorion _README.md_-tiedosto on kunnossa
   - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen]({{site.python_reference_app_url}}) README.md, eli se sisältää ainakin seuraavat
     - Harjoitustyön aiheen lyhyt kuvaus

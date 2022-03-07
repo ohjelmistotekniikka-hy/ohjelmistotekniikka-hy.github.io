@@ -136,7 +136,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
   - Vihjeitä [täällä](/python/toteutus) ja [referenssisovelluksessa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md)
 - Ohjelman [rakenne](/python/koodin-laatuvaatimukset#rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
 - Pylint on otettu käyttöön
-  - Täydet pisteet saa, jos pylintin antama arvosana koodille on vähintään 7.00/10
+  - Täydet pisteet saa, jos pylint-virheitä on alle 10
   - Käyttöliittymään tai testeihin liittyvän koodin voi jättää pylint-tarkistuksien ulkopuolelle
   - `pylint: disable`-kommenttien käyttö on kiellettyä ilman erittäin perusteltua syytä
 - Pylint-tarkistuksien suorittamista varten on toteutettu Invoke-tehtävä, jonka voi suorittaa komennolla `poetry run invoke lint`
@@ -158,6 +158,7 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
 - Tuntikirjanpito on ajantasalla
   - Tuntien summan tulee olla merkittynä
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
+- Viikolle on tehty changelog-merkintä _changelog.md_-tiedostoon
 - Repositorion _README.md_-tiedosto kunnossa
   - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen]({{site.python_reference_app_url}}) README.md
   - Kaikki ylimääräinen, mm. linkit laskareihin on poistettu

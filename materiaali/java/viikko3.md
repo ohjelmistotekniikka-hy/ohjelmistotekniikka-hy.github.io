@@ -270,6 +270,23 @@ public class Main {
 
 ## Harjoitustyö
 
+### Changelog
+
+[Changelogin](https://en.wikipedia.org/wiki/Changelog) ylläpitäminen on yleinen tapa dokumentoida merkkittävät muutokset, joita ohjelmistoprojektissa tapahtuu sen kehityksen edetessä. Lisää projektin _dokumentaatio_-hakemistoon tiedosto _changelog.md_ ja dokumentoi siihen **jokaisen viikon aikana** tapahtuneet merkittävät muutokset. Merkittäviä muutoksia ovat esimerkiksi uudet käyttäjälle näkyvät toiminallisuudet, suuremmat arkkitehtuuriiset muutokset (esimerkiksi uudet luokat ja niiden vastuualueet) ja uudet testauksen kohteet. Esimerkiksi [referenssisovelluksessa]({{site.python_reference_app_url}}) tämän viikon changelog-merkintä on seuraava:
+
+````markdown
+## Viikko 3
+
+- Käyttäjä näkee listan kaikista tehtävistä
+- Lisätty TodoRepository-luokka, joka vastaa tehtävien tallennuksesta CSV-tiedostoon
+- Lisätty TodoService-luokka, joka vastaa sovelluslogiikan koodista
+- Testattu, että TodoRepository-luokka palauttaa kaikki tehtävät
+````
+
+Lisää linkki _README.md_-tiedostosta linkki lisäämääsi _changelog.md_-tiedostoon.
+
+### Arvosteluperusteet
+
 Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 - Repositorion juuresta löytyy Maven-projekti
@@ -285,6 +302,7 @@ Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `mvn test jacoco:report`
 - Tuntikirjanpito on ajantasalla
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
+- Viikolle on tehty changelog-merkintä _changelog.md_-tiedostoon
 - Repositorion README.md kunnossa
   - tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) README.md
   - kaikki ylimääräinen, mm linkit laskareihin on poistettu

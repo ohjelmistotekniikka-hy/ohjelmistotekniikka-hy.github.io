@@ -51,7 +51,7 @@ Pisteet (yht 24) jakautuvat seuraavasti
 - Koodin laatu 4+1p
   - Kooste [laatuvaatimuksista](/java/koodin-laatuvaatimukset)
   - 4p hyvät abstraktiot (esim. Design patternien kuten DAO hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava, ei ilmeistä copypastea
-  - +1p checkstylesäännöt kunnossa (muutama checkstyletyylin rikkomus saatetaan katsoa läpi sormien, jos tyylirikon poisto esim. huonontaisi muuten koodin laatua)
+  - +1p Checkstyle-virheitä on alle 5
 - virheiden käsittely 2p
   - 2p Sovellus toimii konsistentisti, ei kaadu virheellisillä syötteillä, ei heitä poikkeuksia ja antaa järkevät virheilmoitukset
 - **Älä jätä sovellukseesi poiskommentoitua koodia**, tai koodia jota sovellus ei käytä (esim. refaktoroinnin myötä turhaksi muuttuneet metodit/luokat)

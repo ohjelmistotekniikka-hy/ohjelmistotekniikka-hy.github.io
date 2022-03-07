@@ -81,7 +81,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 - Sovelluslogiikka on riittävissä määrin eriytetty käyttöliittymästä
   - Vihjeitä [täällä](/python/toteutus) ja [referenssisovelluksessa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md)
 - Ohjelman [rakenne](/python/koodin-laatuvaatimukset#rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
-- Pylintin antama arvosana koodille on vähintään 8.00/10
+- Pylint-virheitä on alle 5
 
 ### Harjoitustyö 6: Dokumentaatio
 
@@ -101,6 +101,7 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
 - Tuntikirjanpito on ajantasalla
   - **Tuntien summan tulee olla merkittynä**
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
+- Viikolle on tehty changelog-merkintä _changelog.md_-tiedostoon
 - Palautusrepositorioosi voi tehdä GitHub-issueita, katso [ohje](#issueiden-salliminen-githubissa)
 - Repositorion _README.md_-tiedosto on kunnossa
   - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen]({{site.python_reference_app_url}}) README.md, eli siellä on ainakin seuraavat

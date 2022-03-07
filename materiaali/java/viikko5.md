@@ -46,6 +46,7 @@ Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 - Tuntikirjanpito on ajantasalla
   - **Tuntien summan tulee olla merkittynä**
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
+- Viikolle on tehty changelog-merkintä _changelog.md_-tiedostoon
 - Palautusrepositorioosi voi tehdä GitHub-issuieta, katso [ohje](/java/viikko5#issueiden-salliminen)
 - Repositorion README.md kunnossa
   - tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) README.md, eli siellä on ainakin seuraavat
