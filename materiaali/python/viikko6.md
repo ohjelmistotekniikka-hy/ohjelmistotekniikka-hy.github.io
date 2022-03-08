@@ -196,7 +196,11 @@ Laadi alustava käyttöohje (0.25p):
 - Alustavan käyttöohjeen sopiva pituus on noin sivu
 - Mallina voi jälleen toimia [referenssisovellus]({{site.python_reference_app_url}}/blob/master/dokumentaatio/kayttoohje.md)
 
-### Harjoitustyö 5: Pistevähennykset
+### Harjoitustyö 6: Changelog
+
+{% include changelog_info.md %}
+
+### Harjoitustyö 7: Pistevähennykset
 
 Seuraavien kohtien puutteet **vähentävät** pisteitä:
 

@@ -14,6 +14,12 @@ Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä. Koodikatsel
 
 Kannattaa pitää mielessä, että kurssin loppu alkaa lähestyä ja täten myös loppupalautuksen deadline. Nyt kannattaa kerrata loppupalautuksen [arvosteluperusteet](/java/arvosteluperusteet). Viimeiselläkin viikolla ohjelmaa ehtii vielä kasvattaa, mutta myös dokumentoinnille kannattaa jättää aikaa.
 
+### Changelog
+
+{% include changelog_info.md %}
+
+### Arvosteluperusteet
+
 Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 - Ohjelma on kasvanut edellisestä viikosta (0.75p)

@@ -152,7 +152,11 @@ Laadi ohjelman alustava rakenne luokka, tai pakkauskaaviona (0.75p):
 - Lisää repositorion _dokumentaatio_-hakemistoon tiedosto _arkkitehtuuri.md_ ja upota kuva tiedostoon. Tiedoston sisältö voi olla muilta osin tyhjä
 - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion _README.md_-tiedostosta [referenssisovelluksen]({{site.python_reference_app_url}}) tavoin
 
-### Harjoitustyö 5: Pistevähennykset
+### Harjoitustyö 5: Changelog
+
+{% include changelog_info.md %}
+
+### Harjoitustyö 6: Pistevähennykset
 
 Seuraavien kohtien puutteet **vähentävät** pisteitä:
 

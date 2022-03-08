@@ -10,6 +10,12 @@ Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.
 
 ## Harjoitustyö
 
+### Changelog
+
+{% include changelog_info.md %}
+
+### Arvosteluperusteet
+
 Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 - Ohjelmasta pystyy tekemään suorituskelpoisen [jar](/java/maven#jarin-generointi)-tiedoston komennolla _mvn package_ (0.5p)

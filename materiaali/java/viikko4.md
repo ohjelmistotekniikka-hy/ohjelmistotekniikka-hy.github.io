@@ -10,6 +10,12 @@ Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.
 
 ## Harjoitustyö
 
+### Changelog
+
+{% include changelog_info.md %}
+
+### Arvosteluperusteet
+
 Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 - Ohjelma on kasvanut edellisestä viikosta (0.75p)

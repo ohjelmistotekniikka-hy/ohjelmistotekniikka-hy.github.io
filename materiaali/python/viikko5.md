@@ -91,7 +91,11 @@ Lisää dokumentaatioon ainakin yksi jotain oleellista toiminnallisuutta kuvaava
 - Lisää kaavio [edellisellä viikolla](/python/viikko4) tehtyyn dokumenttiin _arkkitehtuuri.md_
 - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen]({{site.python_reference_app_url}}) tavoin
 
-### Harjoitustyö 7: Pistevähennykset
+### Harjoitustyö 7: Changelog
+
+{% include changelog_info.md %}
+
+### Harjoitustyö 8: Pistevähennykset
 
 Seuraavien kohtien puutteet **vähentävät** pisteitä:
 
