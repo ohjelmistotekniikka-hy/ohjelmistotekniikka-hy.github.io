@@ -19,9 +19,6 @@ wk6dl: "tiistai 3.5. klo 23:59"
 finaldl: "sunnuntai 15.5. klo 23:59"
 code_review_start_date: "keskiviikko 27.4. klo 23:59"
 
-# aloitusluento muodossa viikonpäivä dd.mm kellonaika
-# HUOM Kirjoita viikonpäivä isolla, sillä se tulee lauseen alkuun
-
 # ohjausajat
 # - Maanantaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/68570587158?pwd=TFhwUXBucExZeVNJZnRydE8yWkNFdz09)
 # - Tiistaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/65324719978) (alkaen 23.3.)
@@ -31,10 +28,7 @@ times:
   - time: "Keskiviikkoisin klo 14-16 kampuksella BK107-luokassa"
   - time: "Torstaisin klo 14-16 [zoom](https://helsinki.zoom.us/j/69885432045?pwd=TEZtNkRSN09iaXZhcE5tVFNmL0o2UT09)"
 
-lecture: "tiistai 15.3. klo 12–14"
-
-# Linkki zoomiin tai youtubeen
-lecture_link: "[tallenne](https://youtu.be/i2dwe6RnfUI)"
+lecture_time: "tiistaina 15.3. klo 12–14"
 
 # seuraava kurssikerta muodossa syksyllä/keväällä [vuosi]. 
 # esimerkki syksyllä 2021

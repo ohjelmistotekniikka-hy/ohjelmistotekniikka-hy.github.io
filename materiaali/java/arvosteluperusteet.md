@@ -51,7 +51,7 @@ Pisteet (yht 24) jakautuvat seuraavasti
 - Koodin laatu 4+1p
   - Kooste [laatuvaatimuksista](/java/koodin-laatuvaatimukset)
   - 4p hyvät abstraktiot (esim. Design patternien kuten DAO hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava, ei ilmeistä copypastea
-  - +1p Checkstyle-virheitä on alle 5
+  - +1p Checkstyle-virheitä on enintään kolme
 - virheiden käsittely 2p
   - 2p Sovellus toimii konsistentisti, ei kaadu virheellisillä syötteillä, ei heitä poikkeuksia ja antaa järkevät virheilmoitukset
 - **Älä jätä sovellukseesi poiskommentoitua koodia**, tai koodia jota sovellus ei käytä (esim. refaktoroinnin myötä turhaksi muuttuneet metodit/luokat)
@@ -63,7 +63,6 @@ Pisteet (yht 24) jakautuvat seuraavasti
 - Kurssin [referenssisovellus](https://github.com/mluukkai/OtmTodoApp) olisi laajuudeltaan juuri ja juuri 2 pisteen arvoinen, sovelluslogiikaltaan se on aika suoraviivainen ja ansaitsisi vain yhden pisteen kompleksisuudesta
 - Laajuutta ei voida määritellä tarkasti esim. luokkien tai metodien määrällä, laajuus on aina suhteellinen sovelluksen tyyppiin ja kompleksisuuteenkin
 - Eräs tapa laajentaa sovellusta ja lisätä sen kompleksisuutta on tehdä siitä _parametrein konfiguroitava ja laajennettava_, esim:
-
   - Sovelluksen käyttämän tietokantatiedoston nimi ei ole kirjoitettu koodiin vaan on käyttäjän määriteltävissä
   - Pelissä eri vaikueustasojen pelimaailmat eivät ole määritelty koodissa vaan luodaan erillisten tiedostojen perusteella
   - Pacmanissa hirviöiden määrä ei ole ohjelmakoodiin kovakoodattu vakio vaan valittavissa käyttöliittymästä

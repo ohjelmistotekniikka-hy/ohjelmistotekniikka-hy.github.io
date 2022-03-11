@@ -29,7 +29,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 Palautuksen deadline {{ site.wk1dl }}
 
-- Kurssin aloitustilaisuus {{ site.lecture }}, {{ site.lecture_link }}
+- Kurssin aloitustilaisuus pidetään {{site.lecture_time}}
 - [Tehtävät](/python/viikko1): Komentorivi- ja Git-harjoittelu (2p)
 - Tehtävien palautus tapahtuu tekemällä repositorio GitHubiin ja rekisteröitymällä Labtooliin
 
