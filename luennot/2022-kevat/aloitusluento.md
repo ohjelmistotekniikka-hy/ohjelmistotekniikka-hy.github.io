@@ -1,6 +1,6 @@
 % Ohjelmistotekniikka
-% Matti Luukkainen, Jussi Mäki-Kahra ja 7 ohjaajaa
-% 1.11.2021
+% Matti Luukkainen, Kalle Ilves ja 12 ohjaajaa
+% 15.3.2022
 
 # Ohjelmistotekniikka
 
@@ -45,7 +45,6 @@
 
 - Pajaa kampuksella (BK107)
   - ma 14-16
-  - ti 14-16
   - ke 14-16
 - Pajaa zoomissa
   - to 14-16
@@ -455,7 +454,6 @@ class Kassapaate:
 - Harjoitustyötä tehdään itsenäisesti, mutta tarjolla on pajaohjausta
 - Pajaa kampuksella
   - ma 14-16 (BK107)
-  - ti 14-16 (BK107)
   - ke 14-16 (BK107)
   - to 14-16 (zoom)
 
@@ -472,7 +470,7 @@ class Kassapaate:
 
 . . .
 
-- Samaa ohjelmaa ei voi jatkaa seuraavalla kurssilla (eli keväällä 2022), vaan työ on aloitettava uudella aiheella alusta
+- Samaa ohjelmaa ei voi jatkaa seuraavalla kurssilla (eli syksyllä 2022), vaan työ on aloitettava uudella aiheella alusta
 
 . . .
 
