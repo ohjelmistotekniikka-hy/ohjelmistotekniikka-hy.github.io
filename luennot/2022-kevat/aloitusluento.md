@@ -109,7 +109,7 @@
 . . .
 
 - Kurssin ennen vuotta 2018 pidetyissä versioissa käyttäjien vaatimukset dokumentointiin _käyttötapauksina_ (engl. use case)
-  - tapa on jo vanhahtava ja olemme jo hylänneet sen sen
+  - tapa on jo vanhahtava ja olemme jo hylänneet sen
 - Kurssilla _Ohjelmistotuotanto_ tutustumme nykyään yleisesti käytössä oleviin _käyttäjätarinoihin_ (engl. user story)
 
 . . .
@@ -134,7 +134,7 @@ Katsotaan esimerkkinä Todo-sovelluksen vaatimusmäärittelyä
 
 . . .
 
-- Mietitään mitä toiminnallisuuksia kunkin käyttäjärooli tarvisee
+- Mietitään mitä toiminnallisuuksia kukin käyttäjärooli tarvitsee
 
 # TodoApp:in vaatimusmäärittely
 
