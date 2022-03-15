@@ -67,7 +67,7 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 - Luo kotihakemistoosi hakemisto _kurssit_
   - **HUOM:** joidenkin kohdalla melkillä on ollut ongelmia kotihakemiston asetuksissa ja esim. hakemiston luomisen seurauksena on virhe 'permission denied'. Jos törmäät ongelmaan, lähetä viesti osoitteeseen _it-support@cs.helsinki.fi_ ja raportoi ongelmaksi "ei oikeuksia kotihakemistoon melkillä"
   - Kokeile myös jos kirjaantuminen toiselle koneelle, esim. _melkinpaasi.cs.helsinki.fi_ tuottaisi paremman tuloksen
-- Luo hakemistolle _kurssit_ alihakemisto _ot2021_
+- Luo hakemistolle _kurssit_ alihakemisto _ot2022_
 - Ja luomallesi hakemistolle alihakemisto _viikko1_
 - Mene kotihakemistoosi ja luo sen alle hakemisto _temp_
 - Mene hakemistoon _temp_
@@ -76,7 +76,7 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 - Haettu tiedosto on _zip-paketti_, pura se _unzip_-ohjelmalla
   - Myös unzip toimii siten, että sille annetaan purettava tiedosto parametriksi
 - Komennon suorittamisen jälkeen hakemistoon on ilmestynyt hakemisto _unicafe_
-- Siirrä hakemisto hakemiston _kurssit/ot2021/viikko1_ alihakemistoksi
+- Siirrä hakemisto hakemiston _kurssit/ot2022/viikko1_ alihakemistoksi
 - Poista zip-paketti
 - Poista hakemisto _temp_
 
@@ -340,7 +340,7 @@ Gitin committeja voi tarkastella myös graafisella _gitk_-komennolla.
 
 - `gitk`-komento toimii Windowsilla ainakin GitHub for Windowsin Git Shellissä.
 - Saat asennettua Maciin `gitk`:n [tämän ohjeen](https://www.geekbitzone.com/posts/git/gitk-for-macos/) avulla
-- Jos `gitk` ei jostain syystä toimi, voit asnetaa [Sourcetree](https://www.sourcetreeapp.com)-työkalun
+- Jos `gitk` ei jostain syystä toimi, voit asentaa [Sourcetree](https://www.sourcetreeapp.com)-työkalun
 
 Suorita komento repositoriossa:
 
@@ -352,7 +352,7 @@ Vastaava näkymä OSX:n [Sourcetree](https://www.sourcetreeapp.com)-ohjelmalla t
 
 ![]({{ "/assets/images/lh1-1a.png" | absolute_url }})
 
-Seuraavaa tehtävää tekiessäsi kannattaa terminaaliin avata uusi välilehti, jotta voit pitää gitk:ta käynnissä.
+Seuraavaa tehtävää tehdessäsi kannattaa terminaaliin avata uusi välilehti, jotta voit pitää gitk:ta käynnissä.
 
 - Kopioi tiedostoon _tiedosto.txt_ jostain paljon tekstiä ja commitoi tiedosto
 - Poista nyt osa tiedoston tekstistä ja lisää tiedostoon hieman lisää tekstiä
@@ -392,7 +392,7 @@ Seuraavaa tehtävää tekiessäsi kannattaa terminaaliin avata uusi välilehti, 
 Joskus tiedostoihin tulee tehtyä muutoksia, jotka on tarpeen perua
 
 - Tee nyt joku muutos tiedostoon _eka.txt_, **älä** lisää tiedostoa committoitavaksi
-- Tuorita komento `git status`
+- Suorita komento `git status`
 
 ```
 mluukkai@melkinpaasi:~/ot_viikko1$ git status
@@ -463,9 +463,9 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 
 ### Tehtävä 11: Harjoittelua
 
-- luo repositiosi sisälle hakemisto _tiedostoja_ ja hakemiston sisälle tiedostot _file1_, _file2_ ja _file3_
+- luo repositoriosi sisälle hakemisto _tiedostoja_ ja hakemiston sisälle tiedostot _file1_, _file2_ ja _file3_
 - commitoi muutokset
-  - muista miten pystyt lisäämään kokonaisen hakemiston sisällön committoitavaksi yhdellä komennolla
+  - muista miten pystyt lisäämään kokonaisen hakemiston sisällön commitoitavaksi yhdellä komennolla
 - muuta tiedoston _file1_ sisältöä ja poista tiedosto _file2_
 - peru muutokset!
 - muuta tiedoston _file3_ sisältöä, lisää commitoitavaksi
@@ -494,7 +494,7 @@ cd ot-harjoitustyo
 git init
 touch README.md
 git add .
-git commit -m"initial commit"
+git commit -m "initial commit"
 ```
 
 Siirrytään sitten GitHubin käyttöön
