@@ -563,7 +563,7 @@ Pushaus ei toimi. Nyt kyse on siitä, että git haluaisi suorittaa [julkisen ava
 - Mene GitHubin asetussivulle klikkaamalla oikean yläkulman symbolista ja valitsemalla _settings_
 - Valitse settingseistä _SSH and GPG keys_
 - Luo uusi _SSH-avain_
-  - Anna avaimelle joku _title_ (esim. laitos) ja kopioi tiedoston id*rsa.pub sisältö kohtaan \_key*
+  - Anna avaimelle joku _title_ (esim. laitos) ja kopioi tiedoston _id_rsa.pub_ sisältö kohtaan _\_key_
 - Suorita uudelleen `git push`:
 
 ```
