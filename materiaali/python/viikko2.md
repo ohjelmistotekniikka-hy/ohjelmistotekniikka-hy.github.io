@@ -469,7 +469,7 @@ class TestMaksukortti(unittest.TestCase):
         self.kortti.syo_maukkaasti()
         self.kortti.syo_maukkaasti()
         self.kortti.syo_edullisesti()
-        self.assertEqual("Kortilla on rahaa 2 euroa", str(self.kortti))
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 2 euroa")
 ```
 
 `setUp`-metodi suoritetaan **ennen jokaista testitapausta** (eli testimetodia). Jokainen testitapaus siis aloittaa tilanteesta, jossa on luotu kortti jonka saldo on 10.
