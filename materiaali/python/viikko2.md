@@ -47,7 +47,7 @@ Ennen kuin pääsemme tutustumaan Poetryn käyttöön tarkemmin, tulee se ensin 
 Asenna Poetry suorittamalla terminaalissa seuraava komento:
 
 ```bash
-curl -sSL https://install.python-poetry.org | python3 -
+curl -sSL https://install.python-poetry.org | POETRY_HOME=$HOME/.local python3 -
 ```
 
 **HUOM:** jos `python3`-komentoa ei löydy, käytä sen sijaan komennon lopussa `python`-komentoa. Varmista kuitenkin, että Python-versio on oikea edellisen ohjeen mukaisesti.
