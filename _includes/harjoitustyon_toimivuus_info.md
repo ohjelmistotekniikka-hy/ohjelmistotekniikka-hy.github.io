@@ -4,7 +4,7 @@
 
 Virtuaalityöasemassa oman sovelluksen testaaminen onnistuu esimerkiksi seuraavasti:
 
-1. Kirjaudu [virtuaalityöasemaan](https://vdi.helsinki.fi/portal/webclient/#/home) ja valitse Cubbli Linux
+1. Kirjaudu [virtuaalityöasemaan](https://vdi.helsinki.fi/portal/webclient/#/home) ja valitse Cubbli 20 Linux
 2. Käynnistä terminaali ja tarkista käytössäoleva Python-versio komennolla `python3 --version`. Jos versio on alle 3.8, päivitä versio [tämän](/python/toteutus#python-versioiden-hallinta) ohjeen avulla
 3. Varmista, että Poetry on asennettu suorittamalla komento `poetry --version`. Jos asennus puuttuu, seuraa [näitä](/python/viikko2#asennus) Linux-asennuksen ohjeita
 4. Kloonaa repositoriosi haluamaasi hakemistoon `git clone`-komennolla
