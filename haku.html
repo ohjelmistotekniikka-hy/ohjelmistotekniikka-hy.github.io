@@ -5,13 +5,13 @@ title: Haku
 inheader: true
 ---
 
-<form action="/haku/" method="GET" style="margin-bottom: 10px">
+<form action="/haku/" method="GET" style="margin-bottom: 15px">
   <input
     type="search"
     name="q"
     id="search-input"
     placeholder="Hae materiaalista"
-    style="padding: 5px;"
+    style="padding: 5px; width: 100%; max-width: 300px;"
   />
   <button
     type="submit"
@@ -22,7 +22,7 @@ inheader: true
   </button>
 </form>
 
-<ul id="search-results" style="list-style:none;"></ul>
+<ul id="search-results" style="list-style:none; margin: 0px; padding: 0px;"></ul>
 
 <script>
   window.pages = {
@@ -37,4 +37,4 @@ inheader: true
   };
 </script>
 <script src="https://unpkg.com/lunr/lunr.js"></script>
-<script src="/search.js"></script>
+<script src="/assets/js/search.js"></script>
