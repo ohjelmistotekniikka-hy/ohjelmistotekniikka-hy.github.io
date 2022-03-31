@@ -217,13 +217,25 @@ def main():
 
     pygame.display.set_caption("Sokoban")
 
-    level = Level(level_map, CELL_SIZE)
+    level = Level(LEVEL_MAP, CELL_SIZE)
 
     # alustetaan Pygamen moduulit
     pygame.init()
 
     # piirretään all_sprites ryhmän spritet ikkunaan
     level.all_sprites.draw(display)
+    
+    running = True
+    
+    # käynnistään pelisilmukka
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+        
+        pygame.display.update()
+
+    pygame.quit()
 
 if __name__ == "__main__":
     main()
