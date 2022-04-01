@@ -74,11 +74,12 @@ Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärre
 #### Repositorio
 
 - Repositorion README.md kunnossa
-- tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin referenssisovelluksen README.md
-- kaikki ylimääräinen, mm linkit laskareihin on poistettu
+- Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin referenssisovelluksen README.md
+- Kaikki ylimääräinen, mm linkit laskareihin on poistettu
 - Repositorio siisti, ei ylimääräistä tavaraa (mm. hakemistoa target/ tai tietokantatiedostoja)
-- laskarit jätetään hakemiston laskarit alle
-- järkevä .gitignore-tiedosto olemassa
+- Laskarit jätetään hakemiston laskarit alle
+- Järkevä .gitignore-tiedosto olemassa
+- Viikon changelog-merkintä on tehty
 
 Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä ja määrittelydokumenttiin täytyy merkata tehtyjen vaatimusmäärittelyjen kohdalle "tehty" merkintä, niin meidän on helpompi tarkistaa projektin eteneminen.
 
