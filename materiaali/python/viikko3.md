@@ -61,7 +61,7 @@ Luokkien tarkemmat detaljit selviävät koodia katsomalla tai docstring-dokument
 
 UML-kaavioissa olevat "viivat" kuvaavat luokkien olioiden välistä _pysyvää yhteyttä_. Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli _riippuvuus_.
 
-Eräs tällainen tilanne voisi olla Unicafe-ruokalan kassapäätteen toiminallisuudesta vastaava koodi. Koodissa on kaksi luokkaa `Maksukortti` ja `Kassapaate`, joiden välillä ei ole pysyvää yhteyttä.
+Eräs tällainen tilanne voisi olla Unicafe-ruokalan kassapäätteen toiminnallisuudesta vastaava koodi. Koodissa on kaksi luokkaa `Maksukortti` ja `Kassapaate`, joiden välillä ei ole pysyvää yhteyttä.
 
 Maksukortin koodi on seuraava:
 
