@@ -49,13 +49,11 @@ Jokaiseen todoon liittyy yksi käyttäjä, ja yksittäiseen käyttäjään liitt
 
 ![Luokkakaavio](/assets/images/python/materiaali-luokkakaavio-1.png)
 
-Luokkakaavioon on nyt merkitty molempien luokkien oliomuuttujat sekä metodit.
-
-Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli luokkakaavioihin riittää merkitä luokan nimi
+Luokkakaavioon on nyt merkitty molempien luokkien oliomuuttujat sekä metodit. Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli luokkakaavioihin riittää merkitä luokan nimi:
 
 <img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/l-4.png" width="350">
 
-Luokkien tarkemmat detaljit selviävät koodia katsomalla tai docstring-dokumentoinnista.
+Luokkien tarkemmat yksityiskohdat selviävät koodia katsomalla tai docstring-dokumentoinnista, johon tutustutaan viikolla 6.
 
 #### Riippuvuus
 

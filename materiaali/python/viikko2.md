@@ -258,34 +258,40 @@ Tutustutaan yksikkötestien tekemiseen [unittest](https://docs.python.org/3/libr
 Käytetään esimerkkinä luokkaa `Maksukortti`, joka sisältää metodeja arvon lataamiseen ja eri arvoisten aterioiden ostamiseen:
 
 ```python
-EDULLINEN = 2.5
-MAUKAS = 4
+# aterioiden hinnat ovat senteissä
+EDULLINEN = 250
+MAUKAS = 400
 
 
 class Maksukortti:
-    def __init__(self, arvo_alussa):
-        self.arvo = arvo_alussa
+    def __init__(self, saldo):
+        # saldo on senteissä
+        self.saldo = saldo
 
     def syo_edullisesti(self):
-        if self.arvo >= EDULLINEN:
-            self.arvo -= EDULLINEN
+        if self.saldo >= EDULLINEN:
+            self.saldo -= EDULLINEN
 
     def syo_maukkaasti(self):
-        if self.arvo >= MAUKAS:
-            self.arvo -= MAUKAS
+        if self.saldo >= MAUKAS:
+            self.saldo -= MAUKAS
 
-    def lataa_rahaa(self, rahamaara):
-        if rahamaara < 0:
+    def lataa_rahaa(self, maara):
+        if maara < 0:
             return
 
-        self.arvo += rahamaara
+        self.saldo += maara
 
-        if self.arvo > 150:
-            self.arvo = 150
+        if self.saldo > 15000:
+            self.saldo = 15000
 
     def __str__(self):
-        return f"Kortilla on rahaa {self.arvo} euroa"
+        saldo_euroissa = round(self.saldo / 100, 2)
+
+        return "Kortilla on rahaa {:0.2f} euroa".format(saldo_euroissa)
 ```
+
+**HUOM:** Kaikki raha-arvot, kuten maksukortin saldo ja aterioiden hinnat ovat senteissä.
 
 ### Tehtävä 1: Alkutoimet
 
@@ -362,14 +368,14 @@ class TestMaksukortti(unittest.TestCase):
         print("Set up goes here")
 
     def test_konstruktori_asettaa_saldon_oikein(self):
-        kortti = Maksukortti(10)
-
+        # alustetaan maksukortti, jossa on 10 euroa (1000 senttiä)
+        kortti = Maksukortti(1000)
         vastaus = str(kortti)
 
-        self.assertEqual(vastaus, "Kortilla on rahaa 10 euroa")
+        self.assertEqual(vastaus, "Kortilla on rahaa 10.00 euroa")
 ```
 
-Ensimmäinen rivi luo kortin, jonka saldoksi tulee 10 euroa. Testin on tarkoitus varmistaa, että konstruktorin parametrina oleva luku menee kortin alkusaldoksi. Tämä varmistetaan selvittämällä kortin saldo. Kortin saldo selviää kortin `__str__`-metodin muodostamasta merkkijonoesityksestä. Testin toinen rivi muodostaa `kortti`-muuttujan merkkijonoesityksen ja ottaa sen talteen muuttujaan `vastaus`. Viimeinen rivi tarkastaa onko vastaus sama kuin odotettu tulos, eli "Kortilla on rahaa 10 euroa".
+Ensimmäinen rivi luo kortin, jonka saldoksi tulee 10 euroa. Testin on tarkoitus varmistaa, että konstruktorin parametrina oleva luku menee kortin alkusaldoksi. Tämä varmistetaan selvittämällä kortin saldo. Kortin saldo selviää kortin `__str__`-metodin muodostamasta merkkijonoesityksestä. Testin toinen rivi muodostaa `kortti`-muuttujan merkkijonoesityksen ja ottaa sen talteen muuttujaan `vastaus`. Viimeinen rivi tarkastaa onko vastaus sama kuin odotettu tulos, eli "Kortilla on rahaa 10.00 euroa".
 
 Tarkastus tapahtuu unittestissä paljon käytettyä `assert`- eli väittämäkomentoa käyttäen. Komento testaa onko sille ensimmäisenä parametrina annettu odotettu tulos sama kuin toisena parametrina oleva testissä saatu tulos. Erilaisia [assert](https://docs.python.org/3/library/unittest.html#assert-methods)-metodeja on monia.
 
@@ -379,102 +385,96 @@ Vaihtoehtoinen tapa määritellä sama testi olisi seuraava:
 
 ```python
 def test_konstruktori_asettaa_saldon_oikein(self):
-    kortti = Maksukortti(10)
-    self.assertEqual(str(kortti), "Kortilla on rahaa 10 euroa")
+    kortti = Maksukortti(1000)
+
+    self.assertEqual(str(kortti), "Kortilla on rahaa 10.00 euroa")
 ```
 
-eli metodikutsun palauttamaa arvoa ei oteta erikseen talteen muuttujaan vaan sitä kutsutaan suoraan assertEqual-vertailun sisällä. Käy niin, että ennen kuin varsinainen vertailu suoritetaan, tehdään funktiokutsu ja vertailtavaksi tulee sen palauttama arvo.
+Eli metodikutsun palauttamaa arvoa ei oteta erikseen talteen muuttujaan vaan sitä kutsutaan suoraan assertEqual-vertailun sisällä. Käy niin, että ennen kuin varsinainen vertailu suoritetaan, tehdään funktiokutsu ja vertailtavaksi tulee sen palauttama arvo.
 
-Kannattaa varmistaa, että testi todellakin löytää virheet, eli muutetaan edellistä testiä siten että se ei mene läpi (assertEqualissa väitetään että saldo olisi 9):
+Kannattaa varmistaa, että testi todellakin löytää virheet, eli muutetaan edellistä testiä siten että se ei mene läpi (assertEqual-metodissa väitetään että saldo olisi 9 euroa):
 
 ```python
 def test_konstruktori_asettaa_saldon_oikein(self):
-    kortti = Maksukortti(10)
-    self.assertEqual(str(kortti), "Kortilla on rahaa 9 euroa")
+    kortti = Maksukortti(1000)
+
+    self.assertEqual(str(kortti), "Kortilla on rahaa 9.00 euroa")
 ```
 
 Testien suorittaminen antaa ymmärtää, ettei testiä suoritettu onnistuneesti. Jokaisesta virheellisestä testistä löytyy yksityiskohtainen selitys ongelman syystä. Lisäksi lopussa listataan kompaktimmassa muodossa virheelliset tiedostot ja metodit:
 
 ```
-FAILED src/tests/maksukortti_test.py::TestMaksukortti::test_konstruktori_asettaa_saldon_oikein - AssertionError: 'Kortilla on rahaa 9 euroa' != 'Kortilla on rahaa 10 euroa'
+FAILED src/tests/maksukortti_test.py::TestMaksukortti::test_konstruktori_asettaa_saldon_oikein - AssertionError: 'Kortilla on rahaa 9.00 euroa' != 'Kortilla on rahaa 10.00 euroa'
 ```
 
 Tehdään seuraavaksi testi, joka varmistaa, että kortin saldo pienee kutsuttaessa metodia `syo_edullisesti`:
 
 ```python
 def test_syo_edullisesti_vahentaa_saldoa_oikein(self):
-    kortti = Maksukortti(10)
-
+    kortti = Maksukortti(1000)
     kortti.syo_edullisesti()
 
-    self.assertEqual(str(kortti), "Kortilla on rahaa 7.5 euroa")
+    self.assertEqual(str(kortti), "Kortilla on rahaa 7.50 euroa")
 ```
 
 Jälleen testi alkaa kortin luomisella. Seuraavaksi kutsutaan kortin testattavaa metodia ja viimeisenä on rivi joka varmistaa, että tulos on haluttu, eli että kortin saldo on pienentynyt edullisen lounaan hinnan verran.
 
 ### Muutama huomio
 
-- Molemmat testit ovat yksinkertaisia ja testaavat vain yhtä asiaa, tämä on suositeltava käytäntö vaikka on mahdollista laittaa yhteen testiin useitakin assert:eja
-- Testit on nimetty siten, että nimi kertoo selvästi sen mitä testi testaa. Lisäksi tulee aina muistaa käyttää metodin nimessä <i>test\_</i>-etuliitettä
-- Kaikki testit ovat toisistaan riippumattomia, esim. kortilla maksaminen ei vaikuta kortin saldoon kuin siinä testissä missä korttimaksu tapahtuu. Testien järjestyksellä testikoodissa ei ole merkitystä
-- Testit kannattaa ajaa mahdollisimman usein, eli aina kun teet testin (tai muutat normaalia koodia) aja testit!
+Molemmat testit ovat yksinkertaisia ja testaavat vain yhtä asiaa, tämä on suositeltava käytäntö vaikka on mahdollista laittaa yhteen testiin useitakin `assertEqual`-metodin kutssuja. Testit on nimetty siten, että nimi kertoo selvästi sen mitä testi testaa. Lisäksi tulee aina muistaa käyttää metodin nimessä <i>test\_</i>-etuliitettä. Kaikki testit ovat toisistaan riippumattomia, esim. kortilla maksaminen ei vaikuta kortin saldoon kuin siinä testissä missä korttimaksu tapahtuu. Testien järjestyksellä testikoodissa ei ole merkitystä. Testit kannattaa ajaa mahdollisimman usein, eli aina kun teet testin (tai muutat normaalia koodia) aja testit!
 
-Tehdään muutama testi lisää:
+Tehdään kaksi testiä lisää:
 
 ```python
 def test_syo_maukkaasti_vahentaa_saldoa_oikein(self):
-    kortti = Maksukortti(10)
-
+    kortti = Maksukortti(1000)
     kortti.syo_maukkaasti()
 
-    self.assertEqual(str(kortti), "Kortilla on rahaa 6 euroa")
+    self.assertEqual(str(kortti), "Kortilla on rahaa 6.00 euroa")
 
 def test_syo_edullisesti_ei_vie_saldoa_negatiiviseksi(self):
-    kortti = Maksukortti(10)
-
-    kortti.syo_maukkaasti()
-    kortti.syo_maukkaasti()
-    # nyt kortin saldo on 2
+    kortti = Maksukortti(200)
     kortti.syo_edullisesti()
 
-    self.assertEqual(str(kortti), "Kortilla on rahaa 2 euroa")
+    self.assertEqual(str(kortti), "Kortilla on rahaa 2.00 euroa")
 ```
 
 Ensimmäinen testeistä tarkastaa, että maukkaasti syöminen vähentää saldoa oikein. Toinen testi varmistaa, että edullista lounasta ei voi ostaa jos kortin saldo on liian pieni.
 
 ### Testin alustustoimet
 
-Huomaamme, että testikoodissamme on toistoa: neljä ensimmäistä testiä luovat kaikki samanlaisen 10 euron saldon omaavan kortin.
+Huomaamme, että testikoodissamme on toistoa: kolme ensimmäistä testiä luovat kaikki samanlaisen 10 euron saldon omaavan kortin.
 
 Siirrämmekin metodin luonnin testiluokassa määriteltyyn alustusmetodiin, `setUp`:
 
 ```python
 class TestMaksukortti(unittest.TestCase):
     def setUp(self):
-        self.kortti = Maksukortti(10)
+        self.kortti = Maksukortti(1000)
 
     def test_konstruktori_asettaa_saldon_oikein(self):
-        self.assertEqual(str(self.kortti), "Kortilla on rahaa 10 euroa")
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 10.00 euroa")
 
     def test_syo_edullisesti_vahentaa_saldoa_oikein(self):
         self.kortti.syo_edullisesti()
-        self.assertEqual(str(self.kortti), "Kortilla on rahaa 7.5 euroa")
+
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 7.50 euroa")
 
     def test_syo_maukkaasti_vahentaa_saldoa_oikein(self):
         self.kortti.syo_maukkaasti()
-        self.assertEqual(str(self.kortti), "Kortilla on rahaa 6 euroa")
 
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 6.00 euroa")
 
     def test_syo_edullisesti_ei_vie_saldoa_negatiiviseksi(self):
-        self.kortti.syo_maukkaasti()
-        self.kortti.syo_maukkaasti()
-        self.kortti.syo_edullisesti()
-        self.assertEqual(str(self.kortti), "Kortilla on rahaa 2 euroa")
+        kortti = Maksukortti(200)
+        kortti.syo_edullisesti()
+
+        self.assertEqual(str(kortti), "Kortilla on rahaa 2.00 euroa")
 ```
 
-`setUp`-metodi suoritetaan **ennen jokaista testitapausta** (eli testimetodia). Jokainen testitapaus siis aloittaa tilanteesta, jossa on luotu kortti jonka saldo on 10.
+`setUp`-metodi suoritetaan **ennen jokaista testitapausta** (eli testimetodia). Jokainen testitapaus saa siis käyttöönsä `Maksukortti`-olion, jonka saldo on 10 euroa. Huomaa, että testien kohteena oleva maksukortti talletetaan testiluokan oliomuuttujaan `self.kortti = Maksukortti(10)`-rivillä. Näin testimetodit pystyvät näkemään metodin `setUp` luoman maksukortin.
 
-Huomaa, että testien kohteena oleva maksukortti talletetaan testiluokan oliomuuttujaan `self.kortti = Maksukortti(10)`-rivillä. Näin on tehtävä, jotta testimetodit pystyvät näkemään metodin `setUp` luoman maksukortin.
+Testimetodit voivat myös alustaa eri käyttötarkoitukseen sopivia olioita, kuten on tehty testimetodissa `test_syo_edullisesti_ei_vie_saldoa_negatiiviseksi`. Huomaa, että tässä tapauksessa `self.kortti` viittaa `setUp`-metodissa alustettuun oliomuuttujaan, kun taas `kortti` metodin sisäiseen muuttujaaan.
 
 ### Lisää testejä
 
@@ -482,12 +482,14 @@ Tehdään vielä testi metodille `lataa_rahaa`. Ensimmäinen testi varmistaa, et
 
 ```python
 def test_kortille_voi_ladata_rahaa(self):
-    self.kortti.lataa_rahaa(25)
-    self.assertEqual(str(self.kortti), "Kortilla on rahaa 35 euroa")
+    self.kortti.lataa_rahaa(2500)
+
+    self.assertEqual(str(self.kortti), "Kortilla on rahaa 35.00 euroa")
 
 def test_kortin_saldo_ei_ylita_maksimiarvoa(self):
-    self.kortti.lataa_rahaa(200)
-    self.assertEqual(str(self.kortti), "Kortilla on rahaa 150 euroa")
+    self.kortti.lataa_rahaa(20000)
+
+    self.assertEqual(str(self.kortti), "Kortilla on rahaa 150.00 euroa")
 ```
 
 ### Tehtävä 3: Lisää testejä
@@ -496,8 +498,8 @@ Lisää lopuksi maksukortille seuraavat testit:
 
 - Maukkaan lounaan syöminen ei vie saldoa negatiiviseksi, ota tähän mallia testistä `test_syo_edullisesti_ei_vie_saldoa_negatiiviseksi`
 - Negatiivisen summan lataaminen ei muuta kortin saldoa
-- Kortilla pystyy ostamaan edullisen lounaan, kun kortilla rahaa vain edullisen lounaan verran (eli 2.5e)
-- Kortilla pystyy ostamaan maukkaan lounaan, kun kortilla rahaa vain maukkaan lounaan verran (eli 4e)
+- Kortilla pystyy ostamaan edullisen lounaan, kun kortilla rahaa vain edullisen lounaan verran (eli 2.5 euroa)
+- Kortilla pystyy ostamaan maukkaan lounaan, kun kortilla rahaa vain maukkaan lounaan verran (eli 4 euroa)
 
 **HUOM:** On suositeltavaa, että yksi testi testaa vain "yhtä asiaa" kerrallaan. Tee siis jokaisesta ylläolevasta oma testinsä.
 
@@ -505,7 +507,7 @@ Lisää lopuksi maksukortille seuraavat testit:
 ja toisena parametrina on odotettu tulos. Esimerkiksi:
 
 ```python
-self.assertEqual(str(kortti), "Kortilla on rahaa 2 euroa")
+self.assertEqual(str(kortti), "Kortilla on rahaa 2.00 euroa")
 ```
 
 ### Testit ovat toisistaan riippumattomia
@@ -514,7 +516,7 @@ Yllä jo mainittiin että testit ovat toisistaan riippumattomia eli molemmat tes
 
 Maksukorttia testataan usealla pienellä testimetodilla joista jokaisen nimi alkaa <i>test\_</i>-etuliitteellä. Jokainen erillinen testi testaa yhtä pientä asiaa, esim. että kortin saldo vähenee lounaan hinnan verran. On tarkoituksena, että jokainen testi aloittaa "puhtaalta pöydältä", eli ennen jokaista testiä luodaan alustuksen tekevässä `setUp`-metodissa uusi kortti.
 
-Jokainen testi siis alkaa tilanteesta jossa kortti on juuri luotu. Tämän jälkeen testi joko kutsuu suoraan testattavaa metodia tai ensin saa aikaan sopivan alkutilanteen ja tämän jälkeen kutsuu testattavaa metodia (näin tapahtui testimetodissa `test_syo_edullisesti_ei_vie_saldoa_negatiiviseksi`, maukkaasti syömisellä saldo väheni 2 euroon jonka jälkeen testattiin ettei edullisesti syöminen vie saldoa negatiiviseksi).
+Jokainen testi siis alkaa tilanteesta jossa kortti on juuri luotu. Tämän jälkeen testi joko kutsuu suoraan testattavaa metodia tai ensin saa aikaan sopivan alkutilanteen ja tämän jälkeen kutsuu testattavaa metodia. Näin tehtiin testimetodissa `test_syo_edullisesti_ei_vie_saldoa_negatiiviseksi`, jossa alustettiin erillinen maksukortti, jonka saldo ei riitä edullisen lounaan ostamiseen. Tämän avulla testattiin, ettei edullisen lounaan syöminen vie saldoa negatiiviseksi.
 
 ### Onko jo testattu tarpeeksi?
 
@@ -531,32 +533,36 @@ from maksukortti import Maksukortti
 
 class TestMaksukortti(unittest.TestCase):
     def setUp(self):
-        self.kortti = Maksukortti(10)
+        self.kortti = Maksukortti(1000)
 
     def test_konstruktori_asettaa_saldon_oikein(self):
-        self.assertEqual(str(self.kortti), "Kortilla on rahaa 10 euroa")
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 10.00 euroa")
 
     def test_syo_edullisesti_vahentaa_saldoa_oikein(self):
         self.kortti.syo_edullisesti()
-        self.assertEqual(str(self.kortti), "Kortilla on rahaa 7.5 euroa",)
+
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 7.50 euroa",)
 
     def test_syo_maukkaasti_vahentaa_saldoa_oikein(self):
         self.kortti.syo_maukkaasti()
-        self.assertEqual(str(self.kortti), "Kortilla on rahaa 6 euroa")
+
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 6.00 euroa")
 
     def test_syo_edullisesti_ei_vie_saldoa_negatiiviseksi(self):
-        self.kortti.syo_maukkaasti()
-        self.kortti.syo_maukkaasti()
-        self.kortti.syo_edullisesti()
-        self.assertEqual(str(self.kortti), "Kortilla on rahaa 2 euroa")
+        kortti = Maksukortti(200)
+        kortti.syo_edullisesti()
+
+        self.assertEqual(str(kortti), "Kortilla on rahaa 2.00 euroa")
 
     def test_kortille_voi_ladata_rahaa(self):
-        self.kortti.lataa_rahaa(25)
-        self.assertEqual(str(self.kortti), "Kortilla on rahaa 35 euroa")
+        self.kortti.lataa_rahaa(2500)
+
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 35.00 euroa")
 
     def test_kortin_saldo_ei_ylita_maksimiarvoa(self):
-        self.kortti.lataa_rahaa(200)
-        self.assertEqual(str(self.kortti), "Kortilla on rahaa 150 euroa")
+        self.kortti.lataa_rahaa(20000)
+
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 150.00 euroa")
 ```
 
 ### Tehtävä 4: Maksukortti ja kassapääte
@@ -575,8 +581,8 @@ class Maksukortti:
         # saldo on senteissä
         self.saldo = saldo
 
-    def lataa_rahaa(self, lisays):
-        self.saldo += lisays
+    def lataa_rahaa(self, maara):
+        self.saldo += maara
 
     def ota_rahaa(self, maara):
         if self.saldo < maara:
@@ -588,7 +594,7 @@ class Maksukortti:
     def __str__(self):
         saldo_euroissa = round(self.saldo / 100, 2)
 
-        return f"saldo: {saldo_euroissa}"
+        return "Kortilla on rahaa {:0.2f} euroa".format(saldo_euroissa)
 ```
 
 Kassapäätteelle on metodeja eri hintaisten aterioiden ostamiselle ja rahan lataamiselle kortille:
@@ -596,6 +602,7 @@ Kassapäätteelle on metodeja eri hintaisten aterioiden ostamiselle ja rahan lat
 ```python
 class Kassapaate:
     def __init__(self):
+        # kassan rahamäärä on senteissä
         self.kassassa_rahaa = 100000
         self.edulliset = 0
         self.maukkaat = 0
@@ -640,9 +647,7 @@ class Kassapaate:
             return
 ```
 
-**Hae nyt projektin koodi koneellesi**.
-
-Avaa terminaali, mene palautusrepositoriosi hakemistoon _laskarit/viikko2_ ja suorita seuraavat komennot:
+**Hae nyt projektin koodi koneellesi**. Avaa terminaali, mene palautusrepositoriosi hakemistoon _laskarit/viikko2_ ja suorita seuraavat komennot:
 
 ```bash
 wget https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/raw/master/materiaali/python/unicafe.zip
@@ -650,11 +655,9 @@ unzip unicafe.zip
 rm unicafe.zip
 ```
 
-**HUOM:** jos käytät Windowsia ja koneellasi ei ole käytössä komentoa _wget_ lataa tehtävän koodi klikkaamalla yo. linkkiä. Muista siirtää projekti repositorion alle oikeaan hakemistoon!
+**HUOM:** jos käytät Windowsia ja koneellasi ei ole käytössä komentoa _wget_ lataa tehtävän koodi klikkaamalla yllä olevaa linkkiä. Muista siirtää projekti repositorion alle oikeaan hakemistoon!
 
-Lisää ja commitoi hakemisto repositorioon.
-
-Varmista komennolla `git status`, että working directory on puhdas ja kaikki on commitoitu:
+Lisää ja commitoi hakemisto repositorioon. Varmista komennolla `git status`, että working directory on puhdas ja kaikki on commitoitu:
 
 ```bash
 On branch master
@@ -734,7 +737,7 @@ Tee valmiiseen, tiedostossa _src/tests/maksukortti_test.py_ sijaitsevaan, `TestM
 
 - Kortin saldo alussa oikein
 - Rahan lataaminen kasvattaa saldoa oikein
-- Rahan ottaminen toimii
+- Rahan ottaminen toimii:
   - Saldo vähenee oikein, jos rahaa on tarpeeksi
   - Saldo ei muutu, jos rahaa ei ole tarpeeksi
   - Metodi palauttaa _True_, jos rahat riittivät ja muuten _False_
