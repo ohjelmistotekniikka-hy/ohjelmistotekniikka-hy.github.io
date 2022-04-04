@@ -277,7 +277,7 @@ Sekvenssikaaviona kuvattuna tilanne näyttää seuraavalta:
 
 <img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/l-16.png" width="450">
 
-Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee alaspäin olion "elämänlanka". Kaaviossa aika etenee ylhäältä alas. Metodikutsut kuvataan nuolena, joka yhdistää kutsujan ja kutsutun olion elämänlangat. Paluuarvo merkitään katkoviivalla. Attribuuttin arvon lukeminen tai asettaminen voidaan kuvata kaaviossa metodikutsun tavoin. Tästä esimerkkinä kaavion `saldo`-attribuutin lukeminen.
+Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee alaspäin olion "elämänlanka". Kaaviossa aika etenee ylhäältä alas. Metodikutsut kuvataan nuolena, joka yhdistää kutsujan ja kutsutun olion elämänlangat. Paluuarvo merkitään katkoviivalla. Attribuutin arvon lukeminen tai asettaminen voidaan kuvata kaaviossa metodikutsun tavoin. Tästä esimerkkinä kaavion `saldo`-attribuutin lukeminen.
 
 Jos saldo ei riitä, etenee suoritus seuraavan sekvenssikaavion tapaan:
 
@@ -340,7 +340,7 @@ Sekvenssikaavio on seuraavassa:
 
 Kaavio alkaa tilanteesta, jossa `Henkilostorekisteri`-luokan olio on jo luotu, mutta henkilöolioita ei vielä ole olemassa.
 
-Toiminta alkaa siitä, kun pääohjelma eli main luo henkilön nimeltä `arto`. Seuraavaksi `main`-fuktiosta kutsutaan rekisterin metodia `lisaa`, jolle annetaan argumentiksi luotu henkilöolio. Vastaava toistuu kun `main` luo uuden henkilön ja lisää sen rekisteriin.
+Toiminta alkaa siitä, kun pääohjelma eli main luo henkilön nimeltä `arto`. Seuraavaksi `main`-funktiosta kutsutaan rekisterin metodia `lisaa`, jolle annetaan argumentiksi luotu henkilöolio. Vastaava toistuu kun `main` luo uuden henkilön ja lisää sen rekisteriin.
 
 Seuraavana toimenpiteenä main kasvattaa arton palkkaa kutsumalla rekisterin metodia `aseta_palkka`. Tämä saa aikaan sen, että `rekisteri` asettaa `arto`-olion `palkka`-attribuutille uuden arvon. Rekisterin viivaan on merkitty paksunnus, joka korostaa, että attribuutille on asetettu arvo. Huomaa, että olion attribuutin asettamista voidaan kuvata metodikutsun tavoin.
 
@@ -576,7 +576,7 @@ Suoritettaisiin komennolla `poetry run invoke lorem-ipsum`. Jos olet epävarma k
 
 ### Toisistaan riippuvaiset tehtävät
 
-[Coverage-ohjeissa](/python/viikko2#coverage-ja-testikattavuus) tutustuimme testikattavuuden keräämiseen ja raportin muodostamiseen sen perusteella. Jos haluamme muodostaa testikattavuusraportin, tulee testikattavuus olla ensin kerätty. Käyttötarkoitukseen soveltuvilla tehtävillä voisi olla määritelty seuraavasti:
+[Coverage-ohjeissa](/python/viikko2#coverage-ja-testikattavuus) tutustuimme testikattavuuden keräämiseen ja raportin muodostamiseen sen perusteella. Jos haluamme muodostaa testikattavuusraportin, tulee testikattavuus olla ensin kerätty. Käyttötarkoitukseen soveltuvilla tehtävillä voisi olla määrittelyt seuraavasti:
 
 ```python
 from invoke import task
@@ -656,9 +656,9 @@ README.md
 
 **HUOM:** _src_-hakemiston **alahakemistoissa** (ei siis itse _src_-hakemistossa) tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot, jotta mm. `import`-lauseet toimivat halutulla tavalla. Lisää aiheesta voi lukea Pythonin [dokumentaatiosta](https://docs.python.org/3/tutorial/modules.html) ja mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}).
 
-### Harjoitustyö 2: Toiminallisuuden toteutus
+### Harjoitustyö 2: Toiminnallisuuden toteutus
 
-Toteuta ainakin osa jostain edellisellä viikolla tekemäsi määrittelydokumentin toiminallisuudesta. Pelkät tyhjät luokat tai funktiot ilman toiminallisuutta eivät tuo pisteitä.
+Toteuta ainakin osa jostain edellisellä viikolla tekemäsi määrittelydokumentin toiminnallisuudesta. Pelkät tyhjät luokat tai funktiot ilman toiminnallisuutta eivät tuo pisteitä.
 
 Toteutukseen liittyviä ohjeita löydät [täältä](/python/toteutus).
 
@@ -700,7 +700,7 @@ Mallia Invoke-tehtävien toteutukseen voi ottaa tarvittaessa [referenssisovelluk
 
 ### Harjoitustyö 6: Changelog
 
-[Changelogin](https://en.wikipedia.org/wiki/Changelog) ylläpitäminen on yleinen tapa dokumentoida merkkittävät muutokset, joita ohjelmistoprojektissa tapahtuu sen kehityksen edetessä. Lisää projektin _dokumentaatio_-hakemistoon tiedosto _changelog.md_ ja dokumentoi siihen **jokaisen viikon aikana** tapahtuneet merkittävät muutokset. Merkittäviä muutoksia ovat esimerkiksi uudet käyttäjälle näkyvät toiminallisuudet, suuremmat arkkitehtuuriiset muutokset (esimerkiksi uudet luokat ja niiden vastuualueet) ja uudet testauksen kohteet. Esimerkiksi [referenssisovelluksessa]({{site.python_reference_app_url}}) tämän viikon changelog-merkintä on seuraava:
+[Changelogin](https://en.wikipedia.org/wiki/Changelog) ylläpitäminen on yleinen tapa dokumentoida merkittävät muutokset, joita ohjelmistoprojektissa tapahtuu sen kehityksen edetessä. Lisää projektin _dokumentaatio_-hakemistoon tiedosto _changelog.md_ ja dokumentoi siihen **jokaisen viikon aikana** tapahtuneet merkittävät muutokset. Merkittäviä muutoksia ovat esimerkiksi uudet käyttäjälle näkyvät toiminnallisuudet, suuremmat arkkitehtuuriset muutokset (esimerkiksi uudet luokat ja niiden vastuualueet) ja uudet testauksen kohteet. Esimerkiksi [referenssisovelluksessa]({{site.python_reference_app_url}}) tämän viikon changelog-merkintä on seuraava:
 
 ````markdown
 ## Viikko 3
@@ -711,7 +711,7 @@ Mallia Invoke-tehtävien toteutukseen voi ottaa tarvittaessa [referenssisovelluk
 - Testattu, että TodoRepository-luokka palauttaa kaikki tehtävät
 ````
 
-Lisää linkki _README.md_-tiedostosta linkki lisäämääsi _changelog.md_-tiedostoon.
+Lisää _README.md_-tiedostoon linkki, joka vie lisäämääsi _changelog.md_-tiedostoon.
 
 ### Harjoitustyö 7: Muuta
 
