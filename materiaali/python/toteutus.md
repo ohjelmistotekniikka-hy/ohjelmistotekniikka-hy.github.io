@@ -255,7 +255,7 @@ class TestNumerotiedustelu(unittest.TestCase):
         io = StubIO(syotteet)
 
         palvelu = NumeroJaOsoitePalvelu()
-        numerotiedustelu = Numerotiedustelu(lue, tulosta, palvelu)
+        numerotiedustelu = Numerotiedustelu(io, palvelu)
         numerotiedustelu.kaynnista()
 
         # varmista assert-lauseella että io.tulosteet on halutun kaltainen
