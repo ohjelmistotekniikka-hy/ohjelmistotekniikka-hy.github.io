@@ -87,23 +87,23 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
 
 #### Projekti
 
-- Käli ja logiikka eroteltu (0.25p)
+- Käyttöliittymän ja sovelluslogiikan koodi on eroteltu toisistaan (0.25p)
 - Pakkausrakenne kunnossa (0.25p)
-  - heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
+  - Heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
 - Ohjelman kasvaminen (0.75p)
   **!! ALLA OLEVISTA MERKATAAN NOLLA TAI USEAMPI !!**
- - Ohjelma kasvanut selvästi (0.25p)
-  - 2 tai useampi määrittelydokumentin käyttäjälle näkyvää toiminnallisuutta toteutettu TAI yksi toiminnallisuus toteutettu ja tunneista tai koodin määrästä päätellen koodia on tehty ahkerasti
- - Ohjelma kasvanut jonkin verran (0.25p)
-  - vähintään 1 määrittelydokumentin käyttäjälle näkyvä toiminto toteutettu
+  - Ohjelma kasvanut selvästi (0.25p)
+    - Kaksi tai useampi määrittelydokumentin käyttäjälle näkyvää toiminnallisuutta toteutettu _TAI_ yksi toiminnallisuus toteutettu ja tunneista tai koodin määrästä päätellen koodia on tehty ahkerasti
+  - Ohjelma kasvanut jonkin verran (0.25p)
+    - Vähintään yksi määrittelydokumentin käyttäjälle näkyvä toiminto toteutettu
   - Ohjelmassa vain hieman jotain uutta toiminnallisuutta (0.25p)
-  - koodi kasvanut vähän viimeviikkoisesta
+    - Koodi kasvanut vähän viimeviikkoisesta
 - Testauksen edistyminen (0.5p)
   **!! ALLA OLEVISTA MERKATAAN NOLLA, YKSI TAI KAKSI. EI SIIS VAIN JOMPAA KUMPAA !!**
   - Rivikattavuus vähintään 20% (0.25p)
-   - jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioi se pois prosenteista ja huomauttakaa että opiskelija poistaa sen rivikattavuudesta
+    - Jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioi se pois prosenteista ja huomauttakaa että opiskelija poistaa sen rivikattavuudesta
   - Rivikattavuus vähintään 10% (0.25p)
-   - jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioikaa se pois prosenteista ja huomauttakaa että opiskelija poistaa sen rivikattavuudestamd
+    - Jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioikaa se pois prosenteista ja huomauttakaa että opiskelija poistaa sen rivikattavuudestamd
 
 #### Projekti/Java
 
@@ -115,34 +115,33 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
 #### Projekti/Python
 
 - Pylint configuroitu (0.25p)
-  - toimii komennolla `poetry run invoke lint`
-
+  - Toimii komennolla `poetry run invoke lint`
 - Pylintin arvosana vähintään 7.0/10 (0.25p)
-  - käyttöliittymän rakentavaa koodia ei tarvitse lintata
+  - Käyttöliittymän rakentavaa koodia ei tarvitse lintata
   - Tarkistakaa että `src`-hakemiston alahakemistoihin on lisätty [ohjeen](https://ohjelmistotekniikka-hy.github.io/python/coverage) mukaisesti tyhjät \__init__.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty,  ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä. Jos jo viime viikolla kehotitte viikkopalautteessa lisäämään nämä tiedostot voi rokottaa pisteistä vaikka 0.15 syystä ettei ole lisätty ohjeen mukaisesti näitä.
 - Jos tyhjiä \__init__.py tiedostoja ei ole alihakemistoista, ottakaa huomioon että coverage laskee testien rivikattavuuden väärin. Arvioikaa rivikattavuus silmämääräisesti, tai jos testikattavuus ei ole ilmiselvästi yli 20%, lisätkää itse tyhjät tiedostot ennen testiraportin luomista.
 
 #### Dokumentaatio
 
 - Luokkakaavio varsin hyvä (0.25p)
-  - tai pakkauskaavio
-  - vastaa vähintään projektin nykyistä rakennetta tai tulevaisuutta
+  - Tai pakkauskaavio
+  - Vastaa vähintään projektin nykyistä rakennetta tai tulevaisuutta
 - Luokkakaavio oikeassa paikassa (0.25p)
-  - upotettu arkkitehtuuri.md-tiedostoon joka löytyy dokumentaatiokansiosta
+  - Upotettu arkkitehtuuri.md-tiedostoon joka löytyy dokumentaatiokansiosta
 - Luokkakaavio olemassa (0.25p)
-  - tai pakkauskaavio
+  - Tai pakkauskaavio
 - Tuntikirjanpito kunnossa (0p)
-  - ajantasalla
-  - summa merkitty <- ei tartte rokottaa jos muuten kunnossa. mainitkaa että lisää summan seuraavan kertaan
-  -ei laskareihin käytettyä aikaa
+  - Ajantasalla
+  - Summa merkitty <- ei tartte rokottaa jos muuten kunnossa. mainitkaa että lisää summan seuraavan kertaan
+  - Ei laskareihin käytettyä aikaa
 
 #### Repositorio
 
 - Repositorio kunnossa (0.25p)
-  - mahdollisesti aikaisemmin huomautetut turhat tiedostot poistettu
-  - siisti, ei ylimääräistä tavaraa (mm. hakemistoa target(Java)/\__pychache__(Python) tai tietokantatiedostoja)
+  - Mahdollisesti aikaisemmin huomautetut turhat tiedostot poistettu
+  - Siisti, ei ylimääräistä tavaraa (mm. hakemistoa target(Java)/\__pychache__(Python) tai tietokantatiedostoja)
   - README:ssa tällä hetkellä relevantit linkit ja komennot
-  - esim tältä viikolta linkki arkkitehtuuriin ja checkstyle/pylint komennot lisätty
+  - Esim. tältä viikolta linkki arkkitehtuuriin ja checkstyle/pylint komennot lisätty
 
 Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistuksia [Java viikko 4](https://ohjelmistotekniikka-hy.github.io/java/viikko4) ja [Python viikko 4](https://ohjelmistotekniikka-hy.github.io/python/viikko4)
 
@@ -168,7 +167,7 @@ Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistuksia [
 
 #### Python
 
-- ohjelma toimii komennolla `poetry run invoke start` (0.5p)
+- Ohjelma toimii komennolla `poetry run invoke start` (0.5p)
 - Pylint arvosana vähintään 8.00/10 (0.25p)
 
 Huomatkaa että checklistissä ohjelma kasvanut osiosta (max. 0.75 pistettä) ruksitaan vain yksi vaihtoehto.
@@ -178,9 +177,9 @@ Muuten aikalailla samat ohjeet kuin edellisellä viikolla.
 
 0-2 pistettä
 
-- vähintään 6 laadukasta ja rakentavaa palautekommenttia riittää 1.5 pisteeseen
-- täysiin pisteisiin edellytetään myös vähintään yksi käyttökelpoinen parannusehdotus
-- eli 0,25 per laadukas ja rakentava kommentti ja 0,5 parannusohdotuksesta
+- Vähintään 6 laadukasta ja rakentavaa palautekommenttia riittää 1.5 pisteeseen
+- Täysiin pisteisiin edellytetään myös vähintään yksi käyttökelpoinen parannusehdotus
+- Eli 0.25p per laadukas ja rakentava kommentti ja 0.5p parannusohdotuksesta
 
 ### Viikko 6
 
