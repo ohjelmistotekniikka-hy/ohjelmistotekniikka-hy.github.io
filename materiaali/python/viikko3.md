@@ -660,7 +660,7 @@ README.md
 
 Toteuta ainakin osa jostain edellisellä viikolla tekemäsi määrittelydokumentin toiminnallisuudesta. Pelkät tyhjät luokat tai funktiot ilman toiminnallisuutta eivät tuo pisteitä.
 
-Toteutukseen liittyviä ohjeita löydät [täältä](/python/toteutus).
+Toteutukseen liittyviä ohjeita löydät [täältä](/python/toteutus). Jos olet toteuttamassa peliä, kannattaa yleisten ohjeiden lisäksi tutustua [pygame-ohjeeseen](/python/pygame).
 
 ### Harjoitustyö 3: Testaamisen aloittaminen
 
