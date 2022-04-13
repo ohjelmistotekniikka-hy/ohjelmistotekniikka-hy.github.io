@@ -116,9 +116,9 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
 
 - Pylint configuroitu (0.25p)
   - Toimii komennolla `poetry run invoke lint`
-- Pylintin arvosana vähintään 7.0/10 (0.25p)
+- Pylintin virheitä alle 10 (0.25p)
   - Käyttöliittymän rakentavaa koodia ei tarvitse lintata
-  - Tarkistakaa että `src`-hakemiston alahakemistoihin on lisätty [ohjeen](https://ohjelmistotekniikka-hy.github.io/python/coverage) mukaisesti tyhjät \__init__.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty,  ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä. Jos jo viime viikolla kehotitte viikkopalautteessa lisäämään nämä tiedostot voi rokottaa pisteistä vaikka 0.15 syystä ettei ole lisätty ohjeen mukaisesti näitä.
+- Tarkistakaa että `src`-hakemiston alahakemistoihin on lisätty [ohjeen](https://ohjelmistotekniikka-hy.github.io/python/coverage) mukaisesti tyhjät \__init__.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty,  ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä. Jos jo viime viikolla kehotitte viikkopalautteessa lisäämään nämä tiedostot voi rokottaa pisteistä vaikka 0.15 syystä ettei ole lisätty ohjeen mukaisesti näitä.
 - Jos tyhjiä \__init__.py tiedostoja ei ole alihakemistoista, ottakaa huomioon että coverage laskee testien rivikattavuuden väärin. Arvioikaa rivikattavuus silmämääräisesti, tai jos testikattavuus ei ole ilmiselvästi yli 20%, lisätkää itse tyhjät tiedostot ennen testiraportin luomista.
 
 #### Dokumentaatio
