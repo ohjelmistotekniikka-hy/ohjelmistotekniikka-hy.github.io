@@ -35,18 +35,18 @@ Varmista, että palautusrepositorioosi on mahdollista tehdä issueita, eli repos
 
 ## Harjoitustyö
 
-Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutta toiminallisuutta ja parannetaan sen dokumentaatiota.
+Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutta toiminnallisuutta ja parannetaan sen dokumentaatiota.
 
 **Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
 ### Harjoitustyö 1: GitHub release
 
-Tekee projektistasi _GitHub release_ edellä esitetyn [ohjeen](#github-release) mukaisesti (0.25p):
+Tee projektistasi _GitHub release_ edellä esitetyn [ohjeen](#github-release) mukaisesti (0.25p):
 
-- Release sisältää ohjelman uusimman version lähdekoodin (GitHub-lisää tämän automaattisesti releasin tehdessä)
+- Release sisältää ohjelman uusimman version lähdekoodin (GitHub lisää tämän automaattisesti releasin tehdessä)
 - Releaseen on linkki projektin README:stä
 
-### Harjoitustyö 2: Koodikaatselmointiin valmistautuminen
+### Harjoitustyö 2: Koodikatselmointiin valmistautuminen
 
 Jotta voit osallistua viikolla 6 pidettävään koodikatselmointiin (josta on tarjolla 2 kurssipistettä), tulee seuraavien asioiden olla kunnossa:
 
@@ -56,7 +56,7 @@ Jotta voit osallistua viikolla 6 pidettävään koodikatselmointiin (josta on ta
 
 ### Harjoitustyö 3: Uutta toiminallisuutta
 
-Kasvaata ohjelmaa edellisestä viikosta (0.75p):
+Kasvata ohjelmaa edellisestä viikosta (0.75p):
 
 - Ohjelman pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
 - Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
