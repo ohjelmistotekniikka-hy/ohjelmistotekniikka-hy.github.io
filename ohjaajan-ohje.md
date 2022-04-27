@@ -168,7 +168,7 @@ Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistuksia [
 #### Python
 
 - Ohjelma toimii komennolla `poetry run invoke start` (0.5p)
-- Pylint arvosana vähintään 8.00/10 (0.25p)
+- Pylint virheitä alle 5 (0.25p)
 
 Huomatkaa että checklistissä ohjelma kasvanut osiosta (max. 0.75 pistettä) ruksitaan vain yksi vaihtoehto.
 Muuten aikalailla samat ohjeet kuin edellisellä viikolla.
