@@ -105,36 +105,6 @@ Dokumentaatio on luokkien, metodin ja funktioiden tapauksessa heti määritelmä
 
 Visual Studio Codessa docstringien kirjoittamista nopeuttaa huomattavasti [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)-lisäosan käyttö. Lisäosan asennuksen jälkeen riittää, että kirjoitat `"""` ja painat tab-näppäintä, niin docstringille generoituu pohja.
 
-## Koodikatselmointi
-
-Katselmoinnista voi saada maksimissaan kaksi pistettä.
-
-Kurssilla tapahtuvan katselmoinnin perimmäinen tarkoitus on oppia hahmottamaan toisen henkilön kirjoittamaa koodia ja kokonaista ohjelmointiprojektia. Sujuva koodinlukutaito on välttämätön taito ohjelmoijan työssä. Toisten koodia luetaan kuitenkin laitoksen kursseilla toistaiseksi valitettavan vähän. Hyvin suoritettu katselmointi on tehokas tapa havaita koodista ongelmakohtia ja virheitä sekä parantaa koodin laatua.
-
-_Katselmointiin käytettyä aikaa ei merkata työaikakirjanpitoon._
-
-### Ohjeet
-
-Katselmoinnin alkamispäivämäärä on {{site.code_review_start_date}}, jonka jälkeen _viimeistään_ näet sinulle osoitetun katselmointikohteen repositoriolinkin Labtoolista.
-
-Tehtävänäsi on lukea läpi toisen opiskelijan harjoitustyö ja antaa siitä rakentavaa palautetta. Ohjelmaa kannattaa kokeilla myös suorittaa.
-
-- Lataa katselmointikohteesi zip-pakattu projekti koneellesi
-  - Ota talteen kellonaika ja päivä, jolloin latasit projektin
-  - Pura projekti
-  - Voit halutessasi kloonata repositorion koneellesi
-
-![](/assets/images/review1.png)
-
-- Aloita lukemalla projektin vaatimusmäärittely
-- Tutustu mahdollisimman kattavasti ohjelmakoodiin sekä testeihin
-  - Kokeile myös suorittaa projektin testit
-- Yritä ymmärtää, mitä mikäkin luokka ja metodi tekee
-  - Ole sinnikäs: kaikkea ei aina osaa, eikä tarvitsekaan ymmärtää!
-  - Haastavin osuus lienee luokkien suhde toisiinsa. Käytä hyväksesi koodista tehtyjä luokkakaavioita
-
-Kun olet tutustunut riittävän tarkasti katselmoitavaan projektiin, on aika antaa toiselle koodista palaute. Palautteessa ei tarvitse ottaa kantaa ohjelman dokumentointiin, ulkonäköön tai toimivuuteen. Tärkeintä on kiinnittää huomiota Ohjelmoinnin perusteissa ja Ohjelmoinnin jatkokurssilla opittuihin hyviin käytänteisiin sekä tällä kurssilla noudatettaviin koodin laatuvaatimuksiin ([Java](/java/koodin-laatuvaatimukset), [Python](/python/koodin-laatuvaatimukset)).
-
 {% include koodikatselmointi.md %}
 
 ## Harjoitustyö
