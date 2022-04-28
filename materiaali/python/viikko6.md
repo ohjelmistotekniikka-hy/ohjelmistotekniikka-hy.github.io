@@ -150,8 +150,8 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (0.5p):
 
 Aloita koodin docstring-dokumentointi (0.5p):
 
-- Ainakin osalle ohjelman luokista, metodeista ja funktioista on tehty docstring-dokumentaatio
 - Edellytyksenä pisteille on, että suurin piirtein puolella luokista, metodeista ja funktioista on tehty docstring-dokumentaatio
+- Testeille ei tarvitse tehdä docstring-dokumentaatiota
 
 Laadi alustava arkkitehtuurikuvaus (0.5p):
 
@@ -178,18 +178,18 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
   - Rakenne on järkevä (esim. kaikki koodi on samassa hakemistossa)
   - Sovelluslogiikkaa on eriytetty riittävästi käyttöliittymästä
   - Pylint on käytössä
-    - Pylint-virheitä on alle 5
-    - Käyttöliittymään tai testeihin liittyvän koodin voi jättää pylint-tarkistuksien ulkopuolelle
+   - Pylint-virheitä on alle 5
+   - Käyttöliittymään tai testeihin liittyvän koodin voi jättää pylint-tarkistuksien ulkopuolelle
 - Tuntikirjanpito on ajantasalla
   - **Tuntien summan tulee olla merkittynä**
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
 - Viikolle on tehty changelog-merkintä _changelog.md_-tiedostoon
 - Repositorion _README.md_-tiedosto on kunnossa
   - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen]({{site.python_reference_app_url}}) README.md, eli se sisältää ainakin seuraavat
-    - Harjoitustyön aiheen lyhyt kuvaus
-    - Linkit vaatimusmäärittelyyn, arkkitehtuuridokumenttiin, käyttöohjeeseen ja tuntikirjanpitoon
-    - Linkki releaseihin
-    - Ohjeet komentoriviltä suoritettaviin toimenpiteisiin (ohjelman käynnistys, testaus, testikattavuusraportin suoritus, pylint-tarkistuksien suorittaminen)
+   - Harjoitustyön aiheen lyhyt kuvaus
+   - Linkit vaatimusmäärittelyyn, arkkitehtuuridokumenttiin, käyttöohjeeseen ja tuntikirjanpitoon
+   - Linkki releaseihin
+   - Ohjeet komentoriviltä suoritettaviin toimenpiteisiin (ohjelman käynnistys, testaus, testikattavuusraportin suoritus, pylint-tarkistuksien suorittaminen)
 - Repositorio siisti
   - Ei ylimääräistä tavaraa (mm. `pytest`- ja `coverage`-komentojen generoimia tiedostoja)
   - Laskarit jätetään hakemiston _laskarit_ alle
