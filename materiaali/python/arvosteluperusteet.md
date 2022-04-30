@@ -42,7 +42,7 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
 - Sovelluslogiikan kompleksisuus 3p
 - Ohjelman laajuus 4p
 - Ulkoisten kirjastojen hyödyntäminen 1p
- ja ansaitsisi vain yhden pisteen kompleksisuudesta
+  - Tämän pisteen ideana on etsiä ja opetella jonkin ennestään itselle tuntemattoman kirjasto
   - Näihin eivät lukeudu mateeriaalissa esitellyt testaukseen, testikattavuuteen, koodin formatointiin, koodin laadun staattisen analyysiin, tai koodin dokumentointiin käytettävät kirjastot
   - Myöskään Pygamen, TkInterin tai SQLiten käyttö ei tätä pistettä tuo, eivätkä muutkaan referenssisovelluksen käyttämät kirjastot
 - Release 1p
@@ -61,7 +61,7 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
 - Miten laaja on laaja?
 - Kurssin [referenssisovellus]({{site.python_reference_app_url}}) olisi laajuudeltaan 2 pisteen luokkaa, koska sovelluslogiikaltaan se on kohtalaisen suoraviivainen ja ansaitsisi vain yhden pisteen kompleksisuudesta
 - Laajuutta ei voida määritellä tarkasti esimerkiksi luokkien, metodien, tai funktioiden määrällä, laajuus on aina suhteellinen sovelluksen tyyppiin ja kompleksisuuteenkin
-- Eräs tapa laajentaa sovellusta ja lisätä sen kompleksisuutta on tehdä siitä _parametrein konfiguroitava ja laajennettava_, esimeerkiksi:
+- Eräs tapa laajentaa sovellusta ja lisätä sen kompleksisuutta on tehdä siitä _parametrein konfiguroitava ja laajennettava_, esimerkiksi:
   - Sovelluksen käyttämän tietokantatiedoston nimi ei ole kirjoitettu koodiin vaan on käyttäjän määriteltävissä
   - Pelissä eri vaikueustasojen pelimaailmat eivät ole määritelty koodissa vaan luodaan erillisten tiedostojen perusteella
   - Pacmanissa hirviöiden määrä ei ole ohjelmakoodiin kovakoodattu vakio vaan valittavissa käyttöliittymästä
