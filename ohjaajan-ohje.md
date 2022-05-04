@@ -173,6 +173,16 @@ Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistuksia [
 Huomatkaa että checklistissä ohjelma kasvanut osiosta (max. 0.75 pistettä) ruksitaan vain yksi vaihtoehto.
 Muuten aikalailla samat ohjeet kuin edellisellä viikolla.
 
+### Viikko 6
+
+Python projekteissa testikattavuutta arvioitaessa muistakaa katsoa että jokaisessa projektin _src_-hakemiston alahakemistossa on tyhjä \_\_init\_\_.py-tiedosto. Jos sitä ei ole, coverage ei arvio testikattavuutta oikein näiden hakemistojen osalta. Tällöin projektin testikattavuus on todellista korkeampi. Ottakaa tämä huomioon.  Arvioikaa todellinen testikattavuus/Lisätkää käsin tälläisiin hakemistoihin \_\_init\_\_.py ennen testien ajamista ja testikattavuusraportin ottamista.
+
+Testaus osiosta valitaan molemmat "kattavuus vähintään.." checkboxit jos kattavuus vähintään 60%. Ohjelma kasvunut osiossa valitaan vain toinen "ohjelma kasvanut.." checkboxi.
+
+Jotta arvostele menee oikein, älkää ruksiko rastia "JavaDoc ei ole generoitavissa/Docstring-dokumentointia ei ole aloitettu" vaikka JavaDoc ei olisi generatoivissa tai Docstring-dokumentointia ei olisi aloitettu. Viikon 6 opiskelijan ohjeissa ei ollut mainintaa siitä, että aloittamaton JavaDoc/Docstring vähentäisi pisteitä. <!-- tämän huomion voinee sitten ottaa pois kun labtoolin pisteytyksestä on kurssin seuraavassa iteraatiossa poistettu tämä miinuspiste -->
+
+Labtoolissa muutama uusi kohta, muuten tämä viikko aika samanlailla kuin edellinen viikko.
+
 ### Viikon 6 koodikatselmointien arviointi
 
 0-2 pistettä
@@ -180,16 +190,6 @@ Muuten aikalailla samat ohjeet kuin edellisellä viikolla.
 - Vähintään 6 laadukasta ja rakentavaa palautekommenttia riittää 1.5 pisteeseen
 - Täysiin pisteisiin edellytetään myös vähintään yksi käyttökelpoinen parannusehdotus
 - Eli 0.25p per laadukas ja rakentava kommentti ja 0.5p parannusohdotuksesta
-
-### Viikko 6
-
-Python projekteissa testikattavuutta arvioitaessa muistakaa katsoa että jokaisessa projektin `src`-hakemiston alahakemistossa on tyhjä \__init__.py-tiedosto. Jos sitä ei ole, coverage ei arvio testikattavuutta oikein näiden hakemistojen osalta. Tällöin projektin testikattavuus on todellista korkeampi. Ottakaa tämä huomioon.  Arvioikaa todellinen testikattavuus/Lisätkää käsin tälläisiin hakemistoihin __init_.py ennen testien ajamista ja testikattavuusraportin ottamista.
-
-Testaus osiosta valitaan molemmat "kattavuus vähintään.." checkboxit jos kattavuus vähintään 60%. Ohjelma kasvunut osiossa valitaan vain toinen "ohjelma kasvanut.." checkboxi.
-
-Jotta arvostele menee oikein, älkää ruksiko rastia "JavaDoc ei ole generoitavissa/Docstring-dokumentointia ei ole aloitettu" vaikka JavaDoc ei olisi generatoivissa tai Docstring-dokumentointia ei olisi aloitettu. Viikon 6 opiskelijan ohjeissa ei ollut mainintaa siitä, että aloittamaton JavaDoc/Docstring vähentäisi pisteitä. <!-- tämän huomion voinee sitten ottaa pois kun labtoolin pisteytyksestä on kurssin seuraavassa iteraatiossa poistettu tämä miinuspiste -->
-
-Labtoolissa muutama uusi kohta, muuten tämä viikko aika samanlailla kuin edellinen viikko.
 
 ### Loppupalautus
 
