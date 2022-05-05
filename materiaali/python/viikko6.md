@@ -17,11 +17,11 @@ Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä. Koodikatsel
 > “Code is more often read than written.”
 > — [Guido van Rossum](https://fi.wikipedia.org/wiki/Guido_van_Rossum)
 
-Uutta projekti kuumeisesti koodatessa saattaa sortua ajatukseen, että toteutun koodipätkän pariin ei enää koskaan palata. Tosiasiassa jonkin koodipätkän elinikä saattaa hyvinkin olla vuosia, jonka aikana sitä saatetaan lukea lukuisia kertoja monen eri ohjelmistokehittäjän toimesta. Etenkin jos koodi on vaikealukuista, saattaa sen ymmärtämisessä kestää hyvinkin pitkään. Selkeä koodi on itsessään jo kohtalainen dokumentaatio, mutta sen dokumentointiin löytyy myös muita tapoja.
+Uutta projektia kuumeisesti koodatessa saattaa sortua ajatukseen, että toteutetun koodipätkän pariin ei enää koskaan palata. Tosiasiassa jonkin koodipätkän elinikä saattaa hyvinkin olla vuosia, jonka aikana sitä saatetaan lukea lukuisia kertoja monen eri ohjelmistokehittäjän toimesta. Etenkin jos koodi on vaikealukuista, saattaa sen ymmärtämisessä kestää hyvinkin pitkään. Selkeä koodi on itsessään jo kohtalainen dokumentaatio, mutta sen dokumentointiin löytyy myös muita tapoja.
 
 ### Dokumentointi kommenteilla
 
-Kommentien käyttö koodin dokumentoinnissa on erittäin hyödyllinen ja yleinen dokumentaation muoto. Siitä huolimatta väärin käytettynä kommentteja pidetään niin kutsuttuina "koodihajuina", eli merkkinä huonolaatuisesta koodista. Esimerkiksi seuraavanlainen kommentointi ei paranna koodin luettavuutta:
+Kommenttien käyttö koodin dokumentoinnissa on erittäin hyödyllinen ja yleinen dokumentaation muoto. Siitä huolimatta väärin käytettynä kommentteja pidetään niin kutsuttuina "koodihajuina", eli merkkinä huonolaatuisesta koodista. Esimerkiksi seuraavanlainen kommentointi ei paranna koodin luettavuutta:
 
 ```python
 class Machine:
