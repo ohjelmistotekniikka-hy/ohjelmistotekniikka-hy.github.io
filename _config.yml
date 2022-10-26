@@ -7,17 +7,17 @@ repo_url: "https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.gith
 repo_branch: "master"
 
 # Kurssikertaan liittyvät muuttujat:
-title: Ohjelmistotekniikka, kevät 2022
+title: Ohjelmistotekniikka, syksy 2022
 
 # aikataulut (annetaan muodossa viikonpäivä dd.mm kellonaika)
-wk1dl: "tiistai 22.3. klo 23:59"
-wk2dl: "tiistai 29.3. klo 23:59"
-wk3dl: "tiistai 5.4. klo 23:59"
-wk4dl: "tiistai 12.4. klo 23:59"
-wk5dl: "tiistai 26.4. klo 23:59"
-wk6dl: "tiistai 3.5. klo 23:59"
-finaldl: "sunnuntai 15.5. klo 23:59"
-code_review_start_date: "keskiviikko 27.4. klo 23:59"
+wk1dl: "tiistai 8.11. klo 23:59"
+wk2dl: "tiistai 15.11. klo 23:59"
+wk3dl: "tiistai 22.11. klo 23:59"
+wk4dl: "tiistai 29.11. klo 23:59"
+wk5dl: "tiistai 6.12. klo 23:59"
+wk6dl: "tiistai 13.12. klo 23:59"
+finaldl: "sunnuntai 25.12. klo 23:59"
+code_review_start_date: "keskiviikko 7.12. klo 23:59"
 
 # ohjausajat
 # - Maanantaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/68570587158?pwd=TFhwUXBucExZeVNJZnRydE8yWkNFdz09)
@@ -29,17 +29,17 @@ times:
   - time: "Keskiviikkoisin klo 14-16 kampuksella BK107-luokassa"
   - time: "Torstaisin klo 16-18 [zoom](https://helsinki.zoom.us/j/69885432045?pwd=TEZtNkRSN09iaXZhcE5tVFNmL0o2UT09)"
 
-lecture_time: "tiistaina 15.3. klo 12–14"
-lecture_link: "https://helsinki.zoom.us/j/64925537034?pwd=b0drbjRnN1J6Zncva2ZGaHRtMklOQT09"
+lecture_time: "maanantai 31.10. klo 14–16"
+lecture_link: "#"
 lecture_slides_link: "https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/blob/master/luennot/2022-kevat/aloitusluento.pdf"
-lecture_recording_link: "https://youtu.be/BkyNeftYQSk"
+lecture_recording_link: "#"
 
 # seuraava kurssikerta muodossa syksyllä/keväällä [vuosi]. 
 # esimerkki syksyllä 2021
 # käytetään muun muassa "ei voi jatkaa seuraavalla kurssilla (syksyllä 2021)"
-next_course: "syksyllä 2022"
+next_course: "keväällä 2023"
 
-labtool_link: "https://study.cs.helsinki.fi/labtool/courses/TKT20002.2022.K.K.1"
+labtool_link: "https://study.cs.helsinki.fi/labtool/courses/TKT20002.2022.S.K.1"
 
 # referenssi-sovellusten linkit
 python_reference_app_url: "https://github.com/ohjelmistotekniikka-hy/python-todo-app"

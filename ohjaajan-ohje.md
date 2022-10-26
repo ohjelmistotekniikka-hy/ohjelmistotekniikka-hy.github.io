@@ -29,7 +29,7 @@ Käyttöohjeet:
 
 ### Viikko 1
 
-Katsokaa että githubista löytyy tiedostot gitlog.txt ja komentorivi.txt ja että ne näyttävät edes suurinpiirtein oikeilta.
+Katsokaa että githubista löytyy tiedostot [gitlog.txt]({{site.repo_url}}/tree/master/materiaali/python/gitlog.txt) ja [komentorivi.txt]({{site.repo_url}}/tree/master/materiaali/python/komentorivi.txt) ja että ne näyttävät edes suurinpiirtein oikeilta.
 Pienistä virheistä voi laitta huomautuksen / korjauskehoituksen viestiksi
 Ei pisteitä jos ei tehtynä tai ymmärtänyt tehtävän aivan väärin.
 

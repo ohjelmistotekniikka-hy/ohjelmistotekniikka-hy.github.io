@@ -1,0 +1,113 @@
+commit dfc3d9dce0d90ef3bf68a1c7b153f2900dde2286
+Author: Kalle Ilves <kalle.ilves@helsinki.fi>
+Date:   Sun Mar 20 12:35:35 2022 +0200
+
+    Poista tiedosto, uudelleennimeä toinen tiedosto
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit addd541c612ec3b3c053fc87efc2365c08fda61d
+Author: Kalle Ilves <kalle.ilves@helsinki.fi>
+Date:   Sun Mar 20 12:32:01 2022 +0200
+
+    lisää hakemisto
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit cc8b605629aa93829c2456c122371d286709eef5
+Author: Kalle Ilves <kalle.ilves@helsinki.fi>
+Date:   Sun Mar 20 12:23:37 2022 +0200
+
+    tee muutoksia sisältöön
+
+ eka.txt    | 6 ++----
+ kolmas.txt | 4 +++-
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+commit 8fbc556dfd70d30d16b9eceea853c752d96ba4eb
+Author: Kalle Ilves <kalle.ilves@helsinki.fi>
+Date:   Sun Mar 20 10:35:11 2022 +0200
+
+    uudelleennimeä tiedosto
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7dc9ff5a6177c97db921d22dc898f5900c69faa9
+Author: Kalle Ilves <kalle.ilves@helsinki.fi>
+Date:   Sun Mar 20 10:33:54 2022 +0200
+
+    poista tiedosto
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit b219184d0fac5c9efc35040240895851baddfeb4
+Author: Kalle Ilves <kalle.ilves@helsinki.fi>
+Date:   Sun Mar 20 10:31:20 2022 +0200
+
+    Poista ja lisää sisältöä
+
+ tiedosto.txt | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 0ffea7b5b82473c7e533f8e8be08fe5baf4f0342
+Author: Kalle Ilves <kalle.ilves@helsinki.fi>
+Date:   Sun Mar 20 10:27:09 2022 +0200
+
+    lisää paljon tekstiä
+
+ tiedosto.txt | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+commit 5409d246760080d39cb221523ae5fc98f1e5f7c8
+Author: Kalle Ilves <kalle.ilves@helsinki.fi>
+Date:   Sun Mar 20 10:17:40 2022 +0200
+
+    lisää kansio stuff
+
+ stuff/jokin-tiedosto.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 42dd11e6036eddb3bc6a1ea4ca351bd6567c844b
+Author: Kalle Ilves <kalle.ilves@helsinki.fi>
+Date:   Sun Mar 20 10:16:30 2022 +0200
+
+    muuta sisältöä
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 07ca2d08974c528fa146b05063d6c9c469f09bc2
+Author: Kalle Ilves <kalle.ilves@helsinki.fi>
+Date:   Sun Mar 20 10:15:36 2022 +0200
+
+    lisää tiedosto kolmas.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit deb2915e2bc9222e5d6abd094e16a5b036fecead
+Author: Kalle Ilves <kalle.ilves@helsinki.fi>
+Date:   Sun Mar 20 10:12:21 2022 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit b12437be0b360db43161cd24744a7bdc1d32ce5e
+Author: Kalle Ilves <kalle.ilves@helsinki.fi>
+Date:   Sun Mar 20 10:06:12 2022 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
