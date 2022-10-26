@@ -24,12 +24,12 @@ code_review_start_date: "keskiviikko 7.12. klo 23:59"
 # - Tiistaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/65324719978) (alkaen 23.3.)
 # - Torstaisin klo 13-15  [zoom]()
 times: 
-  - time: "Maanantaisin klo 14-16 kampuksella BK107-luokassa"
+  - time: "Maanantaisin klo 14-16 kampuksella BK107-luokassa (7.11. alkaen)"
   - time: "Tiistaisin klo 14-16 kampuksella BK107-luokassa"
-  - time: "Keskiviikkoisin klo 14-16 kampuksella BK107-luokassa"
-  - time: "Torstaisin klo 16-18 [zoom](https://helsinki.zoom.us/j/69885432045?pwd=TEZtNkRSN09iaXZhcE5tVFNmL0o2UT09)"
+  - time: "Keskiviikkoisin klo 10-12 kampuksella BK107-luokassa"
+  - time: "Perjantaisin klo 12-14 kampuksella BK107-luokassa"
 
-lecture_time: "maanantai 31.10. klo 14–16"
+lecture_time: "maanantaina 31.10. klo 14–16"
 lecture_link: "#"
 lecture_slides_link: "https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/blob/master/luennot/2022-kevat/aloitusluento.pdf"
 lecture_recording_link: "#"
