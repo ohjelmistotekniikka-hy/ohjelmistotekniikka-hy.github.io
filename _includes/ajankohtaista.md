@@ -1,7 +1,8 @@
 ## Ajankohtaista
 
-- Kurssin aloitustilaisuus pidetään {{site.lecture_time}}. Aloitustilaisuudessa käytettävät kalvot löytyvät [täältä]({{site.lecture_slides_link}}). Aloitustilaisuudesta julkaistaan myöhemmin tallenne, joka on katsottavissa [täältä]({{site.lecture_recording_link}})
-  - Luento on myös katsottavissa [Unitubessa](https://video.helsinki.fi/unitube/live-stream.html?room=l9)
+- Kurssin aloitustilaisuus pidettiin {{site.lecture_time}}
+  - Aloitustilaisuudessa käytettävät kalvot löytyvät [täältä]({{site.lecture_slides_link}}).
+  - [Unitube-streami](https://www2.helsinki.fi/fi/unitube/video/a81f809b-399e-4fb7-b15b-d9a02ac01efe), alkaa kohdasta 2h 4min
 - Kurssilla on [Discord-kanava](https://study.cs.helsinki.fi/discord/join/ohte), jossa on tarjolla ohjausta ja keskustelua kurssiin liittyen
   - **HUOM:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 - Jos tarvitset kurssiin liittyvää ohjausta, tule pajaohjaukseen. Ohjausta on tarjolla sekä etänä, että kampuksella: {% for time in site.times %}
