@@ -263,7 +263,10 @@ Kurssin harjoitustyö ketterässä hengessä viikon mittaisilla iteraatioilla
 
 # Työkaluja
 
-- Tarvitsemme ohjelmistokehityksessä suuren joukon käytännön työkaluja.
+- Tarvitsemme ohjelmistokehityksessä suuren joukon käytännön työkaluja
+
+. . .
+
 - Komentorivi ja versionhallinta
   - olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja git-versionhallintaa
   - molemmat ovat tärkeässä roolissa ohjelmistokehityksessä
@@ -283,7 +286,7 @@ Kurssin harjoitustyö ketterässä hengessä viikon mittaisilla iteraatioilla
 
 . . .
 
-- unittest eräs pythonin automatisoidun testauksen työkaluista
+- Unittest eräs pythonin automatisoidun testauksen työkaluista
 - Tulet kurssin ja myöhempienkin opintojesi aikana kirjoittamaan paljon automatisoituja testejä
 - Viikon 2 laskareissa harjoitellaan Unittestin perusteita
 
@@ -303,6 +306,9 @@ Kurssin harjoitustyö ketterässä hengessä viikon mittaisilla iteraatioilla
 # docstring
 
 - Osa ohjelmiston dokumentointia on lähdekoodin luokkien julkisten metodien kuvaus
+
+. . .
+
 - Pythonissa lähdekoodi dokumentoidaan käyttäen _docstring_-työkalua
 - Dokumentointi tapahtuu kirjoittamalla koodin yhteyteen sopivasti muotoiltuja kommentteja
 
@@ -359,6 +365,36 @@ class User:
 ![](https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/l-4.png){ width=260 }
 
 - Kaaviota parempi paikka esim. metodien kuvaamiselle on koodiin liittyvä docstring
+
+# Todo-sovelluksen tietosisällön luokkakaavio
+
+- Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli **luokkakaavioihin riittää merkitä luokan nimi**
+
+![](./todo2.png){ width=260 }
+
+- Kaaviota parempi paikka esim. metodien kuvaamiselle on koodiin liittyvä docstring
+
+- Tärkeintä kaavioissa on tuoda esiin olioiden väliset suhteet ja niitä kuvaavat _osallistumisrajoitteet_
+
+# Todo-sovelluksen tietosisällön luokkakaavio
+
+- Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli **luokkakaavioihin riittää merkitä luokan nimi**
+
+![](./todo3.png){ width=260 }
+
+- Kaaviota parempi paikka esim. metodien kuvaamiselle on koodiin liittyvä docstring
+
+- Tärkeintä kaavioissa on tuoda esiin olioiden väliset suhteet ja niitä kuvaavat _osallistumisrajoitteet_
+
+# Todo-sovelluksen tietosisällön luokkakaavio
+
+- Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli **luokkakaavioihin riittää merkitä luokan nimi**
+
+![](./todo4.png){ width=260 }
+
+- Kaaviota parempi paikka esim. metodien kuvaamiselle on koodiin liittyvä docstring
+
+- Tärkeintä kaavioissa on tuoda esiin olioiden väliset suhteet ja niitä kuvaavat _osallistumisrajoitteet_
 
 # Pakkauskaavio
 
@@ -450,10 +486,12 @@ class Kassapaate:
 - Harjoitustyössä toteutetaan itsenäisesti ohjelmisto omavalintaisesta aiheesta
 
 - Harjoitustyötä tehdään itsenäisesti, mutta tarjolla on pajaohjausta
-- Pajaa kampuksella
-  - ma 14-16 (BK107)
-  - ke 14-16 (BK107)
-  - to 14-16 (zoom)
+- Pajaa kampuksella (BK107)
+  - ma 14-16 (6.11 alkaen)
+  - ti 14-14
+  - ke 10-12
+  - pe 12-14
+- Myös kurssin _Discordissa_ voi kysellä apua ongelmatilanteissa, erityisesti klo 9-16
 
 # Älä plagioi
 
@@ -468,7 +506,7 @@ class Kassapaate:
 
 . . .
 
-- Samaa ohjelmaa ei voi jatkaa seuraavalla kurssilla (eli syksyllä 2022), vaan työ on aloitettava uudella aiheella alusta
+- Samaa ohjelmaa ei voi jatkaa seuraavalla kurssilla (eli keväällä 2023), vaan työ on aloitettava uudella aiheella alusta
 
 . . .
 
@@ -631,8 +669,6 @@ class Kassapaate:
 - Läpipääsyyn vaatimuksena on lisäksi vähintään 10 pistettä lopullisesta ohjelmasta
 
 # Harjoitustyön vaikutus kurssipisteisiin
-
-Ohjelman pisteet jakautuvat seuraavasti
 
 - käyttöliittymä 4p
   - 0p yksinkertainen tekstikäyttöliittymä
