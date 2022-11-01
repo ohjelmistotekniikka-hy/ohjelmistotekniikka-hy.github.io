@@ -534,7 +534,7 @@ origin	git@github.com:mluukkai/ot-harjoitustyo.git (push)
 
 - _Origin_ on etärepositorion oletusarvoinen nimi. Nimi voi olla mikä tahansa ja etärepositorioitakin voi olla useita
 - Voimme siirtää paikallisen repositoriomme tilan etärepositorioon komennolla `git push`
-  - Saatat joutua tekemään ensimmäisen pushin pidemmässä muodossa `--set-upstream origin master`
+  - Saatat joutua tekemään ensimmäisen pushin pidemmässä muodossa `--set-upstream origin master`. Käytettävän haaran nimi voi git-konfiguraatiosta riippuen olla myös <i>main</i>. Käytä siis muotoa `-set-upstream origin main`, jos edellä mainittu muoto ei toimi
 - Kokeillaan
 
 ```bash
