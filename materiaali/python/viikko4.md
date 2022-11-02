@@ -21,7 +21,7 @@ Koodin testauksen lisäksi koodin laadun ylläpitäminen on tärkeää. Laadun y
 Pylint on helppo ottaa käyttöön Poetry-projektissa. Aloitetaan asentamalla pylint projektimme kehityksen aikaiseksi riippuvuudeksi:
 
 ```
-poetry add pylint --dev
+poetry add pylint --group dev
 ```
 
 Pylintille tulee määritellä joukko tarkistettavia [sääntöjä](http://pylint.pycqa.org/en/2.6/technical_reference/features.html). Säännöt määritellään projektin juurihakemiston _.pylintrc_-tiedostossa. Luo kyseinen tiedosto ja kopioi sinne [tämän]({{site.repo_url}}/tree/master/materiaali/python/.pylintrc) tiedoston sisältö. Tiedosto sisältää hieman muunnellun version pylintin suosittelemasta konfiguraatiosta, jota voi katsella komennolla `pylint --generate-rcfile`.
@@ -85,7 +85,7 @@ Jos integroinnin kanssa ilmenee ongelmia, tutustu Visual Studio Coden [ohjeisiin
 Tiettyjen laatukorjausten, kuten sisennysten ja liian pitkien koodirivien korjaaminen tuottaa välillä turhaa manuaalista työtä. Koodin automaattisessa formatoinnissa auttaa [autopep8](https://pypi.org/project/autopep8/)-kirjasto. Kirjasto formatoi koodin automaattisesti [PEP 8](https://www.python.org/dev/peps/pep-0008/)-tyyliohjeiden mukaisesti. Aloitetaan sen käyttö asentamalle se projektin riippuvuudeksi:
 
 ```bash
-poetry add autopep8 --dev
+poetry add autopep8 --group dev
 ```
 
 Tämän jälkeen voimme virtuaaliympäristössä formatoida _src_ hakemiston koodin komennolla:

@@ -634,7 +634,7 @@ Testeille on usein käytössä eri konfiguraatio, kuin normaalisti suoritettaval
 Näiden ympäristömuuttujien lataaminen onnistuu pytestin [pytest-dotenv](https://pypi.org/project/pytest-dotenv/)-lisäosalla. Sen asentaminen onnistuu seuraavalla komennolla:
 
 ```bash
-poetry add pytest-dotenv --dev
+poetry add pytest-dotenv --group dev
 ```
 
 Asentamisen lisäksi tulee projektin juurihakemistoon luoda _pytest.ini_-tiedosto, jossa kerrotaan, mistä tiedostosta ympäristömuuttujat ladataan. Tiedoston sisältö on seuraava:

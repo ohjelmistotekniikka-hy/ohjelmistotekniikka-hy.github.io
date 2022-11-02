@@ -106,8 +106,6 @@ authors = ["Kalle Ilves <kalle.ilves@helsinki.fi>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 
-[tool.poetry.dev-dependencies]
-
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
@@ -207,22 +205,24 @@ Voimme lähteä virtuaaliympäristöstä komennolla `exit`.
 
 ### Kehityksen aikaiset riippuvuudet
 
-Jos olit tarkkana, huomasit, että _pyproject.toml_-tiedostosta löytyy `[tool.poetry.dependencies]`-osion lisäksi osio `[tool.poetry.dev-dependencies]`. Komennon `poetry add` suorittaminen asentaa oletusarvoisesti riippuvuudet `[tool.poetry.dependencies]`-osion alle. Näiden riippuvuuksien lisäksi voimme asentaa projektiimme riippuvuuksia, joita tarvitsemme vain kehityksen aikana. Näitä riippuvuuksia ovat kaikki ne, joita itse sovelluksen käynnistäminen (esimerkiksi `python3 src/index.py`-komennon suorittaminen) ei tarvitse.
+Poetryn avulla riippuvuuksia on mahdollista ryhmitellä niiden käyttötarkoituksen mukaan. Melko yleinen tapa ryhmitellä riippuuvuuksia on ryhmitellä ne _kehityksen_ ja _suorituksen_ aikaisiksi riippuvuuksiksi. Kehityksen aikaisia riippuvuuksia tarvitaan ohjelmiston kehityksen aikana, mutta ne eivät ole välttämättömiä ohjelman suorituksessa.
 
-Kehityksen aikaisten riippuvuuksien asentaminen onnistuu antamalla `poetry add`-komennolle `--dev`-flagi. Esimerkiksi pian tutuksi tulevan [pytest](https://pytest.org/)-kirjaston voi asentaa kehityksen aikaiseksi riippuvuudeksi seuraavalla komennolla:
+Komennon `poetry add` suorittaminen asentaa oletusarvoisesti riippuvuudet `[tool.poetry.dependencies]`-osion alle. Näiden riippuvuuksien lisäksi voimme asentaa projektiimme riippuvuuksia, joita tarvitsemme vain kehityksen aikana. Näitä riippuvuuksia ovat kaikki ne, joita itse sovelluksen käynnistäminen (esimerkiksi `python3 src/index.py`-komennon suorittaminen) ei tarvitse.
+
+Kehityksen aikaisten riippuvuuksien asentaminen onnistuu antamalla `poetry add`-komennolle `--group dev`-flagi. Esimerkiksi pian tutuksi tulevan [pytest](https://pytest.org/)-kirjaston voi asentaa kehityksen aikaiseksi riippuvuudeksi seuraavalla komennolla:
 
 ```bash
-poetry add pytest --dev
+poetry add pytest --group dev
 ```
 
-Komennon suorittaminen lisää pytest-kirjaston riippuvuudeksi `[tool.poetry.dev-dependencies]`-osion alle:
+Komennon suorittaminen lisää pytest-kirjaston riippuvuudeksi `[tool.poetry.group.dev.dependencies]`-osion alle:
 
 ```
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 pytest = "^6.1.2"
 ```
 
-Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se vähentää asennettavien riippuvuuksien määrää tapauksessa, jossa haluamme vain käynnistää sovelluksen. Tässä tilanteessa riippuvuuksien asentamisen voi tehdä komennolla `poetry install --without dev`.
+Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se vähentää asennettavien riippuvuuksien määrää tapauksessa, jossa haluamme vain suorittaa sovelluksen. Tässä tilanteessa riippuvuuksien asentamisen voi tehdä komennolla `poetry install --without dev`.
 
 ### Ratkaisuja yleisiin ongelmiin
 
@@ -306,7 +306,7 @@ Poetryn kysymillä projektin tiedoilla ei ole väliä, joten voit hyvin käyttä
 Asennetaan projektiin kehityksen aikaiseksi riippuvuudeksi [pytest](https://docs.pytest.org/en/stable/)-sovelluskehys, joka helpottaa testien suorittamista. Riippuvuuden asentaminen onnistuu samassa hakemistossa komennolla:
 
 ```bash
-poetry add pytest --dev
+poetry add pytest --group dev
 ```
 
 Seuraavaksi muodosta _maksukortti_-hakemistoon seuraava rakenne:
@@ -763,7 +763,7 @@ Koska haarautumakattavuus antaa tyypillisesti realistisemman kuvan testien katta
 Testikattavuuden kerääminen testien suorituksesta onnistuu [coverage](https://coverage.readthedocs.io/en/coverage-4.3.2/index.html)-työkalun avulla. Sen asentamisen projektin kehityksen aikaiseksi riippuvuudeksi onnistuu tuttuun tapaan komennolla:
 
 ```bash
-poetry add coverage --dev
+poetry add coverage --group dev
 ```
 
 Testikattavuuden kerääminen `pytest src`-komennolla suoritetuista testeistä onnistuu virtuaaliympäristössä komennolla:
