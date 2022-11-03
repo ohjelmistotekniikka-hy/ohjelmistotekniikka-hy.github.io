@@ -10,4 +10,5 @@
   - Myös Discordissa voi kysellä erityisesti arkisin klo 9-16
   - **Jos kysymys koskee koodia tai siinä esiintyviä virhetilanteita, kannattaa laittaa kysymyksen yhteyteen linkki omaan repositorioosi.** Ilman koodin näkemistä ongelman selvittäminen on hankalaa tai jopa mahdotonta.
   - Jos et halua kysyä kysymystä suoraan kurssin kanavalla, voit ottaa yhteyttä suoraan "Discord-vastaavaan" Kalle Ilvekseen (kalleilv). Pääasiassa kysymykset kannattaa kuitenkin esittää kanavalla, sillä samat ongelmat koskevat usein useampaakin opiskelijaa
+- Kurssilla on käytössä normaalin lopussa kerättävän palautteen lisäksi ns. jatkuva palaute: voit antaa milloin vain kurssihenkilökunnalle anonyymiä palautetta osoitteessa <https://coursefeedback.helsinki.fi/targets/37222511/feedback>
 - Jos olet jo toteuttaunut isohkoja ohjelmistoja, on kurssi tietyissä tapauksissa mahdollista [hyväksilukea](/hyvaksiluku)
