@@ -240,7 +240,9 @@ Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
 
    **Jos versio on väärä**, muuta se oikeaksi ja suorita komento `poetry update`
 
-3. Listaa projektissa käytössä olevat virtuaaliympäristöt komennolla `poetry env list` ja poista ne kaikki yksitellen komennolla `poetry env remove <nimi>`. Esimerkiksi seuraavasti:
+3. Tyhjennä välimuisti suorittamalla komennot `poetry cache clear pypi --all` ja `poetry cache clear PyPi --all`
+
+4. Listaa projektissa käytössä olevat virtuaaliympäristöt komennolla `poetry env list` ja poista ne kaikki yksitellen komennolla `poetry env remove <nimi>`. Esimerkiksi seuraavasti:
 
    ```bash
    $ poetry env list
@@ -248,7 +250,6 @@ Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
    $ poetry env remove unicafe-jLeQYxxf-py3.9
    Deleted virtualenv: /Users/kalleilv/Library/Caches/pypoetry/virtualenvs/unicafe-jLeQYxxf-py3.9
    ```
-
    Kun virtuaaliympäristöt on poistettu, suorita komento `poetry install`
 
 Kun kaikki toimenpiteet on suoritettu, yritä suorittaa epäonnistunut Poetry-komento uudestaan.
