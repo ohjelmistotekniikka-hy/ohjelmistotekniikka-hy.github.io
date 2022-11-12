@@ -172,7 +172,7 @@ Graafinen käyttöliittymä eroaa tekstikäyttöliittymästä siinä, että kome
 
 ## Pelien toteutus
 
-Pelien toteutukseen soveltuvat kirjastot vaihtelevat tapauskohtaisesti. Erityisesti graafisten pelien toteutuksessa eräs hyväksi todettu kirjasto on [Pygame](https://www.pygame.org). Kirjaston käyttöön on kirjoittu erillinen ohje, joka on luettavissa [täällä](/python/pygame).
+Pelien toteutukseen soveltuvat kirjastot vaihtelevat tapauskohtaisesti. Erityisesti graafisten pelien toteutuksessa eräs hyväksi todettu kirjasto on [Pygame](https://www.pygame.org). Kirjaston käyttöön on kirjoitettu erillinen ohje, joka on luettavissa [täällä](/python/pygame).
 
 ## Riippuvuuksien injektointi
 
