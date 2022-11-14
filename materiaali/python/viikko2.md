@@ -501,8 +501,8 @@ Lisää lopuksi maksukortille seuraavat testit:
 
 - Maukkaan lounaan syöminen ei vie saldoa negatiiviseksi, ota tähän mallia testistä `test_syo_edullisesti_ei_vie_saldoa_negatiiviseksi`
 - Negatiivisen summan lataaminen ei muuta kortin saldoa
-- Kortilla pystyy ostamaan edullisen lounaan, kun kortilla rahaa vain edullisen lounaan verran (eli 2.5 euroa)
-- Kortilla pystyy ostamaan maukkaan lounaan, kun kortilla rahaa vain maukkaan lounaan verran (eli 4 euroa)
+- Kortilla pystyy ostamaan edullisen lounaan, kun kortilla on rahaa vain ja ainoastaan edullisen lounaan verran (eli 2.5 euroa)
+- Kortilla pystyy ostamaan maukkaan lounaan, kun kortilla on rahaa vain ja ainoastaan maukkaan lounaan verran (eli 4 euroa)
 
 **HUOM:** On suositeltavaa, että yksi testi testaa vain "yhtä asiaa" kerrallaan. Tee siis jokaisesta ylläolevasta oma testinsä.
 
@@ -875,11 +875,10 @@ Tee testihakemistoon testitiedosto <i>kassapaate_test.py</i> ja sinne testiluokk
   - Jos maksu ei ole riittävä: kassassa oleva rahamäärä ei muutu, kaikki rahat palautetaan vaihtorahana ja myytyjen lounaiden määrässä ei muutosta
 - _seuraavissa testeissä tarvitaan myös Maksukorttia jonka oletetaan toimivan oikein_
 - Korttiosto toimii sekä edullisten että maukkaiden lounaiden osalta
-  - Jos kortilla on tarpeeksi rahaa, veloitetaan summa kortilta ja palautetaan _True_
-  - Jos kortilla on tarpeeksi rahaa, myytyjen lounaiden määrä kasvaa
-  - Jos kortilla ei ole tarpeeksi rahaa, kortin rahamäärä ei muutu, myytyjen lounaiden määrä muuttumaton ja palautetaan _False_
+  - Jos kortilla on tarpeeksi rahaa, myytyjen lounaiden määrä kasvaa ja palautetaan _True_
+  - Jos kortilla ei ole tarpeeksi rahaa, myytyjen lounaiden määrä ei muutu ja palautetaan _False_
   - Kassassa oleva rahamäärä ei muutu kortilla ostettaessa
-- Kortille rahaa ladattaessa kortin saldo muuttuu ja kassassa oleva rahamäärä kasvaa ladatulla summalla
+- Kortille rahaa ladattaessa kassassa oleva rahamäärä kasvaa ladatulla summalla
 
 Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun kassapäätteellä on automaattiset testit, on sen rakennetta helppo muokata eli refaktoroida siistimmäksi koko ajan kuitenkin varmistaen, että testit menevät läpi. Refaktoroi koodisi siistimmäksi jos haluat.
 
