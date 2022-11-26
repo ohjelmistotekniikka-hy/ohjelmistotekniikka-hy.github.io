@@ -240,7 +240,7 @@ Pakkauskaavioihin on myös mahdollista merkitä pakkausten sisältönä olevia l
 
 ![](/assets/images/python/materiaali-pakkaukset-luokat.png)
 
-Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. Asiasta lisää hieman myöhemmin tässä dokumentissa.
+Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. Asiasta lisää hieman [täällä](/python/toteutus). Myös Ohjelmoinnin jatkokurssin osa 10 luku [Laajemman sovelluksen kehittäminen](https://ohjelmointi-22.mooc.fi/osa-10/4-lisaa-esimerkkeja) voi olla hyödyllinen. 
 
 ### Sekvenssikaaviot
 
