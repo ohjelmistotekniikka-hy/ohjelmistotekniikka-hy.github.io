@@ -6,7 +6,7 @@ title: Pelien toteutus Pygame-kirjastolla
 
 Kuten materiaalissa on jo todettu, sovelluslogiikan ja käyttöliittymän erottaminen toisistaan muodostuu erittäin tärkeäksi ohjelmiston testattavuuden ja laajennettavuuden kannalta. Etenkin pelien kohdalla, on toteutuksessa helppo sortua ajatukseen, että kehitystä kannattaa tehdä käyttöliittymä edellä. Tämä johtaa helposti "spagettikoodiin", jossa käyttöliittymän ja sovelluslogiikan koodi nivoutuvat tiiviisti yhteen siten, että koodin luettavuus ja testattavuus kärsivät.
 
-Tässä osiossa tutustutaan, miten pelejä voi toteuttaa [Pygame](https://www.pygame.org)-kirjaston avulla. Kirjasto saattaa olla jo ennestään tuttu Ohjelmoinnin jatkokurssilta, jossa sen avulla toteutettiin yksinkertaisia pelejä. Esimerkkinä osiossa käytetään yksinkertaista [Sokoban](https://fi.wikipedia.org/wiki/Sokoban)-peliä. Samaa peliä on käytetty esimerkkinä myös Ohjelmoinnin jatkokurssilla, mutta kyseisessä esimerkissä ei keskitytty esimerkiksi pelin testaamiseen. Projektin lähdekoodi löytyy kokonaisuudessaan [tästä](https://github.com/ohjelmistotekniikka-hy/pygame-sokoban) repositoriosta. Projektista voi ottaa vinkkejä oman pelin toteutukseeen, mutta koodin suora kopioiminen on kiellettyä.
+Tässä osiossa tutustutaan, miten pelejä voi toteuttaa [Pygame](https://www.pygame.org)-kirjaston avulla. Kirjasto saattaa olla jo ennestään tuttu Ohjelmoinnin jatkokurssilta, jossa sen avulla toteutettiin yksinkertaisia pelejä. Esimerkkinä osiossa käytetään yksinkertaista [Sokoban](https://fi.wikipedia.org/wiki/Sokoban)-peliä. Samaa peliä on käytetty esimerkkinä myös Ohjelmoinnin jatkokurssilla, mutta kyseisessä esimerkissä ei keskitytty esimerkiksi pelin testaamiseen. Projektin lähdekoodi löytyy kokonaisuudessaan [tästä](https://github.com/ohjelmistotekniikka-hy/pygame-sokoban) repositoriosta. Projektista voi ottaa vinkkejä oman pelin toteutukseen, mutta koodin suora kopioiminen on kiellettyä.
 
 **HUOM:** Pygame-ikkunan käynnitys SSH-yhteyden, tai WSL:n kautta aiheuttaa luultavasti seuraavan virheen:
 
@@ -587,7 +587,7 @@ class TestGameLoop(unittest.TestCase):
         self.assertTrue(self.level_1.is_completed())
 ```
 
-Luokat `StubRenderer` ja `StubClock` eivät tee mitään, koska niiden toiminallisuudella ei ole testin kannalta merkitystä. `StubEventQueue`-luokkalle annetaan ennalta määrätty lista tapahtumia, jotka `GameLoop`-luokka käy läpi ja toteuttaa niiden mukaiset toimenpiteet. Voimme siis testissä tarkistaa, onko tiettyjen tapahtumien seurauksena peli tietyssä tilassa. Kyseisen testin tapauksessa testataan, että annetut tapahtumat johtavat tason läpäisyyn.
+Luokat `StubRenderer` ja `StubClock` eivät tee mitään, koska niiden toiminallisuudella ei ole testin kannalta merkitystä. `StubEventQueue`-luokalle annetaan ennalta määrätty lista tapahtumia, jotka `GameLoop`-luokka käy läpi ja toteuttaa niiden mukaiset toimenpiteet. Voimme siis testissä tarkistaa, onko tiettyjen tapahtumien seurauksena peli tietyssä tilassa. Kyseisen testin tapauksessa testataan, että annetut tapahtumat johtavat tason läpäisyyn.
 
 ## Aikaan sidotut tapahtumat
 
@@ -618,7 +618,7 @@ class Enemy(pygame.sprite.Sprite):
         return current_time - self.previous_move_time >= 5000
 ```
 
-Metodi `should_move` tarkistaa onko viimeisestä liikkumisesta kulunut aikaa yli 5000 millisekunttia (5 sekunttia). Sovelluslogiikasta vastaavassa luokassa voimme liikutella vihollisia seuraavaan tapaan:
+Metodi `should_move` tarkistaa onko viimeisestä liikkumisesta kulunut aikaa yli 5000 millisekuntia (5 sekuntia). Sovelluslogiikasta vastaavassa luokassa voimme liikutella vihollisia seuraavaan tapaan:
 
 ```python
 import pygame
