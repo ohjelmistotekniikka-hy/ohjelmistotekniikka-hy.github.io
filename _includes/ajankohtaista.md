@@ -1,6 +1,7 @@
 ## Ajankohtaista
 
-- **Koeviikolla pajaa tiistaina 14-16 ja keskiviikkona 10-12**
+- Arvostelu on valmistunut. Loppuarvioinnin pisteet [täällä](pisteet.pdf). Jos loppuarvioinnista on kysyttävää, lähetä mailia.
+  - Arvosteluperusteet [täällä](https://ohjelmistotekniikka-hy.github.io/python/arvosteluperusteet)
 - Kurssin aloitustilaisuus pidettiin {{site.lecture_time}}
   - Aloitustilaisuudessa käytettävät kalvot löytyvät [täältä]({{site.lecture_slides_link}}).
   - [tallenne](https://www.youtube.com/watch?v=9b8tjLJq3QQ)
