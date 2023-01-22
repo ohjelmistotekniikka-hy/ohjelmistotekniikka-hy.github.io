@@ -23,6 +23,11 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 {% include harjoitustyon_toimivuus.md %}
 
+## Ajankohtaista
+
+Arvostelu valmistunut. Loppuarvioinnin pisteet [täällä](pisteet.pdf). Jos loppuarvioinnista on kysyttävää, lähetä mailia.
+- Arvosteluperusteet [täällä](https://ohjelmistotekniikka-hy.github.io/python/arvosteluperusteet)
+
 ## Aikataulu
 
 ### Viikko 1
