@@ -1,6 +1,7 @@
 ## Ajankohtaista
 
 - Arvostelu on valmistunut. Loppuarvioinnin pisteet [täällä](pisteet.pdf). Jos loppuarvioinnista on kysyttävää, lähetä mailia.
+  - Ensimmäisessä sarakkeessa opiskelijanumeron viimeiset viisi merkkiä
   - Arvosteluperusteet [täällä](https://ohjelmistotekniikka-hy.github.io/python/arvosteluperusteet)
 - Kurssin aloitustilaisuus pidettiin {{site.lecture_time}}
   - Aloitustilaisuudessa käytettävät kalvot löytyvät [täältä]({{site.lecture_slides_link}}).
