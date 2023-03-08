@@ -16,7 +16,7 @@ Ohjaajan tehtävät kurssilla ovat:
 
 Opiskelijoille annetaan pääsääntöisesti palautetta viikkopalautuksien yhteydessä [Labtoolin]({{site.labtool_link}}) kautta. Kurssin opiskelijat jaetaan Labtoolissa ohjaajien kesken ensimmäisen viikon deadlinen jälkeen. **Ohjaajan tulee antaa viikkopalaute jokaiselle opiskelijalleen deadlinea vastaavan viikon sunnuntaihin klo 23:59 mennessä**.
 
-Viikkopalautuksien tarkistuksessa kannattaa hyödyntää Labtoolin viikottaista "tarkistuslistaa" ja alta löytyviä arvosteluperusteita. Palautuksia ei tarvitse syynätä turhan tarkasti, oleellisten tiedostojen silmäily ja vaadittavien toiminallisuuksien pikainen testaaminen riittää. Palautteen itsessään tulee olla _ytimekästä_ ja _rakentavaa_.
+Viikkopalautuksien tarkistuksessa kannattaa hyödyntää Labtoolin viikoittaista "tarkistuslistaa" ja alta löytyviä arvosteluperusteita. Palautuksia ei tarvitse syynätä turhan tarkasti, oleellisten tiedostojen silmäily ja vaadittavien toiminallisuuksien pikainen testaaminen riittää. Palautteen itsessään tulee olla _ytimekästä_ ja _rakentavaa_.
 
 ### Puller.sh
 
@@ -25,17 +25,17 @@ Tässä erään kurssin aiemman ohjaajan kirjoittama puller.sh skripti, jolla vo
 Käyttöohjeet:
 
 - Lataa kaikki arvosteltavat reposi ensin manuaalisesti samaan kansioon (jokainen toki omana alikansiona) ja tallenna samaan kansioon yllä oleva scripti nimellä puller.sh
-- Kun haluat pullata repot, mene terminaalin kautta kansioon, jossa scripti ja repot sijatsevat ja aja se käskyllä ./puller.sh
+- Kun haluat pullata repot, mene terminaalin kautta kansioon, jossa scripti ja repot sijaitsevat ja aja se käskyllä ./puller.sh
 
 ### Viikko 1
 
-Katsokaa että githubista löytyy tiedostot [gitlog.txt]({{site.repo_url}}/tree/master/materiaali/python/gitlog.txt) ja [komentorivi.txt]({{site.repo_url}}/tree/master/materiaali/python/komentorivi.txt) ja että ne näyttävät edes suurinpiirtein oikeilta.
+Katsokaa että GitHubista löytyy tiedostot [gitlog.txt]({{site.repo_url}}/tree/master/materiaali/python/gitlog.txt) ja [komentorivi.txt]({{site.repo_url}}/tree/master/materiaali/python/komentorivi.txt) ja että ne näyttävät edes suurinpiirtein oikeilta.
 Pienistä virheistä voi laitta huomautuksen / korjauskehoituksen viestiksi
 Ei pisteitä jos ei tehtynä tai ymmärtänyt tehtävän aivan väärin.
 
 ### Viikko 2
 
-Katsokaa että jacocon/coveragen raportti on ok ja silmäilkää nopeesti että testit ovat järkeviä eikä feikketestejä. Jos jotain testejä puuttuu=testikattavuus ei 100%, niin sitten tarkempi syynäys/pisteiden vähennys labtoolin ohjeen mukaan. (Testeistä paremmat kuvaukset niissä Labtoolin opiskelijalle menevissä alaosan teksteissä...)
+Katsokaa että jacocon/coveragen raportti on ok ja silmäilkää nopeasti että testit ovat järkeviä eikä feikketestejä. Jos jotain testejä puuttuu=testikattavuus ei 100%, niin sitten tarkempi syynäys/pisteiden vähennys labtoolin ohjeen mukaan. (Testeistä paremmat kuvaukset niissä Labtoolin opiskelijalle menevissä alaosan teksteissä...)
 
 ### Viikko 3
 
@@ -52,18 +52,18 @@ Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärre
 
 - Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla tai/ja komennolla `mvn compile exec:java -Dexec.mainClass=pakkaus.Paaohjelma` komennon parametrina on metodin main sisältävän luokan täydellinen, eli myös pakkauksen sisältävä, nimi referenssisovelluksen tapauksessa parametri olisi `-Dexec.mainClass=todoapp.ui.TodoUi`
 - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `mvn test jacoco:report` (käsky luo raportin target kansioon) (Jos ei toimi vielä tsekata löytyykö materiaalin ohjeen mukainen määrittely tiedoston pom.xml osiossa plugins)
-- Sovelluksella on oltava vähintään yksi testi jonka voi suorittaa komennolla `mvn test`. Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa Testin tulee mennä läpi
-- Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta, pelkät getterietä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
+- Sovelluksella on oltava vähintään yksi testi jonka voi suorittaa komennolla `mvn test`. Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa. Testin tulee mennä läpi
+- Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta, pelkät gettereitä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
 - Opiskelijan tehtävänannossa ei oltu määritelty pitääkö toiminnallisuuden on olla käyttäjälle näkyvää tai olla käyttöliittymä olemassa, joten riittää jos toiminnallisuus on toteutettu nyt kooditasolla ja toimivuus testattu (eli jos on tehnyt “test driven”) niin se riittää tässä vaiheessa
 - Repostitorion juuresta löytyy Maven-projekti
 
 #### Projekti/Python
 
 - Projektin koodin pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
-- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report` (html-muotoinen raportti löytyy kansiosta htmlcov) (Jos ei toimi vielä tsekatkata löytyykö materiaalin ohjeen mukainen määrittely tiedostosta pyproject.toml)
+- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report` (html-muotoinen raportti löytyy kansiosta htmlcov) (Jos ei toimi vielä tsekatkaa löytyykö materiaalin ohjeen mukainen määrittely tiedostosta pyproject.toml)
 - Tarkistakaa että src-hakemiston alahakemistoihin on lisätty [ohjeen](/python/viikko3#harjoitusty%C3%B6-1-poetry-projektin-alustaminen) mukaisesti tyhjät __init__.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty, ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä.
 - Sovelluksella on oltava vähintään yksi testi jonka voi suorittaa komennolla `poetry run invoke test`. Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa. Testin tulee mennä läpi.
-- Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta, pelkät getterietä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
+- Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta, pelkät gettereitä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
 - Opiskelijan tehtävänannossa ei oltu määritelty pitääkö toiminnallisuuden on olla käyttäjälle näkyvää tai olla käyttöliittymä olemassa, joten riittää jos toiminnallisuus on toteutettu nyt kooditasolla ja toimivuus testattu (eli jos on tehnyt “test driven”) niin se riittää tässä vaiheessa
 - Repositorion juuresta löytyy `src`-kansio projektin koodille
 
@@ -179,7 +179,7 @@ Python projekteissa testikattavuutta arvioitaessa muistakaa katsoa että jokaise
 
 Testaus osiosta valitaan molemmat "kattavuus vähintään.." checkboxit jos kattavuus vähintään 60%. Ohjelma kasvunut osiossa valitaan vain toinen "ohjelma kasvanut.." checkboxi.
 
-Jotta arvostele menee oikein, älkää ruksiko rastia "JavaDoc ei ole generoitavissa/Docstring-dokumentointia ei ole aloitettu" vaikka JavaDoc ei olisi generatoivissa tai Docstring-dokumentointia ei olisi aloitettu. Viikon 6 opiskelijan ohjeissa ei ollut mainintaa siitä, että aloittamaton JavaDoc/Docstring vähentäisi pisteitä. <!-- tämän huomion voinee sitten ottaa pois kun labtoolin pisteytyksestä on kurssin seuraavassa iteraatiossa poistettu tämä miinuspiste -->
+Jotta arvostele menee oikein, älkää ruksiko rastia "JavaDoc ei ole generoitavissa/Docstring-dokumentointia ei ole aloitettu" vaikka JavaDoc ei olisi generoitavissa tai Docstring-dokumentointia ei olisi aloitettu. Viikon 6 opiskelijan ohjeissa ei ollut mainintaa siitä, että aloittamaton JavaDoc/Docstring vähentäisi pisteitä. <!-- tämän huomion voinee sitten ottaa pois kun labtoolin pisteytyksestä on kurssin seuraavassa iteraatiossa poistettu tämä miinuspiste -->
 
 Labtoolissa muutama uusi kohta, muuten tämä viikko aika samanlailla kuin edellinen viikko.
 
@@ -189,7 +189,7 @@ Labtoolissa muutama uusi kohta, muuten tämä viikko aika samanlailla kuin edell
 
 - Vähintään 6 laadukasta ja rakentavaa palautekommenttia riittää 1.5 pisteeseen
 - Täysiin pisteisiin edellytetään myös vähintään yksi käyttökelpoinen parannusehdotus
-- Eli 0.25p per laadukas ja rakentava kommentti ja 0.5p parannusohdotuksesta
+- Eli 0.25p per laadukas ja rakentava kommentti ja 0.5p parannusehdotuksesta
 
 ### Loppupalautus
 
@@ -218,7 +218,7 @@ Kontrollitarkastuksiin tulee tarkemmat ohjeet lähempänä sen alkua.
 
 ### Arvioiden vertaisarviointi
 
-Valitkaa listalta oppilas satunnaisesti ja avataa ohjaajan kirjoittama pisteytyslista. Katsokaa kaikki kohdat läpi että ne ovat järkeviä, mutta ei tarvitse kuitenkaan suurennuslasin kanssa etsiä "virheitä". Jos olette erimieltä jostain kirjoittakaa "Kontrolloijan huomioita"-kohtaan mitä muuttaisitte ja mihin suuntaan. Jos muutettu pisteytys vaikuttaisi arvosanaan siitä kannattaa myös mainita. Tarkastustilanne-välilehdeltä näkee kuinka monta kontrollitarkastusta pitää tehdä. Niitä on yhtä monta, kuin mitä arvioitte. Lisätkää myös nimenne "kontrolloija" kohtaan kun alatte tarkastamaan, jotta ei kävisi niin että kaksi henkilöä tarkastaakin vahingossa samaa henkilöä.
+Valitkaa listalta oppilas satunnaisesti ja avatkaa ohjaajan kirjoittama pisteytyslista. Katsokaa kaikki kohdat läpi että ne ovat järkeviä, mutta ei tarvitse kuitenkaan suurennuslasin kanssa etsiä "virheitä". Jos olette erimieltä jostain kirjoittakaa "Kontrolloijan huomioita"-kohtaan mitä muuttaisitte ja mihin suuntaan. Jos muutettu pisteytys vaikuttaisi arvosanaan siitä kannattaa myös mainita. Tarkastustilanne-välilehdeltä näkee kuinka monta kontrollitarkastusta pitää tehdä. Niitä on yhtä monta, kuin mitä arvioitte. Lisätkää myös nimenne "kontrolloija" kohtaan kun alatte tarkastamaan, jotta ei kävisi niin että kaksi henkilöä tarkastaakin vahingossa samaa henkilöä.
 esimerkkejä kontrollikommenteista:
 
 ```
@@ -245,7 +245,7 @@ Pyrkikää arvioimaan jokaiselta muulta ohjaajalta vähintään yksi arviointi
 
 ### Vertaisarviointien deadlinen jälkeen
 
-- Lukekaa harjoitustöiden arviointeihin saamanne kommentit ja korjatkaa arviontinne sen mukaisesti, jos olette kommentoijan kanssa samaa mieltä.
+- Lukekaa harjoitustöiden arviointeihin saamanne kommentit ja korjatkaa arviointinne sen mukaisesti, jos olette kommentoijan kanssa samaa mieltä.
 - Kun olette käyneet läpi kaikki saamanne vertaisarviot laittakaa "valmis" tai vastaava merkintä taulukon Tarkastustilanne -välilehdelle samalle riville nimenne kanssa sarakkeeseen "Kaikki tarkastettu ja korjaukset valmiit" merkiksi siitä että olette valmiita
 
 Vertaisarviointeja siis tehdään yhtä monta kuin teitte arviointeja (sarake "to control" Tarkastustilanne -välilehdelle). Kannattaa myös varmistaa että Tarkastustilanne -välilehden luvut tehdyistä arvioinneista, dropanneista ja ei aloittaneista ovat oikein, koska niiden perusteella maksetaan palkkio.
