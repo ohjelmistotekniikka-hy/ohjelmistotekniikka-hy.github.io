@@ -10,29 +10,29 @@ repo_branch: 'master'
 title: Ohjelmistotekniikka, kevät 2023
 
 # aikataulut (annetaan muodossa viikonpäivä dd.mm kellonaika)
-wk1dl: 'tiistai 8.11. klo 23:59'
-wk2dl: 'tiistai 15.11. klo 23:59'
-wk3dl: 'tiistai 22.11. klo 23:59'
-wk4dl: 'tiistai 29.11. klo 23:59'
-wk5dl: 'tiistai 6.12. klo 23:59'
-wk6dl: 'tiistai 13.12. klo 23:59'
-finaldl: 'sunnuntai 25.12. klo 23:59'
-code_review_start_date: 'keskiviikko 7.12. klo 23:59'
+wk1dl: "tiistai 21.3. klo 23:59"
+wk2dl: "tiistai 28.3. klo 23:59"
+wk3dl: "tiistai 4.4. klo 23:59"
+wk4dl: "tiistai 18.4. klo 23:59"
+wk5dl: "tiistai 25.4. klo 23:59"
+wk6dl: "tiistai 2.5. klo 23:59"
+finaldl: "sunnuntai 14.5. klo 23:59"
+code_review_start_date: "keskiviikko 26.4. klo 23:59"
 
 # ohjausajat
 # - Maanantaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/68570587158?pwd=TFhwUXBucExZeVNJZnRydE8yWkNFdz09)
 # - Tiistaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/65324719978) (alkaen 23.3.)
 # - Torstaisin klo 13-15  [zoom]()
 times:
-  - time: 'Maanantaisin klo 10-12 kampuksella BK107-luokassa '
-  - time: 'Tiistaisin klo 14-16 kampuksella BK107-luokassa (pidetään koeviikolla)'
-  - time: 'Keskiviikkoisin klo 10-12 kampuksella BK107-luokassa (pidetään koeviikolla)'
-  - time: 'Torstaisin [zoom](https://helsinki.zoom.us/j/63103703328?pwd=OCtlZVBENkFyNUJlRDNLblBqcGN6UT09) klo 16-18'
-  - time: 'Perjantaisin klo 12-14 kampuksella BK107-luokassa'
+  - time: "Maanantaisin klo 10-12 kampuksella BK107-luokassa "
+  - time: "Tiistaisin klo 14-16 kampuksella BK107-luokassa (pidetään koeviikolla)"
+  - time: "Keskiviikkoisin klo 10-12 kampuksella BK107-luokassa (pidetään koeviikolla)"
+  - time: "Torstaisin klo 16-18 kampuksella BK107-luokassa"
+  #- time: 'Perjantaisin klo 12-14 kampuksella BK107-luokassa'
 
-lecture_time: 'maanantaina 13.2. klo 10–12'
+lecture_time: 'maanantaina 13.3. klo 10–12'
 lecture_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/tree/master/luennot/2023-kevat'
-lecture_slides_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/blob/master/luennot/2022-kevat/aloitusluento.pdf'
+lecture_slides_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/blob/master/luennot/2023-kevat/aloitusluento.pdf'
 lecture_recording_link: '#'
 
 # seuraava kurssikerta muodossa syksyllä/keväällä [vuosi].
@@ -40,7 +40,7 @@ lecture_recording_link: '#'
 # käytetään muun muassa "ei voi jatkaa seuraavalla kurssilla (syksyllä 2021)"
 next_course: 'sysyllä 2023'
 
-labtool_link: 'https://study.cs.helsinki.fi/labtool/courses/TKT20002.2022.S.K.1'
+labtool_link: 'https://study.cs.helsinki.fi/labtool/courses/TKT20002.2023.K.K.1'
 
 # referenssi-sovellusten linkit
 python_reference_app_url: 'https://github.com/ohjelmistotekniikka-hy/python-todo-app'
