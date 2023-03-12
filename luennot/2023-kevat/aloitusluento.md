@@ -33,7 +33,7 @@
 . . .
 
 - Harjoitustyö tulee tehdä kurssin aikataulujen puitteissa
-- Kesken jäänyttä harjoitustyötä ei voi jatkaa seuraavalla kurssilla (keväällä 2023)
+- Kesken jäänyttä harjoitustyötä ei voi jatkaa seuraavalla kurssilla (syksyllä 2023)
 - Muista siis varata riittävästi aikaa (10-15h viikossa) koko periodin ajaksi!
 
 # Luento, deadlinet ja ohjaus
@@ -283,30 +283,30 @@ Kurssin harjoitustyö ketterässä hengessä viikon mittaisilla iteraatioilla
 
 . . .
 
-- Unittest eräs pythonin automatisoidun testauksen työkaluista
+- Unittest eräs Pythonin automatisoidun testauksen työkaluista
 - Tulet kurssin ja myöhempienkin opintojesi aikana kirjoittamaan paljon automatisoituja testejä
 - Viikon 2 laskareissa harjoitellaan Unittestin perusteita
 
-# pylint
+# Pylint
 
 - Automaattisten testien lisäksi koodille voidaan määritellä erilaisia automaattisesti tarkastettavia tyylillisiä sääntöjä
   - ylläpidetään koodin luettavuutta ja varmistetaan, että koodi noudateta samoja tyylillisiä konventioita
 
 . . .
 
-- Käytämme kurssilla tarkoitukseen _pylint_-nimistä työkalua
+- Käytämme kurssilla tarkoitukseen _Pylint_-nimistä työkalua
 
 . . .
 
-- pylintin avulla kontrolloimme mm. muuttujien nimentää, sulkumerkkien sijoittelua ja välilyönnin käytön systemaattisuutta
+- Pylintin avulla kontrolloimme mm. muuttujien nimentää, sulkumerkkien sijoittelua ja välilyönnin käytön systemaattisuutta
 
-# docstring
+# Docstring
 
 - Osa ohjelmiston dokumentointia on lähdekoodin luokkien julkisten metodien kuvaus
 
 . . .
 
-- Pythonissa lähdekoodi dokumentoidaan käyttäen _docstring_-työkalua
+- Pythonissa lähdekoodi dokumentoidaan käyttäen _Docstring_-työkalua
 - Dokumentointi tapahtuu kirjoittamalla koodin yhteyteen sopivasti muotoiltuja kommentteja
 
 ![](images/1.png){ width=350 }
@@ -323,7 +323,7 @@ Kurssin harjoitustyö ketterässä hengessä viikon mittaisilla iteraatioilla
 
 - _UML_ eli _Unified Modeling Language_ on 1997 standardoitu olio-ohjelmistojen mallintamiseen tarkoitettu mallinnuskieli
 - UML sisältää 13 erilaista kaaviotyyppiä
-- UML oli aikoinaan todella suosittu, nyt sen suosio on hiipumaan päin, muutama tärkein kaaviotyyppi kannattaa kuitenkin osata
+- UML oli aikoinaan todella suosittu, nyt sen suosio on hiipunut, muutama tärkein kaaviotyyppi kannattaa kuitenkin osata
 
 . . .
 
@@ -361,7 +361,7 @@ class User:
 
 ![](https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-syksy-2020/main/web/images/l-4.png){ width=260 }
 
-- Kaaviota parempi paikka esim. metodien kuvaamiselle on koodiin liittyvä docstring
+- Kaaviota parempi paikka esim. metodien kuvaamiselle on koodiin liittyvä Docstring
 
 # Todo-sovelluksen tietosisällön luokkakaavio
 
@@ -369,7 +369,7 @@ class User:
 
 ![](./todo2.png){ width=260 }
 
-- Kaaviota parempi paikka esim. metodien kuvaamiselle on koodiin liittyvä docstring
+- Kaaviota parempi paikka esim. metodien kuvaamiselle on koodiin liittyvä Docstring
 
 - Tärkeintä kaavioissa on tuoda esiin olioiden väliset suhteet ja niitä kuvaavat _osallistumisrajoitteet_
 
@@ -379,7 +379,7 @@ class User:
 
 ![](./todo3.png){ width=260 }
 
-- Kaaviota parempi paikka esim. metodien kuvaamiselle on koodiin liittyvä docstring
+- Kaaviota parempi paikka esim. metodien kuvaamiselle on koodiin liittyvä Docstring
 
 - Tärkeintä kaavioissa on tuoda esiin olioiden väliset suhteet ja niitä kuvaavat _osallistumisrajoitteet_
 
@@ -389,7 +389,7 @@ class User:
 
 ![](./todo4.png){ width=260 }
 
-- Kaaviota parempi paikka esim. metodien kuvaamiselle on koodiin liittyvä docstring
+- Kaaviota parempi paikka esim. metodien kuvaamiselle on koodiin liittyvä Docstring
 
 - Tärkeintä kaavioissa on tuoda esiin olioiden väliset suhteet ja niitä kuvaavat _osallistumisrajoitteet_
 
@@ -423,7 +423,7 @@ class User:
 :::
 ::::::::::::::
 
-- Pakkausten välille on merkitty riippuvuus jos pakkauksen luokat käyttävät toisen pakkauksen luokkia
+- Pakkausten välille on merkitty *riippuvuus* jos pakkauksen luokat käyttävät toisen pakkauksen luokkia
 
 # Toiminnallisuuden kuvaaminen
 
@@ -482,6 +482,8 @@ class Kassapaate:
 - Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö
 - Harjoitustyössä toteutetaan itsenäisesti ohjelmisto omavalintaisesta aiheesta
 
+. . .
+
 - Harjoitustyötä tehdään itsenäisesti, mutta tarjolla on pajaohjausta
 - Pajaa kampuksella (BK107)
   - ks kurssisivu
@@ -513,17 +515,17 @@ class Kassapaate:
 
 # Viikkopalautukset ja palaute
 
-- Kurssilla siis viikoittaiset palautukset, deadline tiistaisin
+- Kurssilla siis viikoittaiset palautukset, deadline tiistaisin klo 23.59:59
   - näistä kertyy osa kurssin pistestä (17/60) 
 - Viikkopalautuksista saa pistemäärän lisäksi pienen palautteen
 
 . . .
 
-- Jos halat harjoitustyöstä "laajempaa" palautetta
+- Jos haluat harjoitustyöstä "laajempaa" palautetta
   - onko koodin rakenne hyvä
   - onko työ tarpeeksi laaja jotta siitä voisi saada arvosanan x
 
-- Viikkopalautteet eivät ole tähän tarkoitettu
+- **Viikkopalautteet eivät ole tähän tarkoitettu**
 
 . . .
 
@@ -727,7 +729,6 @@ class Kassapaate:
 
 - Harjoitustyösi pitää pystyä joka viikko suorittamaan, kääntämään ja testaamaan komentoriviltä käsin laitoksen linux-koneilla (tai uusimmat päivitykset sisältävällä cubbli-linuxilla)
   - muussa tapauksessa työtä ei tarkasteta ja menetät viikon/loppupalautuksen pisteet
-- Varminta käyttää Javan versiota 11
 
 . . .
 
