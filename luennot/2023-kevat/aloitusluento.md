@@ -1,6 +1,6 @@
 % Ohjelmistotekniikka
 % Matti Luukkainen, Jaako Iisala ja iso lauma muita ohjaajia
-% 13.3.2024
+% 13.3.2023
 
 # Ohjelmistotekniikka
 
@@ -75,9 +75,6 @@
 
 - Kurssipalaute **vaikuttaa**, aiemmilta kerroilta opiksi otetua
   - Harjoitustyön sisältöön liittyvä palaute...
-
-
-# Ilmainen illallinen hyvässä seurassa
 
 #
 
