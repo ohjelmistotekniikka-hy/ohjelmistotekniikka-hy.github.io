@@ -24,9 +24,9 @@ code_review_start_date: "keskiviikko 26.4. klo 23:59"
 # - Tiistaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/65324719978) (alkaen 23.3.)
 # - Torstaisin klo 13-15  [zoom]()
 times:
-  - time: "Maanantaisin klo 10-12 kampuksella BK107-luokassa "
-  - time: "Tiistaisin klo 14-16 kampuksella BK107-luokassa (pidetään koeviikolla)"
-  - time: "Keskiviikkoisin klo 10-12 kampuksella BK107-luokassa (pidetään koeviikolla)"
+  - time: "Maanantaisin klo 10-12 kampuksella BK107-luokassa"
+  - time: "Tiistaisin klo 14-16 kampuksella BK107-luokassa" #(pidetään koeviikolla?)
+  - time: "Keskiviikkoisin klo 10-12 kampuksella BK107-luokassa" #(pidetään koeviikolla?)
   - time: "Torstaisin klo 16-18 kampuksella BK107-luokassa"
   #- time: 'Perjantaisin klo 12-14 kampuksella BK107-luokassa'
 
