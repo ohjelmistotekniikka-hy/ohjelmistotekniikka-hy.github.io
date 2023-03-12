@@ -63,6 +63,22 @@
 - Arvosanaan 1 riittää 30 pistettä, arvosanaan 5 tarvitaan noin 55 pistettä.
 - Läpipääsyyn vaatimuksena on lisäksi vähintään 10 pistettä lopullisesta ohjelmasta
 
+# Kurssipalaute
+
+. . .
+
+- Kurssipalaute
+  - Lopun kurssipalautteen antaville yksi lisäpiste
+  - Kurssilla lopussa kerättävän palautteen lisäksi ns. jatkuva palaute https://coursefeedback.helsinki.fi
+
+. . .
+
+- Kurssipalaute **vaikuttaa**, aiemmilta kerroilta opiksi otetua
+  - Harjoitustyön sisältöön liittyvä palaute...
+
+
+# Ilmainen illallinen hyvässä seurassa
+
 #
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEORIA
