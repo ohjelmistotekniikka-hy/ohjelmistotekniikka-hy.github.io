@@ -30,15 +30,15 @@ times:
   - time: 'Torstaisin [zoom](https://helsinki.zoom.us/j/63103703328?pwd=OCtlZVBENkFyNUJlRDNLblBqcGN6UT09) klo 16-18'
   - time: 'Perjantaisin klo 12-14 kampuksella BK107-luokassa'
 
-lecture_time: 'maanantaina 31.10. klo 14–16'
-lecture_link: '#'
+lecture_time: 'maanantaina 13.2. klo 10–12'
+lecture_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/tree/master/luennot/2023-kevat'
 lecture_slides_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/blob/master/luennot/2022-kevat/aloitusluento.pdf'
 lecture_recording_link: '#'
 
 # seuraava kurssikerta muodossa syksyllä/keväällä [vuosi].
 # esimerkki syksyllä 2021
 # käytetään muun muassa "ei voi jatkaa seuraavalla kurssilla (syksyllä 2021)"
-next_course: 'keväällä 2023'
+next_course: 'sysyllä 2023'
 
 labtool_link: 'https://study.cs.helsinki.fi/labtool/courses/TKT20002.2022.S.K.1'
 
