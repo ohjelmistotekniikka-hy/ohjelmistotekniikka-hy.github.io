@@ -215,6 +215,10 @@ Katsotaan esimerkkinä Todo-sovelluksen vaatimusmäärittelyä
   - suoritetaan ohjelman todellisen käyttöliittymän kautta
   - saattaa tapahtua erillisen laadunhallintatiimin toimesta
 
+. . .
+
+- Testaus pyritään automatisoimaan
+
 # Vesiputousmalli
 
 - Ohjelmistoja on 70-luvulta asti tehty vaihe vaiheelta etenevän _vesiputousmallin_ (engl. waterfall model) mukaan
@@ -248,11 +252,17 @@ Katsotaan esimerkkinä Todo-sovelluksen vaatimusmäärittelyä
 # Ketterä ohjelmistokehitys
 
 - Vesiputousmallin heikkoudet ovat johtaneet 2000-luvun alun jälkeen _ketterien (engl. agile) menetelmien_ käyttöönottoon
+
+. . .
+
 - Alussa kartoitetaan pääpiirteissään ohjelmiston vaatimuksia ja hahmotellaan ohjelmiston alustava arkkitehtuuri
 
 . . .
 
 - Tämän jälkeen suoritetaan useita _iteraatioita_, joiden aikana ohjelmistoa rakennetaan pala palalta eteenpäin
+
+. . .
+
 - Kussakin iteraatiossa suunnitellaan ja toteutetaan valmiiksi pieni osa ohjelmiston vaatimuksista
 
 # Ketterä ohjelmistokehitys
