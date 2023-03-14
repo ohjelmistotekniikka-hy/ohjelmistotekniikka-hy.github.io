@@ -67,7 +67,7 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 - Luo kotihakemistoosi hakemisto _kurssit_
   - **HUOM:** joidenkin kohdalla melkillä on ollut ongelmia kotihakemiston asetuksissa ja esim. hakemiston luomisen seurauksena on virhe 'permission denied'. Jos törmäät ongelmaan, lähetä viesti osoitteeseen _it-support@cs.helsinki.fi_ ja raportoi ongelmaksi "ei oikeuksia kotihakemistoon melkillä"
   - Kokeile myös jos kirjaantuminen toiselle koneelle, esim. _melkinpaasi.cs.helsinki.fi_ tuottaisi paremman tuloksen
-- Luo hakemistolle _kurssit_ alihakemisto _ot2022_
+- Luo hakemistolle _kurssit_ alihakemisto _ot2023_
 - Ja luomallesi hakemistolle alihakemisto _viikko1_
 - Mene kotihakemistoosi ja luo sen alle hakemisto _temp_
 - Mene hakemistoon _temp_
@@ -76,7 +76,7 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 - Haettu tiedosto on _zip-paketti_, pura se _unzip_-ohjelmalla
   - Myös unzip toimii siten, että sille annetaan purettava tiedosto parametriksi
 - Komennon suorittamisen jälkeen hakemistoon on ilmestynyt hakemisto _unicafe_
-- Siirrä hakemisto hakemiston _kurssit/ot2022/viikko1_ alihakemistoksi
+- Siirrä hakemisto hakemiston _kurssit/ot2023/viikko1_ alihakemistoksi
 - Poista zip-paketti
 - Poista hakemisto _temp_
 
