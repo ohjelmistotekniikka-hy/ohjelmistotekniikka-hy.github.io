@@ -655,6 +655,27 @@ mluukkai@melkki:~/ot-harjoitustyo$
 - Tulet törmäämään tähän varmaan useasti jatkossakin.
 - Ongelma ei ole paha. Koska paikalliset ja GitHubin muutokset ovat kohdistuneet **eri tiedostoihin**, selviämme helpolla
 - Ensin pullaamme muutokset paikalliseen repositorioon komennolla `git pull`
+- Saat suurella todennäköisyydellä seuraavan ilmoituksen
+
+```
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+```
+
+- Git kysyy millä tavalla sen pitäisi käsitellä kahden eri branchin eli "koodihaaran" yhdistämistilanne, tässä tapauksessa branchit ovat paikallisen koneen versio ja GitHubissa oleva versio (ks. halutessasi [täältä](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) lisää vaihtoehtojen eroista)
+- Valitaan keskimäinen, eli annetaan komento `git config pull.rebase true`
+- Tehdään nyt uudelleen `git pull`
   - Pullaaminen synnyttää ns. merge commitin, jolle joudumme määrittelemään commit-viestin avautuvaan editoriin
   - Oletusarvoinen viesti käy, eli riittää että poistut editorista tallentaen muutokset
 - Ja pushaamme ne uudelleen githubiin
