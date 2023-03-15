@@ -674,7 +674,7 @@ fatal: Need to specify how to reconcile divergent branches.
 ```
 
 - Git kysyy millä tavalla sen pitäisi käsitellä kahden eri branchin eli "koodihaaran" yhdistämistilanne, tässä tapauksessa branchit ovat paikallisen koneen versio ja GitHubissa oleva versio (ks. halutessasi [täältä](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) lisää vaihtoehtojen eroista)
-- Valitaan keskimäinen, eli annetaan komento `git config pull.rebase true`
+- Valitaan ylin, eli annetaan komento `git config pull.rebase false`
 - Tehdään nyt uudelleen `git pull`
   - Pullaaminen synnyttää ns. merge commitin, jolle joudumme määrittelemään commit-viestin avautuvaan editoriin
   - Oletusarvoinen viesti käy, eli riittää että poistut editorista tallentaen muutokset
