@@ -16,7 +16,7 @@ Ohjaajan tehtävät kurssilla ovat:
 
 Opiskelijoille annetaan pääsääntöisesti palautetta viikkopalautuksien yhteydessä [Labtoolin]({{site.labtool_link}}) kautta. Kurssin opiskelijat jaetaan Labtoolissa ohjaajien kesken ensimmäisen viikon deadlinen jälkeen. **Ohjaajan tulee antaa viikkopalaute jokaiselle opiskelijalleen deadlinea vastaavan viikon sunnuntaihin klo 23:59 mennessä**.
 
-Viikkopalautuksien tarkistuksessa kannattaa hyödyntää Labtoolin viikoittaista "tarkistuslistaa" ja alta löytyviä arvosteluperusteita. Palautuksia ei tarvitse syynätä turhan tarkasti, oleellisten tiedostojen silmäily ja vaadittavien toiminallisuuksien pikainen testaaminen riittää. Palautteen itsessään tulee olla _ytimekästä_ ja _rakentavaa_.
+Viikkopalautuksien tarkistuksessa kannattaa hyödyntää Labtoolin viikoittaista "tarkistuslistaa" ja alta löytyviä arvosteluperusteita. Palautuksia ei tarvitse syynätä turhan tarkasti, oleellisten tiedostojen silmäily ja vaadittavien toiminnallisuuksien pikainen testaaminen riittää. Palautteen itsessään tulee olla _ytimekästä_ ja _rakentavaa_.
 
 ### Puller.sh
 
