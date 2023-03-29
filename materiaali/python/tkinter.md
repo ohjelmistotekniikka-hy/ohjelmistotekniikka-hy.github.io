@@ -141,7 +141,7 @@ def start(self):
     button.grid(row=3, column=0, columnspan=2)
 ```
 
-Käyttöliittymällämme on käytössä kolmen rivin ja kahden sarakkeen gridi. Lopputulos on näyttää seuraavalta:
+Käyttöliittymällämme on käytössä kolmen rivin ja kahden sarakkeen gridi. Lopputulos näyttää seuraavalta:
 
 ![TkInter](/assets/images/python/tkinter-2.png)
 
