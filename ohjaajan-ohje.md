@@ -20,12 +20,12 @@ Viikkopalautuksien tarkistuksessa kannattaa hyödyntää Labtoolin viikoittaista
 
 ### Puller.sh
 
-Tässä erään kurssin aiemman ohjaajan kirjoittama puller.sh skripti, jolla voi ladata kaikki projektit kerralla: [puller.sh](puller.sh).
+Tässä erään kurssin aiemman ohjaajan kirjoittama skripti, jolla voi ladata kaikki projektit kerralla: [puller.sh](puller.sh).
 
 Käyttöohjeet:
 
 - Lataa kaikki arvosteltavat reposi ensin manuaalisesti samaan kansioon (jokainen toki omana alikansiona) ja tallenna samaan kansioon yllä oleva scripti nimellä puller.sh
-- Kun haluat pullata repot, mene terminaalin kautta kansioon, jossa scripti ja repot sijaitsevat ja aja se käskyllä ./puller.sh
+- Kun haluat pullata repot, mene terminaalin kautta kansioon, jossa skripti ja repot sijaitsevat ja aja se käskyllä ./puller.sh
 
 ### Viikko 1
 
@@ -35,7 +35,7 @@ Ei pisteitä jos ei tehtynä tai ymmärtänyt tehtävän aivan väärin.
 
 ### Viikko 2
 
-Katsokaa että jacocon/coveragen raportti on ok ja silmäilkää nopeasti että testit ovat järkeviä eikä feikketestejä. Jos jotain testejä puuttuu=testikattavuus ei 100%, niin sitten tarkempi syynäys/pisteiden vähennys labtoolin ohjeen mukaan. (Testeistä paremmat kuvaukset niissä Labtoolin opiskelijalle menevissä alaosan teksteissä...)
+Katsokaa että jacocon/coveragen raportti on ok ja silmäilkää nopeasti, että testit ovat järkeviä eikä feikkitestejä. Jos jotain testejä puuttuu (eli testikattavuus ei ole 100%), niin sitten tarkempi syynäys ja pisteiden vähennys Labtoolin ohjeen mukaan. (Testeistä paremmat kuvaukset niissä Labtoolin opiskelijalle menevissä alaosan teksteissä...)
 
 ### Viikko 3
 
@@ -55,7 +55,7 @@ Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärre
 - Sovelluksella on oltava vähintään yksi testi jonka voi suorittaa komennolla `mvn test`. Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa. Testin tulee mennä läpi
 - Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta, pelkät gettereitä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
 - Opiskelijan tehtävänannossa ei oltu määritelty pitääkö toiminnallisuuden on olla käyttäjälle näkyvää tai olla käyttöliittymä olemassa, joten riittää jos toiminnallisuus on toteutettu nyt kooditasolla ja toimivuus testattu (eli jos on tehnyt “test driven”) niin se riittää tässä vaiheessa
-- Repostitorion juuresta löytyy Maven-projekti
+- Repositorion juuresta löytyy Maven-projekti
 
 #### Projekti/Python
 
@@ -69,7 +69,8 @@ Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärre
 
 #### Tuntikirjanpito
 
-- Tuntikirjanpito on ajantasalla, Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
+- Tuntikirjanpito on ajan tasalla
+- Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
 
 #### Repositorio
 
@@ -103,7 +104,7 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
   - Rivikattavuus vähintään 20% (0.25p)
     - Jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioi se pois prosenteista ja huomauttakaa että opiskelija poistaa sen rivikattavuudesta
   - Rivikattavuus vähintään 10% (0.25p)
-    - Jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioikaa se pois prosenteista ja huomauttakaa että opiskelija poistaa sen rivikattavuudestamd
+    - Jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioikaa se pois prosenteista ja huomauttakaa että opiskelija poistaa sen rivikattavuudesta
 
 #### Projekti/Java
 
@@ -132,7 +133,7 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
   - Tai pakkauskaavio
 - Tuntikirjanpito kunnossa (0p)
   - Ajantasalla
-  - Summa merkitty <- ei tartte rokottaa jos muuten kunnossa. mainitkaa että lisää summan seuraavan kertaan
+  - Summa merkitty <- ei tarvitse rokottaa jos muuten kunnossa. mainitkaa että lisää summan seuraavan kertaan
   - Ei laskareihin käytettyä aikaa
 
 #### Repositorio
@@ -156,7 +157,7 @@ Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistuksia [
 
 #### Release
 
-- Projektista on tehty github release (0.25p)
+- Projektista on tehty GitHub release (0.25p)
   - Java: release sisältää ohjelman uusimman version suorituskelpoisen jar-tiedoston
   - Python: Release sisältää ohjelman uusimman version lähdekoodin
 
@@ -175,7 +176,7 @@ Muuten aikalailla samat ohjeet kuin edellisellä viikolla.
 
 ### Viikko 6
 
-Python projekteissa testikattavuutta arvioitaessa muistakaa katsoa että jokaisessa projektin _src_-hakemiston alahakemistossa on tyhjä \_\_init\_\_.py-tiedosto. Jos sitä ei ole, coverage ei arvio testikattavuutta oikein näiden hakemistojen osalta. Tällöin projektin testikattavuus on todellista korkeampi. Ottakaa tämä huomioon.  Arvioikaa todellinen testikattavuus/Lisätkää käsin tälläisiin hakemistoihin \_\_init\_\_.py ennen testien ajamista ja testikattavuusraportin ottamista.
+Python projekteissa testikattavuutta arvioitaessa muistakaa katsoa että jokaisessa projektin _src_-hakemiston alahakemistossa on tyhjä \_\_init\_\_.py-tiedosto. Jos sitä ei ole, coverage ei arvio testikattavuutta oikein näiden hakemistojen osalta. Tällöin projektin testikattavuus on todellista korkeampi. Ottakaa tämä huomioon. Arvioikaa todellinen testikattavuus/Lisätkää käsin tälläisiin hakemistoihin \_\_init\_\_.py ennen testien ajamista ja testikattavuusraportin ottamista.
 
 Testaus osiosta valitaan molemmat "kattavuus vähintään.." checkboxit jos kattavuus vähintään 60%. Ohjelma kasvunut osiossa valitaan vain toinen "ohjelma kasvanut.." checkboxi.
 
