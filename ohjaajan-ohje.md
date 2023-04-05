@@ -140,7 +140,7 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
 
 - Repositorio kunnossa (0.25p)
   - Mahdollisesti aikaisemmin huomautetut turhat tiedostot poistettu
-  - Siisti, ei ylimääräistä tavaraa (mm. hakemistoa target (Java) / \_\_pychache\_\_ (Python) tai tietokantatiedostoja)
+  - Siisti, ei ylimääräistä tavaraa (mm. hakemistoa target (Java) / \_\_pycache\_\_ (Python) tai tietokantatiedostoja)
   - README:ssa tällä hetkellä relevantit linkit ja komennot
   - Esim. tältä viikolta linkki arkkitehtuuriin ja checkstyle/pylint komennot lisätty
 
