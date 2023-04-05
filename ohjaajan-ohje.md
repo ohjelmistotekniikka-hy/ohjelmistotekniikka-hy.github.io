@@ -119,8 +119,8 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
   - Toimii komennolla `poetry run invoke lint`
 - Pylintin virheitä alle 10 (0.25p)
   - Käyttöliittymän rakentavaa koodia ei tarvitse lintata
-- Tarkistakaa että `src`-hakemiston alahakemistoihin on lisätty [ohjeen](https://ohjelmistotekniikka-hy.github.io/python/coverage) mukaisesti tyhjät \__init__.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty,  ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä. Jos jo viime viikolla kehotitte viikkopalautteessa lisäämään nämä tiedostot voi rokottaa pisteistä vaikka 0.15 syystä ettei ole lisätty ohjeen mukaisesti näitä.
-- Jos tyhjiä \__init__.py tiedostoja ei ole alihakemistoista, ottakaa huomioon että coverage laskee testien rivikattavuuden väärin. Arvioikaa rivikattavuus silmämääräisesti, tai jos testikattavuus ei ole ilmiselvästi yli 20%, lisätkää itse tyhjät tiedostot ennen testiraportin luomista.
+- Tarkistakaa että `src`-hakemiston alahakemistoihin on lisätty [ohjeen](https://ohjelmistotekniikka-hy.github.io/python/coverage) mukaisesti tyhjät \_\_init\_\_.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty,  ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä. Jos jo viime viikolla kehotitte viikkopalautteessa lisäämään nämä tiedostot voi rokottaa pisteistä vaikka 0.15 syystä ettei ole lisätty ohjeen mukaisesti näitä.
+- Jos tyhjiä \_\_init\_\_.py tiedostoja ei ole alihakemistoista, ottakaa huomioon että coverage laskee testien rivikattavuuden väärin. Arvioikaa rivikattavuus silmämääräisesti, tai jos testikattavuus ei ole ilmiselvästi yli 20%, lisätkää itse tyhjät tiedostot ennen testiraportin luomista.
 
 #### Dokumentaatio
 
@@ -140,7 +140,7 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
 
 - Repositorio kunnossa (0.25p)
   - Mahdollisesti aikaisemmin huomautetut turhat tiedostot poistettu
-  - Siisti, ei ylimääräistä tavaraa (mm. hakemistoa target(Java)/\__pychache__(Python) tai tietokantatiedostoja)
+  - Siisti, ei ylimääräistä tavaraa (mm. hakemistoa target (Java) / \_\_pychache\_\_ (Python) tai tietokantatiedostoja)
   - README:ssa tällä hetkellä relevantit linkit ja komennot
   - Esim. tältä viikolta linkki arkkitehtuuriin ja checkstyle/pylint komennot lisätty
 
