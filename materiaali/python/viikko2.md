@@ -205,6 +205,8 @@ python3 src/index.py
 
 Voimme lähteä virtuaaliympäristöstä komennolla `exit`.
 
+Poetry:n tuodut riippuvuudet ovat vain virtuaalisessa ympäristössä saatavilla, VS Code:in sisäänrakennettu "debugging mode" (F5 oletuksena) ei välttämättä toimi. Koita ensin `poetry shell` ja vasta sen jälkeen käynnistä VS Code `code /path/to/projekt` komennolla.
+
 ### Kehityksen aikaiset riippuvuudet
 
 Poetryn avulla riippuvuuksia on mahdollista ryhmitellä niiden käyttötarkoituksen mukaan. Melko yleinen tapa ryhmitellä riippuuvuuksia on ryhmitellä ne _kehityksen_ ja _suorituksen_ aikaisiksi riippuvuuksiksi. Kehityksen aikaisia riippuvuuksia tarvitaan ohjelmiston kehityksen aikana, mutta ne eivät ole välttämättömiä ohjelman suorituksessa.
