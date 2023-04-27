@@ -6,9 +6,9 @@
 #   - Use the students' real names for the subdirectories
 #   - $ git clone git@github.com:username/repository.git FirstnameLastname
 # 2. Make the script executable
-#   - $ chmod +x pull.sh
+#   - $ chmod +x puller.sh
 # 3. Run the script
-#   - $ ./pull.sh
+#   - $ ./puller.sh
 
 CURRENT_DIRECTORY=$(pwd)
 
