@@ -1,6 +1,6 @@
 ## Harjoitustyön toimivuus
 
-**HUOM:** Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen tietokoneella ja ohjaajien pitää pystyä se niiltä aukaisemaa! Voit testata tätä millä tahansa [Cubbli](https://helpdesk.it.helsinki.fi/ohjeet/tietokone-ja-tulostaminen/tyoasemapalvelu/cubbli-helsingin-yliopistossa)-tietokoneella, kuten fuksiläppärillä, tai laitoksen tietokoneluokkien tietokoneilla. Testaus onnistuu myös [virtuaalityöasemassa](https://vdi.helsinki.fi).
+**HUOM:** Saadaksesi harjoitustyöstä viikkokohtaiset pisteet, sovelluksen tulee toimia laitoksen tietokoneella ja ohjaajien pitää pystyä se niiltä aukaisemaan! Voit testata tätä millä tahansa [Cubbli](https://helpdesk.it.helsinki.fi/ohjeet/tietokone-ja-tulostaminen/tyoasemapalvelu/cubbli-helsingin-yliopistossa)-tietokoneella, kuten fuksiläppärillä, tai laitoksen tietokoneluokkien tietokoneilla. Testaus onnistuu myös [virtuaalityöasemassa](https://vdi.helsinki.fi).
 
 Virtuaalityöasemassa oman sovelluksen testaaminen onnistuu esimerkiksi seuraavasti:
 
