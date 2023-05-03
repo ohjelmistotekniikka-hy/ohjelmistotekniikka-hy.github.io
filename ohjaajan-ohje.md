@@ -178,7 +178,7 @@ Muuten aikalailla samat ohjeet kuin edellisellä viikolla.
 
 Python-projekteissa testikattavuutta arvioitaessa muistakaa katsoa että jokaisessa projektin _src_-hakemiston alahakemistossa on tyhjä \_\_init\_\_.py-tiedosto. Jos sitä ei ole, coverage ei arvioi testikattavuutta oikein näiden hakemistojen osalta. Tällöin projektin testikattavuus on todellista korkeampi. Ottakaa tämä huomioon. Arvioikaa todellinen testikattavuus. Lisätkää käsin tälläisiin hakemistoihin \_\_init\_\_.py ennen testien ajamista ja testikattavuusraportin ottamista.
 
-Testaus-osiosta valitaan molemmat "Testikattavuus vähintään..." -checkboxit jos kattavuus vähintään 60%. Ohjelma kasvunut -osiossa valitaan vain toinen "ohjelma kasvanut..." -checkboxi.
+*Testaus*-osiosta valitaan molemmat "Testikattavuus vähintään..." -checkboxit jos kattavuus vähintään 60%. *Ohjelma kasvanut* -osiossa valitaan vain toinen "ohjelma kasvanut..." -checkboxi.
 
 Jotta arvostelu menee oikein, älkää ruksiko rastia "JavaDoc ei ole generoitavissa/Docstring-dokumentointia ei ole aloitettu" vaikka JavaDoc ei olisi generoitavissa tai Docstring-dokumentointia ei olisi aloitettu. Viikon 6 opiskelijan ohjeissa ei ollut mainintaa siitä, että aloittamaton JavaDoc/Docstring vähentäisi pisteitä. <!-- tämän huomion voinee sitten ottaa pois kun labtoolin pisteytyksestä on kurssin seuraavassa iteraatiossa poistettu tämä miinuspiste -->
 
