@@ -37,19 +37,19 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
   - ei pysyväistallennusta
   - 1-2p tiedosto (1p jos ohjelma ainoastaan lukee tiedostoja)
   - 3-4p tietokanta (3p jos ohjelma ainoastaan lukee tietokannasta dataa)
-  - 3-4p internet (esim. google docs tai joku muu talletusratkaisu)
+  - 3-4p internet (esim. Google Docs tai joku muu talletusratkaisu)
   - Pisteytys riippuu käsiteltävän tiedon monimutkaisuudesta
 - Sovelluslogiikan kompleksisuus 3p
 - Ohjelman laajuus 4p
 - Ulkoisten kirjastojen hyödyntäminen 1p
   - Tämän pisteen ideana on etsiä ja opetella jonkin ennestään itselle tuntemattoman kirjasto
-  - Näihin eivät lukeudu mateeriaalissa esitellyt testaukseen, testikattavuuteen, koodin formatointiin, koodin laadun staattisen analyysiin, tai koodin dokumentointiin käytettävät kirjastot
+  - Näihin eivät lukeudu materiaalissa esitellyt testaukseen, testikattavuuteen, koodin formatointiin, koodin laadun staattisen analyysiin, tai koodin dokumentointiin käytettävät kirjastot
   - Myöskään Pygamen, TkInterin tai SQLiten käyttö ei tätä pistettä tuo, eivätkä muutkaan referenssisovelluksen käyttämät kirjastot
 - Release 1p
   - Loppupalautuksesta on tehty loppupalautus-niminen GitHub-release, joka sisältää ohjelman lähdekoodin
 - Koodin laatu 4+1p
   - Kooste [laatuvaatimuksista](/python/koodin-laatuvaatimukset)
-  - 4p hyvät abstraktiot (esim. suunnitellumallien, kuten Repository-suunnittelumallin hyödynnys), selkeä tiedosto- ja hakemistorakenne, helposti testattava ja laajennettava, ei ilmeistä copypastea
+  - 4p hyvät abstraktiot (esim. suunnittelumallien, kuten Repository-suunnittelumallin hyödynnys), selkeä tiedosto- ja hakemistorakenne, helposti testattava ja laajennettava, ei ilmeistä copypastea
   - +1p pylint-virheitä on enintään kolme
 - Virheiden käsittely 2p
   - 2p Sovellus toimii konsistentisti, ei kaadu virheellisillä syötteillä, ei heitä poikkeuksia ja antaa järkevät virheilmoitukset
@@ -63,7 +63,7 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
 - Laajuutta ei voida määritellä tarkasti esimerkiksi luokkien, metodien, tai funktioiden määrällä, laajuus on aina suhteellinen sovelluksen tyyppiin ja kompleksisuuteenkin
 - Eräs tapa laajentaa sovellusta ja lisätä sen kompleksisuutta on tehdä siitä _parametrein konfiguroitava ja laajennettava_, esimerkiksi:
   - Sovelluksen käyttämän tietokantatiedoston nimi ei ole kirjoitettu koodiin vaan on käyttäjän määriteltävissä
-  - Pelissä eri vaikueustasojen pelimaailmat eivät ole määritelty koodissa vaan luodaan erillisten tiedostojen perusteella
+  - Pelissä eri vaikeustasojen pelimaailmat eivät ole määritelty koodissa vaan luodaan erillisten tiedostojen perusteella
   - Pacmanissa hirviöiden määrä ei ole ohjelmakoodiin kovakoodattu vakio vaan valittavissa käyttöliittymästä
   - Konfiguroitavuus voidaan toteuttaa joko käyttöliittymän tai [konfiguraatiotiedostojen](/python/toteutus#sovelluksen-konfiguraatiot) avulla
 
