@@ -198,7 +198,7 @@ Tarkastustaulukosta löytyy neljä välilehteä:
 
 - "Pisteet" projektin arvioinnille
 -"Pdf" tästä ei tarvitse välittää, tämän välilehden avulla luodaan valmiista arvostelusta pdf.
-- "Kommentteja" sisältää arviointiohjeita, apuna voi myös käyttää opiskelijoille annettuja arviointiperusteita. Arviointiohjeet suuntaa-antavia, projektit niin erilaisia että tässä saa käyttää omaa harkintaa molempiin suuntiin, Slackissa voi kysyä muiden mielipidettä
+- "Kommentteja" sisältää arviointiohjeita, apuna voi myös käyttää opiskelijoille annettuja arviointiperusteita. Arviointiohjeet suuntaa antavia, projektit niin erilaisia että tässä saa käyttää omaa harkintaa molempiin suuntiin, Slackissa voi kysyä muiden mielipidettä
 - "Tarkastustilanne" pitää kirjaa tehdyistä arvioinneista ja kontrollitarkistuksista
 
 Tarkastaessa:
