@@ -612,6 +612,19 @@ def coverage_report(ctx):
 
 Nyt komento `poetry run invoke coverage-report` suorittaa ensin tehtävän _coverage_, jonka jälkeen suoritetaan itse tehtävä _coverage-report_.
 
+Jos haluat, että oletus työpöytäsovelluksesi avaisisi joka kertaa uudelleen tuodun raportin, voit laajentaa _coverage-report_ task:in näin:
+
+```python
+from subprocess import call
+from sys import platform
+
+@task(coverage)
+def coverage_report(ctx):
+    ctx.run("coverage html", pty=True)
+    if platform != "win32":
+        call(("xdg-open", "htmlcov/index.html"))
+```
+
 ## Harjoitustyö
 
 Tämän viikon aikana aloitetaan harjoitustyön toteutus ja testaaminen. Ohjelman tulee edistyä jokaisella viikolla tasaisesti. Jos ohjelma tulee valmiiksi jo ennen loppupalautusta valmistaudu laajentamaan sitä saadaksesi ohjelman edistymisestä pisteet. Tarkoitus on edistää projektia tasaisesti kurssiviikkojen aikana.
