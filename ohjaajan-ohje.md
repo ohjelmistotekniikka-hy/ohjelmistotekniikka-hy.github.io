@@ -247,9 +247,9 @@ Pyrkikää arvioimaan jokaiselta muulta ohjaajalta vähintään yksi arviointi
 ### Vertaisarviointien deadlinen jälkeen
 
 - Lukekaa harjoitustöiden arviointeihin saamanne kommentit ja korjatkaa arviointinne sen mukaisesti, jos olette kommentoijan kanssa samaa mieltä.
-- Kun olette käyneet läpi kaikki saamanne vertaisarviot laittakaa "valmis" tai vastaava merkintä taulukon Tarkastustilanne -välilehdelle samalle riville nimenne kanssa sarakkeeseen "Kaikki tarkastettu ja korjaukset valmiit" merkiksi siitä että olette valmiita
+- Kun olette käyneet läpi kaikki saamanne vertaisarviot laittakaa "valmis" tai vastaava merkintä taulukon Tarkastustilanne-välilehdelle samalle riville nimenne kanssa sarakkeeseen "Kaikki tarkastettu ja korjaukset valmiit" merkiksi siitä että olette valmiita
 
-Vertaisarviointeja siis tehdään yhtä monta kuin teitte arviointeja (sarake "to control" Tarkastustilanne -välilehdelle). Kannattaa myös varmistaa että Tarkastustilanne -välilehden luvut tehdyistä arvioinneista, dropanneista ja ei aloittaneista ovat oikein, koska niiden perusteella maksetaan palkkio.
+Vertaisarviointeja siis tehdään yhtä monta kuin teitte arviointeja (sarake "to control" Tarkastustilanne-välilehdelle). Kannattaa myös varmistaa, että Tarkastustilanne-välilehden luvut tehdyistä arvioinneista, dropanneista ja ei aloittaneista ovat oikein, koska niiden perusteella maksetaan palkkio.
 
 ## Ohjaajan palkka
 
