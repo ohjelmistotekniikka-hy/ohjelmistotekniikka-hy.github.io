@@ -2,6 +2,7 @@
 
 - Kurssin arvostelu suoritettu
   - [pisteytys](ot-k2023.pdf)
+  - opiskelijanumerosta näytetään 4-8 merkki, eli jos opiskelijanumerosi on 012345678, on rivillä 34567
   - jos arvostelusta on kysyttävää, ota yhteyttä matti.luukkainen@helsinki.fi tai Discordissa mluukkai
 - Kurssin aloitustilaisuus {{site.lecture_time}}
   - alotustilaisuus streamataan [Unitubessa](https://video.helsinki.fi/unitube/live-stream.html?room=l9)
