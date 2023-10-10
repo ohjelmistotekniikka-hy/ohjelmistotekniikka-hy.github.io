@@ -1,23 +1,23 @@
-email: matti.luukkainen@helsinki.fi
+email: kai.korpimies@helsinki.fi
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://ohjelmistotekniikka-hy.github.io' # the base hostname & protocol for your site, e.g. http://example.com
-github_username: mluukkai
+github_username: kkorpim
 repo_url: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io'
 repo_branch: 'master'
 
 # Kurssikertaan liittyvät muuttujat:
-title: Ohjelmistotekniikka, kevät 2023
+title: Ohjelmistotekniikka, syksy 2023
 
 # aikataulut (annetaan muodossa viikonpäivä dd.mm kellonaika)
-wk1dl: "tiistai 21.3. klo 23:59"
-wk2dl: "tiistai 28.3. klo 23:59"
-wk3dl: "tiistai 4.4. klo 23:59"
-wk4dl: "tiistai 18.4. klo 23:59"
-wk5dl: "tiistai 25.4. klo 23:59"
-wk6dl: "tiistai 2.5. klo 23:59"
-finaldl: "sunnuntai 14.5. klo 23:59"
-code_review_start_date: "keskiviikko 26.4. klo 23:59"
+wk1dl: "tiistai 7.11. klo 23:59"
+wk2dl: "tiistai 14.11. klo 23:59"
+wk3dl: "tiistai 21.11. klo 23:59"
+wk4dl: "tiistai 28.11. klo 23:59"
+wk5dl: "tiistai 5.12. klo 23:59"
+wk6dl: "tiistai 12.12. klo 23:59"
+finaldl: "perjantai 22.12. klo 23:59"
+code_review_start_date: "torstai 7.12. klo 14"
 
 # ohjausajat
 # - Maanantaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/68570587158?pwd=TFhwUXBucExZeVNJZnRydE8yWkNFdz09)
@@ -30,17 +30,17 @@ times:
   - time: "Torstaisin klo 16-18 kampuksella BK107-luokassa"
   - time: 'Perjantaisin klo 12-14 kampuksella BK107-luokassa'
 
-lecture_time: 'maanantaina 13.3. klo 10–12'
+lecture_time: 'keskiviikkona 1.11. klo 10.15 - 11.45'
 lecture_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/tree/master/luennot/2023-kevat'
-lecture_slides_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/blob/master/luennot/2023-kevat/aloitusluento.pdf'
+lecture_slides_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/blob/master/luennot/2023-syksy/aloitusluento.pdf'
 lecture_recording_link: '#'
 
 # seuraava kurssikerta muodossa syksyllä/keväällä [vuosi].
 # esimerkki syksyllä 2021
 # käytetään muun muassa "ei voi jatkaa seuraavalla kurssilla (syksyllä 2021)"
-next_course: 'sysyllä 2023'
+next_course: 'keväällä 2024'
 
-labtool_link: 'https://study.cs.helsinki.fi/labtool/courses/TKT20002.2023.K.K.1'
+labtool_link: 'https://study.cs.helsinki.fi/labtool/courses/TKT20018.2023.S.K.1'
 
 # referenssi-sovellusten linkit
 python_reference_app_url: 'https://github.com/ohjelmistotekniikka-hy/python-todo-app'

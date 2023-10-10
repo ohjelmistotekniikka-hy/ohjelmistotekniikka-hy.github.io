@@ -3,9 +3,9 @@ layout: page
 permalink: /
 ---
 
-_Kurssin nimi on muuttunut syksyllä 2018, tätä aiemmin kurssi tunnettiin nimellä Ohjelmistotekniikan menetelmät_
+_Kurssin nimi on muuttunut syksyllä 2023, tätä aiemmin kurssi tunnettiin nimellä Ohjelmistotekniikka_
 
-Kurssilla tutustutaan ohjelmistokehityksen periaatteisiin sekä menetelmiin ja sovelletaan niitä toteuttamalla pienehkö harjoitustyö. Kurssilla käytetty ohjelmointikieli on lähtökohtaisesti Python, mutta kurssi on mahdollista suorittaa myös käyttämällä Javaa.
+Kurssilla tutustutaan ohjelmistokehityksen periaatteisiin sekä menetelmiin ja sovelletaan niitä toteuttamalla pienehkö harjoitustyö Python-kielellä.
 
 Kurssin kolmella ensimmäisellä viikolla on muutama ohjauksessa tai omatoimisesti tehtävä harjoitustehtävä. Kurssin pääpainon muodostaa viikolla 2 aloitettava, itsenäisesti tehtävä harjoitustyö. Työtä on tarkoitus edistää pala palalta [viikoittaisten](#aikataulu) tavoitteiden ohjaamana.
 
@@ -31,7 +31,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 Palautuksen deadline {{ site.wk1dl }}
 
 - Kurssin aloitustilaisuus. Aloitustilaisuudessa käytettävät kalvot löytyvät [täältä]({{site.lecture_slides_link}}). Aloitustilaisuudesta julkaistaan myöhemmin tallenne, joka on katsottavissa [täältä]({{site.lecture_recording_link}})
-- [Tehtävät](/python/viikko1): Komentorivi- ja Git-harjoittelu (2p)
+- [Tehtävät](/python/viikko1): Komentorivi- ja Git-harjoittelu (1p)
 - Tehtävien palautus tapahtuu tekemällä repositorio GitHubiin ja rekisteröitymällä Labtooliin
 
 ### Viikko 2
