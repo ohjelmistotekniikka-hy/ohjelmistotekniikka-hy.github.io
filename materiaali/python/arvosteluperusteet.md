@@ -4,21 +4,24 @@ permalink: /python/arvosteluperusteet
 title: Kurssin suorittaminen ja arvostelu
 ---
 
-Kurssilla jaossa 60 pistettä. Pisteet jakautuvat seuraavasti
+Kurssilla on jaossa 60 pistettä. Pisteet jakautuvat seuraavasti
 
-- Viikkodeadlinet 17p
+- Viikkodeadlinet 16p
 - Koodikatselmointi 2p
-- Dokumentaatio 12p
+- Dokumentaatio 13p
   - Määrittely
   - Arkkitehtuuri
   - Käyttö/asennusohje
   - Testidokumentti
   - Docstring-dokumentaatio
+  - Selvitys ChatGPT:n ja muiden kielimalleihin perustuvien välineiden käytöstä
 - Testaus 5p
   - Testit
 - Lopullinen ohjelma 24p
   - Toiminnallisuus
   - Koodin laatu
+
+Lisäksi palautteesta on tarjolla yksi lisäpiste.
 
 Arvosanaan 1 riittää 30 pistettä, arvosanaan 5 tarvitaan noin 55 pistettä.
 
@@ -55,6 +58,7 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
   - 2p Sovellus toimii konsistentisti, ei kaadu virheellisillä syötteillä, ei heitä poikkeuksia ja antaa järkevät virheilmoitukset
 - **Älä jätä sovellukseesi poiskommentoitua koodia**, tai koodia jota sovellus ei käytä (esim. refaktoroinnin myötä turhaksi muuttuneet metodit, luokat, tai funktiot)
   - Jos jätät, vähenevät koodin laadun pisteet -1 tai -2p riippuen kommentoidun/turhan koodin määrästä
+- Erittäin ahkera ChatGPT:n tai vastaavien tekoälypohjaisten välineiden käyttö koodin generointiin saattaa kokonaisuudesta riippuen vähentää hieman pisteitä. (Lähtökohtaisesti tätä ei tarvitse pelätä jos suurin osa koodista ei ole generoitua.)
 
 ### Laajuus ja sovelluslogiikan kompleksisuus
 
@@ -69,7 +73,7 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
 
 ## Testauksesta annettavat pisteet
 
-Täysien pisteiden (5p) edellytys:
+Testit pitää kirjoittaa itse, niitä ei saa generoida. Täysien pisteiden (5p) edellytys:
 
 - Testattu kattavasti: haarautumakattavuus korkea (noin 70%)
   - Testien pitää testata hyödyllisiä asioita, pelkät testikattavuutta nostavat hyödyttömät (esim. assert-komentoja sisältämättömät) testit eivät tuo pisteitä
@@ -84,7 +88,7 @@ Täysien pisteiden (5p) edellytys:
 
 ## Dokumentaation pisteet
 
-Dokumentaatio tuo yhteensä maksimissaan 12 pistettä, jotka jakautuvat seuraavasti
+Dokumentaatio tuo yhteensä maksimissaan 13 pistettä, jotka jakautuvat seuraavasti
 
 - Määrittelydokumentti 2p
   - **Päivitetty vastaamaan lopullisen ohjelman toiminnallisuutta**
@@ -99,6 +103,7 @@ Dokumentaatio tuo yhteensä maksimissaan 12 pistettä, jotka jakautuvat seuraava
   - Testeille ei tarvitse tehdä docstring-dokumentaatiota
 - Repositorio ja README 1p
   - Repositorion ja README:n oletetaan olevan aiempien viikkojen vaatimusten mukainen
+- Selvitys ChatGPT:n ja muiden kielimalleihin perustuvien välineiden käytöstä 1p
 
 [Referenssisovellus]({{site.python_reference_app_url}}) toimii hyvänä esikuvana dokumentaation suhteen.
 
