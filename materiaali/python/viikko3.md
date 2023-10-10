@@ -190,17 +190,23 @@ Dokumentaation [Luokkakaavio](https://mermaid-js.github.io/mermaid/#/classDiagra
 
 [Monopoli](http://fi.wikipedia.org/wiki/Monopoli_(peli)) on varmasti kaikkien tuntema lautapeli.
 
-Tehdään luokkakaavio, joka kuvaa pelissä olevia asioita ja niiden suhteita.
-
-Tässä tehtävän osassa tehdään alustava luokkakaavio, joka ei kuvaa peliä vielä kokonaisuudessaan vaan sisältää vasta seuraavat elementit:
+Tehdään luokkakaavio, joka kuvaa pelissä olevia asioita ja niiden suhteita. Aloitetaan sellaisella, joka ei kuvaa peliä vielä kokonaisuudessaan vaan sisältää vasta seuraavat elementit:
 
 Monopolia pelataan käyttäen kahta noppaa. Pelaajia on vähintään 2 ja enintään 8. Peliä pelataan pelilaudalla joita on yksi. Pelilauta sisältää 40 ruutua. Kukin ruutu tietää, mikä on sitä seuraava ruutu pelilaudalla. Kullakin pelaajalla on yksi pelinappula. Pelinappula sijaitsee aina yhdessä ruudussa.
 
-**Lisää tämän viikon tehtäviä varten repositoriosi _laskarit_ hakemistoon hakemisto _viikko3_ ja lisää toteuttamasi kaavio sinne.** Jos hyödynnät Mermaid-syntaksia kaavion toteuttamisessa, voit sijoittaa kaavion markdown-tiedostoon.
+Tämä alustava kaavio näyttää seuraavalta:
 
-### Tehtävä 2: Laajennettu Monopoli
 
-Laajennetaan edellisen tehtävän luokkakaaviota tuomalla esiin seuraavat asiat:
+
+
+
+
+
+
+
+
+
+Laajennetaan nyt luokkakaaviota tuomalla esiin seuraavat asiat:
 
 Ruutuja on useampaa eri tyyppiä:
 
@@ -220,7 +226,9 @@ Toimintoja on useanlaisia. Ei ole vielä tarvetta tarkentaa toiminnon laatua.
 
 Normaaleille kaduille voi rakentaa korkeintaan 4 taloa tai yhden hotellin. Kadun voi omistaa joku pelaajista. Pelaajilla on rahaa.
 
-**Lisää toteuttamasi kaavio repositoriosi _laskarit/viikko3_-hakemistoon.**
+
+**Lisää tämän viikon tehtäviä varten repositoriosi _laskarit_ hakemistoon hakemisto _viikko3_ ja lisää toteuttamasi kaavio sinne.** Jos hyödynnät Mermaid-syntaksia kaavion toteuttamisessa, voit sijoittaa kaavion markdown-tiedostoon.
+
 
 ### Pakkauskaavio
 
@@ -356,55 +364,7 @@ Voit halutessasi lukea lisää sekvenssikaavioista kurssin vanhan version [mater
 
 Myös sekvenssikaavioiden toteuttaminen onnistuu kätevästi [Mermaid](https://mermaid-js.github.io/mermaid/)-syntaksin avulla. Dokumentaation [Sekvenssikaavio](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)-osiosta löytyy tarkemmat ohjeet sekvenssikaavioiden toteuttamiseen. Mallia kaavioiden käyttämisessä markdown-tiedostossa voi ottaa referenssisovelluksen [arkkitehtuuri](https://raw.githubusercontent.com/ohjelmistotekniikka-hy/python-todo-app/master/dokumentaatio/arkkitehtuuri.md)-dokumentaatiosta. Vaihtoehtoisesti, sekvenssikaavioiden toteuttamiseen sopii myös esimerkiksi <https://www.websequencediagrams.com/>.
 
-### Tehtävä 3: Sekvenssikaavio
-
-Tarkastellaan bensatankista ja moottorista koostuvan koneen Python-koodia.
-
-Piirrä sekvenssikaaviona tilanne, jossa kutsutaan (jostain koodin ulkopuolella olevasta metodista) ensin `Machine`-luokan konstruktoria ja sen jälkeen luodun Machine-olion metodia `drive`.
-
-Muista, että sekvenssikaaviossa tulee tulla ilmi kaikki mainin suorituksen aikaansaamat olioiden luomiset ja metodien kutsut!
-
-```python
-class Machine:
-    def __init__(self):
-        self._tank = FuelTank()
-        self._tank.fill(40)
-        self._engine = Engine(self._tank)
-
-    def drive(self):
-        self._engine.start()
-        running = self._engine.is_running()
-
-        if running:
-          self._engine.use_energy()
-
-class FuelTank:
-    def __init__(self):
-        self.fuel_contents = 0
-
-    def fill(self, amount):
-        self.fuel_contents = amount
-
-    def consume(self, amount):
-        self.fuel_contents = self.fuel_contents - amount
-
-class Engine:
-    def __init__(self, tank):
-        self._fuel_tank = tank
-
-    def start(self):
-        self._fuel_tank.consume(5)
-
-    def is_running(self):
-        return self._fuel_tank.fuel_contents > 0
-
-    def use_energy(self):
-        self._fuel_tank.consume(10)
-```
-
-**Lisää toteuttamasi kaavio repositoriosi _laskarit/viikko3_-hakemistoon.** Jos hyödynnät Mermaid-syntaksia kaavion toteuttamisessa, voit sijoittaa kaavion markdown-tiedostoon.
-
-### Tehtävä 4: Laajempi sekvenssikaavio
+### Tehtävä 2: sekvenssikaavio
 
 Tarkastellaan HSL-matkakorttien hallintaan käytettävää koodia.
 
