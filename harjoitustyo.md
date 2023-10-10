@@ -38,4 +38,3 @@ Kurssin kolmella ensimmäisellä viikolla on muutama ohjauksessa tai omatoimises
 Harjoitustyölle on toteutuksessa käytettyyn ohjelmointikieleen pohjautuvat arvosteluperusteet. Lisäksi toteutettavan ohjelmiston koodille on omat laatuvaatimuksensa.
 
 - Python: [arvosteluperusteet](/python/arvosteluperusteet) ja [koodin laatuvaatimukset](/python/koodin-laatuvaatimukset)
-- Java: [arvosteluperusteet](/java/arvosteluperusteet) ja [koodin laatuvaatimukset](/java/koodin-laatuvaatimukset)
