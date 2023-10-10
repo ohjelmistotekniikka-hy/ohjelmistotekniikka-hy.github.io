@@ -8,29 +8,40 @@ title: Viikko 1
 
 {% include deadline_info.md deadline=site.wk1dl %}
 
-Tämän viikon tehtävien palautuksesta on tarjolla 2 pistettä.
+Tämän viikon tehtävien palautuksesta on tarjolla 1 piste.
 
-## Ohjelmistotekniikka
+## Kurssista
 
-Keväästä 2018 alkaen Ohjelmistotekniikka (vanhalta nimeltään Ohjelmistotekniikan menetelmät) on siirtynyt aineopintoihin. Kurssin esitietoina on Ohjelmoinnin jatkokurssi sekä Tietokantojen perusteet. Oletuksena on, että molemmista kursseista on käyty suhteellisen tuore versio ja että molempien aihepiiri on vielä hyvin mielessä.
-
-Kurssin oppimistavoitteet ovat edelleen suunnilleen samat kuin aiemmin. Kurssin suoritettuaan opiskelija
+Kurssin nimi on muuttunut syksyllä 2023: vanha nimi oli Ohjelmistotekniikka. Kurssin oppimistavoitteet ovat edelleen suunnilleen samat kuin aiemmin. Kurssin suoritettuaan opiskelija
 
 - Tuntee ohjelmistotuotantoprosessin vaiheet
 - On tietoinen vesiputousmallin ja ketterän ohjelmistotuotannon luonteesta
 - Osaa soveltaa versionhallintaa osana ohjelmistokehitystä
-- Osaa soveltaa UML-mallinnustekniikkaa ohjelmiston suunnittelussa ja dokumentoinnissa tarkoituksenmukaisella tavalla
+- Osaa soveltaa UML-mallinnustekniikkaa vaatimusmäärittelyssä ja ohjelmiston suunnittelussa tarkoituksenmukaisella tavalla
 - Tuntee ohjelmiston testauksen eri vaiheet
 - Osaa soveltaa automatisoitua testausta yksinkertaisissa ohjelmistoprojekteissa
 - Tuntee tärkeimpiä ohjelmiston suunnitteluperiaatteita ja osaa soveltaa niitä yksinkertaisissa projekteissa
 
-Kurssin suoritusmuoto poikkeaa radikaalisti aiemmasta viikoittaiset luennot ja laskuharjoitukset sisältävästä kurssista, nykyinen OTM muistuttaakin läheisesti entistä Ohjelmoinnin harjoitustyötä.
+Kurssin esitietoina ovat kurssit Tietokone työvälineenä, Ohjelmoinnin jatkokurssi, Tietokantojen perusteet sekä Tietokannat ja web-ohjelmointi. Oletuksena on, että näistä kaikista on käyty suhteellisen tuore versio ja että opittu on vielä hyvin mielessä.
 
-Kurssin ensimmäisen kolmen viikon aikana harjoitellaan versionhallintaa, yksikkötestausta sekä UML-kaavioiden tekemistä. Toisesta viikosta alkaen aloitetaan oman harjoitustyön tekeminen. Harjoitustyön tekemisen ohessa osoitetaan riittävä osaaminen kurssin oppimistavoitteiden suhteen, koetta kurssilla ei ole. Tarkemmat arvosteluperusteet [täällä](./arvosteluperusteet).
+Kurssin ensimmäisen kolmen viikon aikana harjoitellaan yksikkötestausta ja UML-kaavioiden tekemistä. Myös komentorivistä ja versionhallinnasta on tehtäviä, mutta nämä ovat syksystä 2023 alkaen vapaaehtoisia muuttuneiden esitietovaatimusten takia. Toisesta viikosta alkaen aloitetaan oman harjoitustyön tekeminen. Harjoitustyön tekemisen ohessa osoitetaan riittävä osaaminen kurssin oppimistavoitteiden suhteen, koetta kurssilla ei ole. Tarkemmat arvosteluperusteet [täällä](./arvosteluperusteet).
 
 {% include materiaali_ohjelmistotuotanto.md reference_app_url=site.python_reference_app_url %}
 
-## Komentorivin harjoittelua
+---
+## Ensimmäisen viikon harjoitukset
+
+Lue tehtävänannot kohdista **"Komentorivin harjoittelua"** ja **"Versionhallinta"**. Jos niissä käsitellyt asiat ovat tuttuja (kuten kurssin esitietovaatimuksien mukaan pitäisi olla), sinun ei tarvitse tehdä näitä harjoituksia. **Jos kuitenkin yhtään epäilet osaamistasi, tee harjoitukset tehtävänantojen mukaan!** Et saa siitä pisteitä, mutta tulet jatkossa tarvitsemaan vastaavia taitoja tällä kurssilla.
+Mikäli komentorivi- ja versionhallintaharjoitusten asiat ovat tuttuja, **tee joka tapauksessa seuraavat asiat**:
+1. Luo paikallinen repositorio harjoitustyölle ja viikkoharjoituksille. Voit antaa sille nimeksi ot-harjoitustyo.
+2. Kirjoita tiedostoon README.md otsikko "Ohjelmistotekniikka, harjoitustyö" ja kerro yhdellä virkkeellä, mitä olet tekemässä (tämä saa vielä muuttua: harjoitustyön oikea alustava vaatimusmäärittely vasta seuraavalla viikolla). Muotoile tekstisi markdown-notaatiota käyttäen. Luo myös alihakemisto nimeltä "laskarit".
+3. Luo GitHub-repositorio ja liitä se paikallisen repositoriosi etärepositorioksi
+4. Pushaa paikallisen repositoriosi sisältö GitHubiin
+5. Rekisteröi omat tietosi ja luomasi GitHub-repositorio [Labtooliin](https://study.cs.helsinki.fi/labtool/courses/TKT20018.2023.S.K.1)
+6. Koska säästit aikaa komentorivi- ja versionhallintaharjoitusten sivuuttamisella, tutustu jo alustavasti seuraavan viikon kurssimateriaaliin.  Sivun loppupuolelta löydät ohjeita harjoitustyön aiheenvalintaan ja alustavan määrittelydokumentin kirjoittamiseen. Mieti, miten aiot harjoitustyössäsi edetä ja näetkö siinä joitain ongelmallisia kohtia. Mikäli niin haluat, mikään ei estä sinua jo käytännössä tekemästä 2. viikon harjoituksia.  Ne kuitenkin arvioidaan vasta 2. viikon jälkeen.
+---
+
+## Komentorivin harjoittelua (tee nämä harjoitukset jos ei tunnu tutulta)
 
 Graafisten käyttöliittymien olemassaolosta huolimatta ohjelmistoalalla on edelleen erittäin tärkeää hallita komentorivin eli terminaalin käyttö. Opettele käyttämään "riittävästi" komentoriviä (ks. alla oleva lista). Opettelu käy ehkä helpoiten tekemällä Tietokone työvälineenä-kurssin ensimmäisen osan [_Komentorivi_](https://tkt-lapio.github.io/komentorivi/) tehtävät 1-13.
 
@@ -98,7 +109,7 @@ Ei pidä myöskään unohtaa _nuolta ylöspäin_. Sen avulla voit selata aiemmin
 
 Aloitteleva komentorivin käyttäjä pitää usein ainoastaan yhtä terminaali-ikkunaa kerrallaan auki. Useimmissa tilanteissa työtehosi moninkertaistuu, jos avaat useita terminaaleja näytöllä tai avaat yhteen terminaaliin useita "tabeja" eli välilehtiä. Uuden tabin saat avautumaan painamalla yhtä aikaa _ctrl_, _shift_ ja _t_ tai sovelluksen valikosta (joka laitoksen Linuxeissa sijaitsee ruudun yläreunassa).
 
-## Versionhallinta
+## Versionhallinta (tee nämä harjoitukset jos ei tunnu tutulta)
 
 Tutustumme seuraavaksi versionhallintaan.
 
@@ -701,4 +712,3 @@ Gitin peruskäyttö tulee varmasti tutuksi kurssin aikana. Gitin edistyneempien 
 
 Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin]({{site.labtool_link}}).
 
-**HUOM:** Labtool kysyy myös harjoitustyön aihetta (project name), kirjoita kenttään myös käyttämäsi ohjelmointikieli (eli Java tai Python).
