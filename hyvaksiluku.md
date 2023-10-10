@@ -6,7 +6,7 @@ title: Kurssin hyväksiluku
 
 Kurssi on mahdollista _hyväksilukea_, eli ansaita opintopisteet arvosanalla _hyväksytty_. Hyväksiluvun vaatimuksena on ohjelmointiprojektin toteutus ja dokumentointi. Projektin toteutuksessa käytetty ohjelmointikieli on vapaasti valittavissa, kunhan ohjelman suorittamiseen vaadittavat toimenpiteet on dokumentoitu.
 
-Jos haluat hyväksilukea kurssin, ota sähköpostilla yhteyttä kurssin vastuuopettajaan Matti Luukkaiseen (matti.luukkainen@helsinki.fi).
+Jos haluat hyväksilukea kurssin, ota sähköpostilla yhteyttä kurssin vastuuopettajaan Kai Korpimieheen (kai.korpimies@helsinki.fi).
 
 ## Projektin vaatimukset
 
@@ -23,7 +23,7 @@ Jos haluat hyväksilukea kurssin, ota sähköpostilla yhteyttä kurssin vastuuop
 
 ### Versionhallinta ja repositorio
 
-- Projektin lähdekoodin tulee olla GitHub-repositoriossa. Repositorio voi olla julkinen ja yksityinen. Jos repositorio on yksityinen, lisää sen kollaboraattoreiksi käyttäjät [Kaltsoon](https://github.com/Kaltsoon) ja [mluukkai](https://github.com/mluukkai)
+- Projektin lähdekoodin tulee olla GitHub-repositoriossa. Repositorio voi olla julkinen ja yksityinen. Jos repositorio on yksityinen, lisää sen kollaboraattoreiksi käyttäjä kkorpim.
 - Luo sovelluksesta [GitHub release](/release). Kerro repositorion `README.md`-tiedossa, mikä release pitää ladata ja miten se suoritetaan
 - Lisää repositorioon `README.md`-tiedosto, joka on suurin piirtein kurssin [referenssisovelluksen]({{site.python_reference_app_url}}) mukainen. Mukana tulee olla vähintään seuraavat asiat:
   - Lyhyt kuvaus projektista
