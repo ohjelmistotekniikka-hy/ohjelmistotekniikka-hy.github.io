@@ -6,8 +6,6 @@ title: Materiaali
 inheader: true
 ---
 
-Tältä sivulta löydät kurssin Python-materiaalin. Kurssin Java-materiaali on luettavissa [täällä](/java-materiaali).
-
 ## Viikoittainen materiaali
 
 - [Viikko 1](/python/viikko1)
