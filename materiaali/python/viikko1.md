@@ -40,7 +40,6 @@ Mikäli komentorivi- ja versionhallintaharjoitusten asiat ovat tuttuja, **tee jo
 5. Rekisteröi omat tietosi ja luomasi GitHub-repositorio [Labtooliin](https://study.cs.helsinki.fi/labtool/courses/TKT20018.2023.S.K.1)
 
 Koska säästit aikaa komentorivi- ja versionhallintaharjoitusten sivuuttamisella, tutustu jo alustavasti seuraavan viikon kurssimateriaaliin.  Sivun loppupuolelta löydät ohjeita harjoitustyön aiheenvalintaan ja alustavan määrittelydokumentin kirjoittamiseen. Mieti, miten aiot harjoitustyössäsi edetä ja näetkö siinä joitain ongelmallisia kohtia. Mikäli niin haluat, mikään ei estä sinua jo käytännössä tekemästä 2. viikon harjoituksia.  Ne kuitenkin arvioidaan vasta 2. viikon jälkeen.
----
 
 ## Komentorivin harjoittelua (tee nämä harjoitukset jos ei tunnu tutulta)
 
