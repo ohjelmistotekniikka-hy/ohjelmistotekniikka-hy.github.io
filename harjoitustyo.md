@@ -5,7 +5,7 @@ title: Tehtävät ja harjoitustyö
 inheader: true
 ---
 
-Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö. Harjoitustyössä toteutetaan itsenäisesti ohjelmisto omavalintaisesta aiheesta. Tavoitteena on soveltaa ja syventää ohjelmoinnin perus- ja jatkokursseilla opittuja taitoja ja harjoitella tiedon omatoimista etsimistä. Harjoitustyöhön liittyviä ohjeita on luettavissa viikon 2 [harjoitustyö-osiosta](/python/viikko2#harjoitustyö).
+Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö. Harjoitustyössä toteutetaan itsenäisesti ohjelmisto omavalintaisesta aiheesta. Tavoitteena on soveltaa ja syventää kurssin esitietovaatimuksiin kuuluvilla kursseilla opittuja taitoja ja harjoitella tiedon omatoimista etsimistä. Harjoitustyöhön liittyviä ohjeita on luettavissa viikon 2 [harjoitustyö-osiosta](/python/viikko2#harjoitustyö).
 
 ## Aikataulu
 
@@ -35,6 +35,4 @@ Kurssin kolmella ensimmäisellä viikolla on muutama ohjauksessa tai omatoimises
 
 ## Harjoitustyön arvosteluperusteet
 
-Harjoitustyölle on toteutuksessa käytettyyn ohjelmointikieleen pohjautuvat arvosteluperusteet. Lisäksi toteutettavan ohjelmiston koodille on omat laatuvaatimuksensa.
-
-- Python: [arvosteluperusteet](/python/arvosteluperusteet) ja [koodin laatuvaatimukset](/python/koodin-laatuvaatimukset)
+- [arvosteluperusteet](/python/arvosteluperusteet) ja [koodin laatuvaatimukset](/python/koodin-laatuvaatimukset)
