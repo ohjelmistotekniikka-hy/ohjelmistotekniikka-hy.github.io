@@ -7,6 +7,5 @@
   - **HUOM:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 - Jos tarvitset kurssiin liittyvää ohjausta, tule **pajaohjaukseen**: {% for time in site.times %}
   - {{ time.time }}{% endfor %}
-# - Pajaohjauksessa saat parhaiten apua, mutta tarjolla on myös **online-ohjaustapaamisia**, jotka alkavat kolmannella viikolla. Ohjaustapaamisiin voit varata ajan [Moodlessa](https://moodle.helsinki.fi/course/view.php?id=61184).
   - Myös Discordissa voi kysellä
   - **Jos kysymys koskee koodia tai siinä esiintyviä virhetilanteita, kannattaa laittaa kysymyksen yhteyteen linkki omaan repositorioosi.** Ilman koodin näkemistä ongelman selvittäminen on hankalaa tai jopa mahdotonta.
