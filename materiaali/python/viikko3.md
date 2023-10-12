@@ -186,6 +186,7 @@ Sovelluksen loogisen tietomallin muodostavat luokat User ja Todo, jotka kuvaavat
 
 Dokumentaation [Luokkakaavio](https://mermaid-js.github.io/mermaid/#/classDiagram)-osiosta löytyy tarkemmat ohjeet luokkakaavioiden toteuttamiseen. Mallia kaavioiden käyttämisessä markdown-tiedostossa voi ottaa referenssisovelluksen [arkkitehtuuri](https://raw.githubusercontent.com/ohjelmistotekniikka-hy/python-todo-app/master/dokumentaatio/arkkitehtuuri.md)-dokumentaatiosta. Vaihtoehtoisesti, luokkakaavioiden toteuttamiseen sopii myös esimerkiksi <https://app.diagrams.net/>.
 
+---
 ### Tehtävä 1: Monopoli
 
 [Monopoli](http://fi.wikipedia.org/wiki/Monopoli_(peli)) on varmasti kaikkien tuntema lautapeli.
@@ -237,7 +238,7 @@ Normaaleille kaduille voi rakentaa korkeintaan 4 taloa tai yhden hotellin. Kadun
 
 
 **Lisää tämän viikon tehtäviä varten repositoriosi _laskarit_ hakemistoon hakemisto _viikko3_ ja lisää toteuttamasi kaavio sinne.** Jos hyödynnät Mermaid-syntaksia kaavion toteuttamisessa, voit sijoittaa kaavion markdown-tiedostoon.
-
+---
 
 ### Pakkauskaavio
 
@@ -373,6 +374,7 @@ Voit halutessasi lukea lisää sekvenssikaavioista kurssin vanhan version [mater
 
 Myös sekvenssikaavioiden toteuttaminen onnistuu kätevästi [Mermaid](https://mermaid-js.github.io/mermaid/)-syntaksin avulla. Dokumentaation [Sekvenssikaavio](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)-osiosta löytyy tarkemmat ohjeet sekvenssikaavioiden toteuttamiseen. Mallia kaavioiden käyttämisessä markdown-tiedostossa voi ottaa referenssisovelluksen [arkkitehtuuri](https://raw.githubusercontent.com/ohjelmistotekniikka-hy/python-todo-app/master/dokumentaatio/arkkitehtuuri.md)-dokumentaatiosta. Vaihtoehtoisesti, sekvenssikaavioiden toteuttamiseen sopii myös esimerkiksi <https://www.websequencediagrams.com/>.
 
+---
 ### Tehtävä 2: sekvenssikaavio
 
 Tarkastellaan HSL-matkakorttien hallintaan käytettävää koodia.
@@ -472,6 +474,7 @@ if __name__ == "__main__":
 ```
 
 **Lisää toteuttamasi kaavio repositoriosi _laskarit/viikko3_-hakemistoon.** Jos hyödynnät Mermaid-syntaksia kaavion toteuttamisessa, voit sijoittaa kaavion markdown-tiedostoon.
+---
 
 ## Tehtävien suorittaminen ja Invoke
 
