@@ -196,15 +196,24 @@ Monopolia pelataan käyttäen kahta noppaa. Pelaajia on vähintään 2 ja enint�
 
 Tämä alustava kaavio näyttää seuraavalta:
 
+<img src="https://raw.githubusercontent.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/master/assets/images/monopoli1.png">
 
+(Luokkien keskinäisiä suhteita voisi kuvata hieman tarkemminkin, mutta tämä taso riittää meille.) Kaavio on toteutettu markdown-tiedostoon Mermaid-syntaksin mukaisesti seuraavaan tapaan:
 
+````markdown
+## Monopoli, alustava luokkakaavio
 
-
-
-
-
-
-
+```mermaid
+ classDiagram
+    Monopolipeli "1" -- "2" Noppa
+    Monopolipeli "1" -- "1" Pelilauta
+    Pelilauta "1" -- "40" Ruutu
+    Ruutu "1" -- "1" Ruutu : seuraava
+    Ruutu "1" -- "0..8" Pelinappula
+    Pelinappula "1" -- "1" Pelaaja
+    Pelaaja "2..8" -- "1" Monopolipeli
+```
+````
 
 Laajennetaan nyt luokkakaaviota tuomalla esiin seuraavat asiat:
 
