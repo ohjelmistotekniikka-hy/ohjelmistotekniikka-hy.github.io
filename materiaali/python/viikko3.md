@@ -238,7 +238,6 @@ Normaaleille kaduille voi rakentaa korkeintaan 4 taloa tai yhden hotellin. Kadun
 
 
 **Lisää tämän viikon tehtäviä varten repositoriosi _laskarit_ hakemistoon hakemisto _viikko3_ ja lisää toteuttamasi kaavio sinne.** Jos hyödynnät Mermaid-syntaksia kaavion toteuttamisessa, voit sijoittaa kaavion markdown-tiedostoon.
----
 
 ### Pakkauskaavio
 
@@ -474,7 +473,6 @@ if __name__ == "__main__":
 ```
 
 **Lisää toteuttamasi kaavio repositoriosi _laskarit/viikko3_-hakemistoon.** Jos hyödynnät Mermaid-syntaksia kaavion toteuttamisessa, voit sijoittaa kaavion markdown-tiedostoon.
----
 
 ## Tehtävien suorittaminen ja Invoke
 
