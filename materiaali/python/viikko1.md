@@ -38,8 +38,8 @@ Mikäli komentorivi- ja versionhallintaharjoitusten asiat ovat tuttuja, **tee jo
 2. Luo repositoriosi hakemistoon tiedosto *README.md*. Kirjoita sinne otsikko “Ohjelmistotekniikka, harjoitustyö” ja kerro yhdellä virkkeellä, mitä olet tekemässä (tämä saa vielä muuttua: harjoitustyön oikea alustava vaatimusmäärittely tulee vasta seuraavalla viikolla). Muotoile tekstisi markdown-notaatiota käyttäen siten, että mukaan tulee otsikon lisäksi tavallista tekstiä, joka sisältää lihavoituja ja kursivoituja osuuksia.
 3. Luo myös alihakemisto nimeltä *laskarit* ja lisää sinne tiedosto nimeltä *viikko1.md*. Kirjoita tiedostoon, että komentorivi ja versionhallinta ovat jo tuttuja.
 4. Lisää ja kommitoi *README.md* ja alihakemisto *laskarit* repositorioosi.
-5. Luo GitHub-repositorio ja liitä se paikallisen repositoriosi etärepositorioksi
-6. Pushaa paikallisen repositoriosi sisältö GitHubiin
+5. Luo GitHub-repositorio ja liitä se paikallisen repositoriosi etärepositorioksi.
+6. Pushaa paikallisen repositoriosi sisältö GitHubiin.
 7. Editoi GitHubissa tiedostoa README.md: lisää siihen linkki alihakemistoon *laskarit*.
 8. Rekisteröi omat tietosi ja luomasi GitHub-repositorio [Labtooliin]({{site.labtool_link}}).
 
