@@ -731,7 +731,7 @@ src/tests/maksukortti_test.py .                          [100%]
 
 ### Tehtävä 5: .gitignore
 
-Kun testien jälkeen suoritat komennon `git status`, huomaat että projektin juureen on ilmestynyt uusi hakemisto <i>.pytest_cache</i>, joka ei ole gitin alaisuudessa
+Kun testien jälkeen suoritat komennon `git status`, huomaat että projektin juureen on ehkä ilmestynyt uusi hakemisto <i>.pytest_cache</i>, joka ei ole gitin alaisuudessa
 
 ```bash
 On branch master
@@ -755,7 +755,7 @@ Mene **repositoriosi juureen**, luo tiedosto _.gitignore_, avaa se editorilla ja
 .pytest_cache
 ```
 
-Kun nyt teet komennon `git status` pitäisi tuloksen olla seuraava:
+Tee näin siinäkin tapauksessa jos hakemistoa <i>.pytest_cache</i> ei sinulla näkynyt. Kun nyt teet komennon `git status` pitäisi tuloksen olla seuraava:
 
 ```bash
 On branch master
@@ -788,6 +788,8 @@ Tee valmiiseen, tiedostossa _src/tests/maksukortti_test.py_ sijaitsevaan, `TestM
   - Saldo vähenee oikein, jos rahaa on tarpeeksi
   - Saldo ei muutu, jos rahaa ei ole tarpeeksi
   - Metodi palauttaa _True_, jos rahat riittivät ja muuten _False_
+
+Huomaa, että tässä maksukortin versiossa ei ole metodia `saldo_euroina`, eikä maksupäätteessäkään ole vastaavia metodeita. Testaa siis ao. arvoja muuten, älä muuta maksukortin tai maksupäätteen koodia.
 
 Suorita testit terminaalissa virtuaaliympäristössä `pytest src`-komennolla.
 
