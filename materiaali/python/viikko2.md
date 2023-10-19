@@ -638,6 +638,9 @@ class Maksukortti:
         self.saldo = self.saldo - maara
         return True
 
+    def saldo_euroina(self):
+        return self.saldo / 100
+
     def __str__(self):
         saldo_euroissa = round(self.saldo / 100, 2)
 
@@ -692,6 +695,9 @@ class Kassapaate:
             self.kassassa_rahaa += summa
         else:
             return
+
+    def kassassa_rahaa_euroina(self):
+        return self.kassassa_rahaa / 100
 ```
 
 **Hae nyt projektin koodi koneellesi**. Avaa terminaali, mene palautusrepositoriosi hakemistoon _laskarit/viikko2_ ja suorita seuraavat komennot:
