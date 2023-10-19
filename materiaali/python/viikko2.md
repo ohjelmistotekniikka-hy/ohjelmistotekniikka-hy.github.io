@@ -789,8 +789,6 @@ Tee valmiiseen, tiedostossa _src/tests/maksukortti_test.py_ sijaitsevaan, `TestM
   - Saldo ei muutu, jos rahaa ei ole tarpeeksi
   - Metodi palauttaa _True_, jos rahat riittivät ja muuten _False_
 
-**Huom:** tässä maksukortin versiossa ei ole metodia `saldo_euroina`, eikä kassapäätteessäkään ole vastaavia metodeita. Tutki siis maksukortin saldoa esim. maksukortin merkkijonoesityksen kautta käyttäen ilmaisua `str(self.maksukortti)`. Älä muuta maksukortin tai kassapäätteen koodia.
-
 Suorita testit terminaalissa virtuaaliympäristössä `pytest src`-komennolla.
 
 ## Komentojen suorittaminen Visual Studio Codessa
