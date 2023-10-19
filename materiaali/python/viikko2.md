@@ -79,7 +79,7 @@ Käynnistä terminaali uudestaan ja varmista, että asennus onnistui suorittamal
 Asenna Poetry suorittamalla terminaalissa seuraava komento:
 
 ```bash
-(Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py -UseBasicParsing).Content | python -
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py –
 ```
 
 Asennuksen jälkeen Poetry-binäärin polku tulee asettaa `PATH`-muuttujaan. Lisää [tämän](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/) ohjeen mukaisesti `PATH`-muuttujaan polku `%APPDATA%\Python\Scripts`.
