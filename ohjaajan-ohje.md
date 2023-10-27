@@ -10,7 +10,7 @@ Ohjaajan tehtävät kurssilla ovat:
 
 - Palautteen antaminen opiskelijoiden välipalautuksista [Labtoolin]({{site.labtool_link}}) kautta
 - Lopullisten palautusten arviointi
-- Opiskelijoiden ohjaaminen (pajassa tai etänä), jos ohjaaja haluaa osallistua pajaohjaukseen
+- Opiskelijoiden paja- ja muu ohjaus
 
 ## Palautteen antaminen
 
@@ -29,6 +29,9 @@ Käyttöohjeet:
 
 ### Viikko 1
 
+Komentorivi- ja versionhallintatehtäviä ei ole pakko suorittaa, eikä niistä saa lisäpisteitä. Ensimmäisen viikon pisteen saa joko niistä tai kohdan "tee joka tapauksessa seuraavat asiat:" tehtävien suorittamisesta.
+
+Jos opiskelija tekee komentorivi- ja versionhallintatehtävät:
 Katsokaa että GitHubista löytyy tiedostot [gitlog.txt]({{site.repo_url}}/tree/master/materiaali/python/gitlog.txt) ja [komentorivi.txt]({{site.repo_url}}/tree/master/materiaali/python/komentorivi.txt) ja että ne näyttävät edes suurinpiirtein oikeilta.
 Pienistä virheistä voi laittaa huomautuksen / korjauskehoituksen viestiksi
 Ei pisteitä jos ei tehtynä tai ymmärtänyt tehtävän aivan väärin.
@@ -41,23 +44,12 @@ Katsokaa että jacocon/coveragen raportti on ok ja silmäilkää nopeasti, että
 
 #### Laskaritehtävät
 
-1. Monopoli
-2. Monopolin laajennus malli: [malli3-12.png](https://github.com/ohjelmistotekniikka-hy/mallivastaukset/blob/main/malli3-12.png)
-3. Bensatankki sekvenssikaavio malli: [malli3-3.png](https://github.com/ohjelmistotekniikka-hy/mallivastaukset/blob/main/malli3-3.png)
-4. HSL sekvenssikaavio malli: [malli3-4.png](https://github.com/ohjelmistotekniikka-hy/mallivastaukset/blob/main/malli3-4.png)
+1. Monopolin laajennus malli: [malli3-12.png](https://github.com/ohjelmistotekniikka-hy/mallivastaukset/blob/main/malli3-12.png)
+2. HSL sekvenssikaavio malli: [malli3-4.png](https://github.com/ohjelmistotekniikka-hy/mallivastaukset/blob/main/malli3-4.png)
 
 Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärretty täysin väärin. Mutta jos oikeasti yritetty kunnolla ja sekvenssikaavio on esim. muuten oikein, mutta joku metodi tai palautusviiva uupuu niin antakaa pisteet. (Voitte toki halutessa kommentoida, virheistä)
 
-#### Projekti/Java
-
-- Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla tai/ja komennolla `mvn compile exec:java -Dexec.mainClass=pakkaus.Paaohjelma` komennon parametrina on metodin main sisältävän luokan täydellinen, eli myös pakkauksen sisältävä, nimi referenssisovelluksen tapauksessa parametri olisi `-Dexec.mainClass=todoapp.ui.TodoUi`
-- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `mvn test jacoco:report` (käsky luo raportin target kansioon) (Jos ei toimi vielä tsekata löytyykö materiaalin ohjeen mukainen määrittely tiedoston pom.xml osiossa plugins)
-- Sovelluksella on oltava vähintään yksi testi jonka voi suorittaa komennolla `mvn test`. Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa. Testin tulee mennä läpi
-- Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta, pelkät gettereitä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
-- Opiskelijan tehtävänannossa ei oltu määritelty pitääkö toiminnallisuuden on olla käyttäjälle näkyvää tai olla käyttöliittymä olemassa, joten riittää jos toiminnallisuus on toteutettu nyt kooditasolla ja toimivuus testattu (eli jos on tehnyt “test driven”) niin se riittää tässä vaiheessa
-- Repositorion juuresta löytyy Maven-projekti
-
-#### Projekti/Python
+#### Projekti
 
 - Projektin koodin pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
 - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report` (html-muotoinen raportti löytyy kansiosta htmlcov) (Jos ei toimi vielä tsekatkaa löytyykö materiaalin ohjeen mukainen määrittely tiedostosta pyproject.toml)
@@ -106,14 +98,7 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
   - Rivikattavuus vähintään 10% (0.25p)
     - Jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioikaa se pois prosenteista ja huomauttakaa että opiskelija poistaa sen rivikattavuudesta
 
-#### Projekti/Java
-
-- Checkstyle configuroitu (0.25p)
-  - toimii komennolla `mvn jxr:jxr checkstyle:checkstyle`
-- Checkstyle virheitä alle 10 (0.25p)
-  - käyttöliittymän rakentavan koodin ei tarvitse olla Checkstyle-tarkastelun alla
-
-#### Projekti/Python
+#### Projekti
 
 - Pylint configuroitu (0.25p)
   - Toimii komennolla `poetry run invoke lint`
@@ -144,7 +129,7 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
   - README:ssa tällä hetkellä relevantit linkit ja komennot
   - Esim. tältä viikolta linkki arkkitehtuuriin ja checkstyle/pylint komennot lisätty
 
-Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistuksia [Java viikko 4](https://ohjelmistotekniikka-hy.github.io/java/viikko4) ja [Python viikko 4](https://ohjelmistotekniikka-hy.github.io/python/viikko4)
+Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistusta [Python viikko 4](https://ohjelmistotekniikka-hy.github.io/python/viikko4)
 
 ### Viikko 5
 
@@ -158,15 +143,9 @@ Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistuksia [
 #### Release
 
 - Projektista on tehty GitHub release (0.25p)
-  - Java: release sisältää ohjelman uusimman version suorituskelpoisen jar-tiedoston
-  - Python: Release sisältää ohjelman uusimman version lähdekoodin
+  - Release sisältää ohjelman uusimman version lähdekoodin
 
-#### Java
-
-- Suorituskelpoisen jar:in voi generoida komennolla `mvn package` (0.5p)
-- Checkstyle virheitä alle 5 (0.25p)
-
-#### Python
+#### Muuta
 
 - Ohjelma toimii komennolla `poetry run invoke start` (0.5p)
 - Pylint virheitä alle 5 (0.25p)
@@ -176,7 +155,7 @@ Muuten aikalailla samat ohjeet kuin edellisellä viikolla.
 
 ### Viikko 6
 
-Python-projekteissa testikattavuutta arvioitaessa muistakaa katsoa että jokaisessa projektin _src_-hakemiston alahakemistossa on tyhjä \_\_init\_\_.py-tiedosto. Jos sitä ei ole, coverage ei arvioi testikattavuutta oikein näiden hakemistojen osalta. Tällöin projektin testikattavuus on todellista korkeampi. Ottakaa tämä huomioon. Arvioikaa todellinen testikattavuus. Lisätkää käsin tälläisiin hakemistoihin \_\_init\_\_.py ennen testien ajamista ja testikattavuusraportin ottamista.
+Testikattavuutta arvioitaessa muistakaa katsoa että jokaisessa projektin _src_-hakemiston alahakemistossa on tyhjä \_\_init\_\_.py-tiedosto. Jos sitä ei ole, coverage ei arvioi testikattavuutta oikein näiden hakemistojen osalta. Tällöin projektin testikattavuus on todellista korkeampi. Ottakaa tämä huomioon. Arvioikaa todellinen testikattavuus. Lisätkää käsin tälläisiin hakemistoihin \_\_init\_\_.py ennen testien ajamista ja testikattavuusraportin ottamista.
 
 *Testaus*-osiosta valitaan molemmat "Testikattavuus vähintään..." -checkboxit jos kattavuus vähintään 60%. *Ohjelma kasvanut* -osiossa valitaan vain toinen "ohjelma kasvanut..." -checkboxi.
 
@@ -194,6 +173,7 @@ Labtoolissa muutama uusi kohta, muuten tämä viikko aika samanlailla kuin edell
 
 ### Loppupalautus
 
+**tämä kohta tulee vielä muuttumaan**
 Tarkastustaulukosta löytyy neljä välilehteä:
 
 - "Pisteet" projektin arvioinnille
@@ -251,17 +231,3 @@ Pyrkikää arvioimaan jokaiselta muulta ohjaajalta vähintään yksi arviointi
 
 Vertaisarviointeja siis tehdään yhtä monta kuin teitte arviointeja (sarake "to control" Tarkastustilanne-välilehdelle). Kannattaa myös varmistaa, että Tarkastustilanne-välilehden luvut tehdyistä arvioinneista, dropanneista ja ei aloittaneista ovat oikein, koska niiden perusteella maksetaan palkkio.
 
-## Ohjaajan palkka
-
-Ohjaajan tuntipalkka on 17 €. Ohjaajalle maksetaan 3 · 17 € kurssin loppuun asti jatkaneesta opiskelijasta ja 0.5 · 17 € keskeyttäneestä opiskelijasta. Tämä kannattaa ottaa huomioon siinä, paljonko aikaa käyttää palautteen antamiseen ja arviointiin.
-
-Lisäksi pajaohjauksesta maksetaan viikossa
-
-- 2 · 17 €, jos kurssilla on alle 30 opiskelijaa,
-- 4 · 17 €, jos kurssilla on 30–50 opiskelijaa,
-- 6 · 17 €, jos kurssilla on 50–100 opiskelijaa, ja
-- 8 · 17 €, jos kurssilla on yli 100 opiskelijaa.
-
-Jos kurssilla on useita ohjaajia, pajaohjauksen tunnit jakautuvat ohjaajien kesken.
-
-Kurssin lopussa ohjaaja toimittaa Reijo Sivenille raportin tunneista ja vastuullaan olleiden opiskelijoiden määristä, minkä perusteella palkka maksetaan.
