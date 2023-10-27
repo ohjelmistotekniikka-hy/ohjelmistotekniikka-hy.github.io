@@ -31,7 +31,7 @@ Kurssin ensimmäisen kolmen viikon aikana harjoitellaan yksikkötestausta ja UML
 ---
 ## Ensimmäisen viikon harjoitukset
 
-Lue tehtävänannot kohdista **"Komentorivin harjoittelua"** ja **"Versionhallinta"**. Jos niissä käsitellyt asiat ovat tuttuja (kuten kurssin esitietovaatimuksien mukaan pitäisi olla), sinun ei tarvitse tehdä näitä harjoituksia. **Jos kuitenkin yhtään epäilet osaamistasi, tee harjoitukset tehtävänantojen mukaan!** Et saa siitä pisteitä, mutta tulet jatkossa tarvitsemaan vastaavia taitoja tällä kurssilla.
+Lue tehtävänannot kohdista **"Komentorivin harjoittelua"** ja **"Versionhallinta"**. Jos niissä käsitellyt asiat ovat tuttuja (kuten kurssin esitietovaatimuksien mukaan pitäisi olla), sinun ei tarvitse tehdä näitä harjoituksia. **Jos kuitenkin yhtään epäilet osaamistasi, tee harjoitukset tehtävänantojen mukaan!** Et saa siitä ylimääräisiä pisteitä, mutta tulet jatkossa tarvitsemaan vastaavia taitoja tällä kurssilla.
 
 Mikäli komentorivi- ja versionhallintaharjoitusten asiat ovat tuttuja, **tee joka tapauksessa seuraavat asiat**:
 1. Luo paikallinen repositorio harjoitustyölle ja viikkoharjoituksille. Voit antaa sille nimeksi ot-harjoitustyo.
@@ -43,7 +43,7 @@ Mikäli komentorivi- ja versionhallintaharjoitusten asiat ovat tuttuja, **tee jo
 7. Editoi GitHubissa tiedostoa README.md: lisää siihen linkki alihakemistoon *laskarit*.
 8. Rekisteröi omat tietosi ja luomasi GitHub-repositorio [Labtooliin]({{site.labtool_link}}).
 
-(Jos et osaa tehdä em. asioita, toimi siis komentorivi- ja versionhallintaharjoitusten ohjeiden mukaisesti.)
+(Ensimmäisen viikon harjoituspisteeseen siis riittää edellä lueteltujen asioiden tekeminen. Jos et osaa tehdä niitä, toimi siis alla olevien komentorivi- ja versionhallintaharjoitusten ohjeiden mukaisesti ja saat harjoituspisteen sitä kautta.)
 
 Koska säästit aikaa komentorivi- ja versionhallintaharjoitusten sivuuttamisella, tutustu jo alustavasti seuraavan viikon kurssimateriaaliin.  Sivun loppupuolelta löydät ohjeita harjoitustyön aiheenvalintaan ja alustavan määrittelydokumentin kirjoittamiseen. Mieti, miten aiot harjoitustyössäsi edetä ja näetkö siinä joitain ongelmallisia kohtia. Mikäli niin haluat, mikään ei estä sinua jo käytännössä tekemästä 2. viikon harjoituksia ja/tai harjoitustyösi määrittelydokumenttia. Ne kuitenkin arvioidaan vasta kurssin toisen viikon jälkeen.
 
