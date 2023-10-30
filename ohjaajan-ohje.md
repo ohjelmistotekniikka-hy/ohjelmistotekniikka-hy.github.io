@@ -33,19 +33,18 @@ Komentorivi- ja versionhallintatehtäviä ei ole pakko suorittaa, eikä niistä 
 
 Jos opiskelija tekee komentorivi- ja versionhallintatehtävät:
 Katsokaa että GitHubista löytyy tiedostot [gitlog.txt]({{site.repo_url}}/tree/master/materiaali/python/gitlog.txt) ja [komentorivi.txt]({{site.repo_url}}/tree/master/materiaali/python/komentorivi.txt) ja että ne näyttävät edes suurinpiirtein oikeilta.
-Pienistä virheistä voi laittaa huomautuksen / korjauskehoituksen viestiksi
-Ei pisteitä jos ei tehtynä tai ymmärtänyt tehtävän aivan väärin.
+Pienistä virheistä voi laittaa huomautuksen viestiksi. Pisteen kuitenkin saa, jos kohdan "tee joka tapauksessa seuraavat asiat:" vaatimukset täyttyvät.
 
 ### Viikko 2
 
-Katsokaa että jacocon/coveragen raportti on ok ja silmäilkää nopeasti, että testit ovat järkeviä eikä feikkitestejä. Jos jotain testejä puuttuu (eli testikattavuus ei ole 100%), niin sitten tarkempi syynäys ja pisteiden vähennys Labtoolin ohjeen mukaan. (Testeistä paremmat kuvaukset niissä Labtoolin opiskelijalle menevissä alaosan teksteissä...)
+Katsokaa että coveragen raportti on ok ja silmäilkää nopeasti, että testit ovat järkeviä eikä feikkitestejä. Jos jotain testejä puuttuu (eli testikattavuus ei ole 100%), niin sitten tarkempi syynäys ja pisteiden vähennys Labtoolin ohjeen mukaan. (Testeistä paremmat kuvaukset niissä Labtoolin opiskelijalle menevissä alaosan teksteissä...)
 
 ### Viikko 3
 
 #### Laskaritehtävät
 
-1. Monopolin laajennus malli: [malli3-12.png](https://github.com/ohjelmistotekniikka-hy/mallivastaukset/blob/main/malli3-12.png)
-2. HSL sekvenssikaavio malli: [malli3-4.png](https://github.com/ohjelmistotekniikka-hy/mallivastaukset/blob/main/malli3-4.png)
+1. Monopolin laajennuksen malli: [malli3-12.png](https://github.com/ohjelmistotekniikka-hy/mallivastaukset/blob/main/malli3-12.png)
+2. HSL-sekvenssikaavion malli: [malli3-4.png](https://github.com/ohjelmistotekniikka-hy/mallivastaukset/blob/main/malli3-4.png)
 
 Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärretty täysin väärin. Mutta jos oikeasti yritetty kunnolla ja sekvenssikaavio on esim. muuten oikein, mutta joku metodi tai palautusviiva uupuu niin antakaa pisteet. (Voitte toki halutessa kommentoida, virheistä)
 
@@ -173,7 +172,8 @@ Labtoolissa muutama uusi kohta, muuten tämä viikko aika samanlailla kuin edell
 
 ### Loppupalautus
 
-**tämä kohta tulee vielä muuttumaan**
+**tämä kohta tulee vielä muuttumaan:** käytetään Moodlea, mutta muuten suunnilleen vanhaan malliin.
+
 Tarkastustaulukosta löytyy neljä välilehteä:
 
 - "Pisteet" projektin arvioinnille
