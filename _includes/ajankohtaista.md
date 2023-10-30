@@ -7,5 +7,5 @@
   - **HUOM:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 - Jos tarvitset kurssiin liittyvää ohjausta, tule **pajaohjaukseen** ke 1.11. - ti 19.12.: {% for time in site.times %}
   - {{ time.time }}{% endfor %}
-  - Myös Discordissa voi kysellä
+- Myös Discordissa voi kysellä
   - **Jos kysymys koskee koodia tai siinä esiintyviä virhetilanteita, kannattaa laittaa kysymyksen yhteyteen linkki omaan repositorioosi.** Ilman koodin näkemistä ongelman selvittäminen on hankalaa tai jopa mahdotonta.
