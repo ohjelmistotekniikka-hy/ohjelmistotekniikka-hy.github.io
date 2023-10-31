@@ -594,7 +594,7 @@ def coverage_report(ctx):
     if platform != "win32":
         call(("xdg-open", "htmlcov/index.html"))
 ```
-
+---
 ## Harjoitustyö
 
 Tämän viikon aikana aloitetaan harjoitustyön toteutus ja testaaminen. Ohjelman tulee edistyä jokaisella viikolla tasaisesti. Jos ohjelma tulee valmiiksi jo ennen loppupalautusta valmistaudu laajentamaan sitä saadaksesi ohjelman edistymisestä pisteet. Tarkoitus on edistää projektia tasaisesti kurssiviikkojen aikana.
