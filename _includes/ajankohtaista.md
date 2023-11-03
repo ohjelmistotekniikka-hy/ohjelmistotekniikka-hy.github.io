@@ -2,7 +2,7 @@
 
 - Kurssin aloitustilaisuus {{site.lecture_time}}
   - Aloitustilaisuudessa käytettävät kalvot löytyvät [täältä]({{site.lecture_slides_link}})
-  - Aloitustilaisuudesta tulee myös tallenne
+  - Aloitusluennon tallenne on [täällä]({{site.lecture_recording_link}})
 - Kurssilla on [Discord-kanava](https://study.cs.helsinki.fi/discord/join/ohte), jossa on tarjolla ohjausta ja keskustelua kurssiin liittyen
   - **HUOM:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 - Jos tarvitset kurssiin liittyvää ohjausta, tule **pajaohjaukseen** ke 1.11. - ti 19.12.: {% for time in site.times %}
