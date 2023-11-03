@@ -601,6 +601,10 @@ Tämän viikon aikana aloitetaan harjoitustyön toteutus ja testaaminen. Ohjelma
 
 **Tämän viikon harjoitustyön palautuksesta on tarjolla 2 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
+### Varoitus: pip
+
+*Olet kenties saattanut aiemmin asentaa Pythonin tarvitsemia riippuvuuksia pip-komennolla. Älä kuitenkaan käytä pipiä tällä kurssilla sillä jos teet niin, teet 99.9% todennäköisyydellä jotain väärin. Asenna riippuvuudet tällä kurssilla Poetryn avulla.*
+
 ### Harjoitustyö 1: Poetry projektin alustaminen
 
 Alusta repositoriosi juureen Poetry-projekti edellisen viikon [Poetry-ohjeiden](/python/viikko2#poetry-ja-riippuvuuksien-hallinta) mukaisesti. Repositorion rakenne tulee olla seuraava:
