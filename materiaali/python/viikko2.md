@@ -806,7 +806,7 @@ Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympär
 
 ![Visual Studio Code terminaali]({{ "/assets/images/python/vscode-terminaali.png" | absolute_url }})
 
-Vielä parempi vaihtoehto on konfiguroida VS Code asianmukaisesti seuraamalla kurssin Ohjelmistotuotanto materiaalin [ohjeita] (https://ohjelmistotuotanto-hy.github.io/tehtavat2/#bonus-vs-coden-konfigurointi).
+Vielä parempi vaihtoehto on konfiguroida VS Code asianmukaisesti seuraamalla kurssin Ohjelmistotuotanto materiaalin [ohjeita](https://ohjelmistotuotanto-hy.github.io/tehtavat2/#bonus-vs-coden-konfigurointi).
 
 ## Coverage ja testikattavuus
 
