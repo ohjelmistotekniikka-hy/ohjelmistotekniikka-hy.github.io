@@ -38,7 +38,7 @@ Jos molemmissa tapauksissa versio on alle 3.8, asenna tietokoneellesi [uusin Pyt
 
 ### Asennus
 
-Ennen kuin pääsemme tutustumaan Poetryn käyttöön tarkemmin, tulee se ensin asentaa. Seuraa alla olevista ohjeista tietokoneesi käyttöjärjestelmälle sopivaa asennusohjetta.
+Ennen kuin pääsemme tutustumaan Poetryn käyttöön tarkemmin, tulee se ensin asentaa. Huomaa, että vaikka koneellasi olisikin jo Poetry asennettuna, kaikki ei jatkossa välttämättä toimi oikein mikäli Poetryn versio on liian vanha. Seuraa alla olevista ohjeista tietokoneesi käyttöjärjestelmälle sopivaa asennusohjetta.
 
 **HUOM:** kaikki asennustavat saattavat vaatia terminaali-ikkunan sulkemisen ja uudelleen avaamisen, jotta Poetryn komennot alkavat toimia. Joissain tapauksissa on vaadittu jopa tietokoneen uudelleenkäynnistys.
 
