@@ -807,7 +807,7 @@ Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympär
 
 ![Visual Studio Code terminaali]({{ "/assets/images/python/vscode-terminaali.png" | absolute_url }})
 
-Toinen, ehkä parempi tapa on seuraava: lisää hakemisto _unicafe_ Visual Studio Coden "workspaceen" _File_-valikon kautta, tallenna tämä workspace samaan unicafe-hakemistoon ja avaa Visual Studio Coden terminaali uudelleen. Valitse oikea virtuaaliympäristö Visual Studio Coden ikkunan oikeasta alareunasta (kun _maksukortti.py_ tai _kassapaate.py_ on avattuna). Tämän jälkeen testauksen tulisi toimia. (Kurssin Ohjelmistotuotanto materiaalissa on aiheeseen liittyvä [esimerkki](https://ohjelmistotuotanto-hy.github.io/tehtavat2/#bonus-vs-coden-konfigurointi).)
+Toinen, ehkä parempi tapa on seuraava: lisää hakemisto _unicafe_ Visual Studio Coden "workspaceen" _File_-valikon kautta, tallenna tämä workspace samaan _unicafe_-hakemistoon ja avaa Visual Studio Coden terminaali uudelleen. Valitse oikea virtuaaliympäristö Visual Studio Coden ikkunan oikeasta alareunasta (kun _maksukortti.py_ tai _kassapaate.py_ on avattuna). Tämän jälkeen testauksen tulisi onnistua. (Kurssin Ohjelmistotuotanto materiaalissa on aiheeseen liittyvä [esimerkki](https://ohjelmistotuotanto-hy.github.io/tehtavat2/#bonus-vs-coden-konfigurointi).)
 
 ## Coverage ja testikattavuus
 
