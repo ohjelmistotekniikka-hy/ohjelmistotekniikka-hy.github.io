@@ -801,13 +801,13 @@ Suorita testit terminaalissa virtuaaliympäristössä `pytest src`-komennolla.
 
 ## Komentojen suorittaminen Visual Studio Codessa
 
-Visual Studio Codesta löytyy sisään rakennettu terminaali. Terminaalin saa avattua valitsemalla päävalikosta _Terminal_ ja aukeavasta alavalikosta _New Terminal_. editorin alalaitaan pitäisi ilmestyä terminaali, jossa voit suorittaa komentorivikomentoja.
+Visual Studio Coden voi avata Linux-ympäristössä esim. siirtymällä hakemistoon _unicafe_ ja antamalla komennon `code .`. Visual Studio Codesta löytyy sisäänrakennettu terminaali. Terminaalin saa avattua valitsemalla päävalikosta _Terminal_ ja aukeavasta alavalikosta _New Terminal_. editorin alalaitaan pitäisi ilmestyä terminaali, jossa voit suorittaa komentorivikomentoja.
 
-Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa projektin nimi ja jokin satunnainen merkkijono suluissa, esimerkiksi `(unicafe-sF0cl2di-py3.9)`. Jos et ole virtuaaliympäristössä pääset siihen tutulla `poetry shell`-komennolla. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
+Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä, ainakin jos olit virtuaaliympäristössä silloin kun avasit itse Visual Studio Coden. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa projektin nimi ja jokin satunnainen merkkijono suluissa, esimerkiksi `(unicafe-sF0cl2di-py3.9)`. Jos et ole virtuaaliympäristössä pääset siihen tutulla `poetry shell`-komennolla. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
 
 ![Visual Studio Code terminaali]({{ "/assets/images/python/vscode-terminaali.png" | absolute_url }})
 
-Vielä parempi vaihtoehto on konfiguroida VS Code asianmukaisesti seuraamalla kurssin Ohjelmistotuotanto materiaalin [ohjeita](https://ohjelmistotuotanto-hy.github.io/tehtavat2/#bonus-vs-coden-konfigurointi).
+Toinen, ehkä parempi tapa on seuraava: lisää hakemisto _unicafe_ Visual Studio Coden "workspaceen" _File_-valikon kautta, tallenna tämä workspace samaan unicafe-hakemistoon ja avaa Visual Studio Coden terminaali uudelleen. Valitse oikea virtuaaliympäristö Visual Studio Coden ikkunan oikeasta alareunasta (kun _maksukortti.py_ tai _kassapaate.py_ on avattuna). Tämän jälkeen testauksen tulisi toimia. (Kurssin Ohjelmistotuotanto materiaalissa on aiheeseen liittyvä [esimerkki](https://ohjelmistotuotanto-hy.github.io/tehtavat2/#bonus-vs-coden-konfigurointi).)
 
 ## Coverage ja testikattavuus
 
