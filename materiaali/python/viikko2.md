@@ -513,6 +513,12 @@ class TestMaksukortti(unittest.TestCase):
 
         self.assertEqual(self.kortti.saldo_euroina(), 6.0)
 
+    def test_syo_edullisesti_ei_vie_saldoa_negatiiviseksi(self):
+        kortti = Maksukortti(200)
+        kortti.syo_edullisesti()
+
+        self.assertEqual(kortti.saldo_euroina(), 2.0)
+
 ```
 
 `setUp`-metodi suoritetaan **ennen jokaista testitapausta** (eli testimetodia). Jokainen testitapaus saa siis käyttöönsä `Maksukortti`-olion, jonka saldo on 10 euroa. Huomaa, että testien kohteena oleva maksukortti talletetaan testiluokan oliomuuttujaan `self.kortti = Maksukortti(1000)`-rivillä. Näin testimetodit pystyvät näkemään metodin `setUp` luoman maksukortin.
@@ -524,15 +530,15 @@ Testimetodit voivat myös alustaa eri käyttötarkoitukseen sopivia olioita, kut
 Tehdään vielä testi metodille `lataa_rahaa`. Ensimmäinen testi varmistaa, että lataus onnistuu ja toinen testaa, ettei kortin saldo kasva suuremmaksi kuin 150 euroa.
 
 ```python
-def test_kortille_voi_ladata_rahaa(self):
-    self.kortti.lataa_rahaa(2500)
+    def test_kortille_voi_ladata_rahaa(self):
+        self.kortti.lataa_rahaa(2500)
 
-    self.assertEqual(str(self.kortti), "Kortilla on rahaa 35.00 euroa")
+        self.assertEqual(self.kortti.saldo_euroina(), 35.0)
 
-def test_kortin_saldo_ei_ylita_maksimiarvoa(self):
-    self.kortti.lataa_rahaa(20000)
+    def test_kortin_saldo_ei_ylita_maksimiarvoa(self):
+        self.kortti.lataa_rahaa(20000)
 
-    self.assertEqual(str(self.kortti), "Kortilla on rahaa 150.00 euroa")
+        self.assertEqual(self.kortti.saldo_euroina(), 150.0)
 ```
 
 ### Tehtävä 3: Lisää testejä
