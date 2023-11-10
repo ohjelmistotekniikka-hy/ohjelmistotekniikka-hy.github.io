@@ -194,6 +194,7 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
   - Ei ylimääräistä tavaraa (mm. `pytest`- ja `coverage`-komentojen generoimia tiedostoja)
   - Laskarit jätetään hakemiston _laskarit_ alle
   - Järkevä _.gitignore_-tiedosto olemassa
+- Docstring-dokumentointia ei ole aloitettu
 
 {% include harjoitustyon_toimivuus_info.md %}
 
