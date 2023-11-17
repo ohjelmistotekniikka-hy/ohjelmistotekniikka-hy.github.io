@@ -66,7 +66,7 @@ class Robot(pygame.sprite.Sprite):
         self.rect.y = y
 ```
 
-Luokan `image`-attribuutin arvoksi tulee asettaa kuva, joka piirretään näytölle. Huomaa, että kuvan polku muodustuu projektin hakemistorakenteen perusteeella, joka on tässä tapauksessa seuraava:
+Luokan `image`-attribuutin arvoksi tulee asettaa kuva, joka piirretään näytölle. Huomaa, että kuvan polku muodustuu projektin hakemistorakenteen perusteella, joka on tässä tapauksessa seuraava:
 
 ```
 src/
