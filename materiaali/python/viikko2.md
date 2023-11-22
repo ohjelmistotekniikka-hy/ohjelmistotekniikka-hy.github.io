@@ -76,10 +76,10 @@ Käynnistä terminaali uudestaan ja varmista, että asennus onnistui suorittamal
 
 #### Windows-asennus
 
-Asenna Poetry suorittamalla terminaalissa seuraava komento:
+Asenna Poetry suorittamalla PowerShell-terminaalissa seuraava komento:
 
-```bash
-(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py –
+```powershell
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
 ```
 
 Asennuksen jälkeen Poetry-binäärin polku tulee asettaa `PATH`-muuttujaan. Lisää [tämän](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/) ohjeen mukaisesti `PATH`-muuttujaan polku `%APPDATA%\Python\Scripts`.
@@ -98,18 +98,19 @@ Komennon yhteydessä annettu `--python "^3.8"`-asetus asettaa projektin Python-v
 
 Kun viimeiseen kysymykseen on vastattu, katso hakemiston sisältöä. Hakemistoon pitäisi ilmestyä _pyproject.toml_-tiedosto, jonka sisältö on kutakuinkin seuraava:
 
-```
+```toml
 [tool.poetry]
 name = "poetry-testi"
 version = "0.1.0"
 description = ""
 authors = ["Kalle Ilves <kalle.ilves@helsinki.fi>"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 ```
 
@@ -121,7 +122,23 @@ Kun _pyproject.toml_-tiedosto on tullut tutuksi, viimeistellään projektin alus
 poetry install
 ```
 
-Komennon suorittaminen tekee projektille vaadittavat alustustoimenpiteet, kuten virtuaaliympäristön alustamisen. Jos projektille olisi määritelty riippuvuuksia, komennon suorittaminen asentaisi myös ne. Tämän vuoksi komento tulee suorittaa aina ennen kuin uutta projektia aletaan käyttämään.
+Komennon suorittaminen tekee projektille vaadittavat alustustoimenpiteet, kuten virtuaaliympäristön alustamisen ja riippuvuuksien asentamisen. Tämän vuoksi komento tulee suorittaa aina ennen kuin uutta projektia aletaan käyttämään.
+
+Komennon suorittaminen johtaa todennäköisesti seuraavaan ilmoitukseen:
+
+```
+Installing the current project: poetry-testi (0.1.0)
+The current project could not be installed: [Errno 2] No such file or directory: '~/poetry-testi/README.md'
+If you do not want to install the current project use --no-root
+```
+
+Tämä johtuu siitä, että Poetry yrittää asentaa myös nykyistä projektia, eikä projektissa ole _poetry-testi_-nimistä moduulia. Kyseessä [ei ole](https://github.com/python-poetry/poetry/pull/8369) tekstin ulkonäöstä huolimatta virhe vaan pikemminkin varoitus. Projektin alustaminen on kyllä mennyt läpi, mutta jos et halua varoitusta, voit käyttää komennosta muotoa:
+
+```bash
+poetry install --no-root
+```
+
+Virtuaaliympäristön alustamisen lisäksi tämä komento asentaa ainoastaan projektin riippuvuudet, ei projektia itseään.
 
 Komennon suorittamisen jälkeen hakemistoon pitäisi ilmestyä tiedosto _poetry.lock_. Tiedosto sisältää kaikkien asennettujen riippuvuuksien versiotiedot. Sen tietojen avulla Poetry pystyy aina asentamaan `poetry install`-komennolla riippuvuuksista täsmälleen oikeat versiot. Tästä syystä tiedosto tulee lisätä versionhallintaan.
 
@@ -135,7 +152,7 @@ poetry add cowsay
 
 Asennuksen komento on siis muotoa `poetry add <kirjasto>`. Komennon suorittamisen jälkeen huomaamme, että _pyproject.toml_-tiedoston `[tool.poetry.dependencies]`-osion alla on uutta sisältöä:
 
-```
+```toml
 [tool.poetry.dependencies]
 python = "^3.8"
 cowsay = "^2.0.3"
@@ -221,7 +238,7 @@ poetry add pytest --group dev
 
 Komennon suorittaminen lisää pytest-kirjaston riippuvuudeksi `[tool.poetry.group.dev.dependencies]`-osion alle:
 
-```
+```toml
 [tool.poetry.group.dev.dependencies]
 pytest = "^6.1.2"
 ```
@@ -235,7 +252,7 @@ Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
 1. Varmista, että Poetrysta on asennettu uusin versio suorittamalla komento `poetry self update`
 2. Varmista, että _pyproject.toml_-tiedostossa on oikea Python version vaatimus:
 
-   ```
+   ```toml
    [tool.poetry.dependencies]
    python = "^3.8"
    ```
@@ -530,15 +547,15 @@ Testimetodit voivat myös alustaa eri käyttötarkoitukseen sopivia olioita, kut
 Tehdään vielä testi metodille `lataa_rahaa`. Ensimmäinen testi varmistaa, että lataus onnistuu ja toinen testaa, ettei kortin saldo kasva suuremmaksi kuin 150 euroa.
 
 ```python
-    def test_kortille_voi_ladata_rahaa(self):
-        self.kortti.lataa_rahaa(2500)
+def test_kortille_voi_ladata_rahaa(self):
+    self.kortti.lataa_rahaa(2500)
 
-        self.assertEqual(self.kortti.saldo_euroina(), 35.0)
+    self.assertEqual(self.kortti.saldo_euroina(), 35.0)
 
-    def test_kortin_saldo_ei_ylita_maksimiarvoa(self):
-        self.kortti.lataa_rahaa(20000)
+def test_kortin_saldo_ei_ylita_maksimiarvoa(self):
+    self.kortti.lataa_rahaa(20000)
 
-        self.assertEqual(self.kortti.saldo_euroina(), 150.0)
+    self.assertEqual(self.kortti.saldo_euroina(), 150.0)
 ```
 
 ### Tehtävä 3: Lisää testejä
