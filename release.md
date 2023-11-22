@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /release
+permalink: /fi/release
 title: GitHub-release
 ---
 

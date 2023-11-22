@@ -9,15 +9,24 @@ repo_branch: 'master'
 # Kurssikertaan liittyvät muuttujat:
 title: "Aineopintojen harjoitustyö: ohjelmistotekniikka, syksy 2023"
 
-# aikataulut (annetaan muodossa viikonpäivä dd.mm kellonaika)
-wk1dl: "tiistai 7.11. klo 23:59"
-wk2dl: "tiistai 14.11. klo 23:59"
-wk3dl: "tiistai 21.11. klo 23:59"
-wk4dl: "tiistai 28.11. klo 23:59"
-wk5dl: "tiistai 5.12. klo 23:59"
-wk6dl: "tiistai 12.12. klo 23:59"
-finaldl: "perjantai 22.12. klo 23:59"
-code_review_start_date: "torstai 7.12. klo 14"
+# timetable (in the format day dd.mm time)
+fi_wk1dl: "tiistai 7.11. klo 23:59"
+fi_wk2dl: "tiistai 14.11. klo 23:59"
+fi_wk3dl: "tiistai 21.11. klo 23:59"
+fi_wk4dl: "tiistai 28.11. klo 23:59"
+fi_wk5dl: "tiistai 5.12. klo 23:59"
+fi_wk6dl: "tiistai 12.12. klo 23:59"
+fi_finaldl: "perjantai 22.12. klo 23:59"
+fi_code_review_start_date: "torstai 7.12. klo 14"
+
+en_wk1dl: "Tuesday 7.11. at 23:59"
+en_wk2dl: "Tuesday 14.11. at 23:59"
+en_wk3dl: "Tuesday 21.11. at 23:59"
+en_wk4dl: "Tuesday 28.11. at 23:59"
+en_wk5dl: "Tuesday 5.12. at 23:59"
+en_wk6dl: "Tuesday 12.12. at 23:59"
+en_finaldl: "Friday 22.12. at 23:59"
+en_code_review_start_date: "Thursday 7.12. at 14:00"
 
 # ohjausajat
 # - Maanantaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/68570587158?pwd=TFhwUXBucExZeVNJZnRydE8yWkNFdz09)

@@ -71,6 +71,6 @@ Varmista, että palautusrepositorioosi on mahdollista tehdä issueita, eli repos
 
 ![](/assets/images/issuet.png)
 
-{% include harjoitustyon_toimivuus.md %}
+{% include fi_practical_work_works.md %}
 
 {% include ala_plagioi.md %}

@@ -21,6 +21,6 @@ Lue huolellisesti [arvosteluperusteista](/java/arvosteluperusteet) mitä loppupa
 
 Dokumentteihin kannattaa ottaa mallia [referenssisovelluksen]({{site.java_reference_app_url}}) dokumenteista.
 
-{% include harjoitustyon_toimivuus.md %}
+{% include fi_practical_work_works.md %}
 
 {% include ala_plagioi.md %}

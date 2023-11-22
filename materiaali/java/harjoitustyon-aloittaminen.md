@@ -18,7 +18,7 @@ Harjoitustyön on edettävä [viikottaisten tavoitteiden mukaan](/#aikataulu). T
 
 Koko kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteisiin. Osa pisteistä kertyy [aikatauluun](/#aikataulu) määriteltyjen viikoittaisten välitavoitteiden kautta, osa taas perustuu työn lopulliseen palautukseen.
 
-{% include harjoitustyon_toimivuus.md %}
+{% include fi_practical_work_works.md %}
 
 ## Harjoitustyön kieli ja ohjelmointikieli
 

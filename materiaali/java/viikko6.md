@@ -81,6 +81,6 @@ Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 {% include koodikatselmointi.md %}
 
-{% include harjoitustyon_toimivuus.md %}
+{% include fi_practical_work_works.md %}
 
 {% include ala_plagioi.md %}

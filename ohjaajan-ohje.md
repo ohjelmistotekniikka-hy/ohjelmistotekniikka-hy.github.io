@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /ohjaajan-ohje
+permalink: /fi/instructors
 title: Ohjaajan ohje
 ---
 

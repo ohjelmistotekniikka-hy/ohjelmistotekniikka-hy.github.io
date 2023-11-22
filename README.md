@@ -1,3 +1,3 @@
 # Ohjelmistotekniikka
 
-Kurssisivu: [https://ohjelmistotekniikka-hy.github.io/](https://ohjelmistotekniikka-hy.github.io/)
+Course page: [https://ohjelmistotekniikka-hy.github.io/](https://ohjelmistotekniikka-hy.github.io/)

@@ -1,0 +1,17 @@
+- title: In English
+  url: /en
+- title: Search
+  url: /en/search
+- title: Tasks and practical work
+  url: /en/tasks
+- title: Material
+  url: /en/material
+- title: "|"
+- title: Suomeksi
+  url: /fi
+- title: Haku
+  url: /fi/search
+- title: Tehtävät ja harjoitustyö
+  url: /fi/tasks
+- title: Materiaali
+  url: /fi/material

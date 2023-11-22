@@ -313,6 +313,6 @@ Harjoitustyön arvostelussa kiinnitetään huomiota seuraaviin seikkoihin:
 
 Ohjelman tulee edistyä jokaisella viikolla tasaisesti. Jos ohjelma tulee valmiiksi jo ennen loppupalautusta valmistaudu laajentamaan sitä saadaksesi ohjelman edistymisestä pisteet. Tarkoitus on edistää projektia tasaisesti kurssiviikkojen aikana.
 
-{% include harjoitustyon_toimivuus.md %}
+{% include fi_practical_work_works.md %}
 
 {% include ala_plagioi.md %}

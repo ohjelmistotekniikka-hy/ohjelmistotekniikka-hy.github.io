@@ -56,6 +56,6 @@ Seuraavien kohtien puutteet vähentävät pisteitä
   - laskarit jätetään hakemiston _laskarit_ alle
   - järkevä .gitignore-tiedosto olemassa
 
-{% include harjoitustyon_toimivuus.md %}
+{% include fi_practical_work_works.md %}
 
 {% include ala_plagioi.md %}

@@ -1,9 +1,7 @@
 ---
 layout: page
-permalink: /materiaali
+permalink: /fi/material
 title: Materiaali
-title: Materiaali
-inheader: true
 ---
 
 ## Viikoittainen materiaali
