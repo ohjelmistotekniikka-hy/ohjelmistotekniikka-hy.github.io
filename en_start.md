@@ -14,7 +14,7 @@ You will advance the project week-by-week, following the [schedule](#schedule) f
 
 The course will be graded primarily through the points you get from the practical work.
 Part of the points will be accumulated every week following the goals in the [schedule](#schedule), while the rest will be given for the final submission.
-If you have previously implemented relatively large software projects, it may be possible to [perform a credit transfer](#credit-transfer) and complete the course that way.
+If you have previously implemented relatively large software projects, it may be possible to [perform a credit transfer](/credit-transfer) and complete the course that way.
 
 There is no exam for this course.
 You must do the practical work within the timeframe of this course.
@@ -90,4 +90,4 @@ Deadline {{ site.en_wk6dl }}
 
 Final deadline {{ site.en_finaldl }}
 
-- [Instructions for final submission](/en/tasks/submission)
+- [Instructions for final submission](/en/tasks/final)
