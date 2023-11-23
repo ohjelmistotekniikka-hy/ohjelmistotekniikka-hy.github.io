@@ -55,7 +55,7 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
   - Testien tiedostot omaan hakemistoonsa
   - Käyttöliittymän koodin tiedostot omaan hakemistoonsa
   - Mallia voi ottaa [referenssisovelluksen]({{site.python_reference_app_url}}/tree/master/src) rakenteesta
-  - Myös [täällä](https://ohjelmistotekniikka-hy.github.io/python/toteutus) on avattu lisää sitä miten koodi tulisi jaoitella luokkiin/"moduuleihin"
+  - Myös [täällä](https://ohjelmistotekniikka-hy.github.io/fi/tasks/implementation) on avattu lisää sitä miten koodi tulisi jaoitella luokkiin/"moduuleihin"
 
 ### Testaus
 
@@ -70,7 +70,7 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
   - Testaa rajatapauksia
   - Testaa virheellisiä syötteitä
 - Käyttöliittymää ei tarvitse testata automaattisesti
-- Noudata testeissä yleisiä [nimeämiskäytänteitä](/python/viikko2#unittest-ja-testaaminen)
+- Noudata testeissä yleisiä [nimeämiskäytänteitä](/fi/tasks/week2#unittest-ja-testaaminen)
   - Esimerkiksi luokkaa `User` testaa testiluokka `TestUser`
   - Yhtä luokkaa kohti saa luoda useita testiluokkia
 

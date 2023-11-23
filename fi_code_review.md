@@ -14,7 +14,7 @@ _Katselmointiin käytettyä aikaa ei merkata työaikakirjanpitoon._
 
 ## Ohjeet
 
-Katselmoinnin alkamispäivämäärä on {{site.code_review_start_date}}, jonka jälkeen _viimeistään_ näet sinulle osoitetun katselmointikohteen repositoriolinkin Labtoolista. Katselmoinnin deadline on sama kuin kuudennen viikon deadline eli {{site.wk6dl}}.
+Katselmoinnin alkamispäivämäärä on {{site.code_review_start_date}}, jonka jälkeen _viimeistään_ näet sinulle osoitetun katselmointikohteen repositoriolinkin Labtoolista. Katselmoinnin deadline on sama kuin kuudennen viikon deadline eli {{site.fi_wk6dl}}.
 
 Tehtävänäsi on lukea läpi toisen opiskelijan harjoitustyö ja antaa siitä rakentavaa palautetta. Ohjelmaa kannattaa kokeilla myös suorittaa.
 
@@ -32,7 +32,7 @@ Tehtävänäsi on lukea läpi toisen opiskelijan harjoitustyö ja antaa siitä r
   - Ole sinnikäs: kaikkea ei aina osaa, eikä tarvitsekaan ymmärtää!
   - Haastavin osuus lienee luokkien suhde toisiinsa. Käytä hyväksesi koodista tehtyjä luokkakaavioita
 
-Kun olet tutustunut riittävän tarkasti katselmoitavaan projektiin, on aika antaa toiselle koodista palaute. Palautteessa ei tarvitse ottaa kantaa ohjelman dokumentointiin, ulkonäköön tai toimivuuteen. Tärkeintä on kiinnittää huomiota Ohjelmoinnin perusteissa ja Ohjelmoinnin jatkokurssilla opittuihin hyviin käytänteisiin sekä tällä kurssilla noudatettaviin [koodin laatuvaatimuksiin](/python/koodin-laatuvaatimukset).
+Kun olet tutustunut riittävän tarkasti katselmoitavaan projektiin, on aika antaa toiselle koodista palaute. Palautteessa ei tarvitse ottaa kantaa ohjelman dokumentointiin, ulkonäköön tai toimivuuteen. Tärkeintä on kiinnittää huomiota Ohjelmoinnin perusteissa ja Ohjelmoinnin jatkokurssilla opittuihin hyviin käytänteisiin sekä tällä kurssilla noudatettaviin [koodin laatuvaatimuksiin](/fi/tasks/koodin-laatuvaatimukset).
 
 ## Palautteenanto
 

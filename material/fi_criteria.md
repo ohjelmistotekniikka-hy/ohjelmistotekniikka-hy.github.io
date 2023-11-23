@@ -51,7 +51,7 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
 - Release 1p
   - Loppupalautuksesta on tehty loppupalautus-niminen GitHub-release, joka sisältää ohjelman lähdekoodin
 - Koodin laatu 4+1p
-  - Kooste [laatuvaatimuksista](/python/koodin-laatuvaatimukset)
+  - Kooste [laatuvaatimuksista](/fi/tasks/quality)
   - 4p hyvät abstraktiot (esim. suunnittelumallien, kuten Repository-suunnittelumallin hyödynnys), selkeä tiedosto- ja hakemistorakenne, helposti testattava ja laajennettava, ei ilmeistä copypastea
   - +1p pylint-virheitä on enintään kolme
 - Virheiden käsittely 2p
@@ -69,7 +69,7 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
   - Sovelluksen käyttämän tietokantatiedoston nimi ei ole kirjoitettu koodiin vaan on käyttäjän määriteltävissä
   - Pelissä eri vaikeustasojen pelimaailmat eivät ole määritelty koodissa vaan luodaan erillisten tiedostojen perusteella
   - Pacmanissa hirviöiden määrä ei ole ohjelmakoodiin kovakoodattu vakio vaan valittavissa käyttöliittymästä
-  - Konfiguroitavuus voidaan toteuttaa joko käyttöliittymän tai [konfiguraatiotiedostojen](/python/toteutus#sovelluksen-konfiguraatiot) avulla
+  - Konfiguroitavuus voidaan toteuttaa joko käyttöliittymän tai [konfiguraatiotiedostojen](/fi/tasks/implementation#sovelluksen-konfiguraatiot) avulla
 
 ## Testauksesta annettavat pisteet
 
@@ -83,8 +83,8 @@ Testit pitää kirjoittaa itse, niitä ei saa generoida. Täysien pisteiden (5p)
 - Testit testaavat mielekkäitä asioita
   - Jos testit on tehty ainoastaan testikattavuuden kasvattamiseksi, ei pisteitä ole montaa odotettavissa
 - Riippuvuudet käsitelty järkevästi
-  - Tietokantaa käyttävissä sovelluksissa testeissä käytössä "testitietokanta". Aiheesta löytyy ohjeita mm. [sovelluksen konfiguraatiot](/python/toteutus#sovelluksen-konfiguraatiot)-osiossa
-  - Myös valekomponentit ovat hyviä joissain tilanteissa. Niiden käytöstä on esimerkki [riippuvuuksien injektointi](/python/toteutus#riippuvuuksien-injektointi)-osiossa
+  - Tietokantaa käyttävissä sovelluksissa testeissä käytössä "testitietokanta". Aiheesta löytyy ohjeita mm. [sovelluksen konfiguraatiot](/fi/tasks/implementation#sovelluksen-konfiguraatiot)-osiossa
+  - Myös valekomponentit ovat hyviä joissain tilanteissa. Niiden käytöstä on esimerkki [riippuvuuksien injektointi](/fi/tasks/implementation#riippuvuuksien-injektointi)-osiossa
 
 ## Dokumentaation pisteet
 

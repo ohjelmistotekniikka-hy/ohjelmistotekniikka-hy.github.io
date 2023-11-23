@@ -17,7 +17,7 @@ Loppupalautuksen oletetaan sisältävän toimivan ohjelman, testien ja konfigura
 
 **Päivitä myös viimeistään tässä vaiheessa Labtooliin projektisi nimi vastaamaan projektin aihetta.**
 
-Lue huolellisesti [arvosteluperusteista](/python/arvosteluperusteet) mitä loppupalautuksen oletetaan sisältävän dokumentaation ja ohjelmiston osalta!
+Lue huolellisesti [arvosteluperusteista](/fi/tasks/criteria) mitä loppupalautuksen oletetaan sisältävän dokumentaation ja ohjelmiston osalta!
 
 Dokumentteihin kannattaa ottaa mallia [referenssisovelluksen]({{site.python_reference_app_url}}) dokumenteista.
 

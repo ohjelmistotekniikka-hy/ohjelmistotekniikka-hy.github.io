@@ -52,7 +52,7 @@ Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärre
 
 - Projektin koodin pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
 - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report` (html-muotoinen raportti löytyy kansiosta htmlcov) (Jos ei toimi vielä tsekatkaa löytyykö materiaalin ohjeen mukainen määrittely tiedostosta pyproject.toml)
-- Tarkistakaa että src-hakemiston alahakemistoihin on lisätty [ohjeen](/python/viikko3#harjoitusty%C3%B6-1-poetry-projektin-alustaminen) mukaisesti tyhjät \_\_init\_\_.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty, ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä.
+- Tarkistakaa että src-hakemiston alahakemistoihin on lisätty [ohjeen](/fi/tasks/week3#harjoitusty%C3%B6-1-poetry-projektin-alustaminen) mukaisesti tyhjät \_\_init\_\_.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty, ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä.
 - Sovelluksella on oltava vähintään yksi testi jonka voi suorittaa komennolla `poetry run invoke test`. Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa. Testin tulee mennä läpi.
 - Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta, pelkät gettereitä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
 - Opiskelijan tehtävänannossa ei oltu määritelty pitääkö toiminnallisuuden on olla käyttäjälle näkyvää tai olla käyttöliittymä olemassa, joten riittää jos toiminnallisuus on toteutettu nyt kooditasolla ja toimivuus testattu (eli jos on tehnyt “test driven”) niin se riittää tässä vaiheessa
@@ -128,7 +128,7 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
   - README:ssa tällä hetkellä relevantit linkit ja komennot
   - Esim. tältä viikolta linkki arkkitehtuuriin ja checkstyle/pylint komennot lisätty
 
-Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistusta [Python viikko 4](https://ohjelmistotekniikka-hy.github.io/python/viikko4)
+Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistusta [Python viikko 4](https://ohjelmistotekniikka-hy.github.io/fi/tasks/week4)
 
 ### Viikko 5
 

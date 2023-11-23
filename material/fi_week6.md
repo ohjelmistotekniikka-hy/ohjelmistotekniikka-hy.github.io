@@ -4,7 +4,7 @@ title: Viikko 6
 permalink: /fi/tasks/week6
 ---
 
-{% include fi_deadline_info.md deadline=site.wk6dl %}
+{% include fi_deadline_info.md deadline=site.fi_wk6dl %}
 
 Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä. Koodikatselmoinnista on tarjolla 2 pistettä.
 
@@ -107,11 +107,11 @@ Visual Studio Codessa docstringien kirjoittamista nopeuttaa huomattavasti [Pytho
 
 ## Harjoitustyö
 
-Kannattaa pitää mielessä, että kurssin loppu alkaa lähestyä ja täten myös loppupalautuksen deadline. Nyt kannattaa kerrata loppupalautuksen [arvosteluperusteet](/python/arvosteluperusteet). Viimeiselläkin viikolla ohjelmaa ehtii vielä kasvattaa, mutta myös dokumentoinnille kannattaa jättää aikaa.
+Kannattaa pitää mielessä, että kurssin loppu alkaa lähestyä ja täten myös loppupalautuksen deadline. Nyt kannattaa kerrata loppupalautuksen [arvosteluperusteet](/fi/tasks/criteria). Viimeiselläkin viikolla ohjelmaa ehtii vielä kasvattaa, mutta myös dokumentoinnille kannattaa jättää aikaa.
 
 Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutta toiminallisuutta ja parannetaan sen dokumentaatiota.
 
-**Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
+**Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/fi/tasks/criteria).
 
 ### Harjoitustyö 1: Uutta toiminallisuutta
 
@@ -120,17 +120,17 @@ Kasvaata ohjelmaa edellisestä viikosta (0.75p):
 - Ohjelman pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
 - Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
 - Merkitse lisäksi tarkastusta varten määrittelydokumenttiin valmiit toiminnallisuudet "tehty" merkinnällä
-- Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](/release), joka sisältää ohjelman uusimman version lähdekoodin (GitHub lisää tämän automaattisesti releasin tehdessä)
+- Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](/fi/release), joka sisältää ohjelman uusimman version lähdekoodin (GitHub lisää tämän automaattisesti releasin tehdessä)
 
-Ohjeita toteutukseen löydät [täältä](/python/toteutus).
+Ohjeita toteutukseen löydät [täältä](/fi/tasks/implementation).
 
 ### Harjoitustyö 2: Testaaminen
 
 Edistä ohjelman testaamista (0.5p):
 
 - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
-- Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/python/viikko2#tiedostojen-jättäminen-raportin-ulkopuolelle)
-- Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/python/viikko2#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
+- Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/fi/tasks/week2#tiedostojen-jättäminen-raportin-ulkopuolelle)
+- Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/fi/tasks/week2#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
 - Ohjelman testien haarautumakattavuuden tulee olla vähintään 60%
 - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 
@@ -142,7 +142,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (0.5p):
 - Ohjelman rakenne on järkevä
   - Luokkien, metodien ja funktioiden tulee pyrkiä noudattamaan niin kutsuttua [single responsibility](https://en.wikipedia.org/wiki/Single-responsibility_principle) -periaatetta, eli yhden komponentin ei tulisi tehdä liian montaa asiaa
   - Liian suuret luokat, metodit ja funktiot tulee siis pilkkoa osiin
-- Pidä harjoitustyön lopullista palautusta varten myös mielessä [koodin laatuvaatimukset](/python/koodin-laatuvaatimukset)
+- Pidä harjoitustyön lopullista palautusta varten myös mielessä [koodin laatuvaatimukset](/fi/tasks/quality)
 
 ### Harjoitustyö 4: Dokumentaatio
 

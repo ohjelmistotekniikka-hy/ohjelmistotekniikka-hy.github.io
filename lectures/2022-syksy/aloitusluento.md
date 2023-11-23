@@ -569,7 +569,7 @@ class Kassapaate:
 . . .
 
 - Jos käytät Pygamea, tyyli _ei voi olla sama_ kuin Ohjelmoinnin jatkokurssin pygamemateriaalissa
-  - ks https://ohjelmistotekniikka-hy.github.io/python/pygame
+  - ks https://ohjelmistotekniikka-hy.github.io/fi/tasks/pygame
 
 # Hyvän aiheen ominaisuudet
 

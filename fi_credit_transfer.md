@@ -18,13 +18,13 @@ Jos haluat hyväksilukea kurssin, ota sähköpostilla yhteyttä kurssin vastuuop
 
 ### Koodin laatu
 
-- Sovelluksen koodin tulee noudattaa kurssilla määriteltyjä [laatuvaatimuksia](/python/koodin-laatuvaatimukset). Laatuvaatimuksia saattaa joutua soveltamaan ohjelmointikielestä riippuen
-- Sovelluksen koodin tulee olla suurimmilta osin kommenttien avulla dokumentoituta ohjelmointikielen standardien mukaisesti (esim. Pythonin [Docstring](/python/viikko6#docstring-ja-koodin-dokumentointi)). Tämä tarkoittaa mm. luokkien, metodien ja funktioiden dokumentointia
+- Sovelluksen koodin tulee noudattaa kurssilla määriteltyjä [laatuvaatimuksia](/fi/quality). Laatuvaatimuksia saattaa joutua soveltamaan ohjelmointikielestä riippuen
+- Sovelluksen koodin tulee olla suurimmilta osin kommenttien avulla dokumentoituta ohjelmointikielen standardien mukaisesti (esim. Pythonin [Docstring](/fi/tasks/viikko6#docstring-ja-koodin-dokumentointi)). Tämä tarkoittaa mm. luokkien, metodien ja funktioiden dokumentointia
 
 ### Versionhallinta ja repositorio
 
 - Projektin lähdekoodin tulee olla GitHub-repositoriossa. Repositorio voi olla julkinen ja yksityinen. Jos repositorio on yksityinen, lisää sen kollaboraattoreiksi käyttäjä kkorpim.
-- Luo sovelluksesta [GitHub release](/release). Kerro repositorion `README.md`-tiedossa, mikä release pitää ladata ja miten se suoritetaan
+- Luo sovelluksesta [GitHub release](/fi/release). Kerro repositorion `README.md`-tiedossa, mikä release pitää ladata ja miten se suoritetaan
 - Lisää repositorioon `README.md`-tiedosto, joka on suurin piirtein kurssin [referenssisovelluksen]({{site.python_reference_app_url}}) mukainen. Mukana tulee olla vähintään seuraavat asiat:
   - Lyhyt kuvaus projektista
   - Linkit dokumentaatioon

@@ -4,7 +4,7 @@ title: Viikko 3
 permalink: /fi/tasks/week3
 ---
 
-{% include fi_deadline_info.md deadline=site.wk3dl %}
+{% include fi_deadline_info.md deadline=site.fi_wk3dl %}
 
 Tämän viikon tehtävien palautuksesta on tarjolla 1 piste ja harjoitustyön palautuksesta 2 pistettä.
 
@@ -255,7 +255,7 @@ Pakkauskaavioihin on myös mahdollista merkitä pakkausten sisältönä olevia l
 
 ![](/assets/images/python/materiaali-pakkaukset-luokat.png)
 
-Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. Asiasta lisää hieman [täällä](/python/toteutus). Myös Ohjelmoinnin jatkokurssin osa 10 luku [Laajemman sovelluksen kehittäminen](https://ohjelmointi-22.mooc.fi/osa-10/4-lisaa-esimerkkeja) voi olla hyödyllinen. 
+Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. Asiasta lisää hieman [täällä](/fi/tasks/implementation). Myös Ohjelmoinnin jatkokurssin osa 10 luku [Laajemman sovelluksen kehittäminen](https://ohjelmointi-22.mooc.fi/osa-10/4-lisaa-esimerkkeja) voi olla hyödyllinen. 
 
 ### Sekvenssikaaviot
 
@@ -544,7 +544,7 @@ Suoritettaisiin komennolla `poetry run invoke lorem-ipsum`. Jos olet epävarma k
 
 ### Toisistaan riippuvaiset tehtävät
 
-[Coverage-ohjeissa](/python/viikko2#coverage-ja-testikattavuus) tutustuimme testikattavuuden keräämiseen ja raportin muodostamiseen sen perusteella. Jos haluamme muodostaa testikattavuusraportin, tulee testikattavuus olla ensin kerätty. Käyttötarkoitukseen soveltuvilla tehtävillä voisi olla määrittelyt seuraavasti:
+[Coverage-ohjeissa](/fi/tasks/week2#coverage-ja-testikattavuus) tutustuimme testikattavuuden keräämiseen ja raportin muodostamiseen sen perusteella. Jos haluamme muodostaa testikattavuusraportin, tulee testikattavuus olla ensin kerätty. Käyttötarkoitukseen soveltuvilla tehtävillä voisi olla määrittelyt seuraavasti:
 
 ```python
 from invoke import task
@@ -597,7 +597,7 @@ def coverage_report(ctx):
 
 Tämän viikon aikana aloitetaan harjoitustyön toteutus ja testaaminen. Ohjelman tulee edistyä jokaisella viikolla tasaisesti. Jos ohjelma tulee valmiiksi jo ennen loppupalautusta valmistaudu laajentamaan sitä saadaksesi ohjelman edistymisestä pisteet. Tarkoitus on edistää projektia tasaisesti kurssiviikkojen aikana.
 
-**Tämän viikon harjoitustyön palautuksesta on tarjolla 2 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
+**Tämän viikon harjoitustyön palautuksesta on tarjolla 2 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/fi/tasks/criteria).
 
 ### Varoitus: pip
 
@@ -605,7 +605,7 @@ Tämän viikon aikana aloitetaan harjoitustyön toteutus ja testaaminen. Ohjelma
 
 ### Harjoitustyö 1: Poetry projektin alustaminen
 
-Alusta repositoriosi juureen Poetry-projekti edellisen viikon [Poetry-ohjeiden](/python/viikko2#poetry-ja-riippuvuuksien-hallinta) mukaisesti. Repositorion rakenne tulee olla seuraava:
+Alusta repositoriosi juureen Poetry-projekti edellisen viikon [Poetry-ohjeiden](/fi/tasks/week2#poetry-ja-riippuvuuksien-hallinta) mukaisesti. Repositorion rakenne tulee olla seuraava:
 
 ```
 laskarit/
@@ -645,7 +645,7 @@ README.md
 
 Toteuta ainakin osa jostain edellisellä viikolla tekemäsi määrittelydokumentin toiminnallisuudesta. Pelkät tyhjät luokat tai funktiot ilman toiminnallisuutta eivät tuo pisteitä.
 
-Toteutukseen liittyviä ohjeita löydät [täältä](/python/toteutus). Jos olet toteuttamassa peliä, kannattaa yleisten ohjeiden lisäksi tutustua [pygame-ohjeeseen](/python/pygame).
+Toteutukseen liittyviä ohjeita löydät [täältä](/fi/tasks/implementation). Jos olet toteuttamassa peliä, kannattaa yleisten ohjeiden lisäksi tutustua [pygame-ohjeeseen](/fi/tasks/pygame).
 
 ### Harjoitustyö 3: Testaamisen aloittaminen
 
@@ -659,7 +659,7 @@ src/
   ...
 ```
 
-Kertaa edellisen viikon [unittest-ohjeet](/python/viikko2#unittest-ja-testaaminen), jos tämä tuottaa hankaluuksia.
+Kertaa edellisen viikon [unittest-ohjeet](/fi/tasks/week2#unittest-ja-testaaminen), jos tämä tuottaa hankaluuksia.
 
 ### Harjoitustyö 4: Testikattavuusraportti
 
@@ -671,7 +671,7 @@ source = src
 omit = src/**/__init__.py,src/tests/**
 ```
 
-Kertaa edellisen viikon [coverage-ohjeet](/python/viikko2#coverage-ja-testikattavuus), jos tämä tuottaa hankaluuksia. Mallia coveragen konfigurointiin voi tarvittaessa ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}).
+Kertaa edellisen viikon [coverage-ohjeet](/fi/tasks/week2#coverage-ja-testikattavuus), jos tämä tuottaa hankaluuksia. Mallia coveragen konfigurointiin voi tarvittaessa ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}).
 
 ### Harjoitustyö 5: Invoke-tehtävät
 

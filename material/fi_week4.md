@@ -4,7 +4,7 @@ title: Viikko 4
 permalink: /fi/tasks/week4
 ---
 
-{% include fi_deadline_info.md deadline=site.wk4dl %}
+{% include fi_deadline_info.md deadline=site.fi_wk4dl %}
 
 Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.
 
@@ -104,7 +104,7 @@ Koodin formatointi onnistuu myös monissa editoreissa kätevästi yhdellä näpp
 
 Tämän viikon aikana harjoitustyöhön toteutetaan uutta toiminallisuutta, parannetaan sen dokumentaatiota ja kiinnitetään tarkempi huomio koodin laatuun.
 
-**Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
+**Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/fi/tasks/criteria).
 
 ### Harjoitustyö 1: Uutta toiminallisuutta
 
@@ -114,15 +114,15 @@ Kasvata ohjelmaa edellisestä viikosta (0.75p):
 - Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
 - Merkitse lisäksi tarkastusta varten määrittelydokumenttiin valmiit toiminnallisuudet "tehty" merkinnällä
 
-Ohjeita toteutukseen löydät [täältä](/python/toteutus).
+Ohjeita toteutukseen löydät [täältä](/fi/tasks/implementation).
 
 ### Harjoitustyö 2: Testaaminen
 
 Edistä ohjelman testaamista (0.5p):
 
 - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
-- Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/python/viikko2#tiedostojen-jättäminen-raportin-ulkopuolelle)
-- Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/python/viikko2#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
+- Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/fi/tasks/week2#tiedostojen-jättäminen-raportin-ulkopuolelle)
+- Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/fi/tasks/week2#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
 - Ohjelman testien haarautumakattavuuden tulee olla vähintään 20%
 - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 
@@ -131,8 +131,8 @@ Edistä ohjelman testaamista (0.5p):
 Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 
 - Sovelluslogiikka on riittävissä määrin eriytetty käyttöliittymästä
-  - Vihjeitä [täällä](/python/toteutus) ja [referenssisovelluksessa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md)
-- Ohjelman [rakenne](/python/koodin-laatuvaatimukset#rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
+  - Vihjeitä [täällä](/fi/tasks/implementation) ja [referenssisovelluksessa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md)
+- Ohjelman [rakenne](/fi/tasks/quality#rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
 - Pylint on otettu käyttöön
   - Käytössä on [tämä]({{site.repo_url}}/tree/master/materiaali/python/.pylintrc) _.pylintrc_-tiedosto
   - Täydet pisteet saa, jos pylint-virheitä on alle 10
@@ -145,7 +145,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 Laadi ohjelman alustava rakenne luokka, tai pakkauskaaviona (0.75p):
 
 - Kaavion ei tarvitse merkitä kuin sovelluslogiikan kannalta oleelliset luokat
-- Voit tarvittaessa tehdä kaavion, josta ilmenee myös sovelluksen [pakkausrakenne](/python/viikko3#pakkauskaavio)
+- Voit tarvittaessa tehdä kaavion, josta ilmenee myös sovelluksen [pakkausrakenne](/fi/tasks/week3#pakkauskaavio)
 - Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
 - Lisää repositorion _dokumentaatio_-hakemistoon tiedosto _arkkitehtuuri.md_ ja upota kuva tiedostoon. Tiedoston sisältö voi olla muilta osin tyhjä
 - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion _README.md_-tiedostosta [referenssisovelluksen]({{site.python_reference_app_url}}) tavoin

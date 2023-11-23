@@ -21,14 +21,14 @@ Tähän osioon on koottu vinkkejä, joista on luultavasti hyötyä harjoitustyö
 - [Uuden tekniikan harjoittelu ja käyttöönotto](#uuden-tekniikan-harjoittelu-ja-käyttöönotto)
 - [Python-versioiden hallinta](#python-versioiden-hallinta)
 
-Seuraavassa käsitellään hieman tarkemmin periaatteita siitä, miten koodi saadaan jaettua erillisiin loogisiin kokonaisuuksiin "kerrosarkkitehtuurin" ideaa noudattaen, ks. [täältä kurssin esimerkkisovelluksen](/python/viikko3#pakkauskaavio) arkkitehtuurin eli korkean tason rakenteen kuvaus. Pääperiaate on eriyttää käyttöliittymästä huolehtiva koodi erilleen sovelluslogiikasta ja vielä hoitaa tietojen tallennus omissa luokissaan.
+Seuraavassa käsitellään hieman tarkemmin periaatteita siitä, miten koodi saadaan jaettua erillisiin loogisiin kokonaisuuksiin "kerrosarkkitehtuurin" ideaa noudattaen, ks. [täältä kurssin esimerkkisovelluksen](/fi/tasks/week3#pakkauskaavio) arkkitehtuurin eli korkean tason rakenteen kuvaus. Pääperiaate on eriyttää käyttöliittymästä huolehtiva koodi erilleen sovelluslogiikasta ja vielä hoitaa tietojen tallennus omissa luokissaan.
 
 Myös Ohjelmoinnin jatkokurssin osa 10 luku [Laajemman sovelluksen kehittäminen](https://ohjelmointi-22.mooc.fi/osa-10/4-lisaa-esimerkkeja) voi olla hyödyllinen, siellä käytetään osin hieman eriäviä termejä kuin tässä luvussa, mutta idea on sama: koodi eriytetään oman "vastuualueensa" luokkien tehtäväksi.
 
 
 ## Sovelluksen käyttöliittymä
 
-Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän tekemättömyys saattaa [vaikuttaa arvosanaan](/python/arvosteluperusteet).
+Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän tekemättömyys saattaa [vaikuttaa arvosanaan](/fi/tasks/criteria).
 
 Pääasia on joka tapauksessa, että pyrit _eriyttämään mahdollisimman hyvin sovelluslogiikan käyttöliittymästä_. Käyttöliittymän roolin tulee siis olla ainoastaan käyttäjän kanssa tapahtuva interaktio, varsinaisen logiikan tulee tapahtua muissa oliossa.
 
@@ -171,11 +171,11 @@ def kaynnista(self):
 
 Graafinen käyttöliittymä eroaa tekstikäyttöliittymästä siinä, että komentoriviltä annettavien tekstimuotoisten komentojen sijaan käyttäjä voi antaa sovellukselle syötteitä erilaisten graafisten komponenttien kautta. Tämä voi tarkoittaa esimerkiksi tekstikenttiin kirjoittamista, tai painikkeiden painelua.
 
-[TkInter](https://wiki.python.org/moin/TkInter)-kirjasto on Pythonissa jo standardiksi muodostonut tapa toteuttaa graafisia käyttöliittymiä. Koska aihe on jonkin verran tekstikäyttöliittymää laajempi, on sille kirjoitettu erillinen [ohje](/python/tkinter).
+[TkInter](https://wiki.python.org/moin/TkInter)-kirjasto on Pythonissa jo standardiksi muodostonut tapa toteuttaa graafisia käyttöliittymiä. Koska aihe on jonkin verran tekstikäyttöliittymää laajempi, on sille kirjoitettu erillinen [ohje](/fi/tasks/tkinter).
 
 ## Pelien toteutus
 
-Pelien toteutukseen soveltuvat kirjastot vaihtelevat tapauskohtaisesti. Erityisesti graafisten pelien toteutuksessa eräs hyväksi todettu kirjasto on [Pygame](https://www.pygame.org). Kirjaston käyttöön on kirjoitettu erillinen ohje, joka on luettavissa [täällä](/python/pygame).
+Pelien toteutukseen soveltuvat kirjastot vaihtelevat tapauskohtaisesti. Erityisesti graafisten pelien toteutuksessa eräs hyväksi todettu kirjasto on [Pygame](https://www.pygame.org). Kirjaston käyttöön on kirjoitettu erillinen ohje, joka on luettavissa [täällä](/fi/tasks/pygame).
 
 ## Riippuvuuksien injektointi
 
@@ -268,7 +268,7 @@ class TestNumerotiedustelu(unittest.TestCase):
 
 ## Tietojen tallennus
 
-Arvosteluperusteet [kannustavat](/python/arvosteluperusteet) siihen, että ohjelmasi käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille Tietokantasovellus.
+Arvosteluperusteet [kannustavat](/fi/tasks/criteria) siihen, että ohjelmasi käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille Tietokantasovellus.
 
 ### Repository-suunnittelumalli
 
@@ -535,7 +535,7 @@ Ongelma johtuu verkkolevyn hitaudesta ja ratkaisu on suorittaa projektia `/tmp`-
 
 ### Huomioita testaamisesta
 
-[Testausohjeissa](/python/viikko2#unittest-ja-testaaminen) ohjeistettiin, että _kaikki testit tulee olla toisistaan riippumattomia_. Tämä tarkoittaa sitä, että tallennusta testaavan metodin tulee olettaa, ettei edellisiä tallennustietoja ole. Tämä onnistuu testiluokan `setUp`-metodissa kutsumalla repositorion metodia, joka tyhjentää tallennustiedot. Esimerkiksi referenssisovelluksessa toteutus on seuraava:
+[Testausohjeissa](/fi/tasks/week2#unittest-ja-testaaminen) ohjeistettiin, että _kaikki testit tulee olla toisistaan riippumattomia_. Tämä tarkoittaa sitä, että tallennusta testaavan metodin tulee olettaa, ettei edellisiä tallennustietoja ole. Tämä onnistuu testiluokan `setUp`-metodissa kutsumalla repositorion metodia, joka tyhjentää tallennustiedot. Esimerkiksi referenssisovelluksessa toteutus on seuraava:
 
 ```python
 class TestTodoRepository(unittest.TestCase):

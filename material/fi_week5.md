@@ -4,7 +4,7 @@ title: Harjoitustyö viikko 5
 permalink: /fi/tasks/week5
 ---
 
-{% include fi_deadline_info.md deadline=site.wk5dl %}
+{% include fi_deadline_info.md deadline=site.fi_wk5dl %}
 
 Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.
 
@@ -35,7 +35,7 @@ Varmista, että palautusrepositorioosi on mahdollista tehdä issueita, eli repos
 
 Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutta toiminnallisuutta ja parannetaan sen dokumentaatiota.
 
-**Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
+**Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/fi/tasks/criteria).
 
 ### Harjoitustyö 1: GitHub release
 
@@ -60,15 +60,15 @@ Kasvata ohjelmaa edellisestä viikosta (0.75p):
 - Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
 - Merkitse lisäksi tarkastusta varten määrittelydokumenttiin valmiit toiminnallisuudet "tehty" merkinnällä
 
-Ohjeita toteutukseen löydät [täältä](/python/toteutus).
+Ohjeita toteutukseen löydät [täältä](/fi/tasks/implementation).
 
 ### Harjoitustyö 4: Testaaminen
 
 Edistä ohjelman testaamista (0.5p):
 
 - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
-- Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/python/viikko2#tiedostojen-jättäminen-raportin-ulkopuolelle)
-- Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/python/viikko2#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
+- Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/fi/tasks/week2#tiedostojen-jättäminen-raportin-ulkopuolelle)
+- Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/fi/tasks/week2#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
 - Ohjelman testien haarautumakattavuuden tulee olla vähintään 40%
 - Testien tulee olla mielekkäitä, eli niiden on testattava jotain ohjelman kannalta merkityksellistä asiaa
 
@@ -77,8 +77,8 @@ Edistä ohjelman testaamista (0.5p):
 Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 
 - Sovelluslogiikka on riittävissä määrin eriytetty käyttöliittymästä
-  - Vihjeitä [täällä](/python/toteutus) ja [referenssisovelluksessa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md)
-- Ohjelman [rakenne](/python/koodin-laatuvaatimukset#rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
+  - Vihjeitä [täällä](/fi/tasks/implementation) ja [referenssisovelluksessa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md)
+- Ohjelman [rakenne](/fi/tasks/quality#rakenne) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
 - Pylint-virheitä on alle 5
 
 ### Harjoitustyö 6: Dokumentaatio
@@ -86,7 +86,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 Lisää dokumentaatioon ainakin yksi jotain oleellista toiminnallisuutta kuvaava sekvenssikaavio (0.5p):
 
 - Mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
-- Lisää kaavio [edellisellä viikolla](/python/viikko4) tehtyyn dokumenttiin _arkkitehtuuri.md_
+- Lisää kaavio [edellisellä viikolla](/fi/tasks/week4) tehtyyn dokumenttiin _arkkitehtuuri.md_
 - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen]({{site.python_reference_app_url}}) tavoin
 
 ### Harjoitustyö 7: Changelog

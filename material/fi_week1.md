@@ -4,7 +4,7 @@ permalink: /fi/tasks/week1
 title: Viikko 1
 ---
 
-{% include fi_deadline_info.md deadline=site.wk1dl %}
+{% include fi_deadline_info.md deadline=site.fi_wk1dl %}
 
 Tämän viikon tehtävien palautuksesta on tarjolla 1 piste.
 
