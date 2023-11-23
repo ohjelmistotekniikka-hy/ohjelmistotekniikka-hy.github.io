@@ -22,7 +22,7 @@ Kurssin nimi on muuttunut syksyllä 2023: vanha nimi oli Ohjelmistotekniikka. Ku
 
 Kurssin esitietoina ovat kurssit Tietokone työvälineenä, Ohjelmoinnin jatkokurssi, Tietokantojen perusteet sekä Tietokannat ja web-ohjelmointi. Oletuksena on, että näistä kaikista on käyty suhteellisen tuore versio ja että opittu on vielä hyvin mielessä.
 
-Kurssin ensimmäisen kolmen viikon aikana harjoitellaan yksikkötestausta ja UML-kaavioiden tekemistä. Myös komentorivistä ja versionhallinnasta on tehtäviä, mutta nämä ovat syksystä 2023 alkaen vapaaehtoisia muuttuneiden esitietovaatimusten takia. Toisesta viikosta alkaen aloitetaan oman harjoitustyön tekeminen. Harjoitustyön tekemisen ohessa osoitetaan riittävä osaaminen kurssin oppimistavoitteiden suhteen, koetta kurssilla ei ole. Tarkemmat arvosteluperusteet [täällä](./arvosteluperusteet).
+Kurssin ensimmäisen kolmen viikon aikana harjoitellaan yksikkötestausta ja UML-kaavioiden tekemistä. Myös komentorivistä ja versionhallinnasta on tehtäviä, mutta nämä ovat syksystä 2023 alkaen vapaaehtoisia muuttuneiden esitietovaatimusten takia. Toisesta viikosta alkaen aloitetaan oman harjoitustyön tekeminen. Harjoitustyön tekemisen ohessa osoitetaan riittävä osaaminen kurssin oppimistavoitteiden suhteen, koetta kurssilla ei ole. Tarkemmat arvosteluperusteet [täällä](/fi/tasks/criteria).
 
 {% include fi_material_engineering.md reference_app_url=site.python_reference_app_url %}
 
