@@ -12,7 +12,7 @@ Samat plagiaattisäännöt koskevat työn dokumentaatiota ja erityisen kielletty
 
 Myös ChatGPT:n ja vastaavien tekoälyyn perustuvien välineiden (kuten esim. Bing Chatin, Google Bardin tai GitHub Copilotin) generoiman koodin tai tekstin esittäminen itse kirjoitetuksi on plagiointia. Generoidun koodin käyttö on kurssilla sallittua, mutta "ympäröi" aina tällainen koodi kommenteilla **# generoitu koodi alkaa** ja **# generoitu koodi päättyy**. Tee näin myös silloin, jos olet tehnyt generoituun koodiin vain vähäisiä muutoksia (vaihtanut muuttujien ja funktioiden nimiä tms.).
 
-Muistathan, että ChatGPT:n ja vastaavien välineiden käyttö testaukseen on kurssilla kiellettyä.
+Muistathan, että ChatGPT:n ja vastaavien välineiden käyttö yksikkötestien koodin generointiin on kurssilla kiellettyä (muuten saa kyllä käyttää testailtaessakin).
 
 **Tekijänoikeudet**
 
