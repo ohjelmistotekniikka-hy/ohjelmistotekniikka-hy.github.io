@@ -76,7 +76,7 @@ Expand the tests (0.5p):
 - The branch coverage must be at least 40%
 - The tests should test something relevant to the functionality of your program
 
-### Practical work 5: Koodin laatu
+### Practical work 5: Code quality
 
 Pay attention to the following (1p):
 

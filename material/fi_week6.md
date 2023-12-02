@@ -164,11 +164,11 @@ Laadi alustava käyttöohje (0.25p):
 - Alustavan käyttöohjeen sopiva pituus on noin sivu
 - Mallina voi jälleen toimia [referenssisovellus]({{site.python_reference_app_url}}/blob/master/dokumentaatio/kayttoohje.md)
 
-### Harjoitustyö 6: Changelog
+### Harjoitustyö 5: Changelog
 
 {% include fi_changelog_info.md %}
 
-### Harjoitustyö 7: Pistevähennykset
+### Harjoitustyö 6: Pistevähennykset
 
 Seuraavien kohtien puutteet **vähentävät** pisteitä:
 
@@ -192,7 +192,7 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
   - Ei ylimääräistä tavaraa (mm. `pytest`- ja `coverage`-komentojen generoimia tiedostoja)
   - Laskarit jätetään hakemiston _laskarit_ alle
   - Järkevä _.gitignore_-tiedosto olemassa
-- Docstring-dokumentointia ei ole aloitettu
+- Docstring-dokumentointi on aloitettu
 
 {% include fi_practical_work_works_info.md %}
 
