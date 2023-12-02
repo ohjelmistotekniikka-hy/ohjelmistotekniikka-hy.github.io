@@ -8,7 +8,7 @@ _Katselmointiin käytettyä aikaa ei merkata työaikakirjanpitoon._
 
 ### Ohjeet
 
-Katselmoinnin alkamispäivämäärä on {{site.code_review_start_date}}, jonka jälkeen _viimeistään_ näet sinulle osoitetun katselmointikohteen repositoriolinkin Labtoolista.
+Katselmoinnin alkamispäivämäärä on {{site.fi_code_review_start_date}}, jonka jälkeen _viimeistään_ näet sinulle osoitetun katselmointikohteen repositoriolinkin Labtoolista.
 
 Tehtävänäsi on lukea läpi toisen opiskelijan harjoitustyö ja antaa siitä rakentavaa palautetta. Ohjelmaa kannattaa kokeilla myös suorittaa.
 

@@ -18,7 +18,7 @@ If you have previously implemented relatively large software projects, it may be
 
 There is no exam for this course.
 You must do the practical work within the timeframe of this course.
-You will not be able to continue working on your project during the next course ({{ site.next_course }}), so remember to **reserve enough time each week (10-15h per week) for the whole period!**
+You will not be able to continue working on your project during the next course ({{ site.en_next_course }}), so remember to **reserve enough time each week (10-15h per week) for the whole period!**
 
 You can find more detailed instructions for the practical work [here](/en/tasks).
 You can find the course material [here](/en/material).

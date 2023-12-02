@@ -55,7 +55,8 @@ lecture_recording_link: 'https://moodle.helsinki.fi/mod/lti/view.php?id=3384745'
 # seuraava kurssikerta muodossa syksyllä/keväällä [vuosi].
 # esimerkki syksyllä 2021
 # käytetään muun muassa "ei voi jatkaa seuraavalla kurssilla (syksyllä 2021)"
-next_course: 'keväällä 2024'
+fi_next_course: 'keväällä 2024'
+en_next_course: 'spring 2024'
 
 labtool_link: 'https://study.cs.helsinki.fi/labtool/courses/TKT20018.2023.S.K.1'
 

@@ -8,7 +8,7 @@ permalink: /fi/tasks/week6
 
 Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä. Koodikatselmoinnista on tarjolla 2 pistettä.
 
-**⚠️ Viikon aikana järjestetään [koodikatselmointi](#koodikatselmointi), joka alkaa {{site.code_review_start_date}}.**
+**⚠️ Viikon aikana järjestetään [koodikatselmointi](#koodikatselmointi), joka alkaa {{site.fi_code_review_start_date}}.**
 
 ## Docstring ja koodin dokumentointi
 
