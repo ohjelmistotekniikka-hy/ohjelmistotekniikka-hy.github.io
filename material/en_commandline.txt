@@ -1,0 +1,15 @@
+courses/
+└── software_development
+    └── week1
+        └── unicafe
+            ├── poetry.lock
+            ├── pyproject.toml
+            └── src
+                ├── index.py
+                ├── cash_register.py
+                ├── payment_card.py
+                └── tests
+                    ├── __init__.py
+                    └── payment_card_test.py
+
+5 directories, 7 files
