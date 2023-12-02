@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Practical work, week 5
+title: Week 5
 permalink: /en/tasks/week5
 ---
 
@@ -58,13 +58,13 @@ So that you can participate, the following things must be in order:
 
 ### Practical work 3: New functionality
 
-Expand the code from last week (0.75p):
+Expand your project from last week (0.75p):
 
-- You must be able to run the program by running the command `poetry run invoke start`
-- Your program must be larger than last week's, and implement more of the features described in your spec document
-- Mark the features you have implemented as "done" in your spec document
+- You should be able to run your program using `poetry run invoke start`
+- The program should be bigger than last week's version _and_ implement some more functionality that's in your spec document. That is, your program should include more functionality that's useful for the user.
+- Mark the features that you have implemented as "done" in your spec document.
 
-More information can be found [here](/en/tasks/implementation).
+Implementation instructions can be found [here](/en/tasks/implementation).
 
 ### Practical work 4: Tests
 
