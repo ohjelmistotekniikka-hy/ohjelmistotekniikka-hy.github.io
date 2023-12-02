@@ -4,7 +4,7 @@ title: Harjoitustyön loppupalautus
 permalink: /fi/tasks/final
 ---
 
-**⚠️ Loppupalautuksen deadline on {{site.finaldl}}. Älä palauta myöhässä, deadline on ehdoton!** Jos sinulla on joku *erittäin hyvä syy* palautuksen myöhästymiseen, ota yhteyttä viimeistään tiistaina niin voit saada lisäaikaa.
+**⚠️ Loppupalautuksen deadline on {{site.fi_finaldl}}. Älä palauta myöhässä, deadline on ehdoton!** Jos sinulla on joku *erittäin hyvä syy* palautuksen myöhästymiseen, ota yhteyttä viimeistään tiistaina niin voit saada lisäaikaa.
 
 Loppupalautuksen oletetaan sisältävän toimivan ohjelman, testien ja konfiguraatioiden lisäksi myös dokumentaation, eli:
 

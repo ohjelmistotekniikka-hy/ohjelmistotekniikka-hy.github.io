@@ -29,7 +29,7 @@ Kurssin kolmella ensimmäisellä viikolla on muutama ohjauksessa tai omatoimises
   - Palautuksen deadline {{site.fi_wk6dl}}
   - [Harjoitustyö](/fi/tasks/week6)
 - Lopullinen palautus
-  - Palautuksen deadline {{site.finaldl}}
+  - Palautuksen deadline {{site.fi_finaldl}}
   - [Loppupalautus](/fi/tasks/final)
 
 ## Harjoitustyön arvosteluperusteet
