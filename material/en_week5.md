@@ -20,7 +20,7 @@ To do this:
 - If installing or running your code requires some extra steps (for example, placing a file somewhere or running a certain command), you can add them here. The instructions must also be in your README.
 - When creating a release, GitHub will automatically zip the currently pushed source code and attach it to the release.
 
-![Release](https://ohjelmistotekniikka-hy.github.io/assets/images/python/release.png)
+![Release](/assets/images/python/release.png)
 
 Now, anyone can download your code easily by going to your GitHub repository, clicking on "1 release", and selecting the zip file. Make sure that a user that downloads your code from the releases tab and follows the instructions in the README can launch your program without any problems.
 
@@ -29,7 +29,7 @@ Now, anyone can download your code easily by going to your GitHub repository, cl
 Make sure that issues are enabled in your repository.
 That is, your repository settings page should look like this:
 
-![](https://ohjelmistotekniikka-hy.github.io/assets/images/issuet.png)
+![](/assets/images/issuet.png)
 
 Issues are ways for yourself or others to comment on your project.
 They were originally intended to report issues with a repository's code, but are also commonly used for to-do lists, feedback, bug reports, and so on.
@@ -38,7 +38,7 @@ They were originally intended to report issues with a repository's code, but are
 
 This week, you will implement new functionality to the program and improve its documentation.
 
-**There are 3 points available for this submission.** You should also take a look at the [grading criteria](https://ohjelmistotekniikka-hy.github.io/python/arvosteluperusteet).
+**There are 3 points available for this submission.** You should also take a look at the [grading criteria](/en/tasks/criteria).
 
 ### Practical work 1: GitHub release
 
@@ -64,7 +64,7 @@ Expand the code from last week (0.75p):
 - Your program must be larger than last week's, and implement more of the features described in your spec document
 - Mark the features you have implemented as "done" in your spec document
 
-More information can be found [here](https://ohjelmistotekniikka-hy.github.io/python/toteutus).
+More information can be found [here](/en/tasks/implementation).
 
 ### Practical work 4: Tests
 
@@ -81,7 +81,7 @@ Expand the tests (0.5p):
 Pay attention to the following (1p):
 
 - The program logic is separate from the UI
-  - Hints [here](https://ohjelmistotekniikka-hy.github.io/python/toteutus) and in the reference project
+  - Hints [here](/en/tasks/implementation) and in the [reference project]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md)
 - The code must reflect the logical structure of your program and proper naming should be used 
 - There are less than 5 pylint errors
 
@@ -89,13 +89,13 @@ Pay attention to the following (1p):
 
 Add a sequence diagram for at least one relevant functionality (0.5p):
 
-- You can see an example in [the reference project](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/dokumentaatio/arkkitehtuuri.md#p%C3%A4%C3%A4toiminnallisuudet)
+- You can see an example in [the reference project]({{site.python_reference_app_url}}/blob/master/dokumentaatio/arkkitehtuuri.md#p%C3%A4%C3%A4toiminnallisuudet)
 - Add the diagram to `arkkitehtuuri.md`
 - There must be a link to `arkkitehtuuri.md` in the README.
 
 ### Practical work 7: Changelog
 
-Include a changelog entry for this week's work. 
+{% include en_changelog_info.md %}
 
 ### Practical work 8: Point reductions
 
@@ -105,7 +105,7 @@ Forgetting to do the following things will result in **points being deducted**:
   - The structure makes sense (e.g. having all of the code under the same directory)
   - The program logic is separate from the UI
 - The time tracking sheet is up-to-date
-  - **You must sum up your hours and mark the total**
+  - **You must sum up your hours and mark the total in your file**
   - Do not include the time spent on weekly exercises (before week 4)
 - There is a changelog entry under `changelog.md`
 - GitHub issues are enabled
@@ -120,6 +120,6 @@ Forgetting to do the following things will result in **points being deducted**:
   - Weekly exercises must be under `laskarit`
   - There is a relevant `.gitignore`
 
-## Getting points
+{% include en_practical_work_works_info.md %}
 
-Remember to test your project on the school laptop!
+{% include en_plagiarism.md %}
