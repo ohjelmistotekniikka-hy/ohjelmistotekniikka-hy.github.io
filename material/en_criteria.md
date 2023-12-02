@@ -68,7 +68,7 @@ The 24 points from the final submission are awarded as follows:
 
 - How large is large enough?
 - The course's [reference project]({{site.python_reference_app_url}}) would score about 2 points, since it's program logic is fairly straightforward and would get only one point for complexity
-- The scope cannot really be defined in terms of the number of classes, methods, or functions. It always dpeends on the type of application you are developing and its complexity
+- The scope cannot really be defined in terms of the number of classes, methods, or functions. It always depends on the type of application you are developing and its complexity
 - One way to extend your project and increase its complexity is to make it configurable with parameters. For example,
   - The filename or the databse name that the application writes to can be set by the user, instead of being hardcoded
   - In a game, levels of varying difficulty are not hardcoded but are read from files that can be modified by the user
@@ -78,7 +78,7 @@ The 24 points from the final submission are awarded as follows:
 ## Points obtained from tests
 
 You must write your tests yourself.
-Generating them is forbidden on this course.
+Generating them is forbidden in this course.
 To get full points (5p), the following is required:
 
 - Good test coverage: branch coverage about 70%
