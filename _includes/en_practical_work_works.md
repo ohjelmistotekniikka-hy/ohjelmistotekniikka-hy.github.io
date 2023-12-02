@@ -1,4 +1,4 @@
-## Harjoitustyön toimivuus
+## Making sure the project works as intended
 
 - You must use Python version >= 3.8
 - There are differences in how different computers work, and it is not enough that your code works on your machine.
