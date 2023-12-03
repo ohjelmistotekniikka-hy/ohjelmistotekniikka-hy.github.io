@@ -720,9 +720,9 @@ class Kassapaate:
 **Hae nyt projektin koodi koneellesi**. Avaa terminaali, mene palautusrepositoriosi hakemistoon _laskarit/viikko2_ ja suorita seuraavat komennot:
 
 ```bash
-wget https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/raw/master/materiaali/python/unicafe.zip
-unzip unicafe.zip
-rm unicafe.zip
+wget https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/raw/master/material/fi_unicafe.zip
+unzip fi_unicafe.zip
+rm fi_unicafe.zip
 ```
 
 **HUOM:** jos käytät Windowsia ja koneellasi ei ole käytössä komentoa _wget_ lataa tehtävän koodi klikkaamalla yllä olevaa linkkiä. Muista siirtää projekti repositorion alle oikeaan hakemistoon!
