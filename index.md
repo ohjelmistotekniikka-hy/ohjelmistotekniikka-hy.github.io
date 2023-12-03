@@ -3,7 +3,7 @@ layout: page
 permalink: /
 ---
 
-# Welcome to the software development course!
+# Welcome to the software engineering course!
 
 - [Start here](/en)
 - [Search](/en/search)
