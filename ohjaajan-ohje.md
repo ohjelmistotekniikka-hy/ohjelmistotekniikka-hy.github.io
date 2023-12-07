@@ -173,7 +173,7 @@ Labtoolissa muutama uusi kohta, muuten tämä viikko aika samanlailla kuin edell
 
 Loppupalautuksen jälkeen pisteet kirjataan kurssin Moodle-alueella. Siellä otsikon *Ohjaajille* alta löytyy arviointiohjeita ja apuna voi myös käyttää opiskelijoille annettuja arviointiperusteita. Arviointiohjeet suuntaa antavia, projektit niin erilaisia että tässä saa käyttää omaa harkintaa molempiin suuntiin, Slackissa voi kysyä muiden mielipidettä.
 
-Siirry välilehdelle *Arvioinnit*, valitse alasvetovalikosta *Arvioijan raportti* ja oikealta ylhäältä *Muokkaustila*. Kun olet merkinnyt pisteet, muista painaa alareunan nappia *Tallenna muutokset*! Pisteitä on ehkä mukavampaa kirjata opiskelijakohtaisessa näytössä, johon pääset opiskelijan nimen perässä olevaa kynäkuvaketta näpäyttämällä (muista aina painaa *Tallenna*).
+Siirry välilehdelle *Arvioinnit*, valitse alasvetovalikosta *Arvioijan raportti* ja oikealta ylhäältä *Muokkaustila*. (Jos kirjaat pisteitä tässä tilassa, muista painaa alareunan nappia *Tallenna muutokset*.) Pisteitä on paljon mukavampaa kirjata opiskelijakohtaisessa näytössä, johon pääset opiskelijan nimen perässä olevaa kynäkuvaketta näpäyttämällä. Muista aina painaa *Tallenna*, kun olet kirjannut yhden opiskelijan pisteet.
 
 Arvioinnit ovat aluksi piilotettuja opiskelijoilta, mutta avataan siinä vaiheessa kun arviointi vertaisarviointeineen on suoritettu loppuun.
 
@@ -184,7 +184,8 @@ Tarkastettaessa:
   - 1, jos projekti on aloitettu, mutta selkeästi ei viety loppuun asti (löytyy laskareiden lisäksi ainakin pohja projektille)
   - 2, jos projektia ei edes aloitettu (esim vain laskarit tehty)
 - "Tunteja käytetty"-sarakkeeseen oppilaan ilmoittama määrä tuntikirjanpidossa
-- "Huomioita"-sarakkeeseen linkkaa tiedosto, johon olet avannut omaa pisteytystäsi.  Tämä on sen vuoksi, että kontrollitarkastukset helpottuvat huomattavasti.
+- Kopioi kohdan "Huomioita" palautekenttään linkki tiedostoon, jossa olet avannut omaa pisteytystäsi.  Tämä on sen vuoksi, että kontrollitarkastukset helpottuvat huomattavasti. Huom: palautekenttä näkyy vain opiskelijakohtaisessa näytössä.
+- Kohdan "Tarkastaja" palautekenttään tulee oma nimesi
 
 Kyselkää jos tulee epäselvyyksiä, esim jos projektit, checkstyle tms. ei aukea. Heittäkää linkki ohjaajien keskustelualueelle, niin tsekataan toimiiko jollain muulla.
 
@@ -192,7 +193,7 @@ Kyselkää jos tulee epäselvyyksiä, esim jos projektit, checkstyle tms. ei auk
 
 Kukin tekee yhtä monta vertaisarviota kuin on itse loppuunsaatettuja töitä arvioinut (siis sellaisia joiden kohdalle drop-sarakkeeseen et ole merkinnyt ykköstä tai kakkosta).
 
-Valitkaa taulukosta oppilas satunnaisesti. (Voitte näpäyttää nuolta *Drop*-sarakkeessa jotta pääsette helpommin valitsemaan loppuunsaatetuista töistä.) Avatkaa ohjaajan kirjoittama pisteytyslista; katsokaa kaikki kohdat läpi että ne ovat järkeviä, mutta ei tarvitse kuitenkaan suurennuslasin kanssa etsiä "virheitä". Jos olette erimieltä jostain kirjoittakaa "Kontrolloijan huomioita"-kohtaan mitä muuttaisitte ja mihin suuntaan. Jos muutettu pisteytys vaikuttaisi arvosanaan siitä kannattaa myös mainita. Lisätkää myös nimenne "kontrolloija"-kohtaan kun alatte tarkastamaan, jotta ei kävisi niin että kaksi henkilöä tarkastaakin vahingossa samaa henkilöä.
+Valitkaa taulukosta oppilas satunnaisesti. Voitte näpäyttää nuolia sarakkeissa *Drop* ja *Kontrolloija* jotta pääsette helpommin valitsemaan loppuunsaatetun työn, jolla ei ole vielä vertaisarvioijaa (eli molemmissa sarakkeissa tulee olla nollat). Avatkaa ohjaajan kirjoittama pisteytyslista; katsokaa kaikki kohdat läpi että ne ovat järkeviä, mutta ei tarvitse kuitenkaan suurennuslasin kanssa etsiä "virheitä". Jos olette eri mieltä jostain kirjoittakaa "Kontrolloijan huomioita"-kohdan palautekenttään mitä muuttaisitte ja mihin suuntaan. Jos muutettu pisteytys vaikuttaisi arvosanaan siitä kannattaa myös mainita. **Huom:** muuttakaa kohdan "Kontrolloija" arvo nollasta ykköseksi kun alatte tarkastamaan ja lisätkää nimenne mainitun kohdan palautekenttään (ja muistakaa taas tallentaa). Näin siksi, ettei kaksi ohjaajaa tarkastaisi vahingossa samaa työtä.
 
 Esimerkkejä kontrollikommenteista:
 
