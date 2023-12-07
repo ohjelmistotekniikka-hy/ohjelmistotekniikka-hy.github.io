@@ -172,7 +172,7 @@ Labtoolissa muutama uusi kohta, muuten tämä viikko aika samanlailla kuin edell
 
 Loppupalautuksen jälkeen pisteet kirjataan kurssin Moodle-alueella. Siellä otsikon *Ohjaajille* alta löytyy arviointiohjeita ja apuna voi myös käyttää opiskelijoille annettuja arviointiperusteita. Arviointiohjeet suuntaa antavia, projektit niin erilaisia että tässä saa käyttää omaa harkintaa molempiin suuntiin, Slackissa voi kysyä muiden mielipidettä.
 
-Siirry välilehdelle *Arvioinnit* ja valitse alasvetovalikosta *Arvioijan raportti*. Kun olet merkinnyt pisteet, muista painaa alareunan nappia *Tallenna muutokset*! Pisteitä on ehkä mukavampaa kirjata opiskelijakohtaisessa näytössä, johon pääset opiskelijan nimen perässä olevaa kynäkuvaketta näpäyttämällä (muista aina painaa *Tallenna*).
+Siirry välilehdelle *Arvioinnit*, valitse alasvetovalikosta *Arvioijan raportti* ja oikealta ylhäältä *Muokkaustila*. Kun olet merkinnyt pisteet, muista painaa alareunan nappia *Tallenna muutokset*! Pisteitä on ehkä mukavampaa kirjata opiskelijakohtaisessa näytössä, johon pääset opiskelijan nimen perässä olevaa kynäkuvaketta näpäyttämällä (muista aina painaa *Tallenna*).
 
 Arvioinnit ovat aluksi piilotettuja opiskelijoilta, mutta avataan siinä vaiheessa kun arviointi vertaisarviointeineen on suoritettu loppuun.
 
