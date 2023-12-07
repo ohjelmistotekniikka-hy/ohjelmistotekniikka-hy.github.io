@@ -12,20 +12,17 @@
 
 CURRENT_DIRECTORY=$(pwd)
 
-echo "Pulling in latest changes for all repositories..."
-
 for i in $(find . -name ".git" | cut -c 3-); do
-    echo ""
-    echo "$(dirname "$i")"
+    echo "Pulling $(dirname "$i")..."
     cd "$(dirname "$i")"
     if git show-ref --verify --quiet refs/heads/main; then
-        git checkout main
+        git checkout --quiet main
     else
-        git checkout master
+        git checkout --quiet master
     fi
-    git reset --hard HEAD
-    git pull
+    git reset --quiet --hard HEAD
+    git pull --quiet
     cd "$CURRENT_DIRECTORY"
 done
 
-echo "Complete!"
+echo "Done!"

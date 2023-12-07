@@ -20,11 +20,12 @@ Viikkopalautuksien tarkistuksessa kannattaa hyödyntää Labtoolin viikoittaista
 
 ### Puller.sh
 
-Tässä erään kurssin aiemman ohjaajan kirjoittama skripti, jolla voi ladata kaikki projektit kerralla: [puller.sh](puller.sh).
+Tässä muutaman kurssin aiemman ohjaajan kirjoittama skripti, jolla voi ladata kaikki projektit kerralla: [puller.sh](puller.sh).
 
 Käyttöohjeet:
 
-- Lataa kaikki arvosteltavat reposi ensin manuaalisesti samaan kansioon (jokainen toki omana alikansiona) ja tallenna samaan kansioon yllä oleva scripti nimellä puller.sh
+- Lataa kaikki arvosteltavat repositoriosi ensin manuaalisesti samaan kansioon (jokainen toki omana alikansiona) ja tallenna samaan kansioon yllä oleva skripti nimellä puller.sh
+- Anna skriptille suoritusoikeudet: `$ chmod +x puller.sh`
 - Kun haluat pullata repot, mene terminaalin kautta kansioon, jossa skripti ja repot sijaitsevat ja aja se käskyllä ./puller.sh
 
 ### Viikko 1
