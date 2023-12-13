@@ -117,7 +117,7 @@ Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutt
 
 ### Harjoitustyö 1: Uutta toiminallisuutta
 
-Kasvaata ohjelmaa edellisestä viikosta (0.75p):
+Kasvata ohjelmaa edellisestä viikosta (0.75p):
 
 - Ohjelman pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
 - Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
