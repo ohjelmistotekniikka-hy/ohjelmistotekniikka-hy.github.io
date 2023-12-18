@@ -14,7 +14,7 @@ Kurssilla on jaossa 60 pistettä. Pisteet jakautuvat seuraavasti
   - Käyttö/asennusohje
   - Testidokumentti
   - Docstring-dokumentaatio
-  - Selvitys ChatGPT:n ja muiden kielimalleihin perustuvien välineiden käytöstä. **Huom:** tämä annetaan muusta dokumentaatiosta erillään [Moodlesta löytyvän lomakkeen avulla] (https://moodle.helsinki.fi/mod/feedback/view.php?id=3339366).
+  - Selvitys ChatGPT:n ja muiden kielimalleihin perustuvien välineiden käytöstä. **Huom:** tämä annetaan muusta dokumentaatiosta erillään [Moodlesta löytyvän lomakkeen avulla](https://moodle.helsinki.fi/mod/feedback/view.php?id=3339366).
 - Testaus 5p
   - Testit
 - Lopullinen ohjelma 24p
