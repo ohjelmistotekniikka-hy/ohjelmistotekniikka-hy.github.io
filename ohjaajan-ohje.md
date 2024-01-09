@@ -173,7 +173,7 @@ Labtoolissa muutama uusi kohta, muuten tämä viikko aika samanlailla kuin edell
 
 Loppupalautuksen jälkeen pisteet kirjataan kurssin Moodle-alueella. Siellä otsikon *Ohjaajille* alta löytyy arviointiohjeita ja apuna voi myös käyttää opiskelijoille annettuja arviointiperusteita. Arviointiohjeet suuntaa antavia, projektit niin erilaisia että tässä saa käyttää omaa harkintaa molempiin suuntiin, Slackissa voi kysyä muiden mielipidettä.
 
-Siirry välilehdelle *Arvioinnit*, valitse alasvetovalikosta *Arvioijan raportti* ja oikealta ylhäältä *Muokkaustila*. (Jos kirjaat pisteitä tässä tilassa, muista painaa alareunan nappia *Tallenna muutokset*.) Pisteitä on paljon mukavampaa kirjata opiskelijakohtaisessa näytössä, johon pääset opiskelijan nimen perässä olevaa kynäkuvaketta näpäyttämällä. Muista aina painaa *Tallenna*, kun olet kirjannut yhden opiskelijan pisteet.
+Siirry välilehdelle *Arvioinnit*, valitse alasvetovalikosta *Arvioijan raportti* ja oikealta ylhäältä *Muokkaustila*. Pisteet on syytä kirjata opiskelijakohtaisessa näkymässä, johon pääset opiskelijan nimen perässä olevan kolmen pisteen valikon toiminnolla *Single view for this user*. Muista aina painaa *Tallenna*, kun olet kirjannut yhden opiskelijan pisteet.
 
 Arvioinnit ovat aluksi piilotettuja opiskelijoilta, mutta avataan siinä vaiheessa kun arviointi vertaisarviointeineen on suoritettu loppuun.
 
@@ -184,7 +184,8 @@ Tarkastettaessa:
   - 1, jos projekti on aloitettu, mutta selkeästi ei viety loppuun asti (löytyy laskareiden lisäksi ainakin pohja projektille)
   - 2, jos projektia ei edes aloitettu (esim vain laskarit tehty)
 - "Tunteja käytetty"-sarakkeeseen oppilaan ilmoittama määrä tuntikirjanpidossa
-- Kopioi kohdan "Huomioita" palautekenttään linkki tiedostoon, jossa olet avannut omaa pisteytystäsi.  Tämä on sen vuoksi, että kontrollitarkastukset helpottuvat huomattavasti. Huom: palautekenttä näkyy vain opiskelijakohtaisessa näytössä.
+- Moodle on lisännyt arviointikohteisiin automaattisesti kentän "Palaute". Näistä palautekentistä ei yleensä tarvitse välittää - paitsi jos haluat jossain kohtaa kertoa opiskelijalle arvioinnista tavallista tarkemmin. Koska pistekenttiin ei voi syöttää tekstimuotoista tietoa, käytämme kuitenkin em. palautekenttiä kohdissa Tarkastaja, Huomioita, Kontrolloija ja Kontrolloijan huomioita.
+- Kopioi kohdan "Huomioita" palautekenttään linkki tiedostoon, jossa olet avannut omaa pisteytystäsi.  Tämä on sen vuoksi, että kontrollitarkastukset helpottuvat huomattavasti.
 - Kohdan "Tarkastaja" palautekenttään tulee oma nimesi
 
 Kyselkää jos tulee epäselvyyksiä, esim jos projektit, checkstyle tms. ei aukea. Heittäkää linkki ohjaajien keskustelualueelle, niin tsekataan toimiiko jollain muulla.
@@ -217,7 +218,7 @@ Vaikuttaa arvosanaan: mun mielestä laajuus vain 2 pistettä, vaikka onkin netti
 Laittaisin kompleksisuuden 1 ja laajuuden 2. Tuossa kyllä tehdään laskentaa, mutta aika yksinkertaista sellaista, ja siinä on oikeastaan vaan se näyttö johon piirtyy se juttu ja sitten muutamat arvot syötetään toiseen ikkunaan. Lisäksi ohjelma koostuu vain pienestä määrästä lyhyitä luokkia.
 ```
 
-Pyrkikää arvioimaan jokaiselta muulta ohjaajalta vähintään yksi arviointi
+Pyrkikää arvioimaan jokaiselta muulta ohjaajalta vähintään yksi arviointi.
 
 ### Vertaisarviointien deadlinen jälkeen
 
