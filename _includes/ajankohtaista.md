@@ -1,4 +1,5 @@
 ## Ajankohtaista
+- Arvosanoja näkyy [Moodlessa](https://moodle.helsinki.fi/course/view.php?id=61184) (linkki "Arvioinnit" sivun yläosassa, otsikon alla). Kiitoksia osallistumista ja hyvää alkanutta vuotta!
 - Torstain 14.12. paja klo 14 - 16 toteutetaan julkisen liikenteen lakon vuoksi Discordissa.
 - Tarjolla on nyt myös online-ohjausta. Voit varata siihen ajan [Moodlessa](https://moodle.helsinki.fi/mod/wiki/view.php?id=3339466). Muistathan kuitenkin, että pajassa saat parhaiten apua.
 - Kurssin aloitustilaisuus {{site.lecture_time}}
