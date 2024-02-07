@@ -10,8 +10,7 @@ inheader: true
 
 - [Viikko 1](/python/viikko1)
   - [Ohjelmistotuotanto](/python/viikko1#ohjelmistotuotanto)
-  - [Komentorivin harjoittelua](/python/viikko1#komentorivin-harjoittelua)
-  - [Versionhallinta](/python/viikko1#versionhallinta)
+  - [Harjoitukset](/python/viikko1#ensimmäisen-viikon-harjoitukset)
 - [Viikko 2](/python/viikko2)
   - [Poetry ja riippuvuuksien hallinta](/python/viikko2#poetry-ja-riippuvuuksien-hallinta)
   - [Unittest ja testaaminen](/python/viikko2#unittest-ja-testaaminen)
