@@ -35,7 +35,7 @@ lecture_recording_link: '#'
 # käytetään muun muassa "ei voi jatkaa seuraavalla kurssilla (syksyllä 2021)"
 next_course: 'syksyllä 2024'
 
-labtool_link: '#'
+labtool_link: 'https://study.cs.helsinki.fi/labtool/courses/TKT20018.2024.K.K.1'
 
 # referenssi-sovellusten linkit
 python_reference_app_url: 'https://github.com/ohjelmistotekniikka-hy/python-todo-app'
