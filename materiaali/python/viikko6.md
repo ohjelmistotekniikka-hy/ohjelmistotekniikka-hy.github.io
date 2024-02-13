@@ -41,7 +41,7 @@ class Machine:
           self._engine.use_energy()
 ```
 
-Kommentoinnin ei siis pitäisi selittää mitä yksittäinen koodirivi tekee, vaan tämä pitäisi tulla ilmi koodista itsestään. Sen sijaan kommenttien pitäisi kertoa, mitä yksittäinen moduuli, luokka, metodi tai funktio tekee ja minkälaisen rajapinnan se tarjoaa (esimerkiksi metodin argumentit ja palautusarvot). Tämän tyyppisiä kommentteja kutsutaan Python-terminologiassa [docstringeiksi](https://www.python.org/dev/peps/pep-0257/). Docstring-formaatteja on standardoitu, mutta eri standardien välillä on eroja. Tutustumme tällä kurssilla melko suosittuun, [Googlen formaattiin](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings).
+Kommentoinnin ei siis pitäisi selittää mitä yksittäinen koodirivi tekee, vaan tämä pitäisi tulla ilmi koodista itsestään. Sen sijaan kommenttien pitäisi kertoa, mitä yksittäinen moduuli, luokka, metodi tai funktio tekee ja minkälaisen rajapinnan se tarjoaa (esimerkiksi metodin argumentit ja palautusarvot). Tämän tyyppisiä kommentteja kutsutaan Python-terminologiassa [docstringeiksi](https://www.python.org/dev/peps/pep-0257/). Docstring-formaatteja on standardoitu, mutta eri standardien välillä on eroja. Tutustumme tällä kurssilla melko suosittuun [Googlen formaattiin](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings).
 
 Tutustutaan luokkien ja metodien dokumentointiin Googlen formaatilla jo tutuksi tulleen `Maksukortti`-luokan avulla:
 
