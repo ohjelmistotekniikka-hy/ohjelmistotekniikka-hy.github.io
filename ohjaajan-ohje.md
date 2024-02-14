@@ -150,6 +150,11 @@ Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistusta [v
 - Ohjelma toimii komennolla `poetry run invoke start` (0.5p)
 - Pylint virheitä alle 5 (0.25p)
 
+#### Ylimääräinen koodikatselmointi
+- Tämä on tosiaan ylimääräistä ja todennäköisesti aika harva osallistuu
+- Katso, onko README.md -tiedoston lopussa mainintaa ylimääräisestä koodikatselmoinnista ja linkkiä katselmoituun repositorioon
+- Jos on, tarkista, että viitatusta repositoriosta löytyy asianmukaiset issuet. Anna silloin piste, tai jos on selvästi puutteellista, niin puolikas.
+
 Huomatkaa että checklistissä ohjelma kasvanut osiosta (max. 0.75 pistettä) ruksitaan vain yksi vaihtoehto.
 Muuten aikalailla samat ohjeet kuin edellisellä viikolla.
 

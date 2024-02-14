@@ -21,7 +21,7 @@ Kurssilla on jaossa 60 pistettä. Pisteet jakautuvat seuraavasti
   - Toiminnallisuus
   - Koodin laatu
 
-Lisäksi palautteesta on tarjolla yksi lisäpiste.
+Palautteesta on tarjolla yksi lisäpiste. Ja vielä yhden lisäpisteen voi saada suorittamalla ylimääräisen koodikatselmoinnin viikoilla 4 - 5.
 
 Arvosanaan 1 riittää 30 pistettä, arvosanaan 5 tarvitaan noin 55 pistettä.
 
