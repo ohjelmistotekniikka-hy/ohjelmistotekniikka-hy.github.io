@@ -8,5 +8,6 @@
   - **HUOM:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 - Jos tarvitset kurssiin liittyvää ohjausta, tule **pajaohjaukseen**: {% for time in site.times %}
   - {{ time.time }}{% endfor %}
+  - pajaohjausta on välillä 11.3. - 30.4., mutta ei kuitenkaan pääsiäisen takia 1.4. alkavalla viikolla
   - Tarjolla on myös online-ohjausta. Voit varata siihen ajan [Moodlessa]({{site.moodle_link}}). Huomaathan kuitenkin, että pajassa saat paljon paremmin apua!
 
