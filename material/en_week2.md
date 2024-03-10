@@ -570,7 +570,7 @@ def test_balance_does_not_exceed_maximum(self):
 
 Add the following tests to the test file (make an individual test for each):
 
-- Eating a tasty lunch (`kortti.syo_maukkaasti`), which charges the account 4€, does not make the balance go negative. You can take inspiration from the `test_syo_edullisesti_ei_vie_saldoa_negatiiviseksi` test.
+- Eating a tasty lunch (`card.eat_yummy`), which charges the account 4€, does not make the balance go negative. You can take inspiration from the `test_eat_cheap_doesnt_make_balance_negative` test.
 - Trying to add a negative sum to your account doesn't do anything
 - You are able to buy a cheap (2.5€) lunch if your balance is exactly 2.5€
 - You are able to buy an expensive (4€) lunch if your balance is exactly 4€
@@ -831,50 +831,59 @@ Add the following tests to the `TestPaymentCard` class:
 
 Run the tests in the virtual environment's terminal using the command `pytest src`. 
 
-## Komentojen suorittaminen Visual Studio Codessa
+## Running commands in Visual Studio Code
 
-Visual Studio Coden voi avata Linux-ympäristössä esim. siirtymällä hakemistoon _unicafe_ ja antamalla komennon `code .`. Visual Studio Codesta löytyy sisäänrakennettu terminaali. Terminaalin saa avattua valitsemalla päävalikosta _Terminal_ ja aukeavasta alavalikosta _New Terminal_. editorin alalaitaan pitäisi ilmestyä terminaali, jossa voit suorittaa komentorivikomentoja.
+On Linux, you can open Visual Studio Code by moving to the `unicafe` directory and running the command `code .`. Visual Studio Code has a built-in terminal. You can open it by choosing `Terminal` and clicking on `New Terminal`. This will open a command prompt at the bottom of your screen.
 
-Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä, ainakin jos olit virtuaaliympäristössä silloin kun avasit itse Visual Studio Coden. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa projektin nimi ja jokin satunnainen merkkijono suluissa, esimerkiksi `(unicafe-sF0cl2di-py3.9)`. Jos et ole virtuaaliympäristössä pääset siihen tutulla `poetry shell`-komennolla. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
+Opening the terminal might automatically start the command line in the virtual environent, at least if you were in the virtual environment when you opened Visual Studio Code itself. If you are in the virtual environment, you will see a random-looking string in brackets before your command, e.g. `(unicafe-sF0cl2di-py3.9)`. If you are not in the virtual environment automatically, you can use the familiar `poetry shell` command. Then you can run commands in Visual Studio Code directly:
 
-![Visual Studio Code terminaali]({{ "/assets/images/python/vscode-terminaali.png" | absolute_url }})
+![Visual Studio Code terminal]({{ "/assets/images/python/vscode-terminaali.png" | absolute_url }})
 
-Toinen, ehkä parempi tapa on seuraava: lisää hakemisto _unicafe_ Visual Studio Coden "workspaceen" _File_-valikon kautta, tallenna tämä workspace samaan _unicafe_-hakemistoon ja avaa Visual Studio Coden terminaali uudelleen. Valitse oikea virtuaaliympäristö Visual Studio Coden ikkunan oikeasta alareunasta (kun _maksukortti.py_ tai _kassapaate.py_ on avattuna). Tämän jälkeen testauksen tulisi onnistua. (Kurssin Ohjelmistotuotanto materiaalissa on aiheeseen liittyvä [esimerkki](https://ohjelmistotuotanto-hy.github.io/tehtavat2/#bonus-vs-coden-konfigurointi).)
+Another, perhaps easier way to do this is the following:
+- Add the `unicafe` folder to the Visual Studio Code "workspace" using the `File` menu
+- Save this workspace in the same `unicafe` folder
+- Open the Visual Studio Code terminal again
+- Choose the right virtual environment from the bottom right corner (when `payment_card.py` or `cash_register.py` files are open)
+- After this, testing should be possible
 
-## Coverage ja testikattavuus
+## Test coverage
 
-Olemme tyytyväisiä, uskomme että testitapauksia on nyt tarpeeksi. Onko tosiaan näin? Onneksi on olemassa työkaluja, joilla voidaan tarkastaa testien rivi- ja haarautumakattavuus. _Rivikattavuus_ mittaa mitä koodirivejä testien suorittaminen on tutkinut. Täydellinen rivikattavuuskaan ei tietenkään takaa että ohjelma toimii oikein, mutta on parempi kuin ei mitään. _Haarautumakattavuus_ taas mittaa mitä eri suoritushaaroja koodista on käyty läpi. Suoritushaaroilla tarkoitetaan esimerkiksi if-komentojen valintatilanteita.
+Okay, we've done lots of work, and we think that there's enough tests now. How do we know that, though? Thankfully for us, there are tools that can check how much of our code the tests cover.
 
-Koska haarautumakattavuus antaa tyypillisesti realistisemman kuvan testien kattavuudesta, käytämme kurssilla sitä testikattavuuden mittarina.
+_Row coverage_ measures how many rows have been executed when running our tests. A perfect row coverage does not guarantee that our code runs perfectly, but it's better than nothing.
 
-### Testikattavuusraportti
+_Branch coverage_ measures what branches of the code have been executed when running the tests. For example, an if-else statement defines two different branches: one where the condition is true, and the other when it is false.
 
-Testikattavuuden kerääminen testien suorituksesta onnistuu [coverage](https://coverage.readthedocs.io/en/latest/)-työkalun avulla. Sen asentamisen projektin kehityksen aikaiseksi riippuvuudeksi onnistuu tuttuun tapaan komennolla:
+As branch coverage usually gives us a more realistic view of the coverage of our tests, we will primarily use it during this course.
+
+### Coverage report
+
+We will use the [coverage](https://coverage.readthedocs.io/en/latest/) tool to measure the coverage of our tests. As usual, we will install it using poetry as a dependency:
 
 ```bash
 poetry add coverage --group dev
 ```
 
-Testikattavuuden kerääminen `pytest src`-komennolla suoritetuista testeistä onnistuu virtuaaliympäristössä komennolla:
+Collecting the coverage data happens by running the `pytest src` command as follows:
 
 ```bash
 coverage run --branch -m pytest src
 ```
 
-Komennon `--branch` flagillä pystymme keräämään testien [haarautumakattavuuden](https://coverage.readthedocs.io/en/latest/branch.html). Huomaa, että `pytest src`-komento rajaa testien etsinnän projektin juurihakemistossa sijaitsevaan _src_-hakemistoon. Komennon suorittamisen jälkeen voimme tulostaa komentoriville raportin kerätystä testikattavuudesta komennolla:
+The `--branch` is used to specify that we want to use the [branch coverage feature](https://coverage.readthedocs.io/en/latest/branch.html). Note that the `pytest src` command limits the testing to the code that is located in the `src` folder of your project, so all of the testable code must be there. After running the command, you can print the collected information using the following command:
 
 ```bash
 coverage report -m
 ```
 
-Tulostuksesta huomaamme, että raportissa on suuri määrä projektin kannalta turhia tiedostoja. Voimme konfiguroida, mistä tiedostoista testikattavuutta kerätään projektin juurihakemiston _.coveragerc_-tiedostossa. Jos haluamme sisällyttää testikattavuuteen vain projektin _src_-hakemiston, on konfiguraatio seuraava:
+We can notice from the output that the report has a large number of useless files. We can tell the coverage program which files we want to test by editing the `.coveragerc` file in the root directory of the project. If we want to limit the test coverage to just the `src` folder, put the following in the `.coveragerc` file:
 
 ```
 [run]
 source = src
 ```
 
-**HUOM:** _src_-hakemiston **alahakemistoissa** (ei siis itse _src_-hakemistossa) tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot, jotta testikattavuuteen sisällytetään kaikki halutut tiedostot. [Referenssisovelluksessa]({{site.python_reference_app_url}}) tapauksessa <i>\_\_init\_\_.py</i>-tiedostot on lisätty seuraavasti:
+**Note:** Every **subfolder** (not the `src` folder itself!) must have empty files named `__init__` for coverage to work properly. In the [Reference project]({{site.python_reference_app_url}}), the files are added as follows:
 
 ```
 src/
@@ -892,9 +901,9 @@ src/
   ...
 ```
 
-### Tiedostojen jättäminen raportin ulkopuolelle
+### Leaving out files from the coverage report
 
-Voimme jättää testikattavuuden ulkopuolelle tiedostoja ja hakemistoja. Järkevää voisi olla esimerkiksi jättää testihakemisto, käyttöliittymän koodin hakemisto ja _src/index.py_-tiedosto testikattavuuden ulkopuolelle. Tämä onnistuu seuraavalla muutoksella _.coveragerc_-tiedostoon:
+We can leave out some folders and files that we don't want to test. For example, we don't want to test the tests themselves, the user interface, or the `src/index.py` files! We can do this by adding the following lines to the `.coveragerc` file:
 
 ```
 [run]
@@ -902,30 +911,31 @@ source = src
 omit = src/**/__init__.py,src/tests/**,src/ui/**,src/index.py
 ```
 
-Nyt komentojen `coverage run --branch -m pytest src` ja `coverage report -m` suorittaminen sisällyttää vain haluamamme _src_-hakemiston tiedostot.
+Now the `coverage run --branch -m pytest src` ja `coverage report -m` commands only look at the files we want.
 
-### Visuaalisempi testikattavuusraportti
+### Visualising the coverage report
 
-Komentoriviltä luettavaa raporttia selkeämmän esitysmuodon voi generoida komennolla:
+You can generate a more visual coverage report by running the following command:
 
 ```bash
 coverage html
 ```
 
-Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Raporttia voi katsoa selaimessa avaamalla hakemiston tiedoston _index.html_ selaimen kautta. Selaimessa aukeava raportti näyttää kutakuinkin seuraavalta:
+Running this creates the `htmlcov` folder in the root of your repository. You can look at the report in your browser by opening the `index.html` file which can be found inside this folder. This will look a little something like this:
 
 ![](/assets/images/python/coverage-raportti.png)
 
-Raportista näemme, että koko koodin haaraumakattavuus on 95%. Yksittäisen tiedoston haaraumakattavuuden näemme taulukon "coverage"-sarakkeesta. Jos klikkaamme taulukosta yksittäisen tiedoston nimeä aukeaa tiedoston koodi ja testien siinä kattamat haarat. Katetut haarat näkyvät vihreinä palkkeina rivinumeron vieressä. Haarat, joita ei ole katettu ollenkaan, on korostettu punaisella värillä. Sen sijaan, jos haara on osittain katettu, se on korostettu keltaisella värillä. Viemällä hiiri rivin päälle, nähdään tarkempi selitys, miksi haaraa ei ole täysin katettu:
+We can see from the report that the whole branch coverage is 95%. If we want to see an individual file's coverage, we can look at the "coverage" column and click on the desired filename. This will open a view of the source code highlighted with three different colours. If a branch is fully covered by tests, it is highlighted green. If a branch is partially covered, it will be highlighted yellow and there will be a text explanation as to why it wasn't fully covered. Finally, if a branch has not been covered at all, it will be highlighted red.
 
 ![](/assets/images/python/coverage-tiedosto.png)
 
-Kuvan tilanteessa if-ehto ei koskaan saanut arvoa `True`, joten kyseistä haaraa ei testeissä käsitelty.
+In the above example, the `if` statement never got the value of `True`, so the respective branch was never tested.
 
 ---
-### Tehtävä 7: Testikattavuus
+### Task 7: Test coverage
 
-Unicafe-projektiin on valmiiksi konfiguroitu käytettäväksi [coverage](https://coverage.readthedocs.io/en/latest/)-työkalu, joka mittaa testien haarautumakattavuuden. Testikattavuuden konfiguraatiossa käytettävä, _.coveragerc_-tiedoston sisältö on projektissa seuraava:
+In the Unicafe project, the [coverage](https://coverage.readthedocs.io/en/latest/) tool is configured and ready to use.
+The contents of the `.coveragerc` file are the following:
 
 ```
 [run]
@@ -933,50 +943,54 @@ source = src
 omit = src/tests/**,src/index.py
 ```
 
-Testikattavuuden kerääminen testeistä onnistuu virtuaaliympäristössä komennolla `coverage run --branch -m pytest src`. Komennon suorittamisen jälkeen kattavuusraportin voi muodostaa komennolla `coverage html`. Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Avaamalla hakemiston tiedoston _index.html_ selaimessa aukeaa seuraavan näköinen raportti:
+You can collect the test coverage data in the virtual environment by running `coverage run --branch -m pytest src`.
+After running this, you can open the coverage report by running `coverage html`.
+This creates a `htmlcov` directory in the root of your repository. By opening the `index.html` file inside it, you will see the following report:
 
-![Testikattavuusraportti]({{ "/assets/images/python/unicafe-coverage.png" | absolute_url }})
+![Test coverage report]({{ "/assets/images/python/unicafe-coverage.png" | absolute_url }})
 
-Huomaa, että oma raporttisi tuskin näyttää täysin tältä (etenkin kattavuusprosenttien osalta) edellisten tehtävien testien toteutuksen jälkeen. Yksittäistä moduulia klikkaamalla näet punaisella korostuksella haarat, joita testit eivät kata vielä lainkaan ja keltaisella korostuksella haarat, joita testit kattavat vain osittain.
+Note that your report will probably look slightly different to this, especially when it comes to the coverage percentage.
+By clicking the individual files, you will be able to see the highlighted branches, telling you which branches have not been tested at all (red), partially tested (yellow), and fully tested (green).
 
-**Jos maksukortin koodissa on vielä rivejä tai haarautumia (merkitty punaisella) joille ei ole testiä, kirjoita sopivat testit.**
+**If there are lines or branches in the payment card code that have not been tested (highlighted in red), write the appropriate tests.**
 
-Jotta `coverage`-komennon generoimat tiedostot eivät päättyisi versionhallintaan, lisää _.gitignore_-tiedostoon vielä seuraavat rivit:
+The `coverage` command generates a lot of trash files that we don't want in our git history. Add the following lines to the `.gitignore` file to ignore these extra files:
 
 ```
 .coverage
 htmlcov
 ```
 
-### Tehtävä 8: Kassapäätteen testit
+### Task 8: Cash register tests
 
-Laajennetaan unicafe-projektin testaus kattamaan myös kassapääte.
+Let's extend the tests to also cover the cash register's code.
 
-Tee testihakemistoon testitiedosto <i>kassapaate_test.py</i> ja sinne testiluokka `TestKassapaate`. Tee testit jotka testaavat ainakin seuraavia asioita:
+Create a `payment_card_test.py` file in the test folder and make a `TestPaymentCard` class inside it. Make tests that test at least the following functionality:
 
-- Luodun kassapäätteen rahamäärä ja myytyjen lounaiden määrä on oikea (rahaa 1000 euroa, lounaita myyty 0)
-  - Huomaa, että luokka tallentaa rahamäärän sentteinä
-- Käteisosto toimii sekä edullisten että maukkaiden lounaiden osalta
-  - Jos maksu riittävä: kassassa oleva rahamäärä kasvaa lounaan hinnalla ja vaihtorahan suuruus on oikea
-  - Jos maksu on riittävä: myytyjen lounaiden määrä kasvaa
-  - Jos maksu ei ole riittävä: kassassa oleva rahamäärä ei muutu, kaikki rahat palautetaan vaihtorahana ja myytyjen lounaiden määrässä ei muutosta
-- _seuraavissa testeissä tarvitaan myös Maksukorttia jonka oletetaan toimivan oikein_
-- Korttiosto toimii sekä edullisten että maukkaiden lounaiden osalta
-  - Jos kortilla on tarpeeksi rahaa, veloitetaan summa kortilta ja palautetaan _True_
-  - Jos kortilla on tarpeeksi rahaa, myytyjen lounaiden määrä kasvaa
-  - Jos kortilla ei ole tarpeeksi rahaa, kortin rahamäärä ei muutu, myytyjen lounaiden määrä muuttumaton ja palautetaan _False_
-  - Kassassa oleva rahamäärä ei muutu kortilla ostettaessa
-- Kortille rahaa ladattaessa kortin saldo muuttuu ja kassassa oleva rahamäärä kasvaa ladatulla summalla
+- The amount of money and the number of sold lunches is correct in the beginning (1000€ money, 0 lunches sold)
+  - Note that the class stores the money in cents, not euros
+- Buying a lunch with cash works as intended for both cheap and yummy lunches
+  - If the payment is large enough: the money in the cash register increases, the change is correct
+  - If the payment is large enough: the number of sold lunches increases
+  - If the payment is _not_ large enough: the money in the cash register stays the same, all of the money is returned as change, number of lunches sold does not change
+- Card payments work for both cheap and yummy lunches
+  - If the card has enough money, the card has the money taken off and the function returns `True`
+  - If the card has enough money, the number of lunches sold increases
+  - If the card does _not_ have enough money, the amount of money on the card stays the same, the number of lunches sold stays the same and the function returns `False`
+  - The amount of cash in the cash register does not change when buying lunch with a card
+- When topping up a card, the balance on the card increases and the amount of cash in the cash register increases
 
-Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun kassapäätteellä on automaattiset testit, on sen rakennetta helppo muokata eli refaktoroida siistimmäksi koko ajan kuitenkin varmistaen, että testit menevät läpi. Refaktoroi koodisi siistimmäksi jos haluat.
+You will notice that the cash register class has a lot of copypasting. Now that the code has automatic tests, it is easy to refactor the code to be cleaner and be sure that nothing is broken.
+_If you want_, refactor the code to be cleaner.
 
-### Tehtävä 9: 100% testikattavuus
+### Task 9: 100% test coverage
 
-Varmista testikattavuuskomentojen avulla, että kassapäätteen testeillä on 100% haarautumakattavuus. Suorita siis virtuaaliympäristössä komennot `coverage run --branch -m pytest src` ja `coverage html`, jonka jälkeen avaa selaimessa _htmlcov/index.html_-tiedosto.
+Run the `coverage run --branch -m pytest src` and `coverage html` commands and open the `htmlcov/index.html` file to ensure that the cash register code has 100% test coverage.
 
-Jos testikattavuus ei ole vielä 100%, tee lisää testejä kunnes tilanne korjautuu. Tallenna edellisessä esimerkissä olevan testikattavuusraportin kuvan tyylinen [screenshot](https://www.take-a-screenshot.org/) projektisi kattavuusraportista palautusrepositoriosi hakemistoon _laskarit/viikko2_.
+If the coverage is not yet at 100%, make more tests to fix the situration. Once you're done, take a [screenshot](https://www.take-a-screenshot.org/) that looks similar to the above picture of the coverage report. Upload this picture to your repository's `exercises/week2` directory and commit. 
 
 ---
+
 ## Harjoitustyö
 
 Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö. Harjoitustyössä toteutetaan itsenäisesti ohjelmisto omavalintaisesta aiheesta. Tavoitteena on soveltaa ja syventää ohjelmoinnin perus- ja jatkokursseilla opittuja taitoja ja harjoitella tiedon omatoimista etsimistä. Harjoitustyötä tehdään itsenäisesti, mutta tarjolla on runsaasti [pajaohjausta](/#ajankohtaista).
