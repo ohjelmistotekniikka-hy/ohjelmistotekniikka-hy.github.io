@@ -991,37 +991,41 @@ If the coverage is not yet at 100%, make more tests to fix the situration. Once 
 
 ---
 
-## Harjoitustyö
+## Practical work
 
-Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö. Harjoitustyössä toteutetaan itsenäisesti ohjelmisto omavalintaisesta aiheesta. Tavoitteena on soveltaa ja syventää ohjelmoinnin perus- ja jatkokursseilla opittuja taitoja ja harjoitella tiedon omatoimista etsimistä. Harjoitustyötä tehdään itsenäisesti, mutta tarjolla on runsaasti [pajaohjausta](/#ajankohtaista).
+The bulk of the course is the practical work you are starting in week 2 (this week!).
+You will get to independently develop a software project on a topic of your liking.
+The goal of the work is to apply and enrich the skills you learned on the introduction and advanced courses in programming, as well as practice finding information on your own.
+The practical work is done independently. However, if you need help, there are plenty of [workshop times](/en/#timely-information) available to get help.
 
-Harjoitustyön on edettävä [viikottaisten tavoitteiden mukaan](/#aikataulu). Työ on saatava valmiiksi kurssin aikana ja sitä on toteutettava tasaisesti, muuten kurssi katsotaan keskeytetyksi. Samaa ohjelmaa ei voi jatkaa seuraavalla kurssilla (eli {{ site.next_course }}), vaan työ on aloitettava uudella aiheella alusta. Muista varata riittävästi aikaa (10-15h viikossa) koko periodin ajaksi.
+Your project must advance by the [weekly goals](/en/#schedule). You must get the work done during the course and it must be implemented evenly throughout the course: if you do not do work one week, you will fail the course. In addition, you cannot continue the project you start now during the next course ({{ site.en_next_course }}); if you want to take the course again, you must restart with a new project idea. Remember to reserve enough time (10-15 hours per week) to do this project for the whole term.
 
-Koko kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteisiin. Osa pisteistä kertyy [aikatauluun](/#aikataulu) määriteltyjen viikoittaisten välitavoitteiden kautta, osa taas perustuu työn lopulliseen palautukseen.
+The course is primarily graded based on the points you get from the practical work. You will get some of the points from the project submissions each week outlined by the [schedule](/en/#schedule); however, most of the points will still come from your final submission.
 
-### Harjoitustyön kieli ja ohjelmointikieli
+### Language
 
-Harjoitustyön ohjelmointikieli on Python.
+You must use Python for your project.
 
-Web-sovelluksia kurssilla ei sallita. Sovelluksissa sallitaan toki webissä olevat komponentit, mutta sovelluksen käyttöliittymän tulee olla niin sanottu työpöytäsovellus.
+You are not allowed to write a web application for your project. Of course your program may use the internet for retrieving and storing data, but the user interface must be a so-called desktop application.
 
-**Ohjelmakoodin muuttujat, luokat ja metodit kirjoitetaan englanniksi**. Dokumentaatio voidaan kirjoittaa joko suomeksi tai englanniksi.
+**All of the variables, classes, and functions in your project must be in English**. The documentation can be in either English or Finnish.
 
-### Ohjelman toteutus
+### Implementing your program
 
-Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä ja materiaalista. Muutamia vihjeitä on myös kurssin [referenssiprojektissa]({{site.python_reference_app_url}}) sekä [täällä](/fi/tasks/implementation).
+Your implementation should be "iterative and incremental". This means that, right in the beginning, you implement a small bit of program functionality. The core functionality should always work, and new features should be added until the desired size of the program is achieved.
+You can ask for help with your program structure in the workshop sessions, as well as by looking at the [reference project]({{site.python_reference_app_url}}) and the [implementation page](/en/tasks/implementation). It is also highly recommended to review the material in the Advanced Course in Programming.
 
-Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus. Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen. Kaiken testaaminen käsin uudelleen ja uudelleen ei ole ajankäytöllisesti järkevää, ja siksi ohjelmakoodille onkin syytä laatia jatkuvasti testejä ohjelmoinnin edetessä. Testit on syytä pitää kattavina ja ajan tasalla.
+An iteratively developed project uses automated testing as its backbone. Whenever you add new features to the project, you must make sure that all the old functionality works as intended. Testing everything every time by hand is awfully impractical! This is why automated tests are so good: they let you quickly see whether your functionality is intact and functional. You should continuously create new tests, update them, and make sure they cover your program well.
 
-Jotta ohjelmaa pystyisi testaamaan, on tärkeää että sovelluslogiikkaa [ei kirjoiteta käyttöliittymän sekaan](/fi/tasks/implementation)!
+For the functionality to be testable, it is **extremely important** that you [separate the program logic and user interface](/en/tasks/implementation)!
 
-Eräs mahdollisuus on tehdä aluksi tekstikäyttöliittymä ja vasta saatuasi ohjelman perustoiminnallisuuden toteutettua voit siirtyä graafisen käyttöliittymän toteutukseen. Graafinen käyttöliittymä on mahdollista myös jättää pois, mutta tämä [vaikuttaa arvosanaan](/fi/tasks/criteria). Graafisen käyttöliittymän toteutukseen löytyy ohjeita [täällä](/fi/tasks/tkinter). Pelin toteutukseen Pygame-kirjastolla löytyy ohjeita [täältä](/fi/tasks/pygame).
+One possibility is to first make a text (command line) user interface, and only create the graphical user interface (GUI) after you have implemented the base functionality. It is also possible to skip the GUI entirely, but this will have a [negative impact on your grade](/en/tasks/criteria). You can find guidance on how to write a GUI in Tkinter [here](/en/tasks/tkinter). If you plan on making a video game, you can find Pygame instructions [here](/en/tasks/pygame).
 
-[Arvosanan kannalta suositeltavaa](/fi/tasks/criteria) on, että ohjelmasi tallettaa tietoa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](/fi/tasks/implementation#tietojen-tallennus).
+Storing data in a file or a database [will have a positive impact on your grade](/fi/tasks/criteria). You can find tips on doing this [here](/en/tasks/implementation).
 
-Harjoitustyön tavoitteena on tuottaa ohjelma, joka voitaisiin antaa toiselle opiskelijalle ylläpidettäväksi ja täydennettäväksi. Lopullisessa palautuksessa on oltava lähdekoodin lisäksi dokumentaatio ja automaattiset testit.
+One final goal of the project is to produce a program, which you could give to another student to maintain and expand. This means that the final project should have really good documentation and automated tests, so that a person unfamiliar with your code can immediately understand what's going on.
 
-Toivottava dokumentaation taso käy ilmi [referenssiprojektissa]({{site.python_reference_app_url}}).
+A good level of documentation can be seen in the [reference project]({{site.python_reference_app_url}}).
 
 ### Hyvän aiheen ominaisuudet
 
