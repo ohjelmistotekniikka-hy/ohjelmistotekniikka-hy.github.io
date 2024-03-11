@@ -7,47 +7,43 @@ repo_url: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.gith
 repo_branch: 'master'
 
 # Kurssikertaan liittyvät muuttujat:
-title: "Aineopintojen harjoitustyö: ohjelmistotekniikka, syksy 2023"
+title: "Aineopintojen harjoitustyö: ohjelmistotekniikka, kevät 2024"
 
 # timetable (in the format day dd.mm time)
-fi_wk1dl: "tiistai 7.11. klo 23:59"
-fi_wk2dl: "tiistai 14.11. klo 23:59"
-fi_wk3dl: "tiistai 21.11. klo 23:59"
-fi_wk4dl: "tiistai 28.11. klo 23:59"
-fi_wk5dl: "tiistai 5.12. klo 23:59"
-fi_wk6dl: "tiistai 12.12. klo 23:59"
-fi_finaldl: "perjantai 22.12. klo 23:59"
-fi_code_review_start_date: "torstai 7.12. klo 14"
+fi_wk2dl: "tiistai 26.3. klo 23:59"
+fi_wk1dl: "tiistai 19.3. klo 23:59"
+fi_wk3dl: "tiistai 9.4. klo 23:59"
+fi_wk4dl: "tiistai 16.4. klo 23:59"
+fi_wk5dl: "tiistai 23.4. klo 23:59"
+fi_wk6dl: "tiistai 30.4. klo 23:59"
+fi_finaldl: "sunnuntai 12.5. klo 23:59"
+fi_code_review_start_date: "keskiviikko 24.4. klo 23:59"
 
-en_wk1dl: "Tuesday 7.11. at 23:59"
-en_wk2dl: "Tuesday 14.11. at 23:59"
-en_wk3dl: "Tuesday 21.11. at 23:59"
-en_wk4dl: "Tuesday 28.11. at 23:59"
-en_wk5dl: "Tuesday 5.12. at 23:59"
-en_wk6dl: "Tuesday 12.12. at 23:59"
-en_finaldl: "Friday 22.12. at 23:59"
-en_code_review_start_date: "Thursday 7.12. at 14:00"
+en_wk1dl: "Tuesday 26.3. at 23:59"
+en_wk2dl: "Tuesday 19.3. at 23:59"
+en_wk3dl: "Tuesday 9.4. at 23:59"
+en_wk4dl: "Tuesday 16.4. at 23:59"
+en_wk5dl: "Tuesday 23.4. at 23:59"
+en_wk6dl: "Tuesday 30.4. at 23:59"
+en_finaldl: "Sunday 12.5. at 23:59"
+en_code_review_start_date: "Wednesday 24.4. at 23:59"
 
 # ohjausajat
 # - Maanantaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/68570587158?pwd=TFhwUXBucExZeVNJZnRydE8yWkNFdz09)
 # - Tiistaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/65324719978) (alkaen 23.3.)
 # - Torstaisin klo 13-15  [zoom]()
 fi_times:
-  - time: "Maanantaisin klo 10 - 12 kampuksella BK107-luokassa"
-  - time: "Tiistaisin klo 10 - 12 kampuksella BK107-luokassa"
-  - time: "Keskiviikkoisin klo 10 - 12 kampuksella BK107-luokassa"
-  - time: "Keskiviikkoisin klo 14 - 16 kampuksella BK107-luokassa"
-  - time: "Torstaisin klo 14 - 16 kampuksella BK107-luokassa"
+  - time: "Maanantaisin klo 14-16 kampuksella BK107-luokassa"
+  - time: "Tiistaisin klo 10-12 kampuksella BK107-luokassa"
+  - time: "Keskiviikkoisin klo 16-18 kampuksella BK107-luokassa"
 
 en_times:
-  - time: "Mondays 10 - 12 on campus in the BK107 class"
-  - time: "Tuesdays 10 - 12 on campus in the BK107 class"
-  - time: "Wednesdays 10 - 12 on campus in the BK107 class"
-  - time: "Wednesdays 14 - 16 on campus in the BK107 class"
-  - time: "Thursdays 14 - 16 on campus in the BK107 class"
+  - time: "Mondays 14-16 on campus in the BK107 class"
+  - time: "Tuesdays 10-12 on campus in the BK107 class"
+  - time: "Wednesdays 16-18 on campus in the BK107 class"
 
-fi_lecture_time: 'keskiviikkona 1.11. klo 10.15 - 11.45'
-en_lecture_time: 'Wednesday 1.11. at 10.15 - 11.45'
+fi_lecture_time: 'maanantaina 11.3. klo 10.15 - 11.45'
+en_lecture_time: 'Monday 11.3. at 10.15 - 11.45'
 lecture_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/tree/master/luennot/2023-kevat'
 lecture_slides_link: 'https://ohjelmistotekniikka-hy.github.io/luennot/2023-syksy/aloitusluento.pdf'
 lecture_recording_link: 'https://moodle.helsinki.fi/mod/lti/view.php?id=3384745'
@@ -55,14 +51,19 @@ lecture_recording_link: 'https://moodle.helsinki.fi/mod/lti/view.php?id=3384745'
 # seuraava kurssikerta muodossa syksyllä/keväällä [vuosi].
 # esimerkki syksyllä 2021
 # käytetään muun muassa "ei voi jatkaa seuraavalla kurssilla (syksyllä 2021)"
-fi_next_course: 'keväällä 2024'
-en_next_course: 'spring 2024'
+fi_next_course: 'syksyllä 2024'
+en_next_course: 'autumn 2024'
 
-labtool_link: 'https://study.cs.helsinki.fi/labtool/courses/TKT20018.2023.S.K.1'
+labtool_link: 'https://study.cs.helsinki.fi/labtool/courses/TKT20018.2024.K.K.1'
 
 # referenssi-sovellusten linkit
 python_reference_app_url: 'https://github.com/ohjelmistotekniikka-hy/python-todo-app'
-java_reference_app_url: 'https://github.com/mluukkai/OtmTodoApp'
+
+# Moodle-alue
+moodle_link: 'https://moodle.helsinki.fi/course/view.php?id=63159'
+
+# Norpan palaute
+norppa_link: 'https://norppa.helsinki.fi/targets/72439115/feedback'
 
 # Build settings
 markdown: kramdown

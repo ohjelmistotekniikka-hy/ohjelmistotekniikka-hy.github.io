@@ -197,6 +197,20 @@ Forgetting to do the following things will result in **points being deducted**:
   - All weekly exercises are under `laskarit`
   - There is a reasonable `.gitignore` file
 
+## Extra code review
+
+There is going to be a code review on [week 6](/en/tasks/week6#code-review). The point is to give feedback on someone else's work.
+This is useful for both the author of the code and the one reading it. If you want, you can already do a code review on weeks 4 and 5, if someone else agrees to give you their code to review. This is **completely optional and extra**, but you can get an extra course point for this (added to the points in week 5). 
+
+**If you want to do a code review:**
+  1. Go to the [Moodle page]({{site.moodle_link}}) and see if there are any projects under the "Ylimääräinen koodikatselmointi" section that are not yet reserved. If you can find one, write your name after it to reserve it. See what topics the author wants feedback on.
+  2. Use the code review instructions to give your feedback as GitHub issues. For the extra code review, two high-quality and constructive comments and one improvement suggestion are enough. These should include comments on any questions that the code author may have asked. Instead of having "Code review" as a title, put "Extra code review" as a title.
+  3. Go to your own project's `README.md` file and add a bolded line of text saying "Extra code review" and a link to your review at the bottom.
+
+**If you want your code to be reviewed:**
+  Go to the Moodle page and add a link to your repository under "Ylimääräinen koodikatselmointi".
+  After the link, write a question or topic that you want feedback on from the reviewer.
+
 {% include en_practical_work_works_info.md %}
 
 {% include en_plagiarism.md %}

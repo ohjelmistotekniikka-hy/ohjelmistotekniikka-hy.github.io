@@ -170,6 +170,19 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
   - Laskarit jätetään hakemiston _laskarit_ alle
   - Järkevä _.gitignore_-tiedosto olemassa
 
+## Ylimääräinen koodikatselmointi
+
+Kurssin kuudennen viikon ohjelmassa on koodikatselmointi, jonka ohjeet löytyvät [täältä](viikko6#koodikatselmointi). Tarkoituksena on, että itse kukin antaa palautetta jonkun toisen työstä. Katselmointi voi olla hyvin hyödyllistä niin katselmoitavan koodin kirjoittajalle kuin katselmoijallekin. Siksi voit niin halutessasi tehdä sitä jo viikoilla 4 ja 5 mikäli joku toinen osallistuja antaa harjoitustyönsä katselmoitavaksi. Tämä on **täysin vapaaehtoista ja ylimääräistä**, mutta voit saada tästä katselmoinnista arvosanaan vaikuttavan lisäpisteen (huomioidaan viidennen viikon pisteytyksessä).
+
+**Jos haluat katselmoida:**
+  1. Siirry kurssin [Moodle-alueelle]({{site.moodle_link}}) ja katso, löydätkö kohdasta "Ylimääräinen koodikatselmointi" sellaisia katselmoitavia töitä, joita ei ole vielä varattu katselmointiin. Jos tällainen löytyy, varaa se itsellesi kirjoittamalla nimesi sen perään. Katso, mihin kysymykseen katselmoinnilta erityisesti toivotaan vastausta.
+  2. Noudata palautteenannossa pääsääntöisesti koodikatselmoinnin ohjeita (anna palautteesi issueina). Tästä ylimääräisestä katselmoinnista jaettavaan pisteeseen riittää kaksi laadukasta ja rakentavaa palautekommenttia ja yksi käyttökelpoinen parannusehdotus. Näihin tulee sisältyä oma vastauksesi katselmointia toivovan kysymykseen. Kirjoita issueiden otsikoiksi "Koodikatselmoinnin" sijaan "Ylimääräinen koodikatselmointi".
+  3. Lisää työsi README.md -tiedoston loppuun lihavoitu teksti "Ylimääräinen koodikatselmointi" ja linkki katselmoimaasi työhön.
+
+**Jos haluat katselmointia:**
+  Siirry kurssin Moodle-alueelle ja lisää kohtaan "Ylimääräinen koodikatselmointi" linkki repositorioosi. Kirjoita linkin jälkeen yksi kysymys, johon erityisesti toivoisit katselmoinnilta vastausta.
+
+
 {% include fi_practical_work_works_info.md %}
 
 {% include fi_plagiarism.md %}

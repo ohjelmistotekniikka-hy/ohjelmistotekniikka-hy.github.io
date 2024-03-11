@@ -8,8 +8,7 @@ title: Materiaali
 
 - [Viikko 1](/fi/tasks/week1)
   - [Ohjelmistotuotanto](/fi/tasks/week1#ohjelmistotuotanto)
-  - [Komentorivin harjoittelua](/fi/tasks/week1#komentorivin-harjoittelua)
-  - [Versionhallinta](/fi/tasks/week1#versionhallinta)
+  - [Harjoitukset](/python/viikko1#ensimmäisen-viikon-harjoitukset)
 - [Viikko 2](/fi/tasks/week2)
   - [Poetry ja riippuvuuksien hallinta](/fi/tasks/week2#poetry-ja-riippuvuuksien-hallinta)
   - [Unittest ja testaaminen](/fi/tasks/week2#unittest-ja-testaaminen)

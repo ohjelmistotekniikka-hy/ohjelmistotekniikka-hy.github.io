@@ -14,14 +14,14 @@ Kurssilla on jaossa 60 pistettä. Pisteet jakautuvat seuraavasti
   - Käyttö/asennusohje
   - Testidokumentti
   - Docstring-dokumentaatio
-  - Selvitys ChatGPT:n ja muiden kielimalleihin perustuvien välineiden käytöstä
+  - Selvitys ChatGPT:n ja muiden kielimalleihin perustuvien välineiden käytöstä **Huom:** tämä annetaan muusta dokumentaatiosta erillään [Moodlesta löytyvän lomakkeen avulla]({{site.moodle_link}}).
 - Testaus 5p
   - Testit
 - Lopullinen ohjelma 24p
   - Toiminnallisuus
   - Koodin laatu
 
-Lisäksi palautteesta on tarjolla yksi lisäpiste.
+Palautteesta on tarjolla yksi lisäpiste. Ja vielä yhden lisäpisteen voi saada suorittamalla ylimääräisen koodikatselmoinnin viikoilla 4 - 5.
 
 Arvosanaan 1 riittää 30 pistettä, arvosanaan 5 tarvitaan noin 55 pistettä.
 

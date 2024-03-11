@@ -26,11 +26,11 @@ For the documentation, you may use the [reference project]({{site.python_referen
 
 After you are done, answer the questionnaire about ChatGPT (and other AI model) usage, as well as submitting course feedback.
 Both of these are worth one point, and may very well affect your grade.
-You will find the AI questionnaire in [Moodle](https://moodle.helsinki.fi/mod/feedback/view.php?id=3339366) and the feedback form in [Norppa](https://norppa.helsinki.fi/targets/72439033/feedback).
+You will find the AI questionnaire in [Moodle]({{site.moodle_link}}) and the feedback form in [Norppa]({site.norppa_link}}).
 Copy the code that's visible in the feedback form and submit it to Moodle to get your extra point.
 
 ### Grading
-Final grades will be released in January in [Moodle](https://moodle.helsinki.fi/course/view.php?id=61184).
+Final grades will be released in January in [Moodle]({{site.moodle_link}}).
 
 
 {% include en_practical_work_works_info.md %}

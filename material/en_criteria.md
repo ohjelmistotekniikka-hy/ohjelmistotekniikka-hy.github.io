@@ -15,14 +15,14 @@ These are awarded as follows:
   - Usage and installation instructions
   - Test document
   - Docstring documentation
-  - Explanation as to your use of ChatGPT and other AI tools
+  - Explanation as to your use of ChatGPT and other AI tools **Note:** this is given separately using a [form found in the Moodle page]({{site.moodle_link}}).
 - Testing 5p
   - Tests
 - Final submission 24p
   - Functionality
   - Code quality
 
-In addition, a bonus point is available for submitting course feedback.
+A bonus point is available for submitting course feedback. And you can get another bonus point for participating in the extra code review on weeks 4-5.
 
 You need 30 points to pass with a grade of 1.
 To get a grade of 5, you need approximately 55 points.

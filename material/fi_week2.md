@@ -317,7 +317,7 @@ class Maksukortti:
         return "Kortilla on rahaa {:0.2f} euroa".format(saldo_euroissa)
 ```
 
-**HUOM:** Kaikki raha-arvot, kuten maksukortin saldo ja aterioiden hinnat ovat senteissä.
+**HUOM:** Kaikki raha-arvot, kuten maksukortin saldo ja aterioiden hinnat ovat senteissä. (Huomaa myös, että harjoitustyössä muuttujat, luokat ja metodit kirjoitetaan englanniksi vaikka kurssimateriaalissa onkin luettavuuden vuoksi käytetty suomenkielisiä nimiä.)
 
 ---
 ### Tehtävä 1: Alkutoimet

@@ -1,12 +1,12 @@
 ## Timely information
-
-- You can book a time for online help in [Moodle](https://moodle.helsinki.fi/mod/wiki/view.php?id=3339466)
-- The beginning lecture is at {{site.en_lecture_time}}
+<!-- - Arvosanoja näkyy [Moodlessa](https://moodle.helsinki.fi/course/view.php?id=61184) (linkki "Arvioinnit" sivun yläosassa, otsikon alla). Kiitoksia osallistumista ja hyvää alkanutta vuotta!-->
+- Introductory lecture: {{site.en_lecture_time}}
   - The slides can be found [here]({{site.lecture_slides_link}})
-  - The recording can be found [here]({{site.lecture_recording_link}})
-- There is a [Discord channel](https://study.cs.helsinki.fi/discord/join/ohte) dedicated for help related to this course!
+  - The recording is [here]({{site.lecture_recording_link}})
+- There is a [Discord channel](https://study.cs.helsinki.fi/discord/join/ohte) available, where you can discuss the course and get help with your project
+  - If you ask a question about the code you've written, **include a link to your repository**. It is almost impossible to help without seeing the code
   - **NOTE:** any inappropriate, judgemental, or discriminatory speech is forbidden. Those who break the rules will be banned from the channel.
-- You can get in-person help at the **exercise sessions** Wed 1.11. - Wed 20.12.: {% for time in site.en_times %}
+- If you need help with the course, come to the **workshop sessions**: {% for time in site.en_times %}
   - {{ time.time }}{% endfor %}
-- You may also ask in Discord
-  - **If your question concerns problems with your code, include a link to your repository or copy a code snippet.** It is near impossible to give code-related help if one cannot see the code itself.
+  - there is guidance between 11.3. - 30.4., but not on the week starting 1.4. due to Easter holidays
+  - There is also online guidance available. You can book a time for it in [Moodle]({{site.moodle_link}}). Note that you can get better help in the workshop sessions!
