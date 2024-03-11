@@ -24,7 +24,7 @@ title: Material
 - [Week 6](/en/tasks/week6)
   - [Docstring and documentation](/en/tasks/week6#docstring-and-documentation)
   - [Code review](/en/tasks/week6#code-review)
-- [Loppupalautus](/en/tasks/final)
+- [Final submission](/en/tasks/final)
 
 ## Practical work
 
