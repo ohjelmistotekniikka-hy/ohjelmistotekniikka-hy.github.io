@@ -35,7 +35,7 @@ Read the tasks under the **"Command line basics"** and **"Version control"** sec
 If you are familiar with everything covered there, you do not need to do these tasks.
 **If you at all doubt your skills, do all of the tasks in each section!** You will not get points for this; however, you will be using these skills throughout the course. Thus, you need to be very familiar with how these basics work in order to succeed in the upcoming weeks.
 
-In case you are already familiar with the two section, **you must still do the following**:
+In case you are already familiar with the two sections, **you must still do the following**:
 1. Create a local Git repository for your practical work and weekly exercises. You can call it `software-development-project`, for example.
 2. Create a `README.md` file in your repository. Give it the title "Software development, practical work" and write a one-sentence description of your project (this can later change, of course). Format the document using Markdown, so that there is some **bolded** and _italic_ text.
 3. Create a subdirectory with the name `exercises` and add a file called `week1.md`. Write in this file that you are already familiar with the command line and version control.
@@ -100,7 +100,7 @@ After you have connected, do the following:
 - Delete the zip-file
 - Delete the `temp` folder
 
-**Go to the _home folder_ and run the command _tree courses_. Copy-paste this to a safe place, you will need it later.**
+**Go to the _home folder_ and run the command `tree courses`. Copy-paste this to a safe place, you will need it later.**
 
 ### Tab completion
 
@@ -357,7 +357,7 @@ Run the `git status` command as often as possible. Don't forget to tab complete!
   - Note that it's enough to add the folder, all of the files inside it will then get added automatically
 - Look at the git log
 
-### Tehtävä 7: gitk
+### Task 7: gitk
 
 You can also view the git commits graphically using the `gitk` tool. This is optional.
 This tool should work natively on Windows and Linux, and can be installed [like this on Mac](https://www.geekbitzone.com/posts/git/gitk-for-macos/).
@@ -376,7 +376,7 @@ You can do the following tasks either using Gitk or using the terminal, in the s
 - Add and commit `file.txt`
 - You will be able to see the difference between the versions in Gitk or sourcetree. You can also view the difference in the terminal using the command `git diff HEAD~1`.
 
-### Task 8: Deleting and renaming file
+### Task 8: Deleting and renaming files
 
 - Delete the `second.txt` file
 - Run `git status`
@@ -474,7 +474,7 @@ Here is a diagram explaining the above process:
 
 ![]({{ "/assets/images/v1-RestoreGit.png" | absolute_url }})
 
-### Task 11: Harjoittelua
+### Task 11: More practice
 
 - Make a `files` folder in your repository and inside it creat the files `file1`, `file2`, and `file3`
 - Add different contents to each file
@@ -559,7 +559,7 @@ Please make sure you have the correct access rights
 and the repository exists.
 ```
 
-### Tehtävä 13: Julkinen avain
+### Task 13: Public key
 
 Pushing does not work. GitHub wants to authenticate us using a public key, but we haven't told it what our public key is.
 
@@ -596,7 +596,7 @@ Now, pushing should work. Refresh your GitHub repository page to see the uploade
 
 - Make a folder named `exercises` in the new repository
   - Inside it, make a folder named `week1`
-  - At the end of the command line practice, there was the following instruction: "Go to the _home folder_ and run the command _tree courses_. Copy-paste this to a safe place, you will need it later."
+  - At the end of the command line practice, there was the following instruction: "Go to the _home folder_ and run the command `tree courses`. Copy-paste this to a safe place, you will need it later."
   - Make a file named `commandline.txt` inside of the `exercises/week1` folder. Paste the output of this `tree` command into this file.
   - At the end of the git practice section, you were told to store the output of `git log --stat | cat`
   - Make a file named `gitlog.txt` inside of the `exercises/week1` folder. Paste the output of this `git log` command into this file.

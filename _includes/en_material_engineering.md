@@ -48,7 +48,7 @@ Software requirements also include _environmental constraints_. The following co
 
 The user interface of the application is usually outlined during the specification phase.
 
-In previous versions of the course, user requirements were documented [as use cases](https://en.wikipedia.org/wiki/Use_case). In this course, we will take a slightly lighter approach, and record the desired functionality of the system as a free-form feature list using bullet points. See the example [specificatio ndocument]({{include.reference_app_url}}/blob/master/dokumentaatio/vaatimusmaarittely.md) for details.
+In previous versions of the course, user requirements were documented [as use cases](https://en.wikipedia.org/wiki/Use_case). In this course, we will take a slightly lighter approach, and record the desired functionality of the system as a free-form feature list using bullet points. See the example [specification document]({{include.reference_app_url}}/blob/master/dokumentaatio/vaatimusmaarittely.md) for details.
 
 ### Design
 
