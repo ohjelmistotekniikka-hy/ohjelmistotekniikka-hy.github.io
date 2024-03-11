@@ -1027,95 +1027,102 @@ One final goal of the project is to produce a program, which you could give to a
 
 A good level of documentation can be seen in the [reference project]({{site.python_reference_app_url}}).
 
-### Hyvän aiheen ominaisuudet
+### Good traits for a successful project
 
-- **Itseäsi kiinnostava aihe**
-  - Innostava aihe auttaa huonoinakin hetkinä
-- "Riittävän laaja"
-  - Vältä eeppisiä aiheita, aloita riittävän pienestä. Yksi periodi on yllättävän lyhyt aika
-  - Valitse kuitenkin aihe, jonka perustoiminnallisuuden saa toteutettua nopeasti, mutta jota saa myös laajennettua helposti
-  - Hyvässä aiheessa on muutamia logiikkaluokkia, tiedoston tai tietokannankäsittelyä ja logiikasta eriytetty käyttöliittymä
-- Kurssilla pääpaino on Ohjelmoinnin Perusteissa ja Jatkokurssilla opituissa asioissa
-  - Käytettävyys
-  - Toimivuus ja varautuminen virhetilanteisiin
-  - Luokkien vastuut
-  - Ohjelman selkeä rakenne
-  - Laajennettavuus ja ylläpidettävyys
-- **Tällä kurssilla ei ole tärkeää:**
-  - Tekoäly
-  - Grafiikka
-  - Tietoturva
-  - Tehokkuus
-- **HUOMIO!** Kannattaa yrittää välttää aiheita, joissa pääpaino on tiedon säilömisessä tai käyttöliittymässä. Paljon tietoa säilövät, esim. yli 3 tietokantataulua tarvitsevat sovellukset ovat vaikeita testata tämän kurssin esitietovaatimusten puitteissa, ja ne sopivat yleensä paremmin kurssille Tietokannat ja web-ohjelmointi. Käyttöliittymäkeskeisissä aiheissa (esim. tekstieditori) voi olla vaikea keksiä sovelluslogiikkaa, joka on enemmän tämän kurssin painopiste (myös siksi koska käyttöliittymää ei tällä kurssilla testata ja testaus on kurssin keskeinen aihe - jos ei ole sovelluslogiikkaa, on vaikea myös kirjoittaa sille testejä)
+- **A topic that interests you**
+  - A topic that is exciting to you will help you in bad times
+- "Broad enough"
+  - Avoid giant epic project ideas; start small. One term is a surprisingly short time
+  - Choose a topic for which you can implement the core functionality quickly, but that you can expand later on
+  - Possibility for multiple logic classes, manipulating files or databases, and a UI that is separate from the program logic
+- The main concepts used in your projects should be familiar from the Introduction to Programming and Advanced Course in Programming courses
+  - Useability
+  - Functionality, managing errors
+  - Classes and their responsibility
+  - Clear program structure
+  - Expandability, maintainability
+- **The following are not important:**
+  - Artificial intelligence
+  - Graphics
+  - Cyber security
+  - Efficiency
+- **Note:** Avoid projects that purely focus on storing data or having a nice user interface.
+Projects that store lots of data, for example those that need more than 3 database tables, are hard to test and are more suitable for the Databases and Web Programming course.
+Projects that are purely focused on the user interface (for example a text editor) won't have much testable program logic, since the user interface is not tested in this course.
+The primary focus of this course is to write functional code and to test it using automated tests!  
 
-### Esimerkkejä aiheista
+### Examples of good projects
 
-Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erilaisia esimerkkejä, joista voi toteuttaa oman versionsa.
+You do not have to pick an idea from this list. However, these are examples of projects that have worked well in the past, so use them for inspiration.
 
-- Hyötyohjelmat
-  - Aritmetiikan harjoittelua
-  - Tehtävägeneraattori, joka antaa käyttäjälle tehtävän sekä mallivastauksen (esim. matematiikkaa, fysiikkaa, kemiaa, ...)
-  - Opintojen seurantajärjestelmä
-  - Code Snippet Manageri
-  - Laskin, funktiolaskin, graafinen laskin
-  - Budjetointisovellus
-  - HTML WYSIWYG-editor (What you see is what you get)
-- Reaaliaikaiset pelit
+- Useful apps
+  - Arithmetic trainer
+  - Problem generator, that gives the user a problem and a model solution (e.g. maths, physics, chemistry, ...)
+  - A tool to track your study progress
+  - Code snippet manager
+  - Calculator, functional calculator, graphing calculator
+  - Budgeting application
+  - WYSIWYG (What You See Is What You Get) editor for HTML code
+- Real-time video games
   - Tetris
   - Pong
   - Pacman
   - Tower Defence
   - Asteroids
   - Space Invaders
-  - Yksinkertainen tasohyppypeli, esimerkiksi The Impossible Game
-- Vuoropohjaiset pelit
-  - Tammi
-  - Yatzy
-  - Miinaharava
-  - Laivanupotus
-  - Yksinkertainen roolipeli tai luolastoseikkailu
+  - Simple platformer, e.g. The Impossible Game
+- Turn-based video games
+  - Checkers
+  - Yahtzee
+  - Minesweeper
+  - Battleships
+  - Simple RPG or dungeon crawler
   - Sudoku
-  - Muistipeli
-  - Ristinolla (mielivaltaisen kokoisella ruudukolla?)
+  - Memory game
+  - Tic-tac-toe (with an arbitrary playing field size?)
   - 2048
-- Korttipelit
+- Card games
   - En Garde
-  - Pasianssi
+  - Solitaire
   - UNO
   - Texas Hold'em
-- Omaan tieteenalaan, sivuaineeseen tai harrastukseen liittyvät hyötyohjelmat
-  - Yksinkertainen fysiikkasimulaattori
-  - DNA-ketjujen tutkija
-  - Keräilykorttien hallintajärjestelmä
-  - Pelin hahmogeneraattori, joka tallentaa tiedostoon (esim. D&D hahmolomake)
-  - Fraktaaligeneraattori
+- Useful apps related to your field of study or hobby
+  - Simple physics simulations
+  - DNA chain analyser
+  - Management app for collectible cards
+  - Player character generator, which saves data to a file (e.g. D&D player template)
+  - Fractal generator
 
-### Harjoitustyö 1: Alustava määrittelydokumentti
+### Practical work 1: Preliminary specification document
 
-Harjoitustyön tekeminen aloitetaan päättämällä aihe ja kuvaamalla se _alustavassa määrittelydokumentissa_, eli työlle tehdään [vaatimusmäärittely](/fi/tasks/week1#vaatimusmäärittely).
+You will begin working on the practical work by picking a topic and describing it in a _preliminary specification document_. That is, you will write a requirements definition for your project.
 
-Mikään ei tietenkään estä sitä, että aloitat jo ohjelmoinnin tai vaikkapa koodaat koko työn valmiiksi. Tämän viikon deadlinen pisteytyksessä ollaan kiinnostuneita ainoastaan määrittelydokumentista.
+Of course, nothing is stopping you from beginning to code or even finishing your whole project this week. However, points from this week are only awarded for a good specification document.
 
-**HUOM:** jos aloitat jo ohjelmoinnin, muista että ohjelmakoodi tulee kirjoittaa englanniksi! Ohjelman käyttöliittymä ja dokumentaatio voivat olla suomeksi tai englanniksi. Ohjeet ohjelmoinnin aloittamiseen löytyvät [viikon 3](/fi/tasks/week3#harjoitustyö) materiaalista.
+**Note:** if you start programming, remember that all of your code must be in English. The UI and documentation can be either in English or Finnish. You can find the instructions for programming in the [week 3](/en/tasks/week3) material.
 
-Palautus tapahtuu lisäämällä oman aiheen _alustava määrittelydokumentti_ ensimmäisen viikon [laskareiden](/fi/tasks/week1#labtool) päätteeksi [Labtooliin]({{site.labtool_link}}) rekisteröimääsi palautusrepositorioon.
+You will return your specification document by uploading it to the [exercise repository](/fi/tasks/week1#labtool) that you have registered in [Labtool]({{site.labtool_link}}) at the end of week 1.
 
-Määrittelydokumentti tehdään samaan tapaan kuin [referenssiprojektissa]({{site.python_reference_app_url}}/blob/master/dokumentaatio/vaatimusmaarittely.md) eli [markdown](https://guides.github.com/features/mastering-markdown/)-muodossa. Sijoita _vaatimusmaarittely.md_-tiedosto repositorioon _dokumentaatio_-hakemistoon ja lisää repositorion _README.md_-tiedostoon _vaatimusmaarittely.md_ -tiedostoon vievä linkki.
+The specification document is done in the same way as in the [reference project]({{site.python_reference_app_url}}/blob/master/dokumentaatio/vaatimusmaarittely.md), i.e. in [markdown](https://guides.github.com/features/mastering-markdown/).
+Place the `specification.md` file in the `documentation` folder of your repository and add a link to it in the `README.md` file.
 
-Määrittelydokumenttiin kannattaa ottaa mallia [referenssiprojektista]({{site.python_reference_app_url}}/blob/master/dokumentaatio/vaatimusmaarittely.md), eli sen tulee sisältää:
+You should use the [reference project's file]({{site.python_reference_app_url}}/blob/master/dokumentaatio/vaatimusmaarittely.md) as a guide. That is, your specification should contain the following sections:
 
-- _Sovelluksen tarkoitus_ eli pieni tekstuaalinen yleiskuvaus sovelluksesta
-- _Käyttäjät_ eli tieto erilaisista _käyttäjärooleista_, joita järjestelmässä on
-  - Tosin jos sovelluksessasi on vain yhdenlaisia käyttäjiä, ei kohtaa tarvita. Näin lienee tilanne monissa harjoitustöiden aiheissa kuten peleissä.
-- Suunnitellut toiminnallisuudet
-  - Toiminnallisuudet voi kuvata ranskalaisina viivoina samaan tapaan kuin referenssiprojektissa
-  - Referenssiprojektissa on kuvattu perusversion eli jo "kurssin alkupuolella" toteutettavan ydintoiminnallisuuden toiminnallisuudet tarkemmin
-  - Perusversiota laajentavat jatkokehitysideat ovat omassa listassaan
+- _The purpose of your project_, which is a short text description of what your project is
+- _Users_, which describes what kinds of _user roles_ your program's users will have
+  - For example, a study app could have the following roles: Student, Teacher, Administrator, Parent
+  - If your app only has one type of users, then you can skip this section. This is common especially in video game projects.
+- Planned features
+  - You can list these features as bullet points
+  - Describe the core functionality that you will have in greater detail
+  - Make a separate list for extension ideas that you can implement if you have extra time, after you have completed the main project 
 
-Voit myös tehdä referenssiprojektin tapaan _käyttöliittymäluonnoksen_, se ei ole kuitenkaan pakollinen.
+You can also make a _user interface mockup_ in the specification document. This is optional.
 
-### Harjoitustyö 2: Työaikakirjanpito
+### Practical work 2: Time tracking sheet
 
-Pidä säännöllisesti kirjaa käyttämistäsi työtunneista. Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa. **Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa.**
+Keep track of how many hours you have used on the project. The amount of hours you have used will not affect your grade. However, forgetting to track your time or not updating your time tracking sheet will cause you to lose points. **Do not log the time that you have used on the weekly exercises. Only log the time used for the practical work.**
 
-Lisää repositorion _README.md_-tiedostoon linkki [työaikakirjanpitoon]({{site.python_reference_app_url}}/blob/master/dokumentaatio/tuntikirjanpito.md) ja sijoita tiedosto _dokumentaatio_-hakemistoon.
+Make a `timetracking.md` file in the `documentation` folder of your repository.
+You can see an example of a good time tracking sheet [here]({{site.python_reference_app_url}}/blob/master/dokumentaatio/tuntikirjanpito.md).
+Add a link to this time tracking sheet in your `README.md` file.
