@@ -36,11 +36,13 @@ fi_times:
   - time: "Maanantaisin klo 14-16 kampuksella BK107-luokassa"
   - time: "Tiistaisin klo 10-12 kampuksella BK107-luokassa"
   - time: "Keskiviikkoisin klo 16-18 kampuksella BK107-luokassa"
+  - time: "Perjantaisin klo 10-12 kampuksella BK107-luokassa"
 
 en_times:
   - time: "Mondays 14-16 on campus in the BK107 class"
   - time: "Tuesdays 10-12 on campus in the BK107 class"
   - time: "Wednesdays 16-18 on campus in the BK107 class"
+  - time: "Fridays 10-12 on campus in the BK107 class"
 
 fi_lecture_time: 'maanantaina 11.3. klo 10.15 - 11.45'
 en_lecture_time: 'Monday 11.3. at 10.15 - 11.45'

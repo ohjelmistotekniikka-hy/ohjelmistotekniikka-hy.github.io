@@ -8,5 +8,5 @@
   - **NOTE:** any inappropriate, judgemental, or discriminatory speech is forbidden. Those who break the rules will be banned from the channel.
 - If you need help with the course, come to the **workshop sessions**: {% for time in site.en_times %}
   - {{ time.time }}{% endfor %}
-  - there is guidance between 11.3. - 30.4., but not on the week starting 1.4. due to Easter holidays
+  - there is guidance between 11.3. - 3.5., but not during 28.3.-2.4. due to Easter holidays
   - There is also online guidance available. You can book a time for it in [Moodle]({{site.moodle_link}}). Note that you can get better help in the workshop sessions!
