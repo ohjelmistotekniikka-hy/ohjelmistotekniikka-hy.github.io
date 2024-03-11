@@ -27,6 +27,7 @@ times:
   - time: "Maanantaisin klo 14-16 kampuksella BK107-luokassa"
   - time: "Tiistaisin klo 10-12 kampuksella BK107-luokassa"
   - time: "Keskiviikkoisin klo 16-18 kampuksella BK107-luokassa"
+  - time: "Perjantaisin klo 10-12 kampuksella BK107-luokassa"
 
 lecture_time: 'maanantaina 11.3. klo 10.15 - 11.45'
 lecture_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/tree/master/luennot/2024-kevat'
