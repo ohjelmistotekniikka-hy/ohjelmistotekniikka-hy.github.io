@@ -8,57 +8,62 @@ title: Week 1
 
 You will get 1 point for returning this week's exercises.
 
-## Kurssista
+## About the course
 
-Kurssin nimi on muuttunut syksyllä 2023: vanha nimi oli Ohjelmistotekniikka. Kurssin oppimistavoitteet ovat edelleen suunnilleen samat kuin aiemmin. Kurssin suoritettuaan opiskelija
+This is a new English translation of the Finnish software development project course. Please report any issues to the teacher or directly on GitHub. Instructions are at the bottom of the page!
 
-- Tuntee ohjelmistotuotantoprosessin vaiheet
-- On tietoinen vesiputousmallin ja ketterän ohjelmistotuotannon luonteesta
-- Osaa soveltaa versionhallintaa osana ohjelmistokehitystä
-- Osaa soveltaa UML-mallinnustekniikkaa vaatimusmäärittelyssä ja ohjelmiston suunnittelussa tarkoituksenmukaisella tavalla
-- Tuntee ohjelmiston testauksen eri vaiheet
-- Osaa soveltaa automatisoitua testausta yksinkertaisissa ohjelmistoprojekteissa
-- Tuntee tärkeimpiä ohjelmiston suunnitteluperiaatteita ja osaa soveltaa niitä yksinkertaisissa projekteissa
+After completing the course, you will
+- Know the process behind software development
+- Be familiar with the waterfall and agile model of software development
+- Be able to use version control for software development
+- Be able to use the UML-modelling technique for requirements specification and project planning
+- Be familiar with the different steps behind testing
+- Be able to implement automated tests for simple software projects
+- Know the principles behind software plannign and be able to apply them to simple projects
 
-Kurssin esitietoina ovat kurssit Tietokone työvälineenä, Ohjelmoinnin jatkokurssi, Tietokantojen perusteet sekä Tietokannat ja web-ohjelmointi. Oletuksena on, että näistä kaikista on käyty suhteellisen tuore versio ja että opittu on vielä hyvin mielessä.
+The prerequisites for the course are Computing Tools for CS students, Advanced Course in Programming, Introduction to Databses as well as Databases and Web Programming. As all of these courses are not available to English-speaking students, it is OK to participate in this course without having met all of the prerequisites.
 
-Kurssin ensimmäisen kolmen viikon aikana harjoitellaan yksikkötestausta ja UML-kaavioiden tekemistä. Myös komentorivistä ja versionhallinnasta on tehtäviä, mutta nämä ovat syksystä 2023 alkaen vapaaehtoisia muuttuneiden esitietovaatimusten takia. Toisesta viikosta alkaen aloitetaan oman harjoitustyön tekeminen. Harjoitustyön tekemisen ohessa osoitetaan riittävä osaaminen kurssin oppimistavoitteiden suhteen, koetta kurssilla ei ole. Tarkemmat arvosteluperusteet [täällä](/fi/tasks/criteria).
+During the first three weeks, you will get to practice unit testing and making UML diagrams. There will also be tasks concerning version control, but these are optional if you have done the proper prerequisite courses. You will start your own project work during week 2. The project work will bring most of the grade for this course, and there is no exam. You can find the criteria for this course [here](/en/tasks/criteria).
 
-{% include fi_material_engineering.md reference_app_url=site.python_reference_app_url %}
+{% include en_material_engineering.md reference_app_url=site.python_reference_app_url %}
 
 ---
-## Ensimmäisen viikon harjoitukset
 
-Lue tehtävänannot kohdista **"Komentorivin harjoittelua"** ja **"Versionhallinta"**. Jos niissä käsitellyt asiat ovat tuttuja (kuten kurssin esitietovaatimuksien mukaan pitäisi olla), sinun ei tarvitse tehdä näitä harjoituksia. **Jos kuitenkin yhtään epäilet osaamistasi, tee harjoitukset tehtävänantojen mukaan!** Et saa siitä ylimääräisiä pisteitä, mutta tulet jatkossa tarvitsemaan vastaavia taitoja tällä kurssilla.
+## First week's tasks
 
-Mikäli komentorivi- ja versionhallintaharjoitusten asiat ovat tuttuja, **tee joka tapauksessa seuraavat asiat**:
-1. Luo paikallinen repositorio harjoitustyölle ja viikkoharjoituksille. Voit antaa sille nimeksi ot-harjoitustyo.
-2. Luo repositoriosi hakemistoon tiedosto *README.md*. Kirjoita sinne otsikko “Ohjelmistotekniikka, harjoitustyö” ja kerro yhdellä virkkeellä, mitä olet tekemässä (tämä saa vielä muuttua: harjoitustyön oikea alustava vaatimusmäärittely tulee vasta seuraavalla viikolla). Muotoile tekstisi markdown-notaatiota käyttäen siten, että mukaan tulee otsikon lisäksi tavallista tekstiä, joka sisältää lihavoituja ja kursivoituja osuuksia.
-3. Luo myös alihakemisto nimeltä *laskarit* ja lisää sinne tiedosto nimeltä *viikko1.md*. Kirjoita tiedostoon, että komentorivi ja versionhallinta ovat jo tuttuja.
-4. Lisää ja kommitoi *README.md* ja alihakemisto *laskarit* repositorioosi.
-5. Luo GitHub-repositorio ja liitä se paikallisen repositoriosi etärepositorioksi.
-6. Pushaa paikallisen repositoriosi sisältö GitHubiin.
-7. Editoi GitHubissa tiedostoa README.md: lisää siihen linkki alihakemistoon *laskarit*.
-8. Rekisteröi omat tietosi ja luomasi GitHub-repositorio [Labtooliin]({{site.labtool_link}}).
+Read the tasks under the **"Command line basics"** and **"Version control"** sections.
+If you are familiar with everything covered there, you do not need to do these tasks.
+**If you at all doubt your skills, do all of the tasks in each section!** You will not get points for this; however, you will be using these skills throughout the course. Thus, you need to be very familiar with how these basics work in order to succeed in the upcoming weeks.
 
-(Ensimmäisen viikon harjoituspisteeseen siis riittää edellä lueteltujen asioiden tekeminen. Jos et osaa tehdä niitä, toimi alla olevien komentorivi- ja versionhallintaharjoitusten ohjeiden mukaisesti ja saat harjoituspisteen sitä kautta.)
+In case you are already familiar with the two section, **you must still do the following**:
+1. Create a local Git repository for your practical work and weekly exercises. You can call it `software-development-project`, for example.
+2. Create a `README.md` file in your repository. Give it the title "Software development, practical work" and write a one-sentence description of your project (this can later change, of course). Format the document using Markdown, so that there is some **bolded** and _italic_ text.
+3. Create a subdirectory with the name `exercises` and add a file called `week1.md`. Write in this file that you are already familiar with the command line and version control.
+4. Add and commit all of the files to your repository
+5. Create a GitHub repository
+6. Push your local repository to it
+7. Edit the `README.md` file on GitHub and add a link to the `laskarit` folder to it.
+8. Register your personal information and the GitHub repository link in [Labtool]({{site.labtool_link}}).
 
-Koska säästit aikaa komentorivi- ja versionhallintaharjoitusten sivuuttamisella, tutustu jo alustavasti seuraavan viikon kurssimateriaaliin.  Sivun loppupuolelta löydät ohjeita harjoitustyön aiheenvalintaan ja alustavan määrittelydokumentin kirjoittamiseen. Mieti, miten aiot harjoitustyössäsi edetä ja näetkö siinä joitain ongelmallisia kohtia. Mikäli niin haluat, mikään ei estä sinua jo käytännössä tekemästä 2. viikon harjoituksia ja/tai harjoitustyösi määrittelydokumenttia. Ne kuitenkin arvioidaan vasta kurssin toisen viikon jälkeen.
+(To get the first week's exercise points, it is enough to do the above. If you do not know how to do the above, follow the instructions below, which will guide you through the whole process.)
 
-## Komentorivin harjoittelua (tee nämä harjoitukset jos ei tunnu tutulta)
+If you've skipped the first week, you can already start reading the tasks of week 2. However, note that these will only be graded during the second week's submission; do not do them now.
 
-Graafisten käyttöliittymien olemassaolosta huolimatta ohjelmistoalalla on edelleen erittäin tärkeää hallita komentorivin eli terminaalin käyttö. Opettele käyttämään "riittävästi" komentoriviä (ks. alla oleva lista). Opettelu käy ehkä helpoiten tekemällä Tietokone työvälineenä-kurssin ensimmäisen osan [_Komentorivi_](https://tkt-lapio.github.io/komentorivi/) tehtävät 1-13.
+## Command line basics (do this if you are not familiar with the tasks)
 
-Tämän tehtävän jälkeen sinun tulisi hallita seuraavat käsitteet:
+While there are many graphical interfaces these days, it's extremely important that every programmer knows how to use the _command line_ or _terminal_.
+If you have never used the terminal, you can find a good introduction [in the Computing Tools for CS Studies course](https://tkt-lapio.github.io/command-line/). You should look through tasks 1-13 to get a good grasp of the concepts needed.
+
+After this task you should be familiar with the following:
 
 - Root directory
 - Home directory
 - Parent directory
 - Child directory
 - Working directory
-- .. ja \*
+- .. and \*
 
-Lisäksi sinun tulee osata käyttää seuraavia komentoja:
+In addition, you will need to know what the following commands do:
 
 - `pwd`
 - `cd`
@@ -69,126 +74,130 @@ Lisäksi sinun tulee osata käyttää seuraavia komentoja:
 - `rm`, `rm -r`
 - `mv`
 
-Tulet tarvitsemaan komentorivin käyttötaitoja tällä kurssilla ja muutenkin opinnoissasi.
+You will need to know how to use the command line during this course and in your future studies.
 
-### Tehtävä 1: Komentorivin harjoittelua
+### Task 1: Command line practice
 
-Saman Tietokone työvälineenä-kurssin materiaalin [toisesta osasta](https://tkt-lapio.github.io/git/) voi olla paljonkin hyötyä tässä ja seuraavissa tehtävissä.
+The [second part of the Computing Tools material](https://tkt-lapio.github.io/git-en/) can be of use here as well.
 
-Ota ssh-yhteys linuxpalvelimeen _melkki.cs.helsinki.fi_, _melkinpaasi.cs.helsinki.fi_ tai _melkinkari.cs.helsinki.fi_. Linuxilla, macilla ja Windows 10:llä yhteys otetaan komentoriviltä komennolla _ssh kayttajatunnus@palvelimenosoite_. Vanhemmilla Windows versioilla ssh-yhteyden ottaminen onnistuu esimerkiksi [putty:llä](http://www.putty.org).
+Create an ssh connection to `melkki.cs.helsinki.fi`, `melkinpaasi.cs.helsinki.fi`, or `melkinkari.cs.helsinki.fi`. On Linux, Mac, and Windows 10 this is achieved by opening the command line and running `ssh username@address`. On older Windows versions you will need to install [putty](http://www.putty.org).
 
-Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
+After you have connected, do the following:
 
-- Luo kotihakemistoosi hakemisto _kurssit_
-  - **HUOM:** joidenkin kohdalla melkillä on ollut ongelmia kotihakemiston asetuksissa ja esim. hakemiston luomisen seurauksena on virhe 'permission denied'. Jos törmäät ongelmaan, lähetä viesti osoitteeseen _it-support@cs.helsinki.fi_ ja raportoi ongelmaksi "ei oikeuksia kotihakemistoon melkillä"
-  - Kokeile myös jos kirjaantuminen toiselle koneelle, esim. _melkinpaasi.cs.helsinki.fi_ tuottaisi paremman tuloksen
-- Luo hakemistolle _kurssit_ alihakemisto _ot2023_
-- Ja luomallesi hakemistolle alihakemisto _viikko1_
-- Mene kotihakemistoosi ja luo sen alle hakemisto _temp_
-- Mene hakemistoon _temp_
-- Hae osoitteessa _https://raw.githubusercontent.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/master/materiaali/python/unicafe.zip_ oleva tiedosto [wget](https://en.wikipedia.org/wiki/Wget)-ohjelmalla
-  - Wget toimii siten, että sille annetaan ladattava tiedosto parametriksi
-- Haettu tiedosto on _zip-paketti_, pura se _unzip_-ohjelmalla
-  - Myös unzip toimii siten, että sille annetaan purettava tiedosto parametriksi
-- Komennon suorittamisen jälkeen hakemistoon on ilmestynyt hakemisto _unicafe_
-- Siirrä hakemisto hakemiston _kurssit/ot2023/viikko1_ alihakemistoksi
-- Poista zip-paketti
-- Poista hakemisto _temp_
+- Create a `courses` folder in your home directory
+  - **Note:** some people may get a 'permission denied' error. If this happens, contact _it-support@cs.helsinki.fi_ and tell them that you have "no permissions to the home directory on Melkki"
+  - Try also logging into another server, e.g. `melkinpaasi.cs.helsinki.fi`
+- Create a `softwaredev` folder under `courses`
+- Create a `week1` folder under `softwaredev`
+- Go back to your home directory and create a `temp` folder there
+- Go into the `temp` folder
+- Get the file at the `https://raw.githubusercontent.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/master/material/en_unicafe.zip` address using [wget](https://en.wikipedia.org/wiki/Wget)
+  - Wget works by giving it the URL as a parameter
+- Extract this zip file using the `unzip` command
+  - This also works by giving it the filename to unzip as a parameter
+- After running the program, there should be a `unicafe` folder
+- Move the folder to be under `courses/softwaredev/week1`
+- Delete the zip-file
+- Delete the `temp` folder
 
-**Mene tämän jälkeen _kotihakemistoon_ ja anna komento _tree kurssit_. Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin.**
+**Go to the _home folder_ and run the command _tree courses_. Copy-paste this to a safe place, you will need it later.**
 
-### Tab complete
+### Tab completion
 
-Komentoriviä käyttäessä kannattaa ehdottomasti totutella _tab-completen_ käyttöön. _Tab_ on näppäin, joka näyttää suunnilleen seuraavalta
+You should **always use tab completion when possible**! The tab key looks something like this:
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/tab.jpg)
 
-Tab:ia painamalla voit komentorivillä täydentää kirjoittamasi komennon nimen tai parametrin. Esim. jos olet siirtymässä hakemistoon nimeltään _ohjelmistotekniikka-syksy-2020_, riittää, että kirjoitat `cd oh` ja painat tabia. Jos hakemistossasi ei ole muita tiedostoja tai hakemistoja, jotka alkavat merkeillä _oh_, nimi täydentyy. Jos on, niin voit joutua kirjoittamaan merkin tai kaksi lisää. Jos tiedostoja on useampia etkä ole varma oikeasta nimestä, painamalla tabia useamman kerran näet mahdolliset vaihtoehdot.
+By pressing tab, you can complete a command or parameter name so that you don't have to write it yourself.
+For example, if you are changing into a directory called `software_development_spring_2024_final_submission_1`, it is enough for you to write `cd sof` and press tab. If there are no other files or folders starting with `sof` in the same directory, then the name will autocomplete. If there are, you may have to write a few more letters. You can also see all the different options by pressing tab multiple times.
 
-Myös komentojen nimet voi täydentää tab-completella. Esim. haluat avata _chromium-browser_ web-selaimen komentoriviltä, riittää että kirjoitat _chro_ ja painat tabia. Komennon nimi täydentyy.
+You can also autocomplete command names using tab completion. For example, to open the `chromium-browser` app, you can write `chro` and press tab. The full name autocompletes.
 
-Ei pidä myöskään unohtaa _nuolta ylöspäin_. Sen avulla voit selata aiemmin kirjoittamiasi komentoja.
+You should also use the **up arrow** to cycle through the previous commands you have typed.
 
-### Yhtäaikaiset terminaalit ja terminaalin tabit
+### Terminal tabs
 
-Aloitteleva komentorivin käyttäjä pitää usein ainoastaan yhtä terminaali-ikkunaa kerrallaan auki. Useimmissa tilanteissa työtehosi moninkertaistuu, jos avaat useita terminaaleja näytöllä tai avaat yhteen terminaaliin useita "tabeja" eli välilehtiä. Uuden tabin saat avautumaan painamalla yhtä aikaa _ctrl_, _shift_ ja _t_ tai sovelluksen valikosta (joka laitoksen Linuxeissa sijaitsee ruudun yläreunassa).
+You can open multiple terminal tabs by clicking around in the terminal menu or by simply typing `CTRL+SHIFT+TAB`.
 
-## Versionhallinta (tee nämä harjoitukset jos ei tunnu tutulta)
+## Version control (do this if you are not familiar with the tasks)
 
-Tutustumme seuraavaksi versionhallintaan.
+We will now learn about version control.
 
-Mitä tarkoitetaan versionhallinnalla? Lainaus sivulta [https://www.atlassian.com/git/tutorials](https://www.atlassian.com/git/tutorials)
+What is version control? A quote from [https://www.atlassian.com/git/tutorials](https://www.atlassian.com/git/tutorials):
 
 > Version control systems are a category of software tools that help a software team manage changes to source code over time. Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.
 
-Vaikka ylläoleva puhuu versionhallinnasta ohjelmistotiimien yhteydessä, kannattaa versionhallintaa käyttää oikeastaan yhdenkin hengen projekteissa ja muunkinlaisen materiaalin, kuin koodin hallinnoimiseen. Esim. tämän kurssin kaikki materiaali on talletettu versionhallintaan.
+While the above talks about software development teams, you should always use version control even if you are coding on your own.
+This is very useful for having versions of both your code and of non-code files, such as documentation.
+In this course, you will be storing everything in version control.
 
-Nykyään suosituin versionhallintaohjelmisto on [git](https://git-scm.com). Tutustumme tänään gitin alkeisiin.
+The most popular modern version control system is [git](https://git-scm.com). Let's get familiar with how it works!
 
-**HUOM:** Git-tehtävät tulee tehdä tietokoneella, jolle on asennettu Git. Monilla macOS- ja Linux-käyttöjärjestelmien tietokoneilla Git on valmiiksi asennettuna. Asian voi tarkistaa suorittamalla oman tietokoneen terminaalissa komennon:
+**Note:** You must do these tasks on a computer with Git installed. This is the case on most Linux and Mac systems. If unsure, you can check whether it's installed by running the following command in your terminal:
 
 ```bash
 git --version
 ```
 
-Jos komento ei tulosta Git-version numeroa, tutustu [Git-asennusohjeisiin](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Windows-tietokoneilla asennuksessa ja komentojen suorituksessa voi käyttää esimerkiksi [Windows Subsystem for Linux](https://tkt-lapio.github.io/#windows-subsystem-for-linux) -työkalua.
+If this does not output a version number, follow the [Git installation instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). On Windows, it is easiest to just use [Windows Subsystem for Linux](https://tkt-lapio.github.io/en/#windows-subsystem-for-linux).
 
-Jos komennon tulostama gitin versio taas on pienempi kuin 2.23.0, seuraavissa tehtävissä käytetty `git restore` -komento ei toimi. Voit kuitenkin käyttää `git reset HEAD`- ja `git checkout` -komentoja, joista saat lisätietoa [Tietokone työvälineen -kurssin materiaaleista](https://tkt-lapio.github.io/git/).
+If the git version is less than 2.23.0, you will not be able to use the `git restore` command in the upcoming sections. You can still use the `git reset HEAD` and `git checkout` commands, however. Further information can be found in the [Computing Tools material](https://tkt-lapio.github.io/git-en/).
 
-### Tehtävä 2: Git-konfiguraatioita
+### Task 2: Configuring Git
 
-Avaa terminaali omalla koneellasi. **Seuraavat tehtävät tehdään siis paikallisesti, ei melkillä!**
+Open the terminal on your own computer. **The following is done locally on your computer, NOT on Melkki!**
 
-Määrittele gitille **oma nimesi** sekä **käyttämäsi email-osoite** antamalla komennot:
+Tell Git **your username** and **email** by running:
 
 ```
  git config --global user.name "Your Name"
  git config --global user.email you@example.com
 ```
 
-Varmista komennolla `git config -l`, että määrittelyt menivät oikein.
+Ensure that the configuration is correct by running `git config -l`.
 
-Määritellään vielä git käyttämään sopivia värejä komennolla `git config --global color.ui` ja **vaihdetaan gitin käyttämäksi oletuseditoriksi nano** komennolla `git config --global core.editor nano`
+Tell Git to use colours using `git config --global color.ui` and **set the default text editor to Nano** using `git config --global core.editor nano`
 
-Jos käytät vimiä, voit jättää oletuseditorin muuttamatta.
+If you prefer using Vim, you can leave the latter unchanged.
 
-Tee vielä seuraava konfiguraatio:
+Also, run the following command:
 
 ```
 git config --global push.default matching
 ```
 
-Tämä liittyy `git push`-komennon oletusarvoiseen toiminnallisuuteen. Komennosta lisää myöhemmin.
+This will change how the `git push` command behaves. More on this later.
 
-### Tehtävä 3: Repositorio
+### Task 3: Repository
 
-Tee nyt sopiva hakemisto gitin harjoittelua varten ja mene hakemistoon, eli anna esim. komennot:
+Make a folder for practicing to use Git and move into it:
 
-- `mkdir ot_viikko1`
-- `cd ot_viikko1`
+- `mkdir git_practice`
+- `cd git_practice`
 
-**HUOM:** varmista nyt että olet luomassasi hakemistossa, eli jos suoritat komennon _ls_, ei hakemistossa pitäisi olla mitään.
+**Note:** ensure that there is nothing in the folder by running the `ls` command. This should output nothing.
 
-Luodaan hakemistosta paikallinen _git-repositorio_ antamalla komento `git init`
+Create a local git repository by running `git init`.
 
-Git ilmoittaa alustaneensa repositorion:
-
-```
-mluukkai@melkinpaasi:~/ot_viikko1$ git init
-Initialised empty Git repository in /home/ad/fshome4/u4/m/mluukkai/Linux/ot_viikko1/.git/
-```
-
-Jos katsot hakemiston sisältöä komennolla `ls -la` huomaat, että hakemiston sisälle on ilmestynyt hakemisto `.git`. Git käyttää luotua hakemistoa pitääkseen kirjaa repositorioon talletetuista tiedostoista.
-
-**HUOM:** koska hakemiston nimi (_.git_) alkaa pisteellä, ei komento `ls` näytä sitä oletusarvoisesti. Parametri _a_ näyttää myös pisteellä alkavat tiedostot ja hakemistot. Kokeile, miten `ls -a` ja `ls -la` eroavat toisistaan!
-
-Pysy edelleen repositorion sisältävässä hakemistossasi _ot_viikko1_.
-
-Luo hakemistoon tiedosto nimeltään _tiedosto.txt_, esim. komennolla `touch`. Luotuasi tiedoston, suorita komento `git status`:
+Git will tell you that it has initialised a repository:
 
 ```
-mluukkai@melkinpaasi:~/ot_viikko1$ touch tiedosto.txt
-mluukkai@melkinpaasi:~/ot_viikko1$ git status
+user@computer:~/git_practice$ git init
+Initialised empty Git repository in /home/ad/fshome4/u4/m/user/Linux/git_practice/.git/
+```
+
+Now, if you run the `ls -la` command, you should see that a new `.git` folder has appeared.
+Git uses this folder for all of it's internal functionality; don't touch it. 
+
+**Note:** since the folder name (`.git`) starts with a dot, the `ls` command will not show it by default. Try seeing how the `ls -l` and `ls -la` commands differ from each other!
+
+Remain in the `git_practice` directory.
+
+Make a new file called `file.txt`, e.g. by running `touch file.txt`. After this, run the `git status` command:
+
+```
+user@computer:~/git_practice$ touch file.txt
+user@computer:~/git_practice$ git status
 On branch master
 
 No commits yet
@@ -196,21 +205,21 @@ No commits yet
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-	tiedosto.txt
+	file.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
-mluukkai@melkinpaasi:~/ot_viikko1$
+user@computer:~/git_practice$
 ```
 
-Git ilmoittaa, että on olemassa tiedosto, joka on tilassa _untracked_, eli tiedostoa ei ole lisätty versionhallinnan pariin.
+Git will tell you that there is a file that is _untracked_, which means that it hasn't been added to version control yet.
 
-Kuten komennon tuloste kertoo, tiedoston lisääminen gitin alaisuuteen (...to include in what will be committed) tapahtuu komennolla `git add tiedosto.txt`
+Let's follow the instructions (...to include in what will be committed) and run `git add file.txt`.
 
-Suorita lisäys ja sen jälkeen komento `git status`:
+Then look at the status again with `git status`:
 
 ```
-mluukkai@melkinpaasi:~/ot_viikko1$ git add tiedosto.txt
-mluukkai@melkinpaasi:~/ot_viikko1$ git status
+user@computer:~/git_practice$ git add file.txt
+user@computer:~/git_practice$ git status
 On branch master
 
 No commits yet
@@ -218,342 +227,330 @@ No commits yet
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
-	new file:   tiedosto.txt
+	new file:   file.txt
 ```
 
-Git kertoo nyt, että _tiedosto.txt_ on niiden muutosten joukossa, jotka voidaan _commitoida_.
+Git now tells you that the file has been added and is ready to be _committed_.
 
-### Tehtävä 4: Commitit
+### Task 4: Commits
 
-Commitoimisella tarkoitetaan tiedostojen ja hakemistojen sekä niihin liittyvien muutosten tallentamista _git-repositorioon_.
+By committing, you are adding the changes you have made to the git repository.
 
-Suoritetaan commitointi antamalla komento `git commit -m "tiedosto.txt luotu"`
+Let's commit by running the command `git commit -m "Create file.txt"`
 
 ```
-mluukkai@melkinpaasi:~/ot_viikko1$ git commit -m "tiedosto.txt luotu"
-[master (root-commit) 0e12cfa] tiedosto.txt luotu
+user@computer:~/git_practice$ git commit -m "Create file.txt"
+[master (root-commit) 0e12cfa] Create file.txt
  1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 tiedosto.txt
+ create mode 100644 file.txt
 ```
 
-Suorita jälleen komento `git status`
+Run `git status` again:
 
 ```
-mluukkai@melkinpaasi:~/ot_viikko1$ git status
+user@computer:~/git_practice$ git status
 On branch master
 nothing to commit, working tree clean
 ```
 
-Git ilmoittaa, että _working tree clean_, eli hakemistosi on samassa tilassa kuin git-repositorio.
+Git tells you that the working tree is clean, which means that all of the changes have been committed and that your real directory is the same as what Git has stored in its memory.
 
-### Tehtävä 5: Working directory, index ja staging
+### Task 5: Working directory, index and staging
 
-**Muista käyttää tab-completea tehtäviä tehdessäsi!**
+**Remember to use tab completion and the up arrow!**
 
-Kun teet muutoksia hakemistosi alla oleviin tiedostoihin (tai hakemistoihin), kohdistuvat muutokset _working directoryyn_ eli työhakemistoon.
+When you make changes to files, these are reflected only in your _working directory_ (i.e. the computer's file system).
 
-- Tee jokin muutos tiedostoon tiedosto.txt
-  - Käytä tiedostojen editointiin _nano_-editoria. Editori käynnistyy komentoriviltä komennolla _nano tiedosto.txt_
-  - Saat tallennettua nanossa tiedoston painamalla yhtä aikaa _ctrl_ ja _o_
-  - Editori sulkeutuu painamalla _ctrl_ ja _x_
-- Luo hakemistoon uusi tiedosto, nimeltään _toinen.txt_
+- Make a change to file.txt
+  - Use the command `nano file.txt` to open an editor and write a few lines of whatever text you want
+  - Save by pressing `CTRL+O`
+  - Close by pressing `CTRL+X`
+- Make a new file called `second.txt`
 
-Suorita jälleen `git status`
+Run `git status`:
 
 ```
-mluukkai@melkinpaasi:~/ot_viikko1$ git status
+user@computer:~/git_practice$ git status
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
-	modified:   tiedosto.txt
+	modified:   file.txt
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-	toinen.txt
+	second.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Git ilmoittaa nyt, että uusi tiedosto on _untracked_ ja että aiemmassa tiedostossa on muutoksia, jotka eivät ole _staged for commit_.
+Git now tells you, that there is a new _untraced_ file and that there are changes to an already tracked file, that are not yet _staged for commit_.
 
-Toimitaan ohjeen mukaan eli lisätään muutokset ja uusi tiedosto commitoitavien joukkoon. Molempien tiedostojen yhtäaikainen "addaaminen" onnistuu komennolla `git add .`
+Let's add all of our changes to the staging area. You can do a bulk-add of all the files in the folder by running `git add .`
 
-Tarkistetaan taas tilanne komennolla `git status`
+Run `git status` again:
 
 ```
-mluukkai@melkinpaasi:~/ot_viikko1$ git status
+user@computer:~/git_practice$ git status
 On branch master
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
-	modified:   tiedosto.txt
-	new file:   toinen.txt
+	modified:   file.txt
+	new file:   second.txt
 ```
 
-Sekä muutos että uusi tiedosto ovat nyt valmiina committoitavaksi.
+Now both the changes in the old file and the new file are ready to commit.
 
-Committointi onnistuu komennolla `git commit`. Kuten edelliselläkin kerralla, annetaan komennolle parametrina _commit-viesti_, eli merkkijono, joka kuvaa mitä muutoksia uusi commit tuo edelliseen nähden:
+You can commit your changes again using the `git commit` command. As before, you must give it a _commit message_ which is a string that tells people what changes you have made:
 
-`git commit -m "muutos ja lisäys"`
+`git commit -m "Add second.txt and change file.txt"`
 
-Tarkasta committoinnin jälkeen jälleen tilanne komennolla `git status`.
+Run `git status` again.
 
-**HUOM** jos suoritat commitoinnin vahingossa ilman commit-viestiä, eli parametria `-m`, avaa git tekstieditorin ja olettaa että haluat kirjoittaa commit-viestin editoriin. Jos et määritellyt alun ohjeen mukaan gitille editoriksi nanoa, avautuu oletusarvoinen editori _vim_ ja joudut kenties googlaamaan, miten pääset pois editorista.
+**Note:** if you forget to put `-m "Commit message"`, Git will open a text editor and will assume that you want to write a commit message there. If you did not change the editor in the beginning, you will find yourself inside _vim_ and will probably need to Google how to get out of it.
 
-Tiedostot ja niihin tehdyt muutokset voivat siis olla gitin suhteen _kolmessa eri tilassa_.
+Files and changes to them can be in _three different states_ according to Git.
 
-- Aluksi tiedostot (tai niihin tehdyt muutokset) ovat vain _working directoryssä_ ja git ei noteeraa niitä ennen kuin ne lisätään komennolla `git add`
-- Tämän jälkeen tiedostot ovat valmiina commitoitavaksi. Gitin terminologian mukaan valmiina committoitavaksi olevat tiedostot ovat _staging_-alueella
-- Komento `git commit` siirtää stagingissa olevat muutokset repositorioon eli luo uuden _commitin_
+- First, files and their changes are only on the _working directory and Git does not see them until you run the `git add` command on them
+- After this, the files are ready to commit. In Git terms, the changes that are ready to commit are in the _staging area_.
+- The `git commit` command moves the changes from the staging area to the repository and creates a new _commit_. Every commit has a message that describes what changes have been made.
 
-Seuraava kuva havainnollistaa sitä, miten tiedoston _tila_ vaihtuu git-komentoja tekemällä.
+The following picture describes the whole process:
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/lh3-2.png)
 
-Kun tiedosto luodaan, menee se gitin _working directoryyn_. Komennolla _git add_ tiedosto siirtyy _staging_-alueelle, eli valmiiksi committointia varten. Stagingissa oleva tiedosto viedään (eli "commitoidaan") repositorioon komennolla _git commit_. Kun committoitua tiedostoa taas editoidaan, menevät muutokset jälleen _working directoryyn_.
-
 ### Git log
 
-Jokainen komennon _git commit_ suorittaminen siis synnyttää repositorioon uuden commitin, eli uuden "tilan". Komennolla `git log` on mahdollista nähdä, mitä committeja repositorio sisältää:
+Each new `git commit` creates a new commit, or a new state for your repository.
+We can view a list of past commits by running `git log`:
 
 ```
-mluukkai@melkinpaasi:~/ot_viikko1$ git log
+user@computer:~/git_practice$ git log
 commit 6aff75ab51d14d7cb9a72867ba13d9782d06c7ff (HEAD -> master)
 Author: Matti Luukkainen <mluukkai@iki.fi>
 Date:   Sun Oct 7 19:33:32 2018 +0300
 
-    muutos ja lisäys
+    Add second.txt and change file.txt
 
 commit 9e6a83d058c9564e8a390f8766845d45b365f360
 Author: Matti Luukkainen <mluukkai@iki.fi>
 Date:   Sun Oct 7 19:32:12 2018 +0300
 
-    tiedosto.txt luotu
-mluukkai@melkinpaasi:~/ot_viikko1$
+    Create file.txt
+user@computer:~/git_practice$
 ```
 
-Gitin logi kertoo jokaisen commitin ajan, tekijän, viestin ja _tunnisteen_. Tunnisteita käytetään, jos on esim. tarvetta palata johonkin vanhan commitin tilaan.
+Git's log tells you every commit's time, author, message, and _hash_. We will use the hashes later to revert to previous versions of the repository.
 
-Voit selata logia nuolinäppäimillä. Pääset ulos `git log`:ista painamalla _q_.
+You can navigate the log with the arrow keys, and exit by typing `q`.
 
-### Tehtävä 6: Harjoittelua
+### Task 6: Practice
 
-Muista käyttää komentoa `git status` mahdollisimman usein. Älä myöskään unohda tab-completea!
+Run the `git status` command as often as possible. Don't forget to tab complete!
 
-- Luo tiedosto _kolmas.txt_
-- Lisää se commitoitavaksi ja commitoi
-- Muuta tiedostojen _toinen.txt_ ja _kolmas.txt_ sisältöä ja commitoi muutokset
-- Luo hakemisto _stuff_ ja sen sisälle jokin tiedosto
-- Lisää muutokset committoitavaksi ja committoi
-  - Huomaa, että hakemiston lisääminen riittää, sen sisältämät tiedostot tulevat automaattisesti lisätyksi
-- Katso miltä git-logi näyttää
+- Create a file named `third.txt` and put some text in it
+- Add and commit it
+- Change the contents of `second.txt` and `third.txt` and commit the changes
+- Create a new folder called `stuff` and add some files with text in it
+- Add the changes and commit them
+  - Note that it's enough to add the folder, all of the files inside it will then get added automatically
+- Look at the git log
 
 ### Tehtävä 7: gitk
 
-Gitin committeja voi tarkastella myös graafisella _gitk_-komennolla.
-
-- `gitk`-komento toimii Windowsilla ainakin GitHub for Windowsin Git Shellissä.
-- Saat asennettua Maciin `gitk`:n [tämän ohjeen](https://www.geekbitzone.com/posts/git/gitk-for-macos/) avulla
-- Jos `gitk` ei jostain syystä toimi, voit asentaa [Sourcetree](https://www.sourcetreeapp.com)-työkalun
-
-Suorita komento repositoriossa:
+You can also view the git commits graphically using the `gitk` tool. This is optional.
+This tool should work natively on Windows and Linux, and can be installed [like this on Mac](https://www.geekbitzone.com/posts/git/gitk-for-macos/).
 
 ![]({{ "/assets/images/lh3-1.png" | absolute_url }})
 
-Vasemmalla yläkulmassa näet kaikki commitit. Uusin tilanne ylimpänä. Uusimman commitin nimi on _master_. Klikkaamalla commitia, näet muissa ikkunoissa commitiin liittyviä tietoja. Oikealla alakulmassa näet ne tiedostot, jotka ovat muuttuneet commitissa (jos valinta on _patch_) tai ne tiedostot, joita repositoriossa oli olemassa commitin aikana (jos valinta on _tree_). Vasemmassa alakulmassa pystyt tarkastelemaan commitin tiedostoihin tekemiä muutoksia tai tiedostojen tilaa commitin aikana. Valinnat ovat hieman hämäävät, sillä ne toimivat eri tavoin riippuen oikean puolen moodista.
-
-Vastaava näkymä OSX:n [Sourcetree](https://www.sourcetreeapp.com)-ohjelmalla tarkasteltaessa:
+Here is a similar view on OSX's [Sourcetree](https://www.sourcetreeapp.com) app:
 
 ![]({{ "/assets/images/lh1-1a.png" | absolute_url }})
 
-Seuraavaa tehtävää tehdessäsi kannattaa terminaaliin avata uusi välilehti, jotta voit pitää gitk:ta käynnissä.
+You can do the following tasks either using Gitk or using the terminal, in the same way you have done before. 
 
-- Kopioi tiedostoon _tiedosto.txt_ jostain paljon tekstiä ja commitoi tiedosto
-- Poista nyt osa tiedoston tekstistä ja lisää tiedostoon hieman lisää tekstiä
-- commitoi muutosten jälkeen
-- Päivitä gitk:n näkymä (file/update) ja katso miten muutokset näkyvät (tarkastele kahta ylintä committia)
-  - Valitse oikeasta alakulmasta _patch_ ja vasemmasta _diff_
-  - Näin näet commitin aiheuttamat muutokset [diff](https://fi.wikipedia.org/wiki/Diff)-muodossa
-  - Jos oikealta on valittuna _tree_, näkyy vasemmalla puolella (valinnasta riippumatta) tiedostojen commitin aikainen tilanne
-- Jos käytät sourcetreetä, sen pitäisi päivittyä automaattisesti ja näyttää muutos _diff_-muodossa
+- Copy a load of text from somewhere online and paste it into `file.txt`
+- Add and commit `file.txt`
+- Remove part of the text and add some more text
+- Add and commit `file.txt`
+- You will be able to see the difference between the versions in Gitk or sourcetree. You can also view the difference in the terminal using the command `git diff HEAD~1`.
 
-### Tehtävä 8: Tiedoston poistaminen ja uudelleennimentä
+### Task 8: Deleting and renaming file
 
-- Poista tiedosto _toinen.txt_
-- Suorita `git status`
-- Commitoi muutos
-  - Poista ensin tiedosto gitin alaisuudesta komennolla `git rm`
-- varmista komennolla `git status`, että kaikki on niinkuin kuuluukin
-- muuta tiedoston _tiedosto.txt_ nimeksi _eka.txt_
-  - uudelleennimentä tapahtuu komennolla `mv`
-- Suorita `git status`
-  - Miten git käsittelee uudelleennimennän?
-- Commitoi muutos
+- Delete the `second.txt` file
+- Run `git status`
+- Commit the change
+  - Instad of `git add`, you will need to run `git rm`
+- Ensure that everything is as it should be using `git status`
+- Rename `file.txt` to `first.txt`
+  - You can rename a file using the `mv` command
+- Run `git status`
+  - How does Git treat renaming files?
+- Commit the changes
 
-### Tehtävä 9: git add -p
+### Task 9: git add -p
 
-- Tee jotain muutoksia tiedostoihin _eka.txt_ ja _kolmas.txt_
-  - Tee sekä lisäyksiä että poistoja
-- lisää ne commitoitavaksi komennolla `git add -p`
-  - Git näyttää nyt jokaisen tekemäsi muutoksen _patch_-muodossa ja pyytää varmistamaan lisätäänkö muutos commitoivaksi
-  - Hyväksy painamalla _y_ ja enter
-- Commitoi muutokset
-- Tee tiedostoihin tehtyjen muutosten commitoitavaksi lisääminen _aina_ komennolla `git add -p`, näin pääset tarkastamaan, että muutokset ovat juuri ne mitä oletat olevasi lisäämässä
-- Huomaa, että kokonaan uudet tiedostot eivät siirry committoitavaksi komennolla `git add -p`
+- Make a bunch of changes to `first.txt` and `third.txt`
+  - Make both additions and deletions
+- Add them to the staging area using `git add -p`
+  - Git now shows every change separately in _patch_ mode and asks whether you want to add it to commit
+  - Accept each one by pressing _y_ and enter
+- Commit the changes
+- Note that completely new files will not get added with `git add -p`
 
-### Tehtävä 10: Muutosten peruminen
+### Task 10: Undoing changes
 
-Joskus tiedostoihin tulee tehtyä muutoksia, jotka on tarpeen perua
+Sometimes, you make changes to files and then realise you want to get rid of them completely.
 
-- Tee nyt joku muutos tiedostoon _eka.txt_, **älä** lisää tiedostoa committoitavaksi
-- Suorita komento `git status`
+- Make some change to `first.txt`, **do not** add it to the staging area
+- Run `git status`
 
 ```
-mluukkai@melkinpaasi:~/ot_viikko1$ git status
+user@computer:~/git_practice$ git status
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
-	modified:   eka.txt
+	modified:   first.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Kuten oletettua, git kertoo että olemme tehneet muutoksia, jotka eivät ole "staged for commit", eli lisättyjä commitoitavaksi.
+As expected, git tells you that we have made changes that are not yet staged for commit.
 
-- Päätetäänkin perua muutokset. Se onnistuu komennolla `git restore eka.txt`
-- Kun suoritat uudelleen komennon `git status` huomaat, että working directory ei enää sisällä muutoksia:
+- We now decide that we want to get rid of these changes. Run `git restore first.txt`
+- When we run `git status` again, we notice that the changes are undone and that the working directory is clean:
 
 ```
-mluukkai@melkinpaasi:~/ot_viikko1$ git restore eka.txt
-mluukkai@melkinpaasi:~/ot_viikko1$ git status
+user@computer:~/git_practice$ git restore first.txt
+user@computer:~/git_practice$ git status
 On branch master
 nothing to commit, working trean clean
 ```
 
-- Varmista vielä, että tiedoston sisältö on sama kuin ennen muutoksia
+- Check again that the file contents have been restored
 
-Myös stagingiin viety eli valmiina committoitavaksi oleva muutos voidaan perua.
+We can also undo a change that has been added, but not committed.
 
-- Tee muutoksia tiedostoon _kolmas.txt_ ja lisää se committoitavaksi. **Älä** kuitenkaan committoi.
-- Git statuksen pitäisi näyttää seuraavalta
+- Make changes to `third.txt` and add it to the staging area. **Do not** commit.
+- The Git status should show the following:
 
 ```
-mluukkai@melkinpaasi:~/ot_viikko1$ git status
+user@computer:~/git_practice$ git status
 On branch master
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
 
-	modified:   kolmas.txt
+	modified:   third.txt
 
-mluukkai@melkinpaasi:~/ot_viikko1$
+user@computer:~/git_practice$
 ```
 
-Ohje muutoksen perumiseen löytyy git statuksen tulosteesta.
+We can see the undo instruction from git's output.
 
-- Suorita muutokset peruva komento `git restore --staged kolmas.txt`
-- Katsotaan jälleen `git status`
+- Run `git restore --staged third.txt`, as the instructions say
+- Let's look again at `git status`
 
 ```pre
-mluukkai@melkinpaasi:~/ot_viikko1$ git status
+user@computer:~/git_practice$ git status
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
 
-	modified:   kolmas.txt
+	modified:   third.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Tiedosto ei siis enää ole _staged_-tilassa, muutokset ovat kuitenkin _working directoryssä_, eli jos katsot tiedoston sisällön, muutokset ovat vielä olemassa
+Now, the file is not staged, but it is in the working directory. We can reset it in exactly the same way as we did before:
 
-- Pääset perumaan muutokset kokonaan antamalla komennon `git restore kolmas.txt`
-- Varmista, että tiedosto on palannut muutoksia edeltävään tilaan
+- Run `git restore third.txt`
+- Run `git status`
+- Ensure that the file contents have actually been reset
 
-Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on lisätty committoitavaksi, eli se on _staged_, voidaan muutos perua komennolla `git restore --staged`. Tällöin muutokset kuitenkin vielä jäävät tiedostoon, eli ovat _working directoryssä_. Tiedosto saadaan palautettua repositoriossa olevaan edellisen commitin tilaan komennolla `git restore`.
+Here is a diagram explaining the above process:
 
 ![]({{ "/assets/images/v1-RestoreGit.png" | absolute_url }})
 
-### Tehtävä 11: Harjoittelua
+### Task 11: Harjoittelua
 
-- luo repositoriosi sisälle hakemisto _tiedostoja_ ja hakemiston sisälle tiedostot _file1_, _file2_ ja _file3_
-- commitoi muutokset
-  - muista miten pystyt lisäämään kokonaisen hakemiston sisällön commitoitavaksi yhdellä komennolla
-- muuta tiedoston _file1_ sisältöä ja poista tiedosto _file2_
-- peru muutokset!
-- muuta tiedoston _file3_ sisältöä, lisää commitoitavaksi
-- peru muutokset!
-- poista tiedosto _file1_ ja uudelleennimeä tiedosto _file2_ tiedostoksi _file22_
-- committoi
+- Make a `files` folder in your repository and inside it creat the files `file1`, `file2`, and `file3`
+- Add different contents to each file
+- Add and commit the changes
+  - Remember how you can add a whole folder of files all at once
+- Change the contents of `file1` and delete `file2`
+- Undo!
+- Change the contents of `file3`, add to the staging area
+- Undo!
+- Remove `file1` and rename `file2` to `file22`
+- Add and commit
 
-Suorita repositoriossa komento `git log --stat | cat` ja **ota komennon tulos talteen**, tulet tarvitsemaan sitä myöhemmin!
+Finally, run the `git log --stat | cat` command and **copy-paste the output to a safe place**, you will need it later!
 
-### Tehtävä 12: GitHub
+### Task 12: GitHub
 
-Gitin käytöstä on toki hyötyä jo harjoittelemallammekin tavalla, eli muodostamalla paikallisen koneen hakemistosta repositorio. Pääsemme kuitenkin nauttimaan kertaluokkaa suuremmista hyödyistä liittämällä repositoriomme internetissä olevaan _etärepositorioon_. Etärepositorion kautta repositorion tiedostot on helppo jakaa useiden koneiden tai/ja useiden käyttäjien kesken.
+All of the practice we have doen was on our local machine. However, for the purposes of this course, we will want to upload our code online for others to see. This is done easily using a [GitHub](https://github.com) repository.
 
-Internetin johtava paikka etärepositorioiden tallettamiseen on [GitHub](https://github.com)
+Before continuing, create a new folder on your machine (**outside** of the git practice folder we were just using) called `software-development-project`. Go inside it and run `git init` to make a new repository.
 
-Ennen GitHubin käytöönottoa, tee uusi git-repositorio paikalliselle koneelle, seuraavassa oletetaan että hakemiston nimi on _ot-harjoitustyo_.
+**Note: do not create the new repository inside the practice repository we were using above!**
 
-**HUOM: älä luo uutta repositoriota aiemmin tekemäsi harjoitusrepositorion sisälle!**
-
-Esim. seuraavat komennot siirtyvät kotihakemistoon, luovat sen alle hakemiston _ot-harjoitustyo_, siirtyvät hakemistoon, alustavat sen git-repositorioksi sekä lisäävät ja commitoivat yhden tiedoston repositorioon:
+The following commands, when run from the home directory, create a new folder, initialise it as a git repository, and create a new empty file called `README.md` inside it, which is added and committed.
 
 ```
 cd
-mkdir ot-harjoitustyo
-cd ot-harjoitustyo
+mkdir software-development-project
+cd software-development-project
 git init
 touch README.md
 git add .
-git commit -m "initial commit"
+git commit -m "Initial commit"
 ```
 
-Siirrytään sitten GitHubin käyttöön
+Let's now move onto GitHub.
 
-- Luo itsellesi tunnus GitHubiin (ellei sinulla jo ole tunnusta)
-- Luo uusi repositorio
-  - uuden repositorion luomistoiminto löytyy oikean ylänurkan plus-symboolin alta
-- **Älä laita rastia** kohtaan _Initialize this repository with a README_
+- Create a GitHub account if you do not have one already
+- Create a new GitHub repository
+  - You can find this under the plus symbol in the top-right corner
+- **Do not select** the _Initialize this repository with a README_ option
 
 ![]({{ "/assets/images/lh1-2a.png" | absolute_url }})
 
-- Luo repositorio painamalla vihreää _Create repository_ -nappia
+- Create the repository by pressing the green _Create repository_ button
 
-Seuraavaksi haluamme liittää GitHubiin luodun repositorion juuri luodun paikallisen koneen repositorion _ot-harjoitustyo_ etärepositorioksi.
+We now add the GitHub repository as a remote repository for our local repository.
 
-- Etärepositorion lisääminen onnistuu GitHubiin avautuvan näkymän ohjeiden mukaan
-- Varmista, että kohdasta "Quick setup..." on valittu **SSH**
+- The instructions on GitHub will tell you exactly how to do this
+- Ensure that the "Quick setup..." section has **SSH** selected
 
 ![]({{ "/assets/images/lh1-3a.png" | absolute_url }})
 
-- Kopioi ylempi rivi kohdasta _...or push an existing repository from the command line_
-- Omassa esimerkissäni rivi on
+- Copy the first line from the _...or push an existing repository from the command line_ section
+- In my own example, the command is the following:
 
 ```bash
 git remote add origin git@github.com:mluukkai/ot-harjoitustyo.git
 ```
 
-- Pastea rivi komentoriville ja suorita komento painamalla enter
-- Suorita komento `git remote -v`
-- Tulostus kertoo, että githubin etärepositorio on liitetty paikalliseen repositorioosi nimellä _origin_
+- Paste this onto the command line and run by pressing enter
+- Run `git remote -v`
+- This will tell you that the GitHub repository has been added under the name `origin`
 
 ```bash
-mluukkai@melkki:~/ot-harjoitustyo$ git remote  -v
+user@computer:~/ot-harjoitustyo$ git remote  -v
 origin	git@github.com:mluukkai/ot-harjoitustyo.git (fetch)
 origin	git@github.com:mluukkai/ot-harjoitustyo.git (push)
 ```
 
-- _Origin_ on etärepositorion oletusarvoinen nimi. Nimi voi olla mikä tahansa ja etärepositorioitakin voi olla useita
-- Voimme siirtää paikallisen repositoriomme tilan etärepositorioon komennolla `git push`
-  - Saatat joutua tekemään ensimmäisen pushin pidemmässä muodossa `--set-upstream origin master`. Käytettävän haaran nimi voi git-konfiguraatiosta riippuen olla myös <i>main</i>. Käytä siis muotoa `-set-upstream origin main`, jos edellä mainittu muoto ei toimi
-- Kokeillaan
+- `origin` is just the default name for a remote repository. You could have named it anything you like.
+- We can upload our current repository state to GitHub using the `git push` command
+  - On the first time, you may also need to append `--set-upstream origin master` or `--set-upstream origin main` to the end of the push command
+- Let's try!
 
 ```bash
-mluukkai@melkki:~/ot-harjoitustyo$ git push --set-upstream origin master
+user@computer:~/ot-harjoitustyo$ git push --set-upstream origin master
 Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
 Permission denied (publickey).
 fatal: Could not read from remote repository.
@@ -564,25 +561,23 @@ and the repository exists.
 
 ### Tehtävä 13: Julkinen avain
 
-Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](#tehtävä-14-lisää-tiedostoja).
+Pushing does not work. GitHub wants to authenticate us using a public key, but we haven't told it what our public key is.
 
-Pushaus ei toimi. Nyt kyse on siitä, että git haluaisi suorittaa [julkisen avaimen](https://the.earth.li/~sgtatham/putty/0.55/htmldoc/Chapter8.html) autentikoinnin. Se ei kuitenkaan onnistu koska emme ole kertoneet gitille julkista salausavaintamme.
-
-- Luo salausavain antamalla komentoriviltä komento `ssh-keygen`
-  - Voit vastata kaikkiin kysymyksiin enterillä
-- Syntyy kaksi salausavainta, salainen ja julkinen. Ne sijoitetaan kotihakemistosi alla olevaan hakemistoon _.ssh_
-- Mene hakemistoon ja katso hakemiston sisältöä
-- Tiedosto _id_rsa.pub_ sisältää julkisen avaimen, se on tarkoitus kopioida githubiin jotta avaimeen perustuva kirjautuminen onnistuisi
-  - Näet tiedoston sisällön komennolla _cat id_rsa.pub_
-- Anna komentoriviltä komento `ssh-add`
-- Mene GitHubin asetussivulle klikkaamalla oikean yläkulman symbolista ja valitsemalla _settings_
-- Valitse settingseistä _SSH and GPG keys_
-- Luo uusi _SSH-avain_
-  - Anna avaimelle joku _title_ (esim. laitos) ja kopioi tiedoston _id_rsa.pub_ sisältö kohtaan _key_
-- Suorita uudelleen `git push`:
+- Create a key by running `ssh-keygen`
+  - You do not need to type anything else, just press enter when it asks you questions
+- Your public and private keys are stored in the `.ssh` folder in your home directory
+- Navigate to this directory and list the files
+- The `id_rsa.pub` file contains your public key, which you need to copy
+  - You can view the contents by running `cat id_rsa.pub`
+- Run the `ssh-add` command
+- Go to GitHub, click on your profile picture in the top-right corner, and select "Settings"
+- Select _SSH and GPG keys_
+- Create a new _SSH key_
+  - Give it a title _title_ (e.g. "laptop key") and paste the contents of `id_rsa.pub` under the _key_ section
+- Run `git push` again:
 
 ```
-mluukkai@melkki:~/ot-harjoitustyo$ git push
+user@computer:~/ot-harjoitustyo$ git push
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 213 bytes | 106.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
@@ -595,67 +590,67 @@ To github.com:mluukkai/ot-harjoitustyo.git
 Branch master set up to track remote branch master from origin.
 ```
 
-Nyt kaikki näyttää toimivan.
+Now, pushing should work. Refresh your GitHub repository page to see the uploaded commits.
 
-### Tehtävä 14: Lisää tiedostoja
+### Task 14: More files
 
-- Tee juuri luodun repositorion sisälle hakemisto _laskarit_
-  - Ja sen sisälle hakemisto _viikko1_
-  - Komentorivitehtävien lopussa oli kehotus: Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. _Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
-  - Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _komentorivi.txt_ ja kopioi sinne komennon _tree_ tulos
-  - Edellisen tehtäväsarjan lopussa kehoitettiin tallentamaan harjoitusrepositoriossa annetun komennon `git log --stat | cat` tulos
-  - Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _gitlog.txt_ ja kopioi sinne githarjoittelun tulos
-- Kirjoita jotain tekstiä hakemiston juuressa olevaan tiedostoon README.md
-  - Muotoile tekstisi [markdown-notaatiota](https://guides.github.com/features/mastering-markdown/) käyttäen
-  - Tee tiedostoon esim. jokin otsikko, tavallista tekstiä, joka sisältää lihavoituja ja kursivoituja osuuksia
-  - Näemme pian tekstin ruudulla muotoiltuna
-- Commitoi muutokset
-  - Muista aina commitoinnin yhteydessä _lisätä_ tiedosto/muutokset commitoitavaksi
-- Pushaa koodi githubiin komennolla `git push`
+- Make a folder named `exercises` in the new repository
+  - Inside it, make a folder named `week1`
+  - At the end of the command line practice, there was the following instruction: "Go to the _home folder_ and run the command _tree courses_. Copy-paste this to a safe place, you will need it later."
+  - Make a file named `commandline.txt` inside of the `exercises/week1` folder. Paste the output of this `tree` command into this file.
+  - At the end of the git practice section, you were told to store the output of `git log --stat | cat`
+  - Make a file named `gitlog.txt` inside of the `exercises/week1` folder. Paste the output of this `git log` command into this file.
+- Write some text in the README.md file
+  - You must format it using the [markdown format](https://guides.github.com/features/mastering-markdown/)
+  - Use the [markdown format](https://guides.github.com/features/mastering-markdown/) reference to write a title, some text, some bolded text, and some italic text
+  - We will soon see it rendered on the screen
+- Commit
+  - Remember to add all the files first
+- Push the code to GitHub using `git push`
 
-### Tehtävä 15: Tiedostot GitHubissa
+### Task 15: Files in GitHub
 
-- Mene GitHub-repositoriosi sivulle
-  - Käytännössä tämä tapahtuu uudelleenlataamalla repositorion luomisen jälkeen avautunut sivu
-- Huomaat että tiedostot näkyvät nyt repositorion sivulla. Sivulle renderöityy repositorion juuressa olevan README.md:n sisältö markdown-muotoiltuna
-- Voit editoida repositoriossa olevia tiedostoja suoraan GitHubin editorilla menemällä tiedoston sivulle ja painamalla kynäsymbolia
-- Tee README.md:hen linkit repositorion hakemistossa _laskarit/viikko1/_ oleviin tiedostoihin _komentorivi.txt_ ja _gitlog.txt_
-  - Ohje linkin muodostamiseen löytyy [täältä](https://guides.github.com/features/mastering-markdown/)
-  - Tiedostojen urlin saat navigoimalla GitHubissa tiedostoon ja kopioimalla osoitteen selaimen osoiteriviltä
-- Repositoriosi tulee näyttää suunnilleen seuraavalta
+- Go to your GitHub repository page
+  - Or reload the page if you already have it open
+- You will see your files here. The contents of your README.md file will be rendered below.
+- You can edit file contents here directly by opening a file and pressing the pen symbol
+- In the `README.md` file, add links that point to the `exercises/week1/commandline.txt` and `exercises/week1/gitlog.txt` files
+  - You can get the file URLs by opening them in GitHub and simply copy-pasting the URL from the browser's address bar
+  - You can make a link in Markdown by following [these instructions](https://guides.github.com/features/mastering-markdown/)
+- Your repository should look more-or-less as follows:
 
 ![]({{ "/assets/images/lh1-4a.png" | absolute_url }})
 
-Jos teit kaiken oikein, pääset README.md:ssä olevia linkkejä klikkaamalla näkemään linkitettyjen tiedostojen sisällön.
+If everything worked correctly, clicking the links inside the README file will take you to the correct files directly.
 
-### Paikallisen repositorion ajantasaistaminen
+### Updating your local repository
 
-- GitHubissa tekemämme muutokset ovat tehneet etärepositorioon uuden commitin
-- Etärepositorio on nyt _edellä_ paikallista repositorioamme
-- Saamme tuotua muutokset paikalliselle koneelle komennolla `git pull`
-- Kokeile komentoa ja varmista, että muuttunut sisältö on nyt paikallisessa repositoriossa
+- The changes we made on GitHub have created a new commit
+- The remote repsitory is now _ahead_ of the local repository
+- You can copy the changes from GitHub to your computer using `git pull`
+- Do this and make sure the changes have actually been copied over
 
-### Tehtävä 16: Lisää GitHubia
+### Task 16: More GitHub
 
-- Tee paikallisella koneella jokin muutos esim. tiedostoon README.md
-- Lisää ja committaa muutos
-- Vie muutokset GitHubiin komennolla `git push`
-- Varmista GitHubista että muutokset näkyvät
-- Paikallinen repositoriosi ja GitHubin etärepositorio ovat jälleen samassa tilassa.
+- Make a change to the local repository, for example by adding something to the README file
+- Add and commit
+- Upload the changes to GitHub using `git push`
+- Ensure that the changes are visible
+- Your local and remote repositories are now in the same state again
 
-### Tehtävä 17: Paikallisen ja etärepositorion epäsynkrooni
+### Task 17: Desynchronisation
 
-- Joskus käy niin, että paikallinen ja etärepositorio menevät epäsynkroniin, siten että molempiin tehdään yhtäaikaa uusi commit
-- Luodaan tälläinen tilanne
-- Tee paikalliseen repositorioon muutos tiedostoon _README.md_, lisää ja committoi muutos
-  - **Älä** pushaa muutosta GitHubiin
-- Tee GitHubiin muutos **johonkin muualle** kuin README.md-tiedostoon
-  - editoi siis esim. tiedostoa _gitlog.txt_ hieman suoraan GitHubissa
-- Yritä nyt pushata paikallisen repositorion muutokset githubiin
-- Seurauksena on virheilmoitus
+- Sometimes, you may make a change locally, and a change remotely. In this case, we say that the local and remote repositories are out of sync.
+- Let's make this annoying situation happen on purpose
+- Make a change to `README.md` locally, add and commit
+  - **Do not** push this to GitHub
+- Make a change to **some other file** than the README directly on GitHub
+  - For example, make a small change to `gitlog.txt`
+- Try to run `git push`
+- You will get an error
 
 ```
-mluukkai@melkki:~/ot-harjoitustyo$ git push
+user@computer:~/ot-harjoitustyo$ git push
 To git@github.com:mluukkai/ot-harjoitustyo.git
  ! [rejected]        master -> master (fetch first)
 error: failed to push some refs to 'git@github.com:mluukkai/ot-harjoitustyo.git'
@@ -664,13 +659,13 @@ hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-mluukkai@melkki:~/ot-harjoitustyo$
+user@computer:~/ot-harjoitustyo$
 ```
 
-- Tulet törmäämään tähän varmaan useasti jatkossakin.
-- Ongelma ei ole paha. Koska paikalliset ja GitHubin muutokset ovat kohdistuneet **eri tiedostoihin**, selviämme helpolla
-- Ensin pullaamme muutokset paikalliseen repositorioon komennolla `git pull`
-- Saat suurella todennäköisyydellä seuraavan ilmoituksen
+- You will probably encounter this in the future
+- This is not a serious issue. As the changes have been made to **different files**, we can get off easy
+- Let us try to pull the remote changes using `git pull`
+- We will probably get the following error
 
 ```
 hint: You have divergent branches and need to specify how to reconcile them.
@@ -688,25 +683,25 @@ hint: invocation.
 fatal: Need to specify how to reconcile divergent branches.
 ```
 
-- Git kysyy millä tavalla sen pitäisi käsitellä kahden eri branchin eli "koodihaaran" yhdistämistilanne, tässä tapauksessa branchit ovat paikallisen koneen versio ja GitHubissa oleva versio (ks. halutessasi [täältä](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) lisää vaihtoehtojen eroista)
-- Valitaan ylin, eli annetaan komento `git config pull.rebase false`
-- Tehdään nyt uudelleen `git pull`
-  - Pullaaminen synnyttää ns. merge commitin, jolle joudumme määrittelemään commit-viestin avautuvaan editoriin
-  - Oletusarvoinen viesti käy, eli riittää että poistut editorista tallentaen muutokset
-- Ja pushaamme ne uudelleen githubiin
-- Nyt paikallinen ja etärepositorio ovat taas synkroonissa
-- Katso repositorion tilaa nyt komennolla `gitk`
-- Näet, että repositorion uusimmalla commitilla on nyt kaksi edeltäjää, paikallinen commit ja etärepositorion commit
+- Git will ask how we want to resolve the issue (you can find more info on the different methods [here](https://www.atlassian.com/git/tutorials/merging-vs-rebasing))
+- Let us pick the first by running `git config pull.rebase false`
+- Run `git pull` again
+  - Pulling will create a new commit that resolves the issue
+  - Save and exit out of the text editor
+- Push these changes to GitHub
+- The remote and local respositories are now in sync again
 
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-3.png" alt="alt text" width="800">
+If the changes had been made to the same file, we would have gotten a merge conflict. These always need to be resolved manually, and are somewhat tought to deal with. We will not discuss merge conflicts deeper during this course.
 
-Jos muutokset olisivat kohdistuneet samaan tiedostoon, olisi syntynyt hieman vakavampi tilanne, eli _merge-konflikti_. Konfliktit on pakko selvittää itse editorin avulla. On toki olemassa työkaluja, mergetooleja, jotka auttavat konfliktin selvittämisessä. Emme kuitenkaan mene tällä kurssilla merge-konflikteihin.
+To avoid merge conflicts:
+- Before beginning to work on something, run `git pull` in your repository
+- After you have finished working and committed all of your changes, run `git push` in your repository
 
-Nyrkkisääntönä kannattaa pitää aina sitä, että kun rupeat työskentelemään paikallisessa repositoriossa, pullaa ensin kaikki muutokset etärepositoriosta. Ja kun lopetat työskentelyn, pushaa muutokset etärepositorioon. Näin konflikteja ei yhden ihmisen työskentelyssä todennäköisesti tule.
+By following these two simple steps, you will avoid 99% of all version control issues that can happen.
 
-### Lisää gitiä
+### More git
 
-Gitin peruskäyttö tulee varmasti tutuksi kurssin aikana. Gitin edistyneempien piirteiden opiskelua kannattaa ilman muuta jatkaa myös omin päin. Internetistä löytyy suuri määrä enemmän tai vähemmän hyviä tutoriaaleja. Seuraavassa muutama linkki
+If you are interested in learning more, here are some good Git resources to try:
 
 - <https://www.atlassian.com/git/tutorials/>
 - <http://learngitbranching.js.org>
@@ -714,5 +709,6 @@ Gitin peruskäyttö tulee varmasti tutuksi kurssin aikana. Gitin edistyneempien 
 
 ## Labtool
 
-Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin]({{site.labtool_link}}).
+Register your personal information and repository link to [Labtool]({{site.labtool_link}}).
+This is the way that the TAs can see your code and give you points for this week!
 
