@@ -14,12 +14,12 @@ This is a new English translation of the Finnish software development project co
 
 After completing the course, you will
 - Know the process behind software development
-- Be familiar with the waterfall and agile model of software development
+- Be familiar with the waterfall and agile models of software development
 - Be able to use version control for software development
-- Be able to use the UML-modelling technique for requirements specification and project planning
+- Be able to use the UML modelling technique for requirements specification and project planning
 - Be familiar with the different steps behind testing
 - Be able to implement automated tests for simple software projects
-- Know the principles behind software plannign and be able to apply them to simple projects
+- Know the principles behind software planning and be able to apply them to simple projects
 
 The prerequisites for the course are Computing Tools for CS students, Advanced Course in Programming, Introduction to Databses as well as Databases and Web Programming. As all of these courses are not available to English-speaking students, it is OK to participate in this course without having met all of the prerequisites.
 
@@ -80,7 +80,7 @@ You will need to know how to use the command line during this course and in your
 
 The [second part of the Computing Tools material](https://tkt-lapio.github.io/git-en/) can be of use here as well.
 
-Create an ssh connection to `melkki.cs.helsinki.fi`, `melkinpaasi.cs.helsinki.fi`, or `melkinkari.cs.helsinki.fi`. On Linux, Mac, and Windows 10 this is achieved by opening the command line and running `ssh username@address`. On older Windows versions you will need to install [putty](http://www.putty.org).
+Open an ssh connection to `melkki.cs.helsinki.fi`, `melkinpaasi.cs.helsinki.fi`, or `melkinkari.cs.helsinki.fi`. On Linux, Mac, and Windows 10 this is achieved by opening the command line and running `ssh username@address`. On older Windows versions you will need to install [putty](http://www.putty.org).
 
 After you have connected, do the following:
 
@@ -117,7 +117,7 @@ You should also use the **up arrow** to cycle through the previous commands you 
 
 ### Terminal tabs
 
-You can open multiple terminal tabs by clicking around in the terminal menu or by simply typing `CTRL+SHIFT+TAB`.
+You can open multiple terminal tabs by clicking around in the terminal menu or by simply typing `CTRL+SHIFT+T`.
 
 ## Version control (do this if you are not familiar with the tasks)
 
