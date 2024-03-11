@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /fi/instructors
+permalink: /ohjaajan-ohje
 title: Ohjaajan ohje
 ---
 
@@ -20,11 +20,12 @@ Viikkopalautuksien tarkistuksessa kannattaa hyödyntää Labtoolin viikoittaista
 
 ### Puller.sh
 
-Tässä erään kurssin aiemman ohjaajan kirjoittama skripti, jolla voi ladata kaikki projektit kerralla: [puller.sh](puller.sh).
+Tässä muutaman kurssin aiemman ohjaajan kirjoittama skripti, jolla voi ladata kaikki projektit kerralla: [puller.sh](puller.sh).
 
 Käyttöohjeet:
 
-- Lataa kaikki arvosteltavat reposi ensin manuaalisesti samaan kansioon (jokainen toki omana alikansiona) ja tallenna samaan kansioon yllä oleva scripti nimellä puller.sh
+- Lataa kaikki arvosteltavat repositoriosi ensin manuaalisesti samaan kansioon (jokainen toki omana alikansiona) ja tallenna samaan kansioon yllä oleva skripti nimellä puller.sh
+- Anna skriptille suoritusoikeudet: `$ chmod +x puller.sh`
 - Kun haluat pullata repot, mene terminaalin kautta kansioon, jossa skripti ja repot sijaitsevat ja aja se käskyllä ./puller.sh
 
 ### Viikko 1
@@ -33,7 +34,7 @@ Komentorivi- ja versionhallintatehtäviä ei ole pakko suorittaa, eikä niistä 
 
 Jos opiskelija tekee komentorivi- ja versionhallintatehtävät:
 Katsokaa että GitHubista löytyy tiedostot [gitlog.txt]({{site.repo_url}}/tree/master/materiaali/python/gitlog.txt) ja [komentorivi.txt]({{site.repo_url}}/tree/master/materiaali/python/komentorivi.txt) ja että ne näyttävät edes suurinpiirtein oikeilta.
-Pienistä virheistä voi laittaa huomautuksen viestiksi. Pisteen kuitenkin saa, jos kohdan "tee joka tapauksessa seuraavat asiat:" vaatimukset täyttyvät.
+Pienistä virheistä voi laittaa huomautuksen viestiksi. *Pisteen kuitenkin saa, jos kohdan "tee joka tapauksessa seuraavat asiat:" vaatimukset täyttyvät.*
 
 ### Viikko 2
 
@@ -52,9 +53,9 @@ Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärre
 
 - Projektin koodin pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
 - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report` (html-muotoinen raportti löytyy kansiosta htmlcov) (Jos ei toimi vielä tsekatkaa löytyykö materiaalin ohjeen mukainen määrittely tiedostosta pyproject.toml)
-- Tarkistakaa että src-hakemiston alahakemistoihin on lisätty [ohjeen](/fi/tasks/week3#harjoitusty%C3%B6-1-poetry-projektin-alustaminen) mukaisesti tyhjät \_\_init\_\_.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty, ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä.
+- Tarkistakaa että src-hakemiston alahakemistoihin on lisätty [ohjeen](/python/viikko3#harjoitusty%C3%B6-1-poetry-projektin-alustaminen) mukaisesti tyhjät \_\_init\_\_.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty, ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä.
 - Sovelluksella on oltava vähintään yksi testi jonka voi suorittaa komennolla `poetry run invoke test`. Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa. Testin tulee mennä läpi.
-- Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta, pelkät gettereitä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
+- Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta.
 - Opiskelijan tehtävänannossa ei oltu määritelty pitääkö toiminnallisuuden on olla käyttäjälle näkyvää tai olla käyttöliittymä olemassa, joten riittää jos toiminnallisuus on toteutettu nyt kooditasolla ja toimivuus testattu (eli jos on tehnyt “test driven”) niin se riittää tässä vaiheessa
 - Repositorion juuresta löytyy `src`-kansio projektin koodille
 
@@ -68,7 +69,7 @@ Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärre
 - Repositorion README.md kunnossa
 - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin referenssisovelluksen README.md
 - Kaikki ylimääräinen, mm linkit laskareihin on poistettu
-- Repositorio siisti, ei ylimääräistä tavaraa (mm. hakemistoa target/ tai tietokantatiedostoja)
+- Repositorio siisti, ei ylimääräistä tavaraa (mm. tietokantatiedostoja)
 - Laskarit jätetään hakemiston laskarit alle
 - Järkevä .gitignore-tiedosto olemassa
 - Viikon changelog-merkintä on tehty
@@ -124,11 +125,11 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
 
 - Repositorio kunnossa (0.25p)
   - Mahdollisesti aikaisemmin huomautetut turhat tiedostot poistettu
-  - Siisti, ei ylimääräistä tavaraa (mm. hakemistoa target (Java) / \_\_pycache\_\_ (Python) tai tietokantatiedostoja)
+  - Siisti, ei ylimääräistä tavaraa (mm. hakemistoa \_\_pycache\_\_ tai tietokantatiedostoja)
   - README:ssa tällä hetkellä relevantit linkit ja komennot
   - Esim. tältä viikolta linkki arkkitehtuuriin ja checkstyle/pylint komennot lisätty
 
-Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistusta [Python viikko 4](https://ohjelmistotekniikka-hy.github.io/fi/tasks/week4)
+Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistusta [viikko 4](https://ohjelmistotekniikka-hy.github.io/python/viikko4)
 
 ### Viikko 5
 
@@ -149,6 +150,11 @@ Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistusta [P
 - Ohjelma toimii komennolla `poetry run invoke start` (0.5p)
 - Pylint virheitä alle 5 (0.25p)
 
+#### Ylimääräinen koodikatselmointi
+- Tämä on tosiaan ylimääräistä ja todennäköisesti aika harva osallistuu
+- Katso, onko README.md -tiedoston lopussa mainintaa ylimääräisestä koodikatselmoinnista ja linkkiä katselmoituun repositorioon
+- Jos on, tarkista, että viitatusta repositoriosta löytyy asianmukaiset issuet. Anna silloin piste, tai jos on selvästi puutteellista, niin puolikas.
+
 Huomatkaa että checklistissä ohjelma kasvanut osiosta (max. 0.75 pistettä) ruksitaan vain yksi vaihtoehto.
 Muuten aikalailla samat ohjeet kuin edellisellä viikolla.
 
@@ -157,8 +163,6 @@ Muuten aikalailla samat ohjeet kuin edellisellä viikolla.
 Testikattavuutta arvioitaessa muistakaa katsoa että jokaisessa projektin _src_-hakemiston alahakemistossa on tyhjä \_\_init\_\_.py-tiedosto. Jos sitä ei ole, coverage ei arvioi testikattavuutta oikein näiden hakemistojen osalta. Tällöin projektin testikattavuus on todellista korkeampi. Ottakaa tämä huomioon. Arvioikaa todellinen testikattavuus. Lisätkää käsin tälläisiin hakemistoihin \_\_init\_\_.py ennen testien ajamista ja testikattavuusraportin ottamista.
 
 *Testaus*-osiosta valitaan molemmat "Testikattavuus vähintään..." -checkboxit jos kattavuus vähintään 60%. *Ohjelma kasvanut* -osiossa valitaan vain toinen "ohjelma kasvanut..." -checkboxi.
-
-Jotta arvostelu menee oikein, älkää ruksiko rastia "JavaDoc ei ole generoitavissa/Docstring-dokumentointia ei ole aloitettu" vaikka JavaDoc ei olisi generoitavissa tai Docstring-dokumentointia ei olisi aloitettu. Viikon 6 opiskelijan ohjeissa ei ollut mainintaa siitä, että aloittamaton JavaDoc/Docstring vähentäisi pisteitä. <!-- tämän huomion voinee sitten ottaa pois kun labtoolin pisteytyksestä on kurssin seuraavassa iteraatiossa poistettu tämä miinuspiste -->
 
 Labtoolissa muutama uusi kohta, muuten tämä viikko aika samanlailla kuin edellinen viikko.
 
@@ -172,35 +176,32 @@ Labtoolissa muutama uusi kohta, muuten tämä viikko aika samanlailla kuin edell
 
 ### Loppupalautus
 
-**tämä kohta tulee vielä muuttumaan:** käytetään Moodlea, mutta muuten suunnilleen vanhaan malliin.
+Loppupalautuksen jälkeen pisteet kirjataan kurssin Moodle-alueella. Siellä otsikon *Ohjaajille* alta löytyy arviointiohjeita ja apuna voi myös käyttää opiskelijoille annettuja arviointiperusteita. Arviointiohjeet suuntaa antavia, projektit niin erilaisia että tässä saa käyttää omaa harkintaa molempiin suuntiin, Slackissa voi kysyä muiden mielipidettä.
 
-Tarkastustaulukosta löytyy neljä välilehteä:
+Siirry välilehdelle *Arvioinnit*, valitse alasvetovalikosta *Arvioijan raportti* ja oikealta ylhäältä *Muokkaustila*. Pisteet on syytä kirjata opiskelijakohtaisessa näkymässä, johon pääset opiskelijan nimen perässä olevan kolmen pisteen valikon toiminnolla *Single view for this user*. Muista aina painaa *Tallenna*, kun olet kirjannut yhden opiskelijan pisteet.
 
-- "Pisteet" projektin arvioinnille
--"Pdf" tästä ei tarvitse välittää, tämän välilehden avulla luodaan valmiista arvostelusta pdf.
-- "Kommentteja" sisältää arviointiohjeita, apuna voi myös käyttää opiskelijoille annettuja arviointiperusteita. Arviointiohjeet suuntaa antavia, projektit niin erilaisia että tässä saa käyttää omaa harkintaa molempiin suuntiin, Slackissa voi kysyä muiden mielipidettä
-- "Tarkastustilanne" pitää kirjaa tehdyistä arvioinneista ja kontrollitarkistuksista
+Arvioinnit ovat aluksi piilotettuja opiskelijoilta, mutta avataan siinä vaiheessa kun arviointi vertaisarviointeineen on suoritettu loppuun.
 
-Tarkastaessa:
+Tarkastettaessa:
 
-- tarkista pikaisesti, että nimi, opiskelijanumero ja Labtoolin pisteet täsmäävät
+- Merkitse sarakkeeseen *Labtoolista* opiskelijan Labtoolissa saamien pisteiden summa
 - "Drop"-sarakkeeseen:
   - 1, jos projekti on aloitettu, mutta selkeästi ei viety loppuun asti (löytyy laskareiden lisäksi ainakin pohja projektille)
   - 2, jos projektia ei edes aloitettu (esim vain laskarit tehty)
-- "Tarkastaja"-sarakkeeseen koko oma nimi, kun arvioitu, niin päivittyy tarkastustilanteet
-- "Tunteja käytetty"-oppilaan ilmoittama määrä tuntikirjanpidossa
-- "Huomioita"-sarakkeeseen linkkaa tiedosto, johon olet avannut omaa pisteytystäsi.  Tämä on sen vuoksi, että kontrollitarkastukset helpottuvat huomattavasti.
+- "Tunteja käytetty"-sarakkeeseen oppilaan ilmoittama määrä tuntikirjanpidossa
+- Moodle on lisännyt arviointikohteisiin automaattisesti kentän "Palaute". Näistä palautekentistä ei yleensä tarvitse välittää - paitsi jos haluat jossain kohtaa kertoa opiskelijalle arvioinnista tavallista tarkemmin. Koska pistekenttiin ei voi syöttää tekstimuotoista tietoa, käytämme kuitenkin em. palautekenttiä kohdissa Tarkastaja, Huomioita, Kontrolloija ja Kontrolloijan huomioita.
+- Kopioi kohdan "Huomioita" palautekenttään linkki tiedostoon, jossa olet avannut omaa pisteytystäsi.  Tämä on sen vuoksi, että kontrollitarkastukset helpottuvat huomattavasti.
+- Kohdan "Tarkastaja" palautekenttään tulee oma nimesi
 
-Kyselkää jos tulee epäselvyyksiä, esim jos projektit, jar, checkstyle tms. ei aukea. Heittäkää linkki tänne, niin tsekataan toimiiko jollain muulla.
-
-Pajaa pitäneet ohjaajat merkitkää siihen käytetyt tunnit Tarkastustilanne-välilehdelle.
-
-Kontrollitarkastuksiin tulee tarkemmat ohjeet lähempänä sen alkua.
+Kyselkää jos tulee epäselvyyksiä, esim jos projektit, checkstyle tms. ei aukea. Heittäkää linkki ohjaajien keskustelualueelle, niin tsekataan toimiiko jollain muulla.
 
 ### Arvioiden vertaisarviointi
 
-Valitkaa listalta oppilas satunnaisesti ja avatkaa ohjaajan kirjoittama pisteytyslista. Katsokaa kaikki kohdat läpi että ne ovat järkeviä, mutta ei tarvitse kuitenkaan suurennuslasin kanssa etsiä "virheitä". Jos olette erimieltä jostain kirjoittakaa "Kontrolloijan huomioita"-kohtaan mitä muuttaisitte ja mihin suuntaan. Jos muutettu pisteytys vaikuttaisi arvosanaan siitä kannattaa myös mainita. Tarkastustilanne-välilehdeltä näkee kuinka monta kontrollitarkastusta pitää tehdä. Niitä on yhtä monta, kuin mitä arvioitte. Lisätkää myös nimenne "kontrolloija" kohtaan kun alatte tarkastamaan, jotta ei kävisi niin että kaksi henkilöä tarkastaakin vahingossa samaa henkilöä.
-esimerkkejä kontrollikommenteista:
+Kukin tekee yhtä monta vertaisarviota kuin on itse loppuunsaatettuja töitä arvioinut (siis sellaisia joiden kohdalle drop-sarakkeeseen et ole merkinnyt ykköstä tai kakkosta).
+
+Valitkaa taulukosta oppilas satunnaisesti. Voitte näpäyttää nuolia sarakkeissa *Drop* ja *Kontrolloija* jotta pääsette helpommin valitsemaan loppuunsaatetun työn, jolla ei ole vielä vertaisarvioijaa (eli molemmissa sarakkeissa tulee olla tyhjää tai nolla). Avatkaa ohjaajan kirjoittama pisteytyslista; katsokaa kaikki kohdat läpi että ne ovat järkeviä, mutta ei tarvitse kuitenkaan suurennuslasin kanssa etsiä "virheitä". Jos olette eri mieltä jostain kirjoittakaa "Kontrolloijan huomioita"-kohdan palautekenttään mitä muuttaisitte ja mihin suuntaan. Jos muutettu pisteytys vaikuttaisi arvosanaan siitä kannattaa myös mainita. **Huom:** muuttakaa kohdan "Kontrolloija" arvo nollasta ykköseksi kun alatte tarkastamaan ja lisätkää nimenne mainitun kohdan palautekenttään (ja muistakaa taas tallentaa). Näin siksi, ettei kaksi ohjaajaa tarkastaisi vahingossa samaa työtä.
+
+Esimerkkejä kontrollikommenteista:
 
 ```
 Vaikuttaa arvosanaan 4->5: muuten samaa mieltä, mutta koodin laadusta antaisin täydet 4. Yksi metodi on 21 riviä, ja katsoisin sitä sormien läpi, etenkin kun sen metodin jakaminen osiin mielestäni monimutkaistaisi koodia ja lisäksi sen olisi voinut kikkailla pari riviä lyhyemmäksi laittamalla if-lauseen kanssa samalle riville aaltosulkeiden sisällä olevan returnin.
@@ -222,12 +223,9 @@ Vaikuttaa arvosanaan: mun mielestä laajuus vain 2 pistettä, vaikka onkin netti
 Laittaisin kompleksisuuden 1 ja laajuuden 2. Tuossa kyllä tehdään laskentaa, mutta aika yksinkertaista sellaista, ja siinä on oikeastaan vaan se näyttö johon piirtyy se juttu ja sitten muutamat arvot syötetään toiseen ikkunaan. Lisäksi ohjelma koostuu vain pienestä määrästä lyhyitä luokkia.
 ```
 
-Pyrkikää arvioimaan jokaiselta muulta ohjaajalta vähintään yksi arviointi
+Pyrkikää arvioimaan jokaiselta muulta ohjaajalta vähintään yksi arviointi.
 
 ### Vertaisarviointien deadlinen jälkeen
 
-- Lukekaa harjoitustöiden arviointeihin saamanne kommentit ja korjatkaa arviointinne sen mukaisesti, jos olette kommentoijan kanssa samaa mieltä.
-- Kun olette käyneet läpi kaikki saamanne vertaisarviot laittakaa "valmis" tai vastaava merkintä taulukon Tarkastustilanne-välilehdelle samalle riville nimenne kanssa sarakkeeseen "Kaikki tarkastettu ja korjaukset valmiit" merkiksi siitä että olette valmiita
-
-Vertaisarviointeja siis tehdään yhtä monta kuin teitte arviointeja (sarake "to control" Tarkastustilanne-välilehdelle). Kannattaa myös varmistaa, että Tarkastustilanne-välilehden luvut tehdyistä arvioinneista, dropanneista ja ei aloittaneista ovat oikein, koska niiden perusteella maksetaan palkkio.
+- Lukekaa harjoitustöiden arviointeihin saamanne kommentit ja korjatkaa arviointinne sen mukaisesti, jos olette kommentoijan kanssa samaa mieltä. Kun tälle varattu aika on päättynyt, arvioinnit julkaistaan.
 
