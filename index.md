@@ -15,6 +15,8 @@ Kurssilla ei ole koetta. Harjoitustyö tulee tehdä kurssin aikataulujen puittei
 
 Tarkemmat ohjeet harjoitustyöhön löytyvät [täällä](/harjoitustyo). Kurssimateriaali löytyy [täältä](/materiaali).
 
+(Sergey Ichtchenko has kindly translated [the course material in English](https://pixelsergey.github.io/) for students in the English-language BSc program. However, please note that officially this course is given only in Finnish and if the translation conflicts with the Finnish material, the latter takes precedence.)
+
 ## Kirjoitusvirheitä
 
 Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu GitHubiin ja toimi [tämän](/korjausehdotus) ohjeen mukaisesti.
