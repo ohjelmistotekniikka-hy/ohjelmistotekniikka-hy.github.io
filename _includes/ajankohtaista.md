@@ -1,5 +1,6 @@
 ## Ajankohtaista
 <!-- - Arvosanoja näkyy [Moodlessa](https://moodle.helsinki.fi/course/view.php?id=61184) (linkki "Arvioinnit" sivun yläosassa, otsikon alla). Kiitoksia osallistumista ja hyvää alkanutta vuotta!-->
+- Kurssilla on pääsiäistauko 28.3. - 3.4. joten kolmannen viikon deadline ei ole tiistaina 2.4. vaan vasta 9.4.
 - Kurssin aloitustilaisuus {{site.lecture_time}}
   - Aloitustilaisuudessa käytettävät kalvot löytyvät [täältä]({{site.lecture_slides_link}})
   - Aloitusluennon tallenne on [täällä]({{site.lecture_recording_link}})
