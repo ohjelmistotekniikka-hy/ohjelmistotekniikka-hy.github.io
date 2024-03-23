@@ -436,7 +436,7 @@ Testien suorittaminen antaa ymmärtää, ettei testiä suoritettu onnistuneesti.
 FAILED src/tests/maksukortti_test.py::TestMaksukortti::test_konstruktori_asettaa_saldon_oikein - AssertionError: 'Kortilla on rahaa 9.00 euroa' != 'Kortilla on rahaa 10.00 euroa'
 ```
 
-Tehdään seuraavaksi testi, joka varmistaa, että kortin saldo pienee kutsuttaessa metodia `syo_edullisesti`:
+Tehdään seuraavaksi testi, joka varmistaa, että kortin saldo pienenee kutsuttaessa metodia `syo_edullisesti`:
 
 ```python
 def test_syo_edullisesti_vahentaa_saldoa_oikein(self):
