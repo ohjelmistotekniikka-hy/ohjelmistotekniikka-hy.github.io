@@ -10,9 +10,9 @@ permalink: /python/viikko4
 
 Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.
 
-## Pylint ja koodin laaduun staattinen analyysi
+## Pylint ja koodin laadun staattinen analyysi
 
-Koodin testauksen lisäksi koodin laadun ylläpitäminen on tärkeää. Laadun ylläpitäminen on mahdollista erilaisilla manuaalisilla menetelmillä, kuten laatuvaatimusten dokumentoinnilla ja koodikatselmoinneilla. Monet manuaaliset laadunhallinnan menetelmät osoittautuvat kuitenkin laajoissa ohjelmistoprojekteissa usein turhan aikaavieviksi ja virhealttiiksi. _Staattinen analyysi_ on menetelmä, jonka avulla koodia voidaan analysoida automatisoidusti ilman, että sitä tarvitsee suorittaa. Staattista analyysia hyödynnetään ohjelmistokehityksessä laajasti mm. ohjelmointivirheiden huomaamiseen ja laatutarkistuksien tekemiseen. Eräs Python-koodin staattisessa analyysissä laajasti käytetty työkalu on [pylint](https://www.pylint.org/). Pylintin avulla voimme määrittä koodin laadulle erilaisia vaatimuksia ja automatisoidusti tarkastaa, noudattaako tarkastettava koodi näitä sääntöjä.
+Koodin testauksen lisäksi koodin laadun ylläpitäminen on tärkeää. Laadun ylläpitäminen on mahdollista erilaisilla manuaalisilla menetelmillä, kuten laatuvaatimusten dokumentoinnilla ja koodikatselmoinneilla. Monet manuaaliset laadunhallinnan menetelmät osoittautuvat kuitenkin laajoissa ohjelmistoprojekteissa usein turhan aikaavieviksi ja virhealttiiksi. _Staattinen analyysi_ on menetelmä, jonka avulla koodia voidaan analysoida automatisoidusti ilman, että sitä tarvitsee suorittaa. Staattista analyysia hyödynnetään ohjelmistokehityksessä laajasti mm. ohjelmointivirheiden huomaamiseen ja laatutarkistuksien tekemiseen. Eräs Python-koodin staattisessa analyysissä laajasti käytetty työkalu on [pylint](https://www.pylint.org/). Pylintin avulla voimme määrittää koodin laadulle erilaisia vaatimuksia ja automatisoidusti tarkastaa, noudattaako tarkastettava koodi näitä sääntöjä.
 
 > Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells. It can also look for certain type errors, it can recommend suggestions about how particular blocks can be refactored and can offer you details about the code's complexity.
 
@@ -26,7 +26,7 @@ poetry add pylint --group dev
 
 Pylintille tulee määritellä joukko tarkistettavia [sääntöjä](http://pylint.pycqa.org/en/2.6/technical_reference/features.html). Säännöt määritellään projektin juurihakemiston _.pylintrc_-tiedostossa. Luo kyseinen tiedosto ja kopioi sinne [tämän]({{site.repo_url}}/tree/master/materiaali/python/.pylintrc) tiedoston sisältö. Tiedosto sisältää hieman muunnellun version pylintin suosittelemasta konfiguraatiosta, jota voi katsella komennolla `pylint --generate-rcfile`.
 
-Pylintin laatutarkitukset voi suorittaa komentoriviltä siirtymällä ensin virtuaaliympäristöön komennolla `poetry shell` ja sen jälkeen suorittamalla komennon `pylint src`. Komento tulee suorittaa projektin juurihakemistossa, eli samassa hakemistossa missä _pyproject.toml_-tiedosto sijaitsee. Kyseinen komento suorittaa laatutarkitukset _src_ hakemistossa. Pylint antaa koodille "arvosanan" sen laadun mukaan, joka löytyy tulosteen lopusta:
+Pylintin laatutarkistukset voi suorittaa komentoriviltä siirtymällä ensin virtuaaliympäristöön komennolla `poetry shell` ja sen jälkeen suorittamalla komennon `pylint src`. Komento tulee suorittaa projektin juurihakemistossa, eli samassa hakemistossa missä _pyproject.toml_-tiedosto sijaitsee. Kyseinen komento suorittaa laatutarkistukset _src_-hakemistossa. Pylint antaa koodille "arvosanan" sen laadun mukaan, joka löytyy tulosteen lopusta:
 
 ```
 Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
@@ -34,7 +34,7 @@ Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 ### Laatutarkistuksien kytkeminen pois päältä
 
-Lähtökohtaisesti pylintin huomauttamat laatuvirheet kannattaa yrittää kaikin keinoin korjata. Tämä johtaa lähes aina laadukkaampaan koodin. Joissain tilanteissa voimme kuitenkin hyväksyä laatuvirheet ja kytkeä tarkastukset pois päältä. Tähän löytyy erilaisia keinoja.
+Lähtökohtaisesti pylintin huomauttamat laatuvirheet kannattaa yrittää kaikin keinoin korjata. Tämä johtaa lähes aina laadukkaampaan koodiin. Joissain tilanteissa voimme kuitenkin hyväksyä laatuvirheet ja kytkeä tarkastukset pois päältä. Tähän löytyy erilaisia keinoja.
 
 Otetaan esimerkiksi seuraava _src/index.py_-tiedosto:
 
@@ -58,7 +58,7 @@ print(x)
 
 Nyt `pylint src`-komennon suorittaminen pitäisi kertoa, ettei virheitä enää löydy.
 
-Voimme myös jättää tarkistuksien ulkopuolelle kokonaisia hakemistoja ja tiedostoja. Muokkaamalla [tätä]({{site.repo_url}}/tree/master/materiaali/python/.pylintrc#L13) riviä _.pylintrc_ tiedossa. Voimme esimerkiksi jättää käyttöliittymästä vastaavan koodin hakemistossa _src/ui_ ja testit hakemistossa _src/tests_ tarkistuksien ulkopuolle:
+Voimme myös jättää tarkistuksien ulkopuolelle kokonaisia hakemistoja ja tiedostoja. Muokkaamalla [tätä]({{site.repo_url}}/tree/master/materiaali/python/.pylintrc#L13) riviä _.pylintrc_-tiedostossa, voimme esimerkiksi jättää käyttöliittymästä vastaavan koodin hakemistossa _src/ui_ ja testit hakemistossa _src/tests_ tarkistuksien ulkopuolelle:
 
 ```
 ignore=CVS,ui,tests
@@ -74,7 +74,7 @@ Monissa editoreissa on lisäosia, jotka huomauttavat laatuvirheistä suoraan koo
 
 ![Visual Studio Code Python lisäosa](/assets/images/python/vscode-python-lisaosa.png)
 
-Tämän jälkeen Visual Studio Coden tulisi huomauttaa laatuvirheistä suoraan koodissa punaisella alleviivauksessa. Viemällä hiiren ongelmallisen koodin päälle pitäisi aueta tarkempaa tietoa virheestä:
+Tämän jälkeen Visual Studio Coden tulisi huomauttaa laatuvirheistä suoraan koodissa punaisella alleviivauksella. Viemällä hiiren ongelmallisen koodin päälle pitäisi aueta tarkempaa tietoa virheestä:
 
 ![Visual Studio Code pylint](/assets/images/python/vscode-pylint.png)
 
@@ -82,13 +82,13 @@ Jos integroinnin kanssa ilmenee ongelmia, tutustu Visual Studio Coden [ohjeisiin
 
 ### Automaattinen formatointi
 
-Tiettyjen laatukorjausten, kuten sisennysten ja liian pitkien koodirivien korjaaminen tuottaa välillä turhaa manuaalista työtä. Koodin automaattisessa formatoinnissa auttaa [autopep8](https://pypi.org/project/autopep8/)-kirjasto. Kirjasto formatoi koodin automaattisesti [PEP 8](https://www.python.org/dev/peps/pep-0008/)-tyyliohjeiden mukaisesti. Aloitetaan sen käyttö asentamalle se projektin riippuvuudeksi:
+Tiettyjen laatukorjausten, kuten sisennysten ja liian pitkien koodirivien korjaaminen, tuottaa välillä turhaa manuaalista työtä. Koodin automaattisessa formatoinnissa auttaa [autopep8](https://pypi.org/project/autopep8/)-kirjasto. Kirjasto formatoi koodin automaattisesti [PEP 8](https://www.python.org/dev/peps/pep-0008/)-tyyliohjeiden mukaisesti. Aloitetaan sen käyttö asentamalla se projektin riippuvuudeksi:
 
 ```bash
 poetry add autopep8 --group dev
 ```
 
-Tämän jälkeen voimme virtuaaliympäristössä formatoida _src_ hakemiston koodin komennolla:
+Tämän jälkeen voimme virtuaaliympäristössä formatoida _src_-hakemiston koodin komennolla:
 
 ```bash
 autopep8 --in-place --recursive src
@@ -104,11 +104,11 @@ Koodin formatointi onnistuu myös monissa editoreissa kätevästi yhdellä näpp
 
 ## Harjoitustyö
 
-Tämän viikon aikana harjoitustyöhön toteutetaan uutta toiminallisuutta, parannetaan sen dokumentaatiota ja kiinnitetään tarkempi huomio koodin laatuun.
+Tämän viikon aikana harjoitustyöhön toteutetaan uutta toiminnallisuutta, parannetaan sen dokumentaatiota ja kiinnitetään tarkempi huomio koodin laatuun.
 
 **Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
-### Harjoitustyö 1: Uutta toiminallisuutta
+### Harjoitustyö 1: Uutta toiminnallisuutta
 
 Kasvata ohjelmaa edellisestä viikosta (0.75p):
 
@@ -144,7 +144,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
 
 ### Harjoitustyö 4: Dokumentaatio
 
-Laadi ohjelman alustava rakenne luokka, tai pakkauskaaviona (0.75p):
+Laadi ohjelman alustava rakenne luokka- tai pakkauskaaviona (0.75p):
 
 - Kaavion ei tarvitse merkitä kuin sovelluslogiikan kannalta oleelliset luokat
 - Voit tarvittaessa tehdä kaavion, josta ilmenee myös sovelluksen [pakkausrakenne](/python/viikko3#pakkauskaavio)
