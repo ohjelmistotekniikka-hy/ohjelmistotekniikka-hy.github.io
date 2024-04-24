@@ -111,18 +111,18 @@ Visual Studio Codessa docstringien kirjoittamista nopeuttaa huomattavasti [Pytho
 
 Kannattaa pitää mielessä, että kurssin loppu alkaa lähestyä ja täten myös loppupalautuksen deadline. Nyt kannattaa kerrata loppupalautuksen [arvosteluperusteet](/python/arvosteluperusteet). Viimeiselläkin viikolla ohjelmaa ehtii vielä kasvattaa, mutta myös dokumentoinnille kannattaa jättää aikaa.
 
-Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutta toiminallisuutta ja parannetaan sen dokumentaatiota.
+Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutta toiminnallisuutta ja parannetaan sen dokumentaatiota.
 
 **Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.** Viikkopisteiden lisäksi kannattaa pitää mielessä harjoitustyön lopullisen palautuksen [arvosteluperusteet](/python/arvosteluperusteet).
 
-### Harjoitustyö 1: Uutta toiminallisuutta
+### Harjoitustyö 1: Uutta toiminnallisuutta
 
 Kasvata ohjelmaa edellisestä viikosta (0.75p):
 
 - Ohjelman pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
 - Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
 - Merkitse lisäksi tarkastusta varten määrittelydokumenttiin valmiit toiminnallisuudet "tehty" merkinnällä
-- Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](/release), joka sisältää ohjelman uusimman version lähdekoodin (GitHub lisää tämän automaattisesti releasin tehdessä)
+- Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](/release), joka sisältää ohjelman uusimman version lähdekoodin (GitHub lisää tämän automaattisesti releasea tehdessä)
 
 Ohjeita toteutukseen löydät [täältä](/python/toteutus).
 

@@ -222,7 +222,7 @@ python3 src/index.py
 
 Voimme lähteä virtuaaliympäristöstä komennolla `exit`.
 
-Poetry:n tuodut riippuvuudet ovat vain virtuaalisessa ympäristössä saatavilla, VS Code:in sisäänrakennettu "debugging mode" (F5 oletuksena) ei välttämättä toimi. Koita ensin `poetry shell` ja vasta sen jälkeen käynnistä VS Code `code /path/to/projekt` komennolla.
+Poetry:n tuodut riippuvuudet ovat vain virtuaalisessa ympäristössä saatavilla, VS Codeen sisäänrakennettu "debugging mode" (F5 oletuksena) ei välttämättä toimi. Koita ensin `poetry shell` ja vasta sen jälkeen käynnistä VS Code `code /path/to/projekt` komennolla.
 
 ### Kehityksen aikaiset riippuvuudet
 
@@ -436,7 +436,7 @@ Testien suorittaminen antaa ymmärtää, ettei testiä suoritettu onnistuneesti.
 FAILED src/tests/maksukortti_test.py::TestMaksukortti::test_konstruktori_asettaa_saldon_oikein - AssertionError: 'Kortilla on rahaa 9.00 euroa' != 'Kortilla on rahaa 10.00 euroa'
 ```
 
-Tehdään seuraavaksi testi, joka varmistaa, että kortin saldo pienee kutsuttaessa metodia `syo_edullisesti`:
+Tehdään seuraavaksi testi, joka varmistaa, että kortin saldo pienenee kutsuttaessa metodia `syo_edullisesti`:
 
 ```python
 def test_syo_edullisesti_vahentaa_saldoa_oikein(self):
@@ -639,7 +639,7 @@ Tämän tehtävän projekti _ladataan internetistä_ hieman alempana olevan ohje
 
 Tehtävä pohjautuu sovellukseen, jonka tarkoituksena on toteuttaa [Unicafe](https://unicafe.fi/)-ruokalan kassapääte. Kassapäätteen avulla voidaan ostaa eri hintaisia aterioita joko maksukortilla tai käteisellä.
 
-Maksukortilla on mahdollisuus ladata sille rahaa ja ottaa siltä rahaa maksuja varten. Ohjelmointiuransa aloittelevan tuttavasi vastaus seuraavassa:
+Maksukortilla on mahdollisuus ladata sille rahaa ja ottaa siltä rahaa maksuja varten. Ohjelmointiuraansa aloittelevan tuttavasi vastaus seuraavassa:
 
 ```python
 class Maksukortti:
@@ -818,7 +818,7 @@ Suorita testit terminaalissa virtuaaliympäristössä `pytest src`-komennolla.
 
 ## Komentojen suorittaminen Visual Studio Codessa
 
-Visual Studio Coden voi avata Linux-ympäristössä esim. siirtymällä hakemistoon _unicafe_ ja antamalla komennon `code .`. Visual Studio Codesta löytyy sisäänrakennettu terminaali. Terminaalin saa avattua valitsemalla päävalikosta _Terminal_ ja aukeavasta alavalikosta _New Terminal_. editorin alalaitaan pitäisi ilmestyä terminaali, jossa voit suorittaa komentorivikomentoja.
+Visual Studio Coden voi avata Linux-ympäristössä esim. siirtymällä hakemistoon _unicafe_ ja antamalla komennon `code .`. Visual Studio Codesta löytyy sisäänrakennettu terminaali. Terminaalin saa avattua valitsemalla päävalikosta _Terminal_ ja aukeavasta alavalikosta _New Terminal_. Editorin alalaitaan pitäisi ilmestyä terminaali, jossa voit suorittaa komentorivikomentoja.
 
 Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä, ainakin jos olit virtuaaliympäristössä silloin kun avasit itse Visual Studio Coden. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa projektin nimi ja jokin satunnainen merkkijono suluissa, esimerkiksi `(unicafe-sF0cl2di-py3.9)`. Jos et ole virtuaaliympäristössä pääset siihen tutulla `poetry shell`-komennolla. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
 

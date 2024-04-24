@@ -43,7 +43,7 @@ Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutt
 
 Tee projektistasi _GitHub release_ edellä esitetyn [ohjeen](#github-release) mukaisesti (0.25p):
 
-- Release sisältää ohjelman uusimman version lähdekoodin (GitHub lisää tämän automaattisesti releasin tehdessä)
+- Release sisältää ohjelman uusimman version lähdekoodin (GitHub lisää tämän automaattisesti releasen tehdessä)
 - Releaseen on linkki projektin README:stä
 
 ### Harjoitustyö 2: Koodikatselmointiin valmistautuminen
@@ -54,7 +54,7 @@ Jotta voit osallistua viikolla 6 pidettävään koodikatselmointiin (josta on ta
 - Viikon 5 palautuksesta tulee saada enemmän kuin 0 pistettä
 - Palautusrepositorioistasi on [GitHub-issuet sallittuna](#issueiden-salliminen-githubissa)
 
-### Harjoitustyö 3: Uutta toiminallisuutta
+### Harjoitustyö 3: Uutta toiminnallisuutta
 
 Kasvata ohjelmaa edellisestä viikosta (0.75p):
 
