@@ -179,7 +179,7 @@ Kurssin kuudennen viikon ohjelmassa on koodikatselmointi, jonka ohjeet löytyvä
 **Jos haluat katselmoida:**
   1. Siirry kurssin [Moodle-alueelle]({{site.moodle_link}}) ja katso, löydätkö kohdasta "Ylimääräinen koodikatselmointi" sellaisia katselmoitavia töitä, joita ei ole vielä varattu katselmointiin. Jos tällainen löytyy, varaa se itsellesi kirjoittamalla nimesi sen perään. Katso, mihin kysymykseen katselmoinnilta erityisesti toivotaan vastausta.
   2. Noudata palautteenannossa pääsääntöisesti koodikatselmoinnin ohjeita (anna palautteesi issueina). Tästä ylimääräisestä katselmoinnista jaettavaan pisteeseen riittää kaksi laadukasta ja rakentavaa palautekommenttia ja yksi käyttökelpoinen parannusehdotus. Näihin tulee sisältyä oma vastauksesi katselmointia toivovan kysymykseen. Kirjoita issueiden otsikoiksi "Koodikatselmoinnin" sijaan "Ylimääräinen koodikatselmointi".
-  3. Lisää työsi README.md -tiedoston loppuun lihavoitu teksti "Ylimääräinen koodikatselmointi" ja linkki katselmoimaasi työhön.
+  3. Lisää työsi README.md -tiedoston loppuun lihavoitu teksti "Ylimääräinen koodikatselmointi" ja linkki katselmoimaasi työhön. Labtooliin ei tarvitse kirjata tästä mitään.
 
 **Jos haluat katselmointia:**
   Siirry kurssin Moodle-alueelle ja lisää kohtaan "Ylimääräinen koodikatselmointi" linkki repositorioosi. Kirjoita linkin jälkeen yksi kysymys, johon erityisesti toivoisit katselmoinnilta vastausta.
