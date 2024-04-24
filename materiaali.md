@@ -19,7 +19,7 @@ inheader: true
   - [UML](/python/viikko3#uml)
   - [Tehtävien suorittaminen ja Invoke](/python/viikko3#tehtävien-suorittaminen-ja-invoke)
 - [Viikko 4](/python/viikko4)
-  - [Pylint ja koodin laaduun staattinen analyysi](/python/viikko4#pylint-ja-koodin-laaduun-staattinen-analyysi)
+  - [Pylint ja koodin laadun staattinen analyysi](/python/viikko4#pylint-ja-koodin-laaduun-staattinen-analyysi)
 - [Viikko 5](/python/viikko5)
   - [GitHub release](/python/viikko5#github-release)
 - [Viikko 6](/python/viikko6)
