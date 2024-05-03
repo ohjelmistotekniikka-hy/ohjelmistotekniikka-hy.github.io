@@ -156,6 +156,9 @@ Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistusta [v
 - Jos on, tarkista, että viitatusta repositoriosta löytyy asianmukaiset issuet. Anna silloin piste, tai jos on selvästi puutteellista, niin puolikas.
 
 Huomatkaa että checklistissä ohjelma kasvanut osiosta (max. 0.75 pistettä) ruksitaan vain yksi vaihtoehto.
+
+Huom: ajanpuutteesta johtuvien keskeytysten välttämiseksi on suositeltu tiettyä etupainotteisuutta. Ainakin näin kurssin jälkipuoliskolla kannattaa tämän ohjelman kasvamisen osalta tarvittaessa katsoa kokonaisuutta eli jos toiminnot on jo aiemmin toteutettu niin ei vähennetä pisteitä.
+
 Muuten aikalailla samat ohjeet kuin edellisellä viikolla.
 
 ### Viikko 6
