@@ -28,7 +28,7 @@ Dokumentteihin kannattaa ottaa mallia [referenssisovelluksen]({{site.python_refe
 Käy lopuksi vastaamassa kyselyyn ChatGPT:n ja muiden kielimalleihin perustuvien välineiden käytöstä ja antamassa kurssipalautetta. Molemmat näistä ovat yhden pisteen arvoisia ja voivat siten hyvinkin vaikuttaa arvosanaasi. (Kielimallikysely katsotaan oikeastaan osaksi harjoitustyön dokumentaatiota.) **Kielimallikyselyn löydät [Moodlesta]({{site.moodle_link}}) ja kurssipalautelomakkeen [Norpasta]({{site.norppa_link}}).** Kopioi kurssipalautelomakkeessa näkyvä koodi, jotta voit hakea palautepisteen Moodlen puolella.
 
 ### Arviointi
-Lopulliset pisteet näet tammikuussa [Moodlessa]({{site.moodle_link}}).
+Lopulliset pisteet näet kesäkuussa [Moodlessa]({{site.moodle_link}}).
 
 
 {% include harjoitustyon_toimivuus_info.md %}
