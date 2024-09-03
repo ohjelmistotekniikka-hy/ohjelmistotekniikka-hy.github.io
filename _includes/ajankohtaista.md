@@ -1,6 +1,5 @@
-## Ajankohtaista
-- Arvosanoja näkyy nyt [Moodlessa]({{site.moodle_link}}) (linkki "Arvioinnit" sivun yläosassa, otsikon alla). Kiitoksia osallistumisesta ja aurinkoista kesää!
-- Kurssilla on pääsiäistauko 28.3. - 3.4. joten kolmannen viikon deadline ei ole tiistaina 2.4. vaan vasta 9.4.
+<!--- - Arvosanoja näkyy nyt [Moodlessa]({{site.moodle_link}}) (linkki "Arvioinnit" sivun yläosassa, otsikon alla). Kiitoksia osallistumisesta ja aurinkoista kesää!
+- Kurssilla on pääsiäistauko 28.3. - 3.4. joten kolmannen viikon deadline ei ole tiistaina 2.4. vaan vasta 9.4. --->
 - Kurssin aloitustilaisuus {{site.lecture_time}}
   - Aloitustilaisuudessa käytettävät kalvot löytyvät [täältä]({{site.lecture_slides_link}})
   - Aloitusluennon tallenne on [täällä]({{site.lecture_recording_link}})
@@ -9,6 +8,7 @@
   - **HUOM:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 - Jos tarvitset kurssiin liittyvää ohjausta, tule **pajaohjaukseen**: {% for time in site.times %}
   - {{ time.time }}{% endfor %}
-  - pajaohjausta on välillä 11.3. - 9.5., mutta ei kuitenkaan pääsiäisen takia 28.3. - 2.4.
+  <!---
   - Tarjolla on myös online-ohjausta. Voit varata siihen ajan [Moodlessa]({{site.moodle_link}}). Huomaathan kuitenkin, että pajassa saat paljon paremmin apua!
+  --->
 
