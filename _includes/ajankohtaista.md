@@ -8,7 +8,6 @@
   - **HUOM:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 - Jos tarvitset kurssiin liittyvää ohjausta, tule **pajaohjaukseen**: {% for time in site.times %}
   - {{ time.time }}{% endfor %}
-  <!---
-  - Tarjolla on myös online-ohjausta. Voit varata siihen ajan [Moodlessa]({{site.moodle_link}}). Huomaathan kuitenkin, että pajassa saat paljon paremmin apua!
-  --->
+
+<!--- - Tarjolla on myös online-ohjausta. Voit varata siihen ajan [Moodlessa]({{site.moodle_link}}). Huomaathan kuitenkin, että pajassa saat paljon paremmin apua! --->
 
