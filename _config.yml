@@ -29,7 +29,7 @@ times:
 #  - time: "Tiistaisin klo 16-18 kampuksella BK107-luokassa"
 #  - time: "Perjantaisin klo 10-12 kampuksella BK107-luokassa"
 
-lecture_time: 'kekiviikko 30.10. klo 10.15 - 11.45'
+lecture_time: 'keskiviikko 30.10. klo 10.15 - 11.45'
 lecture_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/tree/master/luennot/2024-syksy'
 lecture_slides_link: 'https://ohjelmistotekniikka-hy.github.io/luennot/2024-syksy/aloitusluento.pdf'
 lecture_recording_link: ''
