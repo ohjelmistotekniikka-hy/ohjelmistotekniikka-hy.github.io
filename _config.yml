@@ -24,8 +24,8 @@ code_review_start_date: "keskiviikko 4.12. klo 23:59"
 # - Tiistaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/65324719978) (alkaen 23.3.)
 # - Torstaisin klo 13-15  [zoom]()
 times:
-#  - time: "Maanantaisin klo 14-16 kampuksella BK107-luokassa"
-#  - time: "Tiistaisin klo 10-12 kampuksella BK107-luokassa"
+  - time: "Maanantaisin klo 14-16 kampuksella BK107-luokassa"
+  - time: "Perjantaisin klo 10-12 kampuksella BK107-luokassa"
 #  - time: "Tiistaisin klo 16-18 kampuksella BK107-luokassa"
 #  - time: "Perjantaisin klo 10-12 kampuksella BK107-luokassa"
 
@@ -51,8 +51,7 @@ java_reference_app_url: 'https://github.com/mluukkai/OtmTodoApp'
 moodle_link: 'https://moodle.helsinki.fi/course/view.php?id=66690'
 
 # Norpan palaute
-norppa_link: ''
-#https://norppa.helsinki.fi/targets/72439115/feedback'
+norppa_link: 'https://norppa.helsinki.fi/targets/83054012/feedback'
 
 # Build settings
 markdown: kramdown
