@@ -9,5 +9,5 @@
 - Jos tarvitset kurssiin liittyvää ohjausta, tule **pajaohjaukseen** 4.11. - 20.12.: {% for time in site.times %}
   - {{ time.time }}{% endfor %}
 
-<!--- - Tarjolla on myös online-ohjausta. Voit varata siihen ajan [Moodlessa]({{site.moodle_link}}). Huomaathan kuitenkin, että pajassa saat paljon paremmin apua! --->
+- Tarjolla on myös online-ohjausta. Voit varata siihen ajan [Moodlessa]({{site.moodle_link}}). Huomaathan kuitenkin, että pajassa saat paremmin apua!
 
