@@ -21,6 +21,7 @@ Tarkemmat ohjeet harjoitustyöhön löytyvät [täällä](/harjoitustyo). Kurssi
 
 Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu GitHubiin ja toimi [tämän](/korjausehdotus) ohjeen mukaisesti.
 
+## Ajankohtaista
 {% include ajankohtaista.md %}
 
 {% include harjoitustyon_toimivuus.md %}
