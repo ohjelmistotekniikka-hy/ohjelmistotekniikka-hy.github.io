@@ -7,7 +7,7 @@ repo_url: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.gith
 repo_branch: 'master'
 
 # Kurssikertaan liittyvät muuttujat:
-title: "Aineopintojen harjoitustyö: ohjelmistotekniikka, syksy 2024"
+title: "Aineopintojen harjoitustyö: ohjelmistotekniikka"
 
 # aikataulut (annetaan muodossa viikonpäivä dd.mm kellonaika)
 wk1dl: "tiistai 18.3. klo 23:59"
