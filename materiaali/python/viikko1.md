@@ -31,6 +31,8 @@ Kurssin ensimmäisen kolmen viikon aikana harjoitellaan yksikkötestausta ja UML
 ---
 ## Ensimmäisen viikon harjoitukset
 
+Tee [lähtötasotesti](https://moodle.helsinki.fi/mod/quiz/view.php?id=3977757) (löytyy Moodlesta; nopea suorittaa).
+
 Lue tehtävänannot kohdista **"Komentorivin harjoittelua"** ja **"Versionhallinta"**. Jos niissä käsitellyt asiat ovat tuttuja (kuten kurssin esitietovaatimuksien mukaan pitäisi olla), sinun ei tarvitse tehdä näitä harjoituksia. **Jos kuitenkin yhtään epäilet osaamistasi, tee harjoitukset tehtävänantojen mukaan!** Et saa siitä ylimääräisiä pisteitä, mutta tulet jatkossa tarvitsemaan vastaavia taitoja tällä kurssilla.
 
 Mikäli komentorivi- ja versionhallintaharjoitusten asiat ovat tuttuja, **tee joka tapauksessa seuraavat asiat**:
