@@ -24,10 +24,10 @@ code_review_start_date: "keskiviikko 4.12"
 # - Tiistaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/65324719978) (alkaen 23.3.)
 # - Torstaisin klo 13-15  [zoom]()
 times:
-#  - time: "Maanantaisin klo 14-16 kampuksella BK107-luokassa"
-#  - time: "Perjantaisin klo 10-12 kampuksella BK107-luokassa"
-#  - time: "Tiistaisin klo 16-18 kampuksella BK107-luokassa"
-#  - time: "Perjantaisin klo 10-12 kampuksella BK107-luokassa"
+- time: "Ma klo 10 - 12 luokassa BK107"
+- time: "Ke klo 14 - 16 luokassa BK107"
+- time: "To klo 14.30 - 16.30 luokassa BK107"
+- time: "Pe klo 12 - 14 luokassa BK107"
 
 lecture_time: 'ma 10.3.2025	10.15–11.45'
 lecture_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/tree/master/luennot/2025-kevat'
