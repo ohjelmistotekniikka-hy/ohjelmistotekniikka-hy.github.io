@@ -679,18 +679,18 @@ Python-versioiden asennus ja käytössä olevan version vaihtaminen onnistuu vai
 
    Tämä onnistuu esimerkiksi nano-editorilla komennolla `nano .bashrc`
 
-Käynnistä asennuksen jälkeen terminaali uudestaan. Halutun Python-version, kuten version 3.8.12, asennus ja käyttöönotto onnistuu seuraavasti:
+Käynnistä asennuksen jälkeen terminaali uudestaan. Halutun Python-version, kuten version 3.10.16, asennus ja käyttöönotto onnistuu seuraavasti:
 
-1. Asenna Python-versio 3.8.12 komenolla:
+1. Asenna Python-versio 3.10.16 komenolla:
 
    ```bash
-   pyenv install 3.8.12
+   pyenv install 3.10.16
    ```
 
 2. Ota käyttöön asennettu Python-versio komennolla:
 
    ```bash
-   pyenv global 3.8.12
+   pyenv global 3.10.16
    ```
 
-3. Varmista, että Python-versio on 3.8.12 komennolla `python3 --version`
+3. Varmista, että Python-versio on 3.10.16 komennolla `python3 --version`
