@@ -679,18 +679,18 @@ Python-versioiden asennus ja käytössä olevan version vaihtaminen onnistuu vai
 
    Tämä onnistuu esimerkiksi nano-editorilla komennolla `nano .bashrc`
 
-Käynnistä asennuksen jälkeen terminaali uudestaan. Halutun Python-version, kuten version 3.9, asennus ja käyttöönotto onnistuu seuraavasti:
+Käynnistä asennuksen jälkeen terminaali uudestaan. Halutun Python-version, kuten version 3.10.0, asennus ja käyttöönotto onnistuu seuraavasti:
 
-1. Asenna Python-versio 3.9 komennolla:
+1. Asenna Python-versio 3.10.0 komennolla:
 
    ```bash
-   pyenv install 3.9
+   pyenv install 3.10.0
    ```
 
 2. Ota käyttöön asennettu Python-versio komennolla:
 
    ```bash
-   pyenv global 3.9
+   pyenv global 3.10.0
    ```
 
-3. Varmista, että Python-versio on 3.9 komennolla `python3 --version`
+3. Varmista, että Python-versio on 3.10.0 komennolla `python3 --version`
