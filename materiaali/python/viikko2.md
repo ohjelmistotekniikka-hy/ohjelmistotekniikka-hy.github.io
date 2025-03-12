@@ -52,7 +52,7 @@ curl -sSL https://install.python-poetry.org | POETRY_HOME=$HOME/.local python3 -
 
 **HUOM:** jos `python3`-komentoa ei löydy, käytä sen sijaan komennon lopussa `python`-komentoa. Varmista kuitenkin, että Python-versio on oikea edellisen ohjeen mukaisesti.
 
-**HUOM:** jos törmäät macOS-tietokoneella virheeseen `SSL: CERTIFICATE_VERIFY_FAILED`, avaa Python-asennuksen hakemisto komenolla `open /Applications/Python\ 3.9` (korvaa "3.9" käytössä olevalla Python-versiolla) ja klikkaa hakemistossa olevaa tiedostoa _Install Certificates.command_. Odota, että operaatio valmistuu ja suorita tämän jälkeen edellä mainittu asennus-komento uudestaan.
+**HUOM:** jos törmäät macOS-tietokoneella virheeseen `SSL: CERTIFICATE_VERIFY_FAILED`, avaa Python-asennuksen hakemisto komennolla `open /Applications/Python\ 3.9` (korvaa "3.9" käytössä olevalla Python-versiolla) ja klikkaa hakemistossa olevaa tiedostoa _Install Certificates.command_. Odota, että operaatio valmistuu ja suorita tämän jälkeen edellä mainittu asennus-komento uudestaan.
 
 Asennuksen jälkeen Poetry-binäärin polku tulee asettaa `PATH`-muuttujaan. Tämä onnistuu lisäämällä kotihakemiston _.bashrc_-tiedoston loppuun seuraava rivi:
 
@@ -91,30 +91,33 @@ Käynnistä terminaali uudestaan ja varmista, että asennus onnistui suorittamal
 Harjoitellaan Poetryn käyttöä tekemällä pieni esimerkkiprojekti. Luo hakemisto _poetry-testi_ haluamaasi hakemistoon. Hakemiston ei tarvitse löytyä Labtooliin rekisteröimästäsi repositoriosta. Avaa hakemisto terminaalissa ja suorita siellä komento:
 
 ```bash
-poetry init --python "^3.8"
+poetry init --python "^3.9"
 ```
 
-Komennon yhteydessä annettu `--python "^3.8"`-asetus asettaa projektin Python-version vaatimukseksi vähintään version 3.8. Komennon suorittaminen alkaa kysymään kysymyksiä. Voit vastata kysymyksiin haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painiketta painamalla on täysin hyvä vaihtoehto.
+Komennon yhteydessä annettu `--python "^3.9"`-asetus asettaa projektin Python-version vaatimukseksi vähintään version 3.9. Komennon suorittaminen alkaa kysymään kysymyksiä. Voit vastata kysymyksiin haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painiketta painamalla on täysin hyvä vaihtoehto.
 
 Kun viimeiseen kysymykseen on vastattu, katso hakemiston sisältöä. Hakemistoon pitäisi ilmestyä _pyproject.toml_-tiedosto, jonka sisältö on kutakuinkin seuraava:
 
 ```toml
-[tool.poetry]
+[project]
 name = "poetry-testi"
 version = "0.1.0"
 description = ""
-authors = ["Kalle Ilves <kalle.ilves@helsinki.fi>"]
+authors = [
+    {name = "nimi",email = "meiliosoite"}
+]
 readme = "README.md"
+requires-python = "^3.9"
+dependencies = [
+]
 
-[tool.poetry.dependencies]
-python = "^3.8"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 ```
 
-Tiedoston `[tool.poetry]`-osio sisältää projektiin liittyviä yleistietoja, kuten sen nimen, kuvauksen ja ylläpitäjät. Osion alapuolella on osioita, jotka listaavat projektin riippuvuuksia. Osiossa `[tool.poetry.dependencies]` näemme `poetry init`-komennon suorituksen yhteydessä asettamamme Python-version vaatimuksen, joka on muotoa `python = "^3.8"`. `^3.8`-merkintä tarkoittaa, että projektin käyttö vaatii vähintään Python-version 3.8.
+Tiedosto sisältää projektiin liittyviä yleistietoja, kuten sen nimen, kuvauksen ja ylläpitäjät. Osion alapuolella on osioita, jotka listaavat projektin riippuvuuksia. Näemme mm. `poetry init`-komennon suorituksen yhteydessä asettamamme Python-version vaatimuksen, joka on muotoa `requires-python = "^3.9"`. `^3.9`-merkintä tarkoittaa, että projektin käyttö vaatii vähintään Python-version 3.9.
 
 Kun _pyproject.toml_-tiedosto on tullut tutuksi, viimeistellään projektin alustaminen suorittamalla komento:
 
@@ -150,15 +153,16 @@ Asennetaan seuraavaksi projektiimme ensimmäisen riippuvuus. Riippuvuuksien löy
 poetry add cowsay
 ```
 
-Asennuksen komento on siis muotoa `poetry add <kirjasto>`. Komennon suorittamisen jälkeen huomaamme, että _pyproject.toml_-tiedoston `[tool.poetry.dependencies]`-osion alla on uutta sisältöä:
+Asennuksen komento on siis muotoa `poetry add <kirjasto>`. Komennon suorittamisen jälkeen huomaamme, että _pyproject.toml_-tiedoston `dependencies`-osion alla on uutta sisältöä:
 
 ```toml
-[tool.poetry.dependencies]
-python = "^3.8"
-cowsay = "^2.0.3"
+requires-python = "^3.9"
+dependencies = [
+    "cowsay (>=6.1,<7.0)"
+]
 ```
 
-`poetry add`-komento asentaa oletusarvoisesti kirjaston uusimman version, joka oli komennon suoritushetkellä `2.0.3`. Usein tämä on juuri se, mitä haluamme tehdä. Voimme kuitenkin asentaa halutessamme esimerkiksi cowsay-kirjaston version `1.0` komennolla:
+`poetry add`-komento asentaa oletusarvoisesti kirjaston uusimman version. Usein tämä on juuri se, mitä haluamme tehdä. Voimme kuitenkin asentaa halutessamme esimerkiksi cowsay-kirjaston version `1.0` komennolla:
 
 ```bash
 poetry add cowsay==1.0
@@ -240,7 +244,7 @@ Komennon suorittaminen lisää pytest-kirjaston riippuvuudeksi `[tool.poetry.gro
 
 ```toml
 [tool.poetry.group.dev.dependencies]
-pytest = "^6.1.2"
+pytest = "^8.3.5"
 ```
 
 Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se vähentää asennettavien riippuvuuksien määrää tapauksessa, jossa haluamme vain suorittaa sovelluksen. Tässä tilanteessa riippuvuuksien asentamisen voi tehdä komennolla `poetry install --without dev`.
@@ -253,8 +257,7 @@ Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
 2. Varmista, että _pyproject.toml_-tiedostossa on oikea Python version vaatimus:
 
    ```toml
-   [tool.poetry.dependencies]
-   python = "^3.8"
+   requires-python = "^3.9"
    ```
 
    **Jos versio on väärä**, muuta se oikeaksi ja suorita komento `poetry update`
@@ -327,7 +330,7 @@ class Maksukortti:
 Luo Labtooliin rekisteröimäsi repositorion hakemistoon _laskarit/viikko2_ hakemisto _maksukortti_. Suorita terminaalissa hakemiston sisällä tuttu, projektin alustamiseen vaadittava komento:
 
 ```bash
-poetry init --python "^3.8"
+poetry init --python "^3.9"
 ```
 
 Poetryn kysymillä projektin tiedoilla ei ole väliä, joten voit hyvin käyttää Poetryn ehdottamia tietoja.
