@@ -212,6 +212,20 @@ Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa j
 poetry shell
 ```
 
+Jos käytät Poetrystä uutta versiota, edellinen komento kuitenkin todennäköisesti johti virheilmoitukseen:
+
+```
+Since Poetry (2.0.0), the shell command is not installed by default
+```
+
+Tilanteen voi korjata asentamalla sopivan plugin-tiedoston:
+
+```bash
+poetry self add poetry-plugin-shell
+```
+
+Tämän jälkeen voit uudelleen kokeilla komentoa [poetry shell].
+
 Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa virtuaaliympäristön nimi:
 
 ```bash
