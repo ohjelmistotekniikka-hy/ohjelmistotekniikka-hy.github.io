@@ -224,7 +224,7 @@ Tilanteen voi korjata asentamalla sopivan plugin-tiedoston:
 poetry self add poetry-plugin-shell
 ```
 
-Tämän jälkeen voit uudelleen kokeilla komentoa [poetry shell].
+Tämän jälkeen voit uudelleen kokeilla komentoa `poetry shell`.
 
 Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa virtuaaliympäristön nimi:
 
