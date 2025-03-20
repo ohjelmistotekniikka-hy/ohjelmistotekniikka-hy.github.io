@@ -1,16 +1,21 @@
-[tool.poetry]
+[project]
 name = "unicafe"
 version = "0.1.0"
 description = ""
-authors = ["Kalle Ilves <kalle.ilves@helsinki.fi>"]
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = "^3.10"
+dependencies = [
+]
 
-[tool.poetry.dependencies]
-python = "^3.8"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.2.0"
-coverage = "^6.5.0"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3"
+coverage = "^6.5.0"
+
