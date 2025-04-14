@@ -32,8 +32,7 @@ times:
 lecture_time: 'ma 10.3.2025	10.15–11.45'
 lecture_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/tree/master/luennot/2025-kevat'
 lecture_slides_link: 'https://ohjelmistotekniikka-hy.github.io/luennot/2025-kevat/aloitusluentok25.pdf'
-lecture_recording_link:
-https://moodle.helsinki.fi/mod/lti/view.php?id=3955232
+lecture_recording_link: https://moodle.helsinki.fi/mod/lti/view.php?id=3955232
 #'https://moodle.helsinki.fi/mod/lti/view.php?id=3510005'
 
 # seuraava kurssikerta muodossa syksyllä/keväällä [vuosi].
