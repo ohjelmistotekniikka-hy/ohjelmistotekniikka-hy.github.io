@@ -193,7 +193,7 @@ Tarkastettaessa:
   - 2, jos projektia ei edes aloitettu (esim vain laskarit tehty)
 - "Tunteja käytetty"-sarakkeeseen oppilaan ilmoittama määrä tuntikirjanpidossa
 - Moodle on lisännyt arviointikohteisiin automaattisesti kentän "Palaute". Näistä palautekentistä ei yleensä tarvitse välittää - paitsi jos haluat jossain kohtaa kertoa opiskelijalle arvioinnista tavallista tarkemmin. Koska pistekenttiin ei voi syöttää tekstimuotoista tietoa, käytämme kuitenkin em. palautekenttiä kohdissa Tarkastaja, Huomioita, Kontrolloija ja Kontrolloijan huomioita.
-- Kopioi kohdan "Huomioita" palautekenttään linkki tiedostoon, jossa olet avannut omaa pisteytystäsi.  Tämä on sen vuoksi, että kontrollitarkastukset helpottuvat huomattavasti.
+- Kirjoita kohdan "Huomioita" palautekenttään kuvaus, jossa avaat omaa pisteytystäsi. Tämä                                                                                                                                  helpottaa suuresti arvioiden vertaisarviointia ym. tarkistuksia. Vaihtoehtoisesti voit kirjoittaa kuvauksen Labtooliin seitsemännen viikon kohtaan "Review notes"; kirjoita siinä tapauksessa kohdan "Huomioita" palautekenttään linkki kuvaukseesi. Älä kuitenkaan tietosuojan takia kirjoita kuvausta pilvipalveluihin (Google Docs tms.).
 - Kohdan "Tarkastaja" palautekenttään tulee oma nimesi
 
 Kyselkää jos tulee epäselvyyksiä, esim jos projektit, checkstyle tms. ei aukea. Heittäkää linkki ohjaajien keskustelualueelle, niin tsekataan toimiiko jollain muulla.
