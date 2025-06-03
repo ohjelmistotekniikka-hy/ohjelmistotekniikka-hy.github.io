@@ -1,4 +1,4 @@
-<!--- - Arvosanoja näkyy nyt [Moodlessa]({{site.moodle_link}}) (linkki "Arvioinnit" sivun yläosassa, otsikon alla). Kiitoksia osallistumisesta ja aurinkoista kesää! --->
+- Arvosanoja näkyy nyt [Moodlessa]({{site.moodle_link}}) (linkki "Arvioinnit" sivun yläosassa, otsikon alla). Kiitoksia osallistumisesta ja aurinkoista kesää!
 - Kurssilla on pääsiäistauko 16.4. - 22.4. joten kuudennen viikon deadline ei ole tiistaina 22.4. vaan vasta 29.4.
 - Kurssin aloitustilaisuus {{site.lecture_time}}
   - Aloitustilaisuudessa käytettävät kalvot löytyvät [täältä]({{site.lecture_slides_link}})
