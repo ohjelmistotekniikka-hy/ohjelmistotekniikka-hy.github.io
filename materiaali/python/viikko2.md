@@ -94,7 +94,7 @@ Harjoitellaan Poetryn käyttöä tekemällä pieni esimerkkiprojekti. Luo hakemi
 poetry init --python "^3.10"
 ```
 
-Komennon yhteydessä annettu `--python "^3.10"`-asetus asettaa projektin Python-version vaatimukseksi vähintään version 3.10. Komennon suorittaminen alkaa kysymään kysymyksiä. Voit vastata kysymyksiin haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painiketta painamalla on täysin hyvä vaihtoehto.
+Komennon yhteydessä annettu `--python "^3.10"`-asetus asettaa projektin Python-version vaatimukseksi vähintään version 3.10. Komennosta seuraa sarja kysymyksiä. Voit vastata niihin haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painiketta painamalla on täysin hyvä vaihtoehto.
 
 Kun viimeiseen kysymykseen on vastattu, katso hakemiston sisältöä. Hakemistoon pitäisi ilmestyä _pyproject.toml_-tiedosto, jonka sisältö on kutakuinkin seuraava:
 
@@ -125,17 +125,15 @@ Kun _pyproject.toml_-tiedosto on tullut tutuksi, viimeistellään projektin alus
 poetry install
 ```
 
-Komennon suorittaminen tekee projektille vaadittavat alustustoimenpiteet, kuten virtuaaliympäristön alustamisen ja riippuvuuksien asentamisen. Tämän vuoksi komento tulee suorittaa aina ennen kuin uutta projektia aletaan käyttämään.
+Komennon suorittaminen tekee projektille vaadittavat alustustoimenpiteet, kuten virtuaaliympäristön alustamisen ja riippuvuuksien asentamisen. Tämän vuoksi komento tulee suorittaa aina ennen kuin uutta projektia aletaan käyttää.
 
-Komennon suorittaminen johtaa todennäköisesti seuraavaan ilmoitukseen:
+Komennon suorittaminen johtaa todennäköisesti ilmoitukseen, jossa viitataan virheeseen ja todetaan mm. seuraavaa:
 
 ```
-Installing the current project: poetry-testi (0.1.0)
-The current project could not be installed: [Errno 2] No such file or directory: '~/poetry-testi/README.md'
 If you do not want to install the current project use --no-root
 ```
 
-Tämä johtuu siitä, että Poetry yrittää asentaa myös nykyistä projektia, eikä projektissa ole _poetry-testi_-nimistä moduulia. Kyseessä [ei ole](https://github.com/python-poetry/poetry/pull/8369) tekstin ulkonäöstä huolimatta virhe vaan pikemminkin varoitus. Projektin alustaminen on kyllä mennyt läpi, mutta jos et halua varoitusta, voit käyttää komennosta muotoa:
+Tämä johtuu siitä, että Poetry yrittää asentaa myös nykyistä projektia, eikä se sisällä kaikkea vaadittua. Kyseessä ei ole tekstin ulkonäöstä huolimatta varsinainen virhe vaan pikemminkin varoitus. Projektin alustaminen on kyllä todennäköisesti mennyt läpi, mutta jos et halua varoitusta, voit käyttää komennosta em. ilmoituksen mukaisesti muotoa:
 
 ```bash
 poetry install --no-root
@@ -147,7 +145,7 @@ Komennon suorittamisen jälkeen hakemistoon pitäisi ilmestyä tiedosto _poetry.
 
 ### Riippuvuuksien asentaminen
 
-Asennetaan seuraavaksi projektiimme ensimmäisen riippuvuus. Riippuvuuksien löytäminen onnistuu helpoiten Googlettamalla ja etsimällä hakutuloksista sopivia GitHub-repositorioita, tai PyPI-sivuja. Asennetaan esimerkkinä projektiimme [cowsay](https://pypi.org/project/cowsay/)-kirjasto. Tämä onnistu projektin juurihakemistossa (samassa hakemistossa, missä _pyproject.toml_-tiedosto sijaitsee) komennolla:
+Asennetaan seuraavaksi projektiimme ensimmäisen riippuvuus. Riippuvuuksia voi löytää esim. hakemalla Googlen avulla sopivia GitHub-repositorioita tai PyPI-sivuja. Asennetaan esimerkkinä projektiimme [cowsay](https://pypi.org/project/cowsay/)-kirjasto. Tämä onnistu projektin juurihakemistossa (samassa hakemistossa, missä _pyproject.toml_-tiedosto sijaitsee) komennolla:
 
 ```bash
 poetry add cowsay
@@ -156,7 +154,6 @@ poetry add cowsay
 Asennuksen komento on siis muotoa `poetry add <kirjasto>`. Komennon suorittamisen jälkeen huomaamme, että _pyproject.toml_-tiedoston `dependencies`-osion alla on uutta sisältöä:
 
 ```toml
-requires-python = "^3.10"
 dependencies = [
     "cowsay (>=6.1,<7.0)"
 ]
@@ -186,7 +183,7 @@ import cowsay
 cowsay.tux("Poetry is awesome!")
 ```
 
-Koodissa käyttämme `import`-lausetta saadaksemme cowsay-kirjaston käyttöömme. Jos suoritamme tiedoston terminaalissa komennolla:
+Koodissa käytämme `import`-lausetta saadaksemme cowsay-kirjaston käyttöömme. Jos suoritamme tiedoston terminaalissa komennolla:
 
 ```bash
 python3 src/index.py
@@ -206,30 +203,30 @@ poetry run python3 src/index.py
 
 `poetry run`-komento siis suorittaa annetun komennon virtuaaliympäristössä, jonka sisällä Python löytää riippuvuutemme.
 
-Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa jatkuvasti, on kätevintä olla koko ajan virtuaaliympäristön sisällä. Voimme siirtyä virtuaaliympäristön sisään kommennolla [shell](https://python-poetry.org/docs/cli/#shell):
+Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa jatkuvasti, on kätevintä olla koko ajan virtuaaliympäristön sisällä. Jos Poetry on versioltaan vähintään 2.0.0, voimme siirtyä virtuaaliympäristön sisään seuraavalla [kommennolla](https://python-poetry.org/docs/managing-environments/#bash-csh-zsh):
 
 ```bash
-poetry shell
+eval $(poetry env activate)
 ```
 
-Jos käytät Poetrystä uutta versiota, edellinen komento kuitenkin todennäköisesti johti virheilmoitukseen:
+On kuitenkin mahdollista, että tästä seuraa virheilmoitus, jossa viitataan Pythonin versioihin ja todetaan:
 
 ```
-Since Poetry (2.0.0), the shell command is not installed by default
+Discovered shell 'bash' doesn't have an activator in virtual environment
 ```
 
-Tilanteen voi korjata asentamalla sopivan plugin-tiedoston:
+Tällöin voit kokeilla seuraavaa komentoa, kunhan korvaat kohdan "3.12.3" käyttämäsi Pythonin versionumerolla (ks. versionumero esim. komennolla `python3 --version`):
 
 ```bash
-poetry self add poetry-plugin-shell
+poetry env use 3.12.3
 ```
 
-Tämän jälkeen voit uudelleen kokeilla komentoa `poetry shell`.
+Tämän jälkeen voit uudestaan antaa komennon `eval $(poetry env activate)`.
 
-Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa virtuaaliympäristön nimi:
+Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa tieto virtuaaliympäristöstä, esim.:
 
 ```bash
-$ (poetry-testi-IhtScY6W-py3.9)
+(poetry-testi-py3.12)$
 ```
 
 Virtuaaliympäristön sisällä voimme suorittaa komennon "normaalisti", eli ilman `run`-komentoa:
@@ -238,9 +235,24 @@ Virtuaaliympäristön sisällä voimme suorittaa komennon "normaalisti", eli ilm
 python3 src/index.py
 ```
 
-Voimme lähteä virtuaaliympäristöstä komennolla `exit`.
+Voimme lähteä virtuaaliympäristöstä komennolla `deactivate`.
 
-Poetry:n tuodut riippuvuudet ovat vain virtuaalisessa ympäristössä saatavilla, VS Codeen sisäänrakennettu "debugging mode" (F5 oletuksena) ei välttämättä toimi. Koita ensin `poetry shell` ja vasta sen jälkeen käynnistä VS Code `code /path/to/projekt` komennolla.
+Poetryn vanhemmilla versioilla (versionumero alle 2.0.0) virtuaaliympäristöön pääsee komennolla [shell](https://python-poetry.org/docs/cli/#shell):
+
+```bash
+poetry shell
+```
+
+Tätä komentoa voi itse asiassa käyttää Poetryn uudempienkin versioiden kanssa (jos et esim. jostain syystä päässyt virtuaaliympäristöön aiemmin kuvatulla tavalla), mutta siinä tapauksessa pitää ensiksi ottaa käyttöön sopiva plugin-tiedosto:
+
+```bash
+poetry self add poetry-plugin-shell
+```
+
+Kun virtuaaliympäristöön siirryttiin komennolla `poetry shell`, sieltä pääsee pois komennolla `exit`.
+
+
+Huomaathan, että koska Poetryyn tuodut riippuvuudet ovat saatavilla vain virtuaalisessa ympäristössä, VS Codeen sisäänrakennettu "debugging mode" (F5 oletuksena) ei välttämättä toimi. Siirry ensin virtuaaliympäristöön ja vasta sen jälkeen käynnistä VS Code komennolla `code /polku/projektiin`.
 
 ### Kehityksen aikaiset riippuvuudet
 
@@ -254,11 +266,13 @@ Kehityksen aikaisten riippuvuuksien asentaminen onnistuu antamalla `poetry add`-
 poetry add pytest --group dev
 ```
 
-Komennon suorittaminen lisää pytest-kirjaston riippuvuudeksi `[tool.poetry.group.dev.dependencies]`-osion alle:
+Komennon suorittaminen lisää pytest-kirjaston riippuvuudeksi seuraavaan tapaan:
 
 ```toml
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.3.5"
+[dependency-groups]
+dev = [
+    "pytest (>=8.4.2,<9.0.0)"
+]
 ```
 
 Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se vähentää asennettavien riippuvuuksien määrää tapauksessa, jossa haluamme vain suorittaa sovelluksen. Tässä tilanteessa riippuvuuksien asentamisen voi tehdä komennolla `poetry install --without dev`.
@@ -268,7 +282,7 @@ Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se v�
 Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
 
 1. Varmista, että Poetrysta on asennettu uusin versio suorittamalla komento `poetry self update`
-2. Varmista, että _pyproject.toml_-tiedostossa on oikea Python version vaatimus:
+2. Varmista, että _pyproject.toml_-tiedostossa on oikea Python-version vaatimus:
 
    ```toml
    requires-python = "^3.10"
@@ -336,7 +350,7 @@ class Maksukortti:
         return "Kortilla on rahaa {:0.2f} euroa".format(saldo_euroissa)
 ```
 
-**HUOM:** Kaikki raha-arvot, kuten maksukortin saldo ja aterioiden hinnat ovat senteissä. (Huomaa myös, että harjoitustyössä muuttujat, luokat ja metodit kirjoitetaan englanniksi vaikka kurssimateriaalissa onkin luettavuuden vuoksi käytetty suomenkielisiä nimiä.)
+**HUOM:** Kaikki raha-arvot, kuten maksukortin saldo ja aterioiden hinnat ovat senteissä. Huomaathan myös, että harjoitustyössä muuttujat, luokat ja metodit kirjoitetaan englanniksi vaikka kurssimateriaalissa onkin luettavuuden vuoksi käytetty suomenkielisiä nimiä.
 
 ---
 ### Tehtävä 1: Alkutoimet
@@ -371,7 +385,7 @@ Lisää tiedostoon _src/maksukortti.py_ edellä esitelty `Maksukortti`-luokan ko
 
 ### Tehtävä 2: Aloitetaan testien kirjoittaminen
 
-Yritetään seuraavaksi suorittaa testejä. Siirrytään virtuaaliympäristöön komennolla `poetry shell`, jonka jälkeen suoritetaan komento `pytest src`. Komennon suorittaminen antaa ymmärtää, ettei yhtään testiä ole suoritettu. Syy on yksinkertaisesti siinä, ettemme ole vielä toteuttaneet yhtään testiä.
+Yritetään seuraavaksi suorittaa testejä. Siirrytään ensin virtuaaliympäristöön (joko komennolla `eval $(poetry env activate)` tai `poetry shell`), jonka jälkeen suoritetaan komento `pytest src`. Komennon suorittaminen antaa ymmärtää, ettei yhtään testiä ole suoritettu. Syy on yksinkertaisesti siinä, ettemme ole vielä toteuttaneet yhtään testiä.
 
 Toteutetaan <i>src/tests/maksukortti_test.py</i>-tiedostoon projektimme ensimmäinen testi. Tiedoston sisältö tulee olla seuraava:
 
@@ -736,6 +750,8 @@ class Kassapaate:
         return self.kassassa_rahaa / 100
 ```
 
+Kun luokkia on kaksi, pääsemme hetken päästä testaamaan niiden yhteistyötä eli suorittamaan **integraatiotestausta**.
+
 **Hae nyt projektin koodi koneellesi**. Avaa terminaali, mene palautusrepositoriosi hakemistoon _laskarit/viikko2_ ja suorita seuraavat komennot:
 
 ```bash
@@ -761,7 +777,7 @@ Siirry terminaalissa _unicafe_-hakemistoon ja asenna vaadittavat riippuvuudet ko
 poetry install
 ```
 
-Testien suorittaminen terminaalissa onnistuu siirtymällä virtuaaliympäristöön komennolla `poetry shell` ja sen jälkeen suorittamalla komento `pytest src`. Jos kaikki on kunnossa, saat raportin läpimenneistä testeistä:
+Testien suorittaminen terminaalissa onnistuu siirtymällä ensin virtuaaliympäristöön (joko komennolla `eval $(poetry env activate)` tai `poetry shell`) ja sen jälkeen suorittamalla komento `pytest src`. Jos kaikki on kunnossa, saat raportin läpimenneistä testeistä:
 
 ```
 collected 1 item
@@ -773,7 +789,7 @@ src/tests/maksukortti_test.py .                          [100%]
 
 ### Tehtävä 5: .gitignore
 
-Kun testien jälkeen suoritat komennon `git status`, huomaat että projektin juureen on ehkä ilmestynyt uusi hakemisto <i>.pytest_cache</i>, joka ei ole gitin alaisuudessa
+Kun testien jälkeen suoritat komennon `git status`, huomaat että projektin juureen on ehkä ilmestynyt uusi hakemisto <i>.pytest_cache</i>, joka ei ole gitin alaisuudessa:
 
 ```bash
 On branch master
@@ -837,11 +853,11 @@ Suorita testit terminaalissa virtuaaliympäristössä `pytest src`-komennolla.
 
 Visual Studio Coden voi avata Linux-ympäristössä esim. siirtymällä hakemistoon _unicafe_ ja antamalla komennon `code .`. Visual Studio Codesta löytyy sisäänrakennettu terminaali. Terminaalin saa avattua valitsemalla päävalikosta _Terminal_ ja aukeavasta alavalikosta _New Terminal_. Editorin alalaitaan pitäisi ilmestyä terminaali, jossa voit suorittaa komentorivikomentoja.
 
-Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä, ainakin jos olit virtuaaliympäristössä silloin kun avasit itse Visual Studio Coden. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa projektin nimi ja jokin satunnainen merkkijono suluissa, esimerkiksi `(unicafe-sF0cl2di-py3.9)`. Jos et ole virtuaaliympäristössä pääset siihen tutulla `poetry shell`-komennolla. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
+Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä, ainakin jos olit virtuaaliympäristössä silloin kun avasit itse Visual Studio Coden. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa tästä tieto sulkeiden sisällä, esimerkiksi `(poetry-testi-py3.12)`. Jos et ole virtuaaliympäristössä pääset siihen tuttuun tapaan joko komennolla `eval $(poetry env activate)` tai `poetry shell`. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
 
 ![Visual Studio Code terminaali]({{ "/assets/images/python/vscode-terminaali.png" | absolute_url }})
 
-Toinen, ehkä parempi tapa on seuraava: lisää hakemisto _unicafe_ Visual Studio Coden "workspaceen" _File_-valikon kautta, tallenna tämä workspace samaan _unicafe_-hakemistoon ja avaa Visual Studio Coden terminaali uudelleen. Valitse oikea virtuaaliympäristö Visual Studio Coden ikkunan oikeasta alareunasta (kun _maksukortti.py_ tai _kassapaate.py_ on avattuna). Tämän jälkeen testauksen tulisi onnistua. (Kurssin Ohjelmistotuotanto materiaalissa on aiheeseen liittyvä [esimerkki](https://ohjelmistotuotanto-hy.github.io/tehtavat2/#bonus-vs-coden-konfigurointi).)
+Voit vaihtoehtoisesti kokeilla seuraavaa: lisää hakemisto _unicafe_ Visual Studio Coden "workspaceen" _File_-valikon kautta, tallenna tämä workspace samaan _unicafe_-hakemistoon ja avaa Visual Studio Coden terminaali uudelleen. Valitse oikea virtuaaliympäristö Visual Studio Coden ikkunan oikeasta alareunasta (kun _maksukortti.py_ tai _kassapaate.py_ on avattuna). Tämän jälkeen testauksen tulisi onnistua.
 
 ## Coverage ja testikattavuus
 
@@ -1044,7 +1060,7 @@ Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erila
   - Laskin, funktiolaskin, graafinen laskin
   - Budjetointisovellus
   - HTML WYSIWYG-editor (What you see is what you get)
-- Reaaliaikaiset pelit
+- Reaaliaikaiset pelit, esim. seuraavien inspiroimina:
   - Tetris
   - Pong
   - Pacman
@@ -1078,7 +1094,7 @@ Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erila
 
 Harjoitustyön tekeminen aloitetaan päättämällä aihe ja kuvaamalla se _alustavassa määrittelydokumentissa_, eli työlle tehdään [vaatimusmäärittely](/python/viikko1#vaatimusmäärittely).
 
-Mikään ei tietenkään estä sitä, että aloitat jo ohjelmoinnin tai vaikkapa koodaat koko työn valmiiksi. Tämän viikon deadlinen pisteytyksessä ollaan kiinnostuneita ainoastaan määrittelydokumentista.
+Mikään ei tietenkään estä sitä, että aloitat jo ohjelmoinnin. Tämän viikon deadlinen pisteytyksessä ollaan kiinnostuneita ainoastaan määrittelydokumentista.
 
 **HUOM:** jos aloitat jo ohjelmoinnin, muista että ohjelmakoodi tulee kirjoittaa englanniksi! Ohjelman käyttöliittymä ja dokumentaatio voivat olla suomeksi tai englanniksi. Ohjeet ohjelmoinnin aloittamiseen löytyvät [viikon 3](/python/viikko3#harjoitustyö) materiaalista.
 
