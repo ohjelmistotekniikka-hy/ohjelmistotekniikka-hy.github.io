@@ -14,7 +14,7 @@ Ohjaajan tehtävät kurssilla ovat:
 
 ## Palautteen antaminen
 
-Opiskelijoille annetaan pääsääntöisesti palautetta viikkopalautuksien yhteydessä [Labtoolin]({{site.labtool_link}}) kautta. Kurssin opiskelijat jaetaan Labtoolissa ohjaajien kesken ensimmäisen viikon deadlinen jälkeen. **Ohjaajan tulee antaa viikkopalaute jokaiselle opiskelijalleen deadlinea vastaavan viikon sunnuntaihin klo 23:59 mennessä**.
+Opiskelijoille annetaan pääsääntöisesti palautetta viikkopalautuksien yhteydessä [Labtoolin]({{site.labtool_link}}) kautta. Kurssin opiskelijat jaetaan Labtoolissa ohjaajien kesken kurssin alussa. **Ohjaajan tulee antaa viikkopalaute jokaiselle opiskelijalleen deadlinea vastaavan viikon sunnuntaihin klo 23:59 mennessä**.
 
 Viikkopalautuksien tarkistuksessa kannattaa hyödyntää Labtoolin viikoittaista "tarkistuslistaa" ja alta löytyviä arvosteluperusteita. Palautuksia ei tarvitse syynätä turhan tarkasti, oleellisten tiedostojen silmäily ja vaadittavien toiminnallisuuksien pikainen testaaminen riittää. Palautteen itsessään tulee olla _ytimekästä_ ja _rakentavaa_.
 
@@ -47,7 +47,7 @@ Katsokaa että coveragen raportti on ok ja silmäilkää nopeasti, että testit 
 1. Monopolin laajennuksen malli: [malli3-12.png](https://github.com/ohjelmistotekniikka-hy/mallivastaukset/blob/main/malli3-12.png)
 2. HSL-sekvenssikaavion malli: [malli3-4.png](https://github.com/ohjelmistotekniikka-hy/mallivastaukset/blob/main/malli3-4.png)
 
-Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärretty täysin väärin. Mutta jos oikeasti yritetty kunnolla ja sekvenssikaavio on esim. muuten oikein, mutta joku metodi tai palautusviiva uupuu niin antakaa pisteet. (Voitte toki halutessa kommentoida, virheistä)
+Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärretty täysin väärin. Mutta jos on oikeasti yritetty kunnolla ja sekvenssikaavio on esim. muuten oikein, mutta joku metodi tai palautusviiva uupuu niin antakaa pisteet. (Voitte toki halutessa kommentoida, virheistä)
 
 #### Projekti
 
@@ -56,7 +56,7 @@ Miinustakaa pisteet kaavioista, jos niitä ei ole tehty kunnolla tai on ymmärre
 - Tarkistakaa että src-hakemiston alahakemistoihin on lisätty [ohjeen](/python/viikko3#harjoitusty%C3%B6-1-poetry-projektin-alustaminen) mukaisesti tyhjät \_\_init\_\_.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty, ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä.
 - Sovelluksella on oltava vähintään yksi testi jonka voi suorittaa komennolla `poetry run invoke test`. Testin tulee olla mielekäs, eli sen on testattava jotain ohjelman kannalta merkityksellistä asiaa. Testin tulee mennä läpi.
 - Edellytys pisteille suoritettavissa oleva versio, joka toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta.
-- Opiskelijan tehtävänannossa ei oltu määritelty pitääkö toiminnallisuuden on olla käyttäjälle näkyvää tai olla käyttöliittymä olemassa, joten riittää jos toiminnallisuus on toteutettu nyt kooditasolla ja toimivuus testattu (eli jos on tehnyt “test driven”) niin se riittää tässä vaiheessa
+- Opiskelijan tehtävänannossa ei oltu määritelty pitääkö toiminnallisuuden olla käyttäjälle näkyvää tai olla käyttöliittymä olemassa, joten riittää jos toiminnallisuus on toteutettu nyt kooditasolla ja toimivuus testattu (eli jos on tehnyt “test driven”) niin se riittää tässä vaiheessa
 - Repositorion juuresta löytyy `src`-kansio projektin koodille
 
 #### Tuntikirjanpito
@@ -91,6 +91,7 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
     - Vähintään yksi määrittelydokumentin käyttäjälle näkyvä toiminto toteutettu
   - Ohjelmassa vain hieman jotain uutta toiminnallisuutta (0.25p)
     - Koodi kasvanut vähän viimeviikkoisesta
+  **Huom:** ohjelman viikoittaisen kasvamisen puutteiden osalta saa ja on hyvä käyttää harkintaa, jos opiskelija on edeltävällä viikolla tehnyt selvästi odotettua enemmän ja työ on aivan selvästi vähintään siinä vaiheessa kuin tällä viikolla edellytetään. Näin siis nyt ja myös jatkossa. Yhtä viikkoa kauemmaksi ei kuitenkaan tässä ole syytä katsoa.
 - Testauksen edistyminen (0.5p)
   **!! ALLA OLEVISTA MERKATAAN NOLLA, YKSI TAI KAKSI. EI SIIS VAIN JOMPAA KUMPAA !!**
   - Rivikattavuus vähintään 20% (0.25p)
@@ -157,8 +158,6 @@ Arvostelussa voi myös käyttää hyödyksi opiskelijoiden viikko-ohjeistusta [v
 
 Huomatkaa että checklistissä ohjelma kasvanut osiosta (max. 0.75 pistettä) ruksitaan vain yksi vaihtoehto.
 
-Huom: ajanpuutteesta johtuvien keskeytysten välttämiseksi on suositeltu tiettyä etupainotteisuutta. Ainakin näin kurssin jälkipuoliskolla kannattaa tämän ohjelman kasvamisen osalta tarvittaessa katsoa kokonaisuutta eli jos toiminnot on jo aiemmin toteutettu niin ei vähennetä pisteitä.
-
 Muuten aikalailla samat ohjeet kuin edellisellä viikolla.
 
 ### Viikko 6
@@ -193,7 +192,7 @@ Tarkastettaessa:
   - 2, jos projektia ei edes aloitettu (esim vain laskarit tehty)
 - "Tunteja käytetty"-sarakkeeseen oppilaan ilmoittama määrä tuntikirjanpidossa
 - Moodle on lisännyt arviointikohteisiin automaattisesti kentän "Palaute". Näistä palautekentistä ei yleensä tarvitse välittää - paitsi jos haluat jossain kohtaa kertoa opiskelijalle arvioinnista tavallista tarkemmin. Koska pistekenttiin ei voi syöttää tekstimuotoista tietoa, käytämme kuitenkin em. palautekenttiä kohdissa Tarkastaja, Huomioita, Kontrolloija ja Kontrolloijan huomioita.
-- Kirjoita kohdan "Huomioita" palautekenttään kuvaus, jossa avaat omaa pisteytystäsi. Tämä                                                                                                                                  helpottaa suuresti arvioiden vertaisarviointia ym. tarkistuksia. Vaihtoehtoisesti voit kirjoittaa kuvauksen Labtooliin seitsemännen viikon kohtaan "Review notes". Editointi saattaa olla siellä vähän helpompaa. Kirjoita siinä tapauksessa kohdan "Huomioita" palautekenttään linkki kuvaukseesi. Älä kuitenkaan tietosuojan takia kirjoita kuvausta pilvipalveluihin (Google Docs tms.).
+- Kirjoita kohdan "Huomioita" palautekenttään kuvaus, jossa avaat omaa pisteytystäsi. Tämä helpottaa suuresti arvioiden vertaisarviointia ym. tarkistuksia. Vaihtoehtoisesti voit kirjoittaa kuvauksen Labtooliin seitsemännen viikon kohtaan "Review notes". Editointi saattaa olla siellä vähän helpompaa. Kirjoita siinä tapauksessa kohdan "Huomioita" palautekenttään linkki kuvaukseesi. Älä kuitenkaan tietosuojan takia kirjoita kuvausta pilvipalveluihin (Google Docs tms.).
 - Kohdan "Tarkastaja" palautekenttään tulee oma nimesi
 
 Kyselkää jos tulee epäselvyyksiä, esim jos projektit, checkstyle tms. ei aukea. Heittäkää linkki ohjaajien keskustelualueelle, niin tsekataan toimiiko jollain muulla.
@@ -202,7 +201,7 @@ Kyselkää jos tulee epäselvyyksiä, esim jos projektit, checkstyle tms. ei auk
 
 Kukin tekee yhtä monta vertaisarviota kuin on itse loppuunsaatettuja töitä arvioinut (siis sellaisia joiden kohdalle drop-sarakkeeseen et ole merkinnyt ykköstä tai kakkosta).
 
-Valitkaa taulukosta oppilas satunnaisesti. Voitte näpäyttää nuolia sarakkeissa *Drop* ja *Kontrolloija* jotta pääsette helpommin valitsemaan loppuunsaatetun työn, jolla ei ole vielä vertaisarvioijaa (eli molemmissa sarakkeissa tulee olla tyhjää tai nolla). Avatkaa ohjaajan kirjoittama pisteytyslista; katsokaa kaikki kohdat läpi että ne ovat järkeviä, mutta ei tarvitse kuitenkaan suurennuslasin kanssa etsiä "virheitä". Jos olette eri mieltä jostain kirjoittakaa "Kontrolloijan huomioita"-kohdan palautekenttään mitä muuttaisitte ja mihin suuntaan. Jos muutettu pisteytys vaikuttaisi arvosanaan siitä kannattaa myös mainita. **Huom:** muuttakaa kohdan "Kontrolloija" arvo nollasta ykköseksi kun alatte tarkastamaan ja lisätkää nimenne mainitun kohdan palautekenttään (ja muistakaa taas tallentaa). Näin siksi, ettei kaksi ohjaajaa tarkastaisi vahingossa samaa työtä.
+Valitkaa taulukosta oppilas satunnaisesti, mutta pyrkikää arvioimaan jokaiselta muulta ohjaajalta vähintään yksi arviointi. Voitte näpäyttää nuolia sarakkeissa *Drop* ja *Kontrolloija* jotta pääsette helpommin valitsemaan loppuunsaatetun työn, jolla ei ole vielä vertaisarvioijaa (eli molemmissa sarakkeissa tulee olla tyhjää tai nolla). Avatkaa ohjaajan kirjoittama pisteytyslista; katsokaa kaikki kohdat läpi että ne ovat järkeviä, mutta ei tarvitse kuitenkaan suurennuslasin kanssa etsiä "virheitä". Jos olette eri mieltä jostain kirjoittakaa "Kontrolloijan huomioita"-kohdan palautekenttään mitä muuttaisitte ja mihin suuntaan. Jos muutettu pisteytys vaikuttaisi arvosanaan siitä kannattaa myös mainita. **Huom: muuttakaa kohdan "Kontrolloija" arvo nollasta ykköseksi kun alatte tarkastamaan ja lisätkää nimenne mainitun kohdan palautekenttään (ja muistakaa taas tallentaa).** Näin siksi, ettei kaksi ohjaajaa tarkastaisi vahingossa samaa työtä.
 
 Esimerkkejä kontrollikommenteista:
 
@@ -225,8 +224,6 @@ Vaikuttaa arvosanaan: mun mielestä laajuus vain 2 pistettä, vaikka onkin netti
 ```
 Laittaisin kompleksisuuden 1 ja laajuuden 2. Tuossa kyllä tehdään laskentaa, mutta aika yksinkertaista sellaista, ja siinä on oikeastaan vaan se näyttö johon piirtyy se juttu ja sitten muutamat arvot syötetään toiseen ikkunaan. Lisäksi ohjelma koostuu vain pienestä määrästä lyhyitä luokkia.
 ```
-
-Pyrkikää arvioimaan jokaiselta muulta ohjaajalta vähintään yksi arviointi.
 
 ### Vertaisarviointien deadlinen jälkeen
 
