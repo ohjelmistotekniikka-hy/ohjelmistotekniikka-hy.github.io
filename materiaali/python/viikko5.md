@@ -8,7 +8,7 @@ permalink: /python/viikko5
 
 {% include deadline_info.md deadline=site.wk5dl %}
 
-Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä.
+Tämän viikon harjoitustyön palautuksesta on tarjolla 3 pistettä (tai 4 pistettä, jos suoritit myös ylimääräisen koodikatselmoinnin).
 
 ## GitHub release
 
