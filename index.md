@@ -36,7 +36,7 @@ Palautuksen deadline {{ site.wk1dl }}
 - Kurssin aloitustilaisuus. Aloitustilaisuudessa käytettävät kalvot löytyvät [täältä]({{site.lecture_slides_link}}). Aloitustilaisuudesta julkaistaan myöhemmin tallenne, joka on katsottavissa [täältä]({{site.lecture_recording_link}})
 - [Tehtävät](/python/viikko1#ensimmäisen-viikon-harjoitukset): Komentorivi- ja Git-harjoittelu (1p)
 - Tehtävien palautus tapahtuu tekemällä repositorio GitHubiin ja rekisteröitymällä Labtooliin
-- [Lähtötasotesti](https://moodle.helsinki.fi/mod/quiz/view.php?id=3977757)
+- [Lähtötasotesti](https://moodle.helsinki.fi/mod/quiz/view.php?id=4176290)
 
 ### Viikko 2
 
