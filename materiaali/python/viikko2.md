@@ -227,7 +227,7 @@ Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa j
 eval $(poetry env activate)
 ```
 
-Jos saat virheilmoituksen, jossa viitataan Pythonin versioihin ja todetaan, että *"Discovered shell 'bash' doesn't have an activator in virtual environment"*, voit kokeilla komentoa `poetry env use` (ks. [aiempi ohje](# Mahdollisia ongelmia)). Tämän jälkeen voit uudestaan antaa komennon `eval $(poetry env activate)`.
+Jos saat virheilmoituksen, jossa viitataan Pythonin versioihin ja todetaan, että *"Discovered shell 'bash' doesn't have an activator in virtual environment"*, voit kokeilla komentoa `poetry env use` (ks. [aiempi ohje](#mahdollisia-ongelmia)). Tämän jälkeen voit uudestaan antaa komennon `eval $(poetry env activate)`.
 
 Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa tieto virtuaaliympäristöstä, esim.:
 
