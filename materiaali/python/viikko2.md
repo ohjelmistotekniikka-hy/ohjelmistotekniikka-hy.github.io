@@ -141,11 +141,25 @@ poetry install --no-root
 
 Virtuaaliympäristön alustamisen lisäksi tämä komento asentaa ainoastaan projektin riippuvuudet, ei projektia itseään.
 
-Komennon suorittamisen jälkeen hakemistoon pitäisi ilmestyä tiedosto _poetry.lock_. Tiedosto sisältää kaikkien asennettujen riippuvuuksien versiotiedot. Sen tietojen avulla Poetry pystyy aina asentamaan `poetry install`-komennolla riippuvuuksista täsmälleen oikeat versiot. Tästä syystä tiedosto tulee lisätä versionhallintaan.
+Install-komennon suorittamisen jälkeen hakemistoon pitäisi ilmestyä tiedosto _poetry.lock_. Tiedosto sisältää kaikkien asennettujen riippuvuuksien versiotiedot. Sen tietojen avulla Poetry pystyy aina asentamaan `poetry install`-komennolla riippuvuuksista täsmälleen oikeat versiot. Tästä syystä tiedosto tulee lisätä versionhallintaan.
 
-### Keyring-ongelma
+### Mahdollisia ongelmia
 
-Jos `poetry install`-komennon suorittaminen pyytää keyring-salasanaa, ongelma pitäisi ratketa suorittamalla terminaalissa `export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring` ja sen jälkeen suorittamalla komento `poetry install` uudestaan. Kyseisen rivin voi laittaa _.bashrc_ (tai vastaavaan) tiedostoon, jotta sitä ei tarvitse suorittaa jokaisen terminaali-istunnon aluksi.
+Saattaa käydä niin, että saat seuraavanlaisen virheilmoituksen:
+
+```
+Current Python version (3.9.21) is not allowed by the project (^3.10).
+```
+
+Tällöin voit kokeilla seuraavaa komentoa, kunhan korvaat kohdan "3.12.3" käyttämäsi riittävän uuden Pythonin versionumerolla:
+
+```bash
+poetry env use 3.12.3
+```
+
+Mikäli tämäkään ei auta, voit kokeilla antaa parametriksi versionumeron sijaan [polun](https://python-poetry.org/docs/managing-environments/#switching-between-environments) sopivaan Pythoniin.
+
+Jos `poetry install`-komennon suorittaminen toisaalta pyytää **keyring-salasanaa**, ongelma pitäisi ratketa suorittamalla terminaalissa `export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring` ja sen jälkeen suorittamalla komento `poetry install` uudestaan. Kyseisen rivin voi laittaa _.bashrc_ (tai vastaavaan) tiedostoon, jotta sitä ei tarvitse suorittaa jokaisen terminaali-istunnon aluksi.
 
 ### Riippuvuuksien asentaminen
 
@@ -213,19 +227,7 @@ Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa j
 eval $(poetry env activate)
 ```
 
-On kuitenkin mahdollista, että tästä seuraa virheilmoitus, jossa viitataan Pythonin versioihin ja todetaan:
-
-```
-Discovered shell 'bash' doesn't have an activator in virtual environment
-```
-
-Tällöin voit kokeilla seuraavaa komentoa, kunhan korvaat kohdan "3.12.3" käyttämäsi Pythonin versionumerolla (ks. versionumero esim. komennolla `python3 --version`):
-
-```bash
-poetry env use 3.12.3
-```
-
-Tämän jälkeen voit uudestaan antaa komennon `eval $(poetry env activate)`.
+Jos saat virheilmoituksen, jossa viitataan Pythonin versioihin ja todetaan, että `Discovered shell 'bash' doesn't have an activator in virtual environment`, voit kokeilla komentoa `poetry env use` (ks. [aiempi ohje](# Mahdollisia ongelmia)). Tämän jälkeen voit uudestaan antaa komennon `eval $(poetry env activate)`.
 
 Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa tieto virtuaaliympäristöstä, esim.:
 
