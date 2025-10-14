@@ -145,21 +145,9 @@ Install-komennon suorittamisen jälkeen hakemistoon pitäisi ilmestyä tiedosto 
 
 ### Mahdollisia ongelmia
 
-Saattaa käydä niin, että saat seuraavankaltaisen virheilmoituksen:
+Jos `poetry install`-komennon suorittaminen pyytää **keyring-salasanaa**, ongelma pitäisi ratketa suorittamalla terminaalissa `export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring` ja sen jälkeen suorittamalla komento `poetry install` uudestaan. Kyseisen rivin voi laittaa _.bashrc_ (tai vastaavaan) tiedostoon, jotta sitä ei tarvitse suorittaa jokaisen terminaali-istunnon aluksi.
 
-```
-Current Python version (3.9.21) is not allowed by the project (^3.10).
-```
-
-Tällöin voit kokeilla seuraavaa komentoa, kunhan korvaat kohdan "3.12.3" käyttämäsi riittävän uuden Pythonin versionumerolla:
-
-```bash
-poetry env use 3.12.3
-```
-
-Mikäli tämäkään ei auta, voit kokeilla antaa parametriksi versionumeron sijaan [polun](https://python-poetry.org/docs/managing-environments/#switching-between-environments) sopivaan Pythoniin.
-
-Jos `poetry install`-komennon suorittaminen toisaalta pyytää **keyring-salasanaa**, ongelma pitäisi ratketa suorittamalla terminaalissa `export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring` ja sen jälkeen suorittamalla komento `poetry install` uudestaan. Kyseisen rivin voi laittaa _.bashrc_ (tai vastaavaan) tiedostoon, jotta sitä ei tarvitse suorittaa jokaisen terminaali-istunnon aluksi.
+Liian **vanha Python-versio** saattaa johtaa seuraavankaltaiseen virheilmoituksen: "Current Python version (3.9.21) is not allowed by the project (^3.10)". Jos käytettävissä kuitenkin on uudempi versio, voit kokeilla seuraavaa komentoa, kunhan korvaat kohdan "3.12.3" kyseisen version numerolla: `poetry env use 3.12.3`. Mikäli tämäkään ei auta, voit kokeilla antaa parametriksi versionumeron sijaan polun em. versioon. Tästä ja muista vaihtoehdoista voi lukea lisää Poetryn [dokumentaatiosta](https://python-poetry.org/docs/managing-environments/#switching-between-environments).
 
 ### Riippuvuuksien asentaminen
 
