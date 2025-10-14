@@ -145,7 +145,7 @@ Install-komennon suorittamisen jälkeen hakemistoon pitäisi ilmestyä tiedosto 
 
 ### Mahdollisia ongelmia
 
-Saattaa käydä niin, että saat seuraavanlaisen virheilmoituksen:
+Saattaa käydä niin, että saat seuraavankaltaisen virheilmoituksen:
 
 ```
 Current Python version (3.9.21) is not allowed by the project (^3.10).
@@ -227,7 +227,7 @@ Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa j
 eval $(poetry env activate)
 ```
 
-Jos saat virheilmoituksen, jossa viitataan Pythonin versioihin ja todetaan, että `Discovered shell 'bash' doesn't have an activator in virtual environment`, voit kokeilla komentoa `poetry env use` (ks. [aiempi ohje](# Mahdollisia ongelmia)). Tämän jälkeen voit uudestaan antaa komennon `eval $(poetry env activate)`.
+Jos saat virheilmoituksen, jossa viitataan Pythonin versioihin ja todetaan, että *"Discovered shell 'bash' doesn't have an activator in virtual environment"*, voit kokeilla komentoa `poetry env use` (ks. [aiempi ohje](# Mahdollisia ongelmia)). Tämän jälkeen voit uudestaan antaa komennon `eval $(poetry env activate)`.
 
 Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa tieto virtuaaliympäristöstä, esim.:
 
