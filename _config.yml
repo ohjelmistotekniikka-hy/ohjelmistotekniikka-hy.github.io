@@ -40,7 +40,7 @@ lecture_recording_link: https://moodle.helsinki.fi/mod/lti/view.php?id=4176288
 # käytetään muun muassa "ei voi jatkaa seuraavalla kurssilla (syksyllä 2021)"
 next_course: 'keväällä 2026'
 
-labtool_link: #'https://study.cs.helsinki.fi/labtool/courses/TKT20018.2025.K.K.1'
+labtool_link: 'https://study.cs.helsinki.fi/labtool/courses/TKT20018.2025.S.K.1'
 
 # referenssi-sovellusten linkit
 python_reference_app_url: 'https://github.com/ohjelmistotekniikka-hy/python-todo-app'
