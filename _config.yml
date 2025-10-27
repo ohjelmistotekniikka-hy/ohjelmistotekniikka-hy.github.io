@@ -23,8 +23,8 @@ code_review_start_date: "keskiviikkona 3.12."
 # - Maanantaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/68570587158?pwd=TFhwUXBucExZeVNJZnRydE8yWkNFdz09)
 # - Tiistaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/65324719978) (alkaen 23.3.)
 # - Torstaisin klo 13-15  [zoom]()
-#times:
-#- time: "Ma klo 10 - 12 luokassa BK107"
+times:
+- time: "Ma klo 14 - 16 luokassa BK107"
 #- time: "Ke klo 14 - 16 luokassa BK107"
 #- time: "To klo 14.30 - 16.30 luokassa BK107"
 #- time: "Pe klo 12 - 14 luokassa BK107"
