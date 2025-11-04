@@ -768,6 +768,8 @@ Siirry terminaalissa _unicafe_-hakemistoon ja asenna vaadittavat riippuvuudet ko
 poetry install
 ```
 
+(Mikäli Coveragen asennuksessa tulee ongelmia, voit muuttaa Coveragen pyproject.toml-tiedostossa olevan versionumeron uudemmaksi: korvaa tällöin versiomerkintä "^6.5.0" merkinnällä "^7.0". Suorita muutoksen jälkeen vielä komento `poetry update coverage`.)
+
 Testien suorittaminen terminaalissa onnistuu siirtymällä ensin virtuaaliympäristöön (joko komennolla `eval $(poetry env activate)` tai `poetry shell`) ja sen jälkeen suorittamalla komento `pytest src`. Jos kaikki on kunnossa, saat raportin läpimenneistä testeistä:
 
 ```
