@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Harjoitustyö viikko 5
+title: Viikko 5
 permalink: /python/viikko5
 ---
 
