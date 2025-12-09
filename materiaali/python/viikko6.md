@@ -182,7 +182,7 @@ Seuraavien kohtien puutteet **vähentävät** pisteitä:
    - Käyttöliittymään tai testeihin liittyvän koodin voi jättää pylint-tarkistuksien ulkopuolelle
 - Tuntikirjanpito on ajantasalla
   - **Tuntien summan tulee olla merkittynä**
-  - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
+  - Tuntikirjanpitoon ei merkitä laskareihin eikä koodikatselmointiin käytettyä aikaa
 - Viikolle on tehty changelog-merkintä _changelog.md_-tiedostoon
 - Repositorion _README.md_-tiedosto on kunnossa
   - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen]({{site.python_reference_app_url}}) README.md, eli se sisältää ainakin seuraavat
