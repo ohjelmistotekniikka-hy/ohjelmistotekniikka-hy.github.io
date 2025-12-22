@@ -554,3 +554,4 @@ Toinen yleinen käyttökohde muuttujaluokille on [CheckButton](https://www.tutor
 ## Lisäluettavaa
 
 [Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)-ohje sisältää mm. yleisiä Tkinter-ohjeita ja esimerkkejä yksittäisten komponenttien käytöstä.
+[tkinter.ttk — Tk themed widgets](https://docs.python.org/3/library/tkinter.ttk.html): lisätietoa ttk-moduulista (ml. komponenttien ulkoasun muuttamisesta)
