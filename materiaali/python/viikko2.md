@@ -245,8 +245,7 @@ poetry self add poetry-plugin-shell
 
 Kun virtuaaliympäristöön siirryttiin komennolla `poetry shell`, sieltä pääsee pois komennolla `exit`.
 
-
-Huomaathan, että koska Poetryyn tuodut riippuvuudet ovat saatavilla vain virtuaalisessa ympäristössä, VS Codeen sisäänrakennettu "debugging mode" (F5 oletuksena) ei välttämättä toimi. Siirry ensin virtuaaliympäristöön ja vasta sen jälkeen käynnistä VS Code komennolla `code /polku/projektiin`.
+Virtuaaliympäristössä voi myös käynnistää Visual Studio Coden. Siirry siis ensin virtuaaliympäristöön ja vasta sen jälkeen käynnistä VS Code komennolla `code /polku/projektiin`. VS Coden virheenjäljitystoimintoja kokeiltaessa saattaa kuitenkin käydä niin, että kaikkia projektin luokkia ei löydykään. Mikäli tarvitset näitä toimintoja, saatat joutua luomaan erillisen _launch.json_-tiedoston. Lisätietoja löytyy Visual Studio Coden [sivuilta](https://code.visualstudio.com/docs/python/debugging).
 
 ### Kehityksen aikaiset riippuvuudet
 
@@ -848,7 +847,7 @@ Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympär
 
 ![Visual Studio Code terminaali]({{ "/assets/images/python/vscode-terminaali.png" | absolute_url }})
 
-Voit vaihtoehtoisesti kokeilla seuraavaa: lisää hakemisto _unicafe_ Visual Studio Coden "workspaceen" _File_-valikon kautta, tallenna tämä workspace samaan _unicafe_-hakemistoon ja avaa Visual Studio Coden terminaali uudelleen. Valitse oikea virtuaaliympäristö Visual Studio Coden ikkunan oikeasta alareunasta (kun _maksukortti.py_ tai _kassapaate.py_ on avattuna). Tämän jälkeen testauksen tulisi onnistua.
+Voit vaihtoehtoisesti kokeilla seuraavaa: lisää hakemisto _unicafe_ Visual Studio Coden "workspaceen" _File_-valikon kautta, tallenna tämä workspace samaan _unicafe_-hakemistoon ja avaa Visual Studio Coden terminaali uudelleen. Valitse oikea virtuaaliympäristö Visual Studio Coden ikkunan oikeasta alareunasta (kun _maksukortti.py_ tai _kassapaate.py_ on avattuna).
 
 ## Coverage ja testikattavuus
 
