@@ -1,12 +1,12 @@
 ---
 layout: page
 permalink: /python/tkinter
-title: TkInter ja graafisen käyttöliittymän toteutus
+title: Tkinter ja graafisen käyttöliittymän toteutus
 ---
 
-Python-sovellusten graafisten käyttöliittymien toteutuksessa on jo standardiksi muodostonut [TkInter](https://wiki.python.org/moin/TkInter)-kirjaston käyttö. Tutustutaan tässä osiossa, miten sen avulla voi toteuttaa graafisia käyttöliittymiä.
+Python-sovellusten graafisten käyttöliittymien toteutuksessa käytetään usein [Tkinter](https://wiki.python.org/moin/TkInter)-kirjastoa. Tkinter on Pythonin omia moduuleja ja siihen liittyvät käyttöjärjestelmäkohtaiset kirjastot tulevat useimmiten Python-asennuksien mukana.
 
-TkInter on Pythonin omia moduuleja ja siihen liittyvät käyttöjärjestelmäkohtaiset kirjastot tulevat useimmiten Python-asennuksien mukana. Ennen ohjelmoimisen aloittamista on kuitenkin hyvä tarkistaa, että asennus on kunnossa. Käynnistä Python-komentorivi komennolla `python3` (komentoa ei tarvitse suorittaa virtuaaliympäristön sisällä, koska emme käytä ulkoisia riippuvuuksia). Syötä komentoriville `import tkinter` ja paina Enter-painiketta. Jos lopputuloksena ei ole virhettä, asennus on kunnossa. Jos näin ei ole, asenna tietokoneellesi uusin Python-versio [täältä](https://www.python.org/downloads/) ja yritä uudelleen. Voit sulkea komentorivin syöttämällä `exit()` ja painamalla Enter-painiketta.
+Ennen ohjelmoinnin aloittamista on hyvä tarkistaa, että asennus on kunnossa. Käynnistä Python-komentorivi komennolla `python3` (komentoa ei tarvitse suorittaa virtuaaliympäristön sisällä, koska emme käytä ulkoisia riippuvuuksia). Syötä komentoriville `import tkinter` ja paina Enter-painiketta. Jos lopputuloksena ei ole virhettä, asennus on kunnossa. Jos näin ei ole, asenna tietokoneellesi uusin Python-versio [täältä](https://www.python.org/downloads/) ja yritä uudelleen. Voit sulkea komentorivin syöttämällä `exit()` ja painamalla Enter-painiketta.
 
 ## Ikkunan avaaminen
 
@@ -20,7 +20,7 @@ window.title("TkInter example")
 window.mainloop()
 ```
 
-Kun koodi suoritetaan, pitäisi aueta ikkuna, jonka otsakkeena on `title`-metodin kautta asetettu, "TkInter example". `mainloop`-metodin kutsu käynnistää loputtoman silmukan, jonka aikana TkInter odottaa käyttöliittymään kohdistuvia tapahtumia, kuten painikkeiden painalluksia. Huomaa, että `mainloop`-metodin kutsun jälkeistä koodia ei enää suoriteta:
+Kun koodi suoritetaan, pitäisi aueta ikkuna, jonka otsakkeena on `title`-metodin kautta asetettu, "TkInter example". `mainloop`-metodin kutsu käynnistää loputtoman silmukan, jonka aikana Tkinter odottaa käyttöliittymään kohdistuvia tapahtumia, kuten painikkeiden painalluksia. Huomaa, että `mainloop`-metodin kutsun jälkeistä koodia ei enää suoriteta:
 
 ```python
 # ...
@@ -28,10 +28,10 @@ window.mainloop()
 print("Hello world!")
 ```
 
-Tulostusta ei tulosteta, koska koodin suoritus on siirtynyt ikuiseen silmukkaan.
+Tervehdys ei tulostu, koska koodin suoritus on ikuisessa silmukassa.
 
 
-**HUOM:** TkInter-ikkunan avaaminen Windows-tietokoneella WSL:n kautta, tai SSH-yhteyden kautta melkillä aiheuttaa luultavasti seuraavan virheen:
+**HUOM:** Tkinter-ikkunan avaaminen Windows-tietokoneella WSL:n kautta, tai SSH-yhteyden kautta melkillä aiheuttaa luultavasti seuraavan virheen:
 
 ```
 no display name and no $DISPLAY environment variable
@@ -42,7 +42,7 @@ Käynnistä Windowsin tapauksessa sovellus joko suoraan Windows-komentoriviltä,
 
 ## Graafiset komponentit
 
-TkInter tarjoaa käyttöömme monia graafisia komponentteja, kuten tekstiä, painikkeita ja tekstikenttiä. Tekstin lisääminen onnistuu `Label`-komponentin avulla:
+Tkinter tarjoaa käyttöömme monia graafisia komponentteja, kuten tekstiä, painikkeita ja tekstikenttiä. Tekstin lisääminen onnistuu `Label`-komponentin avulla:
 
 ```python
 from tkinter import Tk, ttk
@@ -67,7 +67,7 @@ window.mainloop()
 
 Koodi sai hieman paremman rakenteen. `UI`-luokka saa konstruktorin kautta juurikomponentin, johon se liittää lisäämänsä komponentit. Metodi `start` alustaa `Label`-olion ja kertoo sille parametrin `master` kautta, että se liitetään juurikomponenttiin, `root`. `text`-parametri sen sijaan määrittelee itse näytettävän tekstin.
 
-Huomaa, ettei komponettia näytetä ennen `pack`-metodin kutsua. Tutustumme metodin merkitykseen pian. Lisätään sitä ennen vielä lisää komponentteja käyttöliittymäämme.
+Huomaa, ettei komponenttia näytetä ennen `pack`-metodin kutsua. Tutustumme metodin merkitykseen pian, mutta lisätään sitä ennen vielä lisää komponentteja käyttöliittymäämme.
 
 ```python
 def start(self):
@@ -87,6 +87,8 @@ def start(self):
 Nyt käyttöliittymämme näyttää seuraavalta:
 
 ![TkInter](/assets/images/python/tkinter-1.png)
+
+Tkinter tarjoaa komponenteista sekä ttk-moduulista löytyviä versioita että niiden alkuperäisiä Tkinter-toteutuksia. Käytimme tässä edellisiä (ttk), koska ne tarjoavat modernimman ulkoasun ja tukevat käyttöjärjestelmän teemoja. Keskitymme jatkossakin ttk-moduulin välineisiin.
 
 ## Komponenttien asettelu
 
@@ -141,7 +143,7 @@ def start(self):
     button.grid(row=3, column=0, columnspan=2)
 ```
 
-Käyttöliittymällämme on käytössä kolmen rivin ja kahden sarakkeen gridi. Lopputulos näyttää seuraavalta:
+Käyttöliittymällämme on käytössä neljän rivin ja kahden sarakkeen gridi. Lopputulos näyttää seuraavalta:
 
 ![TkInter](/assets/images/python/tkinter-2.png)
 
@@ -151,7 +153,7 @@ Käyttöliittymällämme on käytössä kolmen rivin ja kahden sarakkeen gridi. 
 
 Lopuksi `button` asettuu gridin viimeiselle, kolmannelle riville. Samoin kuten `heading_label`, myös `button` levittäytyy kahdelle sarakkeelle.
 
-Olemme käyttöliittymään melko tyytyväisiä, mutta pari pientä yksityiskohtaa pitäisi vielä korjata. Kun kasvatamme ikkunan kokoa, huomaamme, ettei komponenttien koko muutu tämän seurauksena. Haluaisimme, että tekstikentät ja kirjautumis-painike ottaisi kaiken jäljellä jäävän tilan leveyssuunnassa. Tämä onnistuu konfiguroimalla juurikomponentin gridin sarakkeita:
+Olemme käyttöliittymään melko tyytyväisiä, mutta pari pientä yksityiskohtaa pitäisi vielä korjata. Kun kasvatamme ikkunan kokoa, huomaamme, ettei komponenttien koko muutu tämän seurauksena. Haluaisimme, että tekstikentät ja kirjautumispainike ottaisivat kaiken jäljellä jäävän tilan leveyssuunnassa. Tämä onnistuu konfiguroimalla juurikomponentin gridin sarakkeita:
 
 ```python
 def start(self):
@@ -216,9 +218,9 @@ Nyt käyttöliittymä näyttää seuraavalta:
 
 ![TkInter](/assets/images/python/tkinter-3.png)
 
-Kaikki kolme komponenttia sijoittuvat siis, sekä itä- (E), että länsi-suunnassa (W). `sticky`-parametrin `constants.EW` arvo saa siis komponentien sijoittumaan sekä vasemmalle, että oikealle. `header_label`-komponentin `sticky`-parametrin arvo `constants.W` saa sen sijoittumaan vasemmalle.
+Kaikki kolme komponenttia sijoittuvat siis, sekä itä- (E), että länsisuunnassa (W). `sticky`-parametrin `constants.E, constants.W` arvo saa komponentin sijoittumaan sekä vasemmalle että oikealle. `header_label`-komponentin `sticky`-parametrin arvo `constants.W` saa sen sijoittumaan vasemmalle.
 
-`sticky`-parametrille mahdollisia arvoja ovat `constants.W` (vasen), `constants.E` (oikea), `constants.N` (ylä), `constants.S` (ala) ja näiden kombinaatit [tuplena](https://docs.python.org/3.3/library/stdtypes.html?highlight=tuple#tuple). Arvoista voi käyttää myös suoraan merkkijonoesitystä, kuten `"w"` vakion `constants.W` sijaan. Vakioiden käyttö on kuiten suotavaa.
+`sticky`-parametrille mahdollisia arvoja ovat `constants.W` (vasen), `constants.E` (oikea), `constants.N` (ylä), `constants.S` (ala) ja näiden kombinaatiot [tuplena](https://docs.python.org/3.3/library/stdtypes.html?highlight=tuple#tuple). Arvoista voi käyttää myös suoraan merkkijonoesitystä, kuten `"w"` vakion `constants.W` sijaan. Vakioiden käyttö on kuitenkin suotavaa.
 
 Huomaa, että `grid`-kutsuissa rivin ja sarakkeen määrittäminen ei ole aina tarpeen. Rivi on oletusarvoisesti seuraava vapaa rivi ja sarake on ensimmäinen sarake (eli 0). Äskeisen esimerkin `grid`-kutsut voisi siis kirjoittaa seuraavasti:
 
@@ -233,7 +235,7 @@ button.grid(columnspan=2, sticky=(constants.E, constants.W))
 
 ## Gridin hienosäätöä
 
-Edellisen esimerkin komponentit on aseteltu tällä hetkellä melko tiiviistii ja käyttöliittymä kaipaisi hieman väljyyttä. Voimme lisätä gridin soluille väliä leveys- ja pituussuunnassa käyttämällä `grid`-metodin `padx` ja `pady` metodeja. Kuten parametrien nimistä voi päätellä, `padx` lisää väliä leveys- `pady` pituussuunnassa:
+Edellisen esimerkin komponentit on aseteltu tällä hetkellä melko tiiviisti ja käyttöliittymä kaipaisi hieman väljyyttä. Voimme lisätä gridin soluille tilaa leveys- ja pituussuunnassa käyttämällä `grid`-metodin paametreja `padx` ja `pady`. Kuten nimistäkin jo voi päätellä, `padx` lisää väliä leveys- `pady` pituussuunnassa:
 
 ```python
 heading_label.grid(columnspan=2, sticky=constants.W, padx=5, pady=5)
@@ -260,7 +262,7 @@ Nyt tekstikenttät ovat automaattisesti leveämpiä, mutta myös levenevät, kun
 
 ## Tapahtumankäsittelijät
 
-TkInter mahdollistaa erilaisten tapahtumien, kuten napin painamisen, käsittelyn. Käsittelyllä tässä yhteydessä tarkoitetaan, että voimme määrittää funktion, jota kutsutaan, kun esimerkiksi painiketta painetaan. Käytetään esimerkkinä seuraavaa koodia, jossa määritellään yksi tekstikenttä ja yksi painike:
+Tkinter mahdollistaa erilaisten tapahtumien, kuten painikkeen painamisen, käsittelyn. Käsittelyllä tässä yhteydessä tarkoitetaan, että voimme määrittää funktion, jota kutsutaan, kun esimerkiksi painiketta painetaan. Käytetään esimerkkinä seuraavaa koodia, jossa määritellään yksi tekstikenttä ja yksi painike:
 
 ```python
 from tkinter import Tk, ttk
@@ -312,7 +314,7 @@ class UI:
 # ...
 ```
 
-`UI`-luokan metodi `handle_button_click` lukee tekstikentän arvon `get`-metodilla ja tulostaa sen. Metodin kutsuminen napin painalluksen yhteydessä tapahtuu `start`-metodissa, jossa `button`-komponentille on määritelty `command`-parametri. Parametrin arvo tulee olla kutsuttavissa, joten se voi olla esimerkiksi metodi, funktio, tai [lambda](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions). Lambdan käyttö olisi erityisen hyödyllistä esimerkiksi, jos haluaisimme antaa `handle_button_click`-metodille argumentin:
+`UI`-luokan metodi `_handle_button_click` lukee tekstikentän arvon `get`-metodilla ja tulostaa sen. Metodin kutsuminen napin painalluksen yhteydessä tapahtuu `start`-metodissa, jossa `button`-komponentille on määritelty parametri `command`. Parametrin arvo tulee olla kutsuttavissa, joten se voi olla esimerkiksi metodi, funktio, tai [lambda](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions). Lambdan käyttö olisi erityisen hyödyllistä esimerkiksi, jos haluaisimme antaa `handle_button_click`-metodille argumentin:
 
 ```python
 button_a = ttk.Button(
@@ -321,14 +323,14 @@ button_a = ttk.Button(
     command=lambda: self._handle_button_click('button a')
 )
 
-button_a = ttk.Button(
+button_b = ttk.Button(
     master=self._root,
     text="Button B",
     command=lambda: self._handle_button_click('button b')
 )
 ```
 
-Esimerkissä napin painallus kutsuu lambdaa, joka puolestaa kutsuu metodia tietyllä argumentilla.
+Esimerkissä painikkeen painallus kutsuu lambdaa, joka puolestaa kutsuu metodia tietyllä argumentilla.
 
 ## Monta näkymää
 
@@ -365,7 +367,7 @@ class HelloView:
         button.grid(row=1, column=0)
 ```
 
-Luokan `initialize`-metodissa määritellään meille ennestään tuntematon, `Frame`-komponentti. `Frame`-komponentilla ei ole visuaalisesti mitään erityispiirteitä, mutta se on erittäin kätevä esimerkiksi komponenttien ryhmittelyssä. Haluamme eristää näkymän komponentit muiden näkymien komponenteista, joten liitämme ne `master`-parametrin kautta `frame`-komponenttiin. Tämä mahdollistaa sen, että voimme näyttää kaikki näkymän komponentit kerralla luokan `pack`-metodin avulla. Lisäksi voimme tuhota kaikki näkymän komponentit luokan `destroy`-metodilla. Kun komponentti tuhotaan, myös sen lapsikomponentit, eli `master`-parametrin avulla liitetyt komponentit tuhotaan.
+Luokan `initialize`-metodissa määritellään meille ennestään tuntematon `Frame`-komponentti. `Frame`-komponentilla ei ole visuaalisesti mitään erityispiirteitä, mutta se on erittäin kätevä esimerkiksi komponenttien ryhmittelyssä. Haluamme eristää näkymän komponentit muiden näkymien komponenteista, joten liitämme ne `master`-parametrin kautta `frame`-komponenttiin. Tämä mahdollistaa sen, että voimme näyttää kaikki näkymän komponentit kerralla luokan `pack`-metodin avulla. Lisäksi voimme tuhota kaikki näkymän komponentit luokan `destroy`-metodilla. Kun komponentti tuhotaan, myös sen lapsikomponentit, eli `master`-parametrin avulla liitetyt komponentit tuhotaan.
 
 Muokataan `UI`-luokkaa niin, että `HelloView`-näkymä näytetään, kun käyttöliittymä käynnistyy:
 
@@ -401,7 +403,7 @@ ui.start()
 window.mainloop()
 ```
 
-Käyttöliittymän "Say good bye"-painikkeen painaminen pitäisi tulostaa `handle_good_bye`-metodissa määritellemämme viesti. Toteutetaan vielä toinen `HelloView`-näkymää vastaava näkymä, `GoodByeView`:
+Käyttöliittymän "Say good bye"-painikkeen painaminen pitäisi tulostaa `_handle_good_bye`-metodissa määrittelemämme viesti. Toteutetaan vielä toinenkin `HelloView`-näkymää vastaava näkymä, `GoodByeView`:
 
 ```python
 from tkinter import ttk, constants
@@ -484,13 +486,13 @@ class UI:
 # ...
 ```
 
-Nyt luokasta löytyy metodi `hide_current_view`, joka piilottaa nykyisen näkymän kutsumalla sen `destroy`-metodia. Metodit `show_hello_view` ja `show_good_bye_view` ensin piilottavat nykyisen näkymän ja sen jälkeen näyttävät uuden näkymän. `handle_hello`- ja `handle_good_bye`-metodit yksinkertaisesti kutsuvat näytettävän näkymän näyttävää metodia.
+Nyt luokasta löytyy metodi `_hide_current_view`, joka piilottaa nykyisen näkymän kutsumalla sen `destroy`-metodia. Metodit `_show_hello_view` ja `_show_good_bye_view` ensin piilottavat nykyisen näkymän ja sen jälkeen näyttävät uuden näkymän. Metodit `_handle_hello` ja `_handle_good_bye` yksinkertaisesti kutsuvat ao. näkymän näyttävää metodia.
 
 Käyttäjän pitäisi nyt pystyä siirtymään näkymien välillä painamalla "Say hello"- ja "Say good bye"-painikkeita.
 
 ## Muuttujat
 
-Joskus haluamme liittää komponentissa jonkin ominaisuuden muuttuvaan arvoon. Esimerkiksi haluamme vaihtaa `Label`-komponentin tekstiä, kun nappia painetaan. TkInter tarjoaa erilaisia [muuttujaluokkia](https://docs.python.org/3/library/tkinter.html#coupling-widget-variables), joilla on `get`- ja `set`-metodit niiden arvon lukemista ja asettamista varten. Muuttajaluokkia löytyy eri tyyppisten arvojen tallentamiseen: `StringVar`, `BooleanVar`, `DoubleVar` ja `IntVar`.
+Joskus haluamme liittää komponentissa jonkin ominaisuuden muuttuvaan arvoon. Esimerkiksi haluamme vaihtaa `Label`-komponentin tekstiä, kun nappia painetaan. Tkinter tarjoaa erilaisia [muuttujaluokkia](https://docs.python.org/3/library/tkinter.html#coupling-widget-variables), joilla on `get`- ja `set`-metodit niiden arvon lukemista ja asettamista varten. Muuttujaluokkia löytyy eri tyyppisten arvojen tallentamiseen: `StringVar`, `BooleanVar`, `DoubleVar` ja `IntVar`.
 
 `StringVar`-luokkaa voimme hyödyntää esimerkiksi toiminnallisuudessa, jossa painikkeen painaminen vaihtaa tekstin sisältöä:
 
@@ -545,10 +547,10 @@ ui.start()
 window.mainloop()
 ```
 
-`UI`-luokan `start`-metodissa talletamme `StringVar`-luokan olion `label_var`-attribuuttiin ja asetamme sille alkuarvoksi `"0"` kutsumalla `set`-metodia. Luokan metodit `increase` ja `decrease` lukevat muuttujan arvon `get`-metodin avulla ja asettavat sille uuden arvon `set`-metodilla. Muuttuja liitetään `label`-komponentin tekstiksi `textvariable`-parametrin kautta.
+`UI`-luokan `start`-metodissa tallennamme `StringVar`-luokan olion `label_var`-attribuuttiin ja asetamme sille alkuarvoksi `"0"` kutsumalla `set`-metodia. Luokan metodit `increase` ja `decrease` lukevat muuttujan arvon `get`-metodin avulla ja asettavat sille uuden arvon `set`-metodilla. Muuttuja liitetään `label`-komponentin tekstiksi `textvariable`-parametrin kautta.
 
 Toinen yleinen käyttökohde muuttujaluokille on [CheckButton](https://www.tutorialspoint.com/python/tk_checkbutton.htm)- ja [RadioButton](https://www.tutorialspoint.com/python/tk_radiobutton.htm)-komponentit. Näiden arvoina voi käyttää `IntVar`-luokan olioita `variable`-parametrin kautta.
 
 ## Lisäluettavaa
 
-[Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)-ohje sisältää mm. yleisiä TkInter-ohjeita ja esimerkkejä yksittäisten komponenttien käytöstä.
+[Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)-ohje sisältää mm. yleisiä Tkinter-ohjeita ja esimerkkejä yksittäisten komponenttien käytöstä.
