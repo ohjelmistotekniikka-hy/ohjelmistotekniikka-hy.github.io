@@ -117,7 +117,7 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 ```
 
-Tiedosto sisältää projektiin liittyviä yleistietoja, kuten sen nimen, kuvauksen ja ylläpitäjät. Osion alapuolella on osioita, jotka listaavat projektin riippuvuuksia. Näemme mm. `poetry init`-komennon suorituksen yhteydessä asettamamme Python-version vaatimuksen, joka on muotoa `requires-python = "^{{ site.python_version }}"`. `^{{ site.python_version }}`-merkintä siis tarkoittaa, että projektin käyttö vaatii vähintään Python-version {{ site.python_version }}.
+Tiedoston alussa on projektiin liittyviä yleistietoja, kuten sen nimi, kuvaus ja ylläpitäjät. Sen jälkeen tulee osioita, jotka listaavat projektin riippuvuuksia. Näemme mm. `poetry init`-komennon suorituksen yhteydessä asettamamme Python-version vaatimuksen, joka on muotoa `requires-python = "^{{ site.python_version }}"`. `^{{ site.python_version }}`-merkintä siis tarkoittaa, että projektin käyttö vaatii vähintään Python-version {{ site.python_version }}.
 
 Kun _pyproject.toml_-tiedosto on tullut tutuksi, viimeistellään projektin alustaminen suorittamalla komento:
 
@@ -127,19 +127,20 @@ poetry install
 
 Komennon suorittaminen tekee projektille vaadittavat alustustoimenpiteet, kuten virtuaaliympäristön alustamisen ja riippuvuuksien asentamisen. Tämän vuoksi komento tulee suorittaa aina ennen kuin uutta projektia aletaan käyttää.
 
-Komennon suorittaminen johtaa todennäköisesti ilmoitukseen, jossa viitataan virheeseen ja todetaan mm. seuraavaa:
+Komennon suorittaminen johtaa todennäköisesti kuitenkin ilmoitukseen, jossa viitataan virheeseen ja todetaan mm. seuraavaa:
 
 ```
 If you do not want to install the current project use --no-root
 ```
 
-Tämä johtuu siitä, että Poetry yrittää asentaa myös nykyistä projektia, eikä se sisällä kaikkea vaadittua. Kyseessä ei ole tekstin ulkonäöstä huolimatta varsinainen virhe vaan pikemminkin varoitus. Projektin alustaminen on kyllä todennäköisesti mennyt läpi, mutta jos et halua varoitusta, voit käyttää komennosta em. ilmoituksen mukaisesti muotoa:
+Tämä johtuu siitä, että oletusarvoisesti Poetry yrittää asentaa nykyistä projektia _package_mode_-tilassa. Virheilmoitukselta voi välttyä käyttämällä komennosta em. ilmoituksen mukaisesti muotoa `bash poetry install --no-root`. Vaikka projektin alustaminen todennäköisesti onnistuukin näin, on parempi korjata tilanne muokkaamalla vielä hieman tiedostoa _pyproject.toml_. Poistetaan readme-rivi (readme-tiedostoahan kun meillä ei ole) ja lisätään seuraavat rivit ennen _[build-system]_-riviä:
 
-```bash
-poetry install --no-root
+```
+[tool.poetry]
+package-mode = false
 ```
 
-Virtuaaliympäristön alustamisen lisäksi tämä komento asentaa ainoastaan projektin riippuvuudet, ei projektia itseään.
+Nyt Poetryn tulisi keskittyä virtuaaliympäristöön ja riippuvuuksien hallintaan eikä em. virheilmoitusta pitäisi enää ilmestyä.
 
 Install-komennon suorittamisen jälkeen hakemistoon pitäisi ilmestyä tiedosto _poetry.lock_. Tiedosto sisältää kaikkien asennettujen riippuvuuksien versiotiedot. Sen tietojen avulla Poetry pystyy aina asentamaan `poetry install`-komennolla riippuvuuksista täsmälleen oikeat versiot. Tästä syystä tiedosto tulee lisätä versionhallintaan.
 
@@ -189,13 +190,13 @@ import cowsay
 cowsay.tux("Poetry is awesome!")
 ```
 
-Koodissa käytämme `import`-lausetta saadaksemme cowsay-kirjaston käyttöömme. Jos suoritamme tiedoston terminaalissa komennolla:
+Koodissa käytämme `import`-lausetta saadaksemme cowsay-kirjaston käyttöömme. Jos suoritamme tiedoston terminaalissa komennolla
 
 ```bash
 python3 src/index.py
 ```
 
-On lopputuloksena seuravaa virheilmoitus:
+on lopputuloksena seuravaa virheilmoitus:
 
 ```
 ModuleNotFoundError: No module named 'cowsay'
@@ -209,7 +210,7 @@ poetry run python3 src/index.py
 
 `poetry run`-komento siis suorittaa annetun komennon virtuaaliympäristössä, jonka sisällä Python löytää riippuvuutemme.
 
-Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa jatkuvasti, on kätevintä olla koko ajan virtuaaliympäristön sisällä. Jos Poetry on versioltaan vähintään 2.0.0, voimme siirtyä virtuaaliympäristön sisään seuraavalla [kommennolla](https://python-poetry.org/docs/managing-environments/#bash-csh-zsh):
+Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa jatkuvasti, on kuitenkin kätevintä olla koko ajan virtuaaliympäristön sisällä. Jos Poetry on versioltaan vähintään 2.0.0, voimme siirtyä virtuaaliympäristön sisään seuraavalla [kommennolla](https://python-poetry.org/docs/managing-environments/#bash-csh-zsh):
 
 ```bash
 eval $(poetry env activate)
@@ -231,19 +232,7 @@ python3 src/index.py
 
 Voimme lähteä virtuaaliympäristöstä komennolla `deactivate`.
 
-Poetryn vanhemmilla versioilla (versionumero alle 2.0.0) virtuaaliympäristöön pääsee komennolla [shell](https://python-poetry.org/docs/cli/#shell):
-
-```bash
-poetry shell
-```
-
-Tätä komentoa voi itse asiassa käyttää Poetryn uudempienkin versioiden kanssa (jos et esim. jostain syystä päässyt virtuaaliympäristöön aiemmin kuvatulla tavalla), mutta siinä tapauksessa pitää ensiksi ottaa käyttöön sopiva plugin-tiedosto:
-
-```bash
-poetry self add poetry-plugin-shell
-```
-
-Kun virtuaaliympäristöön siirryttiin komennolla `poetry shell`, sieltä pääsee pois komennolla `exit`.
+(Poetryn vanhemmilla versioilla (versionumero alle 2.0.0) virtuaaliympäristöön pääsee komennolla [poetry shell](https://python-poetry.org/docs/cli/#shell). Tätä komentoa voi itse asiassa käyttää Poetryn uudempienkin versioiden kanssa, mutta siinä tapauksessa pitää ensiksi ottaa käyttöön sopiva plugin-tiedosto: `poetry self add poetry-plugin-shell`. Kun virtuaaliympäristöön siirryttiin komennolla `poetry shell`, sieltä pääsee pois komennolla `exit`.)
 
 Virtuaaliympäristössä voi myös käynnistää Visual Studio Coden. Siirry siis ensin virtuaaliympäristöön ja vasta sen jälkeen käynnistä VS Code komennolla `code /polku/projektiin`. VS Coden virheenjäljitystoimintoja kokeiltaessa saattaa kuitenkin käydä niin, että kaikkia projektin luokkia ei löydykään. Mikäli tarvitset näitä toimintoja, saatat joutua luomaan erillisen _launch.json_-tiedoston. Lisätietoja löytyy Visual Studio Coden [sivuilta](https://code.visualstudio.com/docs/python/debugging).
 
@@ -375,7 +364,7 @@ Lisää tiedostoon _src/maksukortti.py_ edellä esitelty `Maksukortti`-luokan ko
 
 ### Tehtävä 2: Aloitetaan testien kirjoittaminen
 
-Yritetään seuraavaksi suorittaa testejä. Siirrytään ensin virtuaaliympäristöön (joko komennolla `eval $(poetry env activate)` tai `poetry shell`), jonka jälkeen suoritetaan komento `pytest src`. Komennon suorittaminen antaa ymmärtää, ettei yhtään testiä ole suoritettu. Syy on yksinkertaisesti siinä, ettemme ole vielä toteuttaneet yhtään testiä.
+Yritetään seuraavaksi suorittaa testejä. Siirrytään ensin virtuaaliympäristöön komennolla `eval $(poetry env activate)`, jonka jälkeen suoritetaan komento `pytest src`. Komennon suorittaminen antaa ymmärtää, ettei yhtään testiä ole suoritettu. Syy on yksinkertaisesti siinä, ettemme ole vielä toteuttaneet yhtään testiä.
 
 Toteutetaan <i>src/tests/maksukortti_test.py</i>-tiedostoon projektimme ensimmäinen testi. Tiedoston sisältö tulee olla seuraava:
 
@@ -767,7 +756,7 @@ Siirry terminaalissa _unicafe_-hakemistoon ja asenna vaadittavat riippuvuudet ko
 poetry install
 ```
 
-Testien suorittaminen terminaalissa onnistuu siirtymällä ensin virtuaaliympäristöön (joko komennolla `eval $(poetry env activate)` tai `poetry shell`) ja sen jälkeen suorittamalla komento `pytest src`. Jos kaikki on kunnossa, saat raportin läpimenneistä testeistä:
+Testien suorittaminen terminaalissa onnistuu siirtymällä ensin virtuaaliympäristöön komennolla `eval $(poetry env activate)` ja sen jälkeen suorittamalla komento `pytest src`. Jos kaikki on kunnossa, saat raportin läpimenneistä testeistä:
 
 ```
 collected 1 item
@@ -843,7 +832,7 @@ Suorita testit terminaalissa virtuaaliympäristössä `pytest src`-komennolla.
 
 Visual Studio Coden voi avata Linux-ympäristössä esim. siirtymällä hakemistoon _unicafe_ ja antamalla komennon `code .`. Visual Studio Codesta löytyy sisäänrakennettu terminaali. Terminaalin saa avattua valitsemalla päävalikosta _Terminal_ ja aukeavasta alavalikosta _New Terminal_. Editorin alalaitaan pitäisi ilmestyä terminaali, jossa voit suorittaa komentorivikomentoja.
 
-Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä, ainakin jos olit virtuaaliympäristössä silloin kun avasit itse Visual Studio Coden. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa tästä tieto sulkeiden sisällä, esimerkiksi `(poetry-testi-py3.12)`. Jos et ole virtuaaliympäristössä pääset siihen tuttuun tapaan joko komennolla `eval $(poetry env activate)` tai `poetry shell`. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
+Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä, ainakin jos olit virtuaaliympäristössä silloin kun avasit itse Visual Studio Coden. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa tästä tieto sulkeiden sisällä, esimerkiksi `(poetry-testi-py3.12)`. Jos et ole virtuaaliympäristössä pääset siihen tuttuun tapaan komennolla `eval $(poetry env activate)`. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
 
 ![Visual Studio Code terminaali]({{ "/assets/images/python/vscode-terminaali.png" | absolute_url }})
 
