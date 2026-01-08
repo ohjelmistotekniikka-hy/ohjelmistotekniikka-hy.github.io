@@ -52,6 +52,9 @@ moodle_link: 'https://moodle.helsinki.fi/course/view.php?id=74041'
 # Norpan palaute
 norppa_link: 'https://norppa.helsinki.fi/targets/95024810/feedback'
 
+# Minimiversiot
+python_version: '3.12'
+
 # Build settings
 markdown: kramdown
 theme: minima
