@@ -18,7 +18,7 @@ Laajoissa ja monimutkaisissa ohjelmistoprojekteissa kaiken koodin tuottaminen it
 
 Kirjastojen lähdekoodi on usein luettavissa versionhallinta-alustoilla, kuten GitHubissa. Usein kirjastoja päivitetään jatkuvasti ja nämä päivitykset synnyttävät kirjastoista uusia _versioita_. Kirjastojen versioita julkaistaan erilaisiin rekistereihin, joista ne ovat helposti asennettavissa. [The Python Package Index](https://pypi.org/) (PyPI) on eräs tämän kaltainen, Python-kirjastoille tarkoitettu rekisteri.
 
-Projektissa käytettävät kirjastojen versiot ovat projektin _riippuvuuksia_. Riippuvuuksia asennetaan Python-projekteissa tyypillisesti projektikohtaisiin _virtuaaliympäristöihin_, jottei samalla tietokoneella olevien projektien riippuvuuksissa syntyisi ristiriitoja. Jotta riippuvuuksien hallinta virtuaaliympäristöissä sujuisi helposti, käytämme kurssilla [Poetry](https://python-poetry.org/)-komentorivityökalua.
+Projektissa käytettävät kirjastojen versiot ovat projektin _riippuvuuksia_. Riippuvuuksia asennetaan Python-projekteissa tyypillisesti projektikohtaisiin _virtuaaliympäristöihin_, jottei samalla tietokoneella olevien projektien riippuvuuksissa syntyisi ristiriitoja. Jotta riippuvuuksien hallinta virtuaaliympäristöissä sujuisi helposti, käytämme kurssilla [Poetry](https://python-poetry.org/)-komentorivityökalua. **Huom:** älä käytä kurssilla pip-komentoja, vaikka olisit aiemmin sellaisilla riippuvuuksia asentanutkin.
 
 ### Huomioita komennoista
 
@@ -210,7 +210,7 @@ poetry run python3 src/index.py
 
 `poetry run`-komento siis suorittaa annetun komennon virtuaaliympäristössä, jonka sisällä Python löytää riippuvuutemme.
 
-Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa jatkuvasti, on kuitenkin kätevintä olla koko ajan virtuaaliympäristön sisällä. Jos Poetry on versioltaan vähintään 2.0.0, voimme siirtyä virtuaaliympäristön sisään seuraavalla [kommennolla](https://python-poetry.org/docs/managing-environments/#bash-csh-zsh):
+Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa jatkuvasti, on kuitenkin kätevintä olla koko ajan virtuaaliympäristön sisällä. Voimme siirtyä virtuaaliympäristön sisään seuraavalla [kommennolla](https://python-poetry.org/docs/managing-environments/#bash-csh-zsh):
 
 ```bash
 eval $(poetry env activate)
@@ -285,6 +285,14 @@ Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
    Kun virtuaaliympäristöt on poistettu, suorita komento `poetry install`
 
 Kun kaikki toimenpiteet on suoritettu, yritä suorittaa epäonnistunut Poetry-komento uudestaan.
+
+Jos edelliset toimenpiteetkään eivät auta, voi vielä kokeilla seuraavia komentoja:
+
+```bash
+rm -rf .venv
+rm poetry.lock
+poetry install
+```
 
 
 ## Unittest ja testaaminen
