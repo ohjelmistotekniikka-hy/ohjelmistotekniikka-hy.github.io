@@ -34,7 +34,7 @@ Jos komentoa `python3` ei jostain syystä löydy, tarkista `python`-komennon kä
 python --version
 ```
 
-Jos molemmissa tapauksissa versio on alle {{ python_version }}, asenna tietokoneellesi [uusin Python-versio](https://www.python.org/downloads/). Muista varmistaa asennuksen jälkeen, että oikea versio on käytössä. Muussa tapauksessa käytä komentoa, jonka käyttämä versio on vähintään {{ python_version }}.
+Jos molemmissa tapauksissa versio on alle {{ site.python_version }}, asenna tietokoneellesi [uusin Python-versio](https://www.python.org/downloads/). Muista varmistaa asennuksen jälkeen, että oikea versio on käytössä. Muussa tapauksessa käytä komentoa, jonka käyttämä versio on vähintään {{ site.python_version }}.
 
 ### Asennus
 
@@ -52,7 +52,7 @@ curl -sSL https://install.python-poetry.org | POETRY_HOME=$HOME/.local python3 -
 
 **HUOM:** jos `python3`-komentoa ei löydy, käytä sen sijaan komennon lopussa `python`-komentoa. Varmista kuitenkin, että Python-versio on oikea edellisen ohjeen mukaisesti.
 
-**HUOM:** jos törmäät macOS-tietokoneella virheeseen `SSL: CERTIFICATE_VERIFY_FAILED`, avaa Python-asennuksen hakemisto komennolla `open /Applications/Python\ {{ python_version }}` (korvaa "{{ python_version }}" käytössä olevalla Python-versiolla) ja klikkaa hakemistossa olevaa tiedostoa _Install Certificates.command_. Odota, että operaatio valmistuu ja suorita tämän jälkeen edellä mainittu asennus-komento uudestaan.
+**HUOM:** jos törmäät macOS-tietokoneella virheeseen `SSL: CERTIFICATE_VERIFY_FAILED`, avaa Python-asennuksen hakemisto komennolla `open /Applications/Python\ {{ site.python_version }}` (korvaa "{{ site.python_version }}" käytössä olevalla Python-versiolla) ja klikkaa hakemistossa olevaa tiedostoa _Install Certificates.command_. Odota, että operaatio valmistuu ja suorita tämän jälkeen edellä mainittu asennus-komento uudestaan.
 
 Asennuksen jälkeen Poetry-binäärin polku tulee asettaa `PATH`-muuttujaan. Tämä onnistuu lisäämällä kotihakemiston _.bashrc_-tiedoston loppuun seuraava rivi:
 
@@ -91,10 +91,10 @@ Käynnistä terminaali uudestaan ja varmista, että asennus onnistui suorittamal
 Harjoitellaan Poetryn käyttöä tekemällä pieni esimerkkiprojekti. Luo hakemisto _poetry-testi_ haluamaasi hakemistoon. Hakemiston ei tarvitse löytyä Labtooliin rekisteröimästäsi repositoriosta. Avaa hakemisto terminaalissa ja suorita siellä komento:
 
 ```bash
-poetry init --python "^{{ python_version }}"
+poetry init --python "^{{ site.python_version }}"
 ```
 
-Komennon yhteydessä annettu `--python "^{{ python_version }}"`-asetus asettaa projektin Python-version vaatimukseksi vähintään version {{ python_version }}. Komennosta seuraa sarja kysymyksiä. Voit vastata niihin haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painiketta painamalla on täysin hyvä vaihtoehto.
+Komennon yhteydessä annettu `--python "^{{ site.python_version }}"`-asetus asettaa projektin Python-version vaatimukseksi vähintään version {{ site.python_version }}. Komennosta seuraa sarja kysymyksiä. Voit vastata niihin haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painiketta painamalla on täysin hyvä vaihtoehto.
 
 Kun viimeiseen kysymykseen on vastattu, katso hakemiston sisältöä. Hakemistoon pitäisi ilmestyä _pyproject.toml_-tiedosto, jonka sisältö on kutakuinkin seuraava:
 
@@ -107,7 +107,7 @@ authors = [
     {name = "nimi",email = "meiliosoite"}
 ]
 readme = "README.md"
-requires-python = "^{{ python_version }}"
+requires-python = "^{{ site.python_version }}"
 dependencies = [
 ]
 
@@ -117,7 +117,7 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 ```
 
-Tiedosto sisältää projektiin liittyviä yleistietoja, kuten sen nimen, kuvauksen ja ylläpitäjät. Osion alapuolella on osioita, jotka listaavat projektin riippuvuuksia. Näemme mm. `poetry init`-komennon suorituksen yhteydessä asettamamme Python-version vaatimuksen, joka on muotoa `requires-python = "^{{ python_version }}"`. `^{{ python_version }}`-merkintä siis tarkoittaa, että projektin käyttö vaatii vähintään Python-version {{ python_version }}.
+Tiedosto sisältää projektiin liittyviä yleistietoja, kuten sen nimen, kuvauksen ja ylläpitäjät. Osion alapuolella on osioita, jotka listaavat projektin riippuvuuksia. Näemme mm. `poetry init`-komennon suorituksen yhteydessä asettamamme Python-version vaatimuksen, joka on muotoa `requires-python = "^{{ site.python_version }}"`. `^{{ site.python_version }}`-merkintä siis tarkoittaa, että projektin käyttö vaatii vähintään Python-version {{ site.python_version }}.
 
 Kun _pyproject.toml_-tiedosto on tullut tutuksi, viimeistellään projektin alustaminen suorittamalla komento:
 
@@ -147,7 +147,7 @@ Install-komennon suorittamisen jälkeen hakemistoon pitäisi ilmestyä tiedosto 
 
 Jos `poetry install`-komennon suorittaminen pyytää **keyring-salasanaa**, ongelma pitäisi ratketa suorittamalla terminaalissa `export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring` ja sen jälkeen suorittamalla komento `poetry install` uudestaan. Kyseisen rivin voi laittaa _.bashrc_ (tai vastaavaan) tiedostoon, jotta sitä ei tarvitse suorittaa jokaisen terminaali-istunnon aluksi.
 
-Liian **vanha Python-versio** saattaa johtaa seuraavankaltaiseen virheilmoituksen: "Current Python version (3.9.21) is not allowed by the project (^{{ python_version }})". Jos käytettävissä kuitenkin on uudempi versio, voit kokeilla seuraavaa komentoa, kunhan korvaat kohdan "3.12.3" kyseisen version numerolla: `poetry env use 3.12.3`. Mikäli tämäkään ei auta, voit kokeilla antaa parametriksi versionumeron sijaan polun em. versioon. Tästä ja muista vaihtoehdoista voi lukea lisää Poetryn [dokumentaatiosta](https://python-poetry.org/docs/managing-environments/#switching-between-environments). Katso myös tarvittaessa ohjeistus [_pyenv_-työkalun käyttöön](https://ohjelmistotekniikka-hy.github.io/python/toteutus#python-versioiden-hallinta).
+Liian **vanha Python-versio** saattaa johtaa seuraavankaltaiseen virheilmoituksen: "Current Python version (3.9.21) is not allowed by the project (^{{ site.python_version }})". Jos käytettävissä kuitenkin on uudempi versio, voit kokeilla seuraavaa komentoa, kunhan korvaat kohdan "3.12.3" kyseisen version numerolla: `poetry env use 3.12.3`. Mikäli tämäkään ei auta, voit kokeilla antaa parametriksi versionumeron sijaan polun em. versioon. Tästä ja muista vaihtoehdoista voi lukea lisää Poetryn [dokumentaatiosta](https://python-poetry.org/docs/managing-environments/#switching-between-environments). Katso myös tarvittaessa ohjeistus [_pyenv_-työkalun käyttöön](https://ohjelmistotekniikka-hy.github.io/python/toteutus#python-versioiden-hallinta).
 
 ### Riippuvuuksien asentaminen
 
@@ -278,7 +278,7 @@ Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
 2. Varmista, että _pyproject.toml_-tiedostossa on oikea Python-version vaatimus:
 
    ```toml
-   requires-python = "^{{ python_version }}"
+   requires-python = "^{{ site.python_version }}"
    ```
 
    **Jos versio on väärä**, muuta se oikeaksi ja suorita komento `poetry update`
@@ -348,7 +348,7 @@ class Maksukortti:
 Luo Labtooliin rekisteröimäsi repositorion hakemistoon _laskarit/viikko2_ hakemisto _maksukortti_. Suorita terminaalissa hakemiston sisällä tuttu, projektin alustamiseen vaadittava komento:
 
 ```bash
-poetry init --python "^{{ python_version }}"
+poetry init --python "^{{ site.python_version }}"
 ```
 
 Poetryn kysymillä projektin tiedoilla ei ole väliä, joten voit hyvin käyttää Poetryn ehdottamia tietoja.
