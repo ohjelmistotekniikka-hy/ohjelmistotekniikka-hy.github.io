@@ -66,7 +66,7 @@ Lisääminen onnistuu esimerkiksi muokkaamalla tiedostoa nano-editorin avulla, t
 echo "export PATH=\"\$HOME/.local/bin:\$PATH\"" >> $HOME/.bashrc
 ```
 
-**HUOM:** jos käytössäsi on zsh-komentorivi, on oikea konfiguraatiotiedosto _.bashrc_-tiedoston sijaan _.zshrc_-tiedosto. Voit tarkistaa käytössä olevan komentirivin komennolla `echo $SHELL`. Käytä tässä tapauksessa edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.zshrc`.
+**HUOM:** jos käytössäsi on zsh-komentorivi, on oikea konfiguraatiotiedosto _.bashrc_-tiedoston sijaan _.zshrc_-tiedosto. Voit tarkistaa käytössä olevan komentorivin komennolla `echo $SHELL`. Käytä tässä tapauksessa edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.zshrc`.
 
 **HUOM:** jos käytössäsi on macOS-käyttöjärjestelmä ja bash-komentorivi, käytä edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.bash_profile`.
 
@@ -146,9 +146,15 @@ Install-komennon suorittamisen jälkeen hakemistoon pitäisi ilmestyä tiedosto 
 
 ### Mahdollisia ongelmia
 
-Jos `poetry install`-komennon suorittaminen pyytää **keyring-salasanaa**, ongelma pitäisi ratketa suorittamalla terminaalissa `export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring` ja sen jälkeen suorittamalla komento `poetry install` uudestaan. Kyseisen rivin voi laittaa _.bashrc_ (tai vastaavaan) tiedostoon, jotta sitä ei tarvitse suorittaa jokaisen terminaali-istunnon aluksi.
+Jos `poetry install`-komennon suorittaminen pyytää **keyring-salasanaa**, ongelma pitäisi ratketa suorittamalla terminaalissa 
 
-Liian **vanha Python-versio** saattaa johtaa seuraavankaltaiseen virheilmoituksen: "Current Python version (3.9.21) is not allowed by the project (^{{ site.python_version }})". Jos käytettävissä kuitenkin on uudempi versio, voit kokeilla seuraavaa komentoa, kunhan korvaat kohdan "3.12.3" kyseisen version numerolla: `poetry env use 3.12.3`. Mikäli tämäkään ei auta, voit kokeilla antaa parametriksi versionumeron sijaan polun em. versioon. Tästä ja muista vaihtoehdoista voi lukea lisää Poetryn [dokumentaatiosta](https://python-poetry.org/docs/managing-environments/#switching-between-environments). Katso myös tarvittaessa ohjeistus [_pyenv_-työkalun käyttöön](https://ohjelmistotekniikka-hy.github.io/python/toteutus#python-versioiden-hallinta).
+```bash
+export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring
+```
+
+ja antamalla sen jälkeen komento `poetry install` uudestaan. Kyseisen rivin voi laittaa _.bashrc_ (tai vastaavaan) tiedostoon, jotta sitä ei tarvitse suorittaa uudelleen jokaisen terminaali-istunnon alussa.
+
+Liian **vanha Python-versio** saattaa johtaa seuraavankaltaiseen virheilmoituksen: "Current Python version (3.9.21) is not allowed by the project (^{{ site.python_version }})". Jos koneellasi kuitenkin on myös uudempi versio, voit kokeilla seuraavaa komentoa, kunhan korvaat kohdan "3.12.3" kyseisen version numerolla: `poetry env use 3.12.3` (vaihoehtoisesti voit antaa parametriksi versionumeron sijaan polun haluttuun versioon). Tästä ja muista vaihtoehdoista voi lukea lisää Poetryn [dokumentaatiosta](https://python-poetry.org/docs/managing-environments/#switching-between-environments). Mikäli edellä kuvattu ei onnistu, Python-version voi valita ja tarvittaessa asentaakin [_pyenv_-työkalun avulla](https://ohjelmistotekniikka-hy.github.io/python/toteutus#python-versioiden-hallinta).
 
 ### Riippuvuuksien asentaminen
 
@@ -263,8 +269,9 @@ Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se v�
 
 Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
 
-1. Varmista, että Poetrysta on asennettu uusin versio suorittamalla komento `poetry self update`
-2. Varmista, että _pyproject.toml_-tiedostossa on oikea Python-version vaatimus:
+1. Kun käytät komentoa, joka edellyttää virtuaaliympäristöä, varmista että todella olet siellä sisällä
+2. Varmista, että Poetrysta on asennettu uusin versio suorittamalla komento `poetry self update`
+3. Varmista, että _pyproject.toml_-tiedostossa on oikea Python-version vaatimus:
 
    ```toml
    requires-python = "^{{ site.python_version }}"
@@ -272,9 +279,9 @@ Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
 
    **Jos versio on väärä**, muuta se oikeaksi ja suorita komento `poetry update`
 
-3. Tyhjennä välimuisti suorittamalla komennot `poetry cache clear pypi --all` ja `poetry cache clear PyPi --all`
+4. Tyhjennä välimuisti suorittamalla komennot `poetry cache clear pypi --all` ja `poetry cache clear PyPi --all`
 
-4. Listaa projektissa käytössä olevat virtuaaliympäristöt komennolla `poetry env list` ja poista ne kaikki yksitellen komennolla `poetry env remove <nimi>`. Esimerkiksi seuraavasti:
+5. Listaa projektissa käytössä olevat virtuaaliympäristöt komennolla `poetry env list` ja poista ne kaikki yksitellen komennolla `poetry env remove <nimi>`. Esimerkiksi seuraavasti:
 
    ```bash
    $ poetry env list
