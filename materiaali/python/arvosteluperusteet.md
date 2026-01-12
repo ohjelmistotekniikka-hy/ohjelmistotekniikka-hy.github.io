@@ -94,9 +94,15 @@ Dokumentaatio tuo yhteensä maksimissaan 13 pistettä, jotka jakautuvat seuraava
   - **Päivitetty vastaamaan lopullisen ohjelman toiminnallisuutta**
   - Päivittämätön määrittelydokumentti tuo 0 pistettä
 - Arkkitehtuurikuvaus 4p
+  - Kuvaa sovelluksen rakennetta ja sen toimintaa sekä sanallisesti että kaavioiden avulla
+  - Selitä kaaviot sanallisesti
+  - Kerro myös tietojen pysyväistallennuksesta ja sovelluksen rakenteeseen mahdollisesti jääneistä heikkouksista
+Pyri selkeään esitykseen
 - Käyttö/asennusohje 1p
   - Arvostelijan tulee pystyä asentamaan ohjelma ja käyttämään sitä ohjeen avulla
 - Testausdokumentti 2p
+  - Kerro yksikkö- ja integraatiotestauksen lisäksi järjestelmätestauksesta ja sovellukseen jääneistä laatuongelmista
+  - Muista myös esittää testauskattavuus ja kertoa, jos jotain jäi kunnolla testaamatta.
 - Docstring-dokumentaatio 2p
   - Suurin osa luokista, attribuuteista, metodeista ja funktioista on dokumentoitu docstring-kommenttien avulla
   - Luokan sisäisiä (ilmaistu nimessä `_`- tai `__`-etuliitteellä) attribuutteja, tai metodeja ei tarvitse dokumentoida
