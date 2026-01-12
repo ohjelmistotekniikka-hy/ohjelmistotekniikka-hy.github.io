@@ -23,14 +23,14 @@ Tähän osioon on koottu vinkkejä, joista on luultavasti hyötyä harjoitustyö
 - [Uuden tekniikan harjoittelu ja käyttöönotto](#uuden-tekniikan-harjoittelu-ja-käyttöönotto)
 - [Python-versioiden hallinta](#python-versioiden-hallinta)
 
-Seuraavassa käsitellään hieman tarkemmin periaatteita siitä, miten koodi saadaan jaettua erillisiin loogisiin kokonaisuuksiin "kerrosarkkitehtuurin" ideaa noudattaen, ks. [täältä kurssin esimerkkisovelluksen](/python/viikko3#pakkauskaavio) arkkitehtuurin eli korkean tason rakenteen kuvaus. Pääperiaate on eriyttää käyttöliittymästä huolehtiva koodi erilleen sovelluslogiikasta ja vielä hoitaa tietojen tallennus omissa luokissaan.
+Seuraavassa käsitellään hieman tarkemmin periaatteita siitä, miten koodi saadaan jaettua erillisiin loogisiin kokonaisuuksiin "kerrosarkkitehtuurin" ideaa noudattaen, ks. [täältä kurssin esimerkkisovelluksen](/python/viikko3#pakkauskaavio) arkkitehtuurin eli korkean tason rakenteen kuvaus. Pääperiaate on eriyttää käyttöliittymästä huolehtiva koodi erilleen sovelluslogiikasta ja vielä hoitaa tietojen tallennus omissa luokissaan. Tällaisella eriyttämisellä on monia etuja mm. selkeyden, ylläpidettävyyden, testattavuuden ja uudelleenkäytettävyyden suhteen. Kunnolla eriytetylle sovelluslogiikalle saattaa esimerkiksi voida tehdä vaihtoehtoisiakin käyttöliittymiä.  
 
-Myös Ohjelmoinnin jatkokurssin osa 10 luku [Laajemman sovelluksen kehittäminen](https://ohjelmointi-22.mooc.fi/osa-10/4-lisaa-esimerkkeja) voi olla hyödyllinen, siellä käytetään osin hieman eriäviä termejä kuin tässä luvussa, mutta idea on sama: koodi eriytetään oman "vastuualueensa" luokkien tehtäväksi.
+Myös Ohjelmoinnin jatkokurssin osa 10 luku [Laajemman sovelluksen kehittäminen](https://ohjelmointi-22.mooc.fi/osa-10/4-lisaa-esimerkkeja) voi olla hyödyllinen. Siellä käytetään osin hieman eriäviä termejä kuin tässä luvussa, mutta idea on sama: koodi eriytetään oman "vastuualueensa" luokkien tehtäväksi.
 
 
 ## Sovelluksen käyttöliittymä
 
-Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän tekemättömyys saattaa [vaikuttaa arvosanaan](/python/arvosteluperusteet).
+Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän toteuttamatta jättäminen saattaa [vaikuttaa arvosanaan](/python/arvosteluperusteet).
 
 Pääasia on joka tapauksessa, että pyrit _eriyttämään mahdollisimman hyvin sovelluslogiikan käyttöliittymästä_. Käyttöliittymän roolin tulee siis olla ainoastaan käyttäjän kanssa tapahtuva interaktio, varsinaisen logiikan tulee tapahtua muissa oliossa.
 
@@ -103,14 +103,14 @@ class Numerotiedustelu:
         nimi = self._io.lue("kenelle: ")
         numero = self._io.lue("numero: ")
 
-        self.palvelu._lisaa_numero(nimi, numero)
+        self._palvelu.lisaa_numero(nimi, numero)
 
     # lisää käyttöliittymäfunktioita...
 ```
 
-Käytössäolevat komennot on tallennettu `KOMENNOT`-nimiseen [dictionaryyn](https://docs.python.org/3/tutorial/datastructures.html#dictionaries), jonka avaimina toimivat komentojen nimet ja arvoina niiden kuvaukset. Käyttöliittymää varten on toteutettu `Numerotiedustelu`-luokka. Luokan konstruktori alustaa oliomuuttujat `io` ja `palvelu`. Attribuuttiin `io` tallennetaan `KonsoliIO`-luokan olio, jonka avulla voimme lukea käyttäjän syötteitä ja tulostaa viestejä komentoriville. Attribuuttiin `palvelu` puolestaan tallenetaan `NumeroJaOsoitePalvelu`-luokan olio, jonka avulla voimme tehdä puhelinnumeroihin liittyviä operaatioita. Erilisen sovelluslogiikasta vastaavan luokan käyttö on tapa erottaa sovelluslogiikka käyttöliittymästä, joka on periaatteena erittäin tärkeä.
+Käytettävissä olevat komennot on tallennettu `KOMENNOT`-nimiseen [sanakirjaan](https://docs.python.org/3/tutorial/datastructures.html#dictionaries), jonka avaimina toimivat komentojen nimet ja arvoina niiden kuvaukset. Käyttöliittymää varten on toteutettu `Numerotiedustelu`-luokka. Luokan konstruktori alustaa oliomuuttujat `io` ja `palvelu`. Attribuuttiin `io` tallennetaan `KonsoliIO`-luokan olio, jonka avulla voimme lukea käyttäjän syötteitä ja tulostaa viestejä komentoriville. Attribuuttiin `palvelu` puolestaan tallennetaan `NumeroJaOsoitePalvelu`-luokan olio, jonka avulla voimme tehdä puhelinnumeroihin liittyviä operaatioita. Erillisen sovelluslogiikasta vastaavan luokan käyttö on tapa erottaa sovelluslogiikka käyttöliittymästä, joka on periaatteena erittäin tärkeä.
 
-`Numerotiedustelu`-luokan `kaynnista`-metodi käynnistää käyttöliittymän. Metodi `tulosta_ohje` tulostaa käyttäjälle käytössäolevat komennot. Tämän jälkeen käyttäjältä aletaan pyytää komentoja `while True`-silmukassa.
+`Numerotiedustelu`-luokan `kaynnista`-metodi käynnistää käyttöliittymän. Metodi `tulosta_ohje` tulostaa käyttäjälle käytettävissä olevat komennot. Tämän jälkeen käyttäjältä aletaan pyytää komentoja `while True`-silmukassa.
 
 Jos komentojen määrä kasvaa, voi harkita esimerkiksi [Command](https://en.wikipedia.org/wiki/Command_pattern)-suunnittelumallin käyttöä. Toteutuksessa komennot voisivat olla omia luokkiaan, kuten:
 
@@ -130,7 +130,7 @@ class LisaaNumeroKomento:
         self._palvelu.lisaa_numero(nimi, numero)
 ```
 
-Kaikilla komentoluokilla on siis metodit `tulosta_ohje` ja `suorita`. Komennot voi tallentaa dictionaryyn `Numerotiedustelu`-luokan konstruktorissa:
+Kaikilla komentoluokilla on siis metodit `tulosta_ohje` ja `suorita`. Komennot voi tallentaa sanakirjaan `Numerotiedustelu`-luokan konstruktorissa:
 
 ```python
 class Numerotiedustelu:
@@ -139,7 +139,7 @@ class Numerotiedustelu:
         self._palvelu = NumeroJaOsoitePalvelu()
 
         self._komennot = {
-            "x": LopetaKomento()
+            "x": LopetaKomento(),
             "1": LisaaNumeroKomento()
             # ...
         }
@@ -173,7 +173,7 @@ def kaynnista(self):
 
 Graafinen käyttöliittymä eroaa tekstikäyttöliittymästä siinä, että komentoriviltä annettavien tekstimuotoisten komentojen sijaan käyttäjä voi antaa sovellukselle syötteitä erilaisten graafisten komponenttien kautta. Tämä voi tarkoittaa esimerkiksi tekstikenttiin kirjoittamista, tai painikkeiden painelua.
 
-[TkInter](https://wiki.python.org/moin/TkInter)-kirjasto on Pythonissa jo standardiksi muodostonut tapa toteuttaa graafisia käyttöliittymiä. Koska aihe on jonkin verran tekstikäyttöliittymää laajempi, on sille kirjoitettu erillinen [ohje](/python/tkinter).
+[Tkinter](https://wiki.python.org/moin/TkInter)-kirjasto on Pythonissa jo standardiksi muodostunut tapa toteuttaa graafisia käyttöliittymiä. Koska aihe on jonkin verran tekstikäyttöliittymää laajempi, on sille kirjoitettu erillinen [ohje](/python/tkinter).
 
 ## Pelien toteutus
 
@@ -198,7 +198,7 @@ _Riippuvuuksien injektointi_ on ohjelmointitekniikka, jonka avulla pyritään er
 
 ```python
 class Numerotiedustelu:
-    def __init__(io, palvelu):
+    def __init__(self, io, palvelu):
         self._io = io
         self._palvelu = palvelu
 
@@ -344,7 +344,7 @@ class TodoRepository:
                 file.write(row+"\n")
 ```
 
-`TodoRepository`-luokka tarjoaa tiedon lukemista varten metodit `find_all` ja `find_by_username`. Nämä metodit hakevat tietoa CSV-tiedostosta ja muodostovat sen riveistä `Todo`-luokan olioita. Tiedon kirjoittamista varten luokka tarjoaa metodin `create`.
+`TodoRepository`-luokka tarjoaa tiedon lukemista varten metodit `find_all` ja `find_by_username`. Nämä metodit hakevat tietoa CSV-tiedostosta ja muodostavat sen riveistä `Todo`-luokan olioita. Tiedon kirjoittamista varten luokka tarjoaa metodin `create`.
 
 `TodoRepository`-luokasta voi tehdä olion seuraavasti:
 
@@ -356,6 +356,8 @@ dirname = os.path.dirname(__file__)
 todo_repository = TodoRepository(os.path.join(dirname, "..", "data", "todos.csv"))
 ```
 
+(Tässä __file__ on Pythonin automaattisesti asettama muuttuja, joka sisältää polun koodiin.)
+
 Annamme luokan konstruktorille polun CSV-tiedostolle. Tämän jälkeen voimme käyttää repositorion metodeja tietämättä, miten tieto tallennetaan tai haetaan:
 
 ```python
@@ -366,7 +368,7 @@ todos = todo_repository.find_all()
 print(todos)
 ```
 
-Huomaa, että luokan käyttäjä ei ole tietoinen, miten tieto haetaan. Tämä mahdollistaa tallennustapaan tehtävät muutokset vaivattomasti ilman muutoksia muuhun koodiin.
+Huomaa, että luokan käyttäjä ei tiedä miten tieto haetaan. Tämä mahdollistaa tallennustapaan tehtävät muutokset vaivattomasti ilman muutoksia muuhun koodiin.
 
 ### Tiedostojen polut
 
@@ -525,7 +527,7 @@ def pytest_configure():
 
 Vaikka edellä esitelty tapa alustaa tietokanta `initialize_database`-funktion avulla on melko kätevä, on SQL-tietokannan skeemaa tapana ylläpitää niin kutsuttujen [tietokantamigraatioiden](https://en.wikipedia.org/wiki/Schema_migration) avulla. Eräs tähän käyttötarkoitukseen soveltuva työkalu on [Alembic](https://alembic.sqlalchemy.org/en/latest/).
 
-### SQLite-tietokanta lukkiutuminen virtuaalityöasemalla
+### SQLite-tietokannan lukkiutuminen virtuaalityöasemalla
 
 Kun suoritat SQLite-tietokantaa käyttävää sovellusta virtuaalityöasemalla, tai melkillä, saatat törmätä seuraavaan virheeseen:
 
@@ -552,7 +554,7 @@ class TestTodoRepository(unittest.TestCase):
 
 Sovelluksen koodiin ei ole syytä kovakoodata mitään konfiguraatioita, kuten sen käyttämien tiedostojen tai tietokantojen nimiä. Eräs syy tähän on se, että jos konfiguraatiot ovat koodissa, ei ohjelman normaalin käyttäjän (jolla ei ole pääsyä koodiin) ole mahdollista tehdä muutoksia konfiguraatioihin.
 
-Konfiguraatiot on syytä määritellä ohjelman ulkopuolella, esim. erillisissä konfiguraatiotiedostoissa. Ei siis välttämättä kannatta ottaa mallia edellisten esimerkkien tavasta kovakoodata tiedostojen polkuja esimerkiksi SQLite-tietokannan yhteyden muodostamisessa.
+Konfiguraatiot on syytä määritellä ohjelman ulkopuolella, esim. erillisissä konfiguraatiotiedostoissa. Ei siis välttämättä kannata ottaa mallia edellisten esimerkkien tavasta kovakoodata tiedostojen polkuja esimerkiksi SQLite-tietokannan yhteyden muodostamisessa.
 
 Eräs tapa sovelluksen konfigurointiin on käyttää niin kutsuttuja _ympäristömuuttujia_. Ympäristömuuttujiin pääsee koodissa käsiksi mm. [os](https://docs.python.org/3/library/os.html)-moduulin [getenv](https://docs.python.org/3/library/os.html#os.getenv)-funktion avulla. Yksinkertaisin tapa määritellä sovellukselle ympäristömuuttujia on määritellä ne sovelluksen suorituksen yhteydessä komentoriviltä:
 
@@ -652,7 +654,7 @@ env_files =
 
 Nyt testit, jotka suoritetaan `pytest`-komennolla, käyttävät _.env.test_-tiedostossa määriteltyjä ympäristömuuttujia.
 
-Huomaa, että edellisen esimerkin `load_dotenv`-funktio lataa ympäristömuuttujat myös testeissä _.env_-tiedostosta, mutta se ei oletusarvoisesti ylikirjoita jo määriteltyjä muuttujia. Koska pytest-dotenv-lisäosa lataa ympäristömuuttujat ennen `load_dotenv`-funtiota, on testeissä ensisijaisesti käytössä _.env.test_-tiedostossa määritellyt ympäristömuuttujat.
+Huomaa, että edellisen esimerkin `load_dotenv`-funktio lataa ympäristömuuttujat myös testeissä _.env_-tiedostosta, mutta se ei oletusarvoisesti ylikirjoita jo määriteltyjä muuttujia. Koska pytest-dotenv-lisäosa lataa ympäristömuuttujat ennen `load_dotenv`-funktiota, on testeissä ensisijaisesti käytössä _.env.test_-tiedostossa määritellyt ympäristömuuttujat.
 
 Mallia oman projektin konfiguroimiseksi ympäristömuuttujilla voi ottaa edellä esitettyjen esimerkkien lisäksi myös [referenssisovelluksesta]({{site.python_reference_app_url}}).
 
