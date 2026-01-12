@@ -97,7 +97,7 @@ Dokumentaatio tuo yhteensä maksimissaan 13 pistettä, jotka jakautuvat seuraava
   - Kuvaa sovelluksen rakennetta ja sen toimintaa sekä sanallisesti että kaavioiden avulla
   - Selitä kaaviot sanallisesti
   - Kerro myös tietojen pysyväistallennuksesta ja sovelluksen rakenteeseen mahdollisesti jääneistä heikkouksista
-Pyri selkeään esitykseen
+  - Pyri selkeään esitykseen
 - Käyttö/asennusohje 1p
   - Arvostelijan tulee pystyä asentamaan ohjelma ja käyttämään sitä ohjeen avulla
 - Testausdokumentti 2p
