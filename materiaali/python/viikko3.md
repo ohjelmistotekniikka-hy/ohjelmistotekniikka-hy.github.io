@@ -20,7 +20,7 @@ UML tarjoaa lukuisia erilaisia kaaviotyyppejä, hyödynnämme kurssilla kuitenki
 
 ### Luokkakaaviot
 
-Kurssilla [Tietokantojen perusteet](https://tikape.mooc.fi/kevat-2024/) olet saattanut jo tutustua luokkakaavioiden käyttöön. Luokkakaavioiden käyttötarkoitus on ohjelman luokkien ja niiden välisten suhteiden kuvailu. Todo-sovelluksen oleellista tietosisältöä edustavat käyttäjää vastaava luokka `User`:
+Kurssilla [Tietokantojen perusteet](https://https://tikape.mooc.fi/syksy-2025/) olet saattanut jo tutustua luokkakaavioiden käyttöön. Luokkakaavioiden käyttötarkoitus on ohjelman luokkien ja niiden välisten suhteiden kuvailu. Todo-sovelluksen oleellista tietosisältöä edustavat käyttäjää vastaava luokka `User`:
 
 ```python
 class User:
@@ -89,12 +89,12 @@ EDULLISEN_HINTA = 2.5
 MAUKKAAN_HINTA = 4.3
 
 class Kassapaate:
-    def __init__():
+    def __init__(self):
         self.edulliset = 0
         self.maukkaat = 0
 
     def syo_edullisesti(self, kortti):
-        if kortti.saldo() < EDULLISEN_HINTA:
+        if kortti.saldo < EDULLISEN_HINTA:
             return False
 
         kortti.ota_rahaa(EDULLISEN_HINTA);
@@ -249,7 +249,7 @@ Hakemistorakennetta voidaan kuvata UML:ssä _pakkauskaaviolla_:
 
 ![](/assets/images/python/materiaali-pakkaukset.png)
 
-Pakkausten välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _ui_ riippuu pakkauksesta _services_ sillä _ui_-pakkauksen luokat käyttävät _services_-pakkauksen luokkaa `TodoService`, joka vastaa sovelluksen sovelluslogiikasta.
+Pakkausten välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _ui_ riippuu pakkauksesta _services_, sillä _ui_-pakkauksen luokat käyttävät _services_-pakkauksen luokkaa `TodoService`, joka vastaa sovelluslogiikasta.
 
 Vastaavasti pakkaus _services_ riippuu pakkauksesta _repositories_ sillä sen luokka `TodoService` käyttää _repositories_-pakkauksen luokkia `TodoRepository` ja `UserRepository`.
 
@@ -329,7 +329,7 @@ class Henkilostorekisteri:
 class PankkiRajapinta:
     # ...
 
-    def maksa_palkka(tilinumero, summa):
+    def maksa_palkka(self, tilinumero, summa):
         # suorittaa maksun verkkopankin internet-rajapinnan avulla
         # yksityiskohdat piilotettu
 ```
@@ -560,7 +560,7 @@ def coverage_report(ctx):
     ctx.run("coverage html", pty=True)
 ```
 
-Jos suoritamme tehtävän _coverage-report_ ennen _coverage_-tehtävän suorittamista, raportti sisältää joko vanhat testikattavuustiedot, tai kohtaamme virheen, joka valittaa testikattavuustietojen puutosta. Voisimme suorittaa komennot peräkkäin komennolla:
+Jos suoritamme tehtävän _coverage-report_ ennen _coverage_-tehtävän suorittamista, raportti sisältää joko vanhat testikattavuustiedot, tai kohtaamme virheen, joka valittaa testikattavuustietojen puutetta. Voisimme suorittaa komennot peräkkäin komennolla:
 
 ```bash
 poetry run invoke coverage coverage-report
