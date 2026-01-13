@@ -25,14 +25,14 @@ Kommenttien käyttö koodin dokumentoinnissa on erittäin hyödyllinen ja yleine
 
 ```python
 class Machine:
-    def __init__():
+    def __init__(self):
         self._tank = FuelTank()
         # fill tank with 40 units
         self._tank.fill(40)
         self._engine = Engine(self._tank)
 
     def drive(self):
-        self._egine.start()
+        self._engine.start()
         # check if engine is running
         running = self._engine.engine_is_running()
 
