@@ -6,11 +6,11 @@ title: Koodin laatuvaatimukset
 
 {% include java_materiaali_info.md %}
 
-Kurssin tavoitteena on, että tuotoksesi voisi ottaa kuka tahansa kaverisi tai muu opiskelija ylläpidettäväksi ja laajennettavaksi. Tavoitteena on Clean code - selkeää, ylläpidettävää ja toimivaksi testattua koodia. Tämä sivu esittelee erityisesti _lopullisen_ palautuksen laatuvaatimukset, mutta lueteltuja vaatimuksia on hyvä noudattaa mahdollisimman pian.
+Kurssin tavoitteena on, että tuotoksesi voisi ottaa kuka tahansa kaverisi tai muu opiskelija ylläpidettäväksi ja laajennettavaksi. Tavoitteena on Clean Code - selkeää, ylläpidettävää ja toimivaksi testattua koodia. Tämä sivu esittelee erityisesti _lopullisen_ palautuksen laatuvaatimukset, mutta lueteltuja vaatimuksia on hyvä noudattaa mahdollisimman pian.
 
 ## Clean Code
 
-Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Ohjelmoinnin harjoitustyön tulisi noudattaa periaatteita mahdollisimman hyvin.
+Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Harjoitustyön tulisi noudattaa periaatteita mahdollisimman hyvin.
 
 ### Nimeä funktiot, luokat, metodit, attribuutit, parametrit ja muuttujat selkeästi ja johdonmukaisesti
 
@@ -25,7 +25,7 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
 
 ### Ei pitkiä metodeja tai funktioita
 
-- Sovelluslogiikan metodin ja funktioiden pituuden tulee ilman erittäin hyvää syytä olla korkeintaan 20 riviä
+- Sovelluslogiikan metodien ja funktioiden pituuden tulee ilman erittäin hyvää syytä olla korkeintaan 20 riviä
 - Pitkät metodit ja funktiot tulee jakaa osiin
 - Yksi metodi, tai funktio - yksi pieni tehtävä (Single Responsibility)
   - Helpottaa myös testaamista
@@ -52,12 +52,12 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
 - Tiedostojen ja hakemistojen nimet pienillä kirjaimilla <i>snake_case</i>-formaatissa
 - Jaa koodi järkevästi tiedostoihin, esimerkiksi seuraavalla logiikalla:
   - Yksi luokka yhdessä tiedostossa
-  - Joukko toisiinsa selkeästi liittyviä funktiota samassa tiedostossa (esimerkiksi tiedosto-operaatioissa käytettäviä funktioita)
+  - Joukko toisiinsa selkeästi liittyviä funktioita samassa tiedostossa (esimerkiksi tiedosto-operaatioissa käytettäviä funktioita)
 - Jaa toisiinsa selkeästi liittyvät tiedostot omiin hakemistoihinsa, esimerkiksi seuraavalla logiikalla:
   - Testien tiedostot omaan hakemistoonsa
   - Käyttöliittymän koodin tiedostot omaan hakemistoonsa
   - Mallia voi ottaa [referenssisovelluksen]({{site.python_reference_app_url}}/tree/master/src) rakenteesta
-  - Myös [täällä](https://ohjelmistotekniikka-hy.github.io/python/toteutus) on avattu lisää sitä miten koodi tulisi jaoitella luokkiin/"moduuleihin"
+  - Myös [täällä](https://ohjelmistotekniikka-hy.github.io/python/toteutus) on avattu lisää sitä miten koodi tulisi jaotella luokkiin/"moduuleihin"
 
 ### Testaus
 
@@ -81,10 +81,10 @@ Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Oh
 Lisäksi lopulliseen arvosteluun palautetun ohjelman tulee toimia oikein.
 
 - Ohjelma ei saa missään tilanteessa kaatua
-- Ohjelma ei saa printata Exceptioneita (Stack tracea) komentoriville, vaikka virhe ei kaataisi ohjelmaa
+- Ohjelma ei saa printata poikkeuksia (Stack tracea) komentoriville, vaikka virhe ei kaataisi ohjelmaa
 - Tarkista, ettei ohjelmasi käsittele taulukon ulkopuolelle meneviä arvoja, tai jo poistettuja arvoja
 - Varaudu siihen, että käyttäjä yrittää antaa vääriä syötearvoja
-  - Esimerkiksi ohjelmasi haluaa numeron, tyhmä käyttäjä syöttää tekstiä
+  - Esimerkiksi ohjelmasi haluaa numeron, mutta käyttäjä syöttää tekstiä
 - Pelien sääntöjen tulisi toimia oikein
   - Esimerkiksi muistipelissä ei saa kääntää jo käännettyä palaa
   - Ristinollassa ei saa asettaa merkkiä ruutuun, jossa on jo merkki
