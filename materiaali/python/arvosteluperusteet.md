@@ -113,7 +113,7 @@ Dokumentaatio tuo yhteensä maksimissaan 13 pistettä, jotka jakautuvat seuraava
 
 [Referenssisovellus]({{site.python_reference_app_url}}) toimii hyvänä esikuvana dokumentaation suhteen. Pyri samantapaiseen esitykseen (harjoitustyön aihe ja erityispiirteet toki huomioiden).
 
-**HUOM:** älä copy-pasteta referenssisovelluksen dokumentaation tekstiä omaan dokumentaatioosi, kirjoita teksti omin sanoin. Tekstin suora kopiointi johtaa hylkäämiseen. Vastaavasti on kiellettyä kopioida tekoälyllä generoitua dokumentaatiota sellaisenaan.
+**HUOM:** älä copy-pasteta referenssisovelluksen dokumentaation tekstiä omaan dokumentaatioosi, kirjoita teksti omin sanoin. Vastaavasti on kiellettyä kopioida tekoälyllä generoitua dokumentaatiota sellaisenaan (pieniä katkelmia lukuun ottamatta). Tekstin suora kopiointi johtaa hylkäämiseen. 
 
 ## Harjoitustyön toimivuus
 
