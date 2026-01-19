@@ -111,9 +111,9 @@ Dokumentaatio tuo yhteensä maksimissaan 13 pistettä, jotka jakautuvat seuraava
   - Repositorion ja README:n oletetaan olevan aiempien viikkojen vaatimusten mukainen
 - Selvitys ChatGPT:n ja muiden kielimalleihin perustuvien välineiden käytöstä 1p
 
-[Referenssisovellus]({{site.python_reference_app_url}}) toimii hyvänä esikuvana dokumentaation suhteen.
+[Referenssisovellus]({{site.python_reference_app_url}}) toimii hyvänä esikuvana dokumentaation suhteen. Pyri samantapaiseen esitykseen (harjoitustyön aihe ja erityispiirteet toki huomioiden).
 
-**HUOM:** älä copy-pastea referenssisovelluksen dokumentaation tekstiä omaan dokumentaatioosi, kirjoita teksti omin sanoin. Tekstin suora kopiointi johtaa hylkäämiseen.
+**HUOM:** älä copy-pasteta referenssisovelluksen dokumentaation tekstiä omaan dokumentaatioosi, kirjoita teksti omin sanoin. Tekstin suora kopiointi johtaa hylkäämiseen. Vastaavasti on kiellettyä kopioida tekoälyllä generoitua dokumentaatiota sellaisenaan.
 
 ## Harjoitustyön toimivuus
 
