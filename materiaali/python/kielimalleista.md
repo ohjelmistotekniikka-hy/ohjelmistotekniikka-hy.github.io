@@ -1,0 +1,15 @@
+---
+layout: page
+title: Tekoälyn käyttö harjoitustyössä
+permalink: /python/kielimalleista
+---
+Kurssilla saa käyttää tekoälyä (käytännössä siis lähinnä kielimalleja)  melko vapaasti, myös ohjelmakoodin generointiin. Harjoitustyö ei ole varsinainen ohjelmointikurssi ja tällainen käyttö ei ole ristiriidassa osaamistavoitteiden kanssa. Generoitukin koodi kuitenkin tulee ymmärtää perusteellisesti ja sen oikeellisuus on varmistettava. Tämän takia **testien generointi on kielletty**. Toinen syy testien generointikieltoon on siinä, että monilla osallistujilla yksikkötestaus tulee kurssilla uutena asiana, jota on syytä harjoitella. Myös dokumentointikäyttöön on rajoituksia, joista tarkemmin sivun loppupuolella.
+
+Kurssilla on ollut **kysely kielimallien käytöstä** syksystä 2023 alkaen ja suurin osa vastaajista on jokaisella kyselykerralla käyttänyt kielimalleja. Tarkimmin on analysoitu kevään -24 vastauksia. Tuolloin 63 % vastaajista oli käyttänyt kielimalleja koodin paranteluun ja 59 % koodin generointiin. Käyttö oli kuitenkin melko maltillista: vain 12 % arvioi generoineensa yli neljänneksen koodistaan. Yli 70 % näki kielimallien edistäneen oppimista. Yleisimmin todettiin kielimallien nopeuttaneen työskentelyä niin, että aikaa jäi kurssin kannalta koodausta oleellisten asioiden, kuten suunnittelun, testaamisen ja dokumentoinnin harjoitteluun. Jotkut mainitsivat myös mm., että kielimallit olivat lisänneet motivaatiota, niiden kanssa oli voinut keskustella eri vaihtoehdoista ja ne olivat auttaneet kun opiskelija koki ajautuneensa jonkinlaiseen umpikujaan. Toisaalta kielimallien tarjoamaan apuun ja niiden generoimaan koodiin ei aina oltu tyytyväisiä (esim. käytettyjen tekniikoiden tai puutteellisen kontekstin takia).
+
+Hyvä kurssimenestys liittyi koodin maltilliseen generointiin silloin kun se yhdistyi yleiseen tiedonhakuun kurssin aihepiiristä, ahkeraan koodin paranteluun tai ideointiin. Myöhempiin kyselyihin on tullut osin samansuuntaisia vastauksia, joskin kielimalleja käyttäneiden osuus ja käytettyjen kielimallien suosio ovat jonkin verran vaihdelleet. Vaikka ChatGPT on ollut selvästi suosituin väline, myös esimerkiksi GitHub Copilotin käyttö on lisääntynyt. 
+
+Mainittujen tulostenkin pohjalta voi suositella sellaista kielimallien käyttöä, jossa pyritään todella **ymmärtämään** kurssilla käsiteltyjä asioita. Voi olla hyvä kysyä "miksi" ja "mitä" ja tarvittaessa kielimallia voi myös esim. pyytää selittämään koodia. Kielimalleja **ei** kannata yrittää käyttää vain kurssin suorittamista nopeuttavana oikotienä ja niiden tarjoamiin vastauksiin täytyy aina suhtautua kriittisesti. Pitää muistaa, että vastaukset eivät aina ole parhaita mahdollisia ja generoidussa koodissa voi olla suoranaisia virheitäkin.
+
+Tekoälyn käyttöä on lisäksi rajattu kurssilla siten, että **dokumentaatio tulee kirjoittaa pääosin itse**. Kielimalleja voi senkin osalta kuitenkin käyttää dokumentaation asiasisällön luonnosteluun ja esityksen viimeistelyyn, eikä pienten katkelmien kopiointia ole kielletty.
+

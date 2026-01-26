@@ -34,6 +34,7 @@ inheader: true
 - [Pelien toteutus Pygame-kirjastolla](/python/pygame)
 - [Arvosteluperusteet](/python/arvosteluperusteet)
 - [Koodin laatuvaatimukset](/python/koodin-laatuvaatimukset)
+- [Tekoälyn käyttö harjoitustyössä](/python/kielimalleista)
 
 ## Muuta
 
