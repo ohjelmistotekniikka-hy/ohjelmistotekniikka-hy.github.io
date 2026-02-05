@@ -259,7 +259,7 @@ Komennon suorittaminen lisää pytest-kirjaston riippuvuudeksi seuraavaan tapaan
 ```toml
 [dependency-groups]
 dev = [
-    "pytest (>=8.4.2,<9.0.0)"
+    "pytest (>=9.0.2,<10.0.0)"
 ]
 ```
 
@@ -375,7 +375,7 @@ maksukortti/
   ...
 ```
 
-Lisää tiedostoon _src/maksukortti.py_ edellä esitelty `Maksukortti`-luokan koodi.
+Lisää tiedostoon _src/maksukortti.py_ edellä esitelty `Maksukortti`-luokan koodi. Tiedosto <i>\_\_init\_\_.py</i> on tyhjä, samoin kuin vielä tässä vaiheessa myös tiedosto `maksukortti_test.py`.`
 
 ### Tehtävä 2: Aloitetaan testien kirjoittaminen
 
@@ -879,14 +879,14 @@ Komennon `--branch` flagillä pystymme keräämään testien [haarautumakattavuu
 coverage report -m
 ```
 
-Tulostuksesta huomaamme, että raportissa on suuri määrä projektin kannalta turhia tiedostoja. Voimme konfiguroida, mistä tiedostoista testikattavuutta kerätään projektin juurihakemiston _.coveragerc_-tiedostossa. Jos haluamme sisällyttää testikattavuuteen vain projektin _src_-hakemiston, on konfiguraatio seuraava:
+Voimme konfiguroida, mistä tiedostoista testikattavuutta kerätään projektin juurihakemiston _.coveragerc_-tiedostossa. Jos haluamme sisällyttää testikattavuuteen vain projektin _src_-hakemiston, on konfiguraatio seuraava:
 
 ```
 [run]
 source = src
 ```
 
-**HUOM:** _src_-hakemiston **alahakemistoissa** (ei siis itse _src_-hakemistossa) tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot, jotta testikattavuuteen sisällytetään kaikki halutut tiedostot. [Referenssisovelluksessa]({{site.python_reference_app_url}}) tapauksessa <i>\_\_init\_\_.py</i>-tiedostot on lisätty seuraavasti:
+**HUOM:** _src_-hakemiston **alahakemistoissa** (ei siis itse _src_-hakemistossa) tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot, jotta testikattavuuteen sisällytetään kaikki halutut tiedostot. [Referenssisovelluksessa]({{site.python_reference_app_url}}) <i>\_\_init\_\_.py</i>-tiedostot on lisätty seuraavasti:
 
 ```
 src/
@@ -1047,6 +1047,7 @@ Toivottava dokumentaation taso käy ilmi [referenssiprojektissa]({{site.python_r
 Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erilaisia esimerkkejä, joista voi toteuttaa oman versionsa.
 
 - Hyötyohjelmat
+  - Jonkin kiinnostavan asian kirjanpito, kortistointi, tilastointi
   - Aritmetiikan harjoittelua
   - Tehtävägeneraattori, joka antaa käyttäjälle tehtävän sekä mallivastauksen (esim. matematiikkaa, fysiikkaa, kemiaa, ...)
   - Opintojen seurantajärjestelmä
