@@ -220,7 +220,7 @@ poetry run python3 src/index.py
 Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa jatkuvasti, on kuitenkin kätevintä olla koko ajan virtuaaliympäristön sisällä. Voimme siirtyä virtuaaliympäristön sisään seuraavalla [kommennolla](https://python-poetry.org/docs/managing-environments/#bash-csh-zsh):
 
 ```bash
-eval \$(poetry env activate)
+eval $(poetry env activate)
 ```
 
 Jos saat virheilmoituksen, jossa viitataan Pythonin versioihin ja todetaan, että *"Discovered shell 'bash' doesn't have an activator in virtual environment"*, voit kokeilla komentoa `poetry env use` (ks. [aiempi ohje](#mahdollisia-ongelmia)). Tämän jälkeen voit uudestaan antaa komennon `eval $(poetry env activate)`.
@@ -228,7 +228,7 @@ Jos saat virheilmoituksen, jossa viitataan Pythonin versioihin ja todetaan, ett�
 Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa tieto virtuaaliympäristöstä, esim.:
 
 ```bash
-(poetry-testi-py3.12)\$
+(poetry-testi-py3.12)$
 ```
 
 Virtuaaliympäristön sisällä voimme suorittaa komennon "normaalisti", eli ilman `run`-komentoa:
