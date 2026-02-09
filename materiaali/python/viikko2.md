@@ -18,7 +18,9 @@ Laajoissa ja monimutkaisissa ohjelmistoprojekteissa kaiken koodin tuottaminen it
 
 Kirjastojen lähdekoodi on usein luettavissa versionhallinta-alustoilla, kuten GitHubissa. Usein kirjastoja päivitetään jatkuvasti ja nämä päivitykset synnyttävät kirjastoista uusia _versioita_. Kirjastojen versioita julkaistaan erilaisiin rekistereihin, joista ne ovat helposti asennettavissa. [The Python Package Index](https://pypi.org/) (PyPI) on eräs tämän kaltainen, Python-kirjastoille tarkoitettu rekisteri.
 
-Projektissa käytettävät kirjastojen versiot ovat projektin _riippuvuuksia_. Riippuvuuksia asennetaan Python-projekteissa tyypillisesti projektikohtaisiin _virtuaaliympäristöihin_, jottei samalla tietokoneella olevien projektien riippuvuuksissa syntyisi ristiriitoja. Jotta riippuvuuksien hallinta virtuaaliympäristöissä sujuisi helposti, käytämme kurssilla [Poetry](https://python-poetry.org/)-komentorivityökalua. **Huom:** älä käytä kurssilla pip-komentoja, vaikka olisit aiemmin sellaisilla riippuvuuksia asentanutkin.
+Projektissa käytettävät kirjastojen versiot ovat projektin _riippuvuuksia_. Riippuvuuksia asennetaan Python-projekteissa tyypillisesti projektikohtaisiin _virtuaaliympäristöihin_, jottei samalla tietokoneella olevien projektien riippuvuuksissa syntyisi ristiriitoja. Jotta riippuvuuksien hallinta virtuaaliympäristöissä sujuisi helposti, käytämme kurssilla [Poetry](https://python-poetry.org/)-komentorivityökalua. 
+
+**Huom:** _älä käytä kurssilla pip-komentoja, vaikka olisit aiemmin sellaisilla riippuvuuksia asentanutkin!_
 
 ### Huomioita komennoista
 
@@ -50,9 +52,9 @@ Asenna Poetry suorittamalla terminaalissa seuraava komento:
 curl -sSL https://install.python-poetry.org | POETRY_HOME=$HOME/.local python3 -
 ```
 
-**HUOM:** jos `python3`-komentoa ei löydy, käytä sen sijaan komennon lopussa `python`-komentoa. Varmista kuitenkin, että Python-versio on oikea edellisen ohjeen mukaisesti.
-
-**HUOM:** jos törmäät macOS-tietokoneella virheeseen `SSL: CERTIFICATE_VERIFY_FAILED`, avaa Python-asennuksen hakemisto komennolla `open /Applications/Python\ {{ site.python_version }}` (korvaa "{{ site.python_version }}" käytössä olevalla Python-versiolla) ja klikkaa hakemistossa olevaa tiedostoa _Install Certificates.command_. Odota, että operaatio valmistuu ja suorita tämän jälkeen edellä mainittu asennus-komento uudestaan.
+**HUOM:**
+- Jos `python3`-komentoa ei löydy, käytä sen sijaan komennon lopussa `python`-komentoa. Varmista kuitenkin, että Python-versio on oikea edellisen ohjeen mukaisesti.
+- Jos törmäät macOS-tietokoneella virheeseen `SSL: CERTIFICATE_VERIFY_FAILED`, avaa Python-asennuksen hakemisto komennolla `open /Applications/Python\ {{ site.python_version }}` (korvaa "{{ site.python_version }}" käytössä olevalla Python-versiolla) ja klikkaa hakemistossa olevaa tiedostoa _Install Certificates.command_. Odota, että operaatio valmistuu ja suorita tämän jälkeen edellä mainittu asennus-komento uudestaan.
 
 Asennuksen jälkeen Poetry-binäärin polku tulee asettaa `PATH`-muuttujaan. Tämä onnistuu lisäämällä kotihakemiston _.bashrc_-tiedoston loppuun seuraava rivi:
 
@@ -66,11 +68,10 @@ Lisääminen onnistuu esimerkiksi muokkaamalla tiedostoa nano-editorin avulla, t
 echo "export PATH=\"\$HOME/.local/bin:\$PATH\"" >> $HOME/.bashrc
 ```
 
-**HUOM:** jos käytössäsi on zsh-komentorivi, on oikea konfiguraatiotiedosto _.bashrc_-tiedoston sijaan _.zshrc_-tiedosto. Voit tarkistaa käytössä olevan komentorivin komennolla `echo $SHELL`. Käytä tässä tapauksessa edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.zshrc`.
-
-**HUOM:** jos käytössäsi on macOS-käyttöjärjestelmä ja bash-komentorivi, käytä edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.bash_profile`.
-
-**HUOM:** käytä melkki-palvelimella edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.profile`.
+**HUOM:** 
+- Jos käytössäsi on zsh-komentorivi, on oikea konfiguraatiotiedosto _.bashrc_-tiedoston sijaan _.zshrc_-tiedosto. Voit tarkistaa käytössä olevan komentorivin komennolla `echo $SHELL`. Käytä tässä tapauksessa edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.zshrc`.
+- Jos käytössäsi on macOS-käyttöjärjestelmä ja bash-komentorivi, käytä edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.bash_profile`.
+- Käytä melkki-palvelimella edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.profile`.
 
 Käynnistä terminaali uudestaan ja varmista, että asennus onnistui suorittamalla komento `poetry --version`. Komennon pitäisi tulostaa asennettu versio.
 
@@ -219,7 +220,7 @@ poetry run python3 src/index.py
 Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa jatkuvasti, on kuitenkin kätevintä olla koko ajan virtuaaliympäristön sisällä. Voimme siirtyä virtuaaliympäristön sisään seuraavalla [kommennolla](https://python-poetry.org/docs/managing-environments/#bash-csh-zsh):
 
 ```bash
-eval $(poetry env activate)
+eval \$(poetry env activate)
 ```
 
 Jos saat virheilmoituksen, jossa viitataan Pythonin versioihin ja todetaan, että *"Discovered shell 'bash' doesn't have an activator in virtual environment"*, voit kokeilla komentoa `poetry env use` (ks. [aiempi ohje](#mahdollisia-ongelmia)). Tämän jälkeen voit uudestaan antaa komennon `eval $(poetry env activate)`.
@@ -227,7 +228,7 @@ Jos saat virheilmoituksen, jossa viitataan Pythonin versioihin ja todetaan, ett�
 Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa tieto virtuaaliympäristöstä, esim.:
 
 ```bash
-(poetry-testi-py3.12)$
+(poetry-testi-py3.12)\$
 ```
 
 Virtuaaliympäristön sisällä voimme suorittaa komennon "normaalisti", eli ilman `run`-komentoa:
@@ -240,7 +241,7 @@ Voimme lähteä virtuaaliympäristöstä komennolla `deactivate`.
 
 (Poetryn vanhemmilla versioilla (versionumero alle 2.0.0) virtuaaliympäristöön pääsee komennolla [poetry shell](https://python-poetry.org/docs/cli/#shell). Tätä komentoa voi itse asiassa käyttää Poetryn uudempienkin versioiden kanssa, mutta siinä tapauksessa pitää ensiksi ottaa käyttöön sopiva plugin-tiedosto: `poetry self add poetry-plugin-shell`. Kun virtuaaliympäristöön siirryttiin komennolla `poetry shell`, sieltä pääsee pois komennolla `exit`.)
 
-Virtuaaliympäristössä voi myös käynnistää Visual Studio Coden. Siirry siis ensin virtuaaliympäristöön ja vasta sen jälkeen käynnistä VS Code komennolla `code /polku/projektiin`. VS Coden virheenjäljitystoimintoja kokeiltaessa saattaa kuitenkin käydä niin, että kaikkia projektin luokkia ei löydykään. Mikäli tarvitset näitä toimintoja, saatat joutua luomaan erillisen _launch.json_-tiedoston. Lisätietoja löytyy Visual Studio Coden [sivuilta](https://code.visualstudio.com/docs/python/debugging).
+Virtuaaliympäristössä voi myös käynnistää Visual Studio Coden. Siirry siis ensin virtuaaliympäristöön ja vasta sen jälkeen käynnistä VS Code komennolla `code /polku/projektiin`. (VS Coden virheenjäljitystoimintoja kokeiltaessa saattaa kuitenkin käydä niin, että kaikkia projektin luokkia ei löydykään. Mikäli tarvitset näitä toimintoja, saatat joutua luomaan erillisen _launch.json_-tiedoston. Lisätietoja löytyy Visual Studio Coden [sivuilta](https://code.visualstudio.com/docs/python/debugging).)
 
 ### Kehityksen aikaiset riippuvuudet
 
@@ -1029,7 +1030,7 @@ Toivottava dokumentaation taso käy ilmi [referenssiprojektissa]({{site.python_r
   - Vältä eeppisiä aiheita, aloita riittävän pienestä. Yksi periodi on yllättävän lyhyt aika
   - Valitse kuitenkin aihe, jonka perustoiminnallisuuden saa toteutettua nopeasti, mutta jota saa myös laajennettua helposti
   - Hyvässä aiheessa on muutamia logiikkaluokkia, tiedoston tai tietokannankäsittelyä ja logiikasta eriytetty käyttöliittymä
-- Kurssilla pääpaino on Ohjelmoinnin Perusteissa ja Jatkokurssilla opituissa asioissa
+- Kurssilla pääpaino on Ohjelmoinnin perusteissa ja jatkokurssilla opituissa asioissa
   - Käytettävyys
   - Toimivuus ja varautuminen virhetilanteisiin
   - Luokkien vastuut
@@ -1040,7 +1041,7 @@ Toivottava dokumentaation taso käy ilmi [referenssiprojektissa]({{site.python_r
   - Grafiikka
   - Tietoturva
   - Tehokkuus
-- **HUOMIO!** Kannattaa yrittää välttää aiheita, joissa pääpaino on tiedon säilömisessä tai käyttöliittymässä. Paljon tietoa säilövät, esim. yli 3 tietokantataulua tarvitsevat sovellukset ovat vaikeita testata tämän kurssin esitietovaatimusten puitteissa, ja ne sopivat yleensä paremmin kurssille Tietokannat ja web-ohjelmointi. Käyttöliittymäkeskeisissä aiheissa (esim. tekstieditori) voi olla vaikea keksiä sovelluslogiikkaa, joka on enemmän tämän kurssin painopiste (myös siksi koska käyttöliittymää ei tällä kurssilla testata ja testaus on kurssin keskeinen aihe - jos ei ole sovelluslogiikkaa, on vaikea myös kirjoittaa sille testejä)
+- **HUOMIO!** Kannattaa yrittää välttää aiheita, joissa pääpaino on tiedon säilömisessä tai käyttöliittymässä. Paljon tietoa säilövät, esim. yli 3 tietokantataulua tarvitsevat sovellukset ovat vaikeita testata tämän kurssin esitietovaatimusten puitteissa, ja ne sopivat yleensä paremmin kurssille Tietokannat ja web-ohjelmointi. Käyttöliittymäkeskeisissä aiheissa (esim. tekstieditori) voi olla vaikea keksiä sovelluslogiikkaa, joka on enemmän tämän kurssin painopiste (myös siksi koska käyttöliittymää ei tällä kurssilla yksikkötestata ja testaus on kurssin keskeinen aihe - jos ei ole sovelluslogiikkaa, on vaikea myös kirjoittaa sille testejä).
 
 ### Esimerkkejä aiheista
 
