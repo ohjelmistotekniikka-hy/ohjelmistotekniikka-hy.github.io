@@ -10,47 +10,47 @@ repo_branch: 'master'
 title: "Aineopintojen harjoitustyö: ohjelmistotekniikka"
 
 # aikataulut (annetaan muodossa viikonpäivä dd.mm kellonaika)
-wk1dl: "tiistai 4.11. klo 23:59"
-wk2dl: "tiistai 11.11. klo 23:59"
-wk3dl: "tiistai 18.11. klo 23:59"
-wk4dl: "tiistai 25.11. klo 23:59"
-wk5dl: "tiistai 2.12. klo 23:59"
-wk6dl: "tiistai 9.12. klo 23:59"
-finaldl: "sunnuntai 21.12. klo 23:59"
-code_review_start_date: "keskiviikkona 3.12."
+wk1dl: "tiistai 17.3. klo 23:59"
+wk2dl: "tiistai 24.3. klo 23:59"
+wk3dl: "tiistai 31.3. klo 23:59"
+wk4dl: "tiistai 14.4. 7.4. klo 23:59"
+wk5dl: "tiistai 21.4. klo 23:59"
+wk6dl: "tiistai 28.4. klo 23:59"
+finaldl: "sunnuntai 10.5. klo 23:59"
+code_review_start_date: "keskiviikkona 29.4."
 
 # ohjausajat
 # - Maanantaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/68570587158?pwd=TFhwUXBucExZeVNJZnRydE8yWkNFdz09)
 # - Tiistaisin klo 14-16  [zoom](https://helsinki.zoom.us/j/65324719978) (alkaen 23.3.)
 # - Torstaisin klo 13-15  [zoom]()
 times:
-- time: "Ma klo 14 - 16 luokassa BK107"
+#- time: "Ma klo 14 - 16 luokassa BK107"
 #- time: "Ke klo 14 - 16 luokassa BK107"
 #- time: "To klo 14.30 - 16.30 luokassa BK107"
 #- time: "Pe klo 12 - 14 luokassa BK107"
 
-lecture_time: 'ke 29.10.2025 klo 10.15–11.45'
-lecture_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/tree/master/luennot/2025-syksy'
-lecture_slides_link: 'https://ohjelmistotekniikka-hy.github.io/luennot/2025-syksy/ohtealoitusluentos25.pdf'
-lecture_recording_link: https://moodle.helsinki.fi/mod/lti/view.php?id=4176288
+lecture_time: 'ma 9.3.2026 klo 10.15–11.45'
+lecture_link: 'https://github.com/ohjelmistotekniikka-hy/ohjelmistotekniikka-hy.github.io/tree/master/luennot/2026-kevat'
+lecture_slides_link: 'https://ohjelmistotekniikka-hy.github.io/luennot/2026-kevat/ohtealoitusluentosk26.pdf'
+lecture_recording_link: ''
 #'https://moodle.helsinki.fi/mod/lti/view.php?id=3510005'
 
 # seuraava kurssikerta muodossa syksyllä/keväällä [vuosi].
 # esimerkki syksyllä 2021
 # käytetään muun muassa "ei voi jatkaa seuraavalla kurssilla (syksyllä 2021)"
-next_course: 'keväällä 2026'
+next_course: 'syksyllä 2026'
 
-labtool_link: 'https://study.cs.helsinki.fi/labtool/courses/TKT20018.2025.S.K.1'
+labtool_link: 'https://study.cs.helsinki.fi/labtool/courses/TKT20018.2026.K.K.1'
 
-# referenssi-sovellusten linkit
+# referenssisovellusten linkit
 python_reference_app_url: 'https://github.com/ohjelmistotekniikka-hy/python-todo-app'
 java_reference_app_url: 'https://github.com/mluukkai/OtmTodoApp'
 
 # Moodle-alue
-moodle_link: 'https://moodle.helsinki.fi/course/view.php?id=74041'
+moodle_link: 'https://moodle.helsinki.fi/course/view.php?id=77005'
 
 # Norpan palaute
-norppa_link: 'https://norppa.helsinki.fi/targets/95024810/feedback'
+norppa_link: 'https://norppa.helsinki.fi/targets/95025004/feedback'
 
 # Minimiversiot
 python_version: '3.12'
