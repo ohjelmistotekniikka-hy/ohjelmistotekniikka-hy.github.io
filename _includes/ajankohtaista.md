@@ -7,5 +7,5 @@
   - **HUOM:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 - Jos tarvitset kurssiin liittyvää ohjausta, tule **pajaohjaukseen** 16.3. - 1.4. ja 9.4. - 8.5. (pääsiäistauko 2. - 8.4.): {% for time in site.times %}
   - {{ time.time }}{% endfor %}
-- Pajassa saat parhaiten apua. Voit kuitenkin tarvittaessa pyytää kurssiassistenteilta ohjausta myös zoomin välityksellä.
+- Pajassa saat parhaiten apua. Voit kuitenkin tarvittaessa pyytää (esim. Discordissa) kurssiassistenteilta ohjausta myös zoomin välityksellä.
 
