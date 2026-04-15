@@ -915,7 +915,7 @@ source = src
 omit = src/**/__init__.py,src/tests/**,src/ui/**,src/index.py
 ```
 
-Nyt komentojen `coverage run --branch -m pytest src` ja `coverage report -m` suorittaminen sisällyttää vain haluamamme _src_-hakemiston tiedostot.
+Nyt komentojen `coverage run --branch -m pytest src` ja `coverage report -m` suorittaminen sisällyttää vain haluamamme _src_-hakemiston tiedostot. Vastaavaa _.coveragerc_-tiedostoa voi käyttää harjoitustyössäkin.
 
 ### Visuaalisempi testikattavuusraportti
 
