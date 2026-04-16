@@ -39,6 +39,7 @@ Pienistä virheistä voi laittaa huomautuksen viestiksi. *Pisteen kuitenkin saa,
 ### Viikko 2
 
 Katsokaa että coveragen raportti on ok ja silmäilkää nopeasti, että testit ovat järkeviä eikä feikkitestejä. Jos jotain testejä puuttuu (eli testikattavuus ei ole 100%), niin sitten tarkempi syynäys ja pisteiden vähennys Labtoolin ohjeen mukaan. (Testeistä paremmat kuvaukset niissä Labtoolin opiskelijalle menevissä alaosan teksteissä...)
+**Huom. testikattavuudella tarkoitetaan tässä ja jatkossa prosenttilukemaa, joka näkyy Coveragen tuottaman html-raportin oikeassa alakulmassa** (versio 7: sarake total, rivi otal, versio 6: sarake coverage, rivi total).
 
 ### Viikko 3
 
@@ -94,10 +95,10 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
   **Huom:** ohjelman viikoittaisen kasvamisen puutteiden osalta saa ja on hyvä käyttää harkintaa, jos opiskelija on edeltävällä viikolla tehnyt selvästi odotettua enemmän ja työ on aivan selvästi vähintään siinä vaiheessa kuin tällä viikolla edellytetään. Näin siis nyt ja myös jatkossa. Yhtä viikkoa kauemmaksi ei kuitenkaan tässä ole syytä katsoa.
 - Testauksen edistyminen (0.5p)
   **!! ALLA OLEVISTA MERKATAAN NOLLA, YKSI TAI KAKSI. EI SIIS VAIN JOMPAA KUMPAA !!**
-  - Rivikattavuus vähintään 20% (0.25p)
-    - Jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioi se pois prosenteista ja huomauttakaa että opiskelija poistaa sen rivikattavuudesta
-  - Rivikattavuus vähintään 10% (0.25p)
-    - Jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioikaa se pois prosenteista ja huomauttakaa että opiskelija poistaa sen rivikattavuudesta
+  - testikattavuus (html-raportin oikean alakulman lukema) vähintään 20% (0.25p)
+    - Jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioi se pois prosenteista ja huomauttakaa että opiskelija poistaa sen testikattavuudesta
+  - testikattavuus vähintään 10% (0.25p)
+    - Jos käyttöliittymäkoodi on mukana rivimäärissä, niin arvioikaa se pois prosenteista ja huomauttakaa että opiskelija poistaa sen testikattavuudesta
 
 #### Projekti
 
@@ -106,7 +107,7 @@ Seuraaville viikoille toiminnallisuuksien täytyy olla käyttäjälle näkyviä 
 - Pylintin virheitä alle 10 (0.25p)
   - Käyttöliittymän rakentavaa koodia ei tarvitse lintata
 - Tarkistakaa että `src`-hakemiston alahakemistoihin on lisätty [ohjeen](https://ohjelmistotekniikka-hy.github.io/python/coverage) mukaisesti tyhjät \_\_init\_\_.py -tiedostot, jos niitä ei ole coverage ei laske testikattavuutta oikein. Jos tiedostoja ei ole lisätty,  ei tarvitse vähentää pisteitä tästä syystä, mutta kirjoittakaa viikkopalautteeseen muistutus lisätä nämä. Jos jo viime viikolla kehotitte viikkopalautteessa lisäämään nämä tiedostot voi rokottaa pisteistä vaikka 0.15 syystä ettei ole lisätty ohjeen mukaisesti näitä.
-- Jos tyhjiä \_\_init\_\_.py tiedostoja ei ole alihakemistoista, ottakaa huomioon että coverage laskee testien rivikattavuuden väärin. Arvioikaa rivikattavuus silmämääräisesti, tai jos testikattavuus ei ole ilmiselvästi yli 20%, lisätkää itse tyhjät tiedostot ennen testiraportin luomista.
+- Jos tyhjiä \_\_init\_\_.py tiedostoja ei ole alihakemistoista, ottakaa huomioon että coverage laskee testien testikattavuuden väärin. Arvioikaa testikattavuus silmämääräisesti, tai jos testikattavuus ei ole ilmiselvästi yli 20%, lisätkää itse tyhjät tiedostot ennen testiraportin luomista.
 
 #### Dokumentaatio
 
