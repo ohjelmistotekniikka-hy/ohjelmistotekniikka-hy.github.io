@@ -39,7 +39,8 @@ Pienistä virheistä voi laittaa huomautuksen viestiksi. *Pisteen kuitenkin saa,
 ### Viikko 2
 
 Katsokaa että coveragen raportti on ok ja silmäilkää nopeasti, että testit ovat järkeviä eikä feikkitestejä. Jos jotain testejä puuttuu (eli testikattavuus ei ole 100%), niin sitten tarkempi syynäys ja pisteiden vähennys Labtoolin ohjeen mukaan. (Testeistä paremmat kuvaukset niissä Labtoolin opiskelijalle menevissä alaosan teksteissä...)
-**Huom. testikattavuudella tarkoitetaan tässä ja jatkossa prosenttilukemaa, joka näkyy Coveragen tuottaman html-raportin oikeassa alakulmassa** (versio 7: sarake total, rivi otal, versio 6: sarake coverage, rivi total).
+
+**Huom. testikattavuudella tarkoitetaan tässä ja jatkossa prosenttilukemaa, joka näkyy Coveragen tuottaman html-raportin oikeassa alakulmassa**. (Versio 7: sarake total, rivi total. Versio 6: sarake coverage, rivi total.)
 
 ### Viikko 3
 
