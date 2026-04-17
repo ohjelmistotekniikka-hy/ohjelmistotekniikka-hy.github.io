@@ -611,9 +611,7 @@ Jokainen testi siis alkaa tilanteesta jossa kortti on juuri luotu. Tämän jälk
 
 ### Onko jo testattu tarpeeksi?
 
-Olemme tyytyväisiä, uskomme että testitapauksia on nyt tarpeeksi. Onko tosiaan näin? Onneksi on olemassa työkaluja, joilla voidaan tarkastaa testien _haarautumakattavuus_, eli se mitä suoritushaaroja testien suorittaminen on tutkinut. Tutustumme testien haarautumakattavuuden mittaamiseen [testikattavuutta](#coverage-ja-testikattavuus) käsittelevässä osiossa.
-
-Testikattavuuden mittaus paljastaa että koodi on melko kattavasti testattu. Ainoa testien tutkimatta jättämä asia on tilanne, jossa kortille yritetään ladata negatiivinen saldo.
+Olemme tyytyväisiä ja uskomme, että testitapauksia on nyt riittävästi. Mutta onko tosiaan näin? Onneksi on olemassa työkaluja, joilla voidaan selvittää testien kattavuus. Palaamme aiheeseen [myöhemmässä](#coverage-ja-testikattavuus) osiossa. Testikattavuuden mittaus kuitenkin paljastaa, että koodi on melko kattavasti testattu. Ainoa testien tutkimatta jättämä asia on tilanne, jossa kortille yritetään ladata negatiivinen saldo. 
 
 ### Testiluokka vielä kokonaisuudessaan
 
@@ -856,9 +854,7 @@ Voit vaihtoehtoisesti kokeilla seuraavaa: lisää hakemisto _unicafe_ Visual Stu
 
 ## Coverage ja testikattavuus
 
-Olemme tyytyväisiä, uskomme että testitapauksia on nyt tarpeeksi. Onko tosiaan näin? Onneksi on olemassa työkaluja, joilla voidaan tarkastaa testien rivi- ja haarautumakattavuus. _Rivikattavuus_ mittaa mitä koodirivejä testien suorittaminen on tutkinut. Täydellinen rivikattavuuskaan ei tietenkään takaa että ohjelma toimii oikein, mutta on parempi kuin ei mitään. _Haarautumakattavuus_ taas mittaa mitä eri suoritushaaroja koodista on käyty läpi. Suoritushaaroilla tarkoitetaan esimerkiksi if-komentojen valintatilanteita.
-
-Koska haarautumakattavuus antaa tyypillisesti realistisemman kuvan testien kattavuudesta, käytämme kurssilla sitä testikattavuuden mittarina.
+On olemassa työkaluja, joilla voidaan tarkastaa testien rivi- ja haarautumakattavuus. _Rivikattavuus_ mittaa mitä koodirivejä testien suorittaminen on tutkinut. Täydellinen rivikattavuuskaan ei tietenkään takaa että ohjelma toimii oikein, mutta on parempi kuin ei mitään. _Haarautumakattavuus_ taas mittaa mitä eri suoritushaaroja koodista on käyty läpi. Suoritushaaroilla tarkoitetaan esimerkiksi if-komentojen valintatilanteita. Haarautumakattavuus antaa yleensä realistisemman kuvan kuin rivikattavuus, mutta sekään ei yksin riitä kuvaamaan testien laatua.
 
 ### Testikattavuusraportti
 
@@ -929,7 +925,9 @@ Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Rapo
 
 ![](/assets/images/python/coverage-raportti.png)
 
-Raportista näemme, että koko koodin haaraumakattavuus on 95%. Yksittäisen tiedoston haaraumakattavuuden näemme taulukon "coverage"-sarakkeesta. Jos klikkaamme taulukosta yksittäisen tiedoston nimeä aukeaa tiedoston koodi ja testien siinä kattamat haarat. Katetut haarat näkyvät vihreinä palkkeina rivinumeron vieressä. Haarat, joita ei ole katettu ollenkaan, on korostettu punaisella värillä. Sen sijaan, jos haara on osittain katettu, se on korostettu keltaisella värillä. Viemällä hiiri rivin päälle, nähdään tarkempi selitys, miksi haaraa ei ole täysin katettu:
+Raportista näemme, että koko koodin testikattavuus on 95%. **HUOM:** Coveragen versio 7 tuottaa hieman erilaisen näkymän. Testikattavuus näkyy siinäkin oikeassa alakulmassa, sarakkeessa "Total". 
+
+Yksittäisen tiedoston haaraumakattavuuden näemme taulukon "coverage"-sarakkeesta. Jos klikkaamme taulukosta yksittäisen tiedoston nimeä aukeaa tiedoston koodi ja testien siinä kattamat haarat. Katetut haarat näkyvät vihreinä palkkeina rivinumeron vieressä. Haarat, joita ei ole katettu ollenkaan, on korostettu punaisella värillä. Sen sijaan, jos haara on osittain katettu, se on korostettu keltaisella värillä. Viemällä hiiri rivin päälle, nähdään tarkempi selitys, miksi haaraa ei ole täysin katettu:
 
 ![](/assets/images/python/coverage-tiedosto.png)
 
@@ -938,7 +936,7 @@ Kuvan tilanteessa if-ehto ei koskaan saanut arvoa `True`, joten kyseistä haaraa
 ---
 ### Tehtävä 7: Testikattavuus
 
-Unicafe-projektiin on valmiiksi konfiguroitu käytettäväksi [coverage](https://coverage.readthedocs.io/en/latest/)-työkalu, joka mittaa testien haarautumakattavuuden. Testikattavuuden konfiguraatiossa käytettävä, _.coveragerc_-tiedoston sisältö on projektissa seuraava:
+Unicafe-projektiin on valmiiksi konfiguroitu käytettäväksi [coverage](https://coverage.readthedocs.io/en/latest/)-työkalu. Testikattavuuden konfiguraatiossa käytettävä, _.coveragerc_-tiedoston sisältö on projektissa seuraava:
 
 ```
 [run]
@@ -950,7 +948,9 @@ Testikattavuuden kerääminen testeistä onnistuu virtuaaliympäristössä komen
 
 ![Testikattavuusraportti]({{ "/assets/images/python/unicafe-coverage.png" | absolute_url }})
 
-Huomaa, että oma raporttisi tuskin näyttää täysin tältä (etenkin kattavuusprosenttien osalta) edellisten tehtävien testien toteutuksen jälkeen. Yksittäistä moduulia klikkaamalla näet punaisella korostuksella haarat, joita testit eivät kata vielä lainkaan ja keltaisella korostuksella haarat, joita testit kattavat vain osittain.
+**HUOM:** Coveragen versio 7 tuottaa hieman erilaisen näkymän. Testikattavuus näkyy siinäkin oikeassa alakulmassa, sarakkeessa "Total".
+
+Oma raporttisi tuskin näyttää täysin tältä (etenkin kattavuusprosenttien osalta) edellisten tehtävien testien toteutuksen jälkeen. Yksittäistä moduulia klikkaamalla näet punaisella korostuksella haarat, joita testit eivät kata vielä lainkaan ja keltaisella korostuksella haarat, joita testit kattavat vain osittain.
 
 **Jos maksukortin koodissa on vielä rivejä tai haarautumia (merkitty punaisella) joille ei ole testiä, kirjoita sopivat testit.**
 
@@ -985,7 +985,7 @@ Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun
 
 ### Tehtävä 9: 100% testikattavuus
 
-Varmista testikattavuuskomentojen avulla, että kassapäätteen testeillä on 100% haarautumakattavuus. Suorita siis virtuaaliympäristössä komennot `coverage run --branch -m pytest src` ja `coverage html`, jonka jälkeen avaa selaimessa _htmlcov/index.html_-tiedosto.
+Varmista, että kassapäätteen testeillä on 100% testikattavuus. Suorita siis virtuaaliympäristössä komennot `coverage run --branch -m pytest src` ja `coverage html`, jonka jälkeen avaa selaimessa _htmlcov/index.html_-tiedosto.
 
 Jos testikattavuus ei ole vielä 100%, tee lisää testejä kunnes tilanne korjautuu. Tallenna edellisessä esimerkissä olevan testikattavuusraportin kuvan tyylinen [screenshot](https://www.take-a-screenshot.org/) projektisi kattavuusraportista palautusrepositoriosi hakemistoon _laskarit/viikko2_.
 

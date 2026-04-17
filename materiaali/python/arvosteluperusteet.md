@@ -75,7 +75,7 @@ Pisteet (yhteensä 24) jakautuvat seuraavasti
 
 Testit pitää kirjoittaa itse, niitä ei saa generoida. Täysien pisteiden (5p) edellytys:
 
-- Testattu kattavasti: haarautumakattavuus korkea (noin 70%)
+- Testikattavuus korkea (noin 70%)
   - Testien pitää testata hyödyllisiä asioita, pelkät testikattavuutta nostavat hyödyttömät (esim. assert-komentoja sisältämättömät) testit eivät tuo pisteitä
 - Testaus riittävää sekä yksikkö- että integraatiotasolla
   - Eli yksittäisten luokkien lisäksi on testattava myös monen luokan yhdistelmän tuottavaa toiminnallisuutta
