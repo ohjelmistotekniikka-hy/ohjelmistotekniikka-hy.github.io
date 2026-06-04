@@ -1,4 +1,4 @@
-<!-- - Arvosanoja näkyy nyt [Moodlessa]({{site.moodle_link}}) (linkki "Arvioinnit" sivun yläosassa, otsikon alla) -->
+- Arvosanoja näkyy nyt [Moodlessa]({{site.moodle_link}}) (linkki "Arvioinnit" sivun yläosassa, otsikon alla)
 - Kurssin aloitustilaisuus {{site.lecture_time}}
   - Aloitustilaisuudessa käytettävät kalvot löytyvät [täältä]({{site.lecture_slides_link}})
 <!--  - Aloitusluennon tallenne on [täällä]({{site.lecture_recording_link}})-->
