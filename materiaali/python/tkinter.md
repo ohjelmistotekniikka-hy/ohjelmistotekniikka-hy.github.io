@@ -551,7 +551,36 @@ window.mainloop()
 
 Toinen yleinen käyttökohde muuttujaluokille on [CheckButton](https://www.tutorialspoint.com/python/tk_checkbutton.htm)- ja [RadioButton](https://www.tutorialspoint.com/python/tk_radiobutton.htm)-komponentit. Näiden arvoina voi käyttää `IntVar`-luokan olioita `variable`-parametrin kautta.
 
-## Lisäluettavaa
+##Referenssisovelluksesta
+
+Kurssin referenssisovellus tarjoaa laajemman esimerkin Tkinterin käytöstä. Luokka `UI` vastaa käyttöliittymästä hyödyntäen luokkia `LoginView`, `CreateUserView` ja `TodoListView`. Näistä kukin luo omanlaisensa näkymän.
+
+Referenssisovelluksen käyttöliittymän toiminta selvinnee edellä kuvatun perusteella. Uutena piirteenä on kuitenkin ainakin luokan `LoginView` metodista `_initialize(self)` löytyvä määre punaiselle virheilmoitukselle:
+  
+        self._error_label = ttk.Label(
+            master=self._frame,
+            textvariable=self._error_variable,
+            foreground="red"
+        )
+
+Kannattaa huomata, että ttk-komponenttien ulkoasua ei aina voi kontrolloida täysin tarkasti, koska ttk hyödyntää käyttöjärjestelmän natiiveja teemoja. Lopputulos voi siis vaihdella suoritusympäristöstä riippuen. Referenssisovelluksessa käytetty ratkaisu toimii kuitenkin ainakin kurssilla käytetyssä ympäristössä.
+
+Edellinen ratkaisu oli suoraviivainen, mutta ulkoasua voidaan muokata ehkä paremminkin erillisten tyylimääritysten avulla:
+
+        tyyli = ttk.Style()
+        tyyli.configure("korostettu.TLabel", foreground="red", font=("Arial", 16, "bold"))
+        
+        self._error_label = ttk.Label(
+            master=self._frame,
+            textvariable=self._error_variable,
+            style="korostettu.TLabel"
+        )
+
+Tässä siis vielä lisättiin muutama ylimääräinen muotoilu. Label-komponentin ulkoasu asetettiin tyylin `korostettu.TLabel` mukaiseksi. Huomaa tyylin nimen rakenne: ennen pistettä oleva osa (`korostettu`) on tyylin nimi, ja pisteen jälkeinen osa kertoo, mihin ttk-komponenttityyppiin tyyli on tarkoitettu. `TLabelin` lisäksi käytettävissä on mm. `TButton` ja `TEntry`.
+
+Jos haluat kokeilla harjoitustyössäsi edellä esitetyn tapaisia muotoiluja, varmista, että toteutus toimii myös yliopiston Linux-ympäristössä. *Huom: älä kuitenkaan käytä tähän ainakaan paljon aikaa, sillä tällainen ulkoasun hienosäätö ei ole kurssilla millään tavoin oleellista.*
+
+## Lisälukemista
 
 [Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)-ohje sisältää mm. yleisiä Tkinter-ohjeita ja esimerkkejä yksittäisten komponenttien käytöstä.
 
