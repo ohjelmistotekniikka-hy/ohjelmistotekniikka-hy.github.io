@@ -551,7 +551,7 @@ window.mainloop()
 
 Toinen yleinen käyttökohde muuttujaluokille on [CheckButton](https://www.tutorialspoint.com/python/tk_checkbutton.htm)- ja [RadioButton](https://www.tutorialspoint.com/python/tk_radiobutton.htm)-komponentit. Näiden arvoina voi käyttää `IntVar`-luokan olioita `variable`-parametrin kautta.
 
-##Referenssisovelluksesta
+## Referenssisovelluksesta
 
 Kurssin referenssisovellus tarjoaa laajemman esimerkin Tkinterin käytöstä. Luokka `UI` vastaa käyttöliittymästä hyödyntäen luokkia `LoginView`, `CreateUserView` ja `TodoListView`. Näistä kukin luo omanlaisensa näkymän.
 
