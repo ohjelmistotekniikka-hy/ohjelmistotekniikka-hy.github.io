@@ -31,6 +31,10 @@ Jos haluat hyväksilukea kurssin, ota sähköpostilla yhteyttä kurssin vastuuop
   - Ohjeet ohjelman suorittamiselle
   - Ohjeet testien suorittamiselle
 
+### Harjoitustyön toimivuus
+
+Sovelluksen tulee toimia Tietojenkäsittelytieteen osaston tietokoneilla. Voit testata tätä millä tahansa Cubbli-tietokoneella, kuten fuksiläppärillä, tai osaston tietokoneluokkien tietokoneilla. Testaus onnistuu myös [virtuaalityöasemassa](https://vdi.helsinki.fi/) joko selaimen tai VMWare Horizon -asiakasohjelman avulla.
+
 ### Dokumentaatio
 
 Jokaiseen dokumenttiin tulee olla linkki projektin repositorion `README.md`-tiedostossa. Dokumentaatiossa tulee olla vähintään seuraavat dokumentit: 
