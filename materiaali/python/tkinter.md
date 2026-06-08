@@ -4,7 +4,7 @@ permalink: /python/tkinter
 title: Tkinter ja graafisen käyttöliittymän toteutus
 ---
 
-Python-sovellusten graafisten käyttöliittymien toteutuksessa käytetään usein [Tkinter](https://wiki.python.org/moin/TkInter)-kirjastoa. Tkinter on Pythonin omia moduuleja ja siihen liittyvät käyttöjärjestelmäkohtaiset kirjastot tulevat useimmiten Python-asennuksien mukana.
+Python-sovellusten graafisten käyttöliittymien toteutuksessa käytetään usein [Tkinter](https://docs.python.org/3/library/tk.html)-kirjastoa. Tkinter on Pythonin omia moduuleja ja siihen liittyvät käyttöjärjestelmäkohtaiset kirjastot tulevat useimmiten Python-asennuksien mukana.
 
 Ennen ohjelmoinnin aloittamista on hyvä tarkistaa, että asennus on kunnossa. Käynnistä Python-komentorivi komennolla `python3` (komentoa ei tarvitse suorittaa virtuaaliympäristön sisällä, koska emme käytä ulkoisia riippuvuuksia). Syötä komentoriville `import tkinter` ja paina Enter-painiketta. Jos lopputuloksena ei ole virhettä, asennus on kunnossa. Jos näin ei ole, asenna tietokoneellesi uusin Python-versio [täältä](https://www.python.org/downloads/) ja yritä uudelleen. Voit sulkea komentorivin syöttämällä `exit()` ja painamalla Enter-painiketta.
 
@@ -88,7 +88,9 @@ Nyt käyttöliittymämme näyttää seuraavalta:
 
 ![TkInter](/assets/images/python/tkinter-1.png)
 
-Tkinter tarjoaa komponenteista sekä ttk-moduulista löytyviä versioita että niiden alkuperäisiä Tkinter-toteutuksia. Käytimme tässä edellisiä (ttk), koska ne tarjoavat modernimman ulkoasun ja tukevat käyttöjärjestelmän teemoja. Keskitymme jatkossakin ttk-moduulin välineisiin.
+Tkinter tarjoaa komponenteista sekä perinteisiä toteutuksia että niiden uudempia ttk-moduulista löytyviä versioita. Käytimme tässä edellisiä (ttk), koska ne tarjoavat modernimman ulkoasun ja tukevat käyttöjärjestelmän teemoja. Keskitymme esimerkeissä jatkossakin ttk-moduulin välineisiin. Tässä esiteltyjen lisäksi on toki muitakin; lisätietoja löytyy esim. [Python.orgin sivuilta](https://docs.python.org/3/library/tkinter.ttk.html). 
+
+Huomaathan, että ttk-moduulin ja perinteisen Tkinterin komponenttivalikoimat eroavat toisistaan. Jos ttk-moduulista ei löydy sopivaa komponenttia, voi kokeilla käyttää lisäksi myös perinteisiä Tkinter-komponentteja, vaikka pääosa käyttöliittymästä toteutettaisiinkin ttk-komponenteilla. 
 
 ## Komponenttien asettelu
 
@@ -490,6 +492,8 @@ Nyt luokasta löytyy metodi `_hide_current_view`, joka piilottaa nykyisen näkym
 
 Käyttäjän pitäisi nyt pystyä siirtymään näkymien välillä painamalla "Say hello"- ja "Say good bye"-painikkeita.
 
+Esimerkissä näkymää siis vaihdetaan tuhoamalla nykyinen Frame-komponentti ja luomalla uusi. Tkinterissä voi kuitenkin olla myös useita Frame-komponentteja samassa ikkunassa yhtä aikaa. Tämä saattaa olla hyödyllistä, jos ikkuna koostuu useista loogisesti selkeän erillisistä osista, jotka halutaan pitää näkyvissä samanaikaisesti.
+
 ## Muuttujat
 
 Joskus haluamme liittää komponentissa jonkin ominaisuuden muuttuvaan arvoon. Esimerkiksi haluamme vaihtaa `Label`-komponentin tekstiä, kun nappia painetaan. Tkinter tarjoaa erilaisia [muuttujaluokkia](https://docs.python.org/3/library/tkinter.html#coupling-widget-variables), joilla on `get`- ja `set`-metodit niiden arvon lukemista ja asettamista varten. Muuttujaluokkia löytyy eri tyyppisten arvojen tallentamiseen: `StringVar`, `BooleanVar`, `DoubleVar` ja `IntVar`.
@@ -583,5 +587,3 @@ Jos haluat kokeilla harjoitustyössäsi edellä esitetyn tapaisia muotoiluja, va
 ## Lisälukemista
 
 [Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)-ohje sisältää mm. yleisiä Tkinter-ohjeita ja esimerkkejä yksittäisten komponenttien käytöstä.
-
-[tkinter.ttk — Tk themed widgets](https://docs.python.org/3/library/tkinter.ttk.html): lisätietoa ttk-moduulista (ml. komponenttien ulkoasun muuttamisesta)
