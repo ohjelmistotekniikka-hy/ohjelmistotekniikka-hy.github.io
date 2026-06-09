@@ -923,9 +923,9 @@ coverage html
 
 Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Raporttia voi katsoa selaimessa avaamalla hakemiston tiedoston _index.html_ selaimen kautta. Selaimessa aukeava raportti näyttää kutakuinkin seuraavalta:
 
-![](/assets/images/python/coverage-raportti.png)
+![](/assets/images/python/coverage-raportti_v7.png)
 
-Raportista näemme, että koko koodin testikattavuus on 95%. **HUOM:** Coveragen versio 7 tuottaa hieman erilaisen näkymän. Testikattavuus näkyy siinäkin oikeassa alakulmassa, sarakkeessa "Total". 
+Raportista näemme, että koko koodin testikattavuus on 94%.
 
 Yksittäisen tiedoston haaraumakattavuuden näemme taulukon "coverage"-sarakkeesta. Jos klikkaamme taulukosta yksittäisen tiedoston nimeä aukeaa tiedoston koodi ja testien siinä kattamat haarat. Katetut haarat näkyvät vihreinä palkkeina rivinumeron vieressä. Haarat, joita ei ole katettu ollenkaan, on korostettu punaisella värillä. Sen sijaan, jos haara on osittain katettu, se on korostettu keltaisella värillä. Viemällä hiiri rivin päälle, nähdään tarkempi selitys, miksi haaraa ei ole täysin katettu:
 
@@ -944,13 +944,11 @@ source = src
 omit = src/tests/**,src/index.py
 ```
 
-Testikattavuuden kerääminen testeistä onnistuu virtuaaliympäristössä komennolla `coverage run --branch -m pytest src`. Komennon suorittamisen jälkeen kattavuusraportin voi muodostaa komennolla `coverage html`. Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Avaamalla hakemiston tiedoston _index.html_ selaimessa aukeaa seuraavan näköinen raportti:
+Testikattavuuden kerääminen testeistä onnistuu virtuaaliympäristössä komennolla `coverage run --branch -m pytest src`. Komennon suorittamisen jälkeen kattavuusraportin voi muodostaa komennolla `coverage html`. Komennon suorittaminen luo projektin juurihakemistoon hakemiston _htmlcov_. Avaamalla hakemiston tiedoston _index.html_ selaimessa aukeaa suurinpiirtein seuraavan näköinen raportti:
 
-![Testikattavuusraportti]({{ "/assets/images/python/unicafe-coverage.png" | absolute_url }})
+![Testikattavuusraportti]({{ "/assets/images/python/unicafe-coverage_v7.png" | absolute_url }})
 
-**HUOM:** Coveragen versio 7 tuottaa hieman erilaisen näkymän. Testikattavuus näkyy siinäkin oikeassa alakulmassa, sarakkeessa "Total".
-
-Oma raporttisi tuskin näyttää täysin tältä (etenkin kattavuusprosenttien osalta) edellisten tehtävien testien toteutuksen jälkeen. Yksittäistä moduulia klikkaamalla näet punaisella korostuksella haarat, joita testit eivät kata vielä lainkaan ja keltaisella korostuksella haarat, joita testit kattavat vain osittain.
+Oma raporttisi ei välttämättä näytä täysin tältä (etenkään kattavuusprosenttien osalta) edellisten tehtävien testien toteutuksen jälkeen. Yksittäistä moduulia klikkaamalla näet punaisella korostuksella haarat, joita testit eivät kata vielä lainkaan ja keltaisella korostuksella haarat, joita testit kattavat vain osittain.
 
 **Jos maksukortin koodissa on vielä rivejä tai haarautumia (merkitty punaisella) joille ei ole testiä, kirjoita sopivat testit.**
 
