@@ -584,6 +584,8 @@ Tässä siis vielä lisättiin muutama ylimääräinen muotoilu. Label-komponent
 
 Jos haluat kokeilla harjoitustyössäsi edellä esitetyn tapaisia muotoiluja, varmista, että toteutus toimii myös yliopiston Linux-ympäristössä. *Huom: älä kuitenkaan käytä tähän ainakaan paljon aikaa, sillä tällainen ulkoasun hienosäätö ei ole kurssilla millään tavoin oleellista.*
 
-## Lisälukemista
+## Lisätietoja
 
 [Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)-ohje sisältää mm. yleisiä Tkinter-ohjeita ja esimerkkejä yksittäisten komponenttien käytöstä.
+
+Kyselyssä monet kurssilaiset ovat todenneet kielimallien, kuten ChatGPT:n, auttaneen Tkinterin käytön opettelussa.
