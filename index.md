@@ -3,13 +3,13 @@ layout: page
 permalink: /
 ---
 
-_Kurssin nimi on muuttunut syksyllä 2023, tätä aiemmin kurssi tunnettiin nimellä Ohjelmistotekniikka_
+_Huom: päivämäärät, pajojen aikataulu ym. keväälle -27 selviävät myöhemmin. Kurssi ei ole tarjolla syksyllä -26._
 
 Kurssilla tutustutaan ohjelmistokehityksen periaatteisiin sekä menetelmiin ja sovelletaan niitä toteuttamalla pienehkö harjoitustyö Python-kielellä.
 
 Kurssin kolmella ensimmäisellä viikolla on muutama ohjauksessa tai omatoimisesti tehtävä harjoitustehtävä. Kurssin pääpainon muodostaa viikolla 2 aloitettava, itsenäisesti tehtävä harjoitustyö. Työtä on tarkoitus edistää pala palalta [viikoittaisten](#aikataulu) tavoitteiden ohjaamana.
 
-Kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteisiin. Osa pisteistä kertyy [aikatauluun](#aikataulu) määriteltyjen viikoittaisten välitavoitteiden kautta, osa taas perustuu työn lopulliseen palautukseen. Jos olet jo toteuttanut isohkoja ohjelmistoja, on kurssi tietyissä tapauksissa myös mahdollista [hyväksilukea](/hyvaksiluku).
+Kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteisiin. Osa pisteistä kertyy [aikatauluun](#aikataulu) määriteltyjen viikoittaisten välitavoitteiden kautta, osa taas perustuu työn lopulliseen palautukseen. 
 
 Kurssilla ei ole koetta. Harjoitustyö tulee tehdä kurssin aikataulujen puitteissa. Kesken jäänyttä harjoitustyötä ei voi jatkaa seuraavalla kurssilla ({{ site.next_course }}), joten **muista varata riittävästi aikaa (10-15h viikossa) koko periodin ajaksi!**
 
