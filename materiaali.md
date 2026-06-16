@@ -39,4 +39,3 @@ inheader: true
 ## Muuta
 
 - [Kirjoitusvirheiden korjaaminen materiaalissa](/korjausehdotus)
-- [Kurssin hyväksiluku](/hyvaksiluku)
