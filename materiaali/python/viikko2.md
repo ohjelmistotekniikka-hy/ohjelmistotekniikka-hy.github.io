@@ -12,15 +12,30 @@ Tämän viikon tehtävien palautuksesta on tarjolla 2 pistettä ja harjoitustyö
 
 Tee palautettavia tehtäviä varten repositorion sisällä olevaan hakemistoon _laskarit_ uusi alihakemisto _viikko2_.
 
-## Poetry ja riippuvuuksien hallinta
+## Uv ja riippuvuuksien hallinta
 
 Laajoissa ja monimutkaisissa ohjelmistoprojekteissa kaiken koodin tuottaminen itse ei ole enää käytännöllistä. Ei ole esimerkiksi järkevää, että jokaisessa ohjelmistoprojektissa toteutetaan oma ohjelmointirajapinta tietokantaoperaatioille, tai sovelluskehys koodin testaamiseen. Jotta pyörää ei tarvitsisi aina keksiä uudelleen, ovat ohjelmistokehittäjät kehittäneet valtavan määrän avoimen lähdekoodin _kirjastoja_, joita jokainen voi hyödyntää projekteissaan.
 
 Kirjastojen lähdekoodi on usein luettavissa versionhallinta-alustoilla, kuten GitHubissa. Usein kirjastoja päivitetään jatkuvasti ja nämä päivitykset synnyttävät kirjastoista uusia _versioita_. Kirjastojen versioita julkaistaan erilaisiin rekistereihin, joista ne ovat helposti asennettavissa. [The Python Package Index](https://pypi.org/) (PyPI) on eräs tämän kaltainen, Python-kirjastoille tarkoitettu rekisteri.
 
-Projektissa käytettävät kirjastojen versiot ovat projektin _riippuvuuksia_. Riippuvuuksia asennetaan Python-projekteissa tyypillisesti projektikohtaisiin _virtuaaliympäristöihin_, jottei samalla tietokoneella olevien projektien riippuvuuksissa syntyisi ristiriitoja. Jotta riippuvuuksien hallinta virtuaaliympäristöissä sujuisi helposti, käytämme kurssilla [Poetry](https://python-poetry.org/)-komentorivityökalua. 
+Projektissa käytettävät kirjastojen versiot ovat projektin _riippuvuuksia_. Riippuvuuksia asennetaan Python-projekteissa tyypillisesti projektikohtaisiin _virtuaaliympäristöihin_, jottei samalla tietokoneella olevien projektien riippuvuuksissa syntyisi ristiriitoja. Jotta riippuvuuksien ja virtuaaliympäristöjen hallinta sujuisi helposti, käytämme kurssilla [uv](https://docs.astral.sh/uv/)-komentorivityökalua. uv on nopea, Rustilla toteutettu työkalu, joka hoitaa samalla kertaa niin Python-versioiden, virtuaaliympäristöjen kuin riippuvuuksienkin hallinnan.
 
 **Huom:** _älä käytä kurssilla pip-komentoja, vaikka olisit aiemmin sellaisilla riippuvuuksia asentanutkin!_
+
+### Miksi uv?
+
+Python-ekosysteemissä on tarjolla useita kilpailevia työkaluja riippuvuuksien ja virtuaaliympäristöjen hallintaan. Tunnetuimpia ovat mm. suoraan Pythonin mukana tulevat [pip](https://pypi.org/project/pip/) ja [venv](https://docs.python.org/3/library/venv.html), sekä kolmannen osapuolen työkalut [Poetry](https://python-poetry.org/), [Pipenv](https://pipenv.pypa.io/) ja [conda](https://docs.conda.io/).
+
+- **pip + venv** ovat Pythonin standardikirjaston työkaluja, eli mitään ylimääräistä ei tarvitse asentaa. Työkalujen käyttö on kuitenkin melko käsityötä: virtuaaliympäristö pitää itse luoda ja aktivoida, riippuvuudet listataan usein pelkkään _requirements.txt_-tiedostoon ilman kunnollista versiolukkoa, eikä työkalu osaa hallita käytettävää Python-versiota.
+- **Poetry** toi Python-maailmaan kunnollisen riippuvuuslukituksen (_poetry.lock_) ja siistin _pyproject.toml_-pohjaisen projektinhallinnan, mutta on huomattavasti uv:tä hitaampi, eikä osaa asentaa tai hallita Python-versioita itse.
+- **conda** on suunniteltu erityisesti data-analytiikan ja tieteellisen laskennan tarpeisiin, ja osaa asentaa myös ei-Python-riippuvuuksia (esim. C-kirjastoja), mutta on raskas ja hidas yleiskäyttöiseen sovelluskehitykseen.
+
+uv:n suurimmat edut kilpailijoihinsa nähden ovat:
+
+- **Nopeus.** uv on toteutettu Rustilla ja on riippuvuuksien asennuksessa tyypillisesti kymmeniä kertoja nopeampi kuin pip tai Poetry.
+- **Kaikki yhdessä työkalussa.** uv hoitaa sekä Python-versioiden, virtuaaliympäristöjen että riippuvuuksien hallinnan, eikä erillisiä työkaluja (esim. pyenv) tarvita.
+- **Yksinkertainen, standardeja noudattava projektirakenne.** uv käyttää Pythonin virallisen [PEP 621](https://peps.python.org/pep-0621/) -standardin mukaista _pyproject.toml_-muotoa, mikä tekee projekteista yhteensopivia myös muiden työkalujen kanssa.
+- **Aktiivinen kehitys.** uv on tällä hetkellä Python-yhteisössä nopeimmin yleistyvä riippuvuudenhallintatyökalu, ja sen taustalla oleva [Astral](https://astral.sh/) kehittää myös muita suosittuja Python-työkaluja, kuten [Ruff](https://docs.astral.sh/ruff/)-linteriä.
 
 ### Huomioita komennoista
 
@@ -36,202 +51,169 @@ Jos komentoa `python3` ei jostain syystä löydy, tarkista `python`-komennon kä
 python --version
 ```
 
-Jos molemmissa tapauksissa versio on alle {{ site.python_version }}, asenna tietokoneellesi [uusin Python-versio](https://www.python.org/downloads/). Muista varmistaa asennuksen jälkeen, että oikea versio on käytössä. Muussa tapauksessa käytä komentoa, jonka käyttämä versio on vähintään {{ site.python_version }}.
+Jos molemmissa tapauksissa versio on alle {{site.python_version}}, ei hätää: uv osaa itse asentaa ja hallita Python-versioita, joten erillistä Python-asennusta ei välttämättä tarvita, katso alempaa.
+
+_Kurssilla käytetään uv:n versiota 0.12 (tai uudempaa). Jos koneellasi on vanhempi versio, se on syytä päivittää komennolla `uv self update`!_
 
 ### Asennus
 
-Ennen kuin pääsemme tutustumaan Poetryn käyttöön tarkemmin, tulee se ensin asentaa. Huomaa, että vaikka koneellasi olisikin jo Poetry asennettuna, kaikki ei jatkossa välttämättä toimi oikein mikäli Poetryn versio on liian vanha. Seuraa alla olevista ohjeista tietokoneesi käyttöjärjestelmälle sopivaa asennusohjetta.
+Ennen kuin pääsemme tutustumaan uv:n käyttöön tarkemmin, tulee se ensin asentaa. Seuraa alla olevista ohjeista tietokoneesi käyttöjärjestelmälle sopivaa asennusohjetta, kannattaa toki vilkaista myös uv:n [virallinen](https://docs.astral.sh/uv/getting-started/installation/) asennusohje.
 
-**HUOM:** kaikki asennustavat saattavat vaatia terminaali-ikkunan sulkemisen ja uudelleen avaamisen, jotta Poetryn komennot alkavat toimia. Joissain tapauksissa on vaadittu jopa tietokoneen uudelleenkäynnistys.
+**HUOM:** kaikki asennustavat saattavat vaatia terminaali-ikkunan sulkemisen ja uudelleen avaamisen, jotta uv:n komennot alkavat toimia.
 
 #### Linux- ja macOS-asennus
 
-Asenna Poetry suorittamalla terminaalissa seuraava komento:
+Asenna uv suorittamalla terminaalissa seuraava komento:
 
 ```bash
-curl -sSL https://install.python-poetry.org | POETRY_HOME=$HOME/.local python3 -
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-**HUOM:**
-- Jos `python3`-komentoa ei löydy, käytä sen sijaan komennon lopussa `python`-komentoa. Varmista kuitenkin, että Python-versio on oikea edellisen ohjeen mukaisesti.
-- Jos törmäät macOS-tietokoneella virheeseen `SSL: CERTIFICATE_VERIFY_FAILED`, avaa Python-asennuksen hakemisto komennolla `open /Applications/Python\ {{ site.python_version }}` (korvaa "{{ site.python_version }}" käytössä olevalla Python-versiolla) ja klikkaa hakemistossa olevaa tiedostoa _Install Certificates.command_. Odota, että operaatio valmistuu ja suorita tämän jälkeen edellä mainittu asennus-komento uudestaan.
-
-Asennuksen jälkeen Poetry-binäärin polku tulee asettaa `PATH`-muuttujaan. Tämä onnistuu lisäämällä kotihakemiston _.bashrc_-tiedoston loppuun seuraava rivi:
-
-```bash
-export PATH="$HOME/.local/bin:$PATH"
-```
-
-Lisääminen onnistuu esimerkiksi muokkaamalla tiedostoa nano-editorin avulla, tai suorittamalla seuraava komento:
-
-```bash
-echo "export PATH=\"\$HOME/.local/bin:\$PATH\"" >> $HOME/.bashrc
-```
-
-**HUOM:** 
-- Jos käytössäsi on zsh-komentorivi, on oikea konfiguraatiotiedosto _.bashrc_-tiedoston sijaan _.zshrc_-tiedosto. Voit tarkistaa käytössä olevan komentorivin komennolla `echo $SHELL`. Käytä tässä tapauksessa edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.zshrc`.
-- Jos käytössäsi on macOS-käyttöjärjestelmä ja bash-komentorivi, käytä edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.bash_profile`.
-- Käytä melkki-palvelimella edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.profile`.
-
-Käynnistä terminaali uudestaan ja varmista, että asennus onnistui suorittamalla komento `poetry --version`. Komennon pitäisi tulostaa asennettu versio.
+Asennusskripti lisää uv-binäärin polun automaattisesti `PATH`-muuttujaan (tyypillisesti hakemisto _$HOME/.local/bin_). Käynnistä terminaali uudestaan ja varmista, että asennus onnistui suorittamalla komento `uv --version`. Komennon pitäisi tulostaa asennettu versio.
 
 #### Windows-asennus
 
-Asenna Poetry suorittamalla PowerShell-terminaalissa seuraava komento:
+Asenna uv suorittamalla PowerShellissä seuraava komento:
 
 ```powershell
-(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-Asennuksen jälkeen Poetry-binäärin polku tulee asettaa `PATH`-muuttujaan. Lisää [tämän](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/) ohjeen mukaisesti `PATH`-muuttujaan polku `%APPDATA%\Python\Scripts`.
+Käynnistä terminaali uudestaan ja varmista, että asennus onnistui suorittamalla komento `uv --version`. Komennon pitäisi tulostaa asennettu versio.
 
-Käynnistä terminaali uudestaan ja varmista, että asennus onnistui suorittamalla komento `poetry --version`. Komennon pitäisi tulostaa asennettu versio.
+### Python-version hallinta
+
+uv osaa myös asentaa Python-versioita itse, erillistä Python-asennusta ei siis välttämättä tarvita. Voit asentaa esimerkiksi Python-version {{site.python_version}} komennolla:
+
+```bash
+uv python install {{site.python_version}}
+```
+
+Asennetut versiot näkee komennolla:
+
+```bash
+uv python list
+```
+
+Kun projekti alustetaan alla kuvatulla tavalla vaatimalla tietty Python-versio, uv asentaa version automaattisesti tarvittaessa, eikä erillistä `uv python install`-komennon suorittamista välttämättä tarvita.
 
 ### Projektin alustaminen
 
-Harjoitellaan Poetryn käyttöä tekemällä pieni esimerkkiprojekti. Luo hakemisto _poetry-testi_ haluamaasi hakemistoon. Hakemiston ei tarvitse löytyä Labtooliin rekisteröimästäsi repositoriosta. Avaa hakemisto terminaalissa ja suorita siellä komento:
+Harjoitellaan uv:n käyttöä tekemällä pieni esimerkkiprojekti. Luo hakemisto _uv-testi_ haluamaasi hakemistoon. Avaa hakemisto terminaalissa ja suorita siellä komento:
 
 ```bash
-poetry init --python "^{{ site.python_version }}"
+uv init --python {{site.python_version}} --no-package
 ```
 
-Komennon yhteydessä annettu `--python "^{{ site.python_version }}"`-asetus asettaa projektin Python-version vaatimukseksi vähintään version {{ site.python_version }}. Komennosta seuraa sarja kysymyksiä. Voit vastata niihin haluamallasi tavalla ja kaikkien kohtien vastauksia voi myös muokata myöhemmin. Tämän vuoksi kysymysten ohittaminen Enter-painiketta painamalla on täysin hyvä vaihtoehto.
+Komennon yhteydessä annettu `--python {{site.python_version}}`-asetus asettaa projektin Python-version vaatimukseksi vähintään version {{site.python_version}}. uv ei kysy komennon suorittamisen yhteydessä kysymyksiä, vaan luo tarvittavat tiedostot suoraan valmiiksi täytettynä.
 
-Kun viimeiseen kysymykseen on vastattu, katso hakemiston sisältöä. Hakemistoon pitäisi ilmestyä _pyproject.toml_-tiedosto, jonka sisältö on kutakuinkin seuraava:
+`--no-package`-asetus on tärkeä: ilman sitä `uv init` alustaa projektin oletusarvoisesti asennettavaksi _paketiksi_, jolloin se luo mm. _src_-hakemistoon oman alihakemiston projektin nimellä, sekä _pyproject.toml_-tiedostoon `[build-system]`-osion. Tällä kurssilla teemme projekteista yksinkertaisempia sovelluksia, emme julkaistavia paketteja, joten `--no-package` pitää projektin rakenteen siistinä.
 
-```toml
+Komennon suorittamisen jälkeen hakemistoon ilmestyy muutama tiedosto: _pyproject.toml_, _.python-version_, _README.md_ sekä _main.py_. Tiedosto _.python-version_ kertoo, mitä Python-versiota projektissa oletusarvoisesti käytetään. Tiedoston _pyproject.toml_ sisältö on kutakuinkin seuraava:
+
+```
 [project]
-name = "poetry-testi"
+name = "uv-testi"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "nimi",email = "meiliosoite"}
-]
+description = "Add your description here"
 readme = "README.md"
-requires-python = "^{{ site.python_version }}"
-dependencies = [
-]
-
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">={{site.python_version}}"
+dependencies = []
 ```
 
-Tiedoston alussa on projektiin liittyviä yleistietoja, kuten sen nimi, kuvaus ja ylläpitäjät. Sen jälkeen tulee osioita, jotka listaavat projektin riippuvuuksia. Näemme mm. `poetry init`-komennon suorituksen yhteydessä asettamamme Python-version vaatimuksen, joka on muotoa `requires-python = "^{{ site.python_version }}"`. `^{{ site.python_version }}`-merkintä siis tarkoittaa, että projektin käyttö vaatii vähintään Python-version {{ site.python_version }}.
+Osiossa `[project]` näemme mm. `uv init`-komennon suorituksen yhteydessä asettamamme Python-version vaatimuksen, joka on muotoa `requires-python = ">={{site.python_version}}"`. Merkintä tarkoittaa, että projektin käyttö vaatii vähintään Python-version {{site.python_version}}. Kohta `dependencies` puolestaan tulee sisältämään projektin riippuvuudet, kun niitä lisätään.
 
-Kun _pyproject.toml_-tiedosto on tullut tutuksi, viimeistellään projektin alustaminen suorittamalla komento:
-
-```bash
-poetry install
-```
-
-Komennon suorittaminen tekee projektille vaadittavat alustustoimenpiteet, kuten virtuaaliympäristön alustamisen ja riippuvuuksien asentamisen. Tämän vuoksi komento tulee suorittaa aina ennen kuin uutta projektia aletaan käyttää.
-
-Komennon suorittaminen johtaa todennäköisesti kuitenkin ilmoitukseen, jossa viitataan virheeseen ja todetaan mm. seuraavaa:
-
-```
-If you do not want to install the current project use --no-root
-```
-
-Tämä johtuu siitä, että oletusarvoisesti Poetry yrittää asentaa nykyistä projektia _package_mode_-tilassa. Virheilmoitukselta voi välttyä käyttämällä komennosta em. ilmoituksen mukaisesti muotoa `bash poetry install --no-root`. Vaikka projektin alustaminen todennäköisesti onnistuukin näin, on parempi korjata tilanne muokkaamalla vielä hieman tiedostoa _pyproject.toml_. Poistetaan readme-rivi (readme-tiedostoahan kun meillä ei ole) ja lisätään seuraavat rivit ennen _[build-system]_-riviä:
-
-```
-[tool.poetry]
-package-mode = false
-```
-
-Nyt Poetryn tulisi keskittyä virtuaaliympäristöön ja riippuvuuksien hallintaan eikä em. virheilmoitusta pitäisi enää ilmestyä.
-
-Install-komennon suorittamisen jälkeen hakemistoon pitäisi ilmestyä tiedosto _poetry.lock_. Tiedosto sisältää kaikkien asennettujen riippuvuuksien versiotiedot. Sen tietojen avulla Poetry pystyy aina asentamaan `poetry install`-komennolla riippuvuuksista täsmälleen oikeat versiot. Tästä syystä tiedosto tulee lisätä versionhallintaan.
-
-### Mahdollisia ongelmia
-
-Jos `poetry install`-komennon suorittaminen pyytää **keyring-salasanaa**, ongelma pitäisi ratketa suorittamalla terminaalissa 
-
-```bash
-export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring
-```
-
-ja antamalla sen jälkeen komento `poetry install` uudestaan. Kyseisen rivin voi laittaa _.bashrc_ (tai vastaavaan) tiedostoon, jotta sitä ei tarvitse suorittaa uudelleen jokaisen terminaali-istunnon alussa.
-
-Liian **vanha Python-versio** saattaa johtaa seuraavankaltaiseen virheilmoituksen: "Current Python version (3.9.21) is not allowed by the project (^{{ site.python_version }})". Jos koneellasi kuitenkin on myös uudempi versio, voit kokeilla seuraavaa komentoa, kunhan korvaat kohdan "3.12.3" kyseisen version numerolla: `poetry env use 3.12.3` (vaihoehtoisesti voit antaa parametriksi versionumeron sijaan polun haluttuun versioon). Tästä ja muista vaihtoehdoista voi lukea lisää Poetryn [dokumentaatiosta](https://python-poetry.org/docs/managing-environments/#switching-between-environments). Mikäli edellä kuvattu ei onnistu, Python-version voi valita ja tarvittaessa asentaakin [_pyenv_-työkalun avulla](https://ohjelmistotekniikka-hy.github.io/python/toteutus#python-versioiden-hallinta).
+Poistetaan lopuksi vielä tiedostoon `uv init`-komennon luoma esimerkkitiedosto _main.py_ turhana, sillä kirjoitamme koodimme myöhemmin hakemistoon _src_.
 
 ### Riippuvuuksien asentaminen
 
-Asennetaan seuraavaksi projektiimme ensimmäisen riippuvuus. Riippuvuuksia voi löytää esim. hakemalla Googlen avulla sopivia GitHub-repositorioita tai PyPI-sivuja. Asennetaan esimerkkinä projektiimme [cowsay](https://pypi.org/project/cowsay/)-kirjasto. Tämä onnistu projektin juurihakemistossa (samassa hakemistossa, missä _pyproject.toml_-tiedosto sijaitsee) komennolla:
+**Huom:** _älä käytä kurssilla pip-komentoja, vaikka olisit aiemmin sellaisilla riippuvuuksia asentanutkin!_
+
+Asennetaan seuraavaksi projektiimme ensimmäisen riippuvuus. Riippuvuuksien löytäminen onnistuu helpoiten Googlettamalla ja etsimällä hakutuloksista sopivia GitHub-repositorioita, tai PyPI-sivuja. Asennetaan esimerkkinä projektiimme [cowsay](https://pypi.org/project/cowsay/)-kirjasto. Tämä onnistu projektin juurihakemistossa (samassa hakemistossa, missä _pyproject.toml_-tiedosto sijaitsee) komennolla:
 
 ```bash
-poetry add cowsay
+uv add cowsay
 ```
 
-Asennuksen komento on siis muotoa `poetry add <kirjasto>`. Komennon suorittamisen jälkeen huomaamme, että _pyproject.toml_-tiedoston `dependencies`-osion alla on uutta sisältöä:
+Asennuksen komento on siis muotoa `uv add <kirjasto>`. Komennon suorittamisen jälkeen huomaamme, että _pyproject.toml_-tiedoston `dependencies`-kohtaan on ilmestynyt uutta sisältöä:
 
-```toml
+```
 dependencies = [
-    "cowsay (>=6.1,<7.0)"
+    "cowsay>=6.1",
 ]
 ```
 
-`poetry add`-komento asentaa oletusarvoisesti kirjaston uusimman version. Usein tämä on juuri se, mitä haluamme tehdä. Voimme kuitenkin asentaa halutessamme esimerkiksi cowsay-kirjaston version `1.0` komennolla:
+`uv add`-komento asentaa oletusarvoisesti kirjaston uusimman version, joka oli komennon suoritushetkellä `6.1`. Usein tämä on juuri se, mitä haluamme tehdä. Voimme kuitenkin asentaa halutessamme esimerkiksi cowsay-kirjaston version `5.0` komennolla:
 
 ```bash
-poetry add cowsay==1.0
+uv add cowsay==5.0
 ```
 
 Jos haluaisimme poistaa kirjaston projektimme riippuvuuksien joukosta, se onnistuisi komennolla:
 
 ```bash
-poetry remove cowsay
+uv remove cowsay
 ```
 
 Pidetään kuitenkin cowsay-kirjasto toistaiseksi asennettuna.
 
+Riippuvuuksien lisäämisen ja poistamisen yhteydessä uv päivittää projektin virtuaaliympäristön automaattisesti (hakemistoon _.venv_, joka luodaan projektin juureen) sekä tiedoston _uv.lock_. Tiedosto sisältää kaikkien asennettujen riippuvuuksien tarkat versiotiedot, joiden avulla uv pystyy aina asentamaan täsmälleen samat versiot. Tästä syystä tiedosto tulee lisätä versionhallintaan.
+
+Hakemistoa _.venv_ ei sen sijaan _tule tallentaa_ versionhallintaan, eli se on syytä lisätä heti tiedostoon _.gitignore_.
+
+Jos haluat pelkästään varmistaa, että kaikki _pyproject.toml_-tiedostossa määritellyt riippuvuudet on asennettu (esim. kloonattuasi jonkun toisen tekemän projektin), onnistuu se komennolla:
+
+```bash
+uv sync
+```
+
+Komento tekee tarvittaessa myös virtuaaliympäristön alustamisen. Käytännössä komentoa ei useinkaan tarvitse suorittaa erikseen, sillä esimerkiksi seuraavassa kappaleessa esiteltävä `uv run`-komento synkronoi riippuvuudet automaattisesti ennen suoritusta.
+
 ### Komentojen suorittaminen virtuaaliympäristössä
 
-Lisätään seuraavaksi _poetry-testi_-hakemistoon hakemisto _src_ ja sinne tiedosto _index.py_. Lisätään tiedostoon seuraavat koodirivit:
+Lisätään seuraavaksi _uv-testi_-hakemistoon hakemisto _src_ ja sinne tiedosto _index.py_. Lisätään tiedostoon seuraavat koodirivit:
 
 ```python
 import cowsay
 
-cowsay.tux("Poetry is awesome!")
+cowsay.tux("uv is awesome!")
 ```
 
-Koodissa käytämme `import`-lausetta saadaksemme cowsay-kirjaston käyttöömme. Jos suoritamme tiedoston terminaalissa komennolla
+Koodissa käytämme `import`-lausetta saadaksemme cowsay-kirjaston käyttöömme. Jos suoritamme tiedoston terminaalissa komennolla:
 
 ```bash
 python3 src/index.py
 ```
 
-on lopputuloksena seuravaa virheilmoitus:
+On lopputuloksena seuraava virheilmoitus:
 
 ```
 ModuleNotFoundError: No module named 'cowsay'
 ```
 
-Tämä johtuu siitä, että emme ole projektin virtuaaliympäristön sisällä, jonka vuoksi Python ei löydä projektimme riippuvuuksia. Asia korjaantuu käyttämällä [run](https://python-poetry.org/docs/cli/#run) komentoa:
+Tämä johtuu siitä, että emme ole projektin virtuaaliympäristön sisällä, jonka vuoksi Python ei löydä projektimme riippuvuuksia. Asia korjaantuu käyttämällä [run](https://docs.astral.sh/uv/reference/cli/#uv-run)-komentoa:
 
 ```bash
-poetry run python3 src/index.py
+uv run python3 src/index.py
 ```
 
-`poetry run`-komento siis suorittaa annetun komennon virtuaaliympäristössä, jonka sisällä Python löytää riippuvuutemme.
+`uv run`-komento siis suorittaa annetun komennon virtuaaliympäristössä, jonka sisällä Python löytää riippuvuutemme. Komento myös varmistaa ennen suoritusta, että riippuvuudet ovat ajan tasalla (eli tekee tarvittaessa `uv sync`-komennon suorittaman toimenpiteen).
 
-Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa jatkuvasti, on kuitenkin kätevintä olla koko ajan virtuaaliympäristön sisällä. Voimme siirtyä virtuaaliympäristön sisään seuraavalla [kommennolla](https://python-poetry.org/docs/managing-environments/#bash-csh-zsh):
+Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa jatkuvasti, voi olla kätevää olla koko ajan virtuaaliympäristön sisällä, sen sijaan että jokaisen komennon eteen kirjoittaa `uv run`. Tämä onnistuu aktivoimalla virtuaaliympäristö suoraan komennolla:
 
 ```bash
-eval $(poetry env activate)
+source .venv/bin/activate
 ```
 
-Jos saat virheilmoituksen, jossa viitataan Pythonin versioihin ja todetaan, että *"Discovered shell 'bash' doesn't have an activator in virtual environment"*, voit kokeilla komentoa `poetry env use` (ks. [aiempi ohje](#mahdollisia-ongelmia)). Tämän jälkeen voit uudestaan antaa komennon `eval $(poetry env activate)`.
+(Windowsilla vastaava komento on `.venv\Scripts\activate`.)
 
-Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa tieto virtuaaliympäristöstä, esim.:
+Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa virtuaaliympäristön nimi:
 
 ```bash
-(poetry-testi-py3.12)$
+$ (uv-testi)
 ```
 
-Virtuaaliympäristön sisällä voimme suorittaa komennon "normaalisti", eli ilman `run`-komentoa:
+Virtuaaliympäristön sisällä voimme suorittaa komennon "normaalisti", eli ilman `uv run`-komentoa:
 
 ```bash
 python3 src/index.py
@@ -239,69 +221,64 @@ python3 src/index.py
 
 Voimme lähteä virtuaaliympäristöstä komennolla `deactivate`.
 
-(Poetryn vanhemmilla versioilla (versionumero alle 2.0.0) virtuaaliympäristöön pääsee komennolla [poetry shell](https://python-poetry.org/docs/cli/#shell). Tätä komentoa voi itse asiassa käyttää Poetryn uudempienkin versioiden kanssa, mutta siinä tapauksessa pitää ensiksi ottaa käyttöön sopiva plugin-tiedosto: `poetry self add poetry-plugin-shell`. Kun virtuaaliympäristöön siirryttiin komennolla `poetry shell`, sieltä pääsee pois komennolla `exit`.)
+### Kehityksenaikaiset riippuvuudet
 
-Virtuaaliympäristössä voi myös käynnistää Visual Studio Coden. Siirry siis ensin virtuaaliympäristöön ja vasta sen jälkeen käynnistä VS Code komennolla `code /polku/projektiin`. (VS Coden virheenjäljitystoimintoja kokeiltaessa saattaa kuitenkin käydä niin, että kaikkia projektin luokkia ei löydykään. Mikäli tarvitset näitä toimintoja, saatat joutua luomaan erillisen _launch.json_-tiedoston. Lisätietoja löytyy Visual Studio Coden [sivuilta](https://code.visualstudio.com/docs/python/debugging).)
+uv:n avulla riippuvuuksia on mahdollista ryhmitellä niiden käyttötarkoituksen mukaan. Melko yleinen tapa ryhmitellä riippuvuuksia on ryhmitellä ne _kehityksen_ ja _suorituksen_ aikaisiksi riippuvuuksiksi. Kehitysaikaisia riippuvuuksia tarvitaan ohjelmiston kehityksen aikana, mutta ne eivät ole välttämättömiä ohjelman suorituksessa.
 
-### Kehityksen aikaiset riippuvuudet
+Komennon `uv add` suorittaminen asentaa oletusarvoisesti riippuvuudet tiedoston `dependencies`-kohtaan. Näiden riippuvuuksien lisäksi voimme asentaa projektiimme riippuvuuksia, joita tarvitsemme vain kehityksen aikana. Näitä riippuvuuksia ovat kaikki ne, joita itse sovelluksen käynnistäminen (esimerkiksi `python3 src/index.py`-komennon suorittaminen) ei tarvitse.
 
-Poetryn avulla riippuvuuksia on mahdollista ryhmitellä niiden käyttötarkoituksen mukaan. Melko yleinen tapa ryhmitellä riippuuvuuksia on ryhmitellä ne _kehityksen_ ja _suorituksen_ aikaisiksi riippuvuuksiksi. Kehityksen aikaisia riippuvuuksia tarvitaan ohjelmiston kehityksen aikana, mutta ne eivät ole välttämättömiä ohjelman suorituksessa.
-
-Komennon `poetry add` suorittaminen asentaa oletusarvoisesti riippuvuudet `[tool.poetry.dependencies]`-osion alle. Näiden riippuvuuksien lisäksi voimme asentaa projektiimme riippuvuuksia, joita tarvitsemme vain kehityksen aikana. Näitä riippuvuuksia ovat kaikki ne, joita itse sovelluksen käynnistäminen (esimerkiksi `python3 src/index.py`-komennon suorittaminen) ei tarvitse.
-
-Kehityksen aikaisten riippuvuuksien asentaminen onnistuu antamalla `poetry add`-komennolle `--group dev`-flagi. Esimerkiksi pian tutuksi tulevan [pytest](https://pytest.org/)-kirjaston voi asentaa kehityksen aikaiseksi riippuvuudeksi seuraavalla komennolla:
+Kehityksenaikaisten riippuvuuksien asentaminen onnistuu antamalla `uv add`-komennolle `--dev`-flagi. Esimerkiksi pian tutuksi tulevan [pytest](https://pytest.org/)-kirjaston voi asentaa kehityksaikaiseksi riippuvuudeksi seuraavalla komennolla:
 
 ```bash
-poetry add pytest --group dev
+uv add pytest --dev
 ```
 
-Komennon suorittaminen lisää pytest-kirjaston riippuvuudeksi seuraavaan tapaan:
+Komennon suorittaminen lisää pytest-kirjaston riippuvuudeksi _pyproject.toml_-tiedoston `[dependency-groups]`-osion `dev`-ryhmään:
 
-```toml
+```
 [dependency-groups]
 dev = [
-    "pytest (>=9.0.2,<10.0.0)"
+    "pytest>=9.1.1",
 ]
 ```
 
-Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se vähentää asennettavien riippuvuuksien määrää tapauksessa, jossa haluamme vain suorittaa sovelluksen. Tässä tilanteessa riippuvuuksien asentamisen voi tehdä komennolla `poetry install --without dev`.
+Kehityksenaikaisten riippuvuuksien määritteleminen on kätevää, koska se vähentää asennettavien riippuvuuksien määrää tapauksessa, jossa haluamme vain suorittaa sovelluksen. Tässä tilanteessa riippuvuuksien asentamisen voi tehdä komennolla `uv sync --no-dev`.
+
+**HUOM:** `uv run` synkronoi riippuvuudet automaattisesti ennen suoritusta, ja tekee tämän oletusarvoisesti _kehitysaikaiset riippuvuudet mukaan lukien_. Jos siis olet asentanut riippuvuudet komennolla `uv sync --no-dev`, palauttaa pelkkä `uv run`-komento kehitysaikaiset riippuvuudet takaisin asennetuksi. Jos haluat suorittaa komennon ilman kehitysaikaisia riippuvuuksia, käytä komentoa `uv run --no-dev`.
 
 ### Ratkaisuja yleisiin ongelmiin
 
-Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
+#### Virtuaaliympäristö on sekaisin
 
-1. Kun käytät komentoa, joka edellyttää virtuaaliympäristöä, varmista että todella olet siellä sisällä
-2. Varmista, että Poetrysta on asennettu uusin versio suorittamalla komento `poetry self update`
-3. Varmista, että _pyproject.toml_-tiedostossa on oikea Python-version vaatimus:
+Jos kohtaat oudon virheen, jonka epäilet johtuvan rikkoutuneesta virtuaaliympäristöstä tai riippuvuuksista, poista virtuaaliympäristö ja lukkotiedosto ja asenna riippuvuudet uudelleen, eli anna komennot:
 
-   ```toml
-   requires-python = "^{{ site.python_version }}"
-   ```
-
-   **Jos versio on väärä**, muuta se oikeaksi ja suorita komento `poetry update`
-
-4. Tyhjennä välimuisti suorittamalla komennot `poetry cache clear pypi --all` ja `poetry cache clear PyPi --all`
-
-5. Listaa projektissa käytössä olevat virtuaaliympäristöt komennolla `poetry env list` ja poista ne kaikki yksitellen komennolla `poetry env remove <nimi>`. Esimerkiksi seuraavasti:
-
-   ```bash
-   $ poetry env list
-   unicafe-jLeQYxxf-py3.9 (Activated)
-   $ poetry env remove unicafe-jLeQYxxf-py3.9
-   Deleted virtualenv: /Users/kalleilv/Library/Caches/pypoetry/virtualenvs/unicafe-jLeQYxxf-py3.9
-   ```
-   Kun virtuaaliympäristöt on poistettu, suorita komento `poetry install`
-
-Kun kaikki toimenpiteet on suoritettu, yritä suorittaa epäonnistunut Poetry-komento uudestaan.
-
-Jos edelliset toimenpiteetkään eivät auta, voi vielä kokeilla seuraavia komentoja:
-
-```bash
+```
 rm -rf .venv
-rm poetry.lock
-poetry install
+rm uv.lock
+uv sync
 ```
 
+Yritä tämän jälkeen uudelleen!
+
+#### uv ei löydä oikeaa Python-versiota
+
+Jos uv valittaa, ettei se löydä _pyproject.toml_-tiedostossa vaadittua Python-versiota, asenna vaadittu versio uv:n itsensä avulla:
+
+```bash
+uv python install {{site.python_version}}
+```
+
+ja suorita tämän jälkeen `uv sync` uudelleen.
+
+#### uv:n itsensä päivittäminen
+
+Jos epäilet käytössäsi olevan vanhentuneen uv:n version aiheuttavan ongelmia, päivitä se komennolla:
+
+```bash
+uv self update
+```
+
+ja yritä tämän jälkeen epäonnistunutta komentoa uudelleen.
 
 ## Unittest ja testaaminen
 
@@ -353,15 +330,13 @@ class Maksukortti:
 Luo Labtooliin rekisteröimäsi repositorion hakemistoon _laskarit/viikko2_ hakemisto _maksukortti_. Suorita terminaalissa hakemiston sisällä tuttu, projektin alustamiseen vaadittava komento:
 
 ```bash
-poetry init --python "^{{ site.python_version }}"
+uv init --python {{site.python_version}} --no-package
 ```
-
-Poetryn kysymillä projektin tiedoilla ei ole väliä, joten voit hyvin käyttää Poetryn ehdottamia tietoja.
 
 Asennetaan projektiin kehityksen aikaiseksi riippuvuudeksi [pytest](https://docs.pytest.org/en/stable/)-sovelluskehys, joka helpottaa testien suorittamista. Riippuvuuden asentaminen onnistuu samassa hakemistossa komennolla:
 
 ```bash
-poetry add pytest --group dev
+uv add pytest --dev
 ```
 
 Seuraavaksi muodosta _maksukortti_-hakemistoon seuraava rakenne:
@@ -380,7 +355,7 @@ Lisää tiedostoon _src/maksukortti.py_ edellä esitelty `Maksukortti`-luokan ko
 
 ### Tehtävä 2: Aloitetaan testien kirjoittaminen
 
-Yritetään seuraavaksi suorittaa testejä. Siirrytään ensin virtuaaliympäristöön komennolla `eval $(poetry env activate)`, jonka jälkeen suoritetaan komento `pytest src`. Komennon suorittaminen antaa ymmärtää, ettei yhtään testiä ole suoritettu. Syy on yksinkertaisesti siinä, ettemme ole vielä toteuttaneet yhtään testiä.
+Yritetään seuraavaksi suorittaa testejä. Siirrytään ensin virtuaaliympäristöön komennolla `source .venv/bin/activate`, jonka jälkeen suoritetaan komento `pytest src`. Komennon suorittaminen antaa ymmärtää, ettei yhtään testiä ole suoritettu. Syy on yksinkertaisesti siinä, ettemme ole vielä toteuttaneet yhtään testiä.
 
 Toteutetaan <i>src/tests/maksukortti_test.py</i>-tiedostoon projektimme ensimmäinen testi. Tiedoston sisältö tulee olla seuraava:
 
@@ -489,7 +464,7 @@ def test_syo_edullisesti_vahentaa_saldoa_oikein_2(self):
     self.assertEqual(kortti.saldo, 750)
 ```
 
-Tämä on hieman ikävää sillä voidaan ajatella, että kortin tapa toteuttaa saldon säilytys sentteinä on kortin sisäinen asia, jota kortin toteuttanut koodari saattaa jopa myöhemmin muuttaa.
+Tämäkin on hieman ikävää sillä voidaan ajatella, että kortin tapa toteuttaa saldon säilytys sentteinä on kortin sisäinen asia, jota kortin toteuttanut koodari saattaa jopa myöhemmin muuttaa.
 
 Tehdäänkin kortille uusi metodi `saldo_euroina`, jonka avulla on mahdollista kysyä kortin saldoa euroina:
 
@@ -764,13 +739,16 @@ Your branch is ahead of 'origin/master' by 3 commits.
 nothing to commit, working tree clean
 ```
 
-Siirry terminaalissa _unicafe_-hakemistoon ja asenna vaadittavat riippuvuudet komennolla:
+Siirry terminaalissa _unicafe_-hakemistoon ja suorita seuraavat tutut komennot:
 
 ```
-poetry install
+uv init --python {{site.python_version}} --no-package
+uv add pytest --dev
+source .venv/bin/activate
+pytest src
 ```
 
-Testien suorittaminen terminaalissa onnistuu siirtymällä ensin virtuaaliympäristöön komennolla `eval $(poetry env activate)` ja sen jälkeen suorittamalla komento `pytest src`. Jos kaikki on kunnossa, saat raportin läpimenneistä testeistä:
+Jos kaikki on kunnossa, saat raportin läpimenneistä testeistä:
 
 ```
 collected 1 item
@@ -846,7 +824,7 @@ Suorita testit terminaalissa virtuaaliympäristössä `pytest src`-komennolla.
 
 Visual Studio Coden voi avata Linux-ympäristössä esim. siirtymällä hakemistoon _unicafe_ ja antamalla komennon `code .`. Visual Studio Codesta löytyy sisäänrakennettu terminaali. Terminaalin saa avattua valitsemalla päävalikosta _Terminal_ ja aukeavasta alavalikosta _New Terminal_. Editorin alalaitaan pitäisi ilmestyä terminaali, jossa voit suorittaa komentorivikomentoja.
 
-Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä, ainakin jos olit virtuaaliympäristössä silloin kun avasit itse Visual Studio Coden. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa tästä tieto sulkeiden sisällä, esimerkiksi `(poetry-testi-py3.12)`. Jos et ole virtuaaliympäristössä pääset siihen tuttuun tapaan komennolla `eval $(poetry env activate)`. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
+Terminaalin avaaminen saattaa automaattisesti avata komentorivin virtuaaliympäristössä, ainakin jos olit virtuaaliympäristössä silloin kun avasit itse Visual Studio Coden. Jos olet virtuaaliympäristössä, on komentorivin syöterivin alussa tästä tieto sulkeiden sisällä. Jos et ole virtuaaliympäristössä pääset siihen tuttuun tapaan komennolla `source .venv/bin/activate`. Tämän jälkeen voit suorittaa komentoja suoraan Visual Studio Codessa:
 
 ![Visual Studio Code terminaali]({{ "/assets/images/python/vscode-terminaali.png" | absolute_url }})
 
@@ -861,7 +839,7 @@ On olemassa työkaluja, joilla voidaan tarkastaa testien rivi- ja haarautumakatt
 Testikattavuuden kerääminen testien suorituksesta onnistuu [coverage](https://coverage.readthedocs.io/en/latest/)-työkalun avulla. Sen asentamisen projektin kehityksen aikaiseksi riippuvuudeksi onnistuu tuttuun tapaan komennolla:
 
 ```bash
-poetry add coverage --group dev
+uv add coverage --dev
 ```
 
 Testikattavuuden kerääminen `pytest src`-komennolla suoritetuista testeistä onnistuu virtuaaliympäristössä komennolla:
@@ -936,7 +914,13 @@ Kuvan tilanteessa if-ehto ei koskaan saanut arvoa `True`, joten kyseistä haaraa
 ---
 ### Tehtävä 7: Testikattavuus
 
-Unicafe-projektiin on valmiiksi konfiguroitu käytettäväksi [coverage](https://coverage.readthedocs.io/en/latest/)-työkalu. Testikattavuuden konfiguraatiossa käytettävä, _.coveragerc_-tiedoston sisältö on projektissa seuraava:
+Asenna coverage Unicafe-projektiin kehityksenaikaiseksi riippuvuudeksi komennolla 
+
+```bash
+uv add coverage --dev
+```
+
+Lisää projektin juurihakemistoon (unicafe) _.coveragerc_-tiedosto, jonka sisältö on seuraava:
 
 ```
 [run]

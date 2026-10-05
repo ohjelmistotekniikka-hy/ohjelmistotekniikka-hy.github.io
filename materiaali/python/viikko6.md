@@ -119,7 +119,7 @@ Tämän viikon aikana harjoitustyöhön toteutetaan edellisen viikon tapaan uutt
 
 Kasvata ohjelmaa edellisestä viikosta (0.75p):
 
-- Ohjelman pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
+- Ohjelman pystyy suorittamaan komentoriviltä komennolla `uv run invoke start`
 - Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
 - Merkitse lisäksi tarkastusta varten määrittelydokumenttiin valmiit toiminnallisuudet "tehty" merkinnällä
 - Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](/release), joka sisältää ohjelman uusimman version lähdekoodin (GitHub lisää tämän automaattisesti releasea tehdessä)
@@ -130,7 +130,7 @@ Ohjeita toteutukseen löydät [täältä](/python/toteutus).
 
 Edistä ohjelman testaamista (0.5p):
 
-- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
+- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `uv run invoke coverage-report`
 - Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/python/viikko2#tiedostojen-jättäminen-raportin-ulkopuolelle)
 - Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/python/viikko2#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
 - Ohjelman testikattavuuden tulee olla vähintään 60%

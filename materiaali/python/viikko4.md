@@ -18,16 +18,15 @@ Koodin testauksen lisäksi koodin laadun ylläpitäminen on tärkeää. Laadun y
 
 ### Pylintin käyttöönotto projektissa
 
-Pylint on helppo ottaa käyttöön Poetry-projektissa. Aloitetaan asentamalla pylint projektimme kehityksen aikaiseksi riippuvuudeksi:
+Pylint on helppo ottaa käyttöön uv-projektissa. Aloitetaan asentamalla pylint projektimme kehityksen aikaiseksi riippuvuudeksi:
 
 ```
-poetry add pylint --group dev
+uv add pylint --dev
 ```
 
 Pylintille tulee määritellä joukko tarkistettavia [sääntöjä](http://pylint.pycqa.org/en/2.6/technical_reference/features.html). Säännöt määritellään projektin juurihakemiston _.pylintrc_-tiedostossa. Luo kyseinen tiedosto ja kopioi sinne [tämän]({{site.repo_url}}/tree/master/materiaali/python/.pylintrc) tiedoston sisältö. Tiedosto sisältää hieman muunnellun version pylintin suosittelemasta konfiguraatiosta, jota voi katsella komennolla `pylint --generate-rcfile`.
 
-Pylintin laatutarkistukset voi suorittaa komentoriviltä siirtymällä ensin virtuaaliympäristöön (komennolla `eval $(poetry env activate)`
-tai `poetry shell`) ja sen jälkeen suorittamalla komennon `pylint src`. Komento tulee suorittaa projektin juurihakemistossa, eli samassa hakemistossa missä _pyproject.toml_-tiedosto sijaitsee. Kyseinen komento suorittaa laatutarkistukset _src_-hakemistossa. Pylint antaa koodille "arvosanan" sen laadun mukaan, joka löytyy tulosteen lopusta:
+Pylintin laatutarkistukset voi suorittaa komentoriviltä siirtymällä ensin virtuaaliympäristöön (komennolla `source .venv/bin/activate`) ja sen jälkeen suorittamalla komennon `pylint src`. Komento tulee suorittaa projektin juurihakemistossa, eli samassa hakemistossa missä _pyproject.toml_-tiedosto sijaitsee. Kyseinen komento suorittaa laatutarkistukset _src_-hakemistossa. Pylint antaa koodille "arvosanan" sen laadun mukaan, joka löytyy tulosteen lopusta:
 
 ```
 Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
@@ -86,7 +85,7 @@ Jos integroinnin kanssa ilmenee ongelmia, tutustu Visual Studio Coden [ohjeisiin
 Tiettyjen laatukorjausten, kuten sisennysten ja liian pitkien koodirivien korjaaminen, tuottaa välillä turhaa manuaalista työtä. Koodin automaattisessa formatoinnissa auttaa [autopep8](https://pypi.org/project/autopep8/)-kirjasto. Kirjasto formatoi koodin automaattisesti [PEP 8](https://www.python.org/dev/peps/pep-0008/)-tyyliohjeiden mukaisesti. Aloitetaan sen käyttö asentamalla se projektin riippuvuudeksi:
 
 ```bash
-poetry add autopep8 --group dev
+uv add autopep8 --dev
 ```
 
 Tämän jälkeen voimme virtuaaliympäristössä formatoida _src_-hakemiston koodin komennolla:
@@ -95,7 +94,7 @@ Tämän jälkeen voimme virtuaaliympäristössä formatoida _src_-hakemiston koo
 autopep8 --in-place --recursive src
 ```
 
-Komennolle voi myös tehdä oman tehtävänsä, jolloin suoritus onnistuu esimerkiksi komennolla `poetry run invoke format`.
+Komennolle voi myös tehdä oman tehtävänsä, jolloin suoritus onnistuu esimerkiksi komennolla `uv run invoke format`.
 
 Koodin formatointi onnistuu myös monissa editoreissa kätevästi yhdellä näppäinkomennolla. Ohje koodin formatointiin Visual Studio Codessa löytyy [täältä](https://code.visualstudio.com/docs/editor/codebasics#_formatting).
 
@@ -113,7 +112,7 @@ Tämän viikon aikana harjoitustyöhön toteutetaan uutta toiminnallisuutta, par
 
 Kasvata ohjelmaa edellisestä viikosta (0.75p):
 
-- Ohjelman pystyy suorittamaan komentoriviltä komennolla `poetry run invoke start`
+- Ohjelman pystyy suorittamaan komentoriviltä komennolla `uv run invoke start`
 - Suoritettava versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuuksista eli ohjelmaan on lisätty jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
 - Merkitse lisäksi tarkastusta varten määrittelydokumenttiin valmiit toiminnallisuudet "tehty" merkinnällä
 
@@ -123,7 +122,7 @@ Ohjeita toteutukseen löydät [täältä](/python/toteutus).
 
 Edistä ohjelman testaamista (0.5p):
 
-- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `poetry run invoke coverage-report`
+- Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla `uv run invoke coverage-report`
 - Projektin juurihakemistossa tulee olla _.coveragerc_-tiedosto, jossa määritellään, mistä hakemistosta testikattavuus kerätään. Käyttöliittymään ja testeihin liittyvä koodi [jätetään testikattavuusraportin ulkopuolle](/python/viikko2#tiedostojen-jättäminen-raportin-ulkopuolelle)
 - Projektin _src_-hakemiston alahakemistoissa tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot [ohjeiden](/python/viikko2#testikattavuusraportti) mukaisesti, jotta kaikki halutut tiedostot sisällytetään testikattavuusraporttiin
 - Ohjelman testikattavuuden tulee olla vähintään 20%
@@ -141,7 +140,7 @@ Kiinnitä koodin laadussa huomio seuraaviin seikkoihin (1p):
   - Täydet pisteet saa, jos pylint-virheitä on alle 10
   - Käyttöliittymään tai testeihin liittyvän koodin voi jättää pylint-tarkistuksien ulkopuolelle
   - `pylint: disable`-kommenttien käyttö on kiellettyä ilman erittäin perusteltua syytä
-- Pylint-tarkistuksien suorittamista varten on toteutettu Invoke-tehtävä, jonka voi suorittaa komennolla `poetry run invoke lint`
+- Pylint-tarkistuksien suorittamista varten on toteutettu Invoke-tehtävä, jonka voi suorittaa komennolla `uv run invoke lint`
 
 ### Harjoitustyö 4: Dokumentaatio
 

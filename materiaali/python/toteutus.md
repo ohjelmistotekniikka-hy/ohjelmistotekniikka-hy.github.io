@@ -559,15 +559,15 @@ Konfiguraatiot on syytä määritellä ohjelman ulkopuolella, esim. erillisissä
 Eräs tapa sovelluksen konfigurointiin on käyttää niin kutsuttuja _ympäristömuuttujia_. Ympäristömuuttujiin pääsee koodissa käsiksi mm. [os](https://docs.python.org/3/library/os.html)-moduulin [getenv](https://docs.python.org/3/library/os.html#os.getenv)-funktion avulla. Yksinkertaisin tapa määritellä sovellukselle ympäristömuuttujia on määritellä ne sovelluksen suorituksen yhteydessä komentoriviltä:
 
 ```
-FOO=bar poetry run python3 src/index.py
+FOO=bar uv run python3 src/index.py
 ```
 
 Esimerkissä sovellukselle määritellään ympäristömuuttuja `FOO`, jonka arvo on `bar`.
 
-Jos ympäristömuuttujia on monta, on niiden määritteleminen usein järkevämpää tehdä erillisessä konfiguraatiotiedostossa. Ympäristömuuttujien lataaminen tiedostosta onnistuu helposti [python-dotenv](https://pypi.org/project/python-dotenv/)-kirjaston avulla. Sen asentaminen onnistuu tutulla `poetry add`-komennolla:
+Jos ympäristömuuttujia on monta, on niiden määritteleminen usein järkevämpää tehdä erillisessä konfiguraatiotiedostossa. Ympäristömuuttujien lataaminen tiedostosta onnistuu helposti [python-dotenv](https://pypi.org/project/python-dotenv/)-kirjaston avulla. Sen asentaminen onnistuu tutulla `uv add`-komennolla:
 
 ```bash
-poetry add python-dotenv
+uv add python-dotenv
 ```
 
 Katsotaan, miten ympäristömuuttujia voi käyttää projektissa, jonka rakenne on seuraava:
@@ -578,7 +578,7 @@ src/
   config.py
   ...
 .env
-poetry.lock
+uv.lock
 pyproject.toml
 ...
 ```
@@ -641,7 +641,7 @@ Testeille on usein käytössä eri konfiguraatio, kuin normaalisti suoritettaval
 Näiden ympäristömuuttujien lataaminen onnistuu pytestin [pytest-dotenv](https://pypi.org/project/pytest-dotenv/)-lisäosalla. Sen asentaminen onnistuu seuraavalla komennolla:
 
 ```bash
-poetry add pytest-dotenv --group dev
+uv add pytest-dotenv --dev
 ```
 
 Asentamisen lisäksi tulee projektin juurihakemistoon luoda _pytest.ini_-tiedosto, jossa kerrotaan, mistä tiedostosta ympäristömuuttujat ladataan. Tiedoston sisältö on seuraava:

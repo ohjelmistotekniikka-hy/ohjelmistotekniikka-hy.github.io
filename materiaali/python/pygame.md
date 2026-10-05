@@ -16,12 +16,10 @@ pygame.error: No available video device
 
 Käytä SSH-yhteyden sijaan [virtuaalityöasemaa](https://vdi.helsinki.fi) ja WSL:n sijaan Windowsin komentoriviä.
 
-## Pygame-kirjaston asennus Poetryn avulla
-
-Pygamen asennus Poetry-projektissa onnistuu seuraavasti:
+Pygamen asennus uv-projektissa onnistuu seuraavasti:
 
 ```shell
-poetry add pygame
+uv add pygame
 ```
 
 ## Sovelluslogiikan suunnitteleminen
@@ -77,7 +75,7 @@ src/
     __init__.py
     robot.py
   ...
-poetry.lock
+uv.lock
 pyproject.toml
 ...
 ```

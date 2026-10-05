@@ -485,7 +485,7 @@ Tehtäviin liittyvien komentojen kirjoittaminen käsin käy helposti työlääks
 Invoken asennus projektiin onnistuu komennolla:
 
 ```bash
-poetry add invoke
+uv add invoke
 ```
 
 ### Tehtävien määritteleminen
@@ -503,10 +503,10 @@ def foo(ctx):
 Tämän erittäin hyödyllisen tehtävän voi suorittaa terminaalissa komennolla:
 
 ```bash
-poetry run invoke foo
+uv run invoke foo
 ```
 
-Komennon suorittamisen pitäisi tulostaa komentoriville teksti "bar". Tehtävät voi siis suorittaa terminaalissa komennolla, joka on muotoa `poetry run invoke <tehtävä>`. Huomaa, että `poetry run`-komennon ansiosta tehtävät suoritetaan virtuaaliympäristössä.
+Komennon suorittamisen pitäisi tulostaa komentoriville teksti "bar". Tehtävät voi siis suorittaa terminaalissa komennolla, joka on muotoa `uv run invoke <tehtävä>`. Huomaa, että `uv run`-komennon ansiosta tehtävät suoritetaan virtuaaliympäristössä.
 
 Toteutetaan seuraavaksi _foo_-tehtävän lisäksi tehtävä, josta on oikeasti hyötyä. Tarvitsemme tehtävän, joka suorittaa sovelluksemme komennolla `python3 src/index.py`. Annetaan tälle tehtävälle nimeksi _start_:
 
@@ -522,12 +522,12 @@ def start(ctx):
     ctx.run("python3 src/index.py", pty=True)
 ```
 
-Voimme suorittaa tehtävässä komentorivikomennon käyttämällä parametrina saadun [Context](http://docs.pyinvoke.org/en/stable/api/context.html#module-invoke.context)-olion metodia [run](http://docs.pyinvoke.org/en/stable/api/context.html#invoke.context.Context.run). Tehtävän suorittaminen onnistuu komennolla `poetry run invoke start`. Huomaa, että `pty=True`-argumentti on erityisen tärkeä komentorivikäyttöliittymässä, jotta sovelluksen syötteet ja tulosteet toimivat [odotetulla tavalla](https://www.pyinvoke.org/faq.html#why-is-my-command-behaving-differently-under-invoke-versus-being-run-by-hand).
+Voimme suorittaa tehtävässä komentorivikomennon käyttämällä parametrina saadun [Context](http://docs.pyinvoke.org/en/stable/api/context.html#module-invoke.context)-olion metodia [run](http://docs.pyinvoke.org/en/stable/api/context.html#invoke.context.Context.run). Tehtävän suorittaminen onnistuu komennolla `uv run invoke start`. Huomaa, että `pty=True`-argumentti on erityisen tärkeä komentorivikäyttöliittymässä, jotta sovelluksen syötteet ja tulosteet toimivat [odotetulla tavalla](https://www.pyinvoke.org/faq.html#why-is-my-command-behaving-differently-under-invoke-versus-being-run-by-hand).
 
 Voimme listata kaikki projektissa käytössä olevat tehtävät komennolla:
 
 ```bash
-poetry run invoke --list
+uv run invoke --list
 ```
 
 ### Huomioita tehtävien nimeämisestä
@@ -542,7 +542,7 @@ def lorem_ipsum(ctx):
     print("Lorem ipsum")
 ```
 
-Suoritettaisiin komennolla `poetry run invoke lorem-ipsum`. Jos olet epävarma käytössä olevien tehtävien nimistä, voit aina listata ne komennolla `poetry run invoke --list`.
+Suoritettaisiin komennolla `uv run invoke lorem-ipsum`. Jos olet epävarma käytössä olevien tehtävien nimistä, voit aina listata ne komennolla `uv run invoke --list`.
 
 ### Toisistaan riippuvaiset tehtävät
 
@@ -563,7 +563,7 @@ def coverage_report(ctx):
 Jos suoritamme tehtävän _coverage-report_ ennen _coverage_-tehtävän suorittamista, raportti sisältää joko vanhat testikattavuustiedot, tai kohtaamme virheen, joka valittaa testikattavuustietojen puutetta. Voisimme suorittaa komennot peräkkäin komennolla:
 
 ```bash
-poetry run invoke coverage coverage-report
+uv run invoke coverage coverage-report
 ```
 
 Helpompaa on kuitenkin määritellä _coverage-report_-tehtävä riippuvaiseksi _coverage_-tehtävästä. Tämä onnistuu antamalla `@task`-dekoraattorille argumentiksi _coverage_-tehtävän funktio:
@@ -580,7 +580,7 @@ def coverage_report(ctx):
     ctx.run("coverage html", pty=True)
 ```
 
-Nyt komento `poetry run invoke coverage-report` suorittaa ensin tehtävän _coverage_, jonka jälkeen suoritetaan itse tehtävä _coverage-report_.
+Nyt komento `uv run invoke coverage-report` suorittaa ensin tehtävän _coverage_, jonka jälkeen suoritetaan itse tehtävä _coverage-report_.
 
 Jos haluat, että oletus työpöytäsovelluksesi avaisisi joka kertaa uudelleen tuodun raportin, voit laajentaa _coverage-report_ task:in näin:
 
@@ -603,11 +603,11 @@ Tämän viikon aikana aloitetaan harjoitustyön toteutus ja testaaminen. Ohjelma
 
 ### Varoitus: pip
 
-*Olet kenties saattanut aiemmin asentaa Pythonin tarvitsemia riippuvuuksia pip-komennolla. Älä kuitenkaan käytä pipiä tällä kurssilla sillä jos teet niin, teet 99.9% todennäköisyydellä jotain väärin. Asenna riippuvuudet tällä kurssilla Poetryn avulla.*
+*Olet kenties saattanut aiemmin asentaa Pythonin tarvitsemia riippuvuuksia pip-komennolla. Älä kuitenkaan käytä pipiä tällä kurssilla sillä jos teet niin, teet 99.9% todennäköisyydellä jotain väärin. Asenna riippuvuudet tällä kurssilla uv:n avulla.*
 
-### Harjoitustyö 1: Poetry projektin alustaminen
+### Harjoitustyö 1: Uv-projektin alustaminen
 
-Alusta repositoriosi juureen Poetry-projekti edellisen viikon [Poetry-ohjeiden](/python/viikko2#poetry-ja-riippuvuuksien-hallinta) mukaisesti. Repositorion rakenne tulee olla seuraava:
+Alusta repositoriosi juureen uv-projekti edellisen viikon [uv-ohjeiden](/python/viikko2#Uv-ja-riippuvuuksien-hallinta) mukaisesti. Repositorion rakenne tulee olla seuraava:
 
 ```
 laskarit/
@@ -617,7 +617,7 @@ dokumentaatio/
 src/
   ...
 pyproject.toml
-poetry.lock
+uv.lock
 README.md
 ...
 ```
@@ -635,13 +635,13 @@ todo-app/
   src/
     ...
   pyproject.toml
-  poetry.lock
+  uv.lock
   ...
 README.md
 ...
 ```
 
-**HUOM:** _src_-hakemiston **alahakemistoissa** (ei siis itse _src_-hakemistossa) tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot, jotta mm. `import`-lauseet toimivat halutulla tavalla. Lisää aiheesta voi lukea Pythonin [dokumentaatiosta](https://docs.python.org/3/tutorial/modules.html) ja mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}).
+**HUOM:** _src_-hakemiston **alihakemistoissa** (ei siis itse _src_-hakemistossa) tulee olla tyhjät <i>\_\_init\_\_.py</i>-tiedostot, jotta mm. `import`-lauseet toimivat halutulla tavalla. Lisää aiheesta voi lukea Pythonin [dokumentaatiosta](https://docs.python.org/3/tutorial/modules.html) ja mallia voi ottaa [referenssisovelluksesta]({{site.python_reference_app_url}}).
 
 ### Harjoitustyö 2: Toiminnallisuuden toteutus
 
@@ -679,9 +679,9 @@ Kertaa edellisen viikon [coverage-ohjeet](/python/viikko2#coverage-ja-testikatta
 
 Toteuta projektille seuraavat Invoke-tehtävät:
 
-- `poetry run invoke start` käynnistää ohjelman
-- `poetry run invoke test` suorittaa testit pytestin avulla
-- `poetry run invoke coverage-report` kerää coveragen avulla testikattavuuden ja muodostaa sen perusteella selaimessa avattavan, HTML-muotoisen testikattavuusraportin
+- `uv run invoke start` käynnistää ohjelman
+- `uv run invoke test` suorittaa testit pytestin avulla
+- `uv run invoke coverage-report` kerää coveragen avulla testikattavuuden ja muodostaa sen perusteella selaimessa avattavan, HTML-muotoisen testikattavuusraportin
 
 Mallia Invoke-tehtävien toteutukseen voi ottaa tarvittaessa [referenssisovelluksesta]({{site.python_reference_app_url}}). Voit halutessasi lisätä myös muita tehtäviä, joita koet projektisi kannalta hyödylliseksi.
 
