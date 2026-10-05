@@ -666,7 +666,7 @@ Jos yrität "montaa asiaa yhtä aikaa" eli ottaa esim. SQLite-tietokannan käytt
 
 ## Python-versioiden hallinta
 
-**HUOM:** tämä ohje toimii vain Linux- ja macOS-tietokoneilla.
+**HUOM:** tämä ohje toimii vain Linux- ja macOS-tietokoneilla. Uv osaa asentaa Python-versioita itse, joten et välttämättä tarvitse seuraavaa.
 
 Python-versioiden asennus ja käytössä olevan version vaihtaminen onnistuu vaivattomasti [pyenv](https://github.com/pyenv/pyenv)-työkalun avulla. Työkalun asennus Linux- ja macOS-tietokoneille onnistuu seuraavasti:
 
