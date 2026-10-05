@@ -12,7 +12,7 @@ inheader: true
   - [Ohjelmistotuotanto](/python/viikko1#ohjelmistotuotanto)
   - [Harjoitukset](/python/viikko1#ensimmäisen-viikon-harjoitukset)
 - [Viikko 2](/python/viikko2)
-  - [Poetry ja riippuvuuksien hallinta](/python/viikko2#Uv-ja-riippuvuuksien-hallinta)
+  - [Uv ja riippuvuuksien hallinta](/python/viikko2#uv-ja-riippuvuuksien-hallinta)
   - [Unittest ja testaaminen](/python/viikko2#unittest-ja-testaaminen)
   - [Coverage ja testikattavuus](/python/viikko2#coverage-ja-testikattavuus)
 - [Viikko 3](/python/viikko3)
